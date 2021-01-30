@@ -28,6 +28,7 @@ dev_addr: '127.0.0.1:8001'
 nav:
     - RxDocs: index.md
     - Changelog: changelog.md
+    - Credits: credits.md
     - License:
         - GNU GPLv3: licenses/gnu-gpl.md
         - Documentation license: licenses/gfdl.md

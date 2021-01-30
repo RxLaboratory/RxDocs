@@ -21,6 +21,14 @@ This program is free software; you can redistribute them and/or modify them unde
 
 ![GNU](img/licenses/gnu.png){: style="height:75px;"} ![GPL3](img/licenses/gplv3.png){: style="height:50px;"}
 
+### Icons and other graphical elements
+
+All graphical elements, especially icons, are from [***RxUI***](http://rxui-docs.rainboxlab.org) by Nicolas Dufresne and [RxLaboratory](https://rainboxlab.org) are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+<span style="font-size:0.75em;">**Copyright (C) 2021 Nicolas Dufresne and Contributors.**
+
+[![CC](https://mirrors.creativecommons.org/presskit/icons/cc.svg){: style="height:35px;"} ![BY](https://mirrors.creativecommons.org/presskit/icons/by.svg){: style="height:35px;"} ![NC](https://mirrors.creativecommons.org/presskit/icons/nc.svg){: style="height:35px;"} ![SA](https://mirrors.creativecommons.org/presskit/icons/sa.svg){: style="height:35px;"}](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 ### This Documentation
 
 <span style="font-size:0.75em;">**Copyright (C)  2020 Nicolas Dufresne and Contributors.**  
