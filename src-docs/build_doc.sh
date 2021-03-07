@@ -1,3 +1,3 @@
 #!/bin/bash
 mkdocs build
-echo "rxdocs.rainboxlab.org" >> ../docs/CNAME
+echo "docs.rainboxlab.org" >> ../docs/CNAME

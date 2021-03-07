@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nicolas Dufresne and contributors">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Final delivery - RxDocs</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../style.css" rel="stylesheet">
+  <link href="../video.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Final delivery";
+    var mkdocs_page_input_path = "green/final.md";
+    var mkdocs_page_url = "/green/final.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> RxDocs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">RxDocs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../guides.html">Comprehensive guides</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">openEXR compression methods</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../exr/index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exr/summary.html">Summary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exr/luma-chroma.html">Luminance/Chroma option</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exr/formats-you-know.html">Formats you don’t know you already know</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exr/usage.html">Summary by usage and type of image</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exr/details.html">Details</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../exr/sequences.html">A note about frame sequences</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Colors and Color Management</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../colors/index.html">Introduction</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">The 100% free pipeline</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../freesoftware/index.html">Introduction</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">The Green Guide to transccoding</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="intermediary.html">Intermediary formats</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="grading.html">Edit and color grading</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="final.html">Final delivery</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#final-delivery">Final delivery</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#internet-and-streaming">Internet and streaming</a></li>
+        
+            <li><a class="toctree-l4" href="#television-or-hdr-screens">Television or HDR screens</a></li>
+        
+            <li><a class="toctree-l4" href="#cinema">Cinema</a></li>
+        
+            <li><a class="toctree-l4" href="#recommended-formats">Recommended formats</a></li>
+        
+            <li><a class="toctree-l4" href="#formats-to-avoid">Formats to avoid</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contribute.html">Contribute to the doc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/donate/">Donate</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">RxDocs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>The Green Guide to transccoding &raquo;</li>
+        
+      
+    
+    <li>Final delivery</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-docs/docs/green/final.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="final-delivery">Final delivery<a class="headerlink" href="#final-delivery" title="Permanent link">&para;</a></h1>
+<p>The final media file can be as small as possible and it&rsquo;s not a problem to use imperceptible lossy compression. You don&rsquo;t need it anymore to be performant when scrolling in time, as most of the time it will just be played at its intended speed, so <strong>you don&rsquo;t need the format to be Intra-frame anymore</strong> (i.e. <em>Prores</em> and <em>DnxHD/HR</em> are not meant to be used as a final delivery).</p>
+<div class="toc">
+<ul>
+<li><a href="#final-delivery">Final delivery</a><ul>
+<li><a href="#internet-and-streaming">Internet and streaming</a></li>
+<li><a href="#television-or-hdr-screens">Television or HDR screens</a></li>
+<li><a href="#cinema">Cinema</a></li>
+<li><a href="#recommended-formats">Recommended formats</a></li>
+<li><a href="#formats-to-avoid">Formats to avoid</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="internet-and-streaming">Internet and streaming<a class="headerlink" href="#internet-and-streaming" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Lossy</strong><br />
+    You won&rsquo;t be making big changes on the video anymore, and color grading can afford a slight loss of data without any perceptible change for the human eye.</li>
+<li><strong>YUV 420</strong><br />
+    It is very standard to use <em>420</em> chroma reduction in final files, and most of time nobody sees any difference.</li>
+<li><strong>8 bits</strong><br />
+    That&rsquo;s just what screens connected to the internet can show, no less, no more.</li>
+<li><strong>HD / 2K</strong><br />
+    Will there be so many people watching this video on a huge screen, and close enough to it to see the difference if the video is in 4K and contains <strong>4 times</strong> more data? Is it really worth it?</li>
+</ul>
+<h2 id="television-or-hdr-screens">Television or HDR screens<a class="headerlink" href="#television-or-hdr-screens" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Lossy</strong><br />
+    You won&rsquo;t be making big changes on the video anymore, and color grading can afford a slight loss of data without any perceptible change for the human eye.</li>
+<li><strong>YUV 420</strong><br />
+    It is very standard to use <em>420</em> chroma reduction in final files, and most of time nobody sees any difference. Some TV Chanels may ask for <em>422</em> files.</li>
+<li><strong>10 bits</strong><br />
+    Television standards are made for bigger and often better screens, sometimes capable of HDR colors. You may need to keep 10-bit channels, but keeping only 8 bits would be better.</li>
+<li><strong>HD / 2K</strong><br />
+    Will there be so many people watching this video on a huge screen, and close enough to it to see the difference if the video is in 4K and contains <strong>4 times</strong> more data? Is it really worth it?</li>
+</ul>
+<h2 id="cinema">Cinema<a class="headerlink" href="#cinema" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Lossless</strong><br />
+    The DCI standard and final DCP files are lossless. Theoratically, we could still use lossy (but with an invisible loss) formats.</li>
+<li><strong>RGB or YUV 444</strong><br />
+    Your media is meant to be screened on huge screens, it is not recommended to reduce the size of chroma channels.</li>
+<li><strong>12 bits</strong><br />
+    The final DCP file uses 12 bits of data. Very often people use 16- or 32-bit intermediary files, but do you real need this insane amount of colors?</li>
+<li><strong>HD / 2K</strong> or 4K?<br />
+    Don&rsquo;t you agree that most of the people in cinemas won&rsquo;t see any difference between 2K and 4K? Do you even notice the difference? Does your theater even screen 4K films, have they changed their expensive projectors when 4K was made available? Is this slight difference really worth it compared to the environmental impact of files 4 times bigger? Is entertainment really that important?</li>
+</ul>
+<h2 id="recommended-formats">Recommended formats<a class="headerlink" href="#recommended-formats" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong><em>h.265 standard mp4, 8-bit YUV 420</em></strong> is small and very efficient. As it may not be supported everywhere yet, you could also use the less efficient h.264 instead. OGG Video (.ogv) is great too. All of them are capable of 10- or 12-bit HDR too. Note that some codecs have presets or settings to improve decoding performance and to adjust compatibility with older hardware; these settings usually reduce power consumption when playing the file.</li>
+</ul>
+<h2 id="formats-to-avoid">Formats to avoid<a class="headerlink" href="#formats-to-avoid" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong><em>Prores</em></strong> and <strong><em>DnxHD/HR</em></strong>. Do you really want to send files that big over the internet?</p>
+</li>
+<li>
+<p><strong><em>Image sequences</em></strong>. Decoding performance is much better with standard video files.</p>
+</li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/07" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../contribute.html" class="btn btn-neutral float-right" title="Contribute to the doc">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="grading.html" class="btn btn-neutral" title="Edit and color grading"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="grading.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../contribute.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../video.js" defer></script>
+      <script src="../meta.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

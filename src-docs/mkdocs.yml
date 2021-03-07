@@ -1,8 +1,8 @@
-site_name: RxDocs Documentation
-site_url: https://rainboxlab.org
+site_name: RxDocs
+site_url: https://docs.rainboxlab.org
 repo_url: https://github.com/Rainbox-dev/RxDocs/
 edit_uri: edit/master/src-docs/docs/
-site_description: The RxDocs comprehensive documentation
+site_description: The RxDocuments - RxLab Documentation
 site_author: Nicolas Dufresne and contributors
 copyright: 'Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors'
 use_directory_urls: false
@@ -29,9 +29,25 @@ site_dir: ../docs/
 dev_addr: '127.0.0.1:8001'
 nav:
     - RxDocs: index.md
-    - How to edit documentation: howto.md
-    - Changelog: changelog.md
-    - Credits: credits.md
-    - License:
-        - GNU GPLv3: licenses/gnu-gpl.md
-        - Documentation license: licenses/gfdl.md
+    - Comprehensive guides: guides.md
+    - openEXR compression methods:
+        - Introduction: exr/index.md
+        - Summary: exr/summary.md
+        - Luminance/Chroma option: exr/luma-chroma.md
+        - Formats you don’t know you already know: exr/formats-you-know.md
+        - Summary by usage and type of image: exr/usage.md
+        - Details: exr/details.md
+        - A note about frame sequences: exr/sequences.md
+    - Colors and Color Management:
+        - Introduction: colors/index.md
+    - The 100% free pipeline:
+        - Introduction: freesoftware/index.md
+    - The Green Guide to transccoding:
+        - Introduction: green/index.md
+        - Intermediary formats: green/intermediary.md
+        - Edit and color grading: green/grading.md
+        - Final delivery: green/final.md
+    - Contribute to the doc: contribute.md
+    - Contact: https://rainboxlab.org/about/contact/
+    - Donate: https://rainboxlab.org/about/donate/
+

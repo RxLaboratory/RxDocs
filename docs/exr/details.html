@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nicolas Dufresne and contributors">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Details - RxDocs</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../style.css" rel="stylesheet">
+  <link href="../video.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Details";
+    var mkdocs_page_input_path = "exr/details.md";
+    var mkdocs_page_url = "/exr/details.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> RxDocs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../index.html">RxDocs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../guides.html">Comprehensive guides</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">openEXR compression methods</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="summary.html">Summary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="luma-chroma.html">Luminance/Chroma option</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="formats-you-know.html">Formats you don’t know you already know</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="usage.html">Summary by usage and type of image</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="details.html">Details</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#details">Details</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#piz">PIZ</a></li>
+        
+            <li><a class="toctree-l4" href="#zip">ZIP</a></li>
+        
+            <li><a class="toctree-l4" href="#zips">ZIPS</a></li>
+        
+            <li><a class="toctree-l4" href="#rle">RLE</a></li>
+        
+            <li><a class="toctree-l4" href="#pxr24">PXR24</a></li>
+        
+            <li><a class="toctree-l4" href="#b44">B44</a></li>
+        
+            <li><a class="toctree-l4" href="#b44a">B44A</a></li>
+        
+            <li><a class="toctree-l4" href="#dwaa">DWAA</a></li>
+        
+            <li><a class="toctree-l4" href="#dwab">DWAB</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="sequences.html">A note about frame sequences</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Colors and Color Management</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../colors/index.html">Introduction</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">The 100% free pipeline</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../freesoftware/index.html">Introduction</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">The Green Guide to transccoding</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../green/index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../green/intermediary.html">Intermediary formats</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../green/grading.html">Edit and color grading</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../green/final.html">Final delivery</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contribute.html">Contribute to the doc</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/donate/">Donate</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">RxDocs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>openEXR compression methods &raquo;</li>
+        
+      
+    
+    <li>Details</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-docs/docs/exr/details.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="details">Details<a class="headerlink" href="#details" title="Permanent link">&para;</a></h1>
+<p>The descriptions are taken from the official technical introduction from https://www.openexr.com</p>
+<div class="toc">
+<ul>
+<li><a href="#details">Details</a><ul>
+<li><a href="#piz">PIZ</a></li>
+<li><a href="#zip">ZIP</a></li>
+<li><a href="#zips">ZIPS</a></li>
+<li><a href="#rle">RLE</a></li>
+<li><a href="#pxr24">PXR24</a></li>
+<li><a href="#b44">B44</a></li>
+<li><a href="#b44a">B44A</a></li>
+<li><a href="#dwaa">DWAA</a></li>
+<li><a href="#dwab">DWAB</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="piz">PIZ<a class="headerlink" href="#piz" title="Permanent link">&para;</a></h2>
+<p><strong>Lossless</strong></p>
+<p>A wavelet transform is applied to the pixel data, and the result is Huffman-encoded. This scheme tends to provide the best compression ratio for the types of images that are typically processed at Industrial Light &amp; Magic. Files are compressed and decompressed at roughly the same speed. For photographic images with film grain, the files are reduced to between 35 and 55 percent of their uncompressed size. PIZ compression works well for scan-line based files, and also for tiled files with large tiles, but small tiles do not shrink much. (PIZ-compressed data start with a relatively long header; if the input to the compressor is short, adding the header tends to offset any size reduction of the input.)
+PIZ compression is only supported for flat images.</p>
+<ul>
+<li>Ratio*: 35~55% (photo with grain)</li>
+<li>Write speed = read speed</li>
+<li>Best for grainy images</li>
+</ul>
+<p>Good for**:</p>
+<ul>
+<li>Photo/Video (with grain)</li>
+<li>3D Animation (with grain)</li>
+</ul>
+<h2 id="zip">ZIP<a class="headerlink" href="#zip" title="Permanent link">&para;</a></h2>
+<p><strong>Lossless</strong></p>
+<p>Differences between horizontally adjacent pixels are compressed using the open-source zlib library. ZIP decompression is faster than PIZ decompression, but ZIP compression is significantly slower. Photographic images tend to shrink to between 45 and 55 percent of their uncompressed size. Multi-resolution files are often used as texture maps for 3D renderers. For this application, fast read accesses are usually more important than fast writes, or maximum compression. For texture maps, ZIP is probably the best compression method. In scan-line based files,16 rows of pixels are accumulated and compressed together as a single block.</p>
+<ul>
+<li>Ratio*: 45~55% (photo without grain)</li>
+<li>Faster reading, significantly slower writing</li>
+<li>Same as PNG</li>
+<li>Supported for stereo images</li>
+</ul>
+<p>Good for** (Only when 32bpc float is needed – otherwise, PXR24 is better):</p>
+<ul>
+<li>Texture maps</li>
+<li>Photo/Video (without grain)</li>
+<li>3D Animation (without grain)</li>
+<li>2D Animation, Graphics</li>
+</ul>
+<h2 id="zips">ZIPS<a class="headerlink" href="#zips" title="Permanent link">&para;</a></h2>
+<p><strong>Lossless</strong></p>
+<p>Uses the open-source zlib library for compression. Like ZIP compression, but operates on one scan line at a time.</p>
+<ul>
+<li>Same as PNG</li>
+<li>Supported for stereo images</li>
+</ul>
+<h2 id="rle">RLE<a class="headerlink" href="#rle" title="Permanent link">&para;</a></h2>
+<p><strong>Lossless</strong></p>
+<p>Differences between horizontally adjacent pixels are run-length encoded. This method is fast, and works well for images with large flat areas, but for photographic images, the compressed file size is usually between 60 and 75 percent of the uncompressed size.</p>
+<ul>
+<li>Ratio*: 60~75% (photo)</li>
+<li>Fast</li>
+<li>Same as TGA</li>
+<li>Better with large flat areas (alpha and id channels)</li>
+<li>Supported for stereo images</li>
+</ul>
+<p>Good for**:</p>
+<ul>
+<li>Solid colors, large flat areas (alpha and id channels)</li>
+</ul>
+<h2 id="pxr24">PXR24<a class="headerlink" href="#pxr24" title="Permanent link">&para;</a></h2>
+<p><strong>Lossless</strong><br />
+(16bit float, 16/32-bit int)</p>
+<p><strong>Slightly Lossy</strong> (3x10E-5)<br />
+(32-bit float)</p>
+<p>After reducing 32-bit floating-point data to 24 bits by rounding(while leaving 16-bit floating-point data unchanged), differences between horizontally adjacent pixels are compressed with zlib, similar to ZIP. PXR24 compression preserves image channels of type HALF and UINT exactly, but the relative error of FLOAT data increases to about 3x10E-5. This compression method works well for depth buffers and similar images, where the possible range of values is very large, but where full 32-bit floating-point accuracy is not necessary. Rounding improves compression significantly by eliminating thepixels’ 8 least significant bits, which tend to be very noisy, and therefore difficult to compress. PXR24 compression is only supported for flat images.</p>
+<ul>
+<li>Ratio*: Better than ZIP for 32bpc, same as ZIP otherwise</li>
+<li>Faster reading, significantly slower writing</li>
+<li>Turns 32-bit float to 24-bit</li>
+</ul>
+<p>Good for** (Only for 16bpc float or 16/32bpc int, or when 24bpc float is sufficient instead of 32bpc):</p>
+<ul>
+<li>Photo/Video (without grain)</li>
+<li>3D Animation (without grain)</li>
+<li>2D Animation, Graphics</li>
+<li>Texture maps</li>
+</ul>
+<h2 id="b44">B44<a class="headerlink" href="#b44" title="Permanent link">&para;</a></h2>
+<p><strong>Lossy</strong></p>
+<p>Channels of type HALF are split into blocks of four by four pixels or 32 bytes. Each block is then packed into 14 bytes, reducing the data to 44 percent of their uncompressed size. When B44 compression is applied to RGB images in combination with luminance/chroma encoding (see below), the size of the compressed pixels is about 22 percent of the size of the original RGB data. Channels of type UINT or FLOAT are not compressed. Decoding is fast enough to allow real-time playback of B44-compressed OpenEXR image sequences on commodity hardware. The size of a B44-compressed file depends on the number of pixels in the image, but not on the data in the pixels. All images with the same resolution and the same set of channels have the same size. This can be advantageous for systems that support real-time playback of image sequences; the predictable file size makes it easier to allocate space on storage media efficiently. B44 compression is only supported for flat images.</p>
+<ul>
+<li>Ratio*: 44%</li>
+<li>Fixed file size</li>
+<li>Very fast read speed</li>
+</ul>
+<p>Good for**:</p>
+<ul>
+<li>Systems needing real-time playback</li>
+</ul>
+<h2 id="b44a">B44A<a class="headerlink" href="#b44a" title="Permanent link">&para;</a></h2>
+<p><strong>Lossy</strong></p>
+<p>Like B44, except for blocks of four by four pixels where all pixels have the same value, which are packed into 3 instead of 14 bytes. For images with large uniform areas, B44A produces smaller files than B44 compression.B44A compression is only supported for flat images.</p>
+<ul>
+<li>Ratio*: &lt; 44%</li>
+<li>Very fast read speed</li>
+<li>Better with large flat areas (alpha and id channels)</li>
+</ul>
+<p>Good for**:</p>
+<ul>
+<li>Systems needing real-time playback</li>
+</ul>
+<h2 id="dwaa">DWAA<a class="headerlink" href="#dwaa" title="Permanent link">&para;</a></h2>
+<p><strong>Lossy</strong></p>
+<p>JPEG-like lossy compression format contributed by DreamWorks Animation. Compresses 32 scanlines together.<br />
+From the source code:<br />
+First, we try and figure out what compression strategy to take based in channel name. For RGB channels, we want a lossy method
+described below. But, if we have alpha, we should do something different (and probably using RLE). If we have depth, or velocity, or something else, just fall back to ZIP.</p>
+<ul>
+<li>Ratio*: varying depending on chosen compression level</li>
+<li>Same as JPEG</li>
+</ul>
+<p>Good for**:</p>
+<ul>
+<li>Proxies</li>
+<li>Final exports when a small compression is acceptable</li>
+<li>3D Rendering with AOV (with a small compression level)</li>
+</ul>
+<h2 id="dwab">DWAB<a class="headerlink" href="#dwab" title="Permanent link">&para;</a></h2>
+<p><strong>Lossy</strong></p>
+<p>Same as DWAA, but compresses blocks of 256 scanlines.</p>
+<ul>
+<li>Ratio*: varying depending on chosen compression level</li>
+</ul>
+<p>Good for**:</p>
+<ul>
+<li>Proxies</li>
+<li>Final exports when a small compression is acceptable</li>
+</ul>
+<p><em>* Compressed / uncompressed. A lower ratio is better. For example, 45% means the compressed file size is 45% of the uncompressed size.</em></p>
+<p><em>** A file is good for a given use when its read or write speeds best fits how it is going to be used, and has the best compression ratio available.</em></p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Dino Muhić, OpenEXR Contributors;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/07" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sequences.html" class="btn btn-neutral float-right" title="A note about frame sequences">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="usage.html" class="btn btn-neutral" title="Summary by usage and type of image"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="usage.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="sequences.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../video.js" defer></script>
+      <script src="../meta.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
