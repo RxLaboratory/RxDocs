@@ -16,8 +16,9 @@ markdown_extensions:
     - admonition
     - codehilite
     - fenced_code
-    - toc
     - attr_list
+    - toc:
+        permalink: true
 extra_css:
     - style.css
     - video.css
