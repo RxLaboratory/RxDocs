@@ -91,3 +91,15 @@ a:hover {
     color: #8d5e98;
     font-weight:800;
 }
+
+.post-meta::before {
+    content: "About this page";
+    margin-left:10px;
+    font-style: italic;
+}
+
+.post-meta {
+    font-size: 0.8em;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}

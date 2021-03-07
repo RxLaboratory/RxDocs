@@ -37,3 +37,5 @@ with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
 A copy of the license is included in the section entitled "[Documentation License](licenses/gfdl.md)".</span>
 
 ![GNU](img/licenses/gnu.png){: style="height:75px;"} ![GFDL](img/licenses/gfdl-logo.png){: style="height:50px;"}
+
+![META](authors:Nicolas "Duduf" Dufresne;medias:Creative Commons contributors, GNU contributors;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/07)
