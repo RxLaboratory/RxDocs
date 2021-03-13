@@ -30,7 +30,7 @@ dev_addr: '127.0.0.1:8001'
 nav:
     - RxDocs: index.md
     - Comprehensive guides: guides.md
-    - openEXR compression methods:
+    - (en) openEXR compression methods:
         - Introduction: exr/index.md
         - Summary: exr/summary.md
         - Luminance/Chroma option: exr/luma-chroma.md
@@ -38,11 +38,17 @@ nav:
         - Summary by usage and type of image: exr/usage.md
         - Details: exr/details.md
         - A note about frame sequences: exr/sequences.md
-    - Colors and Color Management:
+    - (fr) Méthodes de compression openEXR:
+        - Introduction: exr-fr/index.md
+    - (en) Colors and Color Management:
         - Introduction: colors/index.md
-    - The 100% free pipeline:
+    - (fr) Couleurs et gestion des couleurs:
+        - Introduction: couleurs/index.md
+        - Définition: couleurs/01-definition.md
+        - Perception des couleurs: couleurs/02-perception.md
+    - (en) The 100% free pipeline:
         - Introduction: freesoftware/index.md
-    - The Green Guide to transccoding:
+    - (en) The Green Guide to transccoding:
         - Introduction: green/index.md
         - Intermediary formats: green/intermediary.md
         - Edit and color grading: green/grading.md

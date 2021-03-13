@@ -5,6 +5,20 @@ a:hover {
     color: #710132;
 }
 
+hr {
+    height: 3px;
+    border: none;
+    background-color: #D3D3D3;
+}
+
+footer, footer p {
+    font-size: 13px;
+}
+
+.rst-footer-buttons {
+    font-size: 15px;
+}
+
 .wy-nav-content-wrap {
     background:none;
  }

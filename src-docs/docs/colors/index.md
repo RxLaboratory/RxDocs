@@ -18,3 +18,5 @@
 *WIP*
 
 ![YOUTUBE](m-lrOc2Fmck)
+
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13)
