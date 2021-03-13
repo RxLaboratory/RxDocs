@@ -64,6 +64,7 @@ Sources et références
 - [Psychophysique sur *Wikipedia*](https://fr.wikipedia.org/wiki/Psychophysique)
 - [Bâtonnet sur *Wikipedia*](https://fr.wikipedia.org/wiki/B%C3%A2tonnet)
 - [Cône sur *Wikipedia*](https://fr.wikipedia.org/wiki/C%C3%B4ne_(photor%C3%A9cepteur))
+- [Colour representation, *Kent State University*](http://www.cs.kent.edu/~farrell/cg00/lectures/color/colour.html)
 
 ![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13)
 

@@ -19,8 +19,10 @@ Par souci de vulgarisation, nous nous permettrons plusieurs raccourcis et approx
         - Sur la luminosité et le contraste
         - Sur les teintes
 - C - [Représentation objective des couleurs](03-representation.md)
-    - Le CIE (1931) et son diagramme
-- Le passage du réel au numérique
+    - Décomposer les couleurs
+    - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ
+    - Autres espaces de la CIE
+- D - Du réel au numérique
 - Qu’est ce qu’un espace colorimétrique ?
 - Pourquoi utiliser différents espaces colorimétriques ?
 - Calibration des écrans et leurs espaces colorimétriques
