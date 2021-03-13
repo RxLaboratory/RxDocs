@@ -2,6 +2,9 @@
 
 Au problème d'avoir une référence objective pour définir les couleurs s'ajoute le fait que la définition de la couleur est intrinsèquement liée à la perception qu'on en a, et cette perception diffère évidemment d'une population à l'autre, d'un individu à l'autre, et aussi de l'environnement dans lequel on perçoit la couleur.
 
+!!! hint
+    Dans l'antiquité, [Démocrite](https://fr.wikipedia.org/wiki/D%C3%A9mocrite) suggérait même que les couleurs ne sont qu'imagination.
+
 [TOC]
 
 Comprendre cette interprétation subjective des couleurs est important pour comprendre comment la gestion des couleurs dans le traitement des images numériques a été conçu et comment elle évolue.
@@ -42,12 +45,15 @@ La présence des bâtonnets sur la rétine et leurs performance dans les lumièr
 
 ### Sur les teintes
 
-La division en trois types de cônes performants chacun sur des longueurs d'ondes précises fait que **trois couleurs primaires** suffisent pour reproduire toutes les couleurs telles que l'être humain peut les percevoir, pour autant que ces primaires correspondent environ au domaine de performance de ces trois types de cônes[^2].
+La division en trois types de cônes performants chacun sur des longueurs d'ondes précises fait que **trois couleurs primaires**[^2] suffisent pour reproduire toutes les couleurs telles que l'être humain peut les percevoir, pour autant que ces primaires correspondent environ au domaine de performance de ces trois types de cônes[^3].
 
 !!! note
-    Suivant le système et les couleurs choisies, le nombre de couleurs primaires peut varier, avec un minimum de deux. Il est tout à fait possible de reproduire une lumière blanche avec seulement deux couleurs primaires monochromatiques.
+    Suivant le système et les couleurs choisies, le nombre de couleurs primaires peut varier, avec un minimum de deux. C'est [Isaac Newton](https://fr.wikipedia.org/wiki/Isaac_Newton) qui a découvert qu'il est tout à fait possible de reproduire une lumière blanche avec seulement deux couleurs primaires monochromatiques.
 
-Les trois couleurs "*primaires*" les plus proches des gammes de perception des cellules cônes sont la combinaison **Rouge, Vert, et Bleu**, même si en réalité les cônes perçoivent plutot le jaune, vert et bleu, cette dernière combinaison n'étant pas une combinaison de couleurs primaires.
+Les trois couleurs "*primaires*" les plus proches des gammes de perception des cellules cônes sont la combinaison **Rouge, Vert, et Bleu**, même si en réalité les cônes perçoivent plutôt le jaune, vert et bleu, cette dernière combinaison n'étant pas une combinaison de couleurs primaires.
+
+!!! note
+    La trichromie n'est pas le seul modèle pouvant représenter la vision de la couleur. On peut aussi imaginer un modèle où la vision distingue les oppositions blanc-noir, bleu-jaune et rouge-vert par exemple[^4].
 
 Cette façon de percevoir les couleurs influence donc les choix de systèmes pour les reproduire artificiellement, comme on l'explique par la suite, notamment avec le ***gamma***, le système ***RVB*** ou ***YUV***.
 
@@ -64,4 +70,8 @@ Sources et références
 [^1]:
     Il y a plusieurs "qualités" de lumières blanches et apparemment identiques, suivant qu'elles sont composées d'une gamme plus ou moins variées de rayons de longueurs d'ondes (donc de teintes) différentes.
 [^2]:
-    Les couleurs *primaires* sont des couleurs spécifiques qui, une fois mélangées ensembles, neutralisent leurs teintes et forment du noir, gris ou blanc dans un système donné. En lumière, les couleurs primaires s'additionnent, deviennent plus lumineuses et vont vers le blanc. En peinture, les couleurs se soustraient, deviennent moins lumineuses et tendent vers le noir.
+    Il y a une confusion de vocabulaire, notamment dans la production audiovisuelle, entre couleur *primaire* (qui ne peut pas être obtenue par mélange d'autres couleurs), et couleurs *complémentaires* (dont le mélange donne du noir, gris ou blanc). Nous utilisons ici le mot *primaire* au sens des espaces de couleurs numériques : dont le mélange donne le blanc.
+[^3]:
+    En lumière, les couleurs primaires s'additionnent, deviennent plus lumineuses et vont vers le blanc. En peinture, les couleurs se soustraient, deviennent moins lumineuses et tendent vers le noir.
+[^4]:
+    [Ewald Hering](https://fr.wikipedia.org/wiki/Ewald_Hering) s'est opposé vigoureusement à la trichromie. Fondé sur l'étude psychologique de la perception, son modèle, dont [Erwin Schrödinger](https://fr.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger) a montré l'équivalence mathématique avec la trichromie, a été depuis confirmé par des études en neurosciences. 

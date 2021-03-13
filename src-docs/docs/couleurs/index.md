@@ -18,7 +18,8 @@ Par souci de vulgarisation, nous nous permettrons plusieurs raccourcis et approx
     - Conséquences
         - Sur la luminosité et le contraste
         - Sur les teintes
-- Le CIE (1931) et son diagramme
+- C - [Représentation objective des couleurs](03-representation.md)
+    - Le CIE (1931) et son diagramme
 - Le passage du réel au numérique
 - Qu’est ce qu’un espace colorimétrique ?
 - Pourquoi utiliser différents espaces colorimétriques ?
@@ -32,8 +33,7 @@ Par souci de vulgarisation, nous nous permettrons plusieurs raccourcis et approx
 - Color management : Blender
 - OCIO, ACES
 
-*WIP*
-
+À l'origine de ce document, cette vidéo enregistrée en direct avec [Motion Café](https://www.motion-cafe.com/) et [Nicolas Dufresne](http://duduf.com) : 
 
 ![YOUTUBE](m-lrOc2Fmck)
 
