@@ -2,6 +2,8 @@
 
 Étant entendu que la perception des couleurs est éminemment subjective, tout travail en commun nécessite la mise en place d'un référenciel objectif partagé par tous (et donc une certaine standardisation des techniques, ce qui n'est pas toujours évident...).
 
+[TOC]
+
 Ce travail de rationnalisation n'est pas né avec l'image numérique ; depuis 1913 la [Commission Internationale de l'Éclairage](https://fr.wikipedia.org/wiki/Commission_internationale_de_l%27%C3%A9clairage) (*CIE*) travaille sur le problème.
 
 Les espaces colorimétriques modernes[^1] qu'on utilise en traitement de l'image sont des propositions de solutions à cette rationnalisation, de standardisation de représentation des couleurs, et se basent sur le travail et les premières tentatives de la CIE.

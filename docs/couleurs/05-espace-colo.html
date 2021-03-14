@@ -83,7 +83,9 @@
         
             <li><a class="toctree-l4" href="#e1-ce-qui-definit-un-espace-colorimetrique">E.1 - Ce qui définit un espace colorimétrique</a></li>
         
-            <li><a class="toctree-l4" href="#e2-pourquoi-differents-espaces-colorimetriques">E.2 - Pourquoi différents espaces colorimétriques ?</a></li>
+            <li><a class="toctree-l4" href="#e2-autres-parametres">E.2 - Autres paramètres</a></li>
+        
+            <li><a class="toctree-l4" href="#e3-pourquoi-differents-espaces-colorimetriques">E.3 - Pourquoi différents espaces colorimétriques ?</a></li>
         
         </ul>
     
@@ -158,6 +160,24 @@
               
                 <h1 id="e-quest-ce-quun-espace-colorimetrique">E - Qu&rsquo;est ce qu&rsquo;un espace colorimétrique ?<a class="headerlink" href="#e-quest-ce-quun-espace-colorimetrique" title="Permanent link">&para;</a></h1>
 <p>Un espace colorimétrique définit <strong>un sous-ensemble de couleurs</strong> (un volume dans un diagramme de couleurs 3D, ou une surface sur une projection 2D comme le <em>CIE xy</em>) tirées du spectre visible (voire aussi en dehors du spectre visible)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<div class="toc">
+<ul>
+<li><a href="#e-quest-ce-quun-espace-colorimetrique">E - Qu&rsquo;est ce qu&rsquo;un espace colorimétrique ?</a><ul>
+<li><a href="#e1-ce-qui-definit-un-espace-colorimetrique">E.1 - Ce qui définit un espace colorimétrique</a><ul>
+<li><a href="#e1a-les-primaires">E.1.a - Les primaires</a></li>
+<li><a href="#e1b-le-point-blanc">E.1.b - Le point blanc</a></li>
+<li><a href="#e1c-la-courbe-de-transfert">E.1.c - La courbe de transfert</a></li>
+</ul>
+</li>
+<li><a href="#e2-autres-parametres">E.2 - Autres paramètres</a><ul>
+<li><a href="#e2a-profondeur">E.2.a - Profondeur</a></li>
+</ul>
+</li>
+<li><a href="#e3-pourquoi-differents-espaces-colorimetriques">E.3 - Pourquoi différents espaces colorimétriques ?</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p><em><img alt="Image: Schéma du CIE avec quelques sous ensembles" src="" /></em></p>
 <h2 id="e1-ce-qui-definit-un-espace-colorimetrique">E.1 - Ce qui définit un espace colorimétrique<a class="headerlink" href="#e1-ce-qui-definit-un-espace-colorimetrique" title="Permanent link">&para;</a></h2>
 <p>L&rsquo;ensemble des couleurs pouvant être représentées par un espace colorimétrique dépend d&rsquo;un paramètre principal : <strong>Les couleurs primaires</strong> de l&rsquo;espace colorimétriques.</p>
@@ -232,15 +252,21 @@
 <p class="admonition-title">Note</p>
 <p>Le point blanc est parfois lui même, par simplification, considéré comme une primaire (dans le sens où il est aussi simplement une couleur précise, une coordonnées dans le <em>CIE XYZ</em>). Dans ce cas les <em>primaires</em> de l&rsquo;espace sont au minimum au nombre de 4 et l&rsquo;espace n&rsquo;est plus défini que par deux paramètres.</p>
 </div>
+<p>L&rsquo;espace colorimétrique associe normalement aussi au point blanc son intensité maximum, sa luminance, le plus souvent mesuré en <em>cd/m²</em>.</p>
 <h3 id="e1c-la-courbe-de-transfert">E.1.c - La courbe de transfert<a class="headerlink" href="#e1c-la-courbe-de-transfert" title="Permanent link">&para;</a></h3>
 <p>Les couleurs dans un espace colorimétriques sont données par l&rsquo;intensité de chaque primaire, représentée par une valeur variant de <code>0.0</code> à <code>1.0</code>.</p>
 <p>La valeur <code>0.0</code> représente une intensité nulle (l&rsquo;absence de lumière, un noir parfait) et la valeur <code>1.0</code> représente la couleur donnée par la coordonnée de la primaire dans le <em>CIE XYZ</em>.</p>
 <p>La question se pose de savoir comment les valeurs intermédiaires sont transcrites en couleurs réelles (ou en coordonnées dans le <em>CIE XYZ</em>). Cette transcription est faite par la <strong>courbe de transfert</strong>. C&rsquo;est une &ldquo;simple&rdquo; fonction mathématique qui, pour une valeur donnée dans l&rsquo;espace colorimétrique, donne la coordonnée <em>Z</em> correspondante dans le <em>CIE XYZ</em>.</p>
 <p><em><img alt="Image: Courbe de transfert du sRGB vs linéaire" src="" /></em></p>
 <p>L&rsquo;espace est dit <em>linéaire</em> quand cette courbe est une simple fonction affine, c&rsquo;est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle.</p>
-<p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine ; les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes.</p>
+<p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un <em>gamma 2,4</em>); les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes.</p>
 <p>Voir la section intitulée <a href="XX-transfert.html">Courbes de transfert, espace linéaire et gamma</a> pour plus de détails.</p>
-<h2 id="e2-pourquoi-differents-espaces-colorimetriques">E.2 - Pourquoi différents espaces colorimétriques ?<a class="headerlink" href="#e2-pourquoi-differents-espaces-colorimetriques" title="Permanent link">&para;</a></h2>
+<h2 id="e2-autres-parametres">E.2 - Autres paramètres<a class="headerlink" href="#e2-autres-parametres" title="Permanent link">&para;</a></h2>
+<p>Les espaces colorimétriques peuvent aussi imposer ou préconiser d&rsquo;autres paramètres, surtout sur la manière d&rsquo;encoder/stocker les couleurs, en fonction de leurs usages prévus.</p>
+<h3 id="e2a-profondeur">E.2.a - Profondeur<a class="headerlink" href="#e2a-profondeur" title="Permanent link">&para;</a></h3>
+<p>Les espaces peuvent préconiser un nombre de bits précis à utiliser pour encoder chaque couleur. Par exemple le <em>sRGB</em> préconise un minimum de 8 bits, et le <em>Rec. 2020</em> impose 10 ou 12 bits.</p>
+<p>Voir la section <a href="XX-bpc.html">Profondeur (bpc)</a> pour plus de détails.</p>
+<h2 id="e3-pourquoi-differents-espaces-colorimetriques">E.3 - Pourquoi différents espaces colorimétriques ?<a class="headerlink" href="#e3-pourquoi-differents-espaces-colorimetriques" title="Permanent link">&para;</a></h2>
 <p>Les espaces colorimétriques sont (très) nombreux. Il en existe en fait autant que d&rsquo;usages différents des couleurs, sans compter que les constructeurs de matériels, et concepteurs de logiciels, ajoutent parfois leurs propres espaces à la liste déjà longue. Les usages sont relativement peu standardisés.</p>
 <p>Ainsi, certains espaces sont liés à des matériels de captation précis : une caméra peut enregistrer les données qu&rsquo;elle capte dans un espace qui lui est propre, et correspond aux capacités de son capteur, ou à l&rsquo;usage qui sera fait des images (en proposant par exemple une large gamme de couleurs qui facilite la post-production).</p>
 <p>D&rsquo;autres espaces sont liés aux matériels de reproduction (écrans, projecteurs, imprimantes&hellip;) et représentent les couleurs que le matériel est capable de reproduire.</p>
@@ -248,12 +274,21 @@
 <p>Il faut donc bien garder à l&rsquo;esprit que plusieurs espaces colorimétriques entrent en jeu lors du travail sur une image :</p>
 <ul>
 <li>L&rsquo;espace colorimétrique des médias importés et utilisés.</li>
-<li>L&rsquo;espace colorimétrique de l&rsquo;affichage utilisé au moment du travail.</li>
-<li>L&rsquo;espace colorimétrique utilisé pour faire les calculs sur l&rsquo;image, par l&rsquo;ordinateur (on dit &ldquo;<em>scene referred</em>&rdquo;).</li>
+<li>L&rsquo;espace colorimétrique de l&rsquo;affichage utilisé pour l&rsquo;affichage.</li>
+<li>L&rsquo;espace colorimétrique de travail, utilisé pour faire les calculs sur l&rsquo;image, par l&rsquo;ordinateur.</li>
 <li>L&rsquo;espace colorimétrique utilisé pour enregistrer et stocker les données en sortie (et plus tard sur l&rsquo;affichage de destination du média).</li>
+</ul>
+<p>On classe ces espaces en deux catégories :</p>
+<ul>
+<li><strong><em>Display-referred</em></strong>: Espaces utilisés pour l&rsquo;affichage.</li>
+<li><strong><em>Scene-referred</em></strong>: Espaces utilisés pour le calcul.</li>
 </ul>
 <p><em><img alt="Image: Schéma articulant les différents espaces" src="" /></em></p>
 <p>Tous ces espaces ne sont pas nécessairement les mêmes (et sont rarement les mêmes en réalité), chacun ayant un usage et correspondant à des besoins spécifiques ; un certain nombre de conversions entrent alors en jeu pour passer d&rsquo;un espace à l&rsquo;autre. C&rsquo;est là que la possibilité de convertir les informations depuis et vers un espace de référence (le <em>CIE XYZ</em>) permet de travailler de manière sûre avec plusieurs espaces, chaque espace définissant ses <strong><em>primaires</em></strong>, <strong><em>point blanc</em></strong> et <strong><em>courbe de transfert</em></strong> par rapport au même espace de référence.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>C&rsquo;est une erreur courante de croire qu&rsquo;il faut travailler dans l&rsquo;espace utilisé pour la sortie (<em>output-referred</em>) alors que les espaces <em>output-referred</em> ont justement été prévus pour l&rsquo;affichage, pas les calculs. Les espaces <em>scene-referred</em> sont prévus pour le travail.</p>
+</div>
 <hr />
 <p>Sources et références</p>
 <ul>

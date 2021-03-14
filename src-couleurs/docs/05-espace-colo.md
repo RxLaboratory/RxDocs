@@ -2,6 +2,8 @@
 
 Un espace colorimétrique définit **un sous-ensemble de couleurs** (un volume dans un diagramme de couleurs 3D, ou une surface sur une projection 2D comme le *CIE xy*) tirées du spectre visible (voire aussi en dehors du spectre visible)[^1].
 
+[TOC]
+
 *![Image: Schéma du CIE avec quelques sous ensembles]()*
 
 ## E.1 - Ce qui définit un espace colorimétrique
@@ -65,6 +67,8 @@ L'illuminant *D65* est celui le plus couramment utilisé comme point blanc dans 
 !!! note
     Le point blanc est parfois lui même, par simplification, considéré comme une primaire (dans le sens où il est aussi simplement une couleur précise, une coordonnées dans le *CIE XYZ*). Dans ce cas les *primaires* de l'espace sont au minimum au nombre de 4 et l'espace n'est plus défini que par deux paramètres.
 
+L'espace colorimétrique associe normalement aussi au point blanc son intensité maximum, sa luminance, le plus souvent mesuré en *cd/m²*.
+
 ### E.1.c - La courbe de transfert
 
 Les couleurs dans un espace colorimétriques sont données par l'intensité de chaque primaire, représentée par une valeur variant de `0.0` à `1.0`.
@@ -77,11 +81,21 @@ La question se pose de savoir comment les valeurs intermédiaires sont transcrit
 
 L'espace est dit *linéaire* quand cette courbe est une simple fonction affine, c'est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle.
 
-D'autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine ; les plus "simples" de ces courbes sont ce qu'on appelle les courbes *gamma*. Cela étant dit, la plupart des espaces n'utilisent pas de simples *gamma* mais des courbes plus complexes.
+D'autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un *gamma 2,4*); les plus "simples" de ces courbes sont ce qu'on appelle les courbes *gamma*. Cela étant dit, la plupart des espaces n'utilisent pas de simples *gamma* mais des courbes plus complexes.
 
 Voir la section intitulée [Courbes de transfert, espace linéaire et gamma](XX-transfert.md) pour plus de détails.
 
-## E.2 - Pourquoi différents espaces colorimétriques ?
+## E.2 - Autres paramètres
+
+Les espaces colorimétriques peuvent aussi imposer ou préconiser d'autres paramètres, surtout sur la manière d'encoder/stocker les couleurs, en fonction de leurs usages prévus.
+
+### E.2.a - Profondeur
+
+Les espaces peuvent préconiser un nombre de bits précis à utiliser pour encoder chaque couleur. Par exemple le *sRGB* préconise un minimum de 8 bits, et le *Rec. 2020* impose 10 ou 12 bits.
+
+Voir la section [Profondeur (bpc)](XX-bpc.md) pour plus de détails.
+
+## E.3 - Pourquoi différents espaces colorimétriques ?
 
 Les espaces colorimétriques sont (très) nombreux. Il en existe en fait autant que d'usages différents des couleurs, sans compter que les constructeurs de matériels, et concepteurs de logiciels, ajoutent parfois leurs propres espaces à la liste déjà longue. Les usages sont relativement peu standardisés.
 
@@ -94,13 +108,21 @@ Enfin, plus récemment, des espaces ont été créés spécifiquement pour le tr
 Il faut donc bien garder à l'esprit que plusieurs espaces colorimétriques entrent en jeu lors du travail sur une image :
 
 - L'espace colorimétrique des médias importés et utilisés.
-- L'espace colorimétrique de l'affichage utilisé au moment du travail.
-- L'espace colorimétrique utilisé pour faire les calculs sur l'image, par l'ordinateur (on dit "*scene referred*").
+- L'espace colorimétrique de l'affichage utilisé pour l'affichage.
+- L'espace colorimétrique de travail, utilisé pour faire les calculs sur l'image, par l'ordinateur.
 - L'espace colorimétrique utilisé pour enregistrer et stocker les données en sortie (et plus tard sur l'affichage de destination du média).
+
+On classe ces espaces en deux catégories :
+
+- ***Display-referred***: Espaces utilisés pour l'affichage.
+- ***Scene-referred***: Espaces utilisés pour le calcul.
 
 *![Image: Schéma articulant les différents espaces]()*
 
 Tous ces espaces ne sont pas nécessairement les mêmes (et sont rarement les mêmes en réalité), chacun ayant un usage et correspondant à des besoins spécifiques ; un certain nombre de conversions entrent alors en jeu pour passer d'un espace à l'autre. C'est là que la possibilité de convertir les informations depuis et vers un espace de référence (le *CIE XYZ*) permet de travailler de manière sûre avec plusieurs espaces, chaque espace définissant ses ***primaires***, ***point blanc*** et ***courbe de transfert*** par rapport au même espace de référence.
+
+!!! warning
+    C'est une erreur courante de croire qu'il faut travailler dans l'espace utilisé pour la sortie (*output-referred*) alors que les espaces *output-referred* ont justement été prévus pour l'affichage, pas les calculs. Les espaces *scene-referred* sont prévus pour le travail.
 
 ----
 Sources et références

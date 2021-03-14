@@ -47,7 +47,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 - Le blanc
 - Le gamma
 - Calibration des écrans et leurs espaces colorimétriques
-- 8, 16, 32 bits par couche, pourquoi ?
+- X - [Profondeur (bpc)](XX-bpc.md)
 - X - [Courbes de transfert, espace linéaire et gamma](XX-transfert.md)
 - RGB vs YUV, 444, 422, 420, c’est quoi ça ?
 - Full range / Limited / TV / PC

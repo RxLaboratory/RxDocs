@@ -2,6 +2,8 @@
 
 Ayant maintenant un moyen de représenter objectivement les couleurs que nous voyons, de les localiser sur un diagramme de référence, nous pouvons nous poser la question de la manière à la fois de numériser, de stocker, puis de restituer ces couleurs via un système binaire.
 
+[TOC]
+
 ## D.1 - Numérisation et stockage : passer en binaire
 
 Toute la difficulté est de représenter un monde analogique et *continu*[^1] dans un système fondamentalement *discontinu* et numérique, avec des [*valeurs discrètes*](https://fr.wikipedia.org/wiki/Math%C3%A9matiques_discr%C3%A8tes).
