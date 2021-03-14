@@ -2,82 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://docs.rainboxlab.org/index.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <lastmod>2021-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/guides.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <lastmod>2021-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/exr/index.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/exr/summary.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/exr/luma-chroma.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/exr/formats-you-know.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/exr/usage.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/exr/details.html</loc>
-     <lastmod>2021-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/exr/sequences.html</loc>
-     <lastmod>2021-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/colors/index.html</loc>
-     <lastmod>2021-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/freesoftware/index.html</loc>
-     <lastmod>2021-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/green/index.html</loc>
-     <lastmod>2021-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/green/intermediary.html</loc>
-     <lastmod>2021-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/green/grading.html</loc>
-     <lastmod>2021-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/green/final.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/contribute.html</loc>
-     <lastmod>2021-03-07</lastmod>
+     <lastmod>2021-03-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
