@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Du réel au numérique - RxDocs - Gestion des couleurs</title>
+  <title>D - Du réel au numérique - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Du r\u00e9el au num\u00e9rique";
+    var mkdocs_page_name = "D - Du r\u00e9el au num\u00e9rique";
     var mkdocs_page_input_path = "04-numerisation.md";
     var mkdocs_page_url = "/couleurs/04-numerisation.html";
   </script>
@@ -58,31 +58,41 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="01-definition.html">Définition</a>
+    <a class="" href="01-definition.html">A - Définition</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="02-perception.html">Perception des couleurs</a>
+    <a class="" href="02-perception.html">B - Perception des couleurs</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="03-representation.html">Représentation objective</a>
+    <a class="" href="03-representation.html">C - Représentation objective</a>
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="04-numerisation.html">Du réel au numérique</a>
+    <a class="current" href="04-numerisation.html">D - Du réel au numérique</a>
     <ul class="subnav">
             
     <li class="toctree-l3"><a href="#d-du-reel-au-numerique">D - Du réel au numérique</a></li>
     
         <ul>
         
-            <li><a class="toctree-l4" href="#numerisation-et-stockage-passer-en-binaire">Numérisation et stockage : passer en binaire</a></li>
+            <li><a class="toctree-l4" href="#d1-numerisation-et-stockage-passer-en-binaire">D.1 - Numérisation et stockage : passer en binaire</a></li>
+        
+            <li><a class="toctree-l4" href="#d2-les-espaces-colorimetriques">D.2 - Les Espaces colorimétriques</a></li>
         
         </ul>
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="05-espace-colo.html">E - Qu'est ce qu'un espace colo ?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="06-liste-espaces.html">F - Liste d'espaces colorimétriques</a>
                 </li>
     </ul>
 	    </li>
@@ -133,7 +143,7 @@
         
       
     
-    <li>Du réel au numérique</li>
+    <li>D - Du réel au numérique</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/04-numerisation.md"
@@ -148,26 +158,31 @@
               
                 <h1 id="d-du-reel-au-numerique">D - Du réel au numérique<a class="headerlink" href="#d-du-reel-au-numerique" title="Permanent link">&para;</a></h1>
 <p>Ayant maintenant un moyen de représenter objectivement les couleurs que nous voyons, de les localiser sur un diagramme de référence, nous pouvons nous poser la question de la manière à la fois de numériser, de stocker, puis de restituer ces couleurs via un système binaire.</p>
-<h2 id="numerisation-et-stockage-passer-en-binaire">Numérisation et stockage : passer en binaire<a class="headerlink" href="#numerisation-et-stockage-passer-en-binaire" title="Permanent link">&para;</a></h2>
+<h2 id="d1-numerisation-et-stockage-passer-en-binaire">D.1 - Numérisation et stockage : passer en binaire<a class="headerlink" href="#d1-numerisation-et-stockage-passer-en-binaire" title="Permanent link">&para;</a></h2>
 <p>Toute la difficulté est de représenter un monde analogique et <em>continu</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dans un système fondamentalement <em>discontinu</em> et numérique, avec des <a href="https://fr.wikipedia.org/wiki/Math%C3%A9matiques_discr%C3%A8tes"><em>valeurs discrètes</em></a>.</p>
-<p>En numérique binaire, toute valeur, qu&rsquo;elle soit un nombre ou une couleur, doit être stockée en une suite de zéros et de uns, ce qu&rsquo;on appelle des <strong><em>bits</em></strong>. Il est donc impossible de représenter l&rsquo;ensemble des nombres réels en numérique, et nous devons <em>quantifier</em>, découper l&rsquo;infinité de couleurs que nous pouvons voir en un <strong>nombre fini</strong> de valeurs. C&rsquo;est <em>l&rsquo;échantillonnage</em> (<em>sampling</em> en anglais).</p>
+<p><img alt="" src="img/sampling.png" /></p>
+<p>En numérique binaire, toute valeur, qu&rsquo;elle soit un nombre ou une couleur, doit être stockée en une suite de zéros et de uns, ce qu&rsquo;on appelle des <strong><em>bits</em></strong><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Il est donc impossible de représenter l&rsquo;ensemble des nombres réels en numérique, et nous devons <em>quantifier</em>, découper l&rsquo;infinité de couleurs que nous pouvons voir en un <strong>nombre fini</strong> de valeurs numériques. C&rsquo;est <em>l&rsquo;échantillonnage</em> (<em>sampling</em> en anglais).</p>
 <p>Plus nous découpons ces valeurs en petits quanta, en petits échantillons, en petites briques, plus nous gagnons en précision et plus nous pouvons approcher une représentation fidèle du réel ; mais se pose alors la question du stockage et de la place nécessaire.</p>
 <p>Faisons un calcul simple : prenons une image numérique divisée en une &ldquo;grille&rdquo; de 1920 pixels en largeur et 1080 pixels en hauteur, la résolution d&rsquo;une vidéo numérique standard (en 2020). Cette image contient donc <code>1920 x 1080 = 2 073 600 pixels</code>.</p>
-<p>Dans sa forme la plus courante, un pixel est représenté par trois valeurs d&rsquo;intensité pour trois couleurs primaires. Chacune de ces trois valeurs est généralement stocké dans <em>au minimum</em> 8 bits. Chaque pixel a donc besoin de <code>3 x 8 = 24 bits</code> ou encore <code>3 octets</code> pour être stocké (un octet étant formé de 8 bits).</p>
-<p>Notre image a donc besoin de <code>2 073 600 pixels x 3 octets = 6 220 800 octets</code> pour être stockée. 6 Mo pour une seule image, ce qui signifie <em>au minimum</em> <code>6 x 24 = 144 Mo</code> pour une seconde de vidéo, ou encore <code>144 x 60 = 8 640 Mo</code> pour une minute, plus de <strong>8 Go</strong><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> !</p>
-<div class="codehilite"><pre><span></span>1920 px x 1080 px x 3 couches x 8 bits x 24 ips x 60 s ≈ 64 Gbps ≈ 8 Go/s
+<p>Dans sa forme la plus courante, un pixel est représenté par trois valeurs d&rsquo;intensité pour trois couleurs primaires. Chacune de ces trois valeurs est généralement stockée dans <em>au minimum</em> 8 bits. Chaque pixel a donc besoin de <code>3 x 8 = 24 bits</code> ou encore <code>3 octets</code> pour être stocké (un octet étant formé de 8 bits). Notons que ce choix d&rsquo;utiliser un octet (8bits) par couleur primaire permet &ldquo;seulement&rdquo; 256 valeurs par primaire (<code>2^8</code>) soit un total d&rsquo;environ 65 millions (<code>256^3</code>) de nuances de couleurs différentes. Cela peut sembler beaucoup, mais c&rsquo;est encore loin des nuances que perçoit l&rsquo;œil humain.</p>
+<p>Notre image a donc besoin de <code>2 073 600 pixels x 3 octets = 6 220 800 octets</code> pour être stockée. 6 Mo pour une seule image, ce qui signifie <em>au minimum</em> <code>6 x 24 = 144 Mo</code> pour une seconde de vidéo, ou encore <code>144 x 60 = 8 640 Mo</code> pour une minute, plus de <strong>8 Go</strong><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> !</p>
+<div class="codehilite"><pre><span></span>1920 px x 1080 px x 3 primaires x 8 bits x 24 ips x 60 s ≈ 64 Gbps ≈ 8 Go/s
 </pre></div>
 
 
 <p>Cette taille représente un débit de données de 64 Gbps.À titre d&rsquo;exemple, un film sur un disque Blu-Ray est encodé avec un débit de 24 Gbps environ, ce qui signifie qu&rsquo;il faut diviser cette taille par au moins 2,6&hellip;</p>
+<h2 id="d2-les-espaces-colorimetriques">D.2 - Les Espaces colorimétriques<a class="headerlink" href="#d2-les-espaces-colorimetriques" title="Permanent link">&para;</a></h2>
 <p>Il faut donc trouver des méthodes permettant de réduire la place occupée par toute cette information ; c&rsquo;est là qu&rsquo;entrent en jeu les différents choix d&rsquo;espaces colorimétriques et méthodes de <em>compression</em> et d&rsquo;<em>échantillonage</em> des données associés.</p>
 <p>Ce problème est d&rsquo;ailleurs apparu bien avant l&rsquo;avènement du numérique : les flux de données analogiques, via des signaux électriques, ont eux aussi une capacité de transfert (une bande passante) limitée, et même bien plus limitée que la transmission d&rsquo;information numérique utilisant les mêmes câbles de cuivre, ce qui explique les limitations de format imposées aux premières heures de la vidéo, sans compter les problématiques de stockage.</p>
+<p>La manière de stocker les informations lumineuses échantillonnées (numérisées) varie donc en fonction du matériel utilisé pour la captation (la caméra) ou la génération (en synthèse), ainsi que de l&rsquo;usage que l&rsquo;on compte en faire, et influence la quantité de données à stocker.</p>
+<p><strong>Le choix de la façon de stocker les données va aussi définir quelles données seront perdues</strong>, puisqu&rsquo;il est impossible de rester fidèle au réel, ou encore <strong>quels types de lumières et de données seront privilégiées</strong> (l&rsquo;intensité ou la teinte, la pénombre ou les hautes lumières&hellip;).</p>
+<p>Le système de stockage des données de lumière est ce que l&rsquo;on appelle l&rsquo;<strong>espace colorimétrique</strong>.</p>
 <hr />
 <p>Sources et références</p>
 <ul>
 <li><a href="https://fr.wikipedia.org/wiki/Math%C3%A9matiques_discr%C3%A8tes">Mathématiques discrètes sur <em>Wikipedia</em></a></li>
 </ul>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13" /></p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14" /></p>
 <div class="footnote">
 <hr />
 <ol>
@@ -175,7 +190,10 @@
 <p>Avec l&rsquo;avènement de la <a href="https://fr.wikipedia.org/wiki/Physique_quantique">physique quantique</a>, nous savons aujourd&rsquo;hui que le monde est en réalité lui aussi discontinu et divisé en quanta d&rsquo;énergie et de matière ; simplement ces valeurs discrètes sont tellement petites qu&rsquo;elles seront toujours imperceptibles. C&rsquo;est argument est parfois utilisé pour tenter de démontrer que nous vivons en réalité dans une simulation numérique (d&rsquo;une extrême précision), mais c&rsquo;est un autre sujet&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>Ce qui représente 25% de la capacité d&rsquo;un <em>Blu-Ray</em> standard&hellip;&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>Et 8 bits représentent 1 octet, unité plus couramment utilisée en stockage.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Ce qui représente 25% de la capacité d&rsquo;un <em>Blu-Ray</em> standard&hellip;&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -186,8 +204,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="05-espace-colo.html" class="btn btn-neutral float-right" title="E - Qu'est ce qu'un espace colo ?">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="03-representation.html" class="btn btn-neutral" title="Représentation objective"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="03-representation.html" class="btn btn-neutral" title="C - Représentation objective"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -219,6 +239,8 @@
       
         <span><a href="03-representation.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="05-espace-colo.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

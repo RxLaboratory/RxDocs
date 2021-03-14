@@ -10,7 +10,7 @@ Il est intéressant de savoir que la CIE a mené ses travaux de manière empiriq
 
 C'est en 1931 que la CIE a proposé une première représentation et rationnalisation des couleurs : le diagramme *CIE-1931*, encore très utilisé aujourd'hui comme référentiel objectif, notamment pour comparer les différents espaces colorimétriques en usage.
 
-## Décomposer les couleurs
+## C.1 - Décomposer les couleurs
 
 On l'a sous-entendu jusqu'ici, une couleur telle qu'on la perçoit est physiquement définie par trois paramètres indépendants : son *intensité*, sa *longueur d'onde dominante* et sa *pureté d'excitation*.
 
@@ -22,7 +22,7 @@ On l'a sous-entendu jusqu'ici, une couleur telle qu'on la perçoit est physiquem
 
 Cette décomposition étant parfaitement objective (liée à la réalité physique de la lumière), elle est une bonne base pour fabriquer une représentation objective des couleurs ; c'est ce qu'a fait la CIE dès 1931.
 
-## Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ
+## C.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ
 
 Avec ces trois paramètres, on peut donc représenter les couleurs en trois dimensions.
 
@@ -51,13 +51,13 @@ La ligne droite inférieure représente les mélanges des deux extrèmes du spec
 
 Ce diagramme contenant toutes les couleurs visibles **sert toujours de référence** dans lequel **on peut y inscrire les autres espaces colorimétriques**, forcément "plus petits" car ne représentant qu'une sous-partie de toutes ces couleurs, comme nous allons le voir par la suite.
 
-## Autres espaces de la CIE
+## C.3 - Autres espaces de la CIE
 
 Depuis l'établissement de ces premiers espaces colorimétriques et jusqu'à aujourd'hui, la CIE a continué ces travaux, améliorant l'espace *xyZ* et créant d'autres espaces plus spécifiques et pour des usages particulier.
 
 En 1976 notamment, deux autres espaces ont été publiés : le ***CIE L\*u\*v\**** (pour la lumière) et le ***CIE L\*a\*b\**** (pour les couleurs de surface, plus connu sous la forme *CIE LAB*). Ces deux espaces améliorent et compensent un "défaut" du *xyZ*[^2] : les coordonnées n'y sont plus *linéaires* afin de mieux s'accorder à la vision humaine. En effet, dans l'espace *xyZ*, deux couleurs situées "à la même distance" peuvent dans certaines zones paraîtrent plus semblables que dans d'autres zones. Les *L\*a\*b\** et *L\*u\*v\** corrigent ce "défaut" au prix d'une plus grande complexité des calculs.
 
-Mais c'est toujours le *XYZ* ou *xyZ* de 1931 qu'on utilise aujourd'hui en référence.
+Mais c'est toujours le *XYZ* ou *xyZ* de 1931 qui sert de référence pour travailler avec et comparer tous les autres espaces colorimétriques.
 
 ----
 Sources et références
@@ -69,7 +69,7 @@ Sources et références
 - [L\*u\*v\* CIE sur *Wikipedia*](https://fr.wikipedia.org/wiki/L*u*v*_CIE_1976)
 - [Colour representation, *Kent State University*](http://www.cs.kent.edu/~farrell/cg00/lectures/color/colour.html)
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
 
 [^1]:
     Les espaces colorimétriques sont les manières standardisées d'enregistrer et de représenter les couleurs (analogiques aussi bien que numériques).  

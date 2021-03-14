@@ -30,10 +30,12 @@ dev_addr: '127.0.0.1:8001'
 nav:
     - Gestion des couleurs:
         - Introduction: index.md
-        - Définition: 01-definition.md
-        - Perception des couleurs: 02-perception.md
-        - Représentation objective: 03-representation.md
-        - Du réel au numérique: 04-numerisation.md
+        - A - Définition: 01-definition.md
+        - B - Perception des couleurs: 02-perception.md
+        - C - Représentation objective: 03-representation.md
+        - D - Du réel au numérique: 04-numerisation.md
+        - E - Qu'est ce qu'un espace colo ?: 05-espace-colo.md
+        - F - Liste d'espaces colorimétriques: 06-liste-espaces.md
     - Tous les documents RxLab: http://docs.rainboxlab.org
     - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html
     - Contact: https://rainboxlab.org/about/contact/

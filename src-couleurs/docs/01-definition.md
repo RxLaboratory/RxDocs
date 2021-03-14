@@ -6,7 +6,7 @@ On entendra donc par *couleur* l'intégralité de la gamme de lumière que l'oei
 
 [TOC]
 
-## La couleur physique : la lumière visible
+## A.1 - La couleur physique : la lumière visible
 
 Ce que l'on appelle la *couleur* est donc la perception par l'être humain de la *lumière visible*, la lumière visible n'étant en réalité qu'une petite partie du [spectre électro-magnétique](https://fr.wikipedia.org/wiki/Spectre_%C3%A9lectromagn%C3%A9tique).
 
@@ -29,4 +29,4 @@ Sources et références
 - [Spectre électro-magnétique sur *Wikipedia*](https://fr.wikipedia.org/wiki/Spectre_%C3%A9lectromagn%C3%A9tique)
 - [Raies de Fraunhofer sur *Wikipedia*](https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer)
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)

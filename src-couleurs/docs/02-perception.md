@@ -9,7 +9,7 @@ Au problème d'avoir une référence objective pour définir les couleurs s'ajou
 
 Comprendre cette interprétation subjective des couleurs est important pour comprendre comment la gestion des couleurs dans le traitement des images numériques a été conçu et comment elle évolue.
 
-## L'œil
+## B.1 -  L'œil
 
 Dès la réception des rayons lumineux par l'œil et la rétine, la lumière est décomposée et interprétée. Deux types de photorécepteurs composent la rétine, les cônes et bâtonnets.
 
@@ -19,7 +19,7 @@ Les cônes sont les cellules efficaces dans la réception des lumières plus int
 
 ![](img/retina-absorption.svg)
 
-## Le système nerveux
+## B.2 - Le système nerveux
 
 Les informations reçues par les cellules de la rétines sont traduites en influx nerveux et interprétées par le cerveau.
 
@@ -35,15 +35,15 @@ Le système nerveux est donc responsable d'une interprétation des couleurs qui 
 
 Toutes ces différentes étapes altèrent donc la perception d'un signal physique et objectif : un même rayon lumineux ne sera pas "*vu*" de la même manière dans deux endroits différents, et suivant la quantité et la nature des autres rayons qui l'accompagnent.
 
-## Conséquences
+## B.3 - Conséquences
 
 Les conséquences de cette perception subjective sont importante pour comprendre les choix historiques qui ont été fait sur les techniques permettant la reproduction artificielle et le traitement des images (analogiques puis numériques).
 
-### Sur la luminosité et le contraste
+### B.3.a - Sur la luminosité et le contraste
 
 La présence des bâtonnets sur la rétine et leurs performance dans les lumières plus faibles, au détriment de la perception des teintes dans ces lumières, fait que **l'oeil est globalement plus performant pour discerner les détails dans la pénombre** que dans les lumières fortes, et qu'il est en général **plus performant pour distinguer les contrastes d'intensité** lumineuses **que les variations de teinte** (la décomposition en longueurs d'ondes précises sur le spectre).
 
-### Sur les teintes
+### B.3.b - Sur les teintes
 
 La division en trois types de cônes performants chacun sur des longueurs d'ondes précises fait que **trois couleurs primaires**[^2] suffisent pour reproduire toutes les couleurs telles que l'être humain peut les percevoir, pour autant que ces primaires correspondent environ au domaine de performance de ces trois types de cônes[^3].
 
@@ -66,7 +66,7 @@ Sources et références
 - [Cône sur *Wikipedia*](https://fr.wikipedia.org/wiki/C%C3%B4ne_(photor%C3%A9cepteur))
 - [Colour representation, *Kent State University*](http://www.cs.kent.edu/~farrell/cg00/lectures/color/colour.html)
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
 
 [^1]:
     Il y a plusieurs "qualités" de lumières blanches et apparemment identiques, suivant qu'elles sont composées d'une gamme plus ou moins variées de rayons de longueurs d'ondes (donc de teintes) différentes.

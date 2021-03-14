@@ -37,7 +37,7 @@ nav:
         - The Green Guide to transccoding: green-guide/index.html
     - Guides RxDocs en français:
         - Méthodes de compression openEXR: exr-fr/index.html
-        - Le Guide de la gestion des couleurs: couleurs/index.html
+        - Le Guide technique de la gestion des couleurs: couleurs/index.html
     - Contribute to the doc: contribute.md
     - Contact: https://rainboxlab.org/about/contact/
     - Donate: https://rainboxlab.org/about/donate/
