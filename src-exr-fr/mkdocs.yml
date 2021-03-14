@@ -1,8 +1,8 @@
-site_name: RxDocs
-site_url: https://docs.rainboxlab.org
+site_name: RxDocs - Compression openEXR
+site_url: https://docs.rainboxlab.org/exr-fr
 repo_url: https://github.com/Rainbox-dev/RxDocs/
-edit_uri: edit/master/src-docs/docs/
-site_description: The RxDocuments - RxLab Documentation
+edit_uri: edit/master/src-docs/docs/exr-fr/
+site_description: The RxDocuments - Le Guide des méthodes de compression en openEXR
 site_author: Nicolas Dufresne and contributors
 copyright: 'Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors'
 use_directory_urls: false
@@ -25,20 +25,13 @@ extra_css:
 extra_javascript:
     - video.js
     - meta.js
-site_dir: ../docs/
+site_dir: ../docs/exr-fr
 dev_addr: '127.0.0.1:8001'
 nav:
-    - RxDocs: index.md
-    - Comprehensive guides to RxOpenTools: guides.md
-    - RxDocs Guides in English:
-        - openEXR compression methods: exr-en/index.html
-        - The Guide to Color Management: colors/index.html
-        - The 100% free pipeline: freesoftware/index.html
-        - The Green Guide to transccoding: green-guide/index.html
-    - Guides RxDocs en français:
-        - Méthodes de compression openEXR: exr-fr/index.html
-        - Le Guide de la gestion des couleurs: couleurs/index.html
-    - Contribute to the doc: contribute.md
+    - Méthodes de compression openEXR:
+        - Introduction: index.md
+    - Tous les documents RxLab: ../index.html
+    - Contribuer à l'écriture: ../contribute.html
     - Contact: https://rainboxlab.org/about/contact/
     - Donate: https://rainboxlab.org/about/donate/
 

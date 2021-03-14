@@ -11,13 +11,13 @@ This [is a collaborative work and you're welcome to contribute](contribute.md).
 These are documents which will help you learn and know more about specific topics. Some are available in English, others in French; you're welcome to help us translate them!
 
 - **In English**
-    - Understanding [***openEXR*** compression](exr/index.md) methods.
-    - Understanding [**Colors and Color Management**](colors/index.md) in the motion pictures industry.
-    - Working with [**free software: the 100% free pipeline**](freesoftware/index.md) used at Rainbox (and other possibilities).
-    - The [Green Guide to transccoding](green/index.md).
+    - Understanding [***openEXR*** compression](exr-en/index.html) methods.
+    - Understanding [**Colors and Color Management**](colors/index.html) in the motion pictures industry.
+    - Working with [**free software: the 100% free pipeline**](freesoftware/index.html) used at Rainbox (and other possibilities).
+    - The [Green Guide to transccoding](green-guide/index.html).
 - **En Français**
-    - Comprendre [les méthodes de compression en ***openEXR*** compression](exr-fr/index.md).
-    - Comprendre les [**Couleurs et Color Management**](couleurs/index.md) dans la production audiovisuelle.
+    - Comprendre [les méthodes de compression en ***openEXR*** compression](exr-fr/index.html).
+    - Comprendre les [**Couleurs et Color Management**](couleurs/index.html) dans la production audiovisuelle.
 
 ## Comprensive guides
 

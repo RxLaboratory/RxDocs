@@ -1,8 +1,8 @@
-site_name: RxDocs
-site_url: https://docs.rainboxlab.org
+site_name: RxDocs - openEXR compression
+site_url: https://docs.rainboxlab.org/exr-en
 repo_url: https://github.com/Rainbox-dev/RxDocs/
-edit_uri: edit/master/src-docs/docs/
-site_description: The RxDocuments - RxLab Documentation
+edit_uri: edit/master/src-docs/docs/exr-en/
+site_description: The RxDocuments - openEXR compression methods
 site_author: Nicolas Dufresne and contributors
 copyright: 'Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors'
 use_directory_urls: false
@@ -25,20 +25,19 @@ extra_css:
 extra_javascript:
     - video.js
     - meta.js
-site_dir: ../docs/
+site_dir: ../docs/exr-en
 dev_addr: '127.0.0.1:8001'
 nav:
-    - RxDocs: index.md
-    - Comprehensive guides to RxOpenTools: guides.md
-    - RxDocs Guides in English:
-        - openEXR compression methods: exr-en/index.html
-        - The Guide to Color Management: colors/index.html
-        - The 100% free pipeline: freesoftware/index.html
-        - The Green Guide to transccoding: green-guide/index.html
-    - Guides RxDocs en français:
-        - Méthodes de compression openEXR: exr-fr/index.html
-        - Le Guide de la gestion des couleurs: couleurs/index.html
-    - Contribute to the doc: contribute.md
+    - openEXR compression methods:
+        - Introduction: index.md
+        - Summary: summary.md
+        - Luminance/Chroma option: luma-chroma.md
+        - Formats you don’t know you already know: formats-you-know.md
+        - Summary by usage and type of image: usage.md
+        - Details: details.md
+        - A note about frame sequences: sequences.md
+    - All the RxLab documents: ../index.html
+    - Contribute to the doc: ../contribute.html
     - Contact: https://rainboxlab.org/about/contact/
     - Donate: https://rainboxlab.org/about/donate/
 
