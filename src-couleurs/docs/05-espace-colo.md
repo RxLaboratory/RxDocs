@@ -4,7 +4,7 @@ Un espace colorimétrique définit **un sous-ensemble de couleurs** (un volume d
 
 [TOC]
 
-*![Image: Schéma du CIE avec quelques sous ensembles]()*
+*![Image: Schéma du CIE avec quelques sous ensembles](img/spaces-comparison.png)*
 
 ## E.1 - Ce qui définit un espace colorimétrique
 
@@ -16,16 +16,17 @@ La manière de représenter ces couleurs dépend de deux autres paramètres qui 
 
 Le plus souvent au nombre de 3, les couleurs primaires sont les valeurs primordiales de l'espace colorimétrique ; elles peuvent être représentées par des coordonnées précises dans l'espace *CIE XYZ* (qui est une représentation de toutes les couleurs visibles sur trois axes). Elles sont dans la majorité des cas une nuance de *Rouge*, de *Vert* et de *Bleu*, et se rapprochent dans l'idéal le plus possible d'une couleur réelle monochromatique (la bordure extérieur du diagramme *CIE xy*).
 
-*![Image: Schéma du CIE avec les primaires du sRGB]()*
+*![Image: Schéma du CIE avec les primaires du sRGB](img/srgb-primaries.png)*
 
 Chaque espace définit donc ses couleurs primaires par au moins trois coordonnées dans l'espace *CIE XYZ*.
 
 Par exemple, voici les coordonnées du Rouge, Vert et Bleu de l'espace *sRGB* :
 
-|  | Rouge | Vert | Bleu |
+| | R | G | B |
 | --- | --- | --- | --- |
-| **x** | 0 | 0 | 0 |
-| **y** | 0 | 0 | 0 |
+| **X** | 0,64 | 0,30 | 0,15 |
+| **Y** | 0,33 | 0,60 | 0,06 |
+| **Z** | 0,03 | 0,1 | 0,79 |
 
 Cela signifie que pour deux espaces donnés, la valeur "Rouge" la plus intense n'est pas reproduite concrètement par la même nuance : certains espaces auront un rouge primaire plus ou moins intense ou saturé (ou moins proche des ondes monochromatiques), plus ou moins orangé, par exemple.
 
@@ -33,9 +34,9 @@ L'espace colorimétrique définit donc la manière dont la valeur la plus intens
 
 Autrement dit, chaque dispositif de reproduction doit être capable de contrôler précisément quels rayons lumineux, à quelles longueurs d'ondes, quelles couleurs physiques il est capable de produire ; suivant la plage de ces longueurs d'ondes, le dispositif est *compatible* avec différents espaces colorimétriques si il est capable de produire les longueurs d'ondes nécessaires à la reproduction des primaires de l'espace.
 
-Les coordonnées des primaires définissent les bornes d'un sous-espace englobant toutes les couleurs pouvant être représentées dans l'espace colorimétrique.
+Les coordonnées des primaires définissent les bornes d'un sous-espace englobant toutes les couleurs pouvant être représentées dans l'espace colorimétrique. Ce sous espace est plus ou moins grand (il permet de représenter plus ou moins de couleurs différentes) ; la taille de cet espace est ce qu'on appelle le ***gammut***.
 
-*![Image: Schéma du CIE avec le triangle du sRGB]()*
+*![Image: Schéma du CIE avec le triangle du sRGB](img/srgb-gammut.png)*
 
 ### E.1.b - Le point blanc
 
@@ -45,14 +46,14 @@ Il est donc nécessaire de définir dans l'espace colorimétrique la couleur qui
 
 Ce point blanc est lui aussi donné par ses coordonnées dans l'espace *CIE XYZ*.
 
-*![Image: Schéma du CIE avec le D65]()*
+*![Image: Schéma du CIE avec le D65](img/d65.png)*
 
 Par exemple, voici les coordonnées du point blanc de l'espace *sRGB* : 
 
-|  | Blanc |
+| | Blanc |
 | --- | --- |
-| **x** | 0 |
-| **y** | 0 |
+| **x** | 0,3127 |
+| **y** | 0,3290 |
 
 La [*CIE*](03-representation.md) a défini un certain nombre de points blancs (on dit aussi *illuminant*) remarquables, utiles pour des usages particuliers. Ils sont représentés par des lettres (de *A* à *F*), parfois accompagné d'un nombre dans le cas de séries de points blancs.
 

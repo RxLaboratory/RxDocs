@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nicolas Dufresne and contributors">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>G - Liste des paramètres d'espaces colorimétriques - RxDocs - Gestion des couleurs</title>
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="video.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "G - Liste des param\u00e8tres d'espaces colorim\u00e9triques";
+    var mkdocs_page_input_path = "07-liste-params.md";
+    var mkdocs_page_url = "/couleurs/07-liste-params.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> RxDocs - Gestion des couleurs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gestion des couleurs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="01-definition.html">A - Définition</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="02-perception.html">B - Perception des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="03-representation.html">C - Représentation objective</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="04-numerisation.html">D - Du réel au numérique</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="05-espace-colo.html">E - Qu'est ce qu'un espace colo ?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="06-liste-espaces.html">F - Liste d'espaces colorimétriques</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="07-liste-params.html">G - Liste des paramètres d'espaces colorimétriques</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#g-liste-des-parametres-despaces-colorimetriques">G - Liste des paramètres d'espaces colorimétriques</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#g1-primaires">G.1 - Primaires</a></li>
+        
+            <li><a class="toctree-l4" href="#g2-blancs">G.2 - Blancs</a></li>
+        
+            <li><a class="toctree-l4" href="#g3-courbes-de-transfer">G.3 - Courbes de transfer</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-vocabulaire.html">Glossaire</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org">Tous les documents RxLab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/donate/">Donate</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">RxDocs - Gestion des couleurs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Gestion des couleurs &raquo;</li>
+        
+      
+    
+    <li>G - Liste des paramètres d'espaces colorimétriques</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/07-liste-params.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="g-liste-des-parametres-despaces-colorimetriques">G - Liste des paramètres d&rsquo;espaces colorimétriques<a class="headerlink" href="#g-liste-des-parametres-despaces-colorimetriques" title="Permanent link">&para;</a></h1>
+<p>Voici la liste des différentes <em>primaires</em>, <em>points blancs</em> et <em>courbes de transfert</em> partagés par les différents espaces colorimétriques, ainsi que leurs comparaisons.</p>
+<div class="toc">
+<ul>
+<li><a href="#g-liste-des-parametres-despaces-colorimetriques">G - Liste des paramètres d&rsquo;espaces colorimétriques</a><ul>
+<li><a href="#g1-primaires">G.1 - Primaires</a><ul>
+<li><a href="#rgb-srgb-rec-709">RGB / sRGB / Rec. 709</a></li>
+<li><a href="#rec-601">Rec. 601</a></li>
+<li><a href="#rec-2020">Rec. 2020</a></li>
+<li><a href="#p3">P3</a></li>
+<li><a href="#ap0-aces2065-1">AP0 / ACES2065-1</a></li>
+<li><a href="#ap1-acescg-acescc">AP1 / ACEScg / ACEScc</a></li>
+<li><a href="#adobe-rgb">Adobe RGB</a></li>
+</ul>
+</li>
+<li><a href="#g2-blancs">G.2 - Blancs</a><ul>
+<li><a href="#d65-rgb-srgb-rec-601-rec-709-display-p3-adobe-rgb">D65 / RGB / sRGB / Rec. 601 / Rec. 709 / Display P3 / Adobe RGB</a></li>
+<li><a href="#dci-p3">DCI-P3</a></li>
+<li><a href="#aces-aces2065-1-acescg-acescc">ACES / ACES2065-1 / ACEScg / ACEScc</a></li>
+</ul>
+</li>
+<li><a href="#g3-courbes-de-transfer">G.3 - Courbes de transfer</a><ul>
+<li><a href="#lineaire-rgb-aces2065-1-acescg">Linéaire / RGB / ACES2065-1 / ACEScg</a></li>
+<li><a href="#srgb-display-p3">sRGB / Display P3</a></li>
+<li><a href="#24-rec-601-rec-709-rec-2020">2.4 / Rec. 601 / Rec. 709 / Rec. 2020</a></li>
+<li><a href="#22-adobe-rgb">2.2 / Adobe RGB</a></li>
+<li><a href="#acescc">ACEScc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="g1-primaires">G.1 - Primaires<a class="headerlink" href="#g1-primaires" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="img/comparison.png" /></p>
+<h3 id="rgb-srgb-rec-709">RGB / sRGB / Rec. 709<a class="headerlink" href="#rgb-srgb-rec-709" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,64</td>
+<td>0,30</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,33</td>
+<td>0,60</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,03</td>
+<td>0,1</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rec-601">Rec. 601<a class="headerlink" href="#rec-601" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong> (NTSC)</td>
+<td>0,63</td>
+<td>0,31</td>
+<td>0,155</td>
+</tr>
+<tr>
+<td><strong>Y</strong> (NTSC)</td>
+<td>0,34</td>
+<td>0,595</td>
+<td>0,007</td>
+</tr>
+<tr>
+<td><strong>Z</strong> (NTSC)</td>
+<td>0,03</td>
+<td>0,095</td>
+<td>0,775</td>
+</tr>
+<tr>
+<td><strong>X</strong> (PAL)</td>
+<td>0,64</td>
+<td>0,29</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong> (PAL)</td>
+<td>0,33</td>
+<td>0,60</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong> (PAL)</td>
+<td>0,03</td>
+<td>0,11</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rec-2020">Rec. 2020<a class="headerlink" href="#rec-2020" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,708</td>
+<td>0,17</td>
+<td>0,131</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,292</td>
+<td>0,797</td>
+<td>0,046</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,0</td>
+<td>0,033</td>
+<td>0,823</td>
+</tr>
+</tbody>
+</table>
+<h3 id="p3">P3<a class="headerlink" href="#p3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,68</td>
+<td>0,265</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,32</td>
+<td>0,69</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,00</td>
+<td>0,045</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ap0-aces2065-1">AP0 / ACES2065-1<a class="headerlink" href="#ap0-aces2065-1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,7347</td>
+<td>0,0</td>
+<td>0,001</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,2653</td>
+<td>1,0</td>
+<td>-0,77</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ap1-acescg-acescc">AP1 / ACEScg / ACEScc<a class="headerlink" href="#ap1-acescg-acescc" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,713</td>
+<td>0,165</td>
+<td>0,128</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,293</td>
+<td>1,830</td>
+<td>0,044</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adobe-rgb">Adobe RGB<a class="headerlink" href="#adobe-rgb" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,64</td>
+<td>0,21</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,33</td>
+<td>0,71</td>
+<td>0,06</td>
+</tr>
+</tbody>
+</table>
+<h2 id="g2-blancs">G.2 - Blancs<a class="headerlink" href="#g2-blancs" title="Permanent link">&para;</a></h2>
+<h3 id="d65-rgb-srgb-rec-601-rec-709-display-p3-adobe-rgb">D65 / RGB / sRGB / Rec. 601 / Rec. 709 / Display P3 / Adobe RGB<a class="headerlink" href="#d65-rgb-srgb-rec-601-rec-709-display-p3-adobe-rgb" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Blanc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3127</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3290</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td><em>D65</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="dci-p3">DCI-P3<a class="headerlink" href="#dci-p3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Blanc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3140</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3510</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aces-aces2065-1-acescg-acescc">ACES / ACES2065-1 / ACEScg / ACEScc<a class="headerlink" href="#aces-aces2065-1-acescg-acescc" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Blanc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,32168</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,33767</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td>proche de <em>D60</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="g3-courbes-de-transfer">G.3 - Courbes de transfer<a class="headerlink" href="#g3-courbes-de-transfer" title="Permanent link">&para;</a></h2>
+<h3 id="lineaire-rgb-aces2065-1-acescg">Linéaire / RGB / ACES2065-1 / ACEScg<a class="headerlink" href="#lineaire-rgb-aces2065-1-acescg" title="Permanent link">&para;</a></h3>
+<p>Transfert Linéaire</p>
+<h3 id="srgb-display-p3">sRGB / Display P3<a class="headerlink" href="#srgb-display-p3" title="Permanent link">&para;</a></h3>
+<p>Proche en moyenne d&rsquo;un <em>Gamma 2.2</em>, avec en réalité un transfert linéaire pour les luminances linéaires inférieures à <em>0,0031308</em> puis un <em>Gamma 2,4</em> décalé.</p>
+<h3 id="24-rec-601-rec-709-rec-2020">2.4 / Rec. 601 / Rec. 709 / Rec. 2020<a class="headerlink" href="#24-rec-601-rec-709-rec-2020" title="Permanent link">&para;</a></h3>
+<p><em>Gamma 2,4</em></p>
+<h3 id="22-adobe-rgb">2.2 / Adobe RGB<a class="headerlink" href="#22-adobe-rgb" title="Permanent link">&para;</a></h3>
+<p><em>Gamma 563/256</em> soit <em>2,199 218 75</em>.</p>
+<h3 id="acescc">ACEScc<a class="headerlink" href="#acescc" title="Permanent link">&para;</a></h3>
+<p>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ZZ-vocabulaire.html" class="btn btn-neutral float-right" title="Glossaire">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="06-liste-espaces.html" class="btn btn-neutral" title="F - Liste d'espaces colorimétriques"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="06-liste-espaces.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="ZZ-vocabulaire.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="video.js" defer></script>
+      <script src="meta.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>

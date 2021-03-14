@@ -43,6 +43,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
         - E.1.c - La courbe de transfert
     - E.2 - Pourquoi différents espaces colorimétriques ?
 - F - [Liste d'espaces colorimétriques](06-liste-espaces.md)
+- G - [Liste des paramètres d'espaces colorimétriques](07-liste-params.md)
 - Pourquoi utiliser différents espaces colorimétriques ?
 - Le blanc
 - Le gamma
@@ -55,6 +56,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 - Color management : Krita
 - Color management : Blender
 - OCIO, ACES
+- [Glossaire](ZZ-vocabulaire.md)
 
 À l'origine de ce document, cette vidéo enregistrée en direct avec [Motion Café](https://www.motion-cafe.com/) et [Nicolas Dufresne](http://duduf.com) : 
 

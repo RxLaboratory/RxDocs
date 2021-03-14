@@ -12,6 +12,8 @@ Le sRGB (pour standard RGB) est un des espaces les plus courant en informatique 
 
 Il date de 1996.
 
+![](img/srgb.png)
+
 ### Primaires
 
 Ces primaires sont les mêmes que celles du *Rec. 709*.
@@ -87,6 +89,8 @@ Rec. 709 est la norme de la Télévision Haute Définition, *HDTV* et date de 19
 
 Il est très proche du *sRGB*, seule la courbe de transfert change (et son point blanc doit être un peu plus intense).
 
+![](img/srgb.png)
+
 ### Primaires
 
 Ces primaires sont les mêmes que celles du *sRGB*.
@@ -116,6 +120,8 @@ Espace d'affichage, ***display-referred***.
 
 Rec. 2020 est la norme de la Télévision Ultra Haute Définition, *UHDTV* et date de 2012.
 
+![](img/2020.png)
+
 ### Primaires
 
 | | R | G | B |
@@ -143,6 +149,8 @@ Espace d'affichage, ***display-referred***.
 
 *DCI-P3* a été créé comme transition vers le *Rec. 2020* et pour la projection de films. Il est utilisé par certains téléviseurs et écrans d'ordinateur, et même plus récemment certains téléphones/tablettes.
 
+![](img/p3.png)
+
 ### Primaires
 
 | | R | G | B |
@@ -168,7 +176,9 @@ Espace d'affichage, ***display-referred***.
 
 Espace d'affichage, ***display-referred***.
 
-Le *Display P3* est une variation du *DCI-P3* adaptée pour être plus proche (et mieux compatible avec) du *sRGB* (et ainsi fabriquer des écrans capables d'afficher les deux plus facilement). Il garde les primaires (et donc le gammut plus large) du *DCI-P3* mais utilise le point blanc et la courbe de transfert du *sRGB* (et donc aussi *Rec. 709*).
+Le *Display P3* est une variation du *DCI-P3* adaptée pour être plus proche (et mieux compatible avec) du *sRGB* (et ainsi fabriquer des écrans capables d'afficher les deux plus facilement). Il garde les primaires (et donc le gammut plus large) du *DCI-P3* mais utilise le point blanc et la courbe de transfert du *sRGB*.
+
+![](img/p3.png)
 
 ### Primaires
 
@@ -196,6 +206,8 @@ Celle du sRGB proche en moyenne d'un *Gamma 2.2*.
 *ACES* signifie *Academy Color Encoding System*, et représente un système comprenant 5 espaces colorimétriques conçus par l'Académie des Oscars spécifiquement pour la production audiovisuelle, publié en 2014 pour sa première version.
 
 Ces 5 espaces partagent le même point blanc, proche du *D60*; ils utilisent deux ensembles de primaires nommés *AP0* ou *AP1*. Les primaires *AP0* sont *en dehors* des couleurs visibles (et donc du *CIE XYZ*) : elles sont les primaires théoriques les plus proches englobant l'intégralité des couleurs visibles. Les primaires *AP1* sont plus proches des primaires habituelles *RGB* et des écrans et projecteurs, les rendant plus pratiques dans la production des images.
+
+![](img/aces.png)
 
 ### Primaires (AP0)
 
@@ -249,6 +261,8 @@ Espace de travail, ***scene-referred***.
 Espace d'affichage, ***display-referred*** et de travail.
 
 *Adobe RGB* a été conçu en 1998 pour les graphistes travaillant sur écran mais dont le travail est destiné à l'impression. Il est proche du *sRGB*, mais la primaire verte a été décalée pour englober plus de couleurs pouvant être reproduites en impression *CMYK*. Sa courbe de transfert est aussi légèrement différente.
+
+![](img/adobe-rgb.png)
 
 ### Primaires
 
