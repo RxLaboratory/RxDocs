@@ -17,7 +17,7 @@ Les bâtonnets sont les cellules utiles et actives dans la pénombre ; ils sont 
 
 Les cônes sont les cellules efficaces dans la réception des lumières plus intenses ; ils ne s'activent d'ailleurs qu'à partir d'une intensité de 10 photons par seconde. Divisés en trois types différents, ils sont capables de capter les rayons sur une gamme de fréquence plus large ; cette division en trois types permet aussi d'interpréter la *teinte* de la lumière : le système nerveux peut comparer les intensités sur les trois différents types de cônes et en déduire une teinte.
 
-![](/img/colors/retina-absorption.svg)
+![](img/retina-absorption.svg)
 
 ## Le système nerveux
 
@@ -27,9 +27,9 @@ Ce processus explique notamment le fait que des mélanges **objectivement diffé
 
 À l'inverse, des couleurs **objectivement identiques** peuvent être perçues de manière **subjectivement complètement différentes** en fonction de leur environnement. C'est en particulier le cas pour le *blanc* ; ce qu'on perçoit comme la couleur blanche varie grandement en fonction des types de sources lumineuses et de la teinte générale de l'environnement. C'est l'équivalent de la *balance des blancs* en photographie, mais c'est vrai pour toutes les couleurs.
 
-![](/img/colors/grey-illusion-1.svg)
+![](img/grey-illusion-1.svg)
 
-![](/img/colors/grey-illusion-2.svg)
+![](img/grey-illusion-2.svg)
 
 Le système nerveux est donc responsable d'une interprétation des couleurs qui n'est pas liée directement au signal objectif reçu par l'œil, mais qui pourrait être vu comme une "*retouche*" subjective en post-production : il adapte l'image en fonction de l'environnement, exactement comme le fait le photographe en retouchant les contrastes et la balance des blancs (les teintes), pour "*neutraliser*" l'image, et augmenter la quantité de détails percevables dans l'image reconstruire.
 

@@ -14,7 +14,7 @@ C'est en 1931 que la CIE a proposé une première représentation et rationnalis
 
 On l'a sous-entendu jusqu'ici, une couleur telle qu'on la perçoit est physiquement définie par trois paramètres indépendants : son *intensité*, sa *longueur d'onde dominante* et sa *pureté d'excitation*.
 
-![](/img/colors/1d-2d-3d.png)
+![](img/1d-2d-3d.png)
 
 - L'**intensité** est assez intuitive à comprendre, et liée à ce qu'on appelle aussi la *luminosité* ; c'est le nombre de photons reçus chaque seconde par les cellules de la rétine.
 - La **longueur d'onde dominante** va influencer principalement la *teinte* de la couleur ; c'est la composante monochromatique la plus intense dans le mélange de toutes les longueurs d'ondes formant cette couleur particulière.
@@ -26,7 +26,7 @@ Cette décomposition étant parfaitement objective (liée à la réalité physiq
 
 Avec ces trois paramètres, on peut donc représenter les couleurs en trois dimensions.
 
-![](/img/colors/cie1931-3d.svg)
+![](img/cie1931-3d.svg)
 
 Afin d'établir cette représentation, la CIE a choisi trois couleurs primaires théoriques différentes des Rouge, Vert et Bleu plus courant, dénommées X, Y et Z, capables d'englober l'intégralité des couleurs visibles. Cette représentation est donc l'**espace colorimétrique _CIE XYZ_ de 1931**, et sert encore aujourd'hui de référence pour représenter et comparer tous les autres espaces colorimétriques.
 
@@ -37,13 +37,13 @@ Les paramètres à la base de cet espace colorimétriques ont été soigneusemen
 
 Afin d'en faciliter l'utilisation et la visualisation, on le représente surtout dans une projection en deux dimensions, ne figurant pas du tout l'intensité (la luminosité) de la couleur.
 
-![](/img/colors/cie1931.png)
+![](img/cie1931.png)
 
 Cette projection fait en réalité passer dans un autre espace colorimétrique dérivé du *CIE XYZ* où la teinte est représentée sur un plan par des coordonnées nommées *x* et *y* (en minuscules) ce qui en fait l'espace ***CIE xyZ***.
 
 Sur ce diagramme, on retrouve le spectre de la lumière visible, sur le tour supérieur, arrondi, allant du rouge au bleu.
 
-![](/img/colors/cie1931-spectrum.png)
+![](img/cie1931-spectrum.png)
 
 Ce contour contient donc toutes les lumières monochromatiques possibles, tandis que l'intérieur du diagramme représente les couleurs "mélangées" telles qu'on les perçoit.
 

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nicolas Dufresne and contributors">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Du réel au numérique - RxDocs - Gestion des couleurs</title>
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="video.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Du r\u00e9el au num\u00e9rique";
+    var mkdocs_page_input_path = "04-numerisation.md";
+    var mkdocs_page_url = "/couleurs/04-numerisation.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> RxDocs - Gestion des couleurs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gestion des couleurs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="01-definition.html">Définition</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="02-perception.html">Perception des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="03-representation.html">Représentation objective</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="04-numerisation.html">Du réel au numérique</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#d-du-reel-au-numerique">D - Du réel au numérique</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#numerisation-et-stockage-passer-en-binaire">Numérisation et stockage : passer en binaire</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org">Tous les documents RxLab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/donate/">Donate</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">RxDocs - Gestion des couleurs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Gestion des couleurs &raquo;</li>
+        
+      
+    
+    <li>Du réel au numérique</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/04-numerisation.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="d-du-reel-au-numerique">D - Du réel au numérique<a class="headerlink" href="#d-du-reel-au-numerique" title="Permanent link">&para;</a></h1>
+<p>Ayant maintenant un moyen de représenter objectivement les couleurs que nous voyons, de les localiser sur un diagramme de référence, nous pouvons nous poser la question de la manière à la fois de numériser, de stocker, puis de restituer ces couleurs via un système binaire.</p>
+<h2 id="numerisation-et-stockage-passer-en-binaire">Numérisation et stockage : passer en binaire<a class="headerlink" href="#numerisation-et-stockage-passer-en-binaire" title="Permanent link">&para;</a></h2>
+<p>Toute la difficulté est de représenter un monde analogique et <em>continu</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dans un système fondamentalement <em>discontinu</em> et numérique, avec des <a href="https://fr.wikipedia.org/wiki/Math%C3%A9matiques_discr%C3%A8tes"><em>valeurs discrètes</em></a>.</p>
+<p>En numérique binaire, toute valeur, qu&rsquo;elle soit un nombre ou une couleur, doit être stockée en une suite de zéros et de uns, ce qu&rsquo;on appelle des <strong><em>bits</em></strong>. Il est donc impossible de représenter l&rsquo;ensemble des nombres réels en numérique, et nous devons <em>quantifier</em>, découper l&rsquo;infinité de couleurs que nous pouvons voir en un <strong>nombre fini</strong> de valeurs. C&rsquo;est <em>l&rsquo;échantillonnage</em> (<em>sampling</em> en anglais).</p>
+<p>Plus nous découpons ces valeurs en petits quanta, en petits échantillons, en petites briques, plus nous gagnons en précision et plus nous pouvons approcher une représentation fidèle du réel ; mais se pose alors la question du stockage et de la place nécessaire.</p>
+<p>Faisons un calcul simple : prenons une image numérique divisée en une &ldquo;grille&rdquo; de 1920 pixels en largeur et 1080 pixels en hauteur, la résolution d&rsquo;une vidéo numérique standard (en 2020). Cette image contient donc <code>1920 x 1080 = 2 073 600 pixels</code>.</p>
+<p>Dans sa forme la plus courante, un pixel est représenté par trois valeurs d&rsquo;intensité pour trois couleurs primaires. Chacune de ces trois valeurs est généralement stocké dans <em>au minimum</em> 8 bits. Chaque pixel a donc besoin de <code>3 x 8 = 24 bits</code> ou encore <code>3 octets</code> pour être stocké (un octet étant formé de 8 bits).</p>
+<p>Notre image a donc besoin de <code>2 073 600 pixels x 3 octets = 6 220 800 octets</code> pour être stockée. 6 Mo pour une seule image, ce qui signifie <em>au minimum</em> <code>6 x 24 = 144 Mo</code> pour une seconde de vidéo, ou encore <code>144 x 60 = 8 640 Mo</code> pour une minute, plus de <strong>8 Go</strong><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> !</p>
+<div class="codehilite"><pre><span></span>1920 px x 1080 px x 3 couches x 8 bits x 24 ips x 60 s ≈ 64 Gbps ≈ 8 Go/s
+</pre></div>
+
+
+<p>Cette taille représente un débit de données de 64 Gbps.À titre d&rsquo;exemple, un film sur un disque Blu-Ray est encodé avec un débit de 24 Gbps environ, ce qui signifie qu&rsquo;il faut diviser cette taille par au moins 2,6&hellip;</p>
+<p>Il faut donc trouver des méthodes permettant de réduire la place occupée par toute cette information ; c&rsquo;est là qu&rsquo;entrent en jeu les différents choix d&rsquo;espaces colorimétriques et méthodes de <em>compression</em> et d&rsquo;<em>échantillonage</em> des données associés.</p>
+<p>Ce problème est d&rsquo;ailleurs apparu bien avant l&rsquo;avènement du numérique : les flux de données analogiques, via des signaux électriques, ont eux aussi une capacité de transfert (une bande passante) limitée, et même bien plus limitée que la transmission d&rsquo;information numérique utilisant les mêmes câbles de cuivre, ce qui explique les limitations de format imposées aux premières heures de la vidéo, sans compter les problématiques de stockage.</p>
+<hr />
+<p>Sources et références</p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Math%C3%A9matiques_discr%C3%A8tes">Mathématiques discrètes sur <em>Wikipedia</em></a></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Avec l&rsquo;avènement de la <a href="https://fr.wikipedia.org/wiki/Physique_quantique">physique quantique</a>, nous savons aujourd&rsquo;hui que le monde est en réalité lui aussi discontinu et divisé en quanta d&rsquo;énergie et de matière ; simplement ces valeurs discrètes sont tellement petites qu&rsquo;elles seront toujours imperceptibles. C&rsquo;est argument est parfois utilisé pour tenter de démontrer que nous vivons en réalité dans une simulation numérique (d&rsquo;une extrême précision), mais c&rsquo;est un autre sujet&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Ce qui représente 25% de la capacité d&rsquo;un <em>Blu-Ray</em> standard&hellip;&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="03-representation.html" class="btn btn-neutral" title="Représentation objective"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="03-representation.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="video.js" defer></script>
+      <script src="meta.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>

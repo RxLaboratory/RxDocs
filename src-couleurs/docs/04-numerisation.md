@@ -14,9 +14,15 @@ Faisons un calcul simple : prenons une image numérique divisée en une "grille"
 
 Dans sa forme la plus courante, un pixel est représenté par trois valeurs d'intensité pour trois couleurs primaires. Chacune de ces trois valeurs est généralement stocké dans *au minimum* 8 bits. Chaque pixel a donc besoin de `3 x 8 = 24 bits` ou encore `3 octets` pour être stocké (un octet étant formé de 8 bits).
 
-Notre image a donc besoin de `2 073 600 pixels x 3 octets = 6 220 800 octets` pour être stockée. 6 Mo pour une seule image, ce qui signifie *au minimum* `6 x 24 = 144 Mo` pour une seconde de vidéo, ou encore `144 x 60 = 8 640 Mo` pour une minute, plus de 8 Go !
+Notre image a donc besoin de `2 073 600 pixels x 3 octets = 6 220 800 octets` pour être stockée. 6 Mo pour une seule image, ce qui signifie *au minimum* `6 x 24 = 144 Mo` pour une seconde de vidéo, ou encore `144 x 60 = 8 640 Mo` pour une minute, plus de **8 Go**[^2] !
 
-Cela signifie qu'il faut trouver des méthodes permettant de réduire la place occupée par toute cette information ; c'est là qu'entre en jeu les différents choix d'espaces colorimétriques et méthode de *compression* des données.
+```
+1920 px x 1080 px x 3 couches x 8 bits x 24 ips x 60 s ≈ 64 Gbps ≈ 8 Go/s
+```
+
+Cette taille représente un débit de données de 64 Gbps.À titre d'exemple, un film sur un disque Blu-Ray est encodé avec un débit de 24 Gbps environ, ce qui signifie qu'il faut diviser cette taille par au moins 2,6...
+
+Il faut donc trouver des méthodes permettant de réduire la place occupée par toute cette information ; c'est là qu'entrent en jeu les différents choix d'espaces colorimétriques et méthodes de *compression* et d'*échantillonage* des données associés.
 
 Ce problème est d'ailleurs apparu bien avant l'avènement du numérique : les flux de données analogiques, via des signaux électriques, ont eux aussi une capacité de transfert (une bande passante) limitée, et même bien plus limitée que la transmission d'information numérique utilisant les mêmes câbles de cuivre, ce qui explique les limitations de format imposées aux premières heures de la vidéo, sans compter les problématiques de stockage.
 
@@ -29,3 +35,5 @@ Sources et références
 
 [^1]:
     Avec l'avènement de la [physique quantique](https://fr.wikipedia.org/wiki/Physique_quantique), nous savons aujourd'hui que le monde est en réalité lui aussi discontinu et divisé en quanta d'énergie et de matière ; simplement ces valeurs discrètes sont tellement petites qu'elles seront toujours imperceptibles. C'est argument est parfois utilisé pour tenter de démontrer que nous vivons en réalité dans une simulation numérique (d'une extrême précision), mais c'est un autre sujet...
+[^2]:
+    Ce qui représente 25% de la capacité d'un *Blu-Ray* standard...

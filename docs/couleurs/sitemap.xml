@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/index.html</loc>
+     <lastmod>2021-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/01-definition.html</loc>
+     <lastmod>2021-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/02-perception.html</loc>
+     <lastmod>2021-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/03-representation.html</loc>
+     <lastmod>2021-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/04-numerisation.html</loc>
+     <lastmod>2021-03-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>

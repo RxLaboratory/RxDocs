@@ -10,7 +10,7 @@ On entendra donc par *couleur* l'intégralité de la gamme de lumière que l'oei
 
 Ce que l'on appelle la *couleur* est donc la perception par l'être humain de la *lumière visible*, la lumière visible n'étant en réalité qu'une petite partie du [spectre électro-magnétique](https://fr.wikipedia.org/wiki/Spectre_%C3%A9lectromagn%C3%A9tique).
 
-![](/img/colors/electromagnetic-spectrum.svg)
+![](img/electromagnetic-spectrum.svg)
 
 Il faut bien comprendre, au vu de ce spectre en arc-en-ciel, que dans la nature, les sources de lumières *monochromatiques* sont rares, et l'on perçoit surtout un mélange de ces différentes fréquences ; les *couleurs* dont on va donc discuter ici comprennent à la fois ces sources monochromatiques ainsi que *tous les mélanges* possible entre elles, à différentes intensités. Ces mélanges représentent donc une infinité de nuances, une infinité de couleurs différentes, qu'il serait impossible de décrire toutes individuellement.
 
@@ -18,7 +18,7 @@ On essaie donc naturellement de se donner des repères dans toutes ces couleurs 
 
 Historiquement, une solution est venue de la découverte des [raies de Fraunhofer](https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer), des discontinuités sombres dans le spectre de la lumière émise par le soleil, découvertes au début du XIXème siècle. Ces raies, provoquées par l'absorption de certaines fréquences par les milieux traversés par la lumière  (dans l'atmosphère notamment), sont visible sur des longueurs d'ondes précises et ont été une des premières références pour définir des couleurs précises.
 
-![](/img/colors/fraunhofer-lines.svg)
+![](img/fraunhofer-lines.svg)
 
 À ce problème de référence s'ajoute le fait que la définition de la couleur est intrinsèquement liée à la perception qu'on en a, et cette perception diffère évidemment d'une population à l'autre, d'un individu à l'autre, et aussi du milieu dans lequel on perçoit la couleur.
 
