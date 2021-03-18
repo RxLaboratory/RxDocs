@@ -46,7 +46,7 @@ Sources et références
 ![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
 
 [^1]:
-    Avec l'avènement de la [physique quantique](https://fr.wikipedia.org/wiki/Physique_quantique), nous savons aujourd'hui que le monde est en réalité lui aussi discontinu et divisé en quanta d'énergie et de matière ; simplement ces valeurs discrètes sont tellement petites qu'elles seront toujours imperceptibles. C'est argument est parfois utilisé pour tenter de démontrer que nous vivons en réalité dans une simulation numérique (d'une extrême précision), mais c'est un autre sujet...
+    Avec l'avènement de la [physique quantique](https://fr.wikipedia.org/wiki/Physique_quantique), nous savons aujourd'hui que le monde est en réalité lui aussi discontinu et divisé en quanta d'énergie et de matière ; simplement ces valeurs discrètes sont tellement petites qu'elles seront toujours imperceptibles. Cet argument est parfois utilisé pour tenter de démontrer que nous vivons en réalité dans une simulation numérique (d'une extrême précision), mais c'est un autre sujet...
 [^2]:
     Et 8 bits représentent 1 octet, unité plus couramment utilisée en stockage.
 [^3]:

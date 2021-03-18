@@ -157,17 +157,59 @@
             <div class="section">
               
                 <h1 id="glossaire">Glossaire<a class="headerlink" href="#glossaire" title="Permanent link">&para;</a></h1>
-<p>WIP</p>
+<p>Classement alphabétique.</p>
 <ul>
+<li>
+<p><strong><em>ACES</em></strong> : <em>Academy Color Encoding System</em> est un standard d&rsquo;échange, de gestion des couleurs pour l&rsquo;imagerie numérique. Il a pour but de simplifier la gestion des couleurs en maintenant la fidélité des couleurs tout au long de la chaîne de production. Le standard est gratuit et open source et de nombreuses entreprises contribuent à son développement. Il utilise notamment la librairie logicielle <em>OCIO</em>*.</p>
+</li>
+<li>
+<p><strong><em>CIE</em></strong> : <em>La Commission internationale de l&rsquo;éclairage</em> est une organisation internationale dédiée à la lumière, l&rsquo;éclairage, la couleur et les espaces de couleur. Elle a été fondée à Berlin en 1913 et est actuellement basée à Vienne en Autriche.  Note : l&rsquo;acronyme français <em>CIE</em> est celui utilisé internationnalement bien qu&rsquo;en anglais ce soit la <em>International Commission on Illumination</em>.</p>
+</li>
+<li>
+<p><strong><em>Courbe de transfert</em></strong></p>
+</li>
+<li>
+<p><strong><em>Fréquence</em></strong> : dans la représentation <em>ondulatoire</em> de la lumière (et de toutes la gamme d&rsquo;ondes électromangétique), la fréquence, mesurée en <em>Hertz</em> (<em>Hz</em>) est le nombre d&rsquo;ondulations par secondes ; elle est l&rsquo;inverse de la longueur d&rsquo;ondes* (<code>F = 1 / λ</code> avec <em>F</em> pour la fréquence et <em>λ</em> pour la longueur d&rsquo;onde) : quand la fréquence augmente, la longueur d&rsquo;onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), vers <em>10<sup>15</sup>Hz</em> (<em>1000 TeraHertz</em>), chaque fréquence correspond à une couleur précise, une lumière <em>monochromatique</em>*. </p>
+</li>
+<li>
+<p>Gamma</p>
+</li>
 <li>Gammut</li>
-<li>Gamma</li>
-<li>Primaires</li>
-<li>Point Blanc</li>
+<li>(Couleurs) Homochromes : cf. Métamère</li>
 <li>Illuminant</li>
-<li>CIE</li>
-<li>ACES</li>
-<li>OCIO</li>
-<li>Courbe de transfert</li>
+<li>Intensité</li>
+<li>
+<p><strong><em>Longueur d&rsquo;onde</em></strong> : dans la représentation <em>ondulatoire</em> de la lumière (et de toutes la gamme d&rsquo;ondes électromangétique), la longueur d&rsquo;onde, mesurée en <em>nanomètres</em> (<em>nm</em>) est la &ldquo;taille&rdquo; des ondulations ; elle est l&rsquo;inverse de la fréquence* (<code>λ = 1 / F</code> avec <em>F</em> pour la fréquence et <em>λ</em> pour la longueur d&rsquo;onde) : quand la fréquence augmente, la longueur d&rsquo;onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), en <em>400nm</em> et <em>700nm</em> environ, chaque longueur d&rsquo;onde correspond à une couleur précise, une lumière <em>monochromatique</em>*.</p>
+</li>
+<li>
+<p>Luminance</p>
+</li>
+<li>
+<p><strong><em>LUT</em></strong> : de l&rsquo;anglais <em>Lookup Table</em>. Une <em>LUT</em> permet en informatique (surtout à ses premières heures) de remplacer des fonctions mathématiques complexes (et surtout prenant du temps à réaliser) par des tableaux de valeurs ; au lieu de <em>calculer</em> des correspondances et des conversions, on retrouve la valeur dans le tableau. On en utilise encore beaucoup en colorimétrie : elles permettent de convertir des couleurs entres différents espaces colorimétriques sans se soucier de la formule mathématique correspondante (et sont donc un moyen facile de faire une conversion entre des espaces dans un logiciel qui ne les gère pas nativement). Elles peuvent provoquer une (petite) perte d&rsquo;information si elles ne sont pas assez précises (ne contiennent pas suffisamment de valeurs). Elles sont aussi utilisées comme <em>presets</em> d&rsquo;étalonnage ou de colorimétrie et peuvent permettre de facilement répliquer un effet, même dans un logiciel qui ne le permettrait pas avec ses outils de couleurs natifs (pour peu qu&rsquo;il puisse appliquer une <em>LUT</em> quand même). voir la section [XX-luts.md] pour plus de détails.</p>
+</li>
+<li>
+<p>(Couleurs) Métamères</p>
+</li>
+<li>
+<p>(Lumière) Monochromatique</p>
+</li>
+<li>
+<p><strong><em>OCIO</em></strong> : <em>OpenColorIO</em> est une librarie logicielle (une &ldquo;brique&rdquo;/outil développeur utilisable dans d&rsquo;autres logiciels/applications) dédiée à la gestion des couleurs. Elle est gratuite et open source, et devenue standard avec son inclusion et usage dans un grand nombre d&rsquo;applications (en natif sur <em>Maya, Arnold, Krita, Blender, Nuke</em>&hellip; ; via des plugins et add-ons sur <em>After Effects</em>&hellip; ; via des LUTs*/Profils colorimétriques sur <em>Photoshop</em> et d&rsquo;autres). Cette inclusion dans différentes applications permet de partager une configuration unique de la gestion des couleurs sur toute la chaîne de production et assurer une reproduction identique des couleurs à toutes les étapes.</p>
+</li>
+<li>
+<p><strong><em>OIIO</em></strong> : <em>OpenImageIO</em> définit principalement le standard du format de stockage de données images <em>openEXR</em>, et est une librairie logicielle gratuite et open source pour gérer ce format ouvert, choisi comme format par défaut par <em>ACES</em>* ; il est inter-dépendant avec <em>OCIO</em>*.</p>
+</li>
+<li>
+<p><strong><em>Photon</em></strong> : bien que le mot date de 1926, c&rsquo;est en 1905 que Albert Einstein a théorisé le <em>photon</em> comme le <em>quantum</em> de lumière : la plus petite quantité indivisible de lumière (de toutes les ondes électromagnétiques en réalité). Le <em>photon</em> peut être vu comme le pendant <em>particulaire</em> du <em>rayon</em> de lumière qui serait lui le pendant <em>ondulatoire</em>. Il est en réalité <em>à la fois</em> particule et onde. L&rsquo;intensité de la lumière (et donc des couleurs comme on les perçoit) peut être exprimée en nombre de <em>photons</em> reçus par une surface donnée en un temps donné (donc par exemple en <em>photons</em> par centimètre carré par seconde <code>γ/cm²/s</code>). On mesure aussi le seuil de déclenchement (le palier inférieur) et de saturation (le palier supérieur) des capteurs photo-sensibles (comme les cellules rétininennes notamment) en <em>photons</em> par seconde.</p>
+</li>
+<li>
+<p>Point Blanc</p>
+</li>
+<li>Primaires</li>
+<li>Pureté colorimétrique</li>
+<li>Pureté d&rsquo;excitation</li>
+<li>Saturation</li>
+<li>Teinte</li>
 </ul>
               
             </div>
