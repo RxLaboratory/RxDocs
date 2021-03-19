@@ -110,3 +110,5 @@ Proche en moyenne d'un *Gamma 2.2*, avec en réalité un transfert linéaire pou
 ### ACEScc
 
 .
+
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/19)

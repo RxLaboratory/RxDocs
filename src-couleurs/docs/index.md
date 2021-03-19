@@ -29,34 +29,36 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - B.3 - Conséquences
         - B.3.a - Sur la luminosité et le contraste
         - B.3.b - Sur les teintes
-- C - [Représentation objective des couleurs](03-representation.md)
-    - C.1 - Décomposer les couleurs
-    - C.2 - Diagrammes de couleurs, *CIE XYZ* de 1931 et *CIE xyZ*
-    - C.3 - Autres espaces de la *CIE*
-- D - [Du réel au numérique](04-numerisation.md)
-    - D.1 - Numérisation et stockage : passer en binaire
-    - D.2 - Les Espaces colorimétriques
-- E - [Qu’est ce qu’un espace colorimétrique ?](05-espace-colo.md)
-    - E.1 - Ce qui définit un espace colorimétrique
-        - E.1.a - Les primaires
-        - E.1.b - Le point blanc
-        - E.1.c - La courbe de transfert
-    - E.2 - Pourquoi différents espaces colorimétriques ?
-- F - [Liste d'espaces colorimétriques](06-liste-espaces.md)
-- G - [Liste des paramètres d'espaces colorimétriques](07-liste-params.md)
-- Pourquoi utiliser différents espaces colorimétriques ?
-- Le blanc
-- Le gamma
-- Calibration des écrans et leurs espaces colorimétriques
+- C - [Le blanc, le pourpre, et autres mélanges](08-blanc.md)
+    - Blanc
+    - Pourpre
+    - Température
+- D - [Représentation objective des couleurs](03-representation.md)
+    - D.1 - Décomposer les couleurs
+    - D.2 - Diagrammes de couleurs, *CIE XYZ* de 1931 et *CIE xyZ*
+    - D.3 - Autres espaces de la *CIE*
+- E - [Du réel au numérique](04-numerisation.md)
+    - E.1 - Numérisation et stockage : passer en binaire
+    - E.2 - Les Espaces colorimétriques
+- F - [Qu’est ce qu’un espace colorimétrique ?](05-espace-colo.md)
+    - F.1 - Ce qui définit un espace colorimétrique
+        - F.1.a - Les primaires
+        - F.1.b - Le point blanc
+        - F.1.c - La courbe de transfert
+    - F.2 - Pourquoi différents espaces colorimétriques ?
+- G - [Liste d'espaces colorimétriques](06-liste-espaces.md)
+- H - [Liste des paramètres d'espaces colorimétriques](07-liste-params.md)
+- RGB vs YUV
+- 444, 422, 420, c’est quoi ça ?
+- Full range / Limited / TV / PC
 - X - [Profondeur (bpc)](XX-bpc.md)
 - X - [Courbes de transfert, espace linéaire et gamma](XX-transfert.md)
-- RGB vs YUV, 444, 422, 420, c’est quoi ça ?
-- Full range / Limited / TV / PC
 - Les LUTs
+- Calibration des écrans et leurs espaces colorimétriques
+- OCIO, ACES
 - Color management : After Effects
 - Color management : Krita
 - Color management : Blender
-- OCIO, ACES
 - [Glossaire](ZZ-vocabulaire.md)
 
 À l'origine de ce document, cette vidéo enregistrée en direct avec [Motion Café](https://www.motion-cafe.com/) et [Nicolas Dufresne](http://duduf.com) : 

@@ -1,4 +1,4 @@
-# E - Qu'est ce qu'un espace colorimétrique ?
+# F - Qu'est ce qu'un espace colorimétrique ?
 
 Un espace colorimétrique définit **un sous-ensemble de couleurs** (un volume dans un diagramme de couleurs 3D, ou une surface sur une projection 2D comme le *CIE xy*) tirées du spectre visible (voire aussi en dehors du spectre visible)[^1].
 
@@ -6,13 +6,13 @@ Un espace colorimétrique définit **un sous-ensemble de couleurs** (un volume d
 
 *![Image: Schéma du CIE avec quelques sous ensembles](img/spaces-comparison.png)*
 
-## E.1 - Ce qui définit un espace colorimétrique
+## F.1 - Ce qui définit un espace colorimétrique
 
 L'ensemble des couleurs pouvant être représentées par un espace colorimétrique dépend d'un paramètre principal : **Les couleurs primaires** de l'espace colorimétriques.
 
 La manière de représenter ces couleurs dépend de deux autres paramètres qui complètent la définition d'un espace colorimétrique : **Le point blanc** et **la courbe de transfert**.
 
-### E.1.a - Les primaires
+### F.1.a - Les primaires
 
 Le plus souvent au nombre de 3, les couleurs primaires sont les valeurs primordiales de l'espace colorimétrique ; elles peuvent être représentées par des coordonnées précises dans l'espace *CIE XYZ* (qui est une représentation de toutes les couleurs visibles sur trois axes). Elles sont dans la majorité des cas une nuance de *Rouge*, de *Vert* et de *Bleu*, et se rapprochent dans l'idéal le plus possible d'une couleur réelle monochromatique (la bordure extérieur du diagramme *CIE xy*).
 
@@ -38,7 +38,7 @@ Les coordonnées des primaires définissent les bornes d'un sous-espace engloban
 
 *![Image: Schéma du CIE avec le triangle du sRGB](img/srgb-gammut.png)*
 
-### E.1.b - Le point blanc
+### F.1.b - Le point blanc
 
 On l'a vu, dans la perception humaine, ce qui est considéré comme *blanc* varie énormément en fonction des conditions, de l'environnement dans lequel on perçoit les couleurs.
 
@@ -70,7 +70,7 @@ L'illuminant *D65* est celui le plus couramment utilisé comme point blanc dans 
 
 L'espace colorimétrique associe normalement aussi au point blanc son intensité maximum, sa luminance, le plus souvent mesuré en *cd/m²*.
 
-### E.1.c - La courbe de transfert
+### F.1.c - La courbe de transfert
 
 Les couleurs dans un espace colorimétriques sont données par l'intensité de chaque primaire, représentée par une valeur variant de `0.0` à `1.0`.
 
@@ -86,17 +86,17 @@ D'autres espaces utilisent donc une courbe de transfert plus complexe visant à 
 
 Voir la section intitulée [Courbes de transfert, espace linéaire et gamma](XX-transfert.md) pour plus de détails.
 
-## E.2 - Autres paramètres
+## F.2 - Autres paramètres
 
 Les espaces colorimétriques peuvent aussi imposer ou préconiser d'autres paramètres, surtout sur la manière d'encoder/stocker les couleurs, en fonction de leurs usages prévus.
 
-### E.2.a - Profondeur
+### F.2.a - Profondeur
 
 Les espaces peuvent préconiser un nombre de bits précis à utiliser pour encoder chaque couleur. Par exemple le *sRGB* préconise un minimum de 8 bits, et le *Rec. 2020* impose 10 ou 12 bits.
 
 Voir la section [Profondeur (bpc)](XX-bpc.md) pour plus de détails.
 
-## E.3 - Pourquoi différents espaces colorimétriques ?
+## F.3 - Pourquoi différents espaces colorimétriques ?
 
 Les espaces colorimétriques sont (très) nombreux. Il en existe en fait autant que d'usages différents des couleurs, sans compter que les constructeurs de matériels, et concepteurs de logiciels, ajoutent parfois leurs propres espaces à la liste déjà longue. Les usages sont relativement peu standardisés.
 

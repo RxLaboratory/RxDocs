@@ -32,11 +32,12 @@ nav:
         - Introduction: index.md
         - A - Définition: 01-definition.md
         - B - Perception des couleurs: 02-perception.md
-        - C - Représentation objective: 03-representation.md
-        - D - Du réel au numérique: 04-numerisation.md
-        - E - Qu'est ce qu'un espace colo ?: 05-espace-colo.md
-        - F - Liste d'espaces colorimétriques: 06-liste-espaces.md
-        - G - Liste des paramètres d'espaces colorimétriques: 07-liste-params.md
+        - C - Le blanc, le pourpre, et autres mélanges: 08-blanc.md
+        - D - Représentation objective: 03-representation.md
+        - E - Du réel au numérique: 04-numerisation.md
+        - F - Qu'est ce qu'un espace colo ?: 05-espace-colo.md
+        - G - Liste d'espaces colorimétriques: 06-liste-espaces.md
+        - H - Liste des paramètres d'espaces colorimétriques: 07-liste-params.md 
         - Glossaire: ZZ-vocabulaire.md
     - Tous les documents RxLab: http://docs.rainboxlab.org
     - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html
