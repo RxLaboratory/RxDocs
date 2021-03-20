@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>D - Du réel au numérique - RxDocs - Gestion des couleurs</title>
+  <title>E - Du réel au numérique - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "D - Du r\u00e9el au num\u00e9rique";
+    var mkdocs_page_name = "E - Du r\u00e9el au num\u00e9rique";
     var mkdocs_page_input_path = "04-numerisation.md";
     var mkdocs_page_url = "/couleurs/04-numerisation.html";
   </script>
@@ -66,20 +66,24 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="03-representation.html">C - Représentation objective</a>
+    <a class="" href="08-blanc.html">C - Le blanc, le pourpre, et autres mélanges</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="03-representation.html">D - Représentation objective</a>
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="04-numerisation.html">D - Du réel au numérique</a>
+    <a class="current" href="04-numerisation.html">E - Du réel au numérique</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#d-du-reel-au-numerique">D - Du réel au numérique</a></li>
+    <li class="toctree-l3"><a href="#e-du-reel-au-numerique">E - Du réel au numérique</a></li>
     
         <ul>
         
-            <li><a class="toctree-l4" href="#d1-numerisation-et-stockage-passer-en-binaire">D.1 - Numérisation et stockage : passer en binaire</a></li>
+            <li><a class="toctree-l4" href="#e1-numerisation-et-stockage-passer-en-binaire">E.1 - Numérisation et stockage : passer en binaire</a></li>
         
-            <li><a class="toctree-l4" href="#d2-les-espaces-colorimetriques">D.2 - Les Espaces colorimétriques</a></li>
+            <li><a class="toctree-l4" href="#e2-les-espaces-colorimetriques">E.2 - Les Espaces colorimétriques</a></li>
         
         </ul>
     
@@ -88,15 +92,23 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="05-espace-colo.html">E - Qu'est ce qu'un espace colo ?</a>
+    <a class="" href="05-espace-colo.html">F - Qu'est ce qu'un espace colo ?</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="06-liste-espaces.html">F - Liste d'espaces colorimétriques</a>
+    <a class="" href="06-liste-espaces.html">G - Liste d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="07-liste-params.html">G - Liste des paramètres d'espaces colorimétriques</a>
+    <a class="" href="07-liste-params.html">H - Liste des paramètres d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="09-rgb-yuv.html">I - RGB et YUV</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="10-444.html">J - YUV 444, 422, 421, 420...</a>
                 </li>
                 <li class="">
                     
@@ -151,7 +163,7 @@
         
       
     
-    <li>D - Du réel au numérique</li>
+    <li>E - Du réel au numérique</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/04-numerisation.md"
@@ -164,18 +176,18 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="d-du-reel-au-numerique">D - Du réel au numérique<a class="headerlink" href="#d-du-reel-au-numerique" title="Permanent link">&para;</a></h1>
+                <h1 id="e-du-reel-au-numerique">E - Du réel au numérique<a class="headerlink" href="#e-du-reel-au-numerique" title="Permanent link">&para;</a></h1>
 <p>Ayant maintenant un moyen de représenter objectivement les couleurs que nous voyons, de les localiser sur un diagramme de référence, nous pouvons nous poser la question de la manière à la fois de numériser, de stocker, puis de restituer ces couleurs via un système binaire.</p>
 <div class="toc">
 <ul>
-<li><a href="#d-du-reel-au-numerique">D - Du réel au numérique</a><ul>
-<li><a href="#d1-numerisation-et-stockage-passer-en-binaire">D.1 - Numérisation et stockage : passer en binaire</a></li>
-<li><a href="#d2-les-espaces-colorimetriques">D.2 - Les Espaces colorimétriques</a></li>
+<li><a href="#e-du-reel-au-numerique">E - Du réel au numérique</a><ul>
+<li><a href="#e1-numerisation-et-stockage-passer-en-binaire">E.1 - Numérisation et stockage : passer en binaire</a></li>
+<li><a href="#e2-les-espaces-colorimetriques">E.2 - Les Espaces colorimétriques</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<h2 id="d1-numerisation-et-stockage-passer-en-binaire">D.1 - Numérisation et stockage : passer en binaire<a class="headerlink" href="#d1-numerisation-et-stockage-passer-en-binaire" title="Permanent link">&para;</a></h2>
+<h2 id="e1-numerisation-et-stockage-passer-en-binaire">E.1 - Numérisation et stockage : passer en binaire<a class="headerlink" href="#e1-numerisation-et-stockage-passer-en-binaire" title="Permanent link">&para;</a></h2>
 <p>Toute la difficulté est de représenter un monde analogique et <em>continu</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dans un système fondamentalement <em>discontinu</em> et numérique, avec des <a href="https://fr.wikipedia.org/wiki/Math%C3%A9matiques_discr%C3%A8tes"><em>valeurs discrètes</em></a>.</p>
 <p><img alt="" src="img/sampling.png" /></p>
 <p>En numérique binaire, toute valeur, qu&rsquo;elle soit un nombre ou une couleur, doit être stockée en une suite de zéros et de uns, ce qu&rsquo;on appelle des <strong><em>bits</em></strong><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Il est donc impossible de représenter l&rsquo;ensemble des nombres réels en numérique, et nous devons <em>quantifier</em>, découper l&rsquo;infinité de couleurs que nous pouvons voir en un <strong>nombre fini</strong> de valeurs numériques. C&rsquo;est <em>l&rsquo;échantillonnage</em> (<em>sampling</em> en anglais).</p>
@@ -188,7 +200,7 @@
 
 
 <p>Cette taille représente un débit de données de 64 Gbps.À titre d&rsquo;exemple, un film sur un disque Blu-Ray est encodé avec un débit de 24 Gbps environ, ce qui signifie qu&rsquo;il faut diviser cette taille par au moins 2,6&hellip;</p>
-<h2 id="d2-les-espaces-colorimetriques">D.2 - Les Espaces colorimétriques<a class="headerlink" href="#d2-les-espaces-colorimetriques" title="Permanent link">&para;</a></h2>
+<h2 id="e2-les-espaces-colorimetriques">E.2 - Les Espaces colorimétriques<a class="headerlink" href="#e2-les-espaces-colorimetriques" title="Permanent link">&para;</a></h2>
 <p>Il faut donc trouver des méthodes permettant de réduire la place occupée par toute cette information ; c&rsquo;est là qu&rsquo;entrent en jeu les différents choix d&rsquo;espaces colorimétriques et méthodes de <em>compression</em> et d&rsquo;<em>échantillonage</em> des données associés.</p>
 <p>Ce problème est d&rsquo;ailleurs apparu bien avant l&rsquo;avènement du numérique : les flux de données analogiques, via des signaux électriques, ont eux aussi une capacité de transfert (une bande passante) limitée, et même bien plus limitée que la transmission d&rsquo;information numérique utilisant les mêmes câbles de cuivre, ce qui explique les limitations de format imposées aux premières heures de la vidéo, sans compter les problématiques de stockage.</p>
 <p>La manière de stocker les informations lumineuses échantillonnées (numérisées) varie donc en fonction du matériel utilisé pour la captation (la caméra) ou la génération (en synthèse), ainsi que de l&rsquo;usage que l&rsquo;on compte en faire, et influence la quantité de données à stocker.</p>
@@ -221,10 +233,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="05-espace-colo.html" class="btn btn-neutral float-right" title="E - Qu'est ce qu'un espace colo ?">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="05-espace-colo.html" class="btn btn-neutral float-right" title="F - Qu'est ce qu'un espace colo ?">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="03-representation.html" class="btn btn-neutral" title="C - Représentation objective"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="03-representation.html" class="btn btn-neutral" title="D - Représentation objective"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

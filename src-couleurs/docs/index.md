@@ -30,9 +30,11 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
         - B.3.a - Sur la luminosité et le contraste
         - B.3.b - Sur les teintes
 - C - [Le blanc, le pourpre, et autres mélanges](08-blanc.md)
-    - Blanc
-    - Pourpre
-    - Température
+    - C.1 - Blanc
+    - C.2 - Pourpre
+    - C.3 - Température
+        - C.3.a Corps noir
+        - C.3.b Lieu planckien
 - D - [Représentation objective des couleurs](03-representation.md)
     - D.1 - Décomposer les couleurs
     - D.2 - Diagrammes de couleurs, *CIE XYZ* de 1931 et *CIE xyZ*
@@ -48,8 +50,11 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - F.2 - Pourquoi différents espaces colorimétriques ?
 - G - [Liste d'espaces colorimétriques](06-liste-espaces.md)
 - H - [Liste des paramètres d'espaces colorimétriques](07-liste-params.md)
-- RGB vs YUV
-- 444, 422, 420, c’est quoi ça ?
+- I - [RGB et YUV](09-rgb-yuv.md)
+    - I.1 - RGB
+    - I.2 - YUV
+    - I.3 - Comparaison
+- J - [YUV 444, 422, 421, 420...](10-444.md)
 - Full range / Limited / TV / PC
 - X - [Profondeur (bpc)](XX-bpc.md)
 - X - [Courbes de transfert, espace linéaire et gamma](XX-transfert.md)
@@ -65,7 +70,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 
 ![YOUTUBE](m-lrOc2Fmck)
 
-![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/20)
 
 [^1]:
     Par souci de vulgarisation, nous nous permettrons certains raccourcis et approximations, le but étant la mise en application concrète et l'acquisition d'un savoir faire, et non pas l'étude scientifique du sujet.  

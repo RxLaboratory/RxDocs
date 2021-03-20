@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>C - Représentation objective - RxDocs - Gestion des couleurs</title>
+  <title>D - Représentation objective - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "C - Repr\u00e9sentation objective";
+    var mkdocs_page_name = "D - Repr\u00e9sentation objective";
     var mkdocs_page_input_path = "03-representation.md";
     var mkdocs_page_url = "/couleurs/03-representation.html";
   </script>
@@ -64,20 +64,24 @@
                     
     <a class="" href="02-perception.html">B - Perception des couleurs</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="08-blanc.html">C - Le blanc, le pourpre, et autres mélanges</a>
+                </li>
                 <li class=" current">
                     
-    <a class="current" href="03-representation.html">C - Représentation objective</a>
+    <a class="current" href="03-representation.html">D - Représentation objective</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#c-representation-objective-des-couleurs">C - Représentation objective des couleurs</a></li>
+    <li class="toctree-l3"><a href="#d-representation-objective-des-couleurs">D - Représentation objective des couleurs</a></li>
     
         <ul>
         
-            <li><a class="toctree-l4" href="#c1-decomposer-les-couleurs">C.1 - Décomposer les couleurs</a></li>
+            <li><a class="toctree-l4" href="#d1-decomposer-les-couleurs">D.1 - Décomposer les couleurs</a></li>
         
-            <li><a class="toctree-l4" href="#c2-diagrammes-de-couleurs-cie-xyz-de-1931-et-cie-xyz">C.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ</a></li>
+            <li><a class="toctree-l4" href="#d2-diagrammes-de-couleurs-cie-xyz-de-1931-et-cie-xyz">D.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ</a></li>
         
-            <li><a class="toctree-l4" href="#c3-autres-espaces-de-la-cie">C.3 - Autres espaces de la CIE</a></li>
+            <li><a class="toctree-l4" href="#d3-autres-espaces-de-la-cie">D.3 - Autres espaces de la CIE</a></li>
         
         </ul>
     
@@ -86,19 +90,27 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="04-numerisation.html">D - Du réel au numérique</a>
+    <a class="" href="04-numerisation.html">E - Du réel au numérique</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="05-espace-colo.html">E - Qu'est ce qu'un espace colo ?</a>
+    <a class="" href="05-espace-colo.html">F - Qu'est ce qu'un espace colo ?</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="06-liste-espaces.html">F - Liste d'espaces colorimétriques</a>
+    <a class="" href="06-liste-espaces.html">G - Liste d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="07-liste-params.html">G - Liste des paramètres d'espaces colorimétriques</a>
+    <a class="" href="07-liste-params.html">H - Liste des paramètres d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="09-rgb-yuv.html">I - RGB et YUV</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="10-444.html">J - YUV 444, 422, 421, 420...</a>
                 </li>
                 <li class="">
                     
@@ -153,7 +165,7 @@
         
       
     
-    <li>C - Représentation objective</li>
+    <li>D - Représentation objective</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/03-representation.md"
@@ -166,14 +178,14 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="c-representation-objective-des-couleurs">C - Représentation objective des couleurs<a class="headerlink" href="#c-representation-objective-des-couleurs" title="Permanent link">&para;</a></h1>
+                <h1 id="d-representation-objective-des-couleurs">D - Représentation objective des couleurs<a class="headerlink" href="#d-representation-objective-des-couleurs" title="Permanent link">&para;</a></h1>
 <p>Étant entendu que la perception des couleurs est éminemment subjective, tout travail en commun nécessite la mise en place d&rsquo;un référenciel objectif partagé par tous (et donc une certaine standardisation des techniques, ce qui n&rsquo;est pas toujours évident&hellip;).</p>
 <div class="toc">
 <ul>
-<li><a href="#c-representation-objective-des-couleurs">C - Représentation objective des couleurs</a><ul>
-<li><a href="#c1-decomposer-les-couleurs">C.1 - Décomposer les couleurs</a></li>
-<li><a href="#c2-diagrammes-de-couleurs-cie-xyz-de-1931-et-cie-xyz">C.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ</a></li>
-<li><a href="#c3-autres-espaces-de-la-cie">C.3 - Autres espaces de la CIE</a></li>
+<li><a href="#d-representation-objective-des-couleurs">D - Représentation objective des couleurs</a><ul>
+<li><a href="#d1-decomposer-les-couleurs">D.1 - Décomposer les couleurs</a></li>
+<li><a href="#d2-diagrammes-de-couleurs-cie-xyz-de-1931-et-cie-xyz">D.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ</a></li>
+<li><a href="#d3-autres-espaces-de-la-cie">D.3 - Autres espaces de la CIE</a></li>
 </ul>
 </li>
 </ul>
@@ -182,7 +194,7 @@
 <p>Les espaces colorimétriques modernes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> qu&rsquo;on utilise en traitement de l&rsquo;image sont des propositions de solutions à cette rationnalisation, de standardisation de représentation des couleurs, et se basent sur le travail et les premières tentatives de la CIE.</p>
 <p>Il est intéressant de savoir que la CIE a mené ses travaux de manière empirique, définissant un <em>observateur moyen</em> à partir de nombreuses expériences de comparaison de couleurs par des observateurs humains, afin de caractériser les couleurs et les lumières telles que les perçoit l&rsquo;humain moyen.</p>
 <p>C&rsquo;est en 1931 que la CIE a proposé une première représentation et rationnalisation des couleurs : le diagramme <em>CIE-1931</em>, encore très utilisé aujourd&rsquo;hui comme référentiel objectif, notamment pour comparer les différents espaces colorimétriques en usage.</p>
-<h2 id="c1-decomposer-les-couleurs">C.1 - Décomposer les couleurs<a class="headerlink" href="#c1-decomposer-les-couleurs" title="Permanent link">&para;</a></h2>
+<h2 id="d1-decomposer-les-couleurs">D.1 - Décomposer les couleurs<a class="headerlink" href="#d1-decomposer-les-couleurs" title="Permanent link">&para;</a></h2>
 <p>On l&rsquo;a sous-entendu jusqu&rsquo;ici, une couleur telle qu&rsquo;on la perçoit est physiquement définie par trois paramètres indépendants : son <em>intensité</em>, sa <em>longueur d&rsquo;onde dominante</em> et sa <em>pureté d&rsquo;excitation</em>.</p>
 <p><img alt="" src="img/1d-2d-3d.png" /></p>
 <ul>
@@ -191,7 +203,7 @@
 <li>La <strong>pureté d&rsquo;extraction</strong> représente la proportion entre la longueur d&rsquo;onde dominante et la quantité de <em>blanc</em> qu&rsquo;il faut y ajouter pour obtenir la couleur en question. C&rsquo;est proche de ce qu&rsquo;on nomme la <em>saturation</em>.</li>
 </ul>
 <p>Cette décomposition étant parfaitement objective (liée à la réalité physique de la lumière), elle est une bonne base pour fabriquer une représentation objective des couleurs ; c&rsquo;est ce qu&rsquo;a fait la CIE dès 1931.</p>
-<h2 id="c2-diagrammes-de-couleurs-cie-xyz-de-1931-et-cie-xyz">C.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ<a class="headerlink" href="#c2-diagrammes-de-couleurs-cie-xyz-de-1931-et-cie-xyz" title="Permanent link">&para;</a></h2>
+<h2 id="d2-diagrammes-de-couleurs-cie-xyz-de-1931-et-cie-xyz">D.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ<a class="headerlink" href="#d2-diagrammes-de-couleurs-cie-xyz-de-1931-et-cie-xyz" title="Permanent link">&para;</a></h2>
 <p>Avec ces trois paramètres, on peut donc représenter les couleurs en trois dimensions.</p>
 <p><img alt="" src="img/cie1931-3d.svg" /></p>
 <p>Afin d&rsquo;établir cette représentation, la CIE a choisi trois couleurs primaires théoriques différentes des Rouge, Vert et Bleu plus courant, dénommées X, Y et Z, capables d&rsquo;englober l&rsquo;intégralité des couleurs visibles. Cette représentation est donc l&rsquo;<strong>espace colorimétrique <em>CIE XYZ</em> de 1931</strong>, et sert encore aujourd&rsquo;hui de référence pour représenter et comparer tous les autres espaces colorimétriques.</p>
@@ -208,7 +220,7 @@
 <p>Ce contour contient donc toutes les lumières monochromatiques possibles, tandis que l&rsquo;intérieur du diagramme représente les couleurs &ldquo;mélangées&rdquo; telles qu&rsquo;on les perçoit.</p>
 <p>La ligne droite inférieure représente les mélanges des deux extrèmes du spectre visible, que l&rsquo;on voit comme les couleurs <em>pourpres</em>, qui ne font pas partie des lumières monochromatiques et referment le &ldquo;cercle chromatique&rdquo; qu&rsquo;on connait.</p>
 <p>Ce diagramme contenant toutes les couleurs visibles <strong>sert toujours de référence</strong> dans lequel <strong>on peut y inscrire les autres espaces colorimétriques</strong>, forcément &ldquo;plus petits&rdquo; car ne représentant qu&rsquo;une sous-partie de toutes ces couleurs, comme nous allons le voir par la suite.</p>
-<h2 id="c3-autres-espaces-de-la-cie">C.3 - Autres espaces de la CIE<a class="headerlink" href="#c3-autres-espaces-de-la-cie" title="Permanent link">&para;</a></h2>
+<h2 id="d3-autres-espaces-de-la-cie">D.3 - Autres espaces de la CIE<a class="headerlink" href="#d3-autres-espaces-de-la-cie" title="Permanent link">&para;</a></h2>
 <p>Depuis l&rsquo;établissement de ces premiers espaces colorimétriques et jusqu&rsquo;à aujourd&rsquo;hui, la CIE a continué ces travaux, améliorant l&rsquo;espace <em>xyZ</em> et créant d&rsquo;autres espaces plus spécifiques et pour des usages particulier.</p>
 <p>En 1976 notamment, deux autres espaces ont été publiés : le <strong><em>CIE L*u*v*</em></strong> (pour la lumière) et le <strong><em>CIE L*a*b*</em></strong> (pour les couleurs de surface, plus connu sous la forme <em>CIE LAB</em>). Ces deux espaces améliorent et compensent un &ldquo;défaut&rdquo; du <em>xyZ</em><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> : les coordonnées n&rsquo;y sont plus <em>linéaires</em> afin de mieux s&rsquo;accorder à la vision humaine. En effet, dans l&rsquo;espace <em>xyZ</em>, deux couleurs situées &ldquo;à la même distance&rdquo; peuvent dans certaines zones paraîtrent plus semblables que dans d&rsquo;autres zones. Les <em>L*a*b*</em> et <em>L*u*v*</em> corrigent ce &ldquo;défaut&rdquo; au prix d&rsquo;une plus grande complexité des calculs.</p>
 <p>Mais c&rsquo;est toujours le <em>XYZ</em> ou <em>xyZ</em> de 1931 qui sert de référence pour travailler avec et comparer tous les autres espaces colorimétriques.</p>
@@ -246,10 +258,10 @@ Il y a par exemple : <em>sRGB</em>, <em>BT.709</em>, <em>ACES</em>, <em>BT.2020<
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="04-numerisation.html" class="btn btn-neutral float-right" title="D - Du réel au numérique">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="04-numerisation.html" class="btn btn-neutral float-right" title="E - Du réel au numérique">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="02-perception.html" class="btn btn-neutral" title="B - Perception des couleurs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="08-blanc.html" class="btn btn-neutral" title="C - Le blanc, le pourpre, et autres mélanges"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -279,7 +291,7 @@ Il y a par exemple : <em>sRGB</em>, <em>BT.709</em>, <em>ACES</em>, <em>BT.2020<
           <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="02-perception.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="08-blanc.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="04-numerisation.html" style="color: #fcfcfc">Next &raquo;</a></span>

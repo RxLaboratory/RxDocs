@@ -38,6 +38,8 @@ nav:
         - F - Qu'est ce qu'un espace colo ?: 05-espace-colo.md
         - G - Liste d'espaces colorimétriques: 06-liste-espaces.md
         - H - Liste des paramètres d'espaces colorimétriques: 07-liste-params.md 
+        - I - RGB et YUV: 09-rgb-yuv.md
+        - J - YUV 444, 422, 421, 420...: 10-444.md
         - Glossaire: ZZ-vocabulaire.md
     - Tous les documents RxLab: http://docs.rainboxlab.org
     - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html

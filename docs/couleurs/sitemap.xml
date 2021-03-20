@@ -2,47 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/index.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/01-definition.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/02-perception.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/08-blanc.html</loc>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/03-representation.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/04-numerisation.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/05-espace-colo.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/06-liste-espaces.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/07-liste-params.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/09-rgb-yuv.html</loc>
+     <lastmod>2021-03-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/10-444.html</loc>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://docs.rainboxlab.org/couleurs/ZZ-vocabulaire.html</loc>
-     <lastmod>2021-03-18</lastmod>
+     <lastmod>2021-03-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
