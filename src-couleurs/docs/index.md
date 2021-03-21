@@ -1,4 +1,4 @@
-# Guide technique à la gestion des couleurs dans la production audiovisuelle
+# Guide technique pour la gestion des couleurs dans la production audiovisuelle
 
 ## À propos
 
@@ -83,7 +83,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 
 ![YOUTUBE](m-lrOc2Fmck)
 
-![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/20)
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/21)
 
 [^1]:
     Par souci de vulgarisation, nous nous permettrons certains raccourcis et approximations, le but étant la mise en application concrète et l'acquisition d'un savoir faire, et non pas l'étude scientifique du sujet.  
