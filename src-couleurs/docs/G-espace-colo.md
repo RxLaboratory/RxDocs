@@ -55,7 +55,7 @@ Par exemple, voici les coordonnées du point blanc de l'espace *sRGB* :
 | **x** | 0,3127 |
 | **y** | 0,3290 |
 
-La [*CIE*](03-representation.md) a défini un certain nombre de points blancs (on dit aussi *illuminant*) remarquables, utiles pour des usages particuliers. Ils sont représentés par des lettres (de *A* à *F*), parfois accompagné d'un nombre dans le cas de séries de points blancs.
+La [*CIE*](E-representation.md) a défini un certain nombre de points blancs (on dit aussi *illuminant*) remarquables, utiles pour des usages particuliers. Ils sont représentés par des lettres (de *A* à *F*), parfois accompagné d'un nombre dans le cas de séries de points blancs.
 
 Voici quelques exemples :
 

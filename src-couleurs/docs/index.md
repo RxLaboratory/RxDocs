@@ -2,11 +2,14 @@
 
 ## À propos
 
-Ce guide fait partie d'une collection de documents gérés par [*RxLaboratory*](http://rainboxlab.org): [***RxDocs***](http://docs.rainboxlab.org).  
+Ce guide fait partie d'une collection de documents gérés par [*RxLaboratory*](http://rainboxlab.org) : [***RxDocs***](http://docs.rainboxlab.org).  
 
-*RxLaboratory* est une organisation ayant pour mission de développer, distribuer, promouvoir les logiciels libres et l'innovation dans la production audiovisuelle, ainsi que de faciliter l'entraide, le partage et la coopération entre tous les acteurs de ce domaine.
+[*RxLaboratory*](http://rainboxlab.org) est une organisation ayant pour mission de développer, distribuer, promouvoir les logiciels libres et l'innovation dans la production audiovisuelle, ainsi que de faciliter l'entraide, le partage et la coopération entre tous les acteurs de ce domaine.
 
-*RxDocs* est un travail collaboratif de vulgarisation scientifique, technique et artistique dans le domaine de la production audiovisuelle au sens large : image, vidéo, animation, son... Ces documents s'adressent à toute personne travaillant dans le domaine (phographe, vidéaste, motion designer, réalisateur, animateur, illustrateur, chef opérateur, monteur...)
+[*RxDocs*](http://docs.rainboxlab.org) est un travail collaboratif de vulgarisation scientifique, technique et artistique dans le domaine de la production audiovisuelle au sens large : image, vidéo, animation, son... Ces documents s'adressent à toute personne travaillant dans le domaine (phographe, vidéaste, motion designer, réalisateur, animateur, illustrateur, chef opérateur, monteur...)
+
+!!! warning
+    Ce document est en cours d'écriture et encore loin d'être terminé ; si vous arrivez ici, considérez le bien comme un brouillon tout au long de votre lecture ! Tous les chapitres peuvent ne pas être encore écrits et la table des matières est toujours susceptible de changer.
 
 ## Introduction
 
@@ -21,40 +24,50 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 !!! note
     Concrètement, les espaces colorimétriques sont intrinsèquement liés aux formats d'encodage des données, et nous parlerons aussi en partie de ces différents formats.
 
-- A - [Qu'est ce que la couleur ?](01-definition.md)
+- A - [Qu'est ce que la couleur ?](A-definition.md)
     - A.1 - La couleur physique : la lumière visible
-- B - [Perception de la lumière et des couleurs par l'être humain](02-perception.md)
+    - A.2 - Suivons une lumière : de l'émission à la réception
+        - A.2.a - Emission, transmission, réflexion, réception
+        - A.2.b - Décomposition de la lumière reçue
+- B - [Petit inventaire et classification des couleurs](B-inventaire.md)
+    - note : intro brève sur la perception
+    - B.1 - Lumières monochromatiques
+    - B.2 - Gris et Blanc
+    - B.3 - Noir
+    - B.4 - Pourpre
+    - B.5 - Description de toute couleur :
+        - B.5.a - Intensité
+        - B.5.b - Longueur d'onde dominante
+        - B.5.c - Pureté d'excitation
+- C - [Perception de la lumière et des couleurs par l'être humain](C-perception.md)
     - B.1 - L'œil
     - B.2 - Le système nerveux
     - B.3 - Conséquences
         - B.3.a - Sur la luminosité et le contraste
         - B.3.b - Sur les teintes
-- C - [Le blanc, le pourpre, et autres mélanges](08-blanc.md)
-    - C.1 - Blanc
-    - C.2 - Pourpre
-    - C.3 - Température
-        - C.3.a Corps noir
-        - C.3.b Lieu planckien
-- D - [Représentation objective des couleurs](03-representation.md)
-    - D.1 - Décomposer les couleurs
-    - D.2 - Diagrammes de couleurs, *CIE XYZ* de 1931 et *CIE xyZ*
-    - D.3 - Autres espaces de la *CIE*
-- E - [Du réel au numérique](04-numerisation.md)
-    - E.1 - Numérisation et stockage : passer en binaire
-    - E.2 - Les Espaces colorimétriques
-- F - [Qu’est ce qu’un espace colorimétrique ?](05-espace-colo.md)
-    - F.1 - Ce qui définit un espace colorimétrique
-        - F.1.a - Les primaires
-        - F.1.b - Le point blanc
-        - F.1.c - La courbe de transfert
-    - F.2 - Pourquoi différents espaces colorimétriques ?
-- G - [Liste d'espaces colorimétriques](06-liste-espaces.md)
-- H - [Liste des paramètres d'espaces colorimétriques](07-liste-params.md)
-- I - [RGB et YUV](09-rgb-yuv.md)
-    - I.1 - RGB
-    - I.2 - YUV
-    - I.3 - Comparaison
-- J - [YUV 444, 422, 421, 420...](10-444.md)
+- D - [Retour sur les blancs : température](D-temperature.md)
+    - D.1 - Corps noir
+    - D2 - Lieu planckien
+- E - [Représentation objective des couleurs](E-representation.md)
+    - E.1 - Décomposer les couleurs
+    - E.2 - Diagrammes de couleurs, *CIE XYZ* de 1931 et *CIE xyZ*
+    - E.3 - Autres espaces de la *CIE*
+- F - [Du réel au numérique](F-numerisation.md)
+    - F.1 - Numérisation et stockage : passer en binaire
+    - F.2 - Les Espaces colorimétriques
+- G - [Qu’est ce qu’un espace colorimétrique ?](G-espace-colo.md)
+    - G.1 - Ce qui définit un espace colorimétrique
+        - G.1.a - Les primaires
+        - G.1.b - Le point blanc
+        - G.1.c - La courbe de transfert
+    - G.2 - Pourquoi différents espaces colorimétriques ?
+- H - [Liste d'espaces colorimétriques](H-liste-espaces.md)
+- I - [Liste des paramètres d'espaces colorimétriques](I-liste-params.md)
+- J - [RGB et YUV](J-rgb-yuv.md)
+    - J.1 - RGB
+    - J.2 - YUV
+    - J.3 - Comparaison
+- K - [YUV 444, 422, 421, 420...](K-444.md)
 - Full range / Limited / TV / PC
 - X - [Profondeur (bpc)](XX-bpc.md)
 - X - [Courbes de transfert, espace linéaire et gamma](XX-transfert.md)
