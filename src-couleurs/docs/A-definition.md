@@ -16,7 +16,7 @@ Il faut bien comprendre, au vu de ce spectre en arc-en-ciel, que dans la nature,
 
 On essaie donc naturellement de se donner des repères dans toutes ces couleurs possibles, allant du *noir* au *blanc* en passant par les *gris* et dans toutes les teintes de l'arc-en-ciel (c'est à dire les lumières monochromatiques), rouge, orange, jaune, vert, bleu, violet... Le problème étant alors de se mettre d'accord sur ces dénominations et définir précisément ce qui est rouge et ce qui est pourpre par exemple.
 
-Historiquement, une solution est venue de la découverte des [*raies de Fraunhofer]*(https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer), des discontinuités sombres dans le spectre de la lumière émise par le soleil, découvertes au début du XIXème siècle. Ces raies, provoquées par l'absorption de certaines fréquences par les milieux traversés par la lumière  (dans l'atmosphère notamment), sont visible sur des longueurs d'ondes précises et ont été une des premières références pour définir des couleurs précises.
+Historiquement, une solution est venue de la découverte des [*raies de Fraunhofer*](https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer), des discontinuités sombres dans le spectre de la lumière émise par le soleil, découvertes au début du XIXème siècle. Ces raies, provoquées par l'absorption de certaines fréquences par les milieux traversés par la lumière  (dans l'atmosphère notamment), sont visible sur des longueurs d'ondes précises et ont été une des premières références pour définir des couleurs précises.
 
 ![](img/fraunhofer-lines.svg)
 
@@ -26,9 +26,9 @@ Historiquement, une solution est venue de la découverte des [*raies de Fraunhof
 
 ### A.2.a - Le trajet : émission, transmission, réflexion, réception
 
-![*Schéma de l'émission à la réception*]()
+*![Schéma de l'émission à la réception]()*
 
-La couleur que nous percevons est donc le résultat d'un groupe de rayons de lumière émis ("créé") par une source donnée (le soleil, un écran, une ampoule...), qui a traversé un ou plusieurs milieux aux propriétés différentes qui en ont absorbé, dévié ou réémis une partie[^1], qui a été réfléchi par une ou plusieurs surfaces aux propriétés différentes qui en ont à leur tout absorbé, dévié ou réémis une partie, avant d'enfin atteindre un capteur, notre œil, ou un capteur de caméra...
+La couleur que nous percevons est donc le résultat d'un groupe de rayons de lumière émis ("créé") par une source donnée (le soleil, un écran, une ampoule...), qui a traversé un ou plusieurs milieux aux propriétés différentes qui en ont absorbé, dévié ou réémis une partie[^1], qui a été réfléchi par une ou plusieurs surfaces aux propriétés différentes qui en ont à leur tout absorbé, dévié ou réémis une partie, avant d'enfin atteindre un capteur : notre œil, ou celui d'une caméra...
 
 ### A.2.b - Décomposition de la lumière reçue
 
@@ -36,7 +36,7 @@ Au final, quel qu'ait été le trajet de ce groupe de rayons de lumière, nous n
 
 La couleur est donc "juste" un mélange d'un certains nombre de rayons lumineux parvenus à un capteur ou à notre œil. Chacun de ces rayons, ou *photons*\* possède une longueur d'onde précise dite *monochrome*\*, et si nous voyons des couleurs différentes de celles du spectre électro-magnétique, elles sont le résultat du mélange de tous ces rayons.
 
-C'est la quantité de photons reçus formant cette couleur qui fait l'intensité, la *luminance*\*, de la couleur, et le mélange des différentes longueurs d'ondes qui ait la *teinte*\*.
+C'est la quantité de photons reçus formant cette couleur qui fait l'intensité, la *luminance*\*, de la couleur, et le mélange des différentes longueurs d'ondes qui fait la *teinte*\*.
 
 ----
 Sources et références

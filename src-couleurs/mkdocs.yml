@@ -30,7 +30,7 @@ dev_addr: '127.0.0.1:8001'
 nav:
     - Gestion des couleurs:
         - Introduction: index.md
-        - A - Définition: A-definition.md
+        - A - Qu'est ce que la couleur ?: A-definition.md
         - B - Petit inventaire et classification des couleurs: B-inventaire.md
         - C - Perception des couleurs: C-perception.md
         - D - Retour sur les blancs, température: D-temperature.md
