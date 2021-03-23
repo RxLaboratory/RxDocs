@@ -26,9 +26,9 @@ Historiquement, une solution est venue de la découverte des [*raies de Fraunhof
 
 ### A.2.a - Le trajet : émission, transmission, réflexion, réception
 
-*![Schéma de l'émission à la réception]()*
-
 La couleur que nous percevons est donc le résultat d'un groupe de rayons de lumière émis ("créé") par une source donnée (le soleil, un écran, une ampoule...), qui a traversé un ou plusieurs milieux aux propriétés différentes qui en ont absorbé, dévié ou réémis une partie[^1], qui a été réfléchi par une ou plusieurs surfaces aux propriétés différentes qui en ont à leur tout absorbé, dévié ou réémis une partie, avant d'enfin atteindre un capteur : notre œil, ou celui d'une caméra...
+
+*![Schéma de l'émission à la réception](img/light-path.svg)*
 
 ### A.2.b - Décomposition de la lumière reçue
 
@@ -45,7 +45,7 @@ Sources et références
 - [Spectre électro-magnétique sur *Wikipedia*](https://fr.wikipedia.org/wiki/Spectre_%C3%A9lectromagn%C3%A9tique)
 - [Raies de Fraunhofer sur *Wikipedia*](https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer)
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23)
 
 [^1]:
     On parle notamment de *réfraction* pour la déviation des rayons
