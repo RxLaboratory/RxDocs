@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>XX bpc - RxDocs - Gestion des couleurs</title>
+  <title>O - Courbes de transfert, espace linéaire et gamma - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "XX bpc";
-    var mkdocs_page_input_path = "XX-bpc.md";
-    var mkdocs_page_url = "/couleurs/XX-bpc.html";
+    var mkdocs_page_name = "O - Courbes de transfert, espace lin\u00e9aire et gamma";
+    var mkdocs_page_input_path = "O-transfert.md";
+    var mkdocs_page_url = "/couleurs/O-transfert.html";
   </script>
   
   <script src="js/jquery-2.1.1.min.js" defer></script>
@@ -58,7 +58,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="A-definition.html">A - Définition</a>
+    <a class="" href="A-definition.html">A - Qu'est ce que la couleur ?</a>
                 </li>
                 <li class="">
                     
@@ -70,35 +70,50 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="D-temperature.html">D - Retour sur les blancs, température</a>
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="E-representation.html">E - Représentation objective</a>
+    <a class="" href="E-temperature.html">E - Retour sur les blancs, température</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="F-numerisation.html">F - Du réel au numérique</a>
+    <a class="" href="F-representation.html">F - Représentation objective</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="G-espace-colo.html">G - Qu'est ce qu'un espace colo ?</a>
+    <a class="" href="G-numerisation.html">G - Du réel au numérique</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="H-liste-espaces.html">H - Liste d'espaces colorimétriques</a>
+    <a class="" href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="I-liste-params.html">I - Liste des paramètres d'espaces colorimétriques</a>
+    <a class="" href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="J-rgb-yuv.html">J - RGB et YUV</a>
+    <a class="" href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="K-444.html">K - YUV 444, 422, 421, 420...</a>
+    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="L-444.html">L - YUV 444, 422, 421, 420...</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
+    <ul class="subnav">
+            
+    </ul>
                 </li>
                 <li class="">
                     
@@ -148,11 +163,15 @@
     <li><a href=".">Docs</a> &raquo;</li>
     
       
+        
+          <li>Gestion des couleurs &raquo;</li>
+        
+      
     
-    <li>XX bpc</li>
+    <li>O - Courbes de transfert, espace linéaire et gamma</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/XX-bpc.md"
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/O-transfert.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -162,11 +181,21 @@
           <div role="main">
             <div class="section">
               
-                
+                <p>L&rsquo;espace est dit <em>linéaire</em> quand cette courbe est une simple fonction affine, c&rsquo;est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle. L&rsquo;intérêt des espaces linéaires est de faciliter les calculs, tout en les traitant de la même manière que la lumière physique. Leur défaut est qu&rsquo;ils sont éloignés de la manière dont la vision humaine réagit à l&rsquo;intensité : en effet, comme on l&rsquo;a vu, notre vision est plus performante dans la pénombre que les hautes lumières ; la réponse des yeux aux rayons lumineux n&rsquo;est pas linéaire.</p>
+<p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine ; les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes ; le <em>gamma</em> n&rsquo;étant alors qu&rsquo;une <em>approximation</em> de leurs courbes de transfert. L&rsquo;intérêt de ces courbes de transfert est qu&rsquo;elles vont modifier la façon dont les valeurs sont stockées concrètement, en favorisant le stockage des intensités plus faibles ; à taille égale, la &ldquo;qualité&rdquo; des images s&rsquo;en retrouvent améliorée dans les ombres au détriment des lumières, que l&rsquo;œil humain distingue moins bien. Ces espaces rendent aussi le travail plus facile en représentant les intensités de manière plus intuitive.</p>
               
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ZZ-vocabulaire.html" class="btn btn-neutral float-right" title="Glossaire">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="N-bpc.html" class="btn btn-neutral" title="N - Profondeur (bpc)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -194,6 +223,10 @@
           <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
+        <span><a href="N-bpc.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="ZZ-vocabulaire.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

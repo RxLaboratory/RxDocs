@@ -72,7 +72,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - K.1 - RGB
     - K.2 - YUV
     - K.3 - Comparaison
-- L - [YUV 444, 422, 421, 420... Le sous-échantillonage de chrominance](K-444.md)
+- L - [YUV 444, 422, 421, 420... Le sous-échantillonage de chrominance](L-444.md)
 - M - Full range / Limited / TV / PC
 - N - [Profondeur (bpc)](N-bpc.md)
 - O - [Courbes de transfert, espace linéaire et gamma](O-transfert.md)

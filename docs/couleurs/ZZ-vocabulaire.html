@@ -58,7 +58,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="A-definition.html">A - Définition</a>
+    <a class="" href="A-definition.html">A - Qu'est ce que la couleur ?</a>
                 </li>
                 <li class="">
                     
@@ -70,35 +70,47 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="D-temperature.html">D - Retour sur les blancs, température</a>
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="E-representation.html">E - Représentation objective</a>
+    <a class="" href="E-temperature.html">E - Retour sur les blancs, température</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="F-numerisation.html">F - Du réel au numérique</a>
+    <a class="" href="F-representation.html">F - Représentation objective</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="G-espace-colo.html">G - Qu'est ce qu'un espace colo ?</a>
+    <a class="" href="G-numerisation.html">G - Du réel au numérique</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="H-liste-espaces.html">H - Liste d'espaces colorimétriques</a>
+    <a class="" href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="I-liste-params.html">I - Liste des paramètres d'espaces colorimétriques</a>
+    <a class="" href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="J-rgb-yuv.html">J - RGB et YUV</a>
+    <a class="" href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="K-444.html">K - YUV 444, 422, 421, 420...</a>
+    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="L-444.html">L - YUV 444, 422, 421, 420...</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
                 </li>
                 <li class=" current">
                     
@@ -212,10 +224,13 @@
 <p><strong><em>LUT</em></strong> : de l&rsquo;anglais <em>Lookup Table</em>. Une <em>LUT</em> permet en informatique (surtout à ses premières heures) de remplacer des fonctions mathématiques complexes (et surtout prenant du temps à réaliser) par des tableaux de valeurs ; au lieu de <em>calculer</em> des correspondances et des conversions, on retrouve la valeur dans le tableau. On en utilise encore beaucoup en colorimétrie : elles permettent de convertir des couleurs entres différents espaces colorimétriques sans se soucier de la formule mathématique correspondante (et sont donc un moyen facile de faire une conversion entre des espaces dans un logiciel qui ne les gère pas nativement). Elles peuvent provoquer une (petite) perte d&rsquo;information si elles ne sont pas assez précises (ne contiennent pas suffisamment de valeurs). Elles sont aussi utilisées comme <em>presets</em> d&rsquo;étalonnage ou de colorimétrie et peuvent permettre de facilement répliquer un effet, même dans un logiciel qui ne le permettrait pas avec ses outils de couleurs natifs (pour peu qu&rsquo;il puisse appliquer une <em>LUT</em> quand même). voir la section [XX-luts.md] pour plus de détails.</p>
 </li>
 <li>
-<p>(Couleurs) Métamères</p>
+<p><strong>(Couleurs) <em>Métamères</em></strong> : deux (ou plus) couleurs sont dites <em>métamères</em> quand elles sont d&rsquo;apparence identique (l&rsquo;œil et le cerveau ne font pas la différence) bien qu&rsquo;elles soient composées en réalité d&rsquo;un mélange différent de rayons <em>monochromatiques*</em>.</p>
 </li>
 <li>
 <p>(Lumière) Monochromatique</p>
+</li>
+<li>
+<p><strong><em>Noir</em></strong> : Le <em>noir</em> est la couleur résultant de l&rsquo;absence de lumière. Il est donc la couleur de plus faible luminosité (nulle) et sa <em>saturation*</em> ne peut pas être définie.</p>
 </li>
 <li>
 <p><strong><em>OCIO</em></strong> : <em>OpenColorIO</em> est une librarie logicielle (une &ldquo;brique&rdquo;/outil développeur utilisable dans d&rsquo;autres logiciels/applications) dédiée à la gestion des couleurs. Elle est gratuite et open source, et devenue standard avec son inclusion et usage dans un grand nombre d&rsquo;applications (en natif sur <em>Maya, Arnold, Krita, Blender, Nuke</em>&hellip; ; via des plugins et add-ons sur <em>After Effects</em>&hellip; ; via des LUTs*/Profils colorimétriques sur <em>Photoshop</em> et d&rsquo;autres). Cette inclusion dans différentes applications permet de partager une configuration unique de la gestion des couleurs sur toute la chaîne de production et assurer une reproduction identique des couleurs à toutes les étapes.</p>
@@ -229,11 +244,25 @@
 <li>
 <p>Point Blanc</p>
 </li>
-<li>(Couleurs) Primaires</li>
+<li>
+<p><strong><em>Pourpre</em></strong>* : Les <em>pourpres</em> sont les couleurs résultant du mélange (uniquement) des deux extrèmes du spectre des lumières <em>monochromatiques</em>* visibles : rouge et bleu, en des proportions pouvant varier. Elles sont considérées comme des couleurs <em>saturées</em>*.</p>
+</li>
+<li>
+<p>(Couleurs) Primaires</p>
+</li>
 <li>Pureté colorimétrique</li>
-<li>Pureté d&rsquo;excitation</li>
-<li>Saturation</li>
-<li>Teinte</li>
+<li>
+<p>Pureté d&rsquo;excitation</p>
+</li>
+<li>
+<p><strong><em>Saturation</em></strong> : Les couleurs les plus <em>saturées</em> possible sont les couleurs <em>monochromatiques</em>* auxquelles on ajoute les pourpres (les mélanges de rouge et bleu). Dès lors que les couleurs sont un mélange de plusieurs lumières <em>monochromatiques</em>* (hors mélange des extrèmes bleu et rouge), la saturation baisse jusqu&rsquo;à ce que la couleur devienne grise ou blanche. Les couleurs saturées vont donc du <em>noir</em> aux couleurs de l&rsquo;arc en ciel.</p>
+</li>
+<li>
+<p>Teinte</p>
+</li>
+<li>
+<p><strong><em>Violet</em></strong> : voir <em>Pourpre</em>.</p>
+</li>
 </ul>
 <p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/19" /></p>
               
@@ -244,7 +273,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="K-444.html" class="btn btn-neutral" title="K - YUV 444, 422, 421, 420..."><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="O-transfert.html" class="btn btn-neutral" title="O - Courbes de transfert, espace linéaire et gamma"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -274,7 +303,7 @@
           <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="K-444.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="O-transfert.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

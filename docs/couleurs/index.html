@@ -57,7 +57,7 @@
     <a class="current" href="index.html">Introduction</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#guide-technique-a-la-gestion-des-couleurs-dans-la-production-audiovisuelle">Guide technique à la gestion des couleurs dans la production audiovisuelle</a></li>
+    <li class="toctree-l3"><a href="#guide-technique-pour-la-gestion-des-couleurs-dans-la-production-audiovisuelle">Guide technique pour la gestion des couleurs dans la production audiovisuelle</a></li>
     
         <ul>
         
@@ -72,7 +72,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="A-definition.html">A - Définition</a>
+    <a class="" href="A-definition.html">A - Qu'est ce que la couleur ?</a>
                 </li>
                 <li class="">
                     
@@ -84,35 +84,47 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="D-temperature.html">D - Retour sur les blancs, température</a>
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="E-representation.html">E - Représentation objective</a>
+    <a class="" href="E-temperature.html">E - Retour sur les blancs, température</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="F-numerisation.html">F - Du réel au numérique</a>
+    <a class="" href="F-representation.html">F - Représentation objective</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="G-espace-colo.html">G - Qu'est ce qu'un espace colo ?</a>
+    <a class="" href="G-numerisation.html">G - Du réel au numérique</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="H-liste-espaces.html">H - Liste d'espaces colorimétriques</a>
+    <a class="" href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="I-liste-params.html">I - Liste des paramètres d'espaces colorimétriques</a>
+    <a class="" href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="J-rgb-yuv.html">J - RGB et YUV</a>
+    <a class="" href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="K-444.html">K - YUV 444, 422, 421, 420...</a>
+    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="L-444.html">L - YUV 444, 422, 421, 420...</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
                 </li>
                 <li class="">
                     
@@ -180,7 +192,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="guide-technique-a-la-gestion-des-couleurs-dans-la-production-audiovisuelle">Guide technique à la gestion des couleurs dans la production audiovisuelle<a class="headerlink" href="#guide-technique-a-la-gestion-des-couleurs-dans-la-production-audiovisuelle" title="Permanent link">&para;</a></h1>
+                <h1 id="guide-technique-pour-la-gestion-des-couleurs-dans-la-production-audiovisuelle">Guide technique pour la gestion des couleurs dans la production audiovisuelle<a class="headerlink" href="#guide-technique-pour-la-gestion-des-couleurs-dans-la-production-audiovisuelle" title="Permanent link">&para;</a></h1>
 <h2 id="a-propos">À propos<a class="headerlink" href="#a-propos" title="Permanent link">&para;</a></h2>
 <p>Ce guide fait partie d&rsquo;une collection de documents gérés par <a href="http://rainboxlab.org"><em>RxLaboratory</em></a> : <a href="http://docs.rainboxlab.org"><strong><em>RxDocs</em></strong></a>.  </p>
 <p><a href="http://rainboxlab.org"><em>RxLaboratory</em></a> est une organisation ayant pour mission de développer, distribuer, promouvoir les logiciels libres et l&rsquo;innovation dans la production audiovisuelle, ainsi que de faciliter l&rsquo;entraide, le partage et la coopération entre tous les acteurs de ce domaine.</p>
@@ -210,14 +222,12 @@
 </li>
 <li>B - <a href="B-inventaire.html">Petit inventaire et classification des couleurs</a><ul>
 <li>note : intro brève sur la perception</li>
-<li>B.1 - Lumières monochromatiques</li>
-<li>B.2 - Gris et Blanc</li>
-<li>B.3 - Noir</li>
-<li>B.4 - Pourpre</li>
-<li>B.5 - Description de toute couleur :<ul>
-<li>B.5.a - Intensité</li>
-<li>B.5.b - Longueur d&rsquo;onde dominante</li>
-<li>B.5.c - Pureté d&rsquo;excitation</li>
+<li>B.1 - Noir</li>
+<li>B.2 - Lumières monochromatiques</li>
+<li>B.3 - Pourpres</li>
+<li>B.4 - Gris et blancs<ul>
+<li>B.4.a - Couleurs complémentaires</li>
+<li>B.4.b - Perception</li>
 </ul>
 </li>
 </ul>
@@ -232,44 +242,55 @@
 </li>
 </ul>
 </li>
-<li>D - <a href="D-temperature.html">Retour sur les blancs : température</a><ul>
-<li>D.1 - Corps noir</li>
-<li>D2 - Lieu planckien</li>
+<li>D - <a href="D-reproduction.html">Reproduction des couleurs</a><ul>
+<li>D.1 - Synthèse additive</li>
+<li>D.2 - Synthèse soustractive</li>
 </ul>
 </li>
-<li>E - <a href="E-representation.html">Représentation objective des couleurs</a><ul>
-<li>E.1 - Décomposer les couleurs</li>
-<li>E.2 - Diagrammes de couleurs, <em>CIE XYZ</em> de 1931 et <em>CIE xyZ</em></li>
-<li>E.3 - Autres espaces de la <em>CIE</em></li>
+<li>E - <a href="E-temperature.html">Retour sur les blancs : température</a><ul>
+<li>E.1 - Corps noir</li>
+<li>E.2 - Lieu planckien</li>
+<li>E.3 - Balance des blancs</li>
 </ul>
 </li>
-<li>F - <a href="F-numerisation.html">Du réel au numérique</a><ul>
-<li>F.1 - Numérisation et stockage : passer en binaire</li>
-<li>F.2 - Les Espaces colorimétriques</li>
+<li>F - <a href="F-representation.html">Représentation objective des couleurs</a><ul>
+<li>F.1 - Décomposer les couleurs</li>
+<li>F.2 - Diagrammes de couleurs, <em>CIE XYZ</em> de 1931 et <em>CIE xyZ</em></li>
+<li>F.3 - Autres espaces de la <em>CIE</em></li>
 </ul>
 </li>
-<li>G - <a href="G-espace-colo.html">Qu’est ce qu’un espace colorimétrique ?</a><ul>
-<li>G.1 - Ce qui définit un espace colorimétrique<ul>
-<li>G.1.a - Les primaires</li>
-<li>G.1.b - Le point blanc</li>
-<li>G.1.c - La courbe de transfert</li>
+<li>G - <a href="G-numerisation.html">Du réel au numérique</a><ul>
+<li>G.1 - Numérisation et stockage : passer en binaire</li>
+<li>G.2 - Les Espaces colorimétriques</li>
 </ul>
 </li>
-<li>G.2 - Pourquoi différents espaces colorimétriques ?</li>
+<li>H - <a href="H-espace-colo.html">Qu’est ce qu’un espace colorimétrique ?</a><ul>
+<li>H.1 - Ce qui définit un espace colorimétrique<ul>
+<li>H.1.a - Les primaires</li>
+<li>H.1.b - Le point blanc</li>
+<li>H.1.c - La courbe de transfert</li>
 </ul>
 </li>
-<li>H - <a href="H-liste-espaces.html">Liste d&rsquo;espaces colorimétriques</a></li>
-<li>I - <a href="I-liste-params.html">Liste des paramètres d&rsquo;espaces colorimétriques</a></li>
-<li>J - <a href="J-rgb-yuv.html">RGB et YUV</a><ul>
-<li>J.1 - RGB</li>
-<li>J.2 - YUV</li>
-<li>J.3 - Comparaison</li>
+<li>H.2 - Autres paramètres<ul>
+<li>H.2.a - Format de pixel</li>
+<li>H.2.b - Profondeur</li>
 </ul>
 </li>
-<li>K - <a href="K-444.html">YUV 444, 422, 421, 420&hellip;</a></li>
-<li>Full range / Limited / TV / PC</li>
-<li>X - <a href="XX-bpc.html">Profondeur (bpc)</a></li>
-<li>X - <a href="XX-transfert.html">Courbes de transfert, espace linéaire et gamma</a></li>
+<li>H.3 - Pourquoi différents espaces colorimétriques ?</li>
+</ul>
+</li>
+<li>I - <a href="I-liste-espaces.html">Liste d&rsquo;espaces colorimétriques</a></li>
+<li>J - <a href="J-liste-params.html">Liste des paramètres d&rsquo;espaces colorimétriques</a></li>
+<li>K - <a href="K-rgb-yuv.html">RGB et YUV</a><ul>
+<li>K.1 - RGB</li>
+<li>K.2 - YUV</li>
+<li>K.3 - Comparaison</li>
+</ul>
+</li>
+<li>L - <a href="L-444.html">YUV 444, 422, 421, 420&hellip; Le sous-échantillonage de chrominance</a></li>
+<li>M - Full range / Limited / TV / PC</li>
+<li>N - <a href="N-bpc.html">Profondeur (bpc)</a></li>
+<li>O - <a href="O-transfert.html">Courbes de transfert, espace linéaire et gamma</a></li>
 <li>Les LUTs</li>
 <li>Calibration des écrans et leurs espaces colorimétriques</li>
 <li>OCIO, ACES</li>
@@ -280,7 +301,7 @@
 </ul>
 <p>À l&rsquo;origine de ce document, cette vidéo enregistrée en direct avec <a href="https://www.motion-cafe.com/">Motion Café</a> et <a href="http://duduf.com">Nicolas Dufresne</a> : </p>
 <p><img alt="YOUTUBE" src="m-lrOc2Fmck" /></p>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/20" /></p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23" /></p>
 <div class="footnote">
 <hr />
 <ol>
@@ -299,7 +320,7 @@ Sur chaque page, nous ajoutons et complètons régulièrement les sources et ré
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="A-definition.html" class="btn btn-neutral float-right" title="A - Définition">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="A-definition.html" class="btn btn-neutral float-right" title="A - Qu'est ce que la couleur ?">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>

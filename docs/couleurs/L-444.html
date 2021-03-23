@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>K - YUV 444, 422, 421, 420... - RxDocs - Gestion des couleurs</title>
+  <title>L - YUV 444, 422, 421, 420... - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "K - YUV 444, 422, 421, 420...";
-    var mkdocs_page_input_path = "K-444.md";
-    var mkdocs_page_url = "/couleurs/K-444.html";
+    var mkdocs_page_name = "L - YUV 444, 422, 421, 420...";
+    var mkdocs_page_input_path = "L-444.md";
+    var mkdocs_page_url = "/couleurs/L-444.html";
   </script>
   
   <script src="js/jquery-2.1.1.min.js" defer></script>
@@ -58,7 +58,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="A-definition.html">A - Définition</a>
+    <a class="" href="A-definition.html">A - Qu'est ce que la couleur ?</a>
                 </li>
                 <li class="">
                     
@@ -70,41 +70,53 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="D-temperature.html">D - Retour sur les blancs, température</a>
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="E-representation.html">E - Représentation objective</a>
+    <a class="" href="E-temperature.html">E - Retour sur les blancs, température</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="F-numerisation.html">F - Du réel au numérique</a>
+    <a class="" href="F-representation.html">F - Représentation objective</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="G-espace-colo.html">G - Qu'est ce qu'un espace colo ?</a>
+    <a class="" href="G-numerisation.html">G - Du réel au numérique</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="H-liste-espaces.html">H - Liste d'espaces colorimétriques</a>
+    <a class="" href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="I-liste-params.html">I - Liste des paramètres d'espaces colorimétriques</a>
+    <a class="" href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="J-rgb-yuv.html">J - RGB et YUV</a>
+    <a class="" href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="K-444.html">K - YUV 444, 422, 421, 420...</a>
+    <a class="current" href="L-444.html">L - YUV 444, 422, 421, 420...</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#j-yuv-444-422-421-420">J - YUV 444, 422, 421, 420...</a></li>
+    <li class="toctree-l3"><a href="#l-yuv-444-422-421-420-le-sous-echantillonage-de-chrominance">L - YUV 444, 422, 421, 420... Le sous-échantillonage de chrominance</a></li>
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
                 </li>
                 <li class="">
                     
@@ -159,10 +171,10 @@
         
       
     
-    <li>K - YUV 444, 422, 421, 420...</li>
+    <li>L - YUV 444, 422, 421, 420...</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/K-444.md"
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/L-444.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -172,7 +184,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="j-yuv-444-422-421-420">J - YUV 444, 422, 421, 420&hellip;<a class="headerlink" href="#j-yuv-444-422-421-420" title="Permanent link">&para;</a></h1>
+                <h1 id="l-yuv-444-422-421-420-le-sous-echantillonage-de-chrominance">L - YUV 444, 422, 421, 420&hellip; Le sous-échantillonage de chrominance<a class="headerlink" href="#l-yuv-444-422-421-420-le-sous-echantillonage-de-chrominance" title="Permanent link">&para;</a></h1>
 <hr />
 <p>Sources et références</p>
 <p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/20" /></p>
@@ -183,10 +195,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ZZ-vocabulaire.html" class="btn btn-neutral float-right" title="Glossaire">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="N-bpc.html" class="btn btn-neutral float-right" title="N - Profondeur (bpc)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="J-rgb-yuv.html" class="btn btn-neutral" title="J - RGB et YUV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="K-rgb-yuv.html" class="btn btn-neutral" title="K - RGB et YUV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -216,10 +228,10 @@
           <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="J-rgb-yuv.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="K-rgb-yuv.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="ZZ-vocabulaire.html" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="N-bpc.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>A - Définition - RxDocs - Gestion des couleurs</title>
+  <title>A - Qu'est ce que la couleur ? - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "A - D\u00e9finition";
+    var mkdocs_page_name = "A - Qu'est ce que la couleur ?";
     var mkdocs_page_input_path = "A-definition.md";
     var mkdocs_page_url = "/couleurs/A-definition.html";
   </script>
@@ -58,7 +58,7 @@
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="A-definition.html">A - Définition</a>
+    <a class="current" href="A-definition.html">A - Qu'est ce que la couleur ?</a>
     <ul class="subnav">
             
     <li class="toctree-l3"><a href="#a-quest-ce-que-la-couleur">A - Qu'est ce que la couleur ?</a></li>
@@ -66,6 +66,8 @@
         <ul>
         
             <li><a class="toctree-l4" href="#a1-la-couleur-physique-la-lumiere-visible">A.1 - La couleur physique : la lumière visible</a></li>
+        
+            <li><a class="toctree-l4" href="#a2-suivons-une-lumiere">A.2 - Suivons une lumière</a></li>
         
         </ul>
     
@@ -82,35 +84,47 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="D-temperature.html">D - Retour sur les blancs, température</a>
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="E-representation.html">E - Représentation objective</a>
+    <a class="" href="E-temperature.html">E - Retour sur les blancs, température</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="F-numerisation.html">F - Du réel au numérique</a>
+    <a class="" href="F-representation.html">F - Représentation objective</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="G-espace-colo.html">G - Qu'est ce qu'un espace colo ?</a>
+    <a class="" href="G-numerisation.html">G - Du réel au numérique</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="H-liste-espaces.html">H - Liste d'espaces colorimétriques</a>
+    <a class="" href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="I-liste-params.html">I - Liste des paramètres d'espaces colorimétriques</a>
+    <a class="" href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="J-rgb-yuv.html">J - RGB et YUV</a>
+    <a class="" href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="K-444.html">K - YUV 444, 422, 421, 420...</a>
+    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="L-444.html">L - YUV 444, 422, 421, 420...</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
                 </li>
                 <li class="">
                     
@@ -165,7 +179,7 @@
         
       
     
-    <li>A - Définition</li>
+    <li>A - Qu'est ce que la couleur ?</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/A-definition.md"
@@ -185,6 +199,11 @@
 <ul>
 <li><a href="#a-quest-ce-que-la-couleur">A - Qu&rsquo;est ce que la couleur ?</a><ul>
 <li><a href="#a1-la-couleur-physique-la-lumiere-visible">A.1 - La couleur physique : la lumière visible</a></li>
+<li><a href="#a2-suivons-une-lumiere">A.2 - Suivons une lumière</a><ul>
+<li><a href="#a2a-le-trajet-emission-transmission-reflexion-reception">A.2.a - Le trajet : émission, transmission, réflexion, réception</a></li>
+<li><a href="#a2b-decomposition-de-la-lumiere-recue">A.2.b - Décomposition de la lumière reçue</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -192,11 +211,19 @@
 <h2 id="a1-la-couleur-physique-la-lumiere-visible">A.1 - La couleur physique : la lumière visible<a class="headerlink" href="#a1-la-couleur-physique-la-lumiere-visible" title="Permanent link">&para;</a></h2>
 <p>Ce que l&rsquo;on appelle la <em>couleur</em> est donc la perception par l&rsquo;être humain de la <em>lumière visible</em>, la lumière visible n&rsquo;étant en réalité qu&rsquo;une petite partie du <a href="https://fr.wikipedia.org/wiki/Spectre_%C3%A9lectromagn%C3%A9tique">spectre électro-magnétique</a>.</p>
 <p><img alt="" src="img/electromagnetic-spectrum.svg" /></p>
-<p>Il faut bien comprendre, au vu de ce spectre en arc-en-ciel, que dans la nature, les sources de lumières <em>monochromatiques</em> sont rares, et l&rsquo;on perçoit surtout un mélange de ces différentes fréquences ; les <em>couleurs</em> dont on va donc discuter ici comprennent à la fois ces sources monochromatiques ainsi que <em>tous les mélanges</em> possible entre elles, à différentes intensités. Ces mélanges représentent donc une infinité de nuances, une infinité de couleurs différentes, qu&rsquo;il serait impossible de décrire toutes individuellement.</p>
+<p>Il faut bien comprendre, au vu de ce spectre en arc-en-ciel, que dans la nature, les sources de lumières <em>monochromatiques</em> sont rares, et l&rsquo;on perçoit surtout un mélange de ces différentes fréquences ; les <em>couleurs</em> dont on va donc discuter ici comprennent à la fois ces sources monochromatiques mais aussi et surtout <em>tous les mélanges</em> possible entre elles, à différentes intensités. Ces mélanges représentent donc une infinité de nuances, une infinité de couleurs différentes, qu&rsquo;il serait impossible de décrire toutes individuellement.</p>
 <p>On essaie donc naturellement de se donner des repères dans toutes ces couleurs possibles, allant du <em>noir</em> au <em>blanc</em> en passant par les <em>gris</em> et dans toutes les teintes de l&rsquo;arc-en-ciel (c&rsquo;est à dire les lumières monochromatiques), rouge, orange, jaune, vert, bleu, violet&hellip; Le problème étant alors de se mettre d&rsquo;accord sur ces dénominations et définir précisément ce qui est rouge et ce qui est pourpre par exemple.</p>
-<p>Historiquement, une solution est venue de la découverte des <a href="https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer">raies de Fraunhofer</a>, des discontinuités sombres dans le spectre de la lumière émise par le soleil, découvertes au début du XIXème siècle. Ces raies, provoquées par l&rsquo;absorption de certaines fréquences par les milieux traversés par la lumière  (dans l&rsquo;atmosphère notamment), sont visible sur des longueurs d&rsquo;ondes précises et ont été une des premières références pour définir des couleurs précises.</p>
+<p>Historiquement, une solution est venue de la découverte des <a href="https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer"><em>raies de Fraunhofer</em></a>, des discontinuités sombres dans le spectre de la lumière émise par le soleil, découvertes au début du XIXème siècle. Ces raies, provoquées par l&rsquo;absorption de certaines fréquences par les milieux traversés par la lumière  (dans l&rsquo;atmosphère notamment), sont visible sur des longueurs d&rsquo;ondes précises et ont été une des premières références pour définir des couleurs précises.</p>
 <p><img alt="" src="img/fraunhofer-lines.svg" /></p>
 <p>À ce problème de référence s&rsquo;ajoute le fait que la définition de la couleur est intrinsèquement liée à la perception qu&rsquo;on en a, et cette perception diffère évidemment d&rsquo;une population à l&rsquo;autre, d&rsquo;un individu à l&rsquo;autre, et aussi du milieu dans lequel on perçoit la couleur.</p>
+<h2 id="a2-suivons-une-lumiere">A.2 - Suivons une lumière<a class="headerlink" href="#a2-suivons-une-lumiere" title="Permanent link">&para;</a></h2>
+<h3 id="a2a-le-trajet-emission-transmission-reflexion-reception">A.2.a - Le trajet : émission, transmission, réflexion, réception<a class="headerlink" href="#a2a-le-trajet-emission-transmission-reflexion-reception" title="Permanent link">&para;</a></h3>
+<p>La couleur que nous percevons est donc le résultat d&rsquo;un groupe de rayons de lumière émis (&ldquo;créé&rdquo;) par une source donnée (le soleil, un écran, une ampoule&hellip;), qui a traversé un ou plusieurs milieux aux propriétés différentes qui en ont absorbé, dévié ou réémis une partie<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, qui a été réfléchi par une ou plusieurs surfaces aux propriétés différentes qui en ont à leur tout absorbé, dévié ou réémis une partie, avant d&rsquo;enfin atteindre un capteur : notre œil, ou celui d&rsquo;une caméra&hellip;</p>
+<p><em><img alt="Schéma de l'émission à la réception" src="img/light-path.svg" /></em></p>
+<h3 id="a2b-decomposition-de-la-lumiere-recue">A.2.b - Décomposition de la lumière reçue<a class="headerlink" href="#a2b-decomposition-de-la-lumiere-recue" title="Permanent link">&para;</a></h3>
+<p>Au final, quel qu&rsquo;ait été le trajet de ce groupe de rayons de lumière, nous ne percevons que l&rsquo;état dans lequel il est à l&rsquo;arrivée : c&rsquo;est la couleur perçue. Peu importe le chemin et leur provenance, toutes les couleurs sont la même chose : des groupes de rayons lumineux.</p>
+<p>La couleur est donc &ldquo;juste&rdquo; un mélange d&rsquo;un certains nombre de rayons lumineux parvenus à un capteur ou à notre œil. Chacun de ces rayons, ou <em>photons</em>* possède une longueur d&rsquo;onde précise dite <em>monochrome</em>*, et si nous voyons des couleurs différentes de celles du spectre électro-magnétique, elles sont le résultat du mélange de tous ces rayons.</p>
+<p>C&rsquo;est la quantité de photons reçus formant cette couleur qui fait l&rsquo;intensité, la <em>luminance</em>*, de la couleur, et le mélange des différentes longueurs d&rsquo;ondes qui fait la <em>teinte</em>*.</p>
 <hr />
 <p>Sources et références</p>
 <ul>
@@ -204,7 +231,15 @@
 <li><a href="https://fr.wikipedia.org/wiki/Spectre_%C3%A9lectromagn%C3%A9tique">Spectre électro-magnétique sur <em>Wikipedia</em></a></li>
 <li><a href="https://fr.wikipedia.org/wiki/Raies_de_Fraunhofer">Raies de Fraunhofer sur <em>Wikipedia</em></a></li>
 </ul>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14" /></p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>On parle notamment de <em>réfraction</em> pour la déviation des rayons&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
               
             </div>
           </div>
