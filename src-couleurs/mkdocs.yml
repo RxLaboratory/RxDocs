@@ -34,14 +34,16 @@ nav:
         - B - Petit inventaire et classification des couleurs: B-inventaire.md
         - C - Perception des couleurs: C-perception.md
         - D - Reproduction des couleurs : D-reproduction.md
-        - E - Retour sur les blancs, température: D-temperature.md
-        - E - Représentation objective: E-representation.md
-        - F - Du réel au numérique: F-numerisation.md
-        - G - Qu'est ce qu'un espace colo ?: G-espace-colo.md
-        - H - Liste d'espaces colorimétriques: H-liste-espaces.md
-        - I - Liste des paramètres d'espaces colorimétriques: I-liste-params.md 
-        - J - RGB et YUV: J-rgb-yuv.md
-        - K - YUV 444, 422, 421, 420...: K-444.md
+        - E - Retour sur les blancs, température: E-temperature.md
+        - F - Représentation objective: F-representation.md
+        - G - Du réel au numérique: G-numerisation.md
+        - H - Qu'est ce qu'un espace colo ?: H-espace-colo.md
+        - I - Liste d'espaces colorimétriques: I-liste-espaces.md
+        - J - Liste des paramètres d'espaces colorimétriques: J-liste-params.md 
+        - K - RGB et YUV: K-rgb-yuv.md
+        - L - YUV 444, 422, 421, 420...: L-444.md
+        - N - Profondeur (bpc): N-bpc.md
+        - O - Courbes de transfert, espace linéaire et gamma: O-transfert.md
         - Glossaire: ZZ-vocabulaire.md
     - Tous les documents RxLab: http://docs.rainboxlab.org
     - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html

@@ -1,10 +1,10 @@
-# G - Liste des paramètres d'espaces colorimétriques
+# J - Liste des paramètres d'espaces colorimétriques
 
 Voici la liste des différentes *primaires*, *points blancs* et *courbes de transfert* partagés par les différents espaces colorimétriques, ainsi que leurs comparaisons.
 
 [TOC]
 
-## G.1 - Primaires
+## J.1 - Primaires
 
 ![](img/comparison.png)
 
@@ -64,7 +64,7 @@ Voici la liste des différentes *primaires*, *points blancs* et *courbes de tran
 | **X** | 0,64 | 0,21 | 0,15 |
 | **Y** | 0,33 | 0,71 | 0,06 |
 
-## G.2 - Blancs
+## J.2 - Blancs
 
 ### D65 / RGB / sRGB / Rec. 601 / Rec. 709 / Display P3 / Adobe RGB
 
@@ -89,7 +89,7 @@ Voici la liste des différentes *primaires*, *points blancs* et *courbes de tran
 | **y** | 0,33767 |
 | **CIE** | proche de *D60* |
 
-## G.3 - Courbes de transfer
+## J.3 - Courbes de transfert
 
 ### Linéaire / RGB / ACES2065-1 / ACEScg
 

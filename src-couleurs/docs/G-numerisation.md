@@ -1,10 +1,10 @@
-# E - Du réel au numérique
+# G - Du réel au numérique
 
 Ayant maintenant un moyen de représenter objectivement les couleurs que nous voyons, de les localiser sur un diagramme de référence, nous pouvons nous poser la question de la manière à la fois de numériser, de stocker, puis de restituer ces couleurs via un système binaire.
 
 [TOC]
 
-## E.1 - Numérisation et stockage : passer en binaire
+## G.1 - Numérisation et stockage : passer en binaire
 
 Toute la difficulté est de représenter un monde analogique et *continu*[^1] dans un système fondamentalement *discontinu* et numérique, avec des [*valeurs discrètes*](https://fr.wikipedia.org/wiki/Math%C3%A9matiques_discr%C3%A8tes).
 
@@ -26,13 +26,13 @@ Notre image a donc besoin de `2 073 600 pixels x 3 octets = 6 220 800 octets` po
 
 Cette taille représente un débit de données de 64 Gbps.À titre d'exemple, un film sur un disque Blu-Ray est encodé avec un débit de 24 Gbps environ, ce qui signifie qu'il faut diviser cette taille par au moins 2,6...
 
-## E.2 - Les Espaces colorimétriques
+## G.2 - Les Espaces colorimétriques
 
 Il faut donc trouver des méthodes permettant de réduire la place occupée par toute cette information ; c'est là qu'entrent en jeu les différents choix d'espaces colorimétriques et méthodes de *compression* et d'*échantillonage* des données associés.
 
 Ce problème est d'ailleurs apparu bien avant l'avènement du numérique : les flux de données analogiques, via des signaux électriques, ont eux aussi une capacité de transfert (une bande passante) limitée, et même bien plus limitée que la transmission d'information numérique utilisant les mêmes câbles de cuivre, ce qui explique les limitations de format imposées aux premières heures de la vidéo, sans compter les problématiques de stockage.
 
-La manière de stocker les informations lumineuses échantillonnées (numérisées) varie donc en fonction du matériel utilisé pour la captation (la caméra) ou la génération (en synthèse), ainsi que de l'usage que l'on compte en faire, et influence la quantité de données à stocker.
+La manière de stocker les informations lumineuses échantillonnées (numérisées) varie donc en fonction du matériel utilisé pour la captation (la caméra) ou la génération (en synthèse), ainsi que de l'usage que l'on compte en faire (on ne stocke que ce qui pourra être reproduit), et influence la quantité de données à stocker.
 
 **Le choix de la façon de stocker les données va aussi définir quelles données seront perdues**, puisqu'il est impossible de rester fidèle au réel, ou encore **quels types de lumières et de données seront privilégiées** (l'intensité ou la teinte, la pénombre ou les hautes lumières...).
 

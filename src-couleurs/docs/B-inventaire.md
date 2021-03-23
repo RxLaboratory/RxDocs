@@ -55,7 +55,7 @@ On peut aussi inclure les pourpres comme complémentaires des verts. En effet, u
 Une même feuille blanche sera vue blanche quelque soit le moment de la journée ou le type d'éclairage, bien qu'en réalité, sa couleur soit tout à fait différente dans chacun de ces cas : la feuille prendra en fait la couleur de la lumière qui l'éclaire, mais le cerveau opèrera un "décalage" dans la perception qui la fera apparaître blanche dans tous les cas.
 
 *![Photos de paysage enneigé à différents moments de la journée](img/snow.svg)*  
-*Sous le soleil ,à l'ombre ou dans les nuages, quelque soit le moment de la journée, dans la réalité nous percevons la neige comme* blanche *même si en réalité la lumière qu'elle réfléchit est à chaque fois différente[^5].*
+*Sous le soleil, à l'ombre ou dans les nuages, quel que soit le moment de la journée, dans la réalité nous percevons la neige comme* blanche *même si en réalité la lumière qu'elle réfléchit est à chaque fois différente[^5].*
 
 Ainsi, des rayons de lumière aux attributs physiques parfaitement différents peuvent être vus de la même manière par l'observateur. **La perception des couleurs est éminemment subjective.**
 

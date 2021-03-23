@@ -31,7 +31,7 @@ Ce processus explique notamment le fait que des mélanges **objectivement diffé
 
 ![](img/grey-illusion-2.svg)
 
-Le système nerveux est donc responsable d'une interprétation des couleurs qui n'est pas liée directement au signal objectif reçu par l'œil, mais qui pourrait être vu comme une "*retouche*" subjective en post-production : il adapte l'image en fonction de l'environnement, exactement comme le fait le photographe en retouchant les contrastes et la balance des blancs (les teintes), pour "*neutraliser*" l'image, et augmenter la quantité de détails percevables dans l'image reconstruire.
+Le système nerveux est donc responsable d'une interprétation des couleurs qui n'est pas liée directement au signal objectif reçu par l'œil, mais qui pourrait être vu comme une "*retouche*" subjective en post-production : il adapte l'image en fonction de l'environnement, exactement comme le fait le photographe en retouchant les contrastes et la balance des blancs (les teintes), pour "*neutraliser*" l'image, et augmenter la quantité de détails percevables dans l'image reconstruite.
 
 Toutes ces différentes étapes altèrent donc la perception d'un signal physique et objectif : un même rayon lumineux ne sera pas "*vu*" de la même manière dans deux endroits différents, et suivant la quantité et la nature des autres rayons qui l'accompagnent.
 
@@ -66,7 +66,7 @@ Sources et références
 - [Cône sur *Wikipedia*](https://fr.wikipedia.org/wiki/C%C3%B4ne_(photor%C3%A9cepteur))
 - [Colour representation, *Kent State University*](http://www.cs.kent.edu/~farrell/cg00/lectures/color/colour.html)
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23)
 
 [^1]:
     Il y a plusieurs "qualités" de lumières blanches et apparemment identiques, suivant qu'elles sont composées d'une gamme plus ou moins variées de rayons de longueurs d'ondes (donc de teintes) différentes.

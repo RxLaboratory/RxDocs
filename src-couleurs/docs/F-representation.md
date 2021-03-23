@@ -1,4 +1,4 @@
-# D - Représentation objective des couleurs
+# F - Représentation objective des couleurs
 
 Étant entendu que la perception des couleurs est éminemment subjective, tout travail en commun nécessite la mise en place d'un référenciel objectif partagé par tous (et donc une certaine standardisation des techniques, ce qui n'est pas toujours évident...).
 
@@ -12,7 +12,7 @@ Il est intéressant de savoir que la CIE a mené ses travaux de manière empiriq
 
 C'est en 1931 que la CIE a proposé une première représentation et rationnalisation des couleurs : le diagramme *CIE-1931*, encore très utilisé aujourd'hui comme référentiel objectif, notamment pour comparer les différents espaces colorimétriques en usage.
 
-## D.1 - Décomposer les couleurs
+## F.1 - Décomposer les couleurs
 
 On l'a sous-entendu jusqu'ici, une couleur telle qu'on la perçoit est physiquement définie par trois paramètres indépendants : son *intensité*, sa *longueur d'onde dominante* et sa *pureté d'excitation*.
 
@@ -24,7 +24,7 @@ On l'a sous-entendu jusqu'ici, une couleur telle qu'on la perçoit est physiquem
 
 Cette décomposition étant parfaitement objective (liée à la réalité physique de la lumière), elle est une bonne base pour fabriquer une représentation objective des couleurs ; c'est ce qu'a fait la CIE dès 1931.
 
-## D.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ
+## F.2 - Diagrammes de couleurs, CIE XYZ de 1931 et CIE xyZ
 
 Avec ces trois paramètres, on peut donc représenter les couleurs en trois dimensions.
 
@@ -53,7 +53,7 @@ La ligne droite inférieure représente les mélanges des deux extrèmes du spec
 
 Ce diagramme contenant toutes les couleurs visibles **sert toujours de référence** dans lequel **on peut y inscrire les autres espaces colorimétriques**, forcément "plus petits" car ne représentant qu'une sous-partie de toutes ces couleurs, comme nous allons le voir par la suite.
 
-## D.3 - Autres espaces de la CIE
+## F.3 - Autres espaces de la CIE
 
 Depuis l'établissement de ces premiers espaces colorimétriques et jusqu'à aujourd'hui, la CIE a continué ces travaux, améliorant l'espace *xyZ* et créant d'autres espaces plus spécifiques et pour des usages particulier.
 

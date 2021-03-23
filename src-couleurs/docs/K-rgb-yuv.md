@@ -1,4 +1,4 @@
-# I - RGB et YUV
+# K - RGB et YUV
 
 N'importe quelle couleur visible peut être représentée par seulement deux couleurs *complémentaires*\* et *primaires*\* ; mais avec plus de *primaires*, en variant leurs proportions, on peut représenter une gamme (un *gammut*\*) plus vase de couleurs visibles.
 
@@ -8,7 +8,7 @@ Ces couleurs sont très majoritairement des rouges, verts, et bleus ; ils peuven
 
 Quoi qu'il en soit, tous les systèmes de codage des couleurs utilisent un groupe de différentes valeurs correspondant à des primaires ou propriétés précises ; on parle de *canaux*\*, généralement au nombre de trois.
 
-## I.1 - RGB
+## K.1 - RGB
 
 On utilise donc généralement en numérique une division des informations de couleurs utilisant les mêmes *primaires*\* Rouges, Vertes et Bleues que les dispositifis de reproduction. Rouge, Vert et Bleu sont les trois canaus *R*, *G*, *B* de ce système.
 
@@ -22,7 +22,7 @@ Il y a donc plusieurs raisons à l'usage de ces primaires et de ce système de r
 
 Mais historiquement, et pour des raisons de performance et de stockage, un autre système est très répandu : *YUV*.
 
-## I.2 - YUV
+## K.2 - YUV
 
 Lors des premières utilisations d'un signal électrique (analogique et pas numérique dans un premier temps) pour représenter des vidéos, le signal était un signal "simple" à une dimension : les vidéos étaient représentées uniquement dans une gamme allant du noir au blanc en passant par les gris, en *noir et blanc*. Autrement dit, on ne stockait et reproduisait que l'information d'intensité lumineuse, de *luminance*\*.
 
@@ -34,7 +34,7 @@ Le système utilisé n'est donc pas un système *RGB* mais de trois canaux *YUV*
 
 L'intérêt de ce système n'est pas qu'historique : comme on l'a vu précédemment, l'œil humain distingue mieux les contrastes de *luminance* que de *chrominance*. Séparer ces informations permet de les traiter différemment, et notamment de réserver une quantité d'information, une résolution, plus élevée dans la luminance que la chrominance, et donc de réduire la quantité d'information à stocker et transmettre sans perte notable de qualité visible.
 
-## I.3 - Comparaison
+## K.3 - Comparaison
 
 On a donc deux systèmes principaux de codage des couleurs, **indépendants des espaces colorimétriques** utilisés[^1].
 

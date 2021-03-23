@@ -37,10 +37,6 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - B.4 - Gris et blancs
         - B.4.a - Couleurs complémentaires
         - B.4.b - Perception
-    - B.5 - Description de toute couleur :
-        - B.5.a - Intensité
-        - B.5.b - Longueur d'onde dominante
-        - B.5.c - Pureté d'excitation
 - C - [Perception de la lumière et des couleurs par l'être humain](C-perception.md)
     - B.1 - L'œil
     - B.2 - Le système nerveux
@@ -54,29 +50,32 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - E.1 - Corps noir
     - E.2 - Lieu planckien
     - E.3 - Balance des blancs
-- E - [Représentation objective des couleurs](E-representation.md)
-    - E.1 - Décomposer les couleurs
-    - E.2 - Diagrammes de couleurs, *CIE XYZ* de 1931 et *CIE xyZ*
-    - E.3 - Autres espaces de la *CIE*
-- F - [Du réel au numérique](F-numerisation.md)
-    - F.1 - Numérisation et stockage : passer en binaire
-    - F.2 - Les Espaces colorimétriques
-- G - [Qu’est ce qu’un espace colorimétrique ?](G-espace-colo.md)
-    - G.1 - Ce qui définit un espace colorimétrique
-        - G.1.a - Les primaires
-        - G.1.b - Le point blanc
-        - G.1.c - La courbe de transfert
-    - G.2 - Pourquoi différents espaces colorimétriques ?
-- H - [Liste d'espaces colorimétriques](H-liste-espaces.md)
-- I - [Liste des paramètres d'espaces colorimétriques](I-liste-params.md)
-- J - [RGB et YUV](J-rgb-yuv.md)
-    - J.1 - RGB
-    - J.2 - YUV
-    - J.3 - Comparaison
-- K - [YUV 444, 422, 421, 420...](K-444.md)
-- Full range / Limited / TV / PC
-- X - [Profondeur (bpc)](XX-bpc.md)
-- X - [Courbes de transfert, espace linéaire et gamma](XX-transfert.md)
+- F - [Représentation objective des couleurs](F-representation.md)
+    - F.1 - Décomposer les couleurs
+    - F.2 - Diagrammes de couleurs, *CIE XYZ* de 1931 et *CIE xyZ*
+    - F.3 - Autres espaces de la *CIE*
+- G - [Du réel au numérique](G-numerisation.md)
+    - G.1 - Numérisation et stockage : passer en binaire
+    - G.2 - Les Espaces colorimétriques
+- H - [Qu’est ce qu’un espace colorimétrique ?](H-espace-colo.md)
+    - H.1 - Ce qui définit un espace colorimétrique
+        - H.1.a - Les primaires
+        - H.1.b - Le point blanc
+        - H.1.c - La courbe de transfert
+    - H.2 - Autres paramètres
+        - H.2.a - Format de pixel
+        - H.2.b - Profondeur
+    - H.3 - Pourquoi différents espaces colorimétriques ?
+- I - [Liste d'espaces colorimétriques](I-liste-espaces.md)
+- J - [Liste des paramètres d'espaces colorimétriques](J-liste-params.md)
+- K - [RGB et YUV](K-rgb-yuv.md)
+    - K.1 - RGB
+    - K.2 - YUV
+    - K.3 - Comparaison
+- L - [YUV 444, 422, 421, 420... Le sous-échantillonage de chrominance](K-444.md)
+- M - Full range / Limited / TV / PC
+- N - [Profondeur (bpc)](N-bpc.md)
+- O - [Courbes de transfert, espace linéaire et gamma](O-transfert.md)
 - Les LUTs
 - Calibration des écrans et leurs espaces colorimétriques
 - OCIO, ACES
@@ -89,10 +88,10 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 
 ![YOUTUBE](m-lrOc2Fmck)
 
-![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/21)
-
 [^1]:
     Par souci de vulgarisation, nous nous permettrons certains raccourcis et approximations, le but étant la mise en application concrète et l'acquisition d'un savoir faire, et non pas l'étude scientifique du sujet.  
     Nous limiterons l'explication aussi aux éléments nécessaires à l'application concrète et la compréhension des paramètres ; nous éluderons les informations d'un intérêt purement historique, avec l'intention de garder ce guide clair et aussi concret que possible.  
     Nous invitons le lecteur à commencer par lire les articles [*Wikipedia*](https://fr.wikipedia.org/wiki/Couleur) pour approfondir le sujet et compléter les informations théoriques manquantes dans ce guide ; les ressources sur le sujet ne manquent pas.  
     Sur chaque page, nous ajoutons et complètons régulièrement les sources et références pour approfondir ce qui est expliqué.
+
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23)
