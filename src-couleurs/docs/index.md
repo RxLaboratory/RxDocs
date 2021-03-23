@@ -31,10 +31,12 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
         - A.2.b - Décomposition de la lumière reçue
 - B - [Petit inventaire et classification des couleurs](B-inventaire.md)
     - note : intro brève sur la perception
-    - B.1 - Lumières monochromatiques
-    - B.2 - Gris et Blanc
-    - B.3 - Noir
-    - B.4 - Pourpre
+    - B.1 - Noir
+    - B.2 - Lumières monochromatiques
+    - B.3 - Pourpres
+    - B.4 - Gris et blancs
+        - B.4.a - Couleurs complémentaires
+        - B.4.b - Perception
     - B.5 - Description de toute couleur :
         - B.5.a - Intensité
         - B.5.b - Longueur d'onde dominante
@@ -45,9 +47,13 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - B.3 - Conséquences
         - B.3.a - Sur la luminosité et le contraste
         - B.3.b - Sur les teintes
-- D - [Retour sur les blancs : température](D-temperature.md)
-    - D.1 - Corps noir
-    - D2 - Lieu planckien
+- D - [Reproduction des couleurs](D-reproduction.md)
+    - D.1 - Synthèse additive
+    - D.2 - Synthèse soustractive
+- E - [Retour sur les blancs : température](E-temperature.md)
+    - E.1 - Corps noir
+    - E.2 - Lieu planckien
+    - E.3 - Balance des blancs
 - E - [Représentation objective des couleurs](E-representation.md)
     - E.1 - Décomposer les couleurs
     - E.2 - Diagrammes de couleurs, *CIE XYZ* de 1931 et *CIE xyZ*

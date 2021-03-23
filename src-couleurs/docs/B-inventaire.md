@@ -1,78 +1,75 @@
-# C - Le blanc, le pourpre, et autres mélanges
+# B - Petit inventaire et classification des couleurs
 
-Comme on l'a vu précédemment, la part de l'interprétation par le cerveau dans la perception des couleurs est extrèmement importante. L'exemple le plus frappant concerne la couleur "blanche" (et par extensions toute la gamme des gris, le blanc n'étant qu'un gris avec une forte luminosité).
+Les couleurs perçues sont donc des mélanges de rayons de lumière *monochromatiques*\*. Voyons comment classer toutes ces couleurs comment elles se décomposent.
 
-## C.1 - Blanc
+!!! note
+    Nous parlons encore ici de *lumières* et de rayons lumineux, et donc d'un système *additif* ; il n'est pas question de la composition des surfaces et de la manière dont elles absorbent et renvoie les couleurs, et qui serait l'objet d'une synthèse *soustractive* de la lumière.  
+    cf chapitre [*D - Reproduction des couleurs*](D-reproduction.md) pour plus de détails sur le sujet.
 
-Une même feuille blanche sera vue blanche quelque soit le moment de la journée ou le type d'éclairage artificiel, bien qu'en réalité, sa couleur soit tout à fait différente dans chacun de ces cas : la feuille prendra en fait la couleur de la lumière qui l'éclaire, mais le cerveau opèrera un "décalage" dans la perception qui la fera apparaître blanche dans tous les cas.
+## B.1 - Noir
 
-*![Photos de paysage enneigé à différents moments de la journée]()*  
-*Quelque soit le moment de la journée, dans la réalité nous percevrons la neige comme* blanche *même si en réalité la lumière qu'elle réfléchit est à chaque fois différente.*
+La couleur la plus simple est donc le *noir*\* : l'absence totale de lumière est perçue comme noire. Quand l'intensité de la lumière baisse, les couleurs s'approchent progressivement du noir. Mais quand l'intensité monte, les couleurs ne vont pas vers le blanc ! Plus l'intensité est élevée, plus la couleur apparait "lumineuse" et "saturée", mais ne pâlit, ne blanchit pas[^1].
 
-Ainsi, des rayons de lumière aux attributs physiques parfaitement différents seront vus de la même manière par l'observateur.
+## B.2 - Lumières monochromatiques
 
-*![Exemples de décomposition de lumière blanche]()*
+Les couleurs les plus simples, et les plus rares (ce sont celles émises par les *Lasers* par exemple), sont celles composée d'une seule lumière *monochromatique*. Ce sont en fait les *couleurs de l'arc en ciel*, celles qui sont incluses dans le spectre monochromatique.
 
-Et il en est de même pour différents blancs d'apparence parfaitement identiques mais composés de rayons complètement différents ; il y a une infinité de mélanges de rayons de lumière différents qui peuvent être perçus comme le même blanc[^1], y compris dans le même environnement ; et il en est en réalité de même pour toutes les couleurs qui ne sont pas des lumières *monochromatiques*\*.
+*![Spectre lumineux](img/electromagnetic-spectrum.svg)*
 
-Dans la nature, **toutes** les lumières, ou plus précisément tous les rayons lumineux, sont *monochromatiques* ; c'est la perceptions de leurs mélanges que le cerveau interprète en une infinité d'autres couleurs. Il n'y a pas de "lumière blanche" mais uniquement des lumières mélangées.
+Elles vont du rouge au bleu en passant par orange, jaune, vert, cyan... mais n'incluent aucune nuance de violet, de *pourpre*\*.
 
-![](img/electromagnetic-spectrum.svg)
+*![Les couleurs monochromatiques](img/monochromatic.svg)*
 
-Les couleurs monochromatiques "naturelles" vont du bleu au rouge en passant par le cyan, le vert, le jaune ; elles sont les couleurs les plus *saturées*\* possible. Toutes les nuances "désaturées", blanchatres, grisatres, sont des mélanges de ces couleurs monochromatiques, et il y a pour chaque couleur une infinité de mélanges différents possibles qui peuvent la générer, avec un minimum de deux rayons "opposés" : deux rayons monochormatiques qui forment du gris/blanc une fois mélangés sont dits *complémentaires*\*.
+Elles peuvent varier d'intensité, dans une échelle allant du noir (intensité 0) à la couleur la plus "lumineuse".
 
-*![Contour du CIE avec quelques droites représentant des complémentaires]()*
+## B.3 - Pourpres
 
-## C.2 - Pourpre
+Il est à noter que la gamme des pourpres/violets[^2] ne font **pas** partie des couleurs "naturelles" et *monochromatiques*\* mais sont le résultat du mélange de rayons bleus et de rayons rouges, qui sont les deux extrèmes du spectre.
 
-Il est à noter que la gamme des pourpres/violets[^2] ne fait **pas** partie des couleurs "naturelles" et *monochromatiques*\* mais sont le résultat du mélange de bleu et de rouge, qui sont les deux extrèmes du spectre. Mais on "voit" tout de même les pourpres comme des couleurs saturées.
+*![Pourpres](img/purple.svg)*
 
-En effet, ce pourpre à son tour mélangé à du vert donne du blanc, et peut donc être considéré comme la *complémentaire* du vert, bien qu'il soit en réalité déjà le mélage de rouge et de bleu. On retrouve là d'ailleurs les trois primaires courantes des systèmes numériques de reproduction des couleurs.
+Les pourpres ajoutés aux couleurs monochromatiques forment l'ensemble des couleurs les plus *saturées[\*](ZZ-vocabulaire.md)* possible, qui sont donc toutes les couleurs *monochromatiques* **et** les mélanges contenant uniquement du bleu et du rouge.
 
-*![Cercle chromatique, avec une séparation monochromatique/bichromatique]()*
+*![Cercle chromatique, avec une séparation monochromatique/bichromatique](img/chroma-circle.png)*
 
-## C.3 - Température
+## B.4 - Blancs et gris
 
-Le blanc étant perçu différemment en fonction de l'environnement, on doit, en parlant de blanc, définir exactement ce qui est blanc avant d'en parler. Encore une fois, il faut un référenciel invariant, physique, sur lequel tout le monde puisse être d'accord, un peu comme l'usage des *raies de Fraunhofer* peuvent servir de référence pour définir des lumières monochromatiques\* précises.
+Dans la nature, **toutes** les lumières, ou plus précisément tous les rayons lumineux, sont *monochromatiques[\*](ZZ-vocabulaire.md)* ; c'est la perceptions de leurs mélanges que le cerveau interprète en une infinité d'autres couleurs. On a vu que les pourpres font partie de ces mélanges ; toutes les autres couleurs non *saturées[\*](ZZ-vocabulaire.md)*, les gris et les blancs, sont donc aussi des lumières mélangées.
 
-On utilise généralement pour ça ce qu'on appelle le rayonnement des *corps noirs*.
+Toutes les nuances "désaturées", blanchâtres, grisâtres, sont des mélanges de ces couleurs *monochromatiques*, et il y a pour chaque couleur (et pas uniquement les gris, toutes les couleurs non-monochromatiques) une infinité de mélanges différents qui peuvent la générer.
 
-### C.3.a - Corps noir
+*![Quelques blancs décomposés](img/whites.svg)*
 
-Un *corps noir* est un élément qui n'apparait pas nécessairement *noir*, mais qui est noir dans le sens où il absorbe l'intégralité des rayons électromagnétiques (et donc de lumière visible) qu'il reçoit ; autrement *si* le corps noir était parfaitement froid, donc ne possédant aucune énergie[^3], il serait d'un noir pur. Mais comme tout corps a une certaine énergie, une certaine chaleur, cette chaleur fait qu'il émet des rayonnements, dont une partie dans le spectre visible, ce qui explique que ce qu'on appelle un *corps noir* n'est pas *vu* comme noir.
+Deux couleurs perçues de manière identique mais composées de rayons *monochromatiques* dans des proportions différentes sont dites ***métamères[\*](ZZ-vocabulaire.md)***.
 
-La conséquence est que la lumière, et donc la couleur, d'un corps noir n'est pas du tout influencée par la lumière qu'il reçoit, mais est uniquement le résultat de son énergie propre, de sa chaleur. Plusieurs éléments peuvent être considérés comme des corps noirs : les braises d'un barbecue, le feu, un métal très chaud proche de la fusion, et surtout le soeil. Tous ces éléments de sont pas de réels corps noirs au sens physique (le rayonnement qu'ils émettent n'est pas parfaitement indépendant de celui qu'ils reçoivent) mais en sont une approximation, très proche dans le cas du soleil[^4].
+### B.4.a - Couleurs complémentaires
 
-L'intérêt des *corps noirs* est que la lumière qu'ils émettent, et donc leur couleur perçue, ne dépend pas de l'environnement dans lequel ils sont ; ils forment donc de bons référentiels objectifs. De plus, on sait que leur spectre de rayonnement dépend directement de leur énergie, de leur chaleur. On peut associer à une chaleur donnée un spectre donné, c'est à dire une lumière d'une composition précise de rayons monochromatiques, résultant en un blanc précis et mesurable.
+Il faut un minimum de deux rayons "opposés" pour former du blanc : deux rayons *monochromatiques* qui forment du gris/blanc une fois mélangés sont dits *complémentaires[\*](ZZ-vocabulaire.md)*.
 
-*![Tableau de quelques couleurs en fonction de leur température]()*
+On peut aussi inclure les pourpres comme complémentaires des verts. En effet, un pourpre à son tour mélangé à du vert donne du blanc[^3], et peut donc être considéré comme la *complémentaire* du vert[^4], bien qu'il soit en réalité déjà le mélange de rouge et de bleu. On retrouve là d'ailleurs les trois primaires courantes des systèmes numériques de reproduction des couleurs.
 
-### C.3.b - Lieu planckien
+*![Cercles chromatiques avec quelques droites représentant des complémentaires](img/complementary.png)*
 
-Plutôt que de définir le spectre de cette lumière des corps noirs par la description des rayons qui le composent, on simplifie en liant simplement cette couleur, ce blanc, à la température du corps noir qui l'a émis ; et cette mesure est donnée en *Kelvin* (et pourrait tout aussi bien être convertie en degrés *Celsius* ou *Fahreneit*). On peut ainsi définnir une lumière *blanche* directement en fonction de cette température.
+### B.4.b - Perception
 
-L'ensemble de ces températures peut être représentée en un *dégradé* allant du bleu au jaune, dans une gamme blanchatre (ce sont bien des couleurs résultant d'un mélange complexe de rayons monochromatiques du spectre visible ; seules les proportions changent[^5]).
+Une même feuille blanche sera vue blanche quelque soit le moment de la journée ou le type d'éclairage, bien qu'en réalité, sa couleur soit tout à fait différente dans chacun de ces cas : la feuille prendra en fait la couleur de la lumière qui l'éclaire, mais le cerveau opèrera un "décalage" dans la perception qui la fera apparaître blanche dans tous les cas.
 
-On appelle cet ensemble de couleurs réparties en une ligne le *Lieu planckien*.
+*![Photos de paysage enneigé à différents moments de la journée](img/snow.svg)*  
+*Sous le soleil ,à l'ombre ou dans les nuages, quelque soit le moment de la journée, dans la réalité nous percevons la neige comme* blanche *même si en réalité la lumière qu'elle réfléchit est à chaque fois différente[^5].*
 
-*![Lieu planckien avec températures]()*
+Ainsi, des rayons de lumière aux attributs physiques parfaitement différents peuvent être vus de la même manière par l'observateur. **La perception des couleurs est éminemment subjective.**
 
 ----
-Sources et références
-
-- [Le corps noir sur *Wikipedia*](https://fr.wikipedia.org/wiki/Corps_noir)
-- [Le lieu planckien sur *Wikipedia*](https://fr.wikipedia.org/wiki/Lieu_planckien)
 
 [^1]:
-    C'est une erreur courante de décrire le blanc commme le mélange "de toutes les couleurs de l'arc en ciel" ; si le mélange de tous les rayons lumineux monochromatiques possible est effectivement vu comme du blanc (en proportions adéquates), c'est loin d'être la seule manière de composer une lumière blanche. Il se trouve simplement que la lumière reçue du soleil sur Terre est une source très mélangée de toute le spectre lumineux et donc qui se décompose en arc-en-ciel complet.
+     Dans la réalité. Mais artistiquement, les limites techniques des systèmes de reproduction des couleurs imposent de "tricher" en blanchissant les hautes lumières pour compenser la limite de luminosité des couleurs disponibles. Sans cet artifice, des couleurs "monochromatiques" dans une image pourraient paraître moins lumineuses que des gris ou blancs de la même image ; on est donc obligé de tirer les lumières vers le blanc pour compenser.
 [^2]:
     Le terme "ultra-violet" pour décrire la partie du spectre électomagnétique au delà du bleu est trompeur ; l'extrémité du spectre est perçue comme bleue (foncée) plus que violet. Le véritable violet étant bien la couleur qu'on perçoit résultant du mélange de rayons bleus et rouges.
 [^3]:
-    Seuls les trous noirs, qui absorbent toute lumière par gravitation, peuvent être considérés comme des *corps noirs* presque parfaits et n'émettant eux mêmes aucun rayonnement ; mais on sait aujourd'hui que même eux émettent un très faible rayonnement, de manière un peu détournée, le *rayonnement de Hawking*. Par contre, on ne sait pas encore vraiment si ce rayonnement dépend de la composition du trou noir lui même (ce qu'on appelle *le paradoxe de l'information*, mais c'est un tout autre sujet que la couleur...).
+    On parle bien sûr ici de *lumière*, autrement dit un système "additif" où les intensités s'additionnent. Ce n'est évidemment pas vrai en peinture et impression qui sont des systèmes "soustractif" où les couleurs "asborbent" de l'intensité lumineuse, soustraient des rayons de lumière. cf. chapitre [*D - Reproduction des couleurs*](D-reproduction.md).
 [^4]:
-    Théoriquement, même le soleil renvoie les rayons qu'il reçoit ; mais la proportion entre les rayons réfléchis et les rayons émis est tellement insignifiante qu'on peut considérer le soleil comme un corps noir. Et à notre échelle il en est de même pour le feu, les braises, les étincelles...
+    Si on voulait être physique juste, les verts n'auraient simplement pas de complémentaires du tout, et seules les intervalles de rayons proches des deux extrêmes du spectres (oranges-rouges et cyan-bleus) seraeint complémentaires les uns des autres.
 [^5]:
-    Plus le corps a de l'énergie (plus il est chaud), plus la proportion de rayons de haute fréquence\* (et de faible longueur d'onde\*) est élevée : en effet, la quantité d'énergie portée par les rayons lumineux dépend directement de leur longueur d'onde. Hors les rayons de longueur d'onde plus courte sont ceux du côté bleu du spectre. Ainsi, plus le corps est chaud, plus la proportion de rayons bleus augmente dans le mélange émis, plus la couleur s'éloigne des rouges orangés vers les bleus. Mais il faut bien garder à l'esprit que la lumière émise reste un mélange, et qu'on parle bien de nuances de blancs.  
-    La découverte de ce lien entre longueur d'onde et énergie, et le travail sur la couleur des corps noirs par le physicien Max Planck à la fin du XIX<sup>è</sup> siècle sont à l'origine de la *physique quantique* moderne (en étant la fondation la théorisation du *photon* par Albert Einstein en 1905).
+    Ce qu'un appareil photo ou une caméra a le plus grand mal à reproduire. cf. chapitre *[E - Retour sur les blancs : température](E-temperature.md)*.
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/20)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23)
