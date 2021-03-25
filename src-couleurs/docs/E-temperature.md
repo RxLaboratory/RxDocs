@@ -6,22 +6,26 @@ On utilise généralement pour ça ce qu'on appelle le rayonnement des *corps no
 
 ## E.1 - Corps noir
 
-Un *corps noir* est un élément qui n'apparait pas nécessairement *noir*, mais qui est noir dans le sens où il absorbe l'intégralité des rayons électromagnétiques (et donc de lumière visible) qu'il reçoit ; autrement *si* le corps noir était parfaitement froid, donc ne possédant aucune énergie[^1], il serait d'un noir pur. Mais comme tout corps a une certaine énergie, une certaine chaleur, cette chaleur fait qu'il émet des rayonnements, dont une partie dans le spectre visible, ce qui explique que ce qu'on appelle un *corps noir* n'est pas *vu* comme noir.
+Un *corps noir* est un élément qui n'apparait pas nécessairement *noir*, mais qui est noir dans le sens où il absorbe l'intégralité des rayons électromagnétiques (et donc de lumière visible) qu'il reçoit ; autrement dit, **si** le corps noir était parfaitement froid[^1], il serait d'un noir pur. Mais tout corps possède une certaine chaleur, et cette chaleur fait qu'il émet des rayonnements, dont une partie dans le spectre visible, ce qui explique que ce qu'on appelle un *corps noir* n'est pas *vu* comme noir.
 
-La conséquence est que la lumière, et donc la couleur, d'un corps noir n'est pas du tout influencée par la lumière qu'il reçoit, mais est uniquement le résultat de son énergie propre, de sa chaleur. Plusieurs éléments peuvent être considérés comme des corps noirs : les braises d'un barbecue, le feu, un métal très chaud proche de la fusion, et surtout le soeil. Tous ces éléments de sont pas de réels corps noirs au sens physique (le rayonnement qu'ils émettent n'est pas parfaitement indépendant de celui qu'ils reçoivent) mais en sont une approximation, très proche dans le cas du soleil[^2].
+La conséquence est que la lumière, et donc la couleur, d'un corps noir n'est pas du tout influencée par la lumière qu'il reçoit, mais est uniquement le résultat de sa chaleur. Plusieurs éléments peuvent être considérés comme des corps noirs : les braises d'un barbecue, le feu, un métal incandescent, le soleil... Tous ces éléments de sont pas de réels corps noirs au sens physique (le rayonnement qu'ils émettent n'est pas parfaitement indépendant de celui qu'ils reçoivent) mais en sont une approximation, très proche dans le cas du soleil[^2].
 
-L'intérêt des *corps noirs* est que la lumière qu'ils émettent, et donc leur couleur perçue, ne dépend pas de l'environnement dans lequel ils sont ; ils forment donc de bons référentiels objectifs. De plus, on sait que leur spectre de rayonnement dépend directement de leur énergie, de leur chaleur. On peut associer à une chaleur donnée un spectre donné, c'est à dire une lumière d'une composition précise de rayons *monochromatiques[\*](ZZ-vocabulaire.md)*, résultant en un *blanc[\*](ZZ-vocabulaire.md)* précis et mesurable.
+L'intérêt des *corps noirs* est que la lumière qu'ils émettent, et donc leur couleur perçue, ne dépend pas de l'environnement dans lequel ils sont ; ils forment donc de bons référentiels objectifs. De plus, on sait que leur spectre de rayonnement dépend directement de leur énergie, de leur chaleur. On peut donc associer à une chaleur donnée un spectre donné, c'est à dire une lumière d'une composition précise de rayons *monochromatiques[\*](ZZ-vocabulaire.md)*, résultant en un *blanc[\*](ZZ-vocabulaire.md)* précis et mesurable.
 
 *![Tableau de quelques couleurs en fonction de leur température](img/temperature.svg)*
 
+!!! note
+    Contrairement aux autres éléments incandescents des exemples ci-dessus, la couleur apparente du soleil n'est pas directement le résultat de sa chaleur bien qu'il soit un corps noir ; en effet, l'absorption des rayons par l'atmosphère change sa couleur à notre niveau.
+
 ## E.2 - Lieu planckien
 
-Plutôt que de définir le spectre de cette lumière des corps noirs par la description des rayons qui le composent, on simplifie en liant simplement cette couleur, ce blanc, à la température du corps noir qui l'a émis ; et cette mesure est donnée en *Kelvin* (et pourrait tout aussi bien être convertie en degrés *Celsius* ou *Fahreneit*). On peut ainsi définir une lumière *blanche* directement en fonction de cette température.
+Plutôt que de définir le spectre de cette lumière des corps noirs par la description des rayons qui le composent, on simplifie en liant simplement cette couleur, ce blanc, à la température du corps noir qui l'a émis ; et cette mesure est donnée en *Kelvin* (et pourrait tout aussi bien être convertie en degrés *Celsius* ou *Fahreneit*). On peut ainsi définir une lumière *blanche* directement en fonction de cette température théorique.
 
 | Description | Kelvin | Degré Celsius | Degré Farenheit |
 |---|---|---|---|
 | Lave en fusion | `1000 K` | `726,85°C` | `1340,33°F` |
 | Soleil à midi | `5800 K` | `5526,85°C` | `9980,33°F` |
+| Jour nuageux | `7000K` | `6726,85°C` | `12140,33°F` |
 | Foudre | `9000 K` | `8726,85°C` | `15 740,33°F` |
 
 On se rend bien compte que la *température* du blanc rend bien compte de sa couleur et non pas de la température réelle du corps qui émet cette lumière ; **cette température est celle du corps noir qui aurait émis un rayonnement de la même couleur**, mais **pas** la température ni l'énergie de l'élément vu. On utilise ces valeurs de température en Kelvin **par convention** pour standardiser la description des blancs.
@@ -41,7 +45,7 @@ Le cerveau effectue en permanence des ajustements pour compenser la couleur de l
 
 En effet, un capteur qui recevrait du blanc à midi au soleil "verrait" en réalité la "vraie" couleur, tirant plutôt vers le jaune, alors que le même objet un jour nuageux serait "vu" par le capteur comme bien plus bleu.
 
-On effectue donc une opération de correction de ces couleurs pour ramener la couleur de l'objet à un "blanc" neutre : celui du dispositif de reproduction. C'est ce qu'on appelle la *balance des blancs* : on "efface" l'influence de la lumière ayant éclairé la scène au moment de la capture.
+On effectue donc une opération de correction de ces couleurs pour ramener la couleur de l'objet à un "blanc" neutrele paradoxe de l'information : celui du dispositif de reproduction. C'est ce qu'on appelle la *balance des blancs* : on "efface" l'influence de la lumière ayant éclairé la scène au moment de la capture.
 
 Ainsi, cette image "neutralisée" peut être reproduite par le dispositif dans des conditions standard.
 
@@ -58,7 +62,7 @@ Sources et références
 - [Température de couleur sur *Wikipedia*](https://fr.wikipedia.org/wiki/Temp%C3%A9rature_de_couleur)
 
 [^1]:
-    Seuls les trous noirs, qui absorbent toute lumière par gravitation, peuvent être considérés comme des *corps noirs* presque parfaits et n'émettant eux mêmes aucun rayonnement ; mais on sait aujourd'hui que même eux émettent un très faible rayonnement, de manière un peu détournée, le *rayonnement de Hawking*. Par contre, on ne sait pas encore vraiment si ce rayonnement dépend de la composition du trou noir lui même (ce qu'on appelle *le paradoxe de l'information*, mais c'est un tout autre sujet que la couleur...).
+    Seuls les trous noirs, qui absorbent toute lumière par gravitation, peuvent être considérés comme des *corps noirs* presque parfaits **et** n'émettant eux mêmes aucun rayonnement ; mais on sait aujourd'hui que même les trous noirs émettent un très faible rayonnement, de manière un peu détournée, le *[rayonnement de Hawking](https://fr.wikipedia.org/wiki/%C3%89vaporation_des_trous_noirs)*. Par contre, on ne sait pas encore vraiment si ce rayonnement dépend de la composition du trou noir (ce qu'on appelle *[le paradoxe de l'information](https://fr.wikipedia.org/wiki/Paradoxe_de_l%27information)*, mais c'est un tout autre sujet que la couleur...).
 [^2]:
     Théoriquement, même le soleil renvoie les rayons qu'il reçoit ; mais la proportion entre les rayons réfléchis et les rayons émis est tellement insignifiante qu'on peut considérer le soleil comme un corps noir. Et à notre échelle il en est de même pour le feu, les braises, les étincelles...
 [^3]:
