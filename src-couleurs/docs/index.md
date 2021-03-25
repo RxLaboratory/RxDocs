@@ -82,6 +82,8 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 - Color management : After Effects
 - Color management : Krita
 - Color management : Blender
+- Color management : Darktable
+- Color management : DuME
 - [Glossaire](ZZ-vocabulaire.md)
 
 À l'origine de ce document, cette vidéo enregistrée en direct avec [Motion Café](https://www.motion-cafe.com/) et [Nicolas Dufresne](http://duduf.com) : 

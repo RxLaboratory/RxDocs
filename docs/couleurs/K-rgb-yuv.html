@@ -195,43 +195,58 @@
             <div class="section">
               
                 <h1 id="k-rgb-et-yuv">K - RGB et YUV<a class="headerlink" href="#k-rgb-et-yuv" title="Permanent link">&para;</a></h1>
-<p>N&rsquo;importe quelle couleur visible peut être représentée par seulement deux couleurs <em>complémentaires</em>* et <em>primaires</em>* ; mais avec plus de <em>primaires</em>, en variant leurs proportions, on peut représenter une gamme (un <em>gammut</em>*) plus vase de couleurs visibles.</p>
+<p>N&rsquo;importe quelle couleur visible peut être représentée par seulement deux couleurs <em>complémentaires<a href="ZZ-vocabulaire.html">*</a></em> et <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> ; mais avec plus de <em>primaires</em>, en variant leurs proportions, on peut représenter une gamme (un <em>gammut<a href="ZZ-vocabulaire.html">*</a></em>) plus vase de couleurs visibles.</p>
 <p>Dès le nombre de trois couleurs <em>primaires</em>, on peut obtenir une surface utile (et suffisante) de couleurs visibles. Ainsi, la plupart des dispositifs de reproduction des couleurs (écrans, projecteurs&hellip;) utilisent trois couleurs primaires.</p>
-<p>Ces couleurs sont très majoritairement des rouges, verts, et bleus ; ils peuvent varier en fonction des dispositif et de <em>l&rsquo;espace colorimétrique</em>* qu&rsquo;ils utilisent mais se situent toujours dans cette gamme.</p>
-<p>Quoi qu&rsquo;il en soit, tous les systèmes de codage des couleurs utilisent un groupe de différentes valeurs correspondant à des primaires ou propriétés précises ; on parle de <em>canaux</em>*, généralement au nombre de trois.</p>
+<p>Ces couleurs sont très majoritairement des rouges, verts, et bleus ; ils peuvent varier en fonction des dispositif et de <em>l&rsquo;espace colorimétrique<a href="ZZ-vocabulaire.html">*</a></em> qu&rsquo;ils utilisent mais se situent toujours dans cette gamme.</p>
+<p>Quoi qu&rsquo;il en soit, tous les systèmes de codage des couleurs utilisent un groupe de différentes valeurs correspondant à des primaires ou propriétés précises ; on parle de <em>canaux<a href="ZZ-vocabulaire.html">*</a></em>, généralement au nombre de trois.</p>
 <h2 id="k1-rgb">K.1 - RGB<a class="headerlink" href="#k1-rgb" title="Permanent link">&para;</a></h2>
-<p>On utilise donc généralement en numérique une division des informations de couleurs utilisant les mêmes <em>primaires</em>* Rouges, Vertes et Bleues que les dispositifis de reproduction. Rouge, Vert et Bleu sont les trois canaus <em>R</em>, <em>G</em>, <em>B</em> de ce système.</p>
-<p><em><img alt="Décomposition d'une image en ses trois canaux RGB" src="" /></em></p>
-<p>Il y a donc plusieurs raisons à l&rsquo;usage de ces primaires et de ce système de réprésentation des couleurs :</p>
+<p><em><img alt="RGB" src="img/rgb-schema.svg" /></em></p>
+<p>On utilise donc généralement en numérique une division des informations de couleurs utilisant les mêmes <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> Rouges, Vertes et Bleues que les dispositifis de reproduction. Rouge, Vert et Bleu sont les trois canaus <em>R</em>, <em>G</em>, <em>B</em> de ce système.</p>
+<p><em><img alt="Décomposition d'une image en ses trois canaux RGB" src="img/rgb.svg" /></em></p>
+<p>Il y a donc plusieurs raisons à l&rsquo;usage de ces <em>primaires</em> et de ce système de réprésentation des couleurs :</p>
 <ul>
 <li>Le choix du rouge, vert et bleu est proche de ce que les cellules rétiennes perçoivent le mieux naturellement</li>
 <li>Le rouge et le bleu sont les extrèmes du spectre visible, et le vert est à mi-chemin entre les deux : c&rsquo;est le choix qui permet facilement d&rsquo;avoir les <em>gammut</em> les plus larges dans l&rsquo;ensemble des couleurs visibles.</li>
-<li>C&rsquo;est donc naturellement les couleurs utilisées le plus par les dispositifs d&rsquo;affichage.</li>
+<li>C&rsquo;est donc naturellement les couleurs les plus utilisées par les dispositifs d&rsquo;affichage bien qu&rsquo;en théorie il serait possible d&rsquo;en choisir d&rsquo;autres.</li>
 </ul>
 <p>Mais historiquement, et pour des raisons de performance et de stockage, un autre système est très répandu : <em>YUV</em>.</p>
 <h2 id="k2-yuv">K.2 - YUV<a class="headerlink" href="#k2-yuv" title="Permanent link">&para;</a></h2>
-<p>Lors des premières utilisations d&rsquo;un signal électrique (analogique et pas numérique dans un premier temps) pour représenter des vidéos, le signal était un signal &ldquo;simple&rdquo; à une dimension : les vidéos étaient représentées uniquement dans une gamme allant du noir au blanc en passant par les gris, en <em>noir et blanc</em>. Autrement dit, on ne stockait et reproduisait que l&rsquo;information d&rsquo;intensité lumineuse, de <em>luminance</em>*.</p>
-<p>Puis sont arrivées les télévisions couleurs, mais il a fallu garder la compatibilité du signal avec les plus anciens téléviseurs noir et blanc ; on a donc ajouté au signal de luminance les informations de couleurs, de <em>chrominance</em>, sans toucher au signal d&rsquo;origine ; les anciennes télés noir et blanc ignorant simplement ces informations supplémentaires.</p>
-<p>Le système utilisé n&rsquo;est donc pas un système <em>RGB</em> mais de trois canaux <em>YUV</em>, où <em>Y</em> représente la <em>luminance</em>, et <em>UV</em> représentent deux informations de <em>chrominance</em> (le minimum nécessaire pour représenter correctement une gamme large de couleurs visibles).</p>
-<p><img alt="Décomposition d'une image en ses trois canaux YUV" src="" /></p>
-<p>L&rsquo;intérêt de ce système n&rsquo;est pas qu&rsquo;historique : comme on l&rsquo;a vu précédemment, l&rsquo;œil humain distingue mieux les contrastes de <em>luminance</em> que de <em>chrominance</em>. Séparer ces informations permet de les traiter différemment, et notamment de réserver une quantité d&rsquo;information, une résolution, plus élevée dans la luminance que la chrominance, et donc de réduire la quantité d&rsquo;information à stocker et transmettre sans perte notable de qualité visible.</p>
+<p><em><img alt="YV" src="img/yuv-schema.svg" /></em></p>
+<p>Lors des premières utilisations d&rsquo;un signal électrique (analogique et pas numérique dans un premier temps) pour représenter des vidéos, le signal était un signal &ldquo;simple&rdquo; à une dimension : les vidéos étaient représentées uniquement dans une gamme allant du noir au blanc en passant par les gris, en <em>noir et blanc</em>. Autrement dit, on ne stockait et reproduisait que l&rsquo;information d&rsquo;intensité lumineuse, de <em>luminance<a href="ZZ-vocabulaire.html">*</a></em>.</p>
+<p>Puis sont arrivées les télévisions couleurs, mais il a fallu garder la compatibilité du signal avec les plus anciens téléviseurs noir et blanc ; on a donc ajouté au signal de luminance<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> les informations de couleurs, de <em>chrominance</em>, sans toucher au signal d&rsquo;origine ; les anciennes télés noir et blanc ignorant simplement ces informations supplémentaires.</p>
+<p>Le système utilisé n&rsquo;est donc pas un système <em>RGB</em> mais de trois canaux <em>YUV</em><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, où <em>Y</em> représente la <em>luminance</em>, et <em>UV</em> représentent deux informations de <em>chrominance</em> (contenant respectivement le ratio bleu/vert et rouge/vert).</p>
+<p><em><img alt="Décomposition d'une image en ses trois canaux YUV" src="img/yuv.svg" /></em></p>
+<p>L&rsquo;intérêt de ce système n&rsquo;est pas qu&rsquo;historique : comme on l&rsquo;a vu précédemment, l&rsquo;œil humain distingue mieux les contrastes de <em>luminance<a href="ZZ-vocabulaire.html">*</a></em> que de <em>chrominance</em>. Séparer ces informations permet de les traiter différemment, et notamment de réserver une quantité d&rsquo;information, une résolution, plus élevée dans la luminance que la chrominance, et donc de réduire la quantité d&rsquo;information à stocker et transmettre sans perte notable de qualité visible.</p>
 <h2 id="k3-comparaison">K.3 - Comparaison<a class="headerlink" href="#k3-comparaison" title="Permanent link">&para;</a></h2>
-<p>On a donc deux systèmes principaux de codage des couleurs, <strong>indépendants des espaces colorimétriques</strong> utilisés<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>On a donc deux systèmes principaux de codage des couleurs, <strong>indépendants des espaces colorimétriques</strong> utilisés<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
 <p>Voici les principales différences :</p>
 <ul>
 <li>Historique : l&rsquo;usage du <em>RGB</em> s&rsquo;est répandu avec le numérique, <em>YUV</em> date de l&rsquo;analogique</li>
 <li>En conséquence <em>YUV</em> est plus répandu dans les formats vidéos, <em>RGB</em> dans les formats d&rsquo;images.</li>
 <li><em>YUV</em> permet une compression des données plus efficace, moyennant une certaine perte dans la chrominance, alors que <em>RGB</em> doit stocker autant d&rsquo;information dans ses trois canaux.</li>
-<li>La conversion de <em>YUV</em> à <em>RGB</em>, et inversement, se fait facilement et quasiment sans perte d&rsquo;information.</li>
+<li>La conversion de <em>YUV</em> à <em>RGB</em>, et inversement, se fait facilement et <em>quasiment</em> sans perte d&rsquo;information.</li>
 </ul>
 <hr />
 <p>Sources et références</p>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/20" /></p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/25" /></p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>En fait, on peut utiliser indifféremment <em>YUV</em> et <em>RGB</em>, mais certains standards et espaces colorimétriques préconnisent plutôt l&rsquo;un ou l&rsquo;autre, ou les deux. Par exemple <em>sRGB</em> est spécifiquement prévu pour être utilisé sur un encodage <em>RGB</em>, alors que <em>Rec.709</em> spécifie qu&rsquo;il peut servir aussi bien en <em>RGB</em> que <em>YUV</em>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>En réalité, on parle soit de <em>luminance<a href="ZZ-vocabulaire.html">*</a></em> soit de <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em> ou <em>luma<a href="ZZ-vocabulaire.html">*</a></em> :<br />
+• La <em>luminance</em> a une courbe de transfert linéaire.<br />
+• La <em>luma/luminosité</em> (<em>brightness</em> en anglais) a un gamma.<br />
+Lorsqu&rsquo;on parle de <em>luminance</em> on note <em>YUV</em> tandis que lorsqu&rsquo;on parle de <em>luminosité</em> on devrait noter <em>Y&rsquo;UV</em>, mais la plupart du temps on ommet le prime.<br />
+<em>cf.</em> chapitre <em><a href="O-transfert.html">Courbes de transfert, espace linéaire et gamma</a></em>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Le terme général <em>YUV</em> recouvre en réalité deux familles, chacune déclinées en <em>luminance</em> ou <em>luminosité</em> (<em>Y</em> ou <em>Y&rsquo;</em>) :<br />
+• En analogique on parle de <em>YUV</em> et <em>Y&rsquo;UV</em>, ou parfois <em>YPbPr</em> et <em>Y&rsquo;PbPr</em>.<br />
+• En numérique le terme exact est <em>YCbCr</em> ou <em>Y&rsquo;CbCr</em>, et parfois <em>YCC</em>.<br />
+Mais c&rsquo;est généralement le terme <em>YUV</em> qui est utilisé dans tous ces différents cas&hellip;&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>En fait, on peut utiliser indifféremment <em>YUV</em> et <em>RGB</em>, mais certains standards et espaces colorimétriques préconnisent plutôt l&rsquo;un ou l&rsquo;autre, ou les deux. Par exemple <em>sRGB</em> est spécifiquement prévu pour être utilisé sur un encodage <em>RGB</em>, alors que <em>Rec.709</em> spécifie qu&rsquo;il peut servir aussi bien en <em>RGB</em> que <em>YUV</em>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

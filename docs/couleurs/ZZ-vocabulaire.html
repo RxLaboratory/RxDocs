@@ -210,15 +210,20 @@
 </li>
 <li>Gammut</li>
 <li>(Couleurs) Homochromes : cf. Métamère</li>
-<li>Illuminant</li>
 <li>
-<p>Intensité</p>
+<p>Illuminant</p>
+</li>
+<li>
+<p><strong><em>Intensité</em></strong> : quantité de lumière reçue par une surface (réfléchissante ou un capteur) ou émise par une source de lumière, mesurée en nombre de photons reçus par une surface donnée en un temps donné (par exemple en photons par seconde par centimètre carré). Dans le cas d&rsquo;un émetteur de lumière (bougie, lampe, écran), on parle en fonction d&rsquo;un cône (un angle solide) d&rsquo;émission et non pas d&rsquo;une surface de réception et l&rsquo;unité est le <em>candela</em> noté <code>cd</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 </li>
 <li>
 <p><strong><em>Longueur d&rsquo;onde</em></strong> : dans la représentation <em>ondulatoire</em> de la lumière (et de toutes la gamme d&rsquo;ondes électromangétique), la longueur d&rsquo;onde, mesurée en <em>nanomètres</em> (<em>nm</em>) est la &ldquo;taille&rdquo; des ondulations ; elle est l&rsquo;inverse de la fréquence* (<code>λ = 1 / F</code> avec <em>F</em> pour la fréquence et <em>λ</em> pour la longueur d&rsquo;onde) : quand la fréquence augmente, la longueur d&rsquo;onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), en <em>400nm</em> et <em>700nm</em> environ, chaque longueur d&rsquo;onde correspond à une couleur précise, une lumière <em>monochromatique</em>*.</p>
 </li>
 <li>
-<p>Luminance</p>
+<p><strong><em>Luminance</em></strong> : représentation de l&rsquo;intensité physique de la lumière (ou de la couleur) corresponsant à une couleur sur une échelle linéaire. Différent de <em>luminosité</em> ou <em>luma</em>.</p>
+</li>
+<li>
+<p><strong><em>Luminosité</em></strong> ou <strong><em>Luma</em></strong> : représentation de l&rsquo;intensité de la lumière (ou de la couleur), mais sur une échelle adaptée à la perception humaine, utilisant un <em>gamma</em>, contrairement à la <em>luminance</em>.</p>
 </li>
 <li>
 <p><strong><em>LUT</em></strong> : de l&rsquo;anglais <em>Lookup Table</em>. Une <em>LUT</em> permet en informatique (surtout à ses premières heures) de remplacer des fonctions mathématiques complexes (et surtout prenant du temps à réaliser) par des tableaux de valeurs ; au lieu de <em>calculer</em> des correspondances et des conversions, on retrouve la valeur dans le tableau. On en utilise encore beaucoup en colorimétrie : elles permettent de convertir des couleurs entres différents espaces colorimétriques sans se soucier de la formule mathématique correspondante (et sont donc un moyen facile de faire une conversion entre des espaces dans un logiciel qui ne les gère pas nativement). Elles peuvent provoquer une (petite) perte d&rsquo;information si elles ne sont pas assez précises (ne contiennent pas suffisamment de valeurs). Elles sont aussi utilisées comme <em>presets</em> d&rsquo;étalonnage ou de colorimétrie et peuvent permettre de facilement répliquer un effet, même dans un logiciel qui ne le permettrait pas avec ses outils de couleurs natifs (pour peu qu&rsquo;il puisse appliquer une <em>LUT</em> quand même). voir la section [XX-luts.md] pour plus de détails.</p>
@@ -263,8 +268,30 @@
 <li>
 <p><strong><em>Violet</em></strong> : voir <em>Pourpre</em>.</p>
 </li>
+<li>
+<p><strong><em>YCbCr</em></strong> ou <strong><em>YCC</em></strong> : déclinaison numérique du <em>YUV</em>.</p>
+</li>
+<li>
+<p><strong><em>YPbPr</em></strong> : autre nom du <em>YUV</em>.</p>
+</li>
+<li>
+<p><strong><em>YUV</em></strong> : Système de codage des couleurs en trois couches : une de <em>luminance</em> ou <em>luminosité</em> et deux de <em>chrominance</em>. Plusieurs notations apportent des détails sur le système, bien qu&rsquo;on utilise très majoritairement le terme <em>YUV</em> :</p>
+<ul>
+<li>Lorsqu&rsquo;on ajoute un prime au Y, on précise que c&rsquo;est une <em>luminosité</em> (avec un gamma) et pas une <em>luminance</em> (linéaire).</li>
+<li>Les termes corrects en analogique sont : <em>YUV</em> ou <em>YPbPr</em> avec la <em>luminance</em> et <em>Y&rsquo;UV</em> ou <em>Y&rsquo;PbPr</em> avec la <em>luminosité</em>.</li>
+<li>Les termes corrects en numérique sont : <em>YCbCr</em> ou <em>YCC</em> avec la <em>luminance</em> et <em>Y&rsquo;CbCr</em> ou <em>Y&rsquo;CC</em> avec la <em>luminosité</em>.</li>
 </ul>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/19" /></p>
+</li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/25" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Le <em>lumen</em> quant à lui mesure l&rsquo;intensité générale (donc dans toutes les directions) contrairement au candela, mais n&rsquo;est pas utilisé en informatique.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
               
             </div>
           </div>

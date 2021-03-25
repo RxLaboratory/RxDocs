@@ -1,10 +1,10 @@
 # B - Petit inventaire et classification des couleurs
 
-Les couleurs perçues sont donc des mélanges de rayons de lumière *monochromatiques*\*. Voyons comment classer toutes ces couleurs comment elles se décomposent.
+Les couleurs perçues sont donc des mélanges de rayons de lumière *monochromatiques*\*. Voyons comment classer toutes ces couleurs et comment elles se décomposent.
 
 !!! note
-    Nous parlons encore ici de *lumières* et de rayons lumineux, et donc d'un système *additif* ; il n'est pas question de la composition des surfaces et de la manière dont elles absorbent et renvoie les couleurs, et qui serait l'objet d'une synthèse *soustractive* de la lumière.  
-    cf chapitre [*D - Reproduction des couleurs*](D-reproduction.md) pour plus de détails sur le sujet.
+    Nous parlons encore ici de *lumières* et de rayons lumineux, et donc d'un système *additif* ; il n'est pas question de la composition des surfaces et de la manière dont elles absorbent et renvoient les couleurs, et qui serait l'objet d'une synthèse *soustractive* de la lumière.  
+    *cf.* chapitre [*D - Reproduction des couleurs*](D-reproduction.md) pour plus de détails sur le sujet.
 
 ## B.1 - Noir
 
