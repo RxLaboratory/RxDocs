@@ -111,6 +111,16 @@
             
     <li class="toctree-l3"><a href="#m-full-range-limited-tv-pc">M - Full range / Limited / TV / PC ?</a></li>
     
+        <ul>
+        
+            <li><a class="toctree-l4" href="#m1-full-range-pc">M.1 - Full range / PC</a></li>
+        
+            <li><a class="toctree-l4" href="#m2-limited-range-tv">M.2 - Limited range / TV</a></li>
+        
+            <li><a class="toctree-l4" href="#m3-consequence-pratique">M.3 - Conséquence pratique</a></li>
+        
+        </ul>
+    
 
     </ul>
                 </li>
@@ -189,6 +199,65 @@
             <div class="section">
               
                 <h1 id="m-full-range-limited-tv-pc">M - Full range / Limited / TV / PC ?<a class="headerlink" href="#m-full-range-limited-tv-pc" title="Permanent link">&para;</a></h1>
+<p>Lors de l&rsquo;encodage vidéo (et de son décodage), un paramètre important concerne le <em>color range</em>. Ce paramètre a son origine historique au moment du passage de la TV analogique aux écrans RGB numériques. Il donne une gamme de niveaux possible sur chacune des <em>couches<a href="ZZ-vocabulaire.html">*</a></em> de couleur (rouge, vert, bleu).</p>
+<div class="toc">
+<ul>
+<li><a href="#m-full-range-limited-tv-pc">M - Full range / Limited / TV / PC ?</a><ul>
+<li><a href="#m1-full-range-pc">M.1 - Full range / PC</a></li>
+<li><a href="#m2-limited-range-tv">M.2 - Limited range / TV</a></li>
+<li><a href="#m3-consequence-pratique">M.3 - Conséquence pratique</a><ul>
+<li><a href="#m3a-encodage">M.3.a - Encodage</a></li>
+<li><a href="#m3b-lecture-et-affichage">M.3.b - Lecture et affichage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="m1-full-range-pc">M.1 - Full range / PC<a class="headerlink" href="#m1-full-range-pc" title="Permanent link">&para;</a></h2>
+<p>Les écrans numériques des ordinateurs utilisent la gamme <em>complète</em> des niveaux de rouge, vert et bleu pour la reproduction des couleurs. Avec les 8 bits par <em>couche</em> (<em>cf.</em> chapitre <em><a href="N-bpc.html">N - Profondeur (bpc)</a></em>) les plus répandus, cela signifie que chaque couche stocke les valeurs entre 0 et 255.</p>
+<p>0 représente donc le noir, et 255 le blanc.</p>
+<h2 id="m2-limited-range-tv">M.2 - Limited range / TV<a class="headerlink" href="#m2-limited-range-tv" title="Permanent link">&para;</a></h2>
+<p>Les télévisions sont elles prévues pour utiliser la gamme dite <em>limitée</em> des niveaux ; cette gamme est à l&rsquo;origine adaptée spécifiquement pour représenter plus correctement les contrastes des films et correspond avec 8 bits par <em>couche</em> à des valeurs entre 16 et 235.</p>
+<p>Cela signifie que en télévision, la valeur 16 représente le noir, et la valeur 235 le blanc. Toutes les valeurs inférieures à 16 sont ignorées (plus noires que noir) ainsi que toutes les valeurs supérieures à 235 (plus blanches que blanche)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<h2 id="m3-consequence-pratique">M.3 - Conséquence pratique<a class="headerlink" href="#m3-consequence-pratique" title="Permanent link">&para;</a></h2>
+<p>Il faut donc bien connaître à la fois son matériel au moment de la reproduction d&rsquo;une vidéo, et bien savoir quoi faire au moment de son encodage.</p>
+<h3 id="m3a-encodage">M.3.a - Encodage<a class="headerlink" href="#m3a-encodage" title="Permanent link">&para;</a></h3>
+<p>Dans l&rsquo;immense majorité des cas, les standards vidéos préconisent un encodate en <em>limited range / TV</em> : les vidéos sont prévus pour être vues dans les conditions de la télévision (y compris sur internet). C&rsquo;est le cas par exemple du <em>mp4</em> en <em>h.264</em> ou <em>h.265</em>, du <em>mkv</em>, et de tous les formats de <em>diffusion</em>.</p>
+<p>En revanche, les formats d&rsquo;image (<em>PNG</em>, <em>Jpeg</em>, <em>openEXR</em>, etc.), ainsi que les formats video <em>intermédiaires</em> (ceux utilisés lors de la production et non pas de la diffusion, comme le Prores), étant prévus pour un environnement informatique, utilisent plutôt le <em>full range / PC</em>.</p>
+<p>Il est important de respecter ces standards pour être sûr que les fichiers soient correctement interprétés par le matériel des spectateurs, et toujours se renseigner sur les formats préconisés par les diffuseurs.</p>
+<h3 id="m3b-lecture-et-affichage">M.3.b - Lecture et affichage<a class="headerlink" href="#m3b-lecture-et-affichage" title="Permanent link">&para;</a></h3>
+<p>Lors de la lecture des vidéos, il faut aussi que tout le système soit correctement configuré ; un problème courant (pour ne pas dire récurent) sur les ordinateurs est justement que les vidéos sont laissées en <em>limited range</em> alors que l&rsquo;écran est <em>full range</em>.</p>
+<p>Lors de la lecture, la source vidéo doit être convertie pour correspondre à l&rsquo;écran ou au projecteur. Sans conversion, une vidéo <em>limited range</em> sur un écran <em>full range</em> sera &ldquo;terne&rdquo; : il n&rsquo;y aura ni noir ni blanc, la gamme de l&rsquo;image allant seulement du gris clair au gris foncé. À l&rsquo;inverse, une vidéo <em>full range</em> sur une TV <em>limited range</em> aura une perte d&rsquo;information aussi bien dans les lumières que les ombres, avec de grandes parties complètement noires ou blanches (l&rsquo;image sera trop contrastée).</p>
+<p><em><img alt="Exemple de mauvais affichage" src="" /></em></p>
+<p>Il faut donc que le matériel soit correctement configuré. Sur un lecteur de disques ou une console, il doit y avoir un réglage pour spécifier si l&rsquo;écran branché est <em>full</em> ou <em>limited range</em> (en règle générale, un écran informatique ou un vidéo-projecteur est <em>full range</em>, une TV <em>limited range</em>).</p>
+<p>Sur un ordinateur, les choses peuvent être un peu plus complexes : il faut commencer par vérifier les paramètres du pilote de la carte graphique, en général dans une section nommée &ldquo;vidéo&rdquo;, et bien spécifier <em>full range / PC</em> (sauf si c&rsquo;est une TV qui est branchée à l&rsquo;ordinateur)<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. Si après avoir bien réglé ce paramètre des variations sont toujours visibles, il faut vérifier que le logiciel utilisé pour lire la vidéo ne fait pas une mauvaise conversion (par exemple <em>Quicktime</em> sur <em>Windows</em> était connu pour ça<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>) ; la plupart de ces logiciels devraient cependant laisser faire cette conversion par la carte graphique et ne pas poser de problème (c&rsquo;est le cas de <em>VLC</em>, du lecteur vidéo de <em>Windows</em>, de <em>Totem</em> sous <em>Linux</em>&hellip;).</p>
+<p><em><img alt="Exemple du réglage sur les pilotes nvidia" src="" /></em></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Sur certains matériels, une option &ldquo;Auto&rdquo; est disponible en plus de <em>full / limited range</em>. Dans ce cas le matériel <em>essaye</em> de détecter le type d&rsquo;écran branché. Dans la mesure où c&rsquo;est un paramètre qui ne doit changer que quand on change d&rsquo;écran, il est fortement recommandé de le mettre à la main.</p>
+</div>
+<hr />
+<p>Sources et références</p>
+<ul>
+<li><a href="https://referencehometheater.com/2014/commentary/rgb-full-vs-limited/">RGB Full vs Limited sur <em>Reference Home Theater</em> (en anglais)</a></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/28" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Certains blu-rays et consoles de jeux tirent parti de cette limite pour ajouter des spéculaires (brillances) au delà du blanc et les rendre plus lumineux. Si la TV est compatible, elle affichera des &ldquo;super blancs&rdquo;, sinon elle ignorera simplement cette information, sans que l&rsquo;image n&rsquo;en soit affectée.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Pendant longtemps, les pilotes des cartes graphiques NVidia sous <em>Windows</em> étaient configurées pour afficher les vidéos en <em>limited range</em> par défaut&hellip;&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Bien qu&rsquo;aimé des animateurs pour sa capacité à facilement lire les vidéos image par image, <em>Quicktime</em> sous <em>Windows</em> est à proscrire pour sa mauvaise gestion des couleurs ; son développement a de toute façon été abandonné par <em>Apple</em>.<br />
+<em><a href="https://darbyjohnston.github.io/DJV/">DJV</a></em>, disponible aussi bien sous <em>Windows</em>, <em>Mac OS</em>, <em>Linux</em>, que <em>BSD</em>, le remplace efficacement et intègre une gestion des couleurs professionnelle.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
               
             </div>
           </div>
