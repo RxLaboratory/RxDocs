@@ -4,13 +4,21 @@ Classement alphabétique.
 
 - ***ACES*** : *Academy Color Encoding System* est un standard d'échange, de gestion des couleurs pour l'imagerie numérique. Il a pour but de simplifier la gestion des couleurs en maintenant la fidélité des couleurs tout au long de la chaîne de production. Le standard est gratuit et open source et de nombreuses entreprises contribuent à son développement. Il utilise notamment la librairie logicielle *OCIO*\*.
 
+- ***Alpha*** : quatrième *canal\** parfois ajouté aux pixels d'une vidéo pour stocker l'information de transparence en plus de la couleur. On note en général dans ce cas les canaux *RGBA* et *YUVA*, et dans le cas du *YUVA* une quatrième valeur est parfois ajoutée au sigle du *[sous-échantillonage de la chromiance](L-444.md)* : *4:4:4:4*, *4:2:2:4*, etc.
+
 - Canal (de couleur)
 
 - ***CIE*** : *La Commission internationale de l'éclairage* est une organisation internationale dédiée à la lumière, l'éclairage, la couleur et les espaces de couleur. Elle a été fondée à Berlin en 1913 et est actuellement basée à Vienne en Autriche.  Note : l'acronyme français *CIE* est celui utilisé internationnalement bien qu'en anglais ce soit la *International Commission on Illumination*.
 
+- ***Codec*** : abréviation de codeur-décodeur. *Logiciel* utilisé pour l'encodage et le décodage d'une vidéo ou d'un flux audio dans une certaine *norme\**. D'ailleurs, le codec est souvent confondu avec la *norme* ou le *format\**, mais il est bien un *logiciel* et pas un *format*. Par exemple, *x264* ou *nvenc* sont des codecs permettant d'encoder une vidéo dans la *norme* *h.264* (au *format* *mp4* par exemple).
+
 - (Couleurs) complémentaires
 
+- ***Conteneur*** : synonyme de *type de fichier*. Définit comment des flux multimédia (audio, video, sous-titres, méta-données...) doivent être enregistrés ensemble dans un fichier précis. Par exemple : *Quicktime* (*\*.mov*), *MP4* (*\*.mp4*), *Matroska* (*\*.mkv*) sont des conteneurs (mais *h.264* est une *norme\**, et *x264* un *codec\**). Certains conteneurs sont spécialisés et imposent une certaine *norme* (par exemple, un *MP4* devrait toujours utiliser la *norme* *h.264* ou *h.265*), tandis que d'autres permettent un grand nombre de normes différentes (par exemple *Quicktime* permet la norme *PNG*, *Prores*, *RLE/Animation*, *MJPEG*, etc.).
+
 - ***Courbe de transfert***
+
+- ***Format*** : synonyme de *type de fichier*. Voir *conteneur*. À ne pas confondre avec *norme* et *codec*.
 
 - ***Fréquence*** : dans la représentation *ondulatoire* de la lumière (et de toutes la gamme d'ondes électromangétique), la fréquence, mesurée en *Hertz* (*Hz*) est le nombre d'ondulations par secondes ; elle est l'inverse de la longueur d'ondes\* (`F = 1 / λ` avec *F* pour la fréquence et *λ* pour la longueur d'onde) : quand la fréquence augmente, la longueur d'onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), vers *10<sup>15</sup>Hz* (*1000 TeraHertz*), chaque fréquence correspond à une couleur précise, une lumière *monochromatique*\*. 
 
@@ -35,6 +43,8 @@ Classement alphabétique.
 
 - ***Noir*** : Le *noir* est la couleur résultant de l'absence de lumière. Il est donc la couleur de plus faible luminosité (nulle) et sa *saturation\** ne peut pas être définie.
 
+- ***Norme*** (vidéo et audio) : définit la *manière* dont les données audio et vidéo sont encodées, le standard utilisé, et donc avec quel *codec* ces données pourront être décodées.
+
 - ***OCIO*** : *OpenColorIO* est une librarie logicielle (une "brique"/outil développeur utilisable dans d'autres logiciels/applications) dédiée à la gestion des couleurs. Elle est gratuite et open source, et devenue standard avec son inclusion et usage dans un grand nombre d'applications (en natif sur *Maya, Arnold, Krita, Blender, Nuke*... ; via des plugins et add-ons sur *After Effects*... ; via des LUTs\*/Profils colorimétriques sur *Photoshop* et d'autres). Cette inclusion dans différentes applications permet de partager une configuration unique de la gestion des couleurs sur toute la chaîne de production et assurer une reproduction identique des couleurs à toutes les étapes.
 
 - ***OIIO*** : *OpenImageIO* définit principalement le standard du format de stockage de données images *openEXR*, et est une librairie logicielle gratuite et open source pour gérer ce format ouvert, choisi comme format par défaut par *ACES*\* ; il est inter-dépendant avec *OCIO*\*.
@@ -43,7 +53,7 @@ Classement alphabétique.
 
 - Point Blanc
 
-- ***Pourpre***\* : Les *pourpres* sont les couleurs résultant du mélange (uniquement) des deux extrèmes du spectre des lumières *monochromatiques*\* visibles : rouge et bleu, en des proportions pouvant varier. Elles sont considérées comme des couleurs *saturées*\*.
+- ***Pourpre*** : Les *pourpres* sont les couleurs résultant du mélange (uniquement) des deux extrèmes du spectre des lumières *monochromatiques*\* visibles : rouge et bleu, en des proportions pouvant varier. Elles sont considérées comme des couleurs *saturées*\*.
 
 - (Couleurs) Primaires
 - Pureté colorimétrique

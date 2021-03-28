@@ -4,6 +4,8 @@ Le blanc étant perçu différemment en fonction de l'environnement et de l'obse
 
 On utilise généralement pour ça ce qu'on appelle le rayonnement des *corps noirs[\*](ZZ-vocabulaire.md)*.
 
+[TOC]
+
 ## E.1 - Corps noir
 
 Un *corps noir* est un élément qui n'apparait pas nécessairement *noir*, mais qui est noir dans le sens où il absorbe l'intégralité des rayons électromagnétiques (et donc de lumière visible) qu'il reçoit ; autrement dit, **si** le corps noir était parfaitement froid[^1], il serait d'un noir pur. Mais tout corps possède une certaine chaleur, et cette chaleur fait qu'il émet des rayonnements, dont une partie dans le spectre visible, ce qui explique que ce qu'on appelle un *corps noir* n'est pas *vu* comme noir.

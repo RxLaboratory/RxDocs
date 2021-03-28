@@ -59,7 +59,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - G.2 - Les Espaces colorimétriques
 - H - [Qu’est ce qu’un espace colorimétrique ?](H-espace-colo.md)
     - H.1 - Ce qui définit un espace colorimétrique
-        - H.1.a - Les primaires
+        - H.1.a - Les primaires et le gammut
         - H.1.b - Le point blanc
         - H.1.c - La courbe de transfert
     - H.2 - Autres paramètres
@@ -72,18 +72,23 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - K.1 - RGB
     - K.2 - YUV
     - K.3 - Comparaison
-- L - [YUV 444, 422, 421, 420... Le sous-échantillonage de chrominance](L-444.md)
-- M - Full range / Limited / TV / PC
+- L - [YUV 4:4:4, 4:2:2, 4:2:0... Le sous-échantillonage de la chrominance](L-444.md)
+    - L.1 - 4:4:4
+    - L.2 - 4:2:2
+    - L.3 - 4:2:0
+- M - [Full range / Limited / TV / PC ?](M-range.md)
 - N - [Profondeur (bpc)](N-bpc.md)
 - O - [Courbes de transfert, espace linéaire et gamma](O-transfert.md)
-- Les LUTs
-- Calibration des écrans et leurs espaces colorimétriques
-- OCIO, ACES
-- Color management : After Effects
-- Color management : Krita
-- Color management : Blender
-- Color management : Darktable
-- Color management : DuME
+- P - Les LUTs
+- Q - OCIO, ACES
+- R - Mise en pratique : choisir ses espaces colorimétriques
+- RA - Calibration des écrans et leurs espaces colorimétriques
+- RB - Color management : Adobe After Effects
+- RD - Color management : Blender
+- RF - Color management : DuME
+- RG - Color management : Adobe Media Encoder
+- RC - Color management : Krita
+- RE - Color management : Darktable
 - [Glossaire](ZZ-vocabulaire.md)
 
 À l'origine de ce document, cette vidéo enregistrée en direct avec [Motion Café](https://www.motion-cafe.com/) et [Nicolas Dufresne](http://duduf.com) : 

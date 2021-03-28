@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>L - YUV 444, 422, 421, 420... - RxDocs - Gestion des couleurs</title>
+  <title>L - YUV 4:4:4, 4:2:2, 4:2:0... - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "L - YUV 444, 422, 421, 420...";
+    var mkdocs_page_name = "L - YUV 4:4:4, 4:2:2, 4:2:0...";
     var mkdocs_page_input_path = "L-444.md";
     var mkdocs_page_url = "/couleurs/L-444.html";
   </script>
@@ -102,13 +102,27 @@
                 </li>
                 <li class=" current">
                     
-    <a class="current" href="L-444.html">L - YUV 444, 422, 421, 420...</a>
+    <a class="current" href="L-444.html">L - YUV 4:4:4, 4:2:2, 4:2:0...</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#l-yuv-444-422-421-420-le-sous-echantillonage-de-chrominance">L - YUV 444, 422, 421, 420... Le sous-échantillonage de chrominance</a></li>
+    <li class="toctree-l3"><a href="#l-yuv-444-422-420-le-sous-echantillonage-de-la-chrominance">L - YUV 4:4:4, 4:2:2, 4:2:0... Le sous-échantillonage de la chrominance</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#l1-444">L.1 - 4:4:4</a></li>
+        
+            <li><a class="toctree-l4" href="#l2-422">L.2 - 4:2:2</a></li>
+        
+            <li><a class="toctree-l4" href="#l3-420">L.3 - 4:2:0</a></li>
+        
+        </ul>
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
                 </li>
                 <li class="">
                     
@@ -171,7 +185,7 @@
         
       
     
-    <li>L - YUV 444, 422, 421, 420...</li>
+    <li>L - YUV 4:4:4, 4:2:2, 4:2:0...</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/L-444.md"
@@ -184,10 +198,64 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="l-yuv-444-422-421-420-le-sous-echantillonage-de-chrominance">L - YUV 444, 422, 421, 420&hellip; Le sous-échantillonage de chrominance<a class="headerlink" href="#l-yuv-444-422-421-420-le-sous-echantillonage-de-chrominance" title="Permanent link">&para;</a></h1>
+                <h1 id="l-yuv-444-422-420-le-sous-echantillonage-de-la-chrominance">L - YUV 4:4:4, 4:2:2, 4:2:0&hellip; Le sous-échantillonage de la chrominance<a class="headerlink" href="#l-yuv-444-422-420-le-sous-echantillonage-de-la-chrominance" title="Permanent link">&para;</a></h1>
+<p><em>YUV</em> présente l&rsquo;avantage, par rapport au <em>RGB</em>, de pouvoir fonctionner en pratique de manière plus proche de la perception humaine qui est plus performante en <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em>. En effet, en séparant la <em>luminance<a href="ZZ-vocabulaire.html">*</a></em> de la <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em>, on va pouvoir diminuer la quantité de données enregistrée en <em>chrominance</em> pour favoriser la <em>luminance</em>, sans que nous ne percevions la perte et ainsi compresser efficacement les données vidéo.</p>
+<p>Pour opérer cette réduction de qualité en <em>chrominance</em>, on en réduit simplement la résolution, le nombre de pixels ; c&rsquo;est ce qu&rsquo;on appelle le sous-échantillonage de chrominance (<em>chroma sub-sampling</em> en anglais).</p>
+<p>Le sous-échantillonnage de chrominance est donc <em>une méthode de compression</em> avec pertes complètement indépendante de la <em>norme<a href="ZZ-vocabulaire.html">*</a></em> (<em>codec<a href="ZZ-vocabulaire.html">*</a></em>) d&rsquo;encodage de la vidéo.</p>
+<p>Les sigles <em>4:4:4</em>, <em>4:2:2</em>, <em>4:2:0</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>&hellip; décrivent la manière dont le sous-échantillonnage est fait et indiquent la quantité de données perdues. Cette description est faite à partir d&rsquo;une grille de 4 pixels sur 2.</p>
+<p><img alt="4x2 pixels" src="img/chroma-subsampling.svg" /></p>
+<p>La première valeur du trio représente la résolution (l&rsquo;échantillonage) de la <em>luminance<a href="ZZ-vocabulaire.html">*</a></em>.<br />
+La deuxième valeur représente le sous-échantillonage de la <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em> sur la première ligne (toutes les lignes impaires), tandis que la troisième représente ce sous-échantillonage sur la deuxième ligne (toutes les lignes paires).</p>
+<p>Une quatrième valeur est parfois ajoutée au sigle et représente dans ce cas un sous-échantillonage dans la couche <em>alpha*</em> de la vidéo<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>On peut facilement calculer la quantité de données économisées en additionnant les trois valeurs et en divisant par 12 (ou 16 si il y a une valeur séparée pour l&rsquo;alpha).<br />
+Par exemple :</p>
+<ul>
+<li>en <em>4:4:4</em>, il n&rsquo;y a aucune perte (facteur de <code>1,0</code>)</li>
+<li>en <em>4:2:2</em>, on gagne un tiers (facteur de <code>0,66</code>)</li>
+<li>en <em>4:2:0</em>, on gagne la moitié (facteur de <code>0,5</code>)</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>En cas de vidéo noire et blanche, la chrominance est complètement inutile, on peut donc choisir le mode qui en a le moins.</p>
+</div>
+<h2 id="l1-444">L.1 - 4:4:4<a class="headerlink" href="#l1-444" title="Permanent link">&para;</a></h2>
+<p><img alt="444" src="img/444.svg" /></p>
+<p>Le sous-échantillonage <em>4:4:4</em> en <em>YUV</em> est <strong>le seul équivalent au <em>RGB</em></strong> en terme de qualité (et quantité de données). Il n&rsquo;y a en fait aucun sous-échantillonage dans ce mode et tous les pixels contiennent les informations de <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em> et de <em>luminance<a href="ZZ-vocabulaire.html">*</a></em>.</p>
+<p>Il n&rsquo;est pas utilisé en diffusion mais <strong>seulement en production</strong> (ou pour l&rsquo;archivage). En effet, le débit serait trop élevé, mais ces données sont indispensables à la post-production, en particulier dans le cas d&rsquo;utilisation de fond vert ou bleu (<em>chroma-key</em>) : le masquage se faisant sur l&rsquo;information de chrominance, il est absolument indispensable d&rsquo;en avoir toute la résolution.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Malheureusement, seules les caméras et enregistreurs professionnels haut de gamme peuvent enregistrer en <em>4:4:4</em>, beaucoup de caméras enregistrent en <em>4:2:2</em>, voire même pour l&rsquo;entrée de gamme en <em>4:2:0</em>.</p>
+</div>
+<h2 id="l2-422">L.2 - 4:2:2<a class="headerlink" href="#l2-422" title="Permanent link">&para;</a></h2>
+<p><img alt="422" src="img/422.svg" /></p>
+<p>En <em>4:2:2</em>, la résolution de la <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em> est la moitié de celle de la luminance (on diminue donc d&rsquo;un tiers la quantité de données). La perte est imperceptible, ce qui en fait une manière de compresser la vidéo très efficace. Ce mode est utilisé en production (pour autant qu&rsquo;il n&rsquo;y ait pas d&rsquo;incrustation, de fond vert/bleu), dans les formats haut de gamme et dans les diffusion de haute qualité (en télévision notamment).</p>
+<p>La résolution horizontale de la chrominance est réduite de moitié, la résolution verticale est gardée.</p>
+<h2 id="l3-420">L.3 - 4:2:0<a class="headerlink" href="#l3-420" title="Permanent link">&para;</a></h2>
+<p><img alt="420" src="img/420.svg" /></p>
+<p>En <em>4:2:0</em>, la résolution de la <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em> est réduite de moitié une ligne sur deux, et complètement supprimée sur l&rsquo;autre ligne. La quantité de données est donc globalement réduite de moitié, mais la différence reste très difficile à percevoir, ce qui en fait un très bon format de diffusion<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<p>Ce mode est majoritaire dans les fichiers informatique grand public et sur internet. Beaucoup de lecteurs logiciels, et la plupart des lecteurs <em>hardware</em> (lecteurs de blu-rays, smart TVs, etc) ne supportent d&rsquo;ailleurs que le <em>4:2:0</em>.</p>
+<p>Il est à proscrire en production en cas de correction colorimétrique ou incrustation ; les informations de <em>chrominance</em> sont très insuffisantes (un effet &ldquo;d&rsquo;escalier&rdquo; peut facilement apparaitre, dû au manque de résolution en chrominance).</p>
+<p>La résolution horizontale ainsi que verticale de la chrominance sont toutes deux réduites de moitié.</p>
 <hr />
 <p>Sources et références</p>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/20" /></p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Sous-%C3%A9chantillonnage_de_la_chrominance">Sous-échantillonage de la chrominance sur <em>Wikipedia</em></a></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/28" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Cette liste sont les sous-échantillonages les plus courants, mais il y en a de plus rares (<em>4:2:1</em>, <em>4:1:1</em>), ou plus complexes ou carrément exotiques (<em>3:1.5:1.5</em>, <em>3:1:1</em>)&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>À défaut, le sous-échantillonage du canal alpha est le même que celui de la <em>luminance<a href="ZZ-vocabulaire.html">*</a></em>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Ce mode existe dans le format <em>openEXR</em> : c&rsquo;est l&rsquo;option notée &ldquo;Luminance/Chroma&rdquo;.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
               
             </div>
           </div>
@@ -195,7 +263,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="N-bpc.html" class="btn btn-neutral float-right" title="N - Profondeur (bpc)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="M-range.html" class="btn btn-neutral float-right" title="M - Full range / Limited / TV / PC ?">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="K-rgb-yuv.html" class="btn btn-neutral" title="K - RGB et YUV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -231,7 +299,7 @@
         <span><a href="K-rgb-yuv.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="N-bpc.html" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="M-range.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>D - Reproduction des couleurs - RxDocs - Gestion des couleurs</title>
+  <title>M - Full range / Limited / TV / PC ? - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "D - Reproduction des couleurs";
-    var mkdocs_page_input_path = "D-reproduction.md";
-    var mkdocs_page_url = "/couleurs/D-reproduction.html";
+    var mkdocs_page_name = "M - Full range / Limited / TV / PC ?";
+    var mkdocs_page_input_path = "M-range.md";
+    var mkdocs_page_url = "/couleurs/M-range.html";
   </script>
   
   <script src="js/jquery-2.1.1.min.js" defer></script>
@@ -68,23 +68,9 @@
                     
     <a class="" href="C-perception.html">C - Perception des couleurs</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="D-reproduction.html">D - Reproduction des couleurs</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#d-reproduction-des-couleurs">D - Reproduction des couleurs</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#d1-synthese-additive">D.1 - Synthèse additive</a></li>
-        
-            <li><a class="toctree-l4" href="#d2-synthese-soustractive">D.2 - Synthèse soustractive</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
                 </li>
                 <li class="">
                     
@@ -118,9 +104,15 @@
                     
     <a class="" href="L-444.html">L - YUV 4:4:4, 4:2:2, 4:2:0...</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
+    <a class="current" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#m-full-range-limited-tv-pc">M - Full range / Limited / TV / PC ?</a></li>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -183,10 +175,10 @@
         
       
     
-    <li>D - Reproduction des couleurs</li>
+    <li>M - Full range / Limited / TV / PC ?</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/D-reproduction.md"
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/M-range.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -196,38 +188,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="d-reproduction-des-couleurs">D - Reproduction des couleurs<a class="headerlink" href="#d-reproduction-des-couleurs" title="Permanent link">&para;</a></h1>
-<p>Quand il s&rsquo;agit de reproduire (<em>synthétiser</em>) des couleurs, deux systèmes sont possibles, en fonction du fait que le dispositif est &ldquo;passif&rdquo; ou réfléchissant (en peinture, impression, etc.), c&rsquo;est à dire qu&rsquo;il a besoin d&rsquo;être éclairé, ou bien &ldquo;actif&rdquo;, et émet sa propre lumière (écran, projecteur, etc.).</p>
-<div class="toc">
-<ul>
-<li><a href="#d-reproduction-des-couleurs">D - Reproduction des couleurs</a><ul>
-<li><a href="#d1-synthese-additive">D.1 - Synthèse additive</a></li>
-<li><a href="#d2-synthese-soustractive">D.2 - Synthèse soustractive</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h2 id="d1-synthese-additive">D.1 - Synthèse additive<a class="headerlink" href="#d1-synthese-additive" title="Permanent link">&para;</a></h2>
-<p>Lorsqu&rsquo;un système émet sa propre lumière, comme un écran ou un projecteur, il produit les couleurs en allant du <em>noir<a href="ZZ-vocabulaire.html">*</a></em> (système éteint, qui n&rsquo;émet rien), au <em>blanc<a href="ZZ-vocabulaire.html">*</a></em>.</p>
-<p>Dans un tel système <em>additif</em>, la couleur la plus lumineuse est le blanc : il résulte de l&rsquo;addition des différentes <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> dont sont fabriqués les pixels du dispositif, en général une combinaison de vert, rouge et bleu.</p>
-<p>Le système fonctionne donc en additionnant des rayons de lumière pour mélanger les couleurs.</p>
-<p>Une conséquence à noter est que sur un tel système, une couleur monochrome (la couleur d&rsquo;une <em>primaire<a href="ZZ-vocabulaire.html">*</a></em> du système, ou la <em>simulation</em> d&rsquo;une autre lumière monochrome obenue par mélange de ces <em>primaires<a href="ZZ-vocabulaire.html">*</a></em>) est nécessairement <em>moins</em> intense qu&rsquo;un blanc, contrairement à la réalité ou tout est possible.</p>
-<p>Un système additif, étant générateur de lumière, peut fonctionner dans le noir complet, auquel cas la reproduction des couleurs peut être parfaitement contrôlée en n&rsquo;étant pas influencée par une quelconque lumière extérieure (comme au cinéma).</p>
-<h2 id="d2-synthese-soustractive">D.2 - Synthèse soustractive<a class="headerlink" href="#d2-synthese-soustractive" title="Permanent link">&para;</a></h2>
-<p>Quand un système de reproduction des couleurs est une surface réfléchissante, ce sont les pigments qui altèrent la lumière reçue ; chaque pigment absorbe une partie des rayons reçus et réfléchit le reste. La lumière résultante est donc nécessairement d&rsquo;une intensité plus faible que celle éclairant la surface : le système <em>soustrait</em> des rayons lumineux d&rsquo;un bouquet disponible.</p>
-<p>Un tel système <em>soustractif</em> produit donc les couleurs en allant du <em>blanc<a href="ZZ-vocabulaire.html">*</a></em> (réfléchissant toute lumière reçue) au <em>noir<a href="ZZ-vocabulaire.html">*</a></em> (absorbant toute la lumière reçue).</p>
-<p>Une conséquence importante est qu&rsquo;un système soustractif dépend de la lumière qui l&rsquo;éclaire pour reproduire les couleurs : vu sous une lumière pauvre en rayons <em>monochromatiques<a href="ZZ-vocabulaire.html">*</a></em>, une peinture exposée ne rendra pas toutes ses couleurs possibles. Il faut pour cela l&rsquo;éclairer non seulement d&rsquo;une lumière blanche, mais d&rsquo;une lumière blanche &ldquo;contenant&rdquo; suffisamment de rayons <em>monochromatiques<a href="ZZ-vocabulaire.html">*</a></em> différents, de grande qualité<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
-<p>Une peinture, une affiche, et n&rsquo;importe quel objet éclairé sous une lumière monochromatique ne pourra reproduire <em>que</em> cette couleur <em>monochromatique<a href="ZZ-vocabulaire.html">*</a></em>, à différentes intensités, quels que soient les pigments qui les composent.</p>
-<hr />
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23" /></p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Toutes les sources de lumières ne sont pas égales ! À couleur identique, la lumière de différent types d&rsquo;ampoules ou de tubes fluorescents ne sera plus la même une fois réfléchie et &ldquo;décomposée&rdquo; : les sources de meilleure qualité restitueront mieux les couleurs des surfaces qu&rsquo;elles rencontrent, et seront souvent &ldquo;plus agréables&rdquo;.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>
+                <h1 id="m-full-range-limited-tv-pc">M - Full range / Limited / TV / PC ?<a class="headerlink" href="#m-full-range-limited-tv-pc" title="Permanent link">&para;</a></h1>
               
             </div>
           </div>
@@ -235,10 +196,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="E-temperature.html" class="btn btn-neutral float-right" title="E - Retour sur les blancs, température">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="N-bpc.html" class="btn btn-neutral float-right" title="N - Profondeur (bpc)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="C-perception.html" class="btn btn-neutral" title="C - Perception des couleurs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="L-444.html" class="btn btn-neutral" title="L - YUV 4:4:4, 4:2:2, 4:2:0..."><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -268,10 +229,10 @@
           <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="C-perception.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="L-444.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="E-temperature.html" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="N-bpc.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

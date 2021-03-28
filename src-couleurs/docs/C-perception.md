@@ -1,4 +1,4 @@
-# B - Perception de la lumière et des couleurs par l'être humain
+# C - Perception de la lumière et des couleurs par l'être humain
 
 Au problème d'avoir une référence objective pour définir les couleurs s'ajoute le fait que la définition de la couleur est intrinsèquement liée à la perception qu'on en a, et cette perception diffère évidemment d'une population à l'autre, d'un individu à l'autre, et aussi de l'environnement dans lequel on perçoit la couleur.
 
@@ -9,7 +9,7 @@ Au problème d'avoir une référence objective pour définir les couleurs s'ajou
 
 Comprendre cette interprétation subjective des couleurs est important pour comprendre comment la gestion des couleurs dans le traitement des images numériques a été conçu et comment elle évolue.
 
-## B.1 -  L'œil
+## C.1 -  L'œil
 
 Dès la réception des rayons lumineux par l'œil et la rétine, la lumière est décomposée et interprétée. Deux types de photorécepteurs composent la rétine, les cônes et bâtonnets.
 
@@ -19,7 +19,7 @@ Les cônes sont les cellules efficaces dans la réception des lumières plus int
 
 ![](img/retina-absorption.svg)
 
-## B.2 - Le système nerveux
+## C.2 - Le système nerveux
 
 Les informations reçues par les cellules de la rétines sont traduites en influx nerveux et interprétées par le cerveau.
 
@@ -35,15 +35,15 @@ Le système nerveux est donc responsable d'une interprétation des couleurs qui 
 
 Toutes ces différentes étapes altèrent donc la perception d'un signal physique et objectif : un même rayon lumineux ne sera pas "*vu*" de la même manière dans deux endroits différents, et suivant la quantité et la nature des autres rayons qui l'accompagnent.
 
-## B.3 - Conséquences
+## C.3 - Conséquences
 
 Les conséquences de cette perception subjective sont importante pour comprendre les choix historiques qui ont été fait sur les techniques permettant la reproduction artificielle et le traitement des images (analogiques puis numériques).
 
-### B.3.a - Sur la luminosité et le contraste
+### C.3.a - Sur la luminosité et le contraste
 
 La présence des bâtonnets sur la rétine et leurs performance dans les lumières plus faibles, au détriment de la perception des teintes dans ces lumières, fait que **l'oeil est globalement plus performant pour discerner les détails dans la pénombre** que dans les lumières fortes, et qu'il est en général **plus performant pour distinguer les contrastes d'intensité** lumineuses **que les variations de teinte** (la décomposition en longueurs d'ondes précises sur le spectre).
 
-### B.3.b - Sur les teintes
+### C.3.b - Sur les teintes
 
 La division en trois types de cônes performants chacun sur des longueurs d'ondes précises fait que **trois couleurs _primaires_**[^2] suffisent pour reproduire toutes les couleurs telles que l'être humain peut les percevoir, pour autant que ces primaires correspondent environ au domaine de performance de ces trois types de cônes[^3].
 

@@ -102,7 +102,11 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="L-444.html">L - YUV 444, 422, 421, 420...</a>
+    <a class="" href="L-444.html">L - YUV 4:4:4, 4:2:2, 4:2:0...</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
                 </li>
                 <li class="">
                     
@@ -191,16 +195,28 @@
 <p><strong><em>ACES</em></strong> : <em>Academy Color Encoding System</em> est un standard d&rsquo;échange, de gestion des couleurs pour l&rsquo;imagerie numérique. Il a pour but de simplifier la gestion des couleurs en maintenant la fidélité des couleurs tout au long de la chaîne de production. Le standard est gratuit et open source et de nombreuses entreprises contribuent à son développement. Il utilise notamment la librairie logicielle <em>OCIO</em>*.</p>
 </li>
 <li>
+<p><strong><em>Alpha</em></strong> : quatrième <em>canal*</em> parfois ajouté aux pixels d&rsquo;une vidéo pour stocker l&rsquo;information de transparence en plus de la couleur. On note en général dans ce cas les canaux <em>RGBA</em> et <em>YUVA</em>, et dans le cas du <em>YUVA</em> une quatrième valeur est parfois ajoutée au sigle du <em><a href="L-444.html">sous-échantillonage de la chromiance</a></em> : <em>4:4:4:4</em>, <em>4:2:2:4</em>, etc.</p>
+</li>
+<li>
 <p>Canal (de couleur)</p>
 </li>
 <li>
 <p><strong><em>CIE</em></strong> : <em>La Commission internationale de l&rsquo;éclairage</em> est une organisation internationale dédiée à la lumière, l&rsquo;éclairage, la couleur et les espaces de couleur. Elle a été fondée à Berlin en 1913 et est actuellement basée à Vienne en Autriche.  Note : l&rsquo;acronyme français <em>CIE</em> est celui utilisé internationnalement bien qu&rsquo;en anglais ce soit la <em>International Commission on Illumination</em>.</p>
 </li>
 <li>
+<p><strong><em>Codec</em></strong> : abréviation de codeur-décodeur. <em>Logiciel</em> utilisé pour l&rsquo;encodage et le décodage d&rsquo;une vidéo ou d&rsquo;un flux audio dans une certaine <em>norme*</em>. D&rsquo;ailleurs, le codec est souvent confondu avec la <em>norme</em> ou le <em>format*</em>, mais il est bien un <em>logiciel</em> et pas un <em>format</em>. Par exemple, <em>x264</em> ou <em>nvenc</em> sont des codecs permettant d&rsquo;encoder une vidéo dans la <em>norme</em> <em>h.264</em> (au <em>format</em> <em>mp4</em> par exemple).</p>
+</li>
+<li>
 <p>(Couleurs) complémentaires</p>
 </li>
 <li>
+<p><strong><em>Conteneur</em></strong> : synonyme de <em>type de fichier</em>. Définit comment des flux multimédia (audio, video, sous-titres, méta-données&hellip;) doivent être enregistrés ensemble dans un fichier précis. Par exemple : <em>Quicktime</em> (<em>*.mov</em>), <em>MP4</em> (<em>*.mp4</em>), <em>Matroska</em> (<em>*.mkv</em>) sont des conteneurs (mais <em>h.264</em> est une <em>norme*</em>, et <em>x264</em> un <em>codec*</em>). Certains conteneurs sont spécialisés et imposent une certaine <em>norme</em> (par exemple, un <em>MP4</em> devrait toujours utiliser la <em>norme</em> <em>h.264</em> ou <em>h.265</em>), tandis que d&rsquo;autres permettent un grand nombre de normes différentes (par exemple <em>Quicktime</em> permet la norme <em>PNG</em>, <em>Prores</em>, <em>RLE/Animation</em>, <em>MJPEG</em>, etc.).</p>
+</li>
+<li>
 <p><strong><em>Courbe de transfert</em></strong></p>
+</li>
+<li>
+<p><strong><em>Format</em></strong> : synonyme de <em>type de fichier</em>. Voir <em>conteneur</em>. À ne pas confondre avec <em>norme</em> et <em>codec</em>.</p>
 </li>
 <li>
 <p><strong><em>Fréquence</em></strong> : dans la représentation <em>ondulatoire</em> de la lumière (et de toutes la gamme d&rsquo;ondes électromangétique), la fréquence, mesurée en <em>Hertz</em> (<em>Hz</em>) est le nombre d&rsquo;ondulations par secondes ; elle est l&rsquo;inverse de la longueur d&rsquo;ondes* (<code>F = 1 / λ</code> avec <em>F</em> pour la fréquence et <em>λ</em> pour la longueur d&rsquo;onde) : quand la fréquence augmente, la longueur d&rsquo;onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), vers <em>10<sup>15</sup>Hz</em> (<em>1000 TeraHertz</em>), chaque fréquence correspond à une couleur précise, une lumière <em>monochromatique</em>*. </p>
@@ -238,6 +254,9 @@
 <p><strong><em>Noir</em></strong> : Le <em>noir</em> est la couleur résultant de l&rsquo;absence de lumière. Il est donc la couleur de plus faible luminosité (nulle) et sa <em>saturation*</em> ne peut pas être définie.</p>
 </li>
 <li>
+<p><strong><em>Norme</em></strong> (vidéo et audio) : définit la <em>manière</em> dont les données audio et vidéo sont encodées, le standard utilisé, et donc avec quel <em>codec</em> ces données pourront être décodées.</p>
+</li>
+<li>
 <p><strong><em>OCIO</em></strong> : <em>OpenColorIO</em> est une librarie logicielle (une &ldquo;brique&rdquo;/outil développeur utilisable dans d&rsquo;autres logiciels/applications) dédiée à la gestion des couleurs. Elle est gratuite et open source, et devenue standard avec son inclusion et usage dans un grand nombre d&rsquo;applications (en natif sur <em>Maya, Arnold, Krita, Blender, Nuke</em>&hellip; ; via des plugins et add-ons sur <em>After Effects</em>&hellip; ; via des LUTs*/Profils colorimétriques sur <em>Photoshop</em> et d&rsquo;autres). Cette inclusion dans différentes applications permet de partager une configuration unique de la gestion des couleurs sur toute la chaîne de production et assurer une reproduction identique des couleurs à toutes les étapes.</p>
 </li>
 <li>
@@ -250,7 +269,7 @@
 <p>Point Blanc</p>
 </li>
 <li>
-<p><strong><em>Pourpre</em></strong>* : Les <em>pourpres</em> sont les couleurs résultant du mélange (uniquement) des deux extrèmes du spectre des lumières <em>monochromatiques</em>* visibles : rouge et bleu, en des proportions pouvant varier. Elles sont considérées comme des couleurs <em>saturées</em>*.</p>
+<p><strong><em>Pourpre</em></strong> : Les <em>pourpres</em> sont les couleurs résultant du mélange (uniquement) des deux extrèmes du spectre des lumières <em>monochromatiques</em>* visibles : rouge et bleu, en des proportions pouvant varier. Elles sont considérées comme des couleurs <em>saturées</em>*.</p>
 </li>
 <li>
 <p>(Couleurs) Primaires</p>

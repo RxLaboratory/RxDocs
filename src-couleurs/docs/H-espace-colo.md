@@ -12,7 +12,7 @@ L'ensemble des couleurs pouvant être représentées par un espace colorimétriq
 
 La manière de représenter ces couleurs dépend de deux autres paramètres qui complètent la définition d'un espace colorimétrique : **Le point blanc** et **la courbe de transfert**.
 
-### H.1.a - Les primaires
+### H.1.a - Les primaires et le gammut
 
 Le plus souvent au nombre de 3, les couleurs primaires sont les valeurs primordiales de l'espace colorimétrique ; elles peuvent être représentées par des coordonnées précises dans l'espace *CIE XYZ* (qui est une représentation de toutes les couleurs visibles sur trois axes). Elles sont dans la majorité des cas une nuance de *Rouge*, de *Vert* et de *Bleu*, et se rapprochent dans l'idéal le plus possible d'une couleur réelle monochromatique (la bordure extérieur du diagramme *CIE xy*).
 
@@ -84,7 +84,7 @@ L'espace est dit *linéaire* quand cette courbe est une simple fonction affine, 
 
 D'autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un *gamma 2,4*); les plus "simples" de ces courbes sont ce qu'on appelle les courbes *gamma*. Cela étant dit, la plupart des espaces n'utilisent pas de simples *gamma* mais des courbes plus complexes.
 
-Voir la section intitulée [Courbes de transfert, espace linéaire et gamma](XX-transfert.md) pour plus de détails.
+Voir la section intitulée [Courbes de transfert, espace linéaire et gamma](O-transfert.md) pour plus de détails.
 
 ## H.2 - Autres paramètres
 
@@ -103,7 +103,7 @@ Voir la section *[RGB et YUV](K-rgb-yuv.md)* pour plus de détails.
 
 Les espaces peuvent préconiser un nombre de bits précis à utiliser pour chaque pixel pour encoder chaque couleur. Par exemple le *sRGB* préconise un minimum de 8 bits, et le *Rec. 2020* impose 10 ou 12 bits.
 
-Voir la section [Profondeur (bpc)](XX-bpc.md) pour plus de détails.
+Voir la section [Profondeur (bpc)](N-bpc.md) pour plus de détails.
 
 ## H.3 - Pourquoi différents espaces colorimétriques ?
 
@@ -142,4 +142,4 @@ Sources et références
 ![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
 
 [^1]:
-    Il **ne définit pas** un *nombre* de couleurs, de nuances différentes (qui dépend de l'échantillonage, de la manière de stocker numériquement les valeurs), mais bien une *plage* de couleurs limitée dans l'ensemble des couleurs réelles ; autrement dit, il définit la taille de l'ensemble de couleurs, mais pas le nombre de subdvisions de l'ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section [Profondeur (bpc)](XX-bpc.md) pour plus de détails.
+    Il **ne définit pas** un *nombre* de couleurs, de nuances différentes (qui dépend de l'échantillonage, de la manière de stocker numériquement les valeurs), mais bien une *plage* de couleurs limitée dans l'ensemble des couleurs réelles ; autrement dit, il définit la taille de l'ensemble de couleurs, mais pas le nombre de subdvisions de l'ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section [Profondeur (bpc)](N-bpc.md) pour plus de détails.

@@ -118,7 +118,11 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="L-444.html">L - YUV 444, 422, 421, 420...</a>
+    <a class="" href="L-444.html">L - YUV 4:4:4, 4:2:2, 4:2:0...</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
                 </li>
                 <li class="">
                     
@@ -200,7 +204,7 @@
 <ul>
 <li><a href="#h-quest-ce-quun-espace-colorimetrique">H - Qu&rsquo;est ce qu&rsquo;un espace colorimétrique ?</a><ul>
 <li><a href="#h1-ce-qui-definit-un-espace-colorimetrique">H.1 - Ce qui définit un espace colorimétrique</a><ul>
-<li><a href="#h1a-les-primaires">H.1.a - Les primaires</a></li>
+<li><a href="#h1a-les-primaires-et-le-gammut">H.1.a - Les primaires et le gammut</a></li>
 <li><a href="#h1b-le-point-blanc">H.1.b - Le point blanc</a></li>
 <li><a href="#h1c-la-courbe-de-transfert">H.1.c - La courbe de transfert</a></li>
 </ul>
@@ -219,7 +223,7 @@
 <h2 id="h1-ce-qui-definit-un-espace-colorimetrique">H.1 - Ce qui définit un espace colorimétrique<a class="headerlink" href="#h1-ce-qui-definit-un-espace-colorimetrique" title="Permanent link">&para;</a></h2>
 <p>L&rsquo;ensemble des couleurs pouvant être représentées par un espace colorimétrique dépend d&rsquo;un paramètre principal : <strong>Les couleurs primaires</strong> de l&rsquo;espace colorimétriques.</p>
 <p>La manière de représenter ces couleurs dépend de deux autres paramètres qui complètent la définition d&rsquo;un espace colorimétrique : <strong>Le point blanc</strong> et <strong>la courbe de transfert</strong>.</p>
-<h3 id="h1a-les-primaires">H.1.a - Les primaires<a class="headerlink" href="#h1a-les-primaires" title="Permanent link">&para;</a></h3>
+<h3 id="h1a-les-primaires-et-le-gammut">H.1.a - Les primaires et le gammut<a class="headerlink" href="#h1a-les-primaires-et-le-gammut" title="Permanent link">&para;</a></h3>
 <p>Le plus souvent au nombre de 3, les couleurs primaires sont les valeurs primordiales de l&rsquo;espace colorimétrique ; elles peuvent être représentées par des coordonnées précises dans l&rsquo;espace <em>CIE XYZ</em> (qui est une représentation de toutes les couleurs visibles sur trois axes). Elles sont dans la majorité des cas une nuance de <em>Rouge</em>, de <em>Vert</em> et de <em>Bleu</em>, et se rapprochent dans l&rsquo;idéal le plus possible d&rsquo;une couleur réelle monochromatique (la bordure extérieur du diagramme <em>CIE xy</em>).</p>
 <p><em><img alt="Image: Schéma du CIE avec les primaires du sRGB" src="img/srgb-primaries.png" /></em></p>
 <p>Chaque espace définit donc ses couleurs primaires par au moins trois coordonnées dans l&rsquo;espace <em>CIE XYZ</em>.</p>
@@ -303,7 +307,7 @@
 <p><em><img alt="Image: Courbe de transfert du sRGB vs linéaire" src="" /></em></p>
 <p>L&rsquo;espace est dit <em>linéaire</em> quand cette courbe est une simple fonction affine, c&rsquo;est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle.</p>
 <p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un <em>gamma 2,4</em>); les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes.</p>
-<p>Voir la section intitulée <a href="XX-transfert.md">Courbes de transfert, espace linéaire et gamma</a> pour plus de détails.</p>
+<p>Voir la section intitulée <a href="O-transfert.html">Courbes de transfert, espace linéaire et gamma</a> pour plus de détails.</p>
 <h2 id="h2-autres-parametres">H.2 - Autres paramètres<a class="headerlink" href="#h2-autres-parametres" title="Permanent link">&para;</a></h2>
 <p>Les espaces colorimétriques peuvent aussi imposer ou préconiser d&rsquo;autres paramètres, surtout sur la manière d&rsquo;encoder/stocker les couleurs, en fonction de leurs usages prévus.</p>
 <h3 id="h2a-format-de-pixel">H.2.a - Format de pixel<a class="headerlink" href="#h2a-format-de-pixel" title="Permanent link">&para;</a></h3>
@@ -315,7 +319,7 @@
 <p>Voir la section <em><a href="K-rgb-yuv.html">RGB et YUV</a></em> pour plus de détails.</p>
 <h3 id="h2b-profondeur">H.2.b - Profondeur<a class="headerlink" href="#h2b-profondeur" title="Permanent link">&para;</a></h3>
 <p>Les espaces peuvent préconiser un nombre de bits précis à utiliser pour chaque pixel pour encoder chaque couleur. Par exemple le <em>sRGB</em> préconise un minimum de 8 bits, et le <em>Rec. 2020</em> impose 10 ou 12 bits.</p>
-<p>Voir la section <a href="XX-bpc.md">Profondeur (bpc)</a> pour plus de détails.</p>
+<p>Voir la section <a href="N-bpc.html">Profondeur (bpc)</a> pour plus de détails.</p>
 <h2 id="h3-pourquoi-differents-espaces-colorimetriques">H.3 - Pourquoi différents espaces colorimétriques ?<a class="headerlink" href="#h3-pourquoi-differents-espaces-colorimetriques" title="Permanent link">&para;</a></h2>
 <p>Les espaces colorimétriques sont (très) nombreux. Il en existe en fait autant que d&rsquo;usages différents des couleurs, sans compter que les constructeurs de matériels, et concepteurs de logiciels, ajoutent parfois leurs propres espaces à la liste déjà longue. Les usages sont relativement peu standardisés.</p>
 <p>Ainsi, certains espaces sont liés à des matériels de captation précis : une caméra peut enregistrer les données qu&rsquo;elle capte dans un espace qui lui est propre, et correspond aux capacités de son capteur, ou à l&rsquo;usage qui sera fait des images (en proposant par exemple une large gamme de couleurs qui facilite la post-production).</p>
@@ -349,7 +353,7 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p>Il <strong>ne définit pas</strong> un <em>nombre</em> de couleurs, de nuances différentes (qui dépend de l&rsquo;échantillonage, de la manière de stocker numériquement les valeurs), mais bien une <em>plage</em> de couleurs limitée dans l&rsquo;ensemble des couleurs réelles ; autrement dit, il définit la taille de l&rsquo;ensemble de couleurs, mais pas le nombre de subdvisions de l&rsquo;ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section <a href="XX-bpc.md">Profondeur (bpc)</a> pour plus de détails.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Il <strong>ne définit pas</strong> un <em>nombre</em> de couleurs, de nuances différentes (qui dépend de l&rsquo;échantillonage, de la manière de stocker numériquement les valeurs), mais bien une <em>plage</em> de couleurs limitée dans l&rsquo;ensemble des couleurs réelles ; autrement dit, il définit la taille de l&rsquo;ensemble de couleurs, mais pas le nombre de subdvisions de l&rsquo;ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section <a href="N-bpc.html">Profondeur (bpc)</a> pour plus de détails.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

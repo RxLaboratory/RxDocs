@@ -41,7 +41,8 @@ nav:
         - I - Liste d'espaces colorimétriques: I-liste-espaces.md
         - J - Liste des paramètres d'espaces colorimétriques: J-liste-params.md 
         - K - RGB et YUV: K-rgb-yuv.md
-        - L - YUV 444, 422, 421, 420...: L-444.md
+        - L - YUV 4:4:4, 4:2:2, 4:2:0...: L-444.md
+        - M - Full range / Limited / TV / PC ?: M-range.md
         - N - Profondeur (bpc): N-bpc.md
         - O - Courbes de transfert, espace linéaire et gamma: O-transfert.md
         - Glossaire: ZZ-vocabulaire.md
