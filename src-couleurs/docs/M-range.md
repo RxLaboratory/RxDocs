@@ -22,9 +22,9 @@ Il faut donc bien connaître à la fois son matériel au moment de la reproducti
 
 ### M.3.a - Encodage
 
-Dans l'immense majorité des cas, les standards vidéos préconisent un encodate en *limited range / TV* : les vidéos sont prévus pour être vues dans les conditions de la télévision (y compris sur internet). C'est le cas par exemple du *mp4* en *h.264* ou *h.265*, du *mkv*, et de tous les formats de *diffusion*.
+Dans l'immense majorité des cas, les standards vidéos préconisent un encodage en *limited range / TV* : les vidéos sont prévues pour être vues dans les conditions de la télévision (y compris sur internet). C'est le cas par exemple du *mp4* en *h.264* ou *h.265*, du *mkv*, et de tous les formats de *diffusion*.
 
-En revanche, les formats d'image (*PNG*, *Jpeg*, *openEXR*, etc.), ainsi que les formats video *intermédiaires* (ceux utilisés lors de la production et non pas de la diffusion, comme le Prores), étant prévus pour un environnement informatique, utilisent plutôt le *full range / PC*.
+En revanche, les formats d'images (*PNG*, *Jpeg*, *openEXR*, etc.), ainsi que les formats video *intermédiaires* (ceux utilisés lors de la production et non pas de la diffusion, comme le *Prores*), étant prévus pour un environnement informatique, utilisent plutôt le *full range / PC*.
 
 Il est important de respecter ces standards pour être sûr que les fichiers soient correctement interprétés par le matériel des spectateurs, et toujours se renseigner sur les formats préconisés par les diffuseurs.
 
@@ -34,7 +34,7 @@ Lors de la lecture des vidéos, il faut aussi que tout le système soit correcte
 
 Lors de la lecture, la source vidéo doit être convertie pour correspondre à l'écran ou au projecteur. Sans conversion, une vidéo *limited range* sur un écran *full range* sera "terne" : il n'y aura ni noir ni blanc, la gamme de l'image allant seulement du gris clair au gris foncé. À l'inverse, une vidéo *full range* sur une TV *limited range* aura une perte d'information aussi bien dans les lumières que les ombres, avec de grandes parties complètement noires ou blanches (l'image sera trop contrastée).
 
-*![Exemple de mauvais affichage]()*
+*![Exemple de mauvais affichage](img/full-vs-limited.svg)*
 
 Il faut donc que le matériel soit correctement configuré. Sur un lecteur de disques ou une console, il doit y avoir un réglage pour spécifier si l'écran branché est *full* ou *limited range* (en règle générale, un écran informatique ou un vidéo-projecteur est *full range*, une TV *limited range*).
 
@@ -58,4 +58,4 @@ Sources et références
     Bien qu'aimé des animateurs pour sa capacité à facilement lire les vidéos image par image, *Quicktime* sous *Windows* est à proscrire pour sa mauvaise gestion des couleurs ; son développement a de toute façon été abandonné par *Apple*.  
     *[DJV](https://darbyjohnston.github.io/DJV/)*, disponible aussi bien sous *Windows*, *Mac OS*, *Linux*, que *BSD*, le remplace efficacement et intègre une gestion des couleurs professionnelle.
     
-![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/28)
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/29)
