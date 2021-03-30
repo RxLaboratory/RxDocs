@@ -6,6 +6,10 @@ Classement alphabétique.
 
 - ***Alpha*** : quatrième *canal\** parfois ajouté aux pixels d'une vidéo pour stocker l'information de transparence en plus de la couleur. On note en général dans ce cas les canaux *RGBA* et *YUVA*, et dans le cas du *YUVA* une quatrième valeur est parfois ajoutée au sigle du *[sous-échantillonage de la chromiance](L-444.md)* : *4:4:4:4*, *4:2:2:4*, etc.
 
+- ***Bit*** : unité de base à la fois du calcul informatique binaire et de stockage. Un *bit* est soit 0 soit 1. 8 bits forment un *octet*, une suite de huit 0 ou 1. À ne pas confondre avec le *Byte*. Noté `b` (alors que *Byte* est noté `B` et octet est noté `o`).
+
+- ***Byte*** : plus petite unité de mémoire utilisable sur un système donné (prononcé /baɪt/) ; généralement formé de 8 *bits* et (uniquement dans ce cas mais pas nécessairement) équivalent à un *octet*. En anglais, on utilise le mot *Byte* pour tous les systèmes où le *Byte* représente effectivement un *octet* alors qu'en français on préfère le mot *octet*. Noté `B` (à ne pas confondre avec le `b` de *bit*).
+
 - Canal (de couleur)
 
 - ***CIE*** : *La Commission internationale de l'éclairage* est une organisation internationale dédiée à la lumière, l'éclairage, la couleur et les espaces de couleur. Elle a été fondée à Berlin en 1913 et est actuellement basée à Vienne en Autriche.  Note : l'acronyme français *CIE* est celui utilisé internationnalement bien qu'en anglais ce soit la *International Commission on Illumination*.
@@ -16,7 +20,7 @@ Classement alphabétique.
 
 - ***Conteneur*** : synonyme de *type de fichier*. Définit comment des flux multimédia (audio, video, sous-titres, méta-données...) doivent être enregistrés ensemble dans un fichier précis. Par exemple : *Quicktime* (*\*.mov*), *MP4* (*\*.mp4*), *Matroska* (*\*.mkv*) sont des conteneurs (mais *h.264* est une *norme\**, et *x264* un *codec\**). Certains conteneurs sont spécialisés et imposent une certaine *norme* (par exemple, un *MP4* devrait toujours utiliser la *norme* *h.264* ou *h.265*), tandis que d'autres permettent un grand nombre de normes différentes (par exemple *Quicktime* permet la norme *PNG*, *Prores*, *RLE/Animation*, *MJPEG*, etc.).
 
-- ***Couche*** (de couleur)
+- ***Couche*** (de couleur) : aussi appelé *canal* (de "*channel*" en anglais). Au sein d'un pixel, la couleur est décrite par plusieurs valeurs ; chaque valeur est une *couche* du pixel (ou de l'image). En *RGB* les trois couches sont rouge, verte, et bleue, en *YUV*, la *luminance* et deux couches de *chrominance*.
 
 - ***Courbe de transfert***
 
@@ -48,6 +52,8 @@ Classement alphabétique.
 - ***Norme*** (vidéo et audio) : définit la *manière* dont les données audio et vidéo sont encodées, le standard utilisé, et donc avec quel *codec* ces données pourront être décodées.
 
 - ***OCIO*** : *OpenColorIO* est une librarie logicielle (une "brique"/outil développeur utilisable dans d'autres logiciels/applications) dédiée à la gestion des couleurs. Elle est gratuite et open source, et devenue standard avec son inclusion et usage dans un grand nombre d'applications (en natif sur *Maya, Arnold, Krita, Blender, Nuke*... ; via des plugins et add-ons sur *After Effects*... ; via des LUTs\*/Profils colorimétriques sur *Photoshop* et d'autres). Cette inclusion dans différentes applications permet de partager une configuration unique de la gestion des couleurs sur toute la chaîne de production et assurer une reproduction identique des couleurs à toutes les étapes.
+
+- ***Octet*** : 8 *bits*. Noté `o`.
 
 - ***OIIO*** : *OpenImageIO* définit principalement le standard du format de stockage de données images *openEXR*, et est une librairie logicielle gratuite et open source pour gérer ce format ouvert, choisi comme format par défaut par *ACES*\* ; il est inter-dépendant avec *OCIO*\*.
 

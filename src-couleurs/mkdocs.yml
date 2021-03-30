@@ -40,10 +40,7 @@ nav:
         - H - Qu'est ce qu'un espace colo ?: H-espace-colo.md
         - I - Liste d'espaces colorimétriques: I-liste-espaces.md
         - J - Liste des paramètres d'espaces colorimétriques: J-liste-params.md 
-        - K - RGB et YUV: K-rgb-yuv.md
-        - L - YUV 4:4:4, 4:2:2, 4:2:0...: L-444.md
-        - M - Full range / Limited / TV / PC ?: M-range.md
-        - N - Profondeur (bpc): N-bpc.md
+        - K - Format des pixels: K-pix-format.md
         - O - Courbes de transfert, espace linéaire et gamma: O-transfert.md
         - Glossaire: ZZ-vocabulaire.md
     - Tous les documents RxLab: http://docs.rainboxlab.org

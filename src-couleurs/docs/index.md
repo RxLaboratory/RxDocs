@@ -68,21 +68,26 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - H.3 - Pourquoi différents espaces colorimétriques ?
 - I - [Liste d'espaces colorimétriques](I-liste-espaces.md)
 - J - [Liste des paramètres d'espaces colorimétriques](J-liste-params.md)
-- K - [RGB et YUV](K-rgb-yuv.md)
-    - K.1 - RGB
-    - K.2 - YUV
-    - K.3 - Comparaison
-- L - [YUV 4:4:4, 4:2:2, 4:2:0... Le sous-échantillonage de la chrominance](L-444.md)
-    - L.1 - 4:4:4
-    - L.2 - 4:2:2
-    - L.3 - 4:2:0
-- M - [Full range / Limited / TV / PC ?](M-range.md)
-    - M.1 - Full range / PC
-    - M.2 - Limited range / TV
-    - M.3 - Conséquence pratique
-        - M.3.a - Encodage
-        - M.3.b - Lecture et affichage
-- N - [Profondeur (bpc)](N-bpc.md)
+- K - [Format des pixels](K-pix-format.md)
+    - K.1 - RGB et YUV
+        - K.1.a - RGB
+        - K.1.b - YUV
+        - K.1.c - Comparaison
+        - K.1.d - Autres
+    - K.2 - YUV 4:4:4, 4:2:2, 4:2:0... Le sous-échantillonage de la chrominance
+        - K.2.a - 4:4:4
+        - K.2.b - 4:2:2
+        - K.2.c - 4:2:0
+    - K.3 - Profondeur de couleurs (bits, bpc et bpp)
+        - K.3.a - En RGB
+        - K.3.b - En YUV
+        - K.3.c - Autres
+    - K.4 - Full range / Limited / TV / PC ?
+        - K.4.a - Full range / PC
+        - K.4.b - Limited range / TV
+        - K.4.c - Conséquence pratique
+            - K.4.c.a - Encodage
+            - K.4.c.b - Lecture et affichage
 - O - [Courbes de transfert, espace linéaire et gamma](O-transfert.md)
 - P - Les LUTs
 - Q - OCIO, ACES

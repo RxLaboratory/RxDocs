@@ -2,6 +2,9 @@
 
 Un espace colorimétrique définit **un sous-ensemble de couleurs** (un volume dans un diagramme de couleurs 3D, ou une surface sur une projection 2D comme le *CIE xy*) tirées du spectre visible (voire aussi en dehors du spectre visible)[^1].
 
+!!! note
+    L'espace colorimétrique décrit les couleurs telles qu'elles doivent être reproduites, mais ne définit pas le moyen technique de les enregistrer dans les fichiers. Voir le chapitre [K - Format des pixels](K-pix-format.md) sur ce sujet.
+
 [TOC]
 
 *![Image: Schéma du CIE avec quelques sous ensembles](img/spaces-comparison.png)*
@@ -142,4 +145,4 @@ Sources et références
 ![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
 
 [^1]:
-    Il **ne définit pas** un *nombre* de couleurs, de nuances différentes (qui dépend de l'échantillonage, de la manière de stocker numériquement les valeurs), mais bien une *plage* de couleurs limitée dans l'ensemble des couleurs réelles ; autrement dit, il définit la taille de l'ensemble de couleurs, mais pas le nombre de subdvisions de l'ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section [Profondeur (bpc)](N-bpc.md) pour plus de détails.
+    Il **ne définit pas** un *nombre* de couleurs, de nuances différentes (qui dépend de l'échantillonage, de la manière de stocker numériquement les valeurs), mais bien une *plage* de couleurs limitée dans l'ensemble des couleurs réelles ; autrement dit, il définit la taille de l'ensemble de couleurs, mais pas le nombre de subdvisions de l'ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section [Format des pixels](K-pix-format.md) pour plus de détails.
