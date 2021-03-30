@@ -30,6 +30,7 @@ dev_addr: '127.0.0.1:8001'
 nav:
     - Gestion des couleurs:
         - Introduction: index.md
+    - La Théorie:
         - A - Qu'est ce que la couleur ?: A-definition.md
         - B - Petit inventaire et classification des couleurs: B-inventaire.md
         - C - Perception des couleurs: C-perception.md
@@ -42,6 +43,18 @@ nav:
         - J - Liste des paramètres d'espaces colorimétriques: J-liste-params.md 
         - K - Format des pixels: K-pix-format.md
         - L - Courbes de transfert, espace linéaire et gamma: L-transfert.md
+        - M - Les LUTs: .
+        - N - OCIO, ACES: .
+    - La pratique:
+        - A - Choisir ses espaces colorimétriques et formats: .
+        - B - Calibration des écrans et leurs espaces colorimétriques: .
+        - C - Adobe After Effects: .
+        - D - Blender: .
+        - E - DuME: .
+        - F - Adobe Media Encoder: .
+        - G - Krita: .
+        - H - Darktable: .
+    - Annexes:
         - Glossaire: ZZ-vocabulaire.md
         - Dictionnaire français - anglais: ZZ-english.md
     - Tous les documents RxLab: http://docs.rainboxlab.org

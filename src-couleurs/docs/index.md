@@ -95,12 +95,12 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
             - K.4.c.a - Encodage
             - K.4.c.b - Lecture et affichage
 - L - [Courbes de transfert, espace linéaire et gamma](L-transfert.md)
-- P - Les LUTs
-- Q - OCIO, ACES
+- M - Les LUTs
+- N - OCIO, ACES
 
 ### II - Pratique
 
-- A - Mise en pratique : choisir ses espaces colorimétriques
+- A - Mise en pratique : choisir ses espaces colorimétriques et formats
 - B - Calibration des écrans et leurs espaces colorimétriques
 - C - Color management : Adobe After Effects
 - D - Color management : Blender
