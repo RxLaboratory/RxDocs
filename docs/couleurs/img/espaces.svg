@@ -1491,7 +1491,7 @@
          sodipodi:role="line"
          id="tspan1146"
          x="715.91516"
-         y="238.10825">Adobe RGB Gammut</tspan></text>
+         y="238.10825">Adobe RGB Gamut</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 332.11285,185.77566 293.5187,610.31135 610.39701,434.60639 Z"
@@ -1518,7 +1518,7 @@
          y="238.10825"
          x="715.91516"
          id="tspan1166"
-         sodipodi:role="line">sRGB Gammut</tspan></text>
+         sodipodi:role="line">sRGB Gamut</tspan></text>
   </g>
   <g
      inkscape:label="Rec2020"
@@ -1542,7 +1542,7 @@
          sodipodi:role="line"
          id="tspan1177"
          x="715.91516"
-         y="238.10825">Rec.2020 Gammut</tspan></text>
+         y="238.10825">Rec.2020 Gamut</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1566,7 +1566,7 @@
          y="238.10825"
          x="715.91516"
          id="tspan1212"
-         sodipodi:role="line">P3 Gammut</tspan></text>
+         sodipodi:role="line">P3 Gamut</tspan></text>
   </g>
   <g
      inkscape:label="ACES"
@@ -1590,7 +1590,7 @@
          sodipodi:role="line"
          id="tspan1237"
          x="715.91516"
-         y="238.10825">ACES Gammuts</tspan></text>
+         y="238.10825">ACES Gamuts</tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path1260"

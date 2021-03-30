@@ -12,7 +12,7 @@
    height="720"
    version="1.1"
    id="svg553"
-   sodipodi:docname="srgb-gammut.svg"
+   sodipodi:docname="srgb-gamut.svg"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    inkscape:export-filename="/media/win/DEV_SRC/RxOT/RxDocs/src-couleurs/docs/img/srgb-primaries.png"
    inkscape:export-xdpi="96"
@@ -1493,7 +1493,7 @@
          id="tspan1313"
          sodipodi:role="line"
          x="665.16339"
-         y="186.98306">sRGB Gammut</tspan></text>
+         y="186.98306">sRGB Gamut</tspan></text>
   </g>
   <g
      inkscape:label="Rec2020"

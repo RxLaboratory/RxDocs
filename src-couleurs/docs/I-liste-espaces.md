@@ -176,7 +176,7 @@ Espace d'affichage, ***display-referred***.
 
 Espace d'affichage, ***display-referred***.
 
-Le *Display P3* est une variation du *DCI-P3* adaptée pour être plus proche (et mieux compatible avec) du *sRGB* (et ainsi fabriquer des écrans capables d'afficher les deux plus facilement). Il garde les primaires (et donc le gammut plus large) du *DCI-P3* mais utilise le point blanc et la courbe de transfert du *sRGB*.
+Le *Display P3* est une variation du *DCI-P3* adaptée pour être plus proche (et mieux compatible avec) du *sRGB* (et ainsi fabriquer des écrans capables d'afficher les deux plus facilement). Il garde les primaires (et donc le gamut plus large) du *DCI-P3* mais utilise le point blanc et la courbe de transfert du *sRGB*.
 
 ![](img/p3.png)
 

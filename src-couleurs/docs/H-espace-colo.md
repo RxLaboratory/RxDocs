@@ -15,7 +15,7 @@ L'ensemble des couleurs pouvant être représentées par un espace colorimétriq
 
 La manière de représenter ces couleurs dépend de deux autres paramètres qui complètent la définition d'un espace colorimétrique : **Le point blanc** et **la courbe de transfert**.
 
-### H.1.a - Les primaires et le gammut
+### H.1.a - Les primaires et le gamut
 
 Le plus souvent au nombre de 3, les couleurs primaires sont les valeurs primordiales de l'espace colorimétrique ; elles peuvent être représentées par des coordonnées précises dans l'espace *CIE XYZ* (qui est une représentation de toutes les couleurs visibles sur trois axes). Elles sont dans la majorité des cas une nuance de *Rouge*, de *Vert* et de *Bleu*, et se rapprochent dans l'idéal le plus possible d'une couleur réelle monochromatique (la bordure extérieur du diagramme *CIE xy*).
 
@@ -37,9 +37,9 @@ L'espace colorimétrique définit donc la manière dont la valeur la plus intens
 
 Autrement dit, chaque dispositif de reproduction doit être capable de contrôler précisément quels rayons lumineux, à quelles longueurs d'ondes, quelles couleurs physiques il est capable de produire ; suivant la plage de ces longueurs d'ondes, le dispositif est *compatible* avec différents espaces colorimétriques si il est capable de produire les longueurs d'ondes nécessaires à la reproduction des primaires de l'espace.
 
-Les coordonnées des primaires définissent les bornes d'un sous-espace englobant toutes les couleurs pouvant être représentées dans l'espace colorimétrique. Ce sous espace est plus ou moins grand (il permet de représenter plus ou moins de couleurs différentes) ; la taille de cet espace est ce qu'on appelle le ***gammut***.
+Les coordonnées des primaires définissent les bornes d'un sous-espace englobant toutes les couleurs pouvant être représentées dans l'espace colorimétrique. Ce sous espace est plus ou moins grand (il permet de représenter plus ou moins de couleurs différentes) ; la taille de cet espace est ce qu'on appelle le ***gamut***.
 
-*![Image: Schéma du CIE avec le triangle du sRGB](img/srgb-gammut.png)*
+*![Image: Schéma du CIE avec le triangle du sRGB](img/srgb-gamut.png)*
 
 ### H.1.b - Le point blanc
 
@@ -87,7 +87,7 @@ L'espace est dit *linéaire* quand cette courbe est une simple fonction affine, 
 
 D'autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un *gamma 2,4*); les plus "simples" de ces courbes sont ce qu'on appelle les courbes *gamma*. Cela étant dit, la plupart des espaces n'utilisent pas de simples *gamma* mais des courbes plus complexes.
 
-Voir la section intitulée [Courbes de transfert, espace linéaire et gamma](O-transfert.md) pour plus de détails.
+Voir la section intitulée [*L - Courbes de transfert, espace linéaire et gamma](L-transfert.md)* pour plus de détails.
 
 ## H.2 - Autres paramètres
 
@@ -100,13 +100,13 @@ Pour le stockage des pixels, les espaces peuvent préconiser différents formats
 - RGB, où le pixel contient trois valeurs : rouge, vert et bleu.
 - YUV, où le pixel contient une valeur de *luminance* et deux de *chrominance*.
 
-Voir la section *[RGB et YUV](K-rgb-yuv.md)* pour plus de détails.
+Voir la section *[K.1 - RGB et YUV](K-pix-format.md)* pour plus de détails.
 
 ### H.2.b - Profondeur
 
 Les espaces peuvent préconiser un nombre de bits précis à utiliser pour chaque pixel pour encoder chaque couleur. Par exemple le *sRGB* préconise un minimum de 8 bits, et le *Rec. 2020* impose 10 ou 12 bits.
 
-Voir la section [Profondeur (bpc)](N-bpc.md) pour plus de détails.
+Voir la section [K.3 - Profondeur (bpc)](K-pix-format.md) pour plus de détails.
 
 ## H.3 - Pourquoi différents espaces colorimétriques ?
 

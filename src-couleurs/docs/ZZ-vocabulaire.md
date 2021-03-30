@@ -1,16 +1,19 @@
 # Glossaire
 
+!!! tip
+    La plupart des applications et des ressources disponibles étant plutôt en anglais, nous proposons dans les pages qui suivent un petit dictionnaire français-anglais contenant ce vocabulaire.
+
 Classement alphabétique.
 
 - ***ACES*** : *Academy Color Encoding System* est un standard d'échange, de gestion des couleurs pour l'imagerie numérique. Il a pour but de simplifier la gestion des couleurs en maintenant la fidélité des couleurs tout au long de la chaîne de production. Le standard est gratuit et open source et de nombreuses entreprises contribuent à son développement. Il utilise notamment la librairie logicielle *OCIO*\*.
 
-- ***Alpha*** : quatrième *canal\** parfois ajouté aux pixels d'une vidéo pour stocker l'information de transparence en plus de la couleur. On note en général dans ce cas les canaux *RGBA* et *YUVA*, et dans le cas du *YUVA* une quatrième valeur est parfois ajoutée au sigle du *[sous-échantillonage de la chromiance](L-444.md)* : *4:4:4:4*, *4:2:2:4*, etc.
+- ***Alpha*** : quatrième *canal\** parfois ajouté aux pixels d'une vidéo pour stocker l'information de transparence en plus de la couleur. On note en général dans ce cas les canaux *RGBA* et *YUVA*, et dans le cas du *YUVA* une quatrième valeur est parfois ajoutée au sigle du *[sous-échantillonage de la chromiance](K-pix-format.md)* : *4:4:4:4*, *4:2:2:4*, etc.
 
 - ***Bit*** : unité de base à la fois du calcul informatique binaire et de stockage. Un *bit* est soit 0 soit 1. 8 bits forment un *octet*, une suite de huit 0 ou 1. À ne pas confondre avec le *Byte*. Noté `b` (alors que *Byte* est noté `B` et octet est noté `o`).
 
 - ***Byte*** : plus petite unité de mémoire utilisable sur un système donné (prononcé /baɪt/) ; généralement formé de 8 *bits* et (uniquement dans ce cas mais pas nécessairement) équivalent à un *octet*. En anglais, on utilise le mot *Byte* pour tous les systèmes où le *Byte* représente effectivement un *octet* alors qu'en français on préfère le mot *octet*. Noté `B` (à ne pas confondre avec le `b` de *bit*).
 
-- Canal (de couleur)
+- ***Canal*** (de couleur): voir *couche* (de couleur).
 
 - ***CIE*** : *La Commission internationale de l'éclairage* est une organisation internationale dédiée à la lumière, l'éclairage, la couleur et les espaces de couleur. Elle a été fondée à Berlin en 1913 et est actuellement basée à Vienne en Autriche.  Note : l'acronyme français *CIE* est celui utilisé internationnalement bien qu'en anglais ce soit la *International Commission on Illumination*.
 
@@ -29,7 +32,7 @@ Classement alphabétique.
 - ***Fréquence*** : dans la représentation *ondulatoire* de la lumière (et de toutes la gamme d'ondes électromangétique), la fréquence, mesurée en *Hertz* (*Hz*) est le nombre d'ondulations par secondes ; elle est l'inverse de la longueur d'ondes\* (`F = 1 / λ` avec *F* pour la fréquence et *λ* pour la longueur d'onde) : quand la fréquence augmente, la longueur d'onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), vers *10<sup>15</sup>Hz* (*1000 TeraHertz*), chaque fréquence correspond à une couleur précise, une lumière *monochromatique*\*. 
 
 - Gamma
-- Gammut
+- Gamut
 - (Couleurs) Homochromes : cf. Métamère
 - Illuminant
 
@@ -43,7 +46,7 @@ Classement alphabétique.
 
 - ***LUT*** : de l'anglais *Lookup Table*. Une *LUT* permet en informatique (surtout à ses premières heures) de remplacer des fonctions mathématiques complexes (et surtout prenant du temps à réaliser) par des tableaux de valeurs ; au lieu de *calculer* des correspondances et des conversions, on retrouve la valeur dans le tableau. On en utilise encore beaucoup en colorimétrie : elles permettent de convertir des couleurs entres différents espaces colorimétriques sans se soucier de la formule mathématique correspondante (et sont donc un moyen facile de faire une conversion entre des espaces dans un logiciel qui ne les gère pas nativement). Elles peuvent provoquer une (petite) perte d'information si elles ne sont pas assez précises (ne contiennent pas suffisamment de valeurs). Elles sont aussi utilisées comme *presets* d'étalonnage ou de colorimétrie et peuvent permettre de facilement répliquer un effet, même dans un logiciel qui ne le permettrait pas avec ses outils de couleurs natifs (pour peu qu'il puisse appliquer une *LUT* quand même). voir la section [XX-luts.md] pour plus de détails.
   
-- **(Couleurs) _Métamères_** : deux (ou plus) couleurs sont dites *métamères* quand elles sont d'apparence identique (l'œil et le cerveau ne font pas la différence) bien qu'elles soient composées en réalité d'un mélange différent de rayons *monochromatiques\**.
+- (Couleurs) **_Métamères_** : deux (ou plus) couleurs sont dites *métamères* quand elles sont d'apparence identique (l'œil et le cerveau ne font pas la différence) bien qu'elles soient composées en réalité d'un mélange différent de rayons *monochromatiques\**.
 
 - (Lumière) Monochromatique
 

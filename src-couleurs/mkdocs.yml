@@ -41,8 +41,9 @@ nav:
         - I - Liste d'espaces colorimétriques: I-liste-espaces.md
         - J - Liste des paramètres d'espaces colorimétriques: J-liste-params.md 
         - K - Format des pixels: K-pix-format.md
-        - O - Courbes de transfert, espace linéaire et gamma: O-transfert.md
+        - L - Courbes de transfert, espace linéaire et gamma: L-transfert.md
         - Glossaire: ZZ-vocabulaire.md
+        - Dictionnaire français - anglais: ZZ-english.md
     - Tous les documents RxLab: http://docs.rainboxlab.org
     - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html
     - Contact: https://rainboxlab.org/about/contact/

@@ -204,7 +204,7 @@
 <ul>
 <li><a href="#h-quest-ce-quun-espace-colorimetrique">H - Qu&rsquo;est ce qu&rsquo;un espace colorimétrique ?</a><ul>
 <li><a href="#h1-ce-qui-definit-un-espace-colorimetrique">H.1 - Ce qui définit un espace colorimétrique</a><ul>
-<li><a href="#h1a-les-primaires-et-le-gammut">H.1.a - Les primaires et le gammut</a></li>
+<li><a href="#h1a-les-primaires-et-le-gamut">H.1.a - Les primaires et le gamut</a></li>
 <li><a href="#h1b-le-point-blanc">H.1.b - Le point blanc</a></li>
 <li><a href="#h1c-la-courbe-de-transfert">H.1.c - La courbe de transfert</a></li>
 </ul>
@@ -223,7 +223,7 @@
 <h2 id="h1-ce-qui-definit-un-espace-colorimetrique">H.1 - Ce qui définit un espace colorimétrique<a class="headerlink" href="#h1-ce-qui-definit-un-espace-colorimetrique" title="Permanent link">&para;</a></h2>
 <p>L&rsquo;ensemble des couleurs pouvant être représentées par un espace colorimétrique dépend d&rsquo;un paramètre principal : <strong>Les couleurs primaires</strong> de l&rsquo;espace colorimétriques.</p>
 <p>La manière de représenter ces couleurs dépend de deux autres paramètres qui complètent la définition d&rsquo;un espace colorimétrique : <strong>Le point blanc</strong> et <strong>la courbe de transfert</strong>.</p>
-<h3 id="h1a-les-primaires-et-le-gammut">H.1.a - Les primaires et le gammut<a class="headerlink" href="#h1a-les-primaires-et-le-gammut" title="Permanent link">&para;</a></h3>
+<h3 id="h1a-les-primaires-et-le-gamut">H.1.a - Les primaires et le gamut<a class="headerlink" href="#h1a-les-primaires-et-le-gamut" title="Permanent link">&para;</a></h3>
 <p>Le plus souvent au nombre de 3, les couleurs primaires sont les valeurs primordiales de l&rsquo;espace colorimétrique ; elles peuvent être représentées par des coordonnées précises dans l&rsquo;espace <em>CIE XYZ</em> (qui est une représentation de toutes les couleurs visibles sur trois axes). Elles sont dans la majorité des cas une nuance de <em>Rouge</em>, de <em>Vert</em> et de <em>Bleu</em>, et se rapprochent dans l&rsquo;idéal le plus possible d&rsquo;une couleur réelle monochromatique (la bordure extérieur du diagramme <em>CIE xy</em>).</p>
 <p><em><img alt="Image: Schéma du CIE avec les primaires du sRGB" src="img/srgb-primaries.png" /></em></p>
 <p>Chaque espace définit donc ses couleurs primaires par au moins trois coordonnées dans l&rsquo;espace <em>CIE XYZ</em>.</p>
@@ -261,8 +261,8 @@
 <p>Cela signifie que pour deux espaces donnés, la valeur &ldquo;Rouge&rdquo; la plus intense n&rsquo;est pas reproduite concrètement par la même nuance : certains espaces auront un rouge primaire plus ou moins intense ou saturé (ou moins proche des ondes monochromatiques), plus ou moins orangé, par exemple.</p>
 <p>L&rsquo;espace colorimétrique définit donc la manière dont la valeur la plus intense d&rsquo;une couleur primaire doit être reproduite par le dispositif physique qui va l&rsquo;afficher (l&rsquo;écran, le projecteur, ou l&rsquo;imprimante, etc).</p>
 <p>Autrement dit, chaque dispositif de reproduction doit être capable de contrôler précisément quels rayons lumineux, à quelles longueurs d&rsquo;ondes, quelles couleurs physiques il est capable de produire ; suivant la plage de ces longueurs d&rsquo;ondes, le dispositif est <em>compatible</em> avec différents espaces colorimétriques si il est capable de produire les longueurs d&rsquo;ondes nécessaires à la reproduction des primaires de l&rsquo;espace.</p>
-<p>Les coordonnées des primaires définissent les bornes d&rsquo;un sous-espace englobant toutes les couleurs pouvant être représentées dans l&rsquo;espace colorimétrique. Ce sous espace est plus ou moins grand (il permet de représenter plus ou moins de couleurs différentes) ; la taille de cet espace est ce qu&rsquo;on appelle le <strong><em>gammut</em></strong>.</p>
-<p><em><img alt="Image: Schéma du CIE avec le triangle du sRGB" src="img/srgb-gammut.png" /></em></p>
+<p>Les coordonnées des primaires définissent les bornes d&rsquo;un sous-espace englobant toutes les couleurs pouvant être représentées dans l&rsquo;espace colorimétrique. Ce sous espace est plus ou moins grand (il permet de représenter plus ou moins de couleurs différentes) ; la taille de cet espace est ce qu&rsquo;on appelle le <strong><em>gamut</em></strong>.</p>
+<p><em><img alt="Image: Schéma du CIE avec le triangle du sRGB" src="img/srgb-gamut.png" /></em></p>
 <h3 id="h1b-le-point-blanc">H.1.b - Le point blanc<a class="headerlink" href="#h1b-le-point-blanc" title="Permanent link">&para;</a></h3>
 <p>On l&rsquo;a vu, dans la perception humaine, ce qui est considéré comme <em>blanc</em> varie énormément en fonction des conditions, de l&rsquo;environnement dans lequel on perçoit les couleurs.</p>
 <p>Il est donc nécessaire de définir dans l&rsquo;espace colorimétrique la couleur qui sera considérée comme <em>blanche</em>, correspondant concrètement à celle qui doit être obtenue par le mélange en proportion égales des différentes couleurs primaires (blanc à l&rsquo;intensité maximale, gris à des intensités plus faibles).</p>

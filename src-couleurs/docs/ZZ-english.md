@@ -1,0 +1,43 @@
+# Dictionnaire français - anglais
+
+La plupart des applications et des ressources disponibles étant plutôt en anglais, nous proposons ici un petit dictionnaire français-anglais contenant le vocabulaire important dans la gestion des couleurs.
+
+- ***ACES***: ACES
+- ***Alpha***: Alpha
+- ***Bit***: Bit
+- ***Byte***: Byte
+- ***Canal*** (de couleur): (Color) Channel
+- ***CIE***: CIE, International Commission on Illumination
+- ***Codec***: Codec, coder-decoder
+- (couleurs) ***Complémentaires***: Complementary (colors)
+- ***Conteneur***: Container
+- ***Couche*** (de couleur): (Color) Channel
+- ***Courbe de transfert***: Transfer curve, trc
+- ***Format***: (File) Format
+- ***Fréquence***: Frequency
+- ***Gamma***: Gamma
+- ***Gamut***: Gamut
+- (Couleurs) ***Homochromes***: Metamers
+- ***Illuminant***: Standard Illuminant
+- ***Intensité***: Intensity
+- ***Longueur d'onde***: Wavelength
+- ***Luma***: Brightness, Luma
+- ***Luminance***: Luminance
+- ***Luminosité***: Brightness, Luma
+- ***LUT***: LUT, Lookup Table
+- (Couleurs) ***Métamères***: Metamers
+- (Lumière) ***Monochromatique***: Monochromatic (light)
+- ***Noir***: Black
+- ***Norme***: Norm
+- ***OCIO***: OCIO, OpenColorIO
+- ***Octet***: Octet
+- ***OIIO***: OIIO, OpenImageIO
+- ***Photon***: Photon
+- ***Point Blanc***: White Point
+- ***Pourpre***: Violet
+- (Couleurs) ***Primaires***: Primary Colors, Primaries
+- ***Pureté colorimétrique***: Color Purity, Colorfulness
+- ***Pureté d'excitation***: Excitation Purity
+- ***Saturation***: Saturation
+- ***Teinte***: Hue
+- ***Violet***: Violet, Purple

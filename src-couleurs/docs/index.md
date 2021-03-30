@@ -59,7 +59,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
     - G.2 - Les Espaces colorimétriques
 - H - [Qu’est ce qu’un espace colorimétrique ?](H-espace-colo.md)
     - H.1 - Ce qui définit un espace colorimétrique
-        - H.1.a - Les primaires et le gammut
+        - H.1.a - Les primaires et le gamut
         - H.1.b - Le point blanc
         - H.1.c - La courbe de transfert
     - H.2 - Autres paramètres
@@ -88,7 +88,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
         - K.4.c - Conséquence pratique
             - K.4.c.a - Encodage
             - K.4.c.b - Lecture et affichage
-- O - [Courbes de transfert, espace linéaire et gamma](O-transfert.md)
+- L - [Courbes de transfert, espace linéaire et gamma](L-transfert.md)
 - P - Les LUTs
 - Q - OCIO, ACES
 - R - Mise en pratique : choisir ses espaces colorimétriques
@@ -100,6 +100,7 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 - RC - Color management : Krita
 - RE - Color management : Darktable
 - [Glossaire](ZZ-vocabulaire.md)
+- [Dictionnaire français - anglais](ZZ-english.md)
 
 À l'origine de ce document, cette vidéo enregistrée en direct avec [Motion Café](https://www.motion-cafe.com/) et [Nicolas Dufresne](http://duduf.com) : 
 
