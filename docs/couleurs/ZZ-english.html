@@ -8,7 +8,7 @@
   
   <meta name="author" content="Nicolas Dufresne and contributors">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>O - Courbes de transfert, espace linéaire et gamma - RxDocs - Gestion des couleurs</title>
+  <title>Dictionnaire français - anglais - RxDocs - Gestion des couleurs</title>
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
   <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "O - Courbes de transfert, espace lin\u00e9aire et gamma";
-    var mkdocs_page_input_path = "O-transfert.md";
-    var mkdocs_page_url = "/couleurs/O-transfert.html";
+    var mkdocs_page_name = "Dictionnaire fran\u00e7ais - anglais";
+    var mkdocs_page_input_path = "ZZ-english.md";
+    var mkdocs_page_url = "/couleurs/ZZ-english.html";
   </script>
   
   <script src="js/jquery-2.1.1.min.js" defer></script>
@@ -98,30 +98,25 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
+    <a class="" href="K-pix-format.html">K - Format des pixels</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="L-444.html">L - YUV 4:4:4, 4:2:2, 4:2:0...</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
-                </li>
-                <li class=" current">
-                    
-    <a class="current" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
-    <ul class="subnav">
-            
-    </ul>
+    <a class="" href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
                 </li>
                 <li class="">
                     
     <a class="" href="ZZ-vocabulaire.html">Glossaire</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="ZZ-english.html">Dictionnaire français - anglais</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#dictionnaire-francais-anglais">Dictionnaire français - anglais</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -172,10 +167,10 @@
         
       
     
-    <li>O - Courbes de transfert, espace linéaire et gamma</li>
+    <li>Dictionnaire français - anglais</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/O-transfert.md"
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/ZZ-english.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -185,8 +180,50 @@
           <div role="main">
             <div class="section">
               
-                <p>L&rsquo;espace est dit <em>linéaire</em> quand cette courbe est une simple fonction affine, c&rsquo;est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle. L&rsquo;intérêt des espaces linéaires est de faciliter les calculs, tout en les traitant de la même manière que la lumière physique. Leur défaut est qu&rsquo;ils sont éloignés de la manière dont la vision humaine réagit à l&rsquo;intensité : en effet, comme on l&rsquo;a vu, notre vision est plus performante dans la pénombre que les hautes lumières ; la réponse des yeux aux rayons lumineux n&rsquo;est pas linéaire.</p>
-<p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine ; les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes ; le <em>gamma</em> n&rsquo;étant alors qu&rsquo;une <em>approximation</em> de leurs courbes de transfert. L&rsquo;intérêt de ces courbes de transfert est qu&rsquo;elles vont modifier la façon dont les valeurs sont stockées concrètement, en favorisant le stockage des intensités plus faibles ; à taille égale, la &ldquo;qualité&rdquo; des images s&rsquo;en retrouvent améliorée dans les ombres au détriment des lumières, que l&rsquo;œil humain distingue moins bien. Ces espaces rendent aussi le travail plus facile en représentant les intensités de manière plus intuitive.</p>
+                <h1 id="dictionnaire-francais-anglais">Dictionnaire français - anglais<a class="headerlink" href="#dictionnaire-francais-anglais" title="Permanent link">&para;</a></h1>
+<p>La plupart des applications et des ressources disponibles étant plutôt en anglais, nous proposons ici un petit dictionnaire français-anglais contenant le vocabulaire important dans la gestion des couleurs.</p>
+<ul>
+<li><strong><em>ACES</em></strong>: ACES</li>
+<li><strong><em>Alpha</em></strong>: Alpha</li>
+<li><strong><em>Bit</em></strong>: Bit</li>
+<li><strong><em>Byte</em></strong>: Byte</li>
+<li><strong><em>Canal</em></strong> (de couleur): (Color) Channel</li>
+<li><strong><em>CIE</em></strong>: CIE, International Commission on Illumination</li>
+<li><strong><em>Codec</em></strong>: Codec, coder-decoder</li>
+<li>(couleurs) <strong><em>Complémentaires</em></strong>: Complementary (colors)</li>
+<li><strong><em>Conteneur</em></strong>: Container</li>
+<li><strong><em>Couche</em></strong> (de couleur): (Color) Channel</li>
+<li><strong><em>Courbe de transfert</em></strong>: Transfer curve, trc</li>
+<li><strong><em>Format</em></strong>: (File) Format</li>
+<li><strong><em>Fréquence</em></strong>: Frequency</li>
+<li><strong><em>Gamma</em></strong>: Gamma</li>
+<li><strong><em>Gamut</em></strong>: Gamut</li>
+<li>(Couleurs) <strong><em>Homochromes</em></strong>: Metamers</li>
+<li><strong><em>Illuminant</em></strong>: Standard Illuminant</li>
+<li><strong><em>Intensité</em></strong>: Intensity</li>
+<li><strong><em>Linéaire</em></strong>: Linear</li>
+<li><strong><em>Longueur d&rsquo;onde</em></strong>: Wavelength</li>
+<li><strong><em>Luma</em></strong>: Brightness, Luma</li>
+<li><strong><em>Luminance</em></strong>: Luminance</li>
+<li><strong><em>Luminosité</em></strong>: Brightness, Luma</li>
+<li><strong><em>LUT</em></strong>: LUT, Lookup Table</li>
+<li>(Couleurs) <strong><em>Métamères</em></strong>: Metamers</li>
+<li>(Lumière) <strong><em>Monochromatique</em></strong>: Monochromatic (light)</li>
+<li><strong><em>Noir</em></strong>: Black</li>
+<li><strong><em>Norme</em></strong>: Norm</li>
+<li><strong><em>OCIO</em></strong>: OCIO, OpenColorIO</li>
+<li><strong><em>Octet</em></strong>: Octet</li>
+<li><strong><em>OIIO</em></strong>: OIIO, OpenImageIO</li>
+<li><strong><em>Photon</em></strong>: Photon</li>
+<li><strong><em>Point Blanc</em></strong>: White Point</li>
+<li><strong><em>Pourpre</em></strong>: Violet</li>
+<li>(Couleurs) <strong><em>Primaires</em></strong>: Primary Colors, Primaries</li>
+<li><strong><em>Pureté colorimétrique</em></strong>: Color Purity, Colorfulness</li>
+<li><strong><em>Pureté d&rsquo;excitation</em></strong>: Excitation Purity</li>
+<li><strong><em>Saturation</em></strong>: Saturation</li>
+<li><strong><em>Teinte</em></strong>: Hue</li>
+<li><strong><em>Violet</em></strong>: Violet, Purple</li>
+</ul>
               
             </div>
           </div>
@@ -194,10 +231,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ZZ-vocabulaire.html" class="btn btn-neutral float-right" title="Glossaire">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="N-bpc.html" class="btn btn-neutral" title="N - Profondeur (bpc)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="ZZ-vocabulaire.html" class="btn btn-neutral" title="Glossaire"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -227,10 +262,8 @@
           <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="N-bpc.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="ZZ-vocabulaire.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="ZZ-vocabulaire.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -114,27 +114,19 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
+    <a class="" href="K-pix-format.html">K - Format des pixels</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="L-444.html">L - YUV 4:4:4, 4:2:2, 4:2:0...</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
+    <a class="" href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
                 </li>
                 <li class="">
                     
     <a class="" href="ZZ-vocabulaire.html">Glossaire</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-english.html">Dictionnaire français - anglais</a>
                 </li>
     </ul>
 	    </li>
@@ -200,6 +192,10 @@
               
                 <h1 id="h-quest-ce-quun-espace-colorimetrique">H - Qu&rsquo;est ce qu&rsquo;un espace colorimétrique ?<a class="headerlink" href="#h-quest-ce-quun-espace-colorimetrique" title="Permanent link">&para;</a></h1>
 <p>Un espace colorimétrique définit <strong>un sous-ensemble de couleurs</strong> (un volume dans un diagramme de couleurs 3D, ou une surface sur une projection 2D comme le <em>CIE xy</em>) tirées du spectre visible (voire aussi en dehors du spectre visible)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L&rsquo;espace colorimétrique décrit les couleurs telles qu&rsquo;elles doivent être reproduites, mais ne définit pas le moyen technique de les enregistrer dans les fichiers. Voir le chapitre <a href="K-pix-format.html">K - Format des pixels</a> sur ce sujet.</p>
+</div>
 <div class="toc">
 <ul>
 <li><a href="#h-quest-ce-quun-espace-colorimetrique">H - Qu&rsquo;est ce qu&rsquo;un espace colorimétrique ?</a><ul>
@@ -307,7 +303,7 @@
 <p><em><img alt="Image: Courbe de transfert du sRGB vs linéaire" src="" /></em></p>
 <p>L&rsquo;espace est dit <em>linéaire</em> quand cette courbe est une simple fonction affine, c&rsquo;est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle.</p>
 <p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un <em>gamma 2,4</em>); les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes.</p>
-<p>Voir la section intitulée <a href="O-transfert.html">Courbes de transfert, espace linéaire et gamma</a> pour plus de détails.</p>
+<p>Voir la section intitulée <a href="L-transfert.html">*L - Courbes de transfert, espace linéaire et gamma</a>* pour plus de détails.</p>
 <h2 id="h2-autres-parametres">H.2 - Autres paramètres<a class="headerlink" href="#h2-autres-parametres" title="Permanent link">&para;</a></h2>
 <p>Les espaces colorimétriques peuvent aussi imposer ou préconiser d&rsquo;autres paramètres, surtout sur la manière d&rsquo;encoder/stocker les couleurs, en fonction de leurs usages prévus.</p>
 <h3 id="h2a-format-de-pixel">H.2.a - Format de pixel<a class="headerlink" href="#h2a-format-de-pixel" title="Permanent link">&para;</a></h3>
@@ -316,10 +312,10 @@
 <li>RGB, où le pixel contient trois valeurs : rouge, vert et bleu.</li>
 <li>YUV, où le pixel contient une valeur de <em>luminance</em> et deux de <em>chrominance</em>.</li>
 </ul>
-<p>Voir la section <em><a href="K-rgb-yuv.html">RGB et YUV</a></em> pour plus de détails.</p>
+<p>Voir la section <em><a href="K-pix-format.html">K.1 - RGB et YUV</a></em> pour plus de détails.</p>
 <h3 id="h2b-profondeur">H.2.b - Profondeur<a class="headerlink" href="#h2b-profondeur" title="Permanent link">&para;</a></h3>
 <p>Les espaces peuvent préconiser un nombre de bits précis à utiliser pour chaque pixel pour encoder chaque couleur. Par exemple le <em>sRGB</em> préconise un minimum de 8 bits, et le <em>Rec. 2020</em> impose 10 ou 12 bits.</p>
-<p>Voir la section <a href="N-bpc.html">Profondeur (bpc)</a> pour plus de détails.</p>
+<p>Voir la section <a href="K-pix-format.html">K.3 - Profondeur (bpc)</a> pour plus de détails.</p>
 <h2 id="h3-pourquoi-differents-espaces-colorimetriques">H.3 - Pourquoi différents espaces colorimétriques ?<a class="headerlink" href="#h3-pourquoi-differents-espaces-colorimetriques" title="Permanent link">&para;</a></h2>
 <p>Les espaces colorimétriques sont (très) nombreux. Il en existe en fait autant que d&rsquo;usages différents des couleurs, sans compter que les constructeurs de matériels, et concepteurs de logiciels, ajoutent parfois leurs propres espaces à la liste déjà longue. Les usages sont relativement peu standardisés.</p>
 <p>Ainsi, certains espaces sont liés à des matériels de captation précis : une caméra peut enregistrer les données qu&rsquo;elle capte dans un espace qui lui est propre, et correspond aux capacités de son capteur, ou à l&rsquo;usage qui sera fait des images (en proposant par exemple une large gamme de couleurs qui facilite la post-production).</p>
@@ -353,7 +349,7 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p>Il <strong>ne définit pas</strong> un <em>nombre</em> de couleurs, de nuances différentes (qui dépend de l&rsquo;échantillonage, de la manière de stocker numériquement les valeurs), mais bien une <em>plage</em> de couleurs limitée dans l&rsquo;ensemble des couleurs réelles ; autrement dit, il définit la taille de l&rsquo;ensemble de couleurs, mais pas le nombre de subdvisions de l&rsquo;ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section <a href="N-bpc.html">Profondeur (bpc)</a> pour plus de détails.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Il <strong>ne définit pas</strong> un <em>nombre</em> de couleurs, de nuances différentes (qui dépend de l&rsquo;échantillonage, de la manière de stocker numériquement les valeurs), mais bien une <em>plage</em> de couleurs limitée dans l&rsquo;ensemble des couleurs réelles ; autrement dit, il définit la taille de l&rsquo;ensemble de couleurs, mais pas le nombre de subdvisions de l&rsquo;ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section <a href="K-pix-format.html">Format des pixels</a> pour plus de détails.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>

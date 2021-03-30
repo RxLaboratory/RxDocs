@@ -20,6 +20,7 @@ La plupart des applications et des ressources disponibles étant plutôt en angl
 - (Couleurs) ***Homochromes***: Metamers
 - ***Illuminant***: Standard Illuminant
 - ***Intensité***: Intensity
+- ***Linéaire***: Linear
 - ***Longueur d'onde***: Wavelength
 - ***Luma***: Brightness, Luma
 - ***Luminance***: Luminance

@@ -98,23 +98,11 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
+    <a class="" href="K-pix-format.html">K - Format des pixels</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="L-444.html">L - YUV 4:4:4, 4:2:2, 4:2:0...</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
+    <a class="" href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
                 </li>
                 <li class=" current">
                     
@@ -125,6 +113,10 @@
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-english.html">Dictionnaire français - anglais</a>
                 </li>
     </ul>
 	    </li>
@@ -189,16 +181,26 @@
             <div class="section">
               
                 <h1 id="glossaire">Glossaire<a class="headerlink" href="#glossaire" title="Permanent link">&para;</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>La plupart des applications et des ressources disponibles étant plutôt en anglais, nous proposons dans les pages qui suivent un petit dictionnaire français-anglais contenant ce vocabulaire.</p>
+</div>
 <p>Classement alphabétique.</p>
 <ul>
 <li>
 <p><strong><em>ACES</em></strong> : <em>Academy Color Encoding System</em> est un standard d&rsquo;échange, de gestion des couleurs pour l&rsquo;imagerie numérique. Il a pour but de simplifier la gestion des couleurs en maintenant la fidélité des couleurs tout au long de la chaîne de production. Le standard est gratuit et open source et de nombreuses entreprises contribuent à son développement. Il utilise notamment la librairie logicielle <em>OCIO</em>*.</p>
 </li>
 <li>
-<p><strong><em>Alpha</em></strong> : quatrième <em>canal*</em> parfois ajouté aux pixels d&rsquo;une vidéo pour stocker l&rsquo;information de transparence en plus de la couleur. On note en général dans ce cas les canaux <em>RGBA</em> et <em>YUVA</em>, et dans le cas du <em>YUVA</em> une quatrième valeur est parfois ajoutée au sigle du <em><a href="L-444.html">sous-échantillonage de la chromiance</a></em> : <em>4:4:4:4</em>, <em>4:2:2:4</em>, etc.</p>
+<p><strong><em>Alpha</em></strong> : quatrième <em>canal*</em> parfois ajouté aux pixels d&rsquo;une vidéo pour stocker l&rsquo;information de transparence en plus de la couleur. On note en général dans ce cas les canaux <em>RGBA</em> et <em>YUVA</em>, et dans le cas du <em>YUVA</em> une quatrième valeur est parfois ajoutée au sigle du <em><a href="K-pix-format.html">sous-échantillonage de la chromiance</a></em> : <em>4:4:4:4</em>, <em>4:2:2:4</em>, etc.</p>
 </li>
 <li>
-<p>Canal (de couleur)</p>
+<p><strong><em>Bit</em></strong> : unité de base à la fois du calcul informatique binaire et de stockage. Un <em>bit</em> est soit 0 soit 1. 8 bits forment un <em>octet</em>, une suite de huit 0 ou 1. À ne pas confondre avec le <em>Byte</em>. Noté <code>b</code> (alors que <em>Byte</em> est noté <code>B</code> et octet est noté <code>o</code>).</p>
+</li>
+<li>
+<p><strong><em>Byte</em></strong> : plus petite unité de mémoire utilisable sur un système donné (prononcé /baɪt/) ; généralement formé de 8 <em>bits</em> et (uniquement dans ce cas mais pas nécessairement) équivalent à un <em>octet</em>. En anglais, on utilise le mot <em>Byte</em> pour tous les systèmes où le <em>Byte</em> représente effectivement un <em>octet</em> alors qu&rsquo;en français on préfère le mot <em>octet</em>. Noté <code>B</code> (à ne pas confondre avec le <code>b</code> de <em>bit</em>).</p>
+</li>
+<li>
+<p><strong><em>Canal</em></strong> (de couleur): voir <em>couche</em> (de couleur).</p>
 </li>
 <li>
 <p><strong><em>CIE</em></strong> : <em>La Commission internationale de l&rsquo;éclairage</em> est une organisation internationale dédiée à la lumière, l&rsquo;éclairage, la couleur et les espaces de couleur. Elle a été fondée à Berlin en 1913 et est actuellement basée à Vienne en Autriche.  Note : l&rsquo;acronyme français <em>CIE</em> est celui utilisé internationnalement bien qu&rsquo;en anglais ce soit la <em>International Commission on Illumination</em>.</p>
@@ -213,7 +215,7 @@
 <p><strong><em>Conteneur</em></strong> : synonyme de <em>type de fichier</em>. Définit comment des flux multimédia (audio, video, sous-titres, méta-données&hellip;) doivent être enregistrés ensemble dans un fichier précis. Par exemple : <em>Quicktime</em> (<em>*.mov</em>), <em>MP4</em> (<em>*.mp4</em>), <em>Matroska</em> (<em>*.mkv</em>) sont des conteneurs (mais <em>h.264</em> est une <em>norme*</em>, et <em>x264</em> un <em>codec*</em>). Certains conteneurs sont spécialisés et imposent une certaine <em>norme</em> (par exemple, un <em>MP4</em> devrait toujours utiliser la <em>norme</em> <em>h.264</em> ou <em>h.265</em>), tandis que d&rsquo;autres permettent un grand nombre de normes différentes (par exemple <em>Quicktime</em> permet la norme <em>PNG</em>, <em>Prores</em>, <em>RLE/Animation</em>, <em>MJPEG</em>, etc.).</p>
 </li>
 <li>
-<p><strong><em>Couche</em></strong> (de couleur)</p>
+<p><strong><em>Couche</em></strong> (de couleur) : aussi appelé <em>canal</em> (de &ldquo;<em>channel</em>&rdquo; en anglais). Au sein d&rsquo;un pixel, la couleur est décrite par plusieurs valeurs ; chaque valeur est une <em>couche</em> du pixel (ou de l&rsquo;image). En <em>RGB</em> les trois couches sont rouge, verte, et bleue, en <em>YUV</em>, la <em>luminance</em> et deux couches de <em>chrominance</em>.</p>
 </li>
 <li>
 <p><strong><em>Courbe de transfert</em></strong></p>
@@ -236,6 +238,9 @@
 <p><strong><em>Intensité</em></strong> : quantité de lumière reçue par une surface (réfléchissante ou un capteur) ou émise par une source de lumière, mesurée en nombre de photons reçus par une surface donnée en un temps donné (par exemple en photons par seconde par centimètre carré). Dans le cas d&rsquo;un émetteur de lumière (bougie, lampe, écran), on parle en fonction d&rsquo;un cône (un angle solide) d&rsquo;émission et non pas d&rsquo;une surface de réception et l&rsquo;unité est le <em>candela</em> noté <code>cd</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 </li>
 <li>
+<p><strong><em>Linéaire</em></strong> : représentation graphique d&rsquo;une fonction <em>proportionnelle</em>, une fonction mathématique dite <em>affine</em>, représentée par une ligne droite. On utilise le terme <em>linéaire</em> pour parler des espaces colorimétriques dont les correspondances de valeurs avec l&rsquo;intensité physique sont proportionnelles et donc représentées par une ligne droite sur un graphique.</p>
+</li>
+<li>
 <p><strong><em>Longueur d&rsquo;onde</em></strong> : dans la représentation <em>ondulatoire</em> de la lumière (et de toutes la gamme d&rsquo;ondes électromangétique), la longueur d&rsquo;onde, mesurée en <em>nanomètres</em> (<em>nm</em>) est la &ldquo;taille&rdquo; des ondulations ; elle est l&rsquo;inverse de la fréquence* (<code>λ = 1 / F</code> avec <em>F</em> pour la fréquence et <em>λ</em> pour la longueur d&rsquo;onde) : quand la fréquence augmente, la longueur d&rsquo;onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), en <em>400nm</em> et <em>700nm</em> environ, chaque longueur d&rsquo;onde correspond à une couleur précise, une lumière <em>monochromatique</em>*.</p>
 </li>
 <li>
@@ -248,7 +253,7 @@
 <p><strong><em>LUT</em></strong> : de l&rsquo;anglais <em>Lookup Table</em>. Une <em>LUT</em> permet en informatique (surtout à ses premières heures) de remplacer des fonctions mathématiques complexes (et surtout prenant du temps à réaliser) par des tableaux de valeurs ; au lieu de <em>calculer</em> des correspondances et des conversions, on retrouve la valeur dans le tableau. On en utilise encore beaucoup en colorimétrie : elles permettent de convertir des couleurs entres différents espaces colorimétriques sans se soucier de la formule mathématique correspondante (et sont donc un moyen facile de faire une conversion entre des espaces dans un logiciel qui ne les gère pas nativement). Elles peuvent provoquer une (petite) perte d&rsquo;information si elles ne sont pas assez précises (ne contiennent pas suffisamment de valeurs). Elles sont aussi utilisées comme <em>presets</em> d&rsquo;étalonnage ou de colorimétrie et peuvent permettre de facilement répliquer un effet, même dans un logiciel qui ne le permettrait pas avec ses outils de couleurs natifs (pour peu qu&rsquo;il puisse appliquer une <em>LUT</em> quand même). voir la section [XX-luts.md] pour plus de détails.</p>
 </li>
 <li>
-<p><strong>(Couleurs) <em>Métamères</em></strong> : deux (ou plus) couleurs sont dites <em>métamères</em> quand elles sont d&rsquo;apparence identique (l&rsquo;œil et le cerveau ne font pas la différence) bien qu&rsquo;elles soient composées en réalité d&rsquo;un mélange différent de rayons <em>monochromatiques*</em>.</p>
+<p>(Couleurs) <strong><em>Métamères</em></strong> : deux (ou plus) couleurs sont dites <em>métamères</em> quand elles sont d&rsquo;apparence identique (l&rsquo;œil et le cerveau ne font pas la différence) bien qu&rsquo;elles soient composées en réalité d&rsquo;un mélange différent de rayons <em>monochromatiques*</em>.</p>
 </li>
 <li>
 <p>(Lumière) Monochromatique</p>
@@ -261,6 +266,9 @@
 </li>
 <li>
 <p><strong><em>OCIO</em></strong> : <em>OpenColorIO</em> est une librarie logicielle (une &ldquo;brique&rdquo;/outil développeur utilisable dans d&rsquo;autres logiciels/applications) dédiée à la gestion des couleurs. Elle est gratuite et open source, et devenue standard avec son inclusion et usage dans un grand nombre d&rsquo;applications (en natif sur <em>Maya, Arnold, Krita, Blender, Nuke</em>&hellip; ; via des plugins et add-ons sur <em>After Effects</em>&hellip; ; via des LUTs*/Profils colorimétriques sur <em>Photoshop</em> et d&rsquo;autres). Cette inclusion dans différentes applications permet de partager une configuration unique de la gestion des couleurs sur toute la chaîne de production et assurer une reproduction identique des couleurs à toutes les étapes.</p>
+</li>
+<li>
+<p><strong><em>Octet</em></strong> : 8 <em>bits</em>. Noté <code>o</code>.</p>
 </li>
 <li>
 <p><strong><em>OIIO</em></strong> : <em>OpenImageIO</em> définit principalement le standard du format de stockage de données images <em>openEXR</em>, et est une librairie logicielle gratuite et open source pour gérer ce format ouvert, choisi comme format par défaut par <em>ACES</em>* ; il est inter-dépendant avec <em>OCIO</em>*.</p>
@@ -321,8 +329,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="ZZ-english.html" class="btn btn-neutral float-right" title="Dictionnaire français - anglais">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="O-transfert.html" class="btn btn-neutral" title="O - Courbes de transfert, espace linéaire et gamma"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="L-transfert.html" class="btn btn-neutral" title="L - Courbes de transfert, espace linéaire et gamma"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -352,8 +362,10 @@
           <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="O-transfert.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="L-transfert.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="ZZ-english.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

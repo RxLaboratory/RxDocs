@@ -37,6 +37,8 @@ Classement alphabétique.
 - Illuminant
 
 - ***Intensité*** : quantité de lumière reçue par une surface (réfléchissante ou un capteur) ou émise par une source de lumière, mesurée en nombre de photons reçus par une surface donnée en un temps donné (par exemple en photons par seconde par centimètre carré). Dans le cas d'un émetteur de lumière (bougie, lampe, écran), on parle en fonction d'un cône (un angle solide) d'émission et non pas d'une surface de réception et l'unité est le *candela* noté `cd`[^1].
+
+- ***Linéaire*** : représentation graphique d'une fonction *proportionnelle*, une fonction mathématique dite *affine*, représentée par une ligne droite. On utilise le terme *linéaire* pour parler des espaces colorimétriques dont les correspondances de valeurs avec l'intensité physique sont proportionnelles et donc représentées par une ligne droite sur un graphique.
   
 - ***Longueur d'onde*** : dans la représentation *ondulatoire* de la lumière (et de toutes la gamme d'ondes électromangétique), la longueur d'onde, mesurée en *nanomètres* (*nm*) est la "taille" des ondulations ; elle est l'inverse de la fréquence\* (`λ = 1 / F` avec *F* pour la fréquence et *λ* pour la longueur d'onde) : quand la fréquence augmente, la longueur d'onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), en *400nm* et *700nm* environ, chaque longueur d'onde correspond à une couleur précise, une lumière *monochromatique*\*.
 

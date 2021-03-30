@@ -112,27 +112,19 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="K-rgb-yuv.html">K - RGB et YUV</a>
+    <a class="" href="K-pix-format.html">K - Format des pixels</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="L-444.html">L - YUV 4:4:4, 4:2:2, 4:2:0...</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="M-range.html">M - Full range / Limited / TV / PC ?</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="N-bpc.html">N - Profondeur (bpc)</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="O-transfert.html">O - Courbes de transfert, espace linéaire et gamma</a>
+    <a class="" href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
                 </li>
                 <li class="">
                     
     <a class="" href="ZZ-vocabulaire.html">Glossaire</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-english.html">Dictionnaire français - anglais</a>
                 </li>
     </ul>
 	    </li>
@@ -214,6 +206,9 @@
 <p class="admonition-title">Note</p>
 <p>Concrètement, les espaces colorimétriques sont intrinsèquement liés aux formats d&rsquo;encodage des données, et nous parlerons aussi en partie de ces différents formats.</p>
 </div>
+<p>Nous commencerons par une partie théorique, partant de la lumière, et la couleur, physique et étudiant comment nous la percevons, puis comment la l&rsquo;enregistrer, la représenter et la reproduire dans un système numérique.</p>
+<p>Puis nous aborderons l&rsquo;aspect pratique, en expliquant dans des cas concrets quels sont les paramètres utiles et recommandés dans vos productions de tous types, et dans différentes applications.</p>
+<h3 id="i-theorie">I - Théorie<a class="headerlink" href="#i-theorie" title="Permanent link">&para;</a></h3>
 <ul>
 <li>A - <a href="A-definition.html">Qu&rsquo;est ce que la couleur ?</a><ul>
 <li>A.1 - La couleur physique : la lumière visible</li>
@@ -285,41 +280,57 @@
 </li>
 <li>I - <a href="I-liste-espaces.html">Liste d&rsquo;espaces colorimétriques</a></li>
 <li>J - <a href="J-liste-params.html">Liste des paramètres d&rsquo;espaces colorimétriques</a></li>
-<li>K - <a href="K-rgb-yuv.html">RGB et YUV</a><ul>
-<li>K.1 - RGB</li>
-<li>K.2 - YUV</li>
-<li>K.3 - Comparaison</li>
+<li>K - <a href="K-pix-format.html">Format des pixels</a><ul>
+<li>K.1 - RGB et YUV<ul>
+<li>K.1.a - RGB</li>
+<li>K.1.b - YUV</li>
+<li>K.1.c - Comparaison</li>
+<li>K.1.d - Autres</li>
 </ul>
 </li>
-<li>L - <a href="L-444.html">YUV 4:4:4, 4:2:2, 4:2:0&hellip; Le sous-échantillonage de la chrominance</a><ul>
-<li>L.1 - 4:4:4</li>
-<li>L.2 - 4:2:2</li>
-<li>L.3 - 4:2:0</li>
+<li>K.2 - YUV 4:4:4, 4:2:2, 4:2:0&hellip; Le sous-échantillonage de la chrominance<ul>
+<li>K.2.a - 4:4:4</li>
+<li>K.2.b - 4:2:2</li>
+<li>K.2.c - 4:2:0</li>
 </ul>
 </li>
-<li>M - <a href="M-range.html">Full range / Limited / TV / PC ?</a><ul>
-<li>M.1 - Full range / PC</li>
-<li>M.2 - Limited range / TV</li>
-<li>M.3 - Conséquence pratique<ul>
-<li>M.3.a - Encodage</li>
-<li>M.3.b - Lecture et affichage</li>
+<li>K.3 - Profondeur de couleurs (bits, bpc et bpp)<ul>
+<li>K.3.a - En RGB</li>
+<li>K.3.b - En YUV</li>
+<li>K.3.c - Autres</li>
+</ul>
+</li>
+<li>K.4 - Full range / Limited / TV / PC ?<ul>
+<li>K.4.a - Full range / PC</li>
+<li>K.4.b - Limited range / TV</li>
+<li>K.4.c - Conséquence pratique<ul>
+<li>K.4.c.a - Encodage</li>
+<li>K.4.c.b - Lecture et affichage</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>N - <a href="N-bpc.html">Profondeur (bpc)</a></li>
-<li>O - <a href="O-transfert.html">Courbes de transfert, espace linéaire et gamma</a></li>
+</ul>
+</li>
+<li>L - <a href="L-transfert.html">Courbes de transfert, espace linéaire et gamma</a></li>
 <li>P - Les LUTs</li>
 <li>Q - OCIO, ACES</li>
-<li>R - Mise en pratique : choisir ses espaces colorimétriques</li>
-<li>RA - Calibration des écrans et leurs espaces colorimétriques</li>
-<li>RB - Color management : Adobe After Effects</li>
-<li>RD - Color management : Blender</li>
-<li>RF - Color management : DuME</li>
-<li>RG - Color management : Adobe Media Encoder</li>
-<li>RC - Color management : Krita</li>
-<li>RE - Color management : Darktable</li>
+</ul>
+<h3 id="ii-pratique">II - Pratique<a class="headerlink" href="#ii-pratique" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A - Mise en pratique : choisir ses espaces colorimétriques</li>
+<li>B - Calibration des écrans et leurs espaces colorimétriques</li>
+<li>C - Color management : Adobe After Effects</li>
+<li>D - Color management : Blender</li>
+<li>E - Color management : DuME</li>
+<li>F - Color management : Adobe Media Encoder</li>
+<li>G - Color management : Krita</li>
+<li>H - Color management : Darktable</li>
+</ul>
+<h3 id="iii-annexes">III - Annexes<a class="headerlink" href="#iii-annexes" title="Permanent link">&para;</a></h3>
+<ul>
 <li><a href="ZZ-vocabulaire.html">Glossaire</a></li>
+<li><a href="ZZ-english.html">Dictionnaire français - anglais</a></li>
 </ul>
 <p>À l&rsquo;origine de ce document, cette vidéo enregistrée en direct avec <a href="https://www.motion-cafe.com/">Motion Café</a> et <a href="http://duduf.com">Nicolas Dufresne</a> : </p>
 <p><img alt="YOUTUBE" src="m-lrOc2Fmck" /></p>

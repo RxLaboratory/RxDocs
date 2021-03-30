@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nicolas Dufresne and contributors">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>L - Courbes de transfert, espace linéaire et gamma - RxDocs - Gestion des couleurs</title>
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="video.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "L - Courbes de transfert, espace lin\u00e9aire et gamma";
+    var mkdocs_page_input_path = "L-transfert.md";
+    var mkdocs_page_url = "/couleurs/L-transfert.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> RxDocs - Gestion des couleurs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gestion des couleurs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="index.html">Introduction</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="A-definition.html">A - Qu'est ce que la couleur ?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="B-inventaire.html">B - Petit inventaire et classification des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="C-perception.html">C - Perception des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="E-temperature.html">E - Retour sur les blancs, température</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="F-representation.html">F - Représentation objective</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="G-numerisation.html">G - Du réel au numérique</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="K-pix-format.html">K - Format des pixels</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#l-courbes-de-transfert-espace-lineaire-et-gamma">L - Courbes de transfert, espace linéaire et gamma</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-vocabulaire.html">Glossaire</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-english.html">Dictionnaire français - anglais</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org">Tous les documents RxLab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/donate/">Donate</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">RxDocs - Gestion des couleurs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Gestion des couleurs &raquo;</li>
+        
+      
+    
+    <li>L - Courbes de transfert, espace linéaire et gamma</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/L-transfert.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="l-courbes-de-transfert-espace-lineaire-et-gamma">L - Courbes de transfert, espace linéaire et gamma<a class="headerlink" href="#l-courbes-de-transfert-espace-lineaire-et-gamma" title="Permanent link">&para;</a></h1>
+<p>Quand l&rsquo;œil humain perçoit les couleurs, il distingue mieux les contrastes dans les faibles intensités, les ombres, que dans les lumières fortes ; autrement dit, la réponse à l&rsquo;intensité n&rsquo;est pas <em>linéaire</em> (proportionnelle) <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> : une lumière que l&rsquo;on perçoit à &ldquo;la moitié&rdquo; de l&rsquo;intensité d&rsquo;une autre lumière <strong>n&rsquo;est pas</strong> réellement et physiquement deux fois moins intense, mais plutôt quatre fois moins intense. cf. chapitre <em><a href="C-perception.html">C - Perception de la lumière et des couleurs par l&rsquo;être humain</a></em>.</p>
+<p><em><img alt="Graphe de comparaison perception/intensité réelle" src="img/gamma-perception.svg" /></em></p>
+<p>Pour optimiser la quantité de données et la qualité des images en vidéo, puis plus tard en image numérique, au lieu de représenter la lumière de manière physique, on a donc utilisé des <em>courbes de transfert</em> <em>non-linéaires</em>, qu&rsquo;on appelle une <em>correction gamma</em><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> dans sa forme simple<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>, qui simule cette perception non-linéaire de la vision humaine et permet de stocker les valeurs <em>telles qu&rsquo;elles sont perçues</em>.</p>
+<p>Les espaces colorimétriques définissent donc chacun leur propre courbe de transfert, et on a aussi souvent la possibilité de <em>linéariser</em> les espaces utilisés comme espaces de travail dans les applications, pour se rapprocher de la lumière physique le temps du travail (et simplifier les calculs).</p>
+<p>L&rsquo;intérêt des espaces non-linéaires est donc double : comme espaces pour le stockage et pour la diffusion, ils permettent de limiter la quantité de données sans perte visible de qualité ; comme espaces de travail, ils permettent de travailler avec des valeurs et des sélecteurs de couleurs intuitifs, qui fonctionnent de la même manière que notre perception des couleurs.</p>
+<p><em><img alt="Comparaison d'un sélecteur de couleur linéaire et non-linéaire" src="img/color-picker.svg" /></em><br />
+<em>La sélection de couleurs sombres est bien plus difficile en linéaire, tandis qu&rsquo;avec un gamma l&rsquo;échelle de luminosité parait plus régulière et logique.</em></p>
+<p>Les espaces linéaires ont cependant aussi leur intérêt : ils simplifient les calculs (pour les développeurs), et en simulant la lumière réelle et physique permettent notamment aux moteurs de rendus 3D de générer efficacement des images réalistes. En deux dimensions aussi, les espaces linéaires permettent de meilleurs calculs dans la fusion des couleurs (les différents types de transparences) et règle les problèmes de franges apparaissant dans certains mélanges de couleurs, et permettent des mélanges plus réalistes, plus logiques.</p>
+<p><em><img alt="Comparaison de fusion linéaires et non-linéaires" src="img/fusion.svg" /></em><br />
+<em>Remarquez comme les couleurs se mélangent de manière plus naturelle en linéaire, notamment le bleu dans le rouge qui tire sur le magenta, et surtout comment les mélanges n&rsquo;assombrissent et ne désaturent pas les couleurs.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il est important de bien noter que choisir un espace linéaire pour stocker (et travailler) les images impose une <a href="K-pix-format.html"><em>profondeur de couleur</em></a> plus grande, afin de garder la qualité lors de la conversion vers les espaces non-linéaires d&rsquo;affichage et de diffusion.</p>
+</div>
+<hr />
+<p>Sources et références</p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>On parle de &ldquo;linéaire&rdquo; parce que la représentation graphique de la fonction mathématique faisant correspondre à une intensité physique donnée sa perception humaine serait une fonction <em>affine</em>, proportionnelle, représentée par une ligne droite.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>En réalité, la <em>correction gamma</em> a été créée pour compenser le fait que l&rsquo;intensité lumineuse des premiers écrans à tubes cathodiques n&rsquo;était pas non plus linéaire. Mais en numérique, la <em>correction gamma</em> est bien utilisée dans le but d&rsquo;optimiser le stockage et le débit des données. Que cette <em>correction gamma</em> moderne soit proche de celle utilisée avec les anciens écrans est à la fois un hasard et le résultat de l&rsquo;ingénierie qui a visé à simplifier le processus.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>La correction <em>gamma</em> <code>γ</code> <strong>n&rsquo;est pas</strong> la <em><a href="https://fr.wikipedia.org/wiki/Fonction_gamma">fonction Gamma</a></em> <code>Γ</code> des mathématiques, mais une simple fonction utilisant une puissance (souvent proche du carré, les <em>gamma</em> les plus courant variant autour de la valeur <code>2</code>).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ZZ-vocabulaire.html" class="btn btn-neutral float-right" title="Glossaire">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="K-pix-format.html" class="btn btn-neutral" title="K - Format des pixels"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="K-pix-format.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="ZZ-vocabulaire.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="video.js" defer></script>
+      <script src="meta.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>

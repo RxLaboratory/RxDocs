@@ -24,6 +24,12 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 !!! note
     Concrètement, les espaces colorimétriques sont intrinsèquement liés aux formats d'encodage des données, et nous parlerons aussi en partie de ces différents formats.
 
+Nous commencerons par une partie théorique, partant de la lumière, et la couleur, physique et étudiant comment nous la percevons, puis comment la l'enregistrer, la représenter et la reproduire dans un système numérique.
+
+Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quels sont les paramètres utiles et recommandés dans vos productions de tous types, et dans différentes applications.
+
+### I - Théorie
+
 - A - [Qu'est ce que la couleur ?](A-definition.md)
     - A.1 - La couleur physique : la lumière visible
     - A.2 - Suivons une lumière : de l'émission à la réception
@@ -91,14 +97,20 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 - L - [Courbes de transfert, espace linéaire et gamma](L-transfert.md)
 - P - Les LUTs
 - Q - OCIO, ACES
-- R - Mise en pratique : choisir ses espaces colorimétriques
-- RA - Calibration des écrans et leurs espaces colorimétriques
-- RB - Color management : Adobe After Effects
-- RD - Color management : Blender
-- RF - Color management : DuME
-- RG - Color management : Adobe Media Encoder
-- RC - Color management : Krita
-- RE - Color management : Darktable
+
+### II - Pratique
+
+- A - Mise en pratique : choisir ses espaces colorimétriques
+- B - Calibration des écrans et leurs espaces colorimétriques
+- C - Color management : Adobe After Effects
+- D - Color management : Blender
+- E - Color management : DuME
+- F - Color management : Adobe Media Encoder
+- G - Color management : Krita
+- H - Color management : Darktable
+
+### III - Annexes
+
 - [Glossaire](ZZ-vocabulaire.md)
 - [Dictionnaire français - anglais](ZZ-english.md)
 
