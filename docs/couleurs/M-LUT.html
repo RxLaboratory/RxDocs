@@ -116,7 +116,7 @@
     <a class="current" href="M-LUT.html">M - Les LUTs</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#les-lut">Les LUT</a></li>
+    <li class="toctree-l3"><a href="#les-luts">Les LUTs</a></li>
     
         <ul>
         
@@ -131,7 +131,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href=".">N - OCIO, ACES</a>
+    <a class="" href="N-ocio.html">N - OCIO, ACES</a>
                 </li>
     </ul>
 	    </li>
@@ -249,11 +249,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="les-lut">Les LUT<a class="headerlink" href="#les-lut" title="Permanent link">&para;</a></h1>
+                <h1 id="les-luts">Les LUTs<a class="headerlink" href="#les-luts" title="Permanent link">&para;</a></h1>
 <p>L&rsquo;acronyme anglais <em>LUT</em> vient de <em>Lookup Table</em>, <em>Table de correspondance</em> en français.</p>
 <div class="toc">
 <ul>
-<li><a href="#les-lut">Les LUT</a><ul>
+<li><a href="#les-luts">Les LUTs</a><ul>
 <li><a href="#m1-description">M.1 - Description</a></li>
 <li><a href="#m2-utilisation">M.2 - Utilisation</a></li>
 </ul>
@@ -338,7 +338,7 @@
 </tbody>
 </table>
 <p>Une <em>LUT</em> ne décrit donc pas <em>toutes</em> les correspondances de couleurs possibles, mais bien une sélection de couleurs ; pour obtenir une couleur qui n&rsquo;est pas dans la table, il faut donc effectuer une <em>interpolation</em>. Normalement, l&rsquo;application utilisant la <em>LUT</em> propose differente interpolations qui vont changer la manière dont ces couleurs sont obtenues (par arrondi, interpolation linéaire, etc.).</p>
-<p>La quantité de valeurs contenues dans une <em>LUT</em> est donc très importante pour la qualité de l&rsquo;image en sortie : n&rsquo;étant qu&rsquo;une table de valeurs limitées, il peut y avoir une perte lors de la conversion et le résultat peut plus ou moins différer par rapport à une vraie opération mathématique. Cela étant dit, la différence n&rsquo;est pas discernable dans le cas des <em>LUT</em> avec beaucoup de valeurs, comme celles utilisées par <em>OCIO + ACES</em> pour ses conversions par exemple. <em>Cf.</em> Chapitre <em><a href="N-ocio.md">N - OCIO, ACES</a></em>.</p>
+<p>La quantité de valeurs contenues dans une <em>LUT</em> est donc très importante pour la qualité de l&rsquo;image en sortie : n&rsquo;étant qu&rsquo;une table de valeurs limitées, il peut y avoir une perte lors de la conversion et le résultat peut plus ou moins différer par rapport à une vraie opération mathématique. Cela étant dit, la différence n&rsquo;est pas discernable dans le cas des <em>LUT</em> avec beaucoup de valeurs, comme celles utilisées par <em>OCIO + ACES</em> pour ses conversions par exemple. <em>Cf.</em> Chapitre <em><a href="N-ocio.html">N - OCIO, ACES</a></em>.</p>
 <h2 id="m2-utilisation">M.2 - Utilisation<a class="headerlink" href="#m2-utilisation" title="Permanent link">&para;</a></h2>
 <p>Il existe de nombreux formats de fichiers différents pour les <em>LUT</em>, dépendant des applications, des développpeurs, etc. Voici quelques exemples (formats supportés par <em><a href="http://ffmpeg.org">FFmpeg</a></em>) :</p>
 <table>
@@ -375,7 +375,7 @@
 </tr>
 </tbody>
 </table>
-<p>Il peut être utile utile de convertir entre différents formats de <em>LUT</em> ; <em><a href="N-ocio.md">OCIO</a></em> inclue un outil de conversion en ligne de commande, pour lequel l&rsquo;encodeur de médias <em><a href="https://rainboxlab.org/tools/dume/">DuME</a></em> propose une interface graphique.</p>
+<p>Il peut être utile utile de convertir entre différents formats de <em>LUT</em> ; <em><a href="N-ocio.html">OCIO</a></em> inclue un outil de conversion en ligne de commande, pour lequel l&rsquo;encodeur de médias <em><a href="https://rainboxlab.org/tools/dume/">DuME</a></em> propose une interface graphique.</p>
 <p>Il y a deux types principaux de <em>LUT</em> : les <strong><em>LUT 1D</em></strong> et les <strong><em>LUT 3D</em></strong>.</p>
 <ul>
 <li><strong>LUT 1D</strong></li>
@@ -390,6 +390,21 @@
 <p>Quel que soit le type de <em>LUT</em>, ces tables de conversions n&rsquo;offrant qu&rsquo;une simple correspondance de valeur, <strong>chaque <em>LUT</em> est conçue pour un espace et des couleurs précises en entrée</strong> et <strong>ne peut pas être utilisée indifféremment sur n&rsquo;importe quelle image</strong> !</p>
 <p>Par exemple, une <em>LUT</em> qui convertit vers l&rsquo;espace colorimétrique <em>Rec.2020</em> est <strong>forcément</strong> prévue pour être appliquée sur une image d&rsquo;un autre espace colorimétrique précis, par exemple <em>Rec.709</em> ; dans cet exemple, elle <strong>ne peut pas</strong> être utilisée sur une image <em>sRGB</em>, à moins de l&rsquo;avoir préalablement convertie vers <em>Rec.709</em>.</p>
 <p>C&rsquo;est valable aussi pour les <em>LUT</em> à usage artistique et non pas utilitaire. Il faut savoir sur quel espace et quel type d&rsquo;image chaque <em>LUT</em> est censée être appliquée. Suivant les applications, le choix de l&rsquo;espace de travail est donc important en cas d&rsquo;usage de <em>LUT</em>, ou en tout cas il faut en avoir conscience pour éventuellement effectuer des conversions préalables à l&rsquo;usage de <em>LUT</em> (ce qui fait qu&rsquo;elles ne sont pas si simples qu&rsquo;elles en ont l&rsquo;air).</p>
+<hr />
+<p>Sources et références</p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Table_de_correspondance">Table de correspondance sur <em>Wikipedia</em></a></li>
+<li><a href="https://affinityspotlight.com/article/1d-vs-3d-luts/">1D vs 3D LUTs by James Ritson on <em>Affinity Spotlight</em> (en anglais)</a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/03" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Attention, sa conclusion comporte une erreur. Dans l&rsquo;article, James Ritson explique qu&rsquo;une <em>LUT 1D</em> peut être utilisée pour convertir une image de <em>Rec.2020</em> à <em>Rec.709</em>, ce qui est faux puisque les <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> des deux espaces sont différentes, et non pas juste la <em>courbe de transfert<a href="ZZ-vocabulaire.html">*</a></em>. Il faut alors utiliser une <em>LUT 3D</em>. Par contre la conversion de <em>Rec.709</em> à <em>sRGB</em> est bien possible avec une <em>LUT 1D</em> puisque seule la <em>courbe de transfert</em> est différente.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
               
             </div>
           </div>
@@ -397,7 +412,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ZZ-vocabulaire.html" class="btn btn-neutral float-right" title="Glossaire">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="N-ocio.html" class="btn btn-neutral float-right" title="N - OCIO, ACES">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="L-transfert.html" class="btn btn-neutral" title="L - Courbes de transfert, espace linéaire et gamma"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -433,7 +448,7 @@
         <span><a href="L-transfert.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="ZZ-vocabulaire.html" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="N-ocio.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

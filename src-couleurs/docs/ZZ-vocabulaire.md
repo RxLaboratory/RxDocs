@@ -33,7 +33,9 @@ Classement alphabétique.
 
 - Gamma
 - Gamut
-- (Couleurs) Homochromes : cf. Métamère
+
+- (Couleurs) ***Homochromes*** : cf. *Métamères*
+
 - Illuminant
 
 - ***Intensité*** : quantité de lumière reçue par une surface (réfléchissante ou un capteur) ou émise par une source de lumière, mesurée en nombre de photons reçus par une surface donnée en un temps donné (par exemple en photons par seconde par centimètre carré). Dans le cas d'un émetteur de lumière (bougie, lampe, écran), on parle en fonction d'un cône (un angle solide) d'émission et non pas d'une surface de réception et l'unité est le *candela* noté `cd`[^1].
@@ -50,7 +52,7 @@ Classement alphabétique.
   
 - (Couleurs) **_Métamères_** : deux (ou plus) couleurs sont dites *métamères* quand elles sont d'apparence identique (l'œil et le cerveau ne font pas la différence) bien qu'elles soient composées en réalité d'un mélange différent de rayons *monochromatiques\**.
 
-- (Lumière) Monochromatique
+- (Lumière) ***Monochromatique*** : lumière *pure*, composée de rayons d'une seule *fréquence\** précise, sans mélange de *fréquences*, comme la lumière générée par un *laser*. La couleur d'une telle lumière fait partie du spectre des ondes électro-magnétiques visibles, de l'arc-en-ciel, allant du bleu au rouge pur (en passant par cyan, vert, jaune, orange...).
 
 - ***Noir*** : Le *noir* est la couleur résultant de l'absence de lumière. Il est donc la couleur de plus faible luminosité (nulle) et sa *saturation\** ne peut pas être définie.
 
@@ -64,7 +66,7 @@ Classement alphabétique.
 
 - ***Photon*** : bien que le mot date de 1926, c'est en 1905 que Albert Einstein a théorisé le *photon* comme le *quantum* de lumière : la plus petite quantité indivisible de lumière (de toutes les ondes électromagnétiques en réalité). Le *photon* peut être vu comme le pendant *particulaire* du *rayon* de lumière qui serait lui le pendant *ondulatoire*. Il est en réalité *à la fois* particule et onde. L'intensité de la lumière (et donc des couleurs comme on les perçoit) peut être exprimée en nombre de *photons* reçus par une surface donnée en un temps donné (donc par exemple en *photons* par centimètre carré par seconde `γ/cm²/s`). On mesure aussi le seuil de déclenchement (le palier inférieur) et de saturation (le palier supérieur) des capteurs photo-sensibles (comme les cellules rétininennes notamment) en *photons* par seconde.
 
-- Point Blanc
+- ***Point Blanc*** : cf. *Illuminant*
 
 - ***Pourpre*** : Les *pourpres* sont les couleurs résultant du mélange (uniquement) des deux extrèmes du spectre des lumières *monochromatiques*\* visibles : rouge et bleu, en des proportions pouvant varier. Elles sont considérées comme des couleurs *saturées*\*.
 

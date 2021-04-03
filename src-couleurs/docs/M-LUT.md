@@ -1,4 +1,4 @@
-# Les LUT
+# Les LUTs
 
 L'acronyme anglais *LUT* vient de *Lookup Table*, *Table de correspondance* en français.
 
@@ -69,3 +69,14 @@ Quel que soit le type de *LUT*, ces tables de conversions n'offrant qu'une simpl
 Par exemple, une *LUT* qui convertit vers l'espace colorimétrique *Rec.2020* est **forcément** prévue pour être appliquée sur une image d'un autre espace colorimétrique précis, par exemple *Rec.709* ; dans cet exemple, elle **ne peut pas** être utilisée sur une image *sRGB*, à moins de l'avoir préalablement convertie vers *Rec.709*.
 
 C'est valable aussi pour les *LUT* à usage artistique et non pas utilitaire. Il faut savoir sur quel espace et quel type d'image chaque *LUT* est censée être appliquée. Suivant les applications, le choix de l'espace de travail est donc important en cas d'usage de *LUT*, ou en tout cas il faut en avoir conscience pour éventuellement effectuer des conversions préalables à l'usage de *LUT* (ce qui fait qu'elles ne sont pas si simples qu'elles en ont l'air).
+
+----
+Sources et références
+
+- [Table de correspondance sur *Wikipedia*](https://fr.wikipedia.org/wiki/Table_de_correspondance)
+- [1D vs 3D LUTs by James Ritson on *Affinity Spotlight* (en anglais)](https://affinityspotlight.com/article/1d-vs-3d-luts/)[^1]
+
+[^1]:
+    Attention, sa conclusion comporte une erreur. Dans l'article, James Ritson explique qu'une *LUT 1D* peut être utilisée pour convertir une image de *Rec.2020* à *Rec.709*, ce qui est faux puisque les *primaires[\*](ZZ-vocabulaire.md)* des deux espaces sont différentes, et non pas juste la *courbe de transfert[\*](ZZ-vocabulaire.md)*. Il faut alors utiliser une *LUT 3D*. Par contre la conversion de *Rec.709* à *sRGB* est bien possible avec une *LUT 1D* puisque seule la *courbe de transfert* est différente.
+
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/03)
