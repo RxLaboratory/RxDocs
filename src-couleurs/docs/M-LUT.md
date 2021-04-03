@@ -46,7 +46,7 @@ Il existe de nombreux formats de fichiers différents pour les *LUT*, dépendant
 |*dat*|DaVinci|
 |*m3d*|Pandora|
 |*csp*|cineSpace|
-|*spi1d*, *spi3d*|Sony Pictures|
+|*spi1d*, *spi3d*|Sony Pictures Imageworks|
 
 Il peut être utile utile de convertir entre différents formats de *LUT* ; *[OCIO](N-ocio.md)* inclue un outil de conversion en ligne de commande, pour lequel l'encodeur de médias *[DuME](https://rainboxlab.org/tools/dume/)* propose une interface graphique.
 
@@ -77,6 +77,6 @@ Sources et références
 - [1D vs 3D LUTs by James Ritson on *Affinity Spotlight* (en anglais)](https://affinityspotlight.com/article/1d-vs-3d-luts/)[^1]
 
 [^1]:
-    Attention, sa conclusion comporte une erreur. Dans l'article, James Ritson explique qu'une *LUT 1D* peut être utilisée pour convertir une image de *Rec.2020* à *Rec.709*, ce qui est faux puisque les *primaires[\*](ZZ-vocabulaire.md)* des deux espaces sont différentes, et non pas juste la *courbe de transfert[\*](ZZ-vocabulaire.md)*. Il faut alors utiliser une *LUT 3D*. Par contre la conversion de *Rec.709* à *sRGB* est bien possible avec une *LUT 1D* puisque seule la *courbe de transfert* est différente.
+    Attention, sa conclusion comporte une erreur. Dans l'article, par ailleurs très bon, James Ritson explique qu'une *LUT 1D* peut être utilisée pour convertir une image de *Rec.2020* à *Rec.709*, ce qui est faux puisque les *primaires[\*](ZZ-vocabulaire.md)* des deux espaces sont différentes, et non pas juste la *courbe de transfert[\*](ZZ-vocabulaire.md)*. Il faut alors utiliser une *LUT 3D*. Par contre la conversion de *Rec.709* à *sRGB* est bien possible avec une *LUT 1D* puisque seule la *courbe de transfert* est différente.
 
 ![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/03)
