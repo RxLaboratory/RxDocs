@@ -1,4 +1,4 @@
-# D - Reproduction des couleurs
+# I.D - Reproduction des couleurs
 
 Quand il s'agit de reproduire (*synthétiser*) des couleurs, deux systèmes sont possibles, en fonction du fait que le dispositif est "passif" ou réfléchissant (en peinture, impression, etc.), c'est à dire qu'il a besoin d'être éclairé, ou bien "actif", et émet sa propre lumière (écran, projecteur, etc.).
 

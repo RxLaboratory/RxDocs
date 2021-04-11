@@ -1,4 +1,4 @@
-# Les LUTs
+# I.M - Les LUTs
 
 L'acronyme anglais *LUT* vient de *Lookup Table*, *Table de correspondance* en français.
 

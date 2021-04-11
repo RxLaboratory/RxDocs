@@ -1,4 +1,4 @@
-# F - Représentation objective des couleurs
+# I.F - Représentation objective des couleurs
 
 Étant entendu que la perception des couleurs est éminemment subjective, tout travail en commun nécessite la mise en place d'un référenciel objectif partagé par tous (et donc une certaine standardisation des techniques, ce qui n'est pas toujours évident...).
 

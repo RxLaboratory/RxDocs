@@ -1,4 +1,4 @@
-# E - Retour sur les blancs : température
+# I.E - Retour sur les blancs : température
 
 Le blanc étant perçu différemment en fonction de l'environnement et de l'observateur, on doit, en parlant de blanc, définir exactement ce qui est blanc avant d'en parler. Encore une fois, il faut un référenciel invariant, physique, sur lequel tout le monde puisse être d'accord, un peu comme l'usage des *raies de Fraunhofer* peuvent servir de référence pour définir des lumières *monochromatiques[\*](ZZ-vocabulaire.md)* précises.
 

@@ -1,4 +1,4 @@
-# C - Perception de la lumière et des couleurs par l'être humain
+# I.C - Perception de la lumière et des couleurs par l'être humain
 
 Au problème d'avoir une référence objective pour définir les couleurs s'ajoute le fait que la définition de la couleur est intrinsèquement liée à la perception qu'on en a, et cette perception diffère évidemment d'une population à l'autre, d'un individu à l'autre, et aussi de l'environnement dans lequel on perçoit la couleur.
 

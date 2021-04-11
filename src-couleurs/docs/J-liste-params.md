@@ -1,4 +1,4 @@
-# J - Liste des paramètres d'espaces colorimétriques
+# I.J - Liste des paramètres d'espaces colorimétriques
 
 Voici la liste des différentes *primaires*, *points blancs* et *courbes de transfert* partagés par les différents espaces colorimétriques, ainsi que leurs comparaisons.
 

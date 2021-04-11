@@ -1,4 +1,4 @@
-# A - Qu'est ce que la couleur ?
+# I.A - Qu'est ce que la couleur ?
 
 Le mot *couleur* peut sembler simple et univoque, mais avant d'entrer dans le sujet, il est important d'expliquer ce que le mot *couleur(s)* recouvrira dans la suite de ces pages.
 

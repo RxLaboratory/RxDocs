@@ -1,4 +1,4 @@
-# B - Petit inventaire et classification des couleurs
+# I.B - Petit inventaire et classification des couleurs
 
 Les couleurs perçues sont donc des mélanges de rayons de lumière *monochromatiques*\*. Voyons comment classer toutes ces couleurs et comment elles se décomposent.
 

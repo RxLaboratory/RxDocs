@@ -1,4 +1,4 @@
-# K - Format des pixels
+# I.K - Format des pixels
 
 Les espaces colorimétriques définissent la manière dont les couleurs doivent être reproduites, et quelles couleurs précises doivent être générées, mais ne définissent pas la manière dont ces couleurs sont enregistrées par l'ordinateur. C'est le format des pixels utilisé qui définira quelles sont les types de valeurs enregistrées, et de quelle manière. Ce format est complètement indépendant des espaces colorimétriques, mais influencera la qualité de l'image et la quantité de nuances qui peuvent être stockées.
 

@@ -1,4 +1,4 @@
-# G - Du réel au numérique
+# I.G - Du réel au numérique
 
 Ayant maintenant un moyen de représenter objectivement les couleurs que nous voyons, de les localiser sur un diagramme de référence, nous pouvons nous poser la question de la manière à la fois de numériser, de stocker, puis de restituer ces couleurs via un système binaire.
 

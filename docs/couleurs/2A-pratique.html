@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nicolas Dufresne and contributors">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>A - Choisir ses espaces colorimétriques et formats - RxDocs - Gestion des couleurs</title>
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="video.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "A - Choisir ses espaces colorim\u00e9triques et formats";
+    var mkdocs_page_input_path = "2A-pratique.md";
+    var mkdocs_page_url = "/couleurs/2A-pratique.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> RxDocs - Gestion des couleurs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gestion des couleurs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="index.html">Introduction</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">La Théorie</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="A-definition.html">A - Qu'est ce que la couleur ?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="B-inventaire.html">B - Petit inventaire et classification des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="C-perception.html">C - Perception des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="E-temperature.html">E - Retour sur les blancs, température</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="F-representation.html">F - Représentation objective</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="G-numerisation.html">G - Du réel au numérique</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="K-pix-format.html">K - Format des pixels</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="M-LUT.html">M - Les LUTs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="N-ocio.html">N - OCIO, ACES</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">La pratique</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="2A-pratique.html">A - Choisir ses espaces colorimétriques et formats</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#iia-mise-en-pratique-choisir-ses-espaces-colorimetriques-et-formats">II.A - Mise en pratique : choisir ses espaces colorimétriques et formats</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#a1-theorie">A.1 - Théorie</a></li>
+        
+            <li><a class="toctree-l4" href="#a2-espace-de-travail-scene-referred">A.2 - Espace de travail (scene referred)</a></li>
+        
+            <li><a class="toctree-l4" href="#a3-entree">A.3 - Entrée</a></li>
+        
+            <li><a class="toctree-l4" href="#a4-affichage">A.4 - Affichage</a></li>
+        
+            <li><a class="toctree-l4" href="#a5-selecteurs-de-couleur">A.5 - Sélecteurs de couleur</a></li>
+        
+            <li><a class="toctree-l4" href="#a6-sortie-intermediaire">A.6 - Sortie intermédiaire</a></li>
+        
+            <li><a class="toctree-l4" href="#a7-sortie-finale">A.7 - Sortie finale</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="2B-standards.html">B - Quelques standards</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">C - Calibration des écrans et leurs espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">D - Adobe After Effects</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">E - Blender</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">F - DuME</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">G - Adobe Media Encoder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">H - Krita</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">I - Darktable</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Annexes</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-vocabulaire.html">Glossaire</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-english.html">Dictionnaire français - anglais</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org">Tous les documents RxLab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/donate/">Donate</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">RxDocs - Gestion des couleurs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>La pratique &raquo;</li>
+        
+      
+    
+    <li>A - Choisir ses espaces colorimétriques et formats</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/2A-pratique.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="iia-mise-en-pratique-choisir-ses-espaces-colorimetriques-et-formats">II.A - Mise en pratique : choisir ses espaces colorimétriques et formats<a class="headerlink" href="#iia-mise-en-pratique-choisir-ses-espaces-colorimetriques-et-formats" title="Permanent link">&para;</a></h1>
+<p>Travaillant au sein d&rsquo;une application dédiée à l&rsquo;image numérique, il est important de savoir et maîtriser comment sont gérées les couleurs dans les différentes fonctionnalités de l&rsquo;application en question, ainsi que tout au long de la chaîne de fabrication dans laquelle elle s&rsquo;insère.</p>
+<p>Cette seconde partie est destinée à expliquer concrètement comment organiser cette chaîne de fabrication pour ce qui concerne la couleur, et aider à la paramétrer.</p>
+<div class="toc">
+<ul>
+<li><a href="#iia-mise-en-pratique-choisir-ses-espaces-colorimetriques-et-formats">II.A - Mise en pratique : choisir ses espaces colorimétriques et formats</a><ul>
+<li><a href="#a1-theorie">A.1 - Théorie</a><ul>
+<li><a href="#a1a-parcours-dune-couleur">A.1.a - Parcours d&rsquo;une couleur</a></li>
+</ul>
+</li>
+<li><a href="#a2-espace-de-travail-scene-referred">A.2 - Espace de travail (scene referred)</a></li>
+<li><a href="#a3-entree">A.3 - Entrée</a></li>
+<li><a href="#a4-affichage">A.4 - Affichage</a><ul>
+<li><a href="#a4a-espace-de-lecran">A.4.a - Espace de l&rsquo;écran</a></li>
+<li><a href="#a4b-reglages-et-profils-colorimetriques">A.4.b - Réglages et profils colorimétriques</a></li>
+<li><a href="#a4c-dans-lapplication">A.4.c - Dans l&rsquo;application</a></li>
+</ul>
+</li>
+<li><a href="#a5-selecteurs-de-couleur">A.5 - Sélecteurs de couleur</a></li>
+<li><a href="#a6-sortie-intermediaire">A.6 - Sortie intermédiaire</a></li>
+<li><a href="#a7-sortie-finale">A.7 - Sortie finale</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="a1-theorie">A.1 - Théorie<a class="headerlink" href="#a1-theorie" title="Permanent link">&para;</a></h2>
+<p>Avant de s&rsquo;engager dans le paramétrage des différents logiciels, il faut bien comprendre que <strong>les couleurs sont régulièrement converties lors de la production</strong> d&rsquo;images. En effet, à chaque étape depuis la génération de la couleur jusque son affichage sur un dispositif quelconque, chaque bout de logiciel et de matériel intervenant travaille dans son propre espace.</p>
+<p>Maîtriser la chaîne de production des couleurs n&rsquo;implique donc pas de bien choisir un espace colorimétrique unique, mais plutôt d&rsquo;a<strong>voir conscience des différentes conversions et des différents espaces colorimétriques entrant en jeu</strong> à chaque étape, au sein d&rsquo;une application autant qu&rsquo;entre les applications.</p>
+<p>Cette maîtrise ne garantira pas que les couleurs seront correctement reproduites sur le dispositif des spectateurs (TV, écran d&rsquo;ordinateur, téléphone, écran de cinéma&hellip;) mais permet à minima d&rsquo;avoir le contrôle tout au long de la production tout en s&rsquo;assurant de livrer des images respectant les standards en vigueur. C&rsquo;est ensuite au diffuseur de prendre le relai en toute fin de chaîne avec une chaîne correctement paramétrée aussi.</p>
+<h3 id="a1a-parcours-dune-couleur">A.1.a - Parcours d&rsquo;une couleur<a class="headerlink" href="#a1a-parcours-dune-couleur" title="Permanent link">&para;</a></h3>
+<p>Suivons le chemin qu&rsquo;une couleur doit parcourir avant d&rsquo;être correctement affichée.</p>
+<p>Une couleur générée par une première application et devant être exportée dans une autre application, via un fichier intermédiaire, est susceptible de subir deux conversions : depuis la première application vers le fichier, et depuis le fichier vers la deuxième application. Cette opération se répète à chaque étape de la chaîne de production, jusqu&rsquo;à la diffusion, où l&rsquo;application (et le matériel) de diffusion convertissent ce qu&rsquo;ils reçoivent dans l&rsquo;espace colorimétrique de la diffusion.</p>
+<p><em><img alt="Schema entre deux applications" src="" /></em></p>
+<p>Chacune des applications doit donc impérativement être correctement renseignée sur l&rsquo;espace colorimétrique des fichiers qu&rsquo;elle importe, afin de pouvoir effectuer la bonne conversion vers son propre espace colorimétrique. De même, au moment de l&rsquo;exportation, la bonne conversion depuis l&rsquo;espace colorimétrique de l&rsquo;application vers celui du fichier exportée doit être effectuée.</p>
+<p>Mais au sein même d&rsquo;une application, de nombreuses conversions peuvent avoir lieu :</p>
+<ul>
+<li>Depuis l&rsquo;espace de couleurs du fichier importé vers l&rsquo;espace colorimétrique de l&rsquo;application.</li>
+<li>Depuis l&rsquo;espace colorimétrique de l&rsquo;application vers celui de l&rsquo;écran de l&rsquo;ordinateur, pour la prévisualisation.</li>
+<li>Depuis l&rsquo;espace colorimétrique de l&rsquo;application vers celui du fichier de sortie.</li>
+</ul>
+<p>En effet, tous ces espaces colorimétriques ne sont pas nécessairement les mêmes&hellip;</p>
+<p>À chaque &ldquo;brique&rdquo; de l&rsquo;application utilisant des couleurs, un espace colorimétrique est associé. Voyons ces différentes briques et quelques recommandations.</p>
+<p><em><img alt="Schema d'une application et ses espaces colorimétriques" src="" /></em></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Toutes les applications ne permettent pas forcément d&rsquo;accéder à tous les réglages de tous les espaces pour ces différents éléments. Les réglages &ldquo;imposés&rdquo; peuvent être plus ou moins pratiques et intelligents suivant les applications&hellip;</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Toutes les explications qui suivent s&rsquo;appliquent aussi bien aux applications de travail (3D, dessin, compositing, retouches&hellip;) qu&rsquo;aux lecteurs (affichage d&rsquo;image, lecteurs vidéo&hellip;)</p>
+</div>
+<h2 id="a2-espace-de-travail-scene-referred">A.2 - Espace de travail (scene referred)<a class="headerlink" href="#a2-espace-de-travail-scene-referred" title="Permanent link">&para;</a></h2>
+<p>L&rsquo;espace le plus important à connaître est celui dans lequel travaille l&rsquo;application, dans lequel elle effectue la synthèse des couleurs et les calculs associés.</p>
+<p>Cet espace est celui noté <em>scene referred</em>.</p>
+<p>Voici les caractéristiques les plus couramment utiles pour un espace de travail :</p>
+<ul>
+<li><strong><em>Linéaire</em></strong> dans la grande majorité des cas, pour améliorer la fusion des couleurs, il peut être utile pour les corrections colorimétriques d&rsquo;utiliser un espace non-linéaire.</li>
+<li><strong><em>Gammut large</em></strong> afin de travailler dans un espace capable de reproduire fidèlement un grand nombre de couleurs et gagner en précision.</li>
+</ul>
+<h2 id="a3-entree">A.3 - Entrée<a class="headerlink" href="#a3-entree" title="Permanent link">&para;</a></h2>
+<p>À chaque importation d&rsquo;un fichier ou autre élément externe, l&rsquo;application doit bien interpréter (connaître) l&rsquo;espace colorimétrique de l&rsquo;élément, afin de le convertir vers son espace de travail.</p>
+<p>Il y a alors plusieurs possibilités :</p>
+<ul>
+<li>Soit les fichiers respectent les standards les plus courant (quand ils existent&hellip;), et l&rsquo;application interprète correctement les fichiers par défaut.</li>
+<li>Soit les fichiers, ou l&rsquo;application elle-même, ne respectent pas ces standards, ou bien aucun standard n&rsquo;existe, et l&rsquo;application doit alors permettre de modifier l&rsquo;interprétation des données pour spécifier manuellement quel est l&rsquo;espace colorimétrique importé<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</li>
+</ul>
+<p>Dans tous les cas, afin de maîtriser la production, <strong>il est impératif de contrôler l&rsquo;interprétation des couleurs par les applications</strong> lors de l&rsquo;importation ; certaines se &ldquo;tromperont&rdquo; systématiquement sur certains fichiers, et il faudra alors penser à corriger l&rsquo;interprétation à chaque import (ou l&rsquo;automatiser)<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p><em>Cf.</em> <em>A.6 - Sortie intermédiaire</em> et <em>A.7 - Sortie finale</em> pour plus d&rsquo;informations sur les espaces colorimétriques propres aux fichiers, et <em><a href="2B-standards.html">II.B - Quelques standards</a></em> pour une liste des standards les plus courants.</p>
+<h2 id="a4-affichage">A.4 - Affichage<a class="headerlink" href="#a4-affichage" title="Permanent link">&para;</a></h2>
+<p>Il est primordial de garder à l&rsquo;esprit que <strong>l&rsquo;espace colorimétrique de travail, <em>scene referred</em>, est le plus souvent différent de l&rsquo;espace colorimétrique de l&rsquo;affichage</strong> !</p>
+<p>L&rsquo;application effectue donc une conversion des couleurs telles qu&rsquo;elle les calcule vers l&rsquo;espace d&rsquo;affichage de l&rsquo;écran.</p>
+<p>Il y a plusieurs élément à prendre en compte pour cet affichage :</p>
+<ul>
+<li>L&rsquo;espace colorimétrique de l&rsquo;écran lui même</li>
+<li>Les réglages de l&rsquo;écran qui peuvent altérer les couleurs</li>
+<li>Le profil colorimétrique appliqué à l&rsquo;écran par le système d&rsquo;exploitation</li>
+<li>La conversion effectuée par l&rsquo;application depuis son espace de travail vers celui de l&rsquo;affichage.</li>
+</ul>
+<h3 id="a4a-espace-de-lecran">A.4.a - Espace de l&rsquo;écran<a class="headerlink" href="#a4a-espace-de-lecran" title="Permanent link">&para;</a></h3>
+<p>Chaque écran affiche les couleurs dans un espace colorimétrique prédéfini et choisi par le constructeur pour le modèle particulier d&rsquo;écran.</p>
+<p>Il y a trois grandes catégories d&rsquo;écrans :</p>
+<ul>
+<li>Les écrans (et projecteurs) d&rsquo;ordinateurs</li>
+<li>Les Téléviseurs</li>
+<li>Téléphones, tablettes, etc.</li>
+</ul>
+<p>Suivant ces catégories, la plupart des écrans utilisent ces espaces colorimétriques :</p>
+<ul>
+<li>Ordinateur : <strong><em>sRGB</em></strong>, bien que certains écrans (souvent appelés <em>HDR</em>) soient aussi capables d&rsquo;afficher les couleurs du <strong><em>P3</em></strong> ; les écrans <em>P3</em> affichent <em>aussi</em> le <em>sRGB</em>, qui est entièrement contenu &ldquo;dans&rdquo; le <em>P3</em>. Les écrans d&rsquo;ordinateur affichent la <em>gamme complète (full/pc)</em> des couleurs (<em>cf.</em> <em><a href="K-pix-format.html">K.4 - Full range / Limited / TV / PC ?</a></em>).</li>
+<li>Téléviseurs : <strong><em>Rec.709</em></strong>, ou parfois <strong><em>sRGB</em></strong> (réglable), ou parfois d&rsquo;autres espaces quand ils sont <em>HDR</em>. Les TV affichent la <em>game réduite (limited/tv)</em> des couelurs (<em>cf.</em> <em><a href="K-pix-format.html">K.4 - Full range / Limited / TV / PC ?</a></em>).</li>
+<li>Téléphones, tablettes, etc. : <strong><em>sRGB</em></strong>, bien que certains (rares) téléphones et tablettes soient aussi capables d&rsquo;afficher les couleurs du <strong><em>P3</em></strong>. Ces périphériques affichent la <em>gamme complète (full/pc)</em> des couleurs (<em>cf.</em> <em><a href="K-pix-format.html">K.4 - Full range / Limited / TV / PC ?</a></em>).</li>
+</ul>
+<p>Il est à noter que les écrans affichant <em>exactement</em> l&rsquo;espace colorimétrique annoncé sont rares, et la plupart génèrent de (plus ou moins) petites variations ; ces variations sont en général en grande partie corrigées par une calibration maîtrisée. <em>Cf.</em> <em><a href="2D-calibration.md">II.C - calibration des écrans</a></em>.</p>
+<h3 id="a4b-reglages-et-profils-colorimetriques">A.4.b - Réglages et profils colorimétriques<a class="headerlink" href="#a4b-reglages-et-profils-colorimetriques" title="Permanent link">&para;</a></h3>
+<p>La grande majorité des écrans proposent plusieurs réglages des couleurs sur l&rsquo;écran lui même, notamment via les paramètres de luminosité et de contraste, complétés, suivant les écrans, par les <em>gammas<a href="ZZ-vocabulaire.html">*</a></em> rouge, vert et bleu, et parfois encore d&rsquo;autres réglagles.</p>
+<p>Ces réglages permettent parfois de corriger les plus gros défauts des écrans tels qu&rsquo;ils sont livrés en sortie d&rsquo;usine (à condition d&rsquo;avoir une méthode de calibration efficace), et peuvent être complétés par des réglages plus fin, à la fois via le <em>profil colorimétrique</em> appliqué par le système d&rsquo;exploitation, et éventuellement des réglages au niveau du pilote de la carte graphique.</p>
+<p>La connaissance de ces réglages est importante pour contrôler l&rsquo;affichage correct des couleurs sur le poste de travail.</p>
+<p>Il est à noter aussi que ces réglages doivent être contrôlés (et ajustés) régulièrement ; l&rsquo;affichage des couleurs peut varier avec le vieillissement de l&rsquo;écran, la température ambiante, etc.</p>
+<p><em>Cf.</em> <em><a href="2D-calibration.md">II.C - calibration des écrans</a></em> pour des explications détaillées sur les réglages des écrans et comment les ajuster.</p>
+<h3 id="a4c-dans-lapplication">A.4.c - Dans l&rsquo;application<a class="headerlink" href="#a4c-dans-lapplication" title="Permanent link">&para;</a></h3>
+<p>Une fois l&rsquo;écran installé et correctement réglé (ou du mieux que possible), il n&rsquo;y a plus qu&rsquo;à sélectionner le bon profil d&rsquo;affichage dans l&rsquo;application.</p>
+<p>La plupart du temps, une simple option d&rsquo;affichage permet de spécifier si l&rsquo;écran est <em>sRGB</em>, <em>Rec.709</em> ou <em>P3</em> ou autre ; parfois aucun réglage n&rsquo;est disponible et l&rsquo;application s&rsquo;en remet au système d&rsquo;exploitation.</p>
+<p>Il faut garder en tête que l&rsquo;application continue de travailler dans son propre espace, qui ne dépend pas de celui dans lequel sont affichées les couleurs, et que les sorties de fichiers ne dépendent pas non plus de cet espace d&rsquo;affichage ; par contre, un mauvais choix d&rsquo;affichage conduit à de mauvais choix de couleurs et donc des variations inattendues et pas standard lors de la sortie !</p>
+<p>La pire erreur est par exemple de mal choisir l&rsquo;espace d&rsquo;affichage et croire par la suite que c&rsquo;est l&rsquo;espace de sortie qui est différent de ce à quoi on s&rsquo;attendait. Cette erreur conduit alors à changer l&rsquo;interprétation des couleurs lors de l&rsquo;import dans l&rsquo;application suivante pour tenter de compenser, et introduire de mauvaises corrections tout en perdant complètement la maîtrise de la chaîne de fabrication.</p>
+<h2 id="a5-selecteurs-de-couleur">A.5 - Sélecteurs de couleur<a class="headerlink" href="#a5-selecteurs-de-couleur" title="Permanent link">&para;</a></h2>
+<p>Dans une application les sélecteurs de couleurs (<em>color pickers</em>) peuvent avoir leur propre espace colorimétrique.</p>
+<p>Le plus souvent, ils sont soit dans l&rsquo;espace de travail de l&rsquo;application, ce qui les rend difficile à utiliser quand l&rsquo;espace est linéaire, soit dans l&rsquo;espace de l&rsquo;affichage, plus pratique.</p>
+<p>On préfère des espaces non linéaires pour faciliter le choix des couleurs ; avoir des sélecteurs de couleur en <em>sRGB</em> permet aussi de récupérer facilement des couleurs depuis d&rsquo;autres applications, depuis des images, etc. Une conversion est alors effectuée après la sélection de la couleurs vers l&rsquo;espace de travail de l&rsquo;application.</p>
+<h2 id="a6-sortie-intermediaire">A.6 - Sortie intermédiaire<a class="headerlink" href="#a6-sortie-intermediaire" title="Permanent link">&para;</a></h2>
+<p>Lors de l&rsquo;export de fichiers <em>intermédiaires</em>, qui reserviront dans la suite de la production, le but est de perdre le moins d&rsquo;informations possible, de garder un maximum de données pour la suite du travail.</p>
+<p>Dans ce cas, le plus simple est, dans la mesure du possible, d&rsquo;exporter des fichiers dans l&rsquo;espace de travail de l&rsquo;application. Pour ce faire, le format de fichier le mieux à même de stocker n&rsquo;importe quelle information de couleurs et l&rsquo;<em>openEXR</em> (qui est censé utiliser des espaces linéaires). Il est tout à fait possible d&rsquo;utiliser d&rsquo;autres formats, mais dans ce cas, soit le choix de l&rsquo;espace ne sera pas standard et risque d&rsquo;être mal interprété par la suite, soit on introduit des conversions inutiles, ou une perte de données en devant utiliser un espace plus petit ou non-linéaire.</p>
+<p>Si il est impossible d&rsquo;exporter dans l&rsquo;espace de travail et en <em>openEXR</em> (ou autre format permettant de garder le bon espace), il faut privilégier les formats <em>RGB</em> (et éviter <em>YUV</em>, ou en tout cas bien utiliser le sous-échantillonage <em>4:4:4</em>).</p>
+<p>Quand l&rsquo;espace de travail est linéaire mais pas l&rsquo;espace de sortie (et inversement), il faut savoir qu&rsquo;une perte de précision et de qualité a lieu, et qu&rsquo;il faut dans ce cas absolument que la profondeur de l&rsquo;espace de travail soit plus grande que celle de sortie (travailler en <em>32 bpc linéaire</em> pour sortir en <em>16 bpc non linéaire</em> par exemple).</p>
+<h2 id="a7-sortie-finale">A.7 - Sortie finale<a class="headerlink" href="#a7-sortie-finale" title="Permanent link">&para;</a></h2>
+<p>Lors de la sortie finale, il faut bien évidemment essayer de respecter au mieux le standard correspondant à la livraison, ou se reférer à la demande du diffuseur.</p>
+<p><em>Cf.</em> <em><a href="2B-standards.html">II.B - Quelques standards</a></em> pour une liste des standards les plus courants.</p>
+<p>La plupart des sorties finales se feront dans des espaces colorimétriques dédiés à l&rsquo;affichage, et donc avec un transfert non linéaire ; une perte de précision et de qualité ayant lieu lors du passage d&rsquo;un espace de travail linéaire vers un espace d&rsquo;affichage non linéaire, il est important dans ce cas que l&rsquo;espace de travail ait une profondeur plus élevée que celle de la sortie finale (travail en <em>16 bpc</em> pour une sortie <em>8 bpc</em> par exemple).</p>
+<hr />
+<p>Sources et références</p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/11" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Si une application de vous permet pas de changer l&rsquo;espace colorimétrique lors de l&rsquo;importation, attendez-vous à avoir des variations de couleurs inattendues lors de l&rsquo;importation. Il faudra alors deviner en quoi l&rsquo;application &ldquo;se trompe&rdquo; afin d&rsquo;effectuer manuellement une correction des couleurs pour rétablir les couleurs d&rsquo;origine (le plus souvent simplement via une correction <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> ou bien l&rsquo;application d&rsquo;une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em>). Notez qu&rsquo;une telle application n&rsquo;a pas vraiment sa place dans une chaîne de production où l&rsquo;on cherche à maîtriser la couleur&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Toutes les applications ne permettent pas l&rsquo;automatisation de la gestion des couleurs (par exemple <em>Adobe After Effects</em> ne possède pas d&rsquo;<em>API</em> pour ce point précis). Dans la suite de ce document, nous noterons pour les applications expliquées les erreurs d&rsquo;interprétation qu&rsquo;elles font, que nous avons pu repérer, et les autres spécificités à savoir.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="2B-standards.html" class="btn btn-neutral float-right" title="B - Quelques standards">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="N-ocio.html" class="btn btn-neutral" title="N - OCIO, ACES"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="N-ocio.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="2B-standards.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="video.js" defer></script>
+      <script src="meta.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>

@@ -108,45 +108,52 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
 
 ### II - Pratique
 
-- A - Mise en pratique : choisir ses espaces colorimétriques et formats
-    - Théorie
-    - Espace de travail (scene referred)
-    - Entrée
-    - Affichage
-    - Sélecteurs de couleur
-    - Sortie
-- B - Calibration des écrans et leurs espaces colorimétriques
+- A - [Mise en pratique : choisir ses espaces colorimétriques et formats](2A-pratique.md)
+    - A.1 - Théorie
+        - A.1.a - Parcours d'une couleur
+    - A.2 - Espace de travail (scene referred)
+    - A.3 - Entrée
+    - A.4 - Affichage
+        - A.4.a - Espace de l'écran
+        - A.4.b - Réglages et profils colorimétriques
+        - A.4.c - Dans l'application
+    - A.5 - Sélecteurs de couleur
+    - A.6 - Sortie intermédaire
+    - A.7 - Sortie finale
+- B - [Quelques standards](2B-standards.md)
+- C - Calibration des écrans et leurs espaces colorimétriques
     - Paramètres
     - À l'oeil
     - Avec une sonde
-- C - Color management : Adobe After Effects
+- D - Color management : Adobe After Effects
     - Projet
     - Entrée
     - Affichage
     - Sortie
     - OCIO
-- D - Color management : Blender
+- E - Color management : Blender
     - Entrée
     - Rendu
     - Affichage et sortie
     - ACES ou Filmic
-- E - Color management : DuME
+- F - Color management : DuME
     - Espace de travail
     - Entrée
     - Sortie
     - LUTs
     - OCIO
-- F - Color management : Adobe Media Encoder
-- G - Color management : Krita
+- G - Color management : Adobe Media Encoder
+- H - Color management : Krita
     - Document
     - Entrée
     - Sortie
-- H - Color management : Darktable
+- I - Color management : Darktable
     - Entrée et espace de travail
     - Sortie
 
 ### III - Annexes
 
+- [Erreurs et incompréhensions courantes, résolution des problèmes](ZZ-erreurs.md)
 - [Glossaire](ZZ-vocabulaire.md)
 - [Dictionnaire français - anglais](ZZ-english.md)
 

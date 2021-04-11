@@ -1,4 +1,4 @@
-# L - Courbes de transfert, espace linéaire et gamma
+# I.L - Courbes de transfert, espace linéaire et gamma
 
 Quand l'œil humain perçoit les couleurs, il distingue mieux les contrastes dans les faibles intensités, les ombres, que dans les lumières fortes ; autrement dit, la réponse à l'intensité n'est pas *linéaire* (proportionnelle) [^1] : une lumière que l'on perçoit à "la moitié" de l'intensité d'une autre lumière **n'est pas** réellement et physiquement deux fois moins intense, mais plutôt quatre fois moins intense. cf. chapitre *[C - Perception de la lumière et des couleurs par l'être humain](C-perception.md)*.
 

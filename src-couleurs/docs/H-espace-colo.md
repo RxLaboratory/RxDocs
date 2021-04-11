@@ -1,4 +1,4 @@
-# H - Qu'est ce qu'un espace colorimétrique ?
+# I.H - Qu'est ce qu'un espace colorimétrique ?
 
 Un espace colorimétrique définit **un sous-ensemble de couleurs** (un volume dans un diagramme de couleurs 3D, ou une surface sur une projection 2D comme le *CIE xy*) tirées du spectre visible (voire aussi en dehors du spectre visible)[^1].
 

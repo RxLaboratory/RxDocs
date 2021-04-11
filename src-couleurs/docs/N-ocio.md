@@ -1,4 +1,4 @@
-# N - OpenColorIO et ACES
+# I.N - OpenColorIO et ACES
 
 [*OpenColorIO*](https://opencolorio.org/)[^1], souvent abrégé en *OCIO*, est une librairie pour les développeurs (et non pas pour les utilisateurs) libre et open source, facilitant la gestion des couleurs. Elle aspire à être utilisée par toutes les applications en production d'image numérique, facilitant ainsi la gestion des couleurs sur toute la chaîne de production : en devant standard, elle permet de partager la configuration des couleurs tout au long de la chaîne de production et en avoir la maîtrise à toutes les étapes, de manière aussi simple que possible.
 

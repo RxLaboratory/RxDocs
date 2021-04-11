@@ -1,4 +1,4 @@
-# I - Liste sélective d'espaces colorimétriques
+# I.I - Liste sélective d'espaces colorimétriques
 
 Il ne serait pas possible de lister ici tous les espaces colorimétriques qui existent, mais voici une sélection utile dans la production audiovisuelle en 2021.
 

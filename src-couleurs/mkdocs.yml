@@ -46,15 +46,17 @@ nav:
         - M - Les LUTs: M-LUT.md
         - N - OCIO, ACES: N-ocio.md
     - La pratique:
-        - A - Choisir ses espaces colorimétriques et formats: .
-        - B - Calibration des écrans et leurs espaces colorimétriques: .
-        - C - Adobe After Effects: .
-        - D - Blender: .
-        - E - DuME: .
-        - F - Adobe Media Encoder: .
-        - G - Krita: .
-        - H - Darktable: .
+        - A - Choisir ses espaces colorimétriques et formats: 2A-pratique.md
+        - B - Quelques standards: 2B-standards.md
+        - C - Calibration des écrans et leurs espaces colorimétriques: .
+        - D - Adobe After Effects: .
+        - E - Blender: .
+        - F - DuME: .
+        - G - Adobe Media Encoder: .
+        - H - Krita: .
+        - I - Darktable: .
     - Annexes:
+        - Erreurs et résolution des problèmes: ZZ-erreurs.md
         - Glossaire: ZZ-vocabulaire.md
         - Dictionnaire français - anglais: ZZ-english.md
     - Tous les documents RxLab: http://docs.rainboxlab.org
