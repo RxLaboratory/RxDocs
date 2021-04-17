@@ -47,7 +47,7 @@ Le cerveau effectue en permanence des ajustements pour compenser la couleur de l
 
 En effet, un capteur qui recevrait du blanc à midi au soleil "verrait" en réalité la "vraie" couleur, tirant plutôt vers le jaune, alors que le même objet un jour nuageux serait "vu" par le capteur comme bien plus bleu.
 
-On effectue donc une opération de correction de ces couleurs pour ramener la couleur de l'objet à un "blanc" neutrele paradoxe de l'information : celui du dispositif de reproduction. C'est ce qu'on appelle la *balance des blancs* : on "efface" l'influence de la lumière ayant éclairé la scène au moment de la capture.
+On effectue donc une opération de correction de ces couleurs pour ramener la couleur de l'objet à un "blanc" neutre : celui du dispositif de reproduction. C'est ce qu'on appelle la *balance des blancs* : on "efface" l'influence de la lumière ayant éclairé la scène au moment de la capture.
 
 Ainsi, cette image "neutralisée" peut être reproduite par le dispositif dans des conditions standard.
 

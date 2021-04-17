@@ -41,4 +41,5 @@ La plupart des applications et des ressources disponibles étant plutôt en angl
 - ***Pureté d'excitation***: Excitation Purity
 - ***Saturation***: Saturation
 - ***Teinte***: Hue
+- ***Température***: Temperature
 - ***Violet***: Violet, Purple

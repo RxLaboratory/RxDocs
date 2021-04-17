@@ -1,4 +1,4 @@
-# II.B - Quelques standards
+# II.B - Quelques standards pour les fichiers
 
 Voici une liste de quelques standards associés à des fichiers courants.
 
@@ -29,10 +29,10 @@ Si ces listes ne sont pas nécessairement des standards officiels, ces correspon
     - ***16 bpc*** (entier ou flottant)
     - ***32 bpc*** (entier ou flottant)
 
-## MP4 h.264 / h.265 / AVCHD / HEVC
+## MP4 h.264 / h.265 / AVCHD / HEVC et autres vidéos HD (2K) ou UHD (4K)
 
 - Espace : ***Rec.709***, ***Rec.2020*** possible en *UHD* et plus (*4K*).
-- Format de pixels : ***YUV 4:2:0***, bien que *4:2:2* et *4:4:4*, voire *RGB* soient possibles, ils ne sont pas très standards et de nombreux lecteurs ne pourront pas les lire, ***Limited Range***
+- Format de pixels : ***YUV 4:2:0*** ; bien que *4:2:2* et *4:4:4*, voire *RGB*, soient possibles, ils ne sont pas très standards et de nombreux lecteurs ne pourront pas les lire. ***Limited Range***
 - Profondeur :
     - ***8 bits*** en *Rec.709*
     - ***10 bits*** en *Rec.2020* *UHD/4K*

@@ -1,4 +1,4 @@
-# Guide technique pour la gestion des couleurs dans la production audiovisuelle
+# Petit uide technique de la gestion des couleurs dans la production audiovisuelle
 
 ## À propos
 
@@ -121,10 +121,11 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
     - A.6 - Sortie intermédaire
     - A.7 - Sortie finale
 - B - [Quelques standards](2B-standards.md)
-- C - Calibration des écrans et leurs espaces colorimétriques
-    - Paramètres
-    - À l'oeil
-    - Avec une sonde
+- C - [Calibration des écrans](2C-calibration.md)
+    - Introduction
+    - Environnement
+    - Calibration
+        - Choix de l'espace colorimétrique de l'écran et de la calibration
 - D - Color management : Adobe After Effects
     - Projet
     - Entrée
@@ -167,4 +168,4 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
     Nous invitons le lecteur à commencer par lire les articles [*Wikipedia*](https://fr.wikipedia.org/wiki/Couleur) pour approfondir le sujet et compléter les informations théoriques manquantes dans ce guide ; les ressources sur le sujet ne manquent pas.  
     Sur chaque page, nous ajoutons et complètons régulièrement les sources et références pour approfondir ce qui est expliqué.
 
-![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23)
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/17)

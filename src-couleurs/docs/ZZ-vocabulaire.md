@@ -15,6 +15,8 @@ Classement alphabétique.
 
 - ***Canal*** (de couleur): voir *couche* (de couleur).
 
+- ***Candela*** : Unité du système internationnal représentant une intensité lumineuse, soit une quantité de lumière émise par une source lumineuse dans une direction donnée (alors que le *lumen\** représente cette quantité de lumière au total, dans toutes les directions). Symbole : `cd`. *Cf*. *Intensité*.
+
 - ***CIE*** : *La Commission internationale de l'éclairage* est une organisation internationale dédiée à la lumière, l'éclairage, la couleur et les espaces de couleur. Elle a été fondée à Berlin en 1913 et est actuellement basée à Vienne en Autriche.  Note : l'acronyme français *CIE* est celui utilisé internationnalement bien qu'en anglais ce soit la *International Commission on Illumination*.
 
 - ***Codec*** : abréviation de codeur-décodeur. *Logiciel* utilisé pour l'encodage et le décodage d'une vidéo ou d'un flux audio dans une certaine *norme\**. D'ailleurs, le codec est souvent confondu avec la *norme* ou le *format\**, mais il est bien un *logiciel* et pas un *format*. Par exemple, *x264* ou *nvenc* sont des codecs permettant d'encoder une vidéo dans la *norme* *h.264* (au *format* *mp4* par exemple).
@@ -22,6 +24,8 @@ Classement alphabétique.
 - (Couleurs) complémentaires
 
 - ***Conteneur*** : synonyme de *type de fichier*. Définit comment des flux multimédia (audio, video, sous-titres, méta-données...) doivent être enregistrés ensemble dans un fichier précis. Par exemple : *Quicktime* (*\*.mov*), *MP4* (*\*.mp4*), *Matroska* (*\*.mkv*) sont des conteneurs (mais *h.264* est une *norme\**, et *x264* un *codec\**). Certains conteneurs sont spécialisés et imposent une certaine *norme* (par exemple, un *MP4* devrait toujours utiliser la *norme* *h.264* ou *h.265*), tandis que d'autres permettent un grand nombre de normes différentes (par exemple *Quicktime* permet la norme *PNG*, *Prores*, *RLE/Animation*, *MJPEG*, etc.).
+
+- ***Contraste***
 
 - ***Couche*** (de couleur) : aussi appelé *canal* (de "*channel*" en anglais). Au sein d'un pixel, la couleur est décrite par plusieurs valeurs ; chaque valeur est une *couche* du pixel (ou de l'image). En *RGB* les trois couches sont rouge, verte, et bleue, en *YUV*, la *luminance* et deux couches de *chrominance*.
 
@@ -38,7 +42,7 @@ Classement alphabétique.
 
 - Illuminant
 
-- ***Intensité*** : quantité de lumière reçue par une surface (réfléchissante ou un capteur) ou émise par une source de lumière, mesurée en nombre de photons reçus par une surface donnée en un temps donné (par exemple en photons par seconde par centimètre carré). Dans le cas d'un émetteur de lumière (bougie, lampe, écran), on parle en fonction d'un cône (un angle solide) d'émission et non pas d'une surface de réception et l'unité est le *candela* noté `cd`[^1].
+- ***Intensité*** : quantité de lumière reçue par une surface (réfléchissante ou un capteur) ou émise par une source de lumière, mesurée en nombre de photons reçus par une surface donnée en un temps donné (par exemple en photons par seconde par centimètre carré). Dans le cas d'un émetteur de lumière (bougie, lampe, écran), on parle en fonction d'un cône (un angle solide) d'émission et non pas d'une surface de réception et l'unité est le *candela\** noté `cd`[^1].
 
 - ***Linéaire*** : représentation graphique d'une fonction *proportionnelle*, une fonction mathématique dite *affine*, représentée par une ligne droite. On utilise le terme *linéaire* pour parler des espaces colorimétriques dont les correspondances de valeurs avec l'intensité physique sont proportionnelles et donc représentées par une ligne droite sur un graphique.
   
@@ -52,7 +56,13 @@ Classement alphabétique.
   
 - (Couleurs) **_Métamères_** : deux (ou plus) couleurs sont dites *métamères* quand elles sont d'apparence identique (l'œil et le cerveau ne font pas la différence) bien qu'elles soient composées en réalité d'un mélange différent de rayons *monochromatiques\**.
 
+- ***Lumen*** : Unité du système internationnal représentant un flux lumineux, symbole : `lm`. Mesuré par la quantité totale de lumière émise par une source lumineuse en un temps donné.
+
+- ***Luminosité***
+
 - (Lumière) ***Monochromatique*** : lumière *pure*, composée de rayons d'une seule *fréquence\** précise, sans mélange de *fréquences*, comme la lumière générée par un *laser*. La couleur d'une telle lumière fait partie du spectre des ondes électro-magnétiques visibles, de l'arc-en-ciel, allant du bleu au rouge pur (en passant par cyan, vert, jaune, orange...).
+
+- ***Lux*** : Unité du système internationnal représentant *l'illumination* (la quantité de lumière reçue par une surface, qu'on peut qualifier de luminosité de la surface), symbole : `lx`. `1 lux = 1 lm/m²`, 1 lux équivaut à un *lumen\** par mètre carré. Par exemple, l'ambiance lumineuse typique d'un bureau se situe entre *300 et 500 lux*, le coucher ou lever du soleil sans nuage vers *400 lux*, une journée couverte à 1000 lux, une journée ensoleillée entre *10 000 et 25 000 lux*, avec les zones en plein soleil allant de *32 000 à 100 000 lux*.
 
 - ***Noir*** : Le *noir* est la couleur résultant de l'absence de lumière. Il est donc la couleur de plus faible luminosité (nulle) et sa *saturation\** ne peut pas être définie.
 
@@ -77,6 +87,8 @@ Classement alphabétique.
 - ***Saturation*** : Les couleurs les plus *saturées* possible sont les couleurs *monochromatiques*\* auxquelles on ajoute les pourpres (les mélanges de rouge et bleu). Dès lors que les couleurs sont un mélange de plusieurs lumières *monochromatiques*\* (hors mélange des extrèmes bleu et rouge), la saturation baisse jusqu'à ce que la couleur devienne grise ou blanche. Les couleurs saturées vont donc du *noir* aux couleurs de l'arc en ciel.
 
 - Teinte
+
+- ***Température*** des blancs : Comparaison d'une lumière "blanche" à la couleur d'un *corps noir* (un corps ne faisant qu'émettre de la lumière, et dont la couleur résulte directement de sa température, comme le soleil, une braise, une flamme, du métal en fusion...). C'est un moyen de définir précisément la teinte d'un blanc, qu'on exprime alors en température, en utilisant le *Kelvin* comme unité. Le jaune orangé de la lumière du soleil se situe ainsi autour de *5800 K*, le bleu d'un éclair électrique à *9000 K*, l'orange d'une bougie vers *1850 K*, etc.
 
 - ***Violet*** : voir *Pourpre*.
 

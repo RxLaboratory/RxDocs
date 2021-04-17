@@ -79,6 +79,8 @@ Il y a plusieurs élément à prendre en compte pour cet affichage :
 - Le profil colorimétrique appliqué à l'écran par le système d'exploitation
 - La conversion effectuée par l'application depuis son espace de travail vers celui de l'affichage.
 
+Voir la section *[2C - Calibrage des écrans](2C-calibration.md)* pour plus de détails sur le sujet.
+
 ### A.4.a - Espace de l'écran
 
 Chaque écran affiche les couleurs dans un espace colorimétrique prédéfini et choisi par le constructeur pour le modèle particulier d'écran.
