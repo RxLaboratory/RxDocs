@@ -154,7 +154,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href=".">C - Calibration des écrans et leurs espaces colorimétriques</a>
+    <a class="" href="2C-calibration.html">C - Calibration des écrans</a>
                 </li>
                 <li class="">
                     
@@ -464,7 +464,8 @@ Par exemple :</p>
 <p><em><img alt="Exemple de mauvais affichage" src="img/full-vs-limited.svg" /></em></p>
 <p>Il faut donc que le matériel soit correctement configuré. Sur un lecteur de disques ou une console, il doit y avoir un réglage pour spécifier si l&rsquo;écran branché est <em>full</em> ou <em>limited range</em> (en règle générale, un écran informatique ou un vidéo-projecteur est <em>full range</em>, une TV <em>limited range</em>).</p>
 <p>Sur un ordinateur, les choses peuvent être un peu plus complexes : il faut commencer par vérifier les paramètres du pilote de la carte graphique, en général dans une section nommée &ldquo;vidéo&rdquo;, et bien spécifier <em>full range / PC</em> (sauf si c&rsquo;est une TV qui est branchée à l&rsquo;ordinateur)<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup>. Si après avoir bien réglé ce paramètre des variations sont toujours visibles, il faut vérifier que le logiciel utilisé pour lire la vidéo ne fait pas une mauvaise conversion (par exemple <em>Quicktime</em> sur <em>Windows</em> était connu pour ça<sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup>) ; la plupart de ces logiciels devraient cependant laisser faire cette conversion par la carte graphique et ne pas poser de problème (c&rsquo;est le cas de <em>VLC</em>, du lecteur vidéo de <em>Windows</em>, de <em>Totem</em> sous <em>Linux</em>&hellip;).</p>
-<p><em><img alt="Exemple du réglage sur les pilotes nvidia" src="" /></em></p>
+<p><em><img alt="Capture d'écran des paramètres Nvidia" src="img/nvidia-controls.png" /></em><br />
+Exemple de paramètres via les réglages d&rsquo;une carte graphique <em>Nvidia</em> (sous <em>Linux</em>). Notez surtout ici le paramètres <em>color range</em>, à mettre sur <em>Full</em> si l&rsquo;écran est un écran d&rsquo;ordinateur, et <em>Limited</em> si c&rsquo;est un téléviseur.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Sur certains matériels, une option &ldquo;Auto&rdquo; est disponible en plus de <em>full / limited range</em>. Dans ce cas le matériel <em>essaye</em> de détecter le type d&rsquo;écran branché. Dans la mesure où c&rsquo;est un paramètre qui ne doit changer que quand on change d&rsquo;écran, il est fortement recommandé de le mettre à la main.</p>

@@ -160,7 +160,7 @@
                 </li>
                 <li class="">
                     
-    <a class="" href=".">C - Calibration des écrans et leurs espaces colorimétriques</a>
+    <a class="" href="2C-calibration.html">C - Calibration des écrans</a>
                 </li>
                 <li class="">
                     
@@ -345,6 +345,7 @@
 <li>Le profil colorimétrique appliqué à l&rsquo;écran par le système d&rsquo;exploitation</li>
 <li>La conversion effectuée par l&rsquo;application depuis son espace de travail vers celui de l&rsquo;affichage.</li>
 </ul>
+<p>Voir la section <em><a href="2C-calibration.html">2C - Calibrage des écrans</a></em> pour plus de détails sur le sujet.</p>
 <h3 id="a4a-espace-de-lecran">A.4.a - Espace de l&rsquo;écran<a class="headerlink" href="#a4a-espace-de-lecran" title="Permanent link">&para;</a></h3>
 <p>Chaque écran affiche les couleurs dans un espace colorimétrique prédéfini et choisi par le constructeur pour le modèle particulier d&rsquo;écran.</p>
 <p>Il y a trois grandes catégories d&rsquo;écrans :</p>
@@ -359,13 +360,13 @@
 <li>Téléviseurs : <strong><em>Rec.709</em></strong>, ou parfois <strong><em>sRGB</em></strong> (réglable), ou parfois d&rsquo;autres espaces quand ils sont <em>HDR</em>. Les TV affichent la <em>game réduite (limited/tv)</em> des couelurs (<em>cf.</em> <em><a href="K-pix-format.html">K.4 - Full range / Limited / TV / PC ?</a></em>).</li>
 <li>Téléphones, tablettes, etc. : <strong><em>sRGB</em></strong>, bien que certains (rares) téléphones et tablettes soient aussi capables d&rsquo;afficher les couleurs du <strong><em>P3</em></strong>. Ces périphériques affichent la <em>gamme complète (full/pc)</em> des couleurs (<em>cf.</em> <em><a href="K-pix-format.html">K.4 - Full range / Limited / TV / PC ?</a></em>).</li>
 </ul>
-<p>Il est à noter que les écrans affichant <em>exactement</em> l&rsquo;espace colorimétrique annoncé sont rares, et la plupart génèrent de (plus ou moins) petites variations ; ces variations sont en général en grande partie corrigées par une calibration maîtrisée. <em>Cf.</em> <em><a href="2D-calibration.md">II.C - calibration des écrans</a></em>.</p>
+<p>Il est à noter que les écrans affichant <em>exactement</em> l&rsquo;espace colorimétrique annoncé sont rares, et la plupart génèrent de (plus ou moins) petites variations ; ces variations sont en général en grande partie corrigées par une calibration maîtrisée. <em>Cf.</em> <em><a href="2C-calibration.html">II.C - calibration des écrans</a></em>.</p>
 <h3 id="a4b-reglages-et-profils-colorimetriques">A.4.b - Réglages et profils colorimétriques<a class="headerlink" href="#a4b-reglages-et-profils-colorimetriques" title="Permanent link">&para;</a></h3>
 <p>La grande majorité des écrans proposent plusieurs réglages des couleurs sur l&rsquo;écran lui même, notamment via les paramètres de luminosité et de contraste, complétés, suivant les écrans, par les <em>gammas<a href="ZZ-vocabulaire.html">*</a></em> rouge, vert et bleu, et parfois encore d&rsquo;autres réglagles.</p>
 <p>Ces réglages permettent parfois de corriger les plus gros défauts des écrans tels qu&rsquo;ils sont livrés en sortie d&rsquo;usine (à condition d&rsquo;avoir une méthode de calibration efficace), et peuvent être complétés par des réglages plus fin, à la fois via le <em>profil colorimétrique</em> appliqué par le système d&rsquo;exploitation, et éventuellement des réglages au niveau du pilote de la carte graphique.</p>
 <p>La connaissance de ces réglages est importante pour contrôler l&rsquo;affichage correct des couleurs sur le poste de travail.</p>
 <p>Il est à noter aussi que ces réglages doivent être contrôlés (et ajustés) régulièrement ; l&rsquo;affichage des couleurs peut varier avec le vieillissement de l&rsquo;écran, la température ambiante, etc.</p>
-<p><em>Cf.</em> <em><a href="2D-calibration.md">II.C - calibration des écrans</a></em> pour des explications détaillées sur les réglages des écrans et comment les ajuster.</p>
+<p><em>Cf.</em> <em><a href="2C-calibration.html">II.C - calibration des écrans</a></em> pour des explications détaillées sur les réglages des écrans et comment les ajuster.</p>
 <h3 id="a4c-dans-lapplication">A.4.c - Dans l&rsquo;application<a class="headerlink" href="#a4c-dans-lapplication" title="Permanent link">&para;</a></h3>
 <p>Une fois l&rsquo;écran installé et correctement réglé (ou du mieux que possible), il n&rsquo;y a plus qu&rsquo;à sélectionner le bon profil d&rsquo;affichage dans l&rsquo;application.</p>
 <p>La plupart du temps, une simple option d&rsquo;affichage permet de spécifier si l&rsquo;écran est <em>sRGB</em>, <em>Rec.709</em> ou <em>P3</em> ou autre ; parfois aucun réglage n&rsquo;est disponible et l&rsquo;application s&rsquo;en remet au système d&rsquo;exploitation.</p>

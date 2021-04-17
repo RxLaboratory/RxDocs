@@ -255,7 +255,8 @@ Il faut donc que le matériel soit correctement configuré. Sur un lecteur de di
 
 Sur un ordinateur, les choses peuvent être un peu plus complexes : il faut commencer par vérifier les paramètres du pilote de la carte graphique, en général dans une section nommée "vidéo", et bien spécifier *full range / PC* (sauf si c'est une TV qui est branchée à l'ordinateur)[^14]. Si après avoir bien réglé ce paramètre des variations sont toujours visibles, il faut vérifier que le logiciel utilisé pour lire la vidéo ne fait pas une mauvaise conversion (par exemple *Quicktime* sur *Windows* était connu pour ça[^15]) ; la plupart de ces logiciels devraient cependant laisser faire cette conversion par la carte graphique et ne pas poser de problème (c'est le cas de *VLC*, du lecteur vidéo de *Windows*, de *Totem* sous *Linux*...).
 
-*![Exemple du réglage sur les pilotes nvidia]()*
+*![Capture d'écran des paramètres Nvidia](img/nvidia-controls.png)*  
+Exemple de paramètres via les réglages d'une carte graphique *Nvidia* (sous *Linux*). Notez surtout ici le paramètres *color range*, à mettre sur *Full* si l'écran est un écran d'ordinateur, et *Limited* si c'est un téléviseur.
 
 !!! warning
     Sur certains matériels, une option "Auto" est disponible en plus de *full / limited range*. Dans ce cas le matériel *essaye* de détecter le type d'écran branché. Dans la mesure où c'est un paramètre qui ne doit changer que quand on change d'écran, il est fortement recommandé de le mettre à la main.

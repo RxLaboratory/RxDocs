@@ -2,7 +2,7 @@
 
 Première étape, primordiale, dans la mise en place de la gestion des couleurs dans une chaîne de fabrication d'images numériques : s'assurer de la fidélité des écrans, que les couleurs affichées soient les plus proches possibles de ce que contiennent les images. C'est le calibrage.
 
-Le calibrage, en améliorant grandement la fidélité des écrans, permet d'avoir un affichage correct, voire très bon en utilisant une sonde, même sur des écrans de qualité moindre.
+Le calibrage, en améliorant grandement la fidélité des écrans, permet d'avoir un affichage correct, voire très bon en utilisant une sonde, même sur des écrans de qualité moindre[^1].
 
 [TOC]
 
@@ -64,7 +64,7 @@ Avant de commencer, il faut s'assurer des paramètres de la calibration à faire
 
 On choisit celui de l'écran par défaut, en général *sRGB* ou parfois *Display P3* ou plus rarement d'autres.
 
-On peut aussi décider de calibrer vers un espace différent de celui prévu pour l'écran, **pour autant que les deux espaces soient compatibles**. Cela peut être utile quand toutes les images fabriquées sont destinées à un usage specifique (TV, cinéma...) afin de travailler dans un espace identique ou proche de celui utilisé pour la diffusion des images terminées. On peut par exemple calibrer les écrans en *Rec.709* pour fabriquer des vidéos HD pour la télévision et les regarder dans les conditions de la diffusion, et sans avoir à convertir les vidéos au moment de la lecture vers l'espace de l'écran[^1].
+On peut aussi décider de calibrer vers un espace différent de celui prévu pour l'écran, **pour autant que les deux espaces soient compatibles**. Cela peut être utile quand toutes les images fabriquées sont destinées à un usage specifique (TV, cinéma...) afin de travailler dans un espace identique ou proche de celui utilisé pour la diffusion des images terminées. On peut par exemple calibrer les écrans en *Rec.709* pour fabriquer des vidéos HD pour la télévision et les regarder dans les conditions de la diffusion, et sans avoir à convertir les vidéos au moment de la lecture vers l'espace de l'écran[^2].
 
 Il faut pour cela que les *primaires[\*](ZZ-vocabulaire.md)* des deux espaces soient les mêmes, ou bien que le *gamut[\*](ZZ-vocabulaire.md)* de l'espace de l'écran soit plus grand et contienne le *gamut* de l'espace dans lequel on calibre. Il faudra dans tous les cas bien penser à changer les paramètres d'affichage dans toutes les applications et le système d'exploitation pour que les images soient bien affichées dans l'espace dans lequel on a calibré l'écran.
 
@@ -80,11 +80,12 @@ La luminosité peut aussi souvent être mesurée et réglée. Si l'on travaille 
 
 #### C.3.c.1 - Calibration
 
-Si l'on utilise une sonde, le processus est en général assez simple : on branche la sonde à l'ordinateur et on la place à plat sur l'écran (ou face à l'écran du projecteur)[^2]. Un logiciel fourni avec la sonde (ou bien le très performant logiciel libre *DisplayCal[^3]*) effectue alors une série de mesure des couleurs affichées par l'écran. Le résultat de ces mesures permet de calculer le décalage entre les couleurs affichées et les couleurs attendues.
+Si l'on utilise une sonde, le processus est en général assez simple : on branche la sonde à l'ordinateur et on la place à plat sur l'écran (ou face à l'écran du projecteur)[^3]. Un logiciel fourni avec la sonde (ou bien le très performant logiciel libre *DisplayCal[^4]*) effectue alors une série de mesure des couleurs affichées par l'écran. Le résultat de ces mesures permet de calculer le décalage entre les couleurs affichées et les couleurs attendues.
 
-*![Capture d'écran de DisplayCAL]()*
+*![Capture d'écran de DisplayCAL](img/displaycal.png)*
+*Paramètres de calibration de* DisplayCAL
 
-Si l'on calibre à l'œil, le principe est d'afficher une série de *mires*, d'images de référence, et d'essayer d'ajuster des réglages de l'écran à la main pour s'approcher de la description d'une image de référence. Il est complètement impossible de régler correctement les *primaires[\*](ZZ-vocabulaire.md)* et le *point blanc[\*](ZZ-vocabulaire.md)* à l'œil, mais on peut essayer de s'en approcher en affichant différentes images. Par contre, la *luminosité[\*](ZZ-vocabulaire.md)*, le *contraste[\*](ZZ-vocabulaire.md)*, le *gama[\*](ZZ-vocabulaire.md)* peuvent être relativement bien approchés grâce à des comparaisons de valeurs de gris entre elles.
+Si l'on calibre à l'œil, le principe est d'afficher une série de *mires*, d'images de référence, et d'essayer d'ajuster des réglages de l'écran à la main pour s'approcher de la description d'une image de référence. Il est complètement impossible de régler correctement les *primaires[\*](ZZ-vocabulaire.md)* et le *point blanc[\*](ZZ-vocabulaire.md)* à l'œil, mais on peut essayer de s'en approcher en affichant différentes images. Par contre, la *luminosité[\*](ZZ-vocabulaire.md)*, le *contraste[\*](ZZ-vocabulaire.md)*, le *gama[\*](ZZ-vocabulaire.md)* peuvent être relativement bien approchés grâce à des comparaisons de valeurs de gris entre elles (et beaucoup de patience).
 
 Pour calibrer à l'œil plusieurs méthodes sont possibles, mais tout commence toujours par l'affichage de mires et d'images de références. Certains systèmes d'exploitation en proposent, on peut aussi en trouver sur le net [comme ici](http://www.lagom.nl/lcd-test/).
 
@@ -92,17 +93,23 @@ Pour calibrer à l'œil plusieurs méthodes sont possibles, mais tout commence t
 
 Ensuite, en affichant les images, on retouche les réglages de l'écran. Il y a trois possibilités :
 
-- Retoucher les réglages de l'écran ; mais ils sont souvent assez limités.
-- Retoucher les paramètres de la carte graphique via ses pilotes, si ils le permettent.
-- Si le système d'exploitation le propose, effectuer les réglages via son utilitaire de couleur et enregistrer puis appliquer un profil colorimétrique à l'écran.
+- Retoucher les réglages de l'écran ; mais ils sont souvent assez limités et peu précis.
+- Retoucher les paramètres de la carte graphique via ses pilotes, si ils le permettent.  
+    L'intérêt est que la correction sera correctement appliquée dans toutes les situations ; mais il se peut que les paramètres soient ré-initialisés lors de mises à jour du système ou des pilotes.
+- Si le système d'exploitation le propose, effectuer les réglages via son utilitaire de couleur et enregistrer puis appliquer un profil colorimétrique à l'écran.  
+    Il faut ensuite s'assurer lors de mises à jour que le système ne re-sélectionne pas un autre profil. L'intérêt de cette méthode est de pouvoir garder les réglages dans un fichier sauvegardable et transportable, le profil, en général au format `.icc`.
 
-*![Capture d'écran des paramètres Nvidia]()*
+Il n'est pas conseillé de cumuler ces différentes méthodes, le résultat devenant vite assez aléatoire, et surtout difficile à retoucher ou corriger par la suite.
+
+*![Capture d'écran des paramètres Nvidia](img/nvidia-controls.png)*  
+Exemple de paramètres via les réglages d'une carte graphique *Nvidia* (sous *Linux*). Notez surtout ici le paramètres *color range*, à mettre sur *Full* si l'écran est un écran d'ordinateur, et *Limited* si c'est un téléviseur.
+
+*![Capture d'écran des paramètres Nvidia](img/nvidia-cc.png)*  
+Exemple de paramètres via les réglages d'une carte graphique *Nvidia* (sous *Linux*). Ici, différents curseurs permettent d'ajuster l'affichage des couleurs (pour chacun des écrans). Chaque curseur peut agir sur les trois *canaux[\*](ZZ-vocabulaire.md)* à la fois, ou bien séparément sur le rouge, vert ou bleu.
 
 *![Capture d'écran du profilage Mac]()*
 
 *![Capture d'écran du profilage Windows]()*
-
-*![Capture d'écran du profilage Ubuntu]()*
 
 #### C.3.c.2 - Profil colorimétrique
 
@@ -112,20 +119,24 @@ Le résultat du calibrage de la sonde, ou parfois d'un calibrage à l'œil, est 
 
 *![Capture d'écran des options de profil Windows]()*
 
-*![Capture d'écran des options de profil Ubuntu]()*
+*![Capture d'écran des options de profil Ubuntu](img/ubuntu-profiles.png)*  
+Choix des profils colorimétriques sous *Ubuntu Linux* dans la section *Color* des paramètres. Un bouton permet d'ajouter des profils (prédéfinis ou importés via un fichier, par exemple généré par une sonde) à la liste sous chaque écran pour changer facilement de profil par la suite.
 
 ----
 Sources et références
 
 [^1]:
+    Pour autant que les couleurs de l'écran soit à peu près uniformes et identiques aussi bien au centre que sur les bords et dans les coins...
+
+[^2]:
     Il faut bien noter qu'il n'est pas nécessaire du tout que les écrans utilisent l'espace colorimétrique de la diffusion : grâce à la gestion des couleurs, les images affichées sont converties pour l'espace de l'écran de sorte que les couleurs affichées sont exactement celles de la diffusion quoi qu'il arrive ; calibrer les écrans dans l'espace de diffusion permet juste d'éviter cette conversion, et d'éviter les erreurs de configurations courantes en choisissant systématiquement l'espace de la diffusion, que ce soit pour l'affichage, la sortie des fichers, etc.  
     Un exemple concret : en travaillant en vidéo et pour la télévision, les images seront en *Rec.709*, mais les écrans de travail sont par défaut en *sRGB*. Lors de la fabrication des images, il faut donc préciser (mais c'est souvent automatique), que l'on affiche les images en *sRGB*, alors que lors des exports on choisira *Rec.709*.  
     Si l'on calibre les écrans en *Rec.709*, on pourra simplement choisir *Rec.709* partout sans se tromper (mais c'est moins standard en informatique, et les configurations par défaut ou automatiques risquent d'être fausses...).
 
-[^2]:
+[^3]:
     Il est conseillé de commencer par restaurer les réglages de l'écran dans des paramètres les plus neutres possible, désactiver les économies d'énergie, les différents modes éventuels (jeu, bureau, vidéo...), afin de laisser la sonde et le système contrôler les couleurs.
 
-[^3]:
+[^4]:
     DisplayCAL est gratuit et disponible sur Linux, MacOS, Windows et prend en charge une large gamme de marques et modèles de sondes : https://displaycal.net/  
     Comme toujours, on vous encourage fortement à faire un don si vous décidez de l'utiliser !
 

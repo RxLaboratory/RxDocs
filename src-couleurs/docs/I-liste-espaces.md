@@ -4,6 +4,8 @@ Il ne serait pas possible de lister ici tous les espaces colorimétriques qui ex
 
 [TOC]
 
+![](img/comparison.png)
+
 ## sRGB / CIE 61966-2-1 / IEC 61966-2-1
 
 Espace d'affichage, ***display-referred***.
@@ -12,7 +14,7 @@ Le sRGB (pour standard RGB) est un des espaces les plus courant en informatique 
 
 Il date de 1996.
 
-![](img/srgb.png)
+![](img/srgb-gammut.png)
 
 ### Primaires
 
@@ -89,7 +91,7 @@ Rec. 709 est la norme de la Télévision Haute Définition, *HDTV* et date de 19
 
 Il est très proche du *sRGB*, seule la courbe de transfert change (et son point blanc doit être un peu plus intense).
 
-![](img/srgb.png)
+![](img/srgb-gammut.png)
 
 ### Primaires
 
