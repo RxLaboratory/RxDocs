@@ -49,7 +49,7 @@ Voici les paramètres de l'environnement tel qu'il est préconnisé par l'espace
     C'est une luminosité faible à très faible, plus faible que la luminosité typique d'un bureau (qui se situe entre 300 et 500 lux).
 - **Température de l'éclairage** : *5003 K*, *D50*.  
     C'est une lumière relativement orangée, proche de celle du soleil. Elle est volontairement un peu éloignée du blanc du *sRGB* et donc des écrans (qui est de *6500 K*, *D65*).
-- **Couleur des murs** : Gris moyen (réflectance de 20%).
+- **Couleur des murs** : Gris moyen (réflectance de 20%).  
     Les murs devraient absorber 80% des rayons lumineux qu'ils reçoivent, ce qui en fait des murs d'un gris moyen.
 - **Luminosité de l'écran** : *80 cd/m²*  
     Le *sRGB* (tout comme le *P3* pour l'affichage) préconise une luminosité relativement faible des écrans (si l'environnement est peu lumineux). Une luminosité un peu plus élevée peu être nécessaire si l'environnement n'est pas assez sombre. Il faut noter que les espacecs dédiés à la vidéo comme le *Rec.709* ou *Rec.2020* sont adaptés aux écrans *TV* avec une luminosité d'écran de *100 cd/m²*, et qu'il peut donc être utile d'augmenter la luminosité des écrans vers cette valeur si l'on produit pour la télévision (ou le cinéma).
