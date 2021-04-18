@@ -31,6 +31,8 @@ L'usage d'une sonde permet ainsi de surmonter tous ces obstacles :
 - Elles évitent d'avoir besoin d'une référence : elles peuvent mesurer objectivement les couleurs, dont les valeurs peuvent être comparées directement aux valeurs attendues par l'espace colorimétrique de l'écran.
 - La plupart des sondes peuvent rester branchées à l'ordinateur, et mesurent régulièrement la lumière ambiante, afin d'en compenser les variations en direct.
 
+*![Photo d'une sonde sur un écran]()*
+
 Toutefois, en l'absence de sonde, il est aussi possible d'améliorer l'affichage des couleurs avec un autre capteur : l'œil. Les résultats ne seront pas aussi précis qu'avec une sonde, mais on peut toutefois améliorer l'affichage des écrans les plus mauvais. Le principal problème de la calibration à l'œil étant le manque de référence objective pour comparer les couleurs : il est impossible d'être certain que les couleurs affichées soient les bonnes. L'influence de l'environnement est aussi un problème, mais qui peut être compensé avec une bonne organisation.
 
 ## C.2 - Environnement
@@ -87,9 +89,17 @@ Si l'on utilise une sonde, le processus est en général assez simple : on branc
 
 Si l'on calibre à l'œil, le principe est d'afficher une série de *mires*, d'images de référence, et d'essayer d'ajuster des réglages de l'écran à la main pour s'approcher de la description d'une image de référence. Il est complètement impossible de régler correctement les *primaires[\*](ZZ-vocabulaire.md)* et le *point blanc[\*](ZZ-vocabulaire.md)* à l'œil, mais on peut essayer de s'en approcher en affichant différentes images. Par contre, la *luminosité[\*](ZZ-vocabulaire.md)*, le *contraste[\*](ZZ-vocabulaire.md)*, le *gama[\*](ZZ-vocabulaire.md)* peuvent être relativement bien approchés grâce à des comparaisons de valeurs de gris entre elles (et beaucoup de patience).
 
-Pour calibrer à l'œil plusieurs méthodes sont possibles, mais tout commence toujours par l'affichage de mires et d'images de références. Certains systèmes d'exploitation en proposent, on peut aussi en trouver sur le net [comme ici](http://www.lagom.nl/lcd-test/).
+Pour calibrer à l'œil plusieurs méthodes sont possibles, mais tout commence toujours par l'affichage de mires et d'images de références. Certains systèmes d'exploitation en proposent, on peut aussi en trouver sur le net [comme celles que nous proposons ici](media/test-images.zip), soigneusement fabriquées pour accompagner ce document.
 
-*![Quelques mires]()*
+Ces mires peuvent aussi servir à contrôler le résultat du calibrage avec une sonde.
+
+*![Niveaux de noir](img/black-level.svg)*
+
+*![Niveaux de blanc](img/white-level.svg)*
+
+*![Niveaux de blanc](img/contrast.svg)*
+
+Le mieux est d'afficher ces mires en plein écran et avec l'environnement maîtrisé, comme expliqué précédemment au chapitre *C.2 - Environnement*.
 
 Ensuite, en affichant les images, on retouche les réglages de l'écran. Il y a trois possibilités :
 
@@ -113,7 +123,7 @@ Exemple de paramètres via les réglages d'une carte graphique *Nvidia* (sous *L
 
 #### C.3.c.2 - Profil colorimétrique
 
-Le résultat du calibrage de la sonde, ou parfois d'un calibrage à l'œil, est enregistré dans un *profil colorimétrique*, une *LUT*. C'est le système d'exploitation qui va appliquer ce profil ou cette *LUT* à toutes les couleurs lors de l'affichage sur l'écran correspondant et ainsi convertir ces couleurs afin qu'elles s'affichent exactement comme elles le doivent.
+Le résultat du calibrage de la sonde, ou parfois d'un calibrage à l'œil, est enregistré dans un *profil colorimétrique*, une *LUT[\*](ZZ-vocabulaire.md)*. C'est le système d'exploitation qui va appliquer ce profil ou cette *LUT* à toutes les couleurs lors de l'affichage sur l'écran correspondant et ainsi convertir ces couleurs afin qu'elles s'affichent exactement comme elles le doivent.
 
 *![Capture d'écran des options de profil Mac]()*
 
@@ -121,6 +131,8 @@ Le résultat du calibrage de la sonde, ou parfois d'un calibrage à l'œil, est 
 
 *![Capture d'écran des options de profil Ubuntu](img/ubuntu-profiles.png)*  
 Choix des profils colorimétriques sous *Ubuntu Linux* dans la section *Color* des paramètres. Un bouton permet d'ajouter des profils (prédéfinis ou importés via un fichier, par exemple généré par une sonde) à la liste sous chaque écran pour changer facilement de profil par la suite.
+
+Une fois le calibrage terminé et le profil appliqué, on peut contrôler le résultat en affichant différentes mires (voir plus haut, *C.3.c.1 - Calibration* à l'œil), et aussi vérifier la qualité de l'écran après calibration. Notez que si vous calibrez avec une sonde mais que l'affichage des mires n'est pas parfait, c'est probablement plus lié à la qualité de l'écran qu'à un défaut de calibrage.
 
 ----
 Sources et références

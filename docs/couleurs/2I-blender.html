@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nicolas Dufresne and contributors">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>I - Blender - RxDocs - Gestion des couleurs</title>
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="style.css" rel="stylesheet">
+  <link href="video.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "I - Blender";
+    var mkdocs_page_input_path = "2I-blender.md";
+    var mkdocs_page_url = "/couleurs/2I-blender.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> RxDocs - Gestion des couleurs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gestion des couleurs</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="index.html">Introduction</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">La Théorie</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="A-definition.html">A - Qu'est ce que la couleur ?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="B-inventaire.html">B - Petit inventaire et classification des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="C-perception.html">C - Perception des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="D-reproduction.html">D - Reproduction des couleurs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="E-temperature.html">E - Retour sur les blancs, température</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="F-representation.html">F - Représentation objective</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="G-numerisation.html">G - Du réel au numérique</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="K-pix-format.html">K - Format des pixels</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="M-LUT.html">M - Les LUTs</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="N-ocio.html">N - OCIO, ACES</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">La pratique</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="2A-pratique.html">A - Choisir ses espaces colorimétriques et formats</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="2B-standards.html">B - Quelques standards</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="2C-calibration.html">C - Calibration des écrans</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="2D-ocio.md">D - Concevoir une chaîne de fabrication avec OCIO</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">E - Adobe After Effects</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">F - Adobe Media Encoder</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="2I-blender.html">I - Blender</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#iii-gestion-des-couleurs-blender">II.I - Gestion des couleurs : Blender</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#i1-configuration-par-defaut-filmic">I.1 - Configuration par défaut : Filmic</a></li>
+        
+            <li><a class="toctree-l4" href="#i2-chaine-de-fabrication-ocio">I.2 - Chaîne de fabrication OCIO</a></li>
+        
+            <li><a class="toctree-l4" href="#i3-utiliser-aces">I.3 - Utiliser ACES</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">F - DuME</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">H - Krita</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">I - Darktable</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Annexes</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-vocabulaire.html">Glossaire</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="ZZ-english.html">Dictionnaire français - anglais</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org">Tous les documents RxLab</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/contact/">Contact</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="https://rainboxlab.org/about/donate/">Donate</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">RxDocs - Gestion des couleurs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>La pratique &raquo;</li>
+        
+      
+    
+    <li>I - Blender</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/2I-blender.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="iii-gestion-des-couleurs-blender">II.I - Gestion des couleurs : Blender<a class="headerlink" href="#iii-gestion-des-couleurs-blender" title="Permanent link">&para;</a></h1>
+<p><em><a href="http://blender.org">Blender</a></em> utilise nativement <em>OpenColorIO<a href="ZZ-vocabulaire.html">*</a></em> (<em>cf</em>. <em><a href="N-ocio.html">I.N - OpenColorIO et ACES</a></em>) pour la gestion des couleurs, et ses paramètres sont très simples.</p>
+<p>Une excellente configuration <em>OCIO</em> par défaut est fournie avec <em>Blender</em>, qui inclue les espaces nécessaires pour importer des fichiers images et vidéo, exporter dans plusieurs formats, et un espace de travail <em>Filmic</em> fonctionnant très bien pour les rendus 3D.</p>
+<p>On peut toutefois aussi facilement utiliser une configuration avec <em>ACES</em> si l&rsquo;on souhaite en profiter ou intégrer Blender à une chaîne de fabrication en <em>ACES</em>, l&rsquo;espace de travail <em>ACES</em> étant légèrement différent de <em>Filmic</em>.</p>
+<div class="toc">
+<ul>
+<li><a href="#iii-gestion-des-couleurs-blender">II.I - Gestion des couleurs : Blender</a><ul>
+<li><a href="#i1-configuration-par-defaut-filmic">I.1 - Configuration par défaut : Filmic</a><ul>
+<li><a href="#i1a-rendu-scene-referred-et-affichage">I.1.a - Rendu (scene referred) et affichage</a></li>
+<li><a href="#i1b-sortie">I.1.b - Sortie</a></li>
+<li><a href="#i1c-entree-textures">I.1.c - Entrée (textures)</a></li>
+</ul>
+</li>
+<li><a href="#i2-chaine-de-fabrication-ocio">I.2 - Chaîne de fabrication OCIO</a><ul>
+<li><a href="#i2a-changer-la-configuration-ocio">I.2.a - Changer la configuration OCIO</a></li>
+</ul>
+</li>
+<li><a href="#i3-utiliser-aces">I.3 - Utiliser ACES</a><ul>
+<li><a href="#i3a-rendu-scene-referred">I.3.a - Rendu (scene referred)</a></li>
+<li><a href="#i3b-entree-textures">I.3.b - Entrée (textures)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="i1-configuration-par-defaut-filmic">I.1 - Configuration par défaut : <em>Filmic</em><a class="headerlink" href="#i1-configuration-par-defaut-filmic" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="img/aces/standard.jpg" />
+<em>a. Rendu sans gestion des couleurs, avec l&rsquo;espace de travail sRGB <strong>standard</strong>.</em></p>
+<p><img alt="" src="img/aces/filmic.jpg" />
+<em>b. Rendu avec gestion des couleurs, dans l&rsquo;espace de travail <strong>Filmic</strong>.</em></p>
+<p>Avec la configuration par défaut et l&rsquo;espace <em>Filmic</em> pour le rendu (<em>scene referred</em>), voici les quelques paramètres de couleur dans Blender.</p>
+<h3 id="i1a-rendu-scene-referred-et-affichage">I.1.a - Rendu (scene referred) et affichage<a class="headerlink" href="#i1a-rendu-scene-referred-et-affichage" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="img/blender/blender-scene_referred.png" /></p>
+<p>Ces paramètres se situent dans les paramètres de rendu, section <em>Color Management</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>En sortie <strong><em>OpenEXR</em></strong>, seules les données brutes (linéaires) sont enregistrées.</li>
+<li><strong><em>Pour les autres formats</em></strong>, les paramètres sont appliqués lors de la conversion vers l&rsquo;espace colorimétrique du format de sortie.</li>
+</ul>
+</div>
+<p>Il est important de bien noter que dans une chaîne de production avec gestion des couleurs, et utilisant le format <em>OpenEXR<a href="ZZ-vocabulaire.html">*</a></em> comme format intermédiaire (et donc d&rsquo;enregistrement en sortie de <em>Blender</em>), toutes ces options n&rsquo;influencent que l&rsquo;<strong>affichage</strong> du rendu dans <em>Blender</em> mais pas les données enregistrées dans le fichier <em>OpenEXR</em> ! Il faut donc ré-appliquer les mêmes réglages dans les applications suivantes de la chaîne (de compositing comme <em>Nuke</em>, <em>After Effects</em>, etc. par exemple).</p>
+<p>Si les autres applications n&rsquo;utilisent pas <em>OpenColorIO<a href="ZZ-vocabulaire.html">*</a></em> (et qu&rsquo;on ne peut donc pas donner la configuration <em>OCIO</em> de <em>Blender</em>), on peut toutefois retrouver ces réglages via des <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> exportées depuis la configuration OCIO de Blender. <em>Cf</em>. <em>I.2 - Chaîne de fabrication</em> OCIO</p>
+<p>Par contre, ce n&rsquo;est pas le cas quand on enregistre les images dans d&rsquo;autres formats (<em>PNG</em>, vidéo, etc.), auquel cas <em>Blender</em> applique tous les réglages dans l&rsquo;image qui, contrairement à l&rsquo;<em>OpenEXR</em>, est enregistrée dans un espace colorimétrique précis (<em>sRGB</em> pour les images, <em>Rec.709</em> pour les vidéos, etc.).</p>
+<ul>
+<li><strong><em>Display Device</em></strong> : choisissez l&rsquo;espace d&rsquo;affichage. En général, laissez sur <em>sRGB</em>.</li>
+<li><strong><em>View Transform</em></strong> : c&rsquo;est le paramètre de l&rsquo;espace de travail (scene referred) qui transforme les données brutes linéaires du moteur de rendu vers l&rsquo;affichage.<ul>
+<li><em>Filmic</em> (<em>fig. a</em>) : C&rsquo;est l&rsquo;espace par défaut, très performant pour atténuer les hautes lumières qui brûlent facilement et garder des détails dans les zones sombres. Il simule en fait l&rsquo;impression des images sur pellicule et permet un rendu assez fin et détaillé.</li>
+<li><em>Standard</em> (<em>fig. b</em>) : Affiche les données dans l&rsquo;espace d&rsquo;affichage ; cette option permet de voir comment une application afficherait l&rsquo;image sans application de l&rsquo;espace <em>Filmic</em>. Il est peu utile, les hautes lumières devenant trop facilement brûlées, sauf éventuellement en utilisant les outils de courbes plus bas.</li>
+<li><em>Filmic Log</em> : une version logarithmique du <em>Filmic</em>, destinée surtout à effectuer d&rsquo;importantes retouches de couleurs en compositing.</li>
+<li><em>Raw</em> : affiche les données brutes sans transformation, telles qu&rsquo;elles sont enregistrées dans les fichiers <em>OpenEXR</em> si c&rsquo;est le format choisi en sortie.</li>
+<li><em>False Color</em> : un affichage contrasté en couleurs variées destiné à pouvoir analyser en détail le contenu de l&rsquo;image.</li>
+</ul>
+</li>
+<li><strong><em>Look</em></strong> : applique en plus de l&rsquo;espace de travail (<em>View Transform</em>) un réglage supplémentaire selon un choix purement artistique et créatif.<br />
+    Chacune des options est un choix de contraste de l&rsquo;image. <em>Medium</em> et <em>None</em> sont exactement les mêmes options.</li>
+<li><strong><em>Exposure</em></strong> et <strong><em>Gamma</em></strong> : changent l&rsquo;exposition et appliquent une éventuelle correction <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> à l&rsquo;image.<br />
+    Mieux vaut ne pas changer ces paramètres si la chaîne de fabrication implique d&rsquo;autres applications après la sortie de <em>Blender</em> et qu&rsquo;on utilise le format <em>OpenEXR</em>. Ils peuvent toutefois être utiles pour retoucher simplement le contraste de l&rsquo;image en sortie, si on exporte dans un format d&rsquo;image ou vidéo final, autre que <em>EXR</em>. Ces réglages influençant l&rsquo;espace de travail, ils s&rsquo;appliquent <em>après</em> les noeuds de compositing.</li>
+<li><strong><em>Sequencer</em></strong> : réglage de l&rsquo;espace de travail du séquenceur (le module de montage vidéo).<br />
+    N&rsquo;influence pas les images 3D ni le compositing.</li>
+</ul>
+<p><em>Blender</em> propose aussi un outil d&rsquo;ajustement de l&rsquo;image via des courbes, qui permet des retouches fines de l&rsquo;image.</p>
+<p><img alt="" src="img/blender/blender-scene_referred-curves.png" /><br />
+<em>Cet exemple reproduit à peu près ce que fait l&rsquo;espace</em> Filmic.</p>
+<p>Si cet outil peut être pratique pour retoucher les images qui sortent de <em>Blender</em>, il est à proscrire si l&rsquo;on travaille sur une chaîne avec gestion des couleurs et utilisant le format <em>OpenEXR</em> : il serait trop compliqué de reproduire exactement le même effet de courbes dans les applications qui suivent <em>Blender</em> dans la chaîne de fabrication.</p>
+<h3 id="i1b-sortie">I.1.b - Sortie<a class="headerlink" href="#i1b-sortie" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="img/blender/blender-output-exr.png" /></p>
+<p><em>Blender</em> n&rsquo;affiche pas d&rsquo;option de couleurs (à part quelques modes et la profondeur) pour la sortie des images ; il utilise l&rsquo;espace standard du format de sortie (<em>sRGB</em> pour les formats image, données brutes linéaires en <em>OpenEXR</em>)</p>
+<p>En <em>OpenEXR</em> les deux <em>profondeurs<a href="ZZ-vocabulaire.html">*</a></em> sont :</p>
+<ul>
+<li><em>Float (Half)</em> : <em>16 bpc</em> float.</li>
+<li><em>Float (Full)</em> : <em>32 bpc</em> float.</li>
+</ul>
+<p>Suivant le compositing à faire dans les applications suivantes ou les formats finaux, on pourra préférer <em>Float (Full)</em> en gardant à l&rsquo;esprit que les fichiers seront parfois bien plus gros et lourds en calculs.</p>
+<p><em>Cf</em>. chapitre <em><a href="K-pix-format.html">I.K - Format des pixels</a></em> pour plus d&rsquo;informations.</p>
+<p><img alt="" src="img/blender/blender-outout-png.png" /></p>
+<p>Ce qu&rsquo;il faut retenir :</p>
+<ul>
+<li>En <strong><em>OpenEXR</em></strong> (et <em>OpenEXR MultiLayer</em>) : ce sont les données brutes et linéaires qui sont enregistrées.<br />
+    Il faudra ré-appliquer les mêmes réglages que ceux choisis dans les paramètres de rendu et <em>color management</em> lors de l&rsquo;utilisation des fichiers dans d&rsquo;autres applications pour retrouver la même image. C&rsquo;est le format qui permet le meilleur contrôle et la meilleure qualité.</li>
+<li>Dans les autres formats <strong>image et vidéo</strong> : ce sont les données converties via l&rsquo;espace de travail vers l&rsquo;espace standard du fichier qui sont enregistrées (<em>sRGB</em> ou <em>Rec.709</em> en général). Les images affichées telles quelles seront donc automatiquement les mêmes que dans <em>Blender</em> (mais on perd en qualité avec la perte de la linéarité notamment, et de <em>profondeur des couleurs</em>).</li>
+</ul>
+<h3 id="i1c-entree-textures">I.1.c - Entrée (textures)<a class="headerlink" href="#i1c-entree-textures" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="img/blender/blender-input-list.png" /></p>
+<p>À l&rsquo;ajout d&rsquo;images dans <em>Blender</em>, le sélecteur <em>Color Space</em> permet de préciser l&rsquo;espace colorimétrique utilisé par le fichier en question.</p>
+<ul>
+<li><strong><em>Filmic Log</em></strong> : à utiliser (uniquement) au cas où le fichier est un fichier <em>OpenEXR</em> précédemment exporté ou rendu par <em>Blender</em> avec l&rsquo;espace de travail <em>Filmic Log</em>.</li>
+<li><strong><em>Linear</em></strong> : pour les fichiers <em>OpenEXR</em> standards (ou d&rsquo;autres formats éventuels en <em>RGB linéaire</em>).</li>
+<li><strong><em>Linear ACES</em></strong> : pour les fichiers <em>OpenEXR</em> rendus avec l&rsquo;espace de travail <em>ACEScg</em>.</li>
+<li><strong><em>Non-Color</em></strong> et <strong><em>Raw</em></strong> : le fichier ne contient pas une image mais des données (comme une <em>normal map</em>, une <em>displacement map</em>, une <em>metalness</em>, etc.)</li>
+<li><strong><em>sRGB</em></strong> : pour tous les fichiers image et vidéo standards.</li>
+<li><strong><em>XYZ</em></strong> : en cas de chaîne de production dans l&rsquo;espace XYZ.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>La présence de l&rsquo;espace <em>Linear ACES</em> permet d&rsquo;importer des images ayant utilisé <em>ACES</em>, mais <em>Blender</em> ne s&rsquo;intègre pas pour autant complètement dans une chaîne de fabrication utilisant <em>ACES</em> par défaut ; en effet il ne propose pas d&rsquo;espace de travail <em>ACES</em>.<br />
+<em>Cf</em>. <em>I.3 - Utiliser</em> ACES</p>
+</div>
+<h2 id="i2-chaine-de-fabrication-ocio">I.2 - Chaîne de fabrication OCIO<a class="headerlink" href="#i2-chaine-de-fabrication-ocio" title="Permanent link">&para;</a></h2>
+<p>Cf. <em><a href="2D-ocio.md">II.D - Concevoir une chaîne de fabrication avec <em>OpenColorIO</em></a></em>.</p>
+<p>La configuration <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em> fournie par défaut avec <em>Blender</em>, <em>Filmic</em>, est disponible dans le dossier de configuration de <em>Blender</em>, <code>datafiles/colormanagement/config.ocio</code>.</p>
+<p>Il est donc possible d&rsquo;utiliser cette configuration sur toute la chaîne de production en pointant cette configuration dans les autres applications, ou en définissant la variable d&rsquo;environnement <code>OCIO</code> sur ce fichier.</p>
+<p>Pour inclure des applications n&rsquo;utilisant pas <em>OpenColorIO</em> à la chaîne (comme <em>Adobe After Effects</em> ou <em>Adobe Photoshop</em>), on peut toujours générer les <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> nécessaires, en particulier la <em>LUT</em> qui convertit les images linéaires (comme en <em>openEXR<a href="ZZ-vocabulaire.html">*</a></em>) vers <em>sRGB</em> ou d&rsquo;autres espaces courants. Nous proposons plusieurs de ces <a href="media/filmic-luts.zip"><em>LUT</em> en téléchargement ici</a>, dans différents formats. Il suffit alors d&rsquo;appliquer la <em>LUT</em> voulue pour retrouver l&rsquo;espace <em>Filmic</em> de Blender dans une autre application.</p>
+<h3 id="i2a-changer-la-configuration-ocio">I.2.a - Changer la configuration OCIO<a class="headerlink" href="#i2a-changer-la-configuration-ocio" title="Permanent link">&para;</a></h3>
+<p>Pour utiliser une configuration différente de la <em>Filmic</em> par défaut, <em>Blender</em> ne permet pas de sélection une configuration via l&rsquo;interface, mais deux solutions sont possible.</p>
+<ul>
+<li>
+<p>Via la variable d&rsquo;environnement<br />
+    On peut simplement changer la variable d&rsquo;environnement du système <code>OCIO</code> pour pointer vers le chemin de la configuration à utiliser.<br />
+    Cf. <em><a href="2D-ocio.md">II.D - Concevoir une chaîne de fabrication avec <em>OpenColorIO</em></a></em>.</p>
+</li>
+<li>
+<p>En remplaçant le fichier dans le dossier <em>Blender</em><br />
+    On peut aussi supprimer la configuration existante dans le dossier de <em>Blender</em> pour y copier la nouvelle configuration (le fichier <code>ocio.config</code> et les sous-dossiers associés). Pensez simplement à garder une copie de la configuration d&rsquo;origine !</p>
+</li>
+</ul>
+<p>Il est aussi bien sûr possible d&rsquo;éditer soi-même le fichier de <code>ocio.config</code> de <em>Blender</em>, pour les utilisateurs avancés.</p>
+<h2 id="i3-utiliser-aces">I.3 - Utiliser <em>ACES</em><a class="headerlink" href="#i3-utiliser-aces" title="Permanent link">&para;</a></h2>
+<p>Il peut être intéressant d&rsquo;utiliser l&rsquo;espace de travail <em>ACEScg</em> plutôt que le <em>Filmic</em> par défaut de <em>Blender</em> pour un rendu un peu différent, ou pour intégrer <em>Blender</em> à une chaîne de production utilisant <em>ACES</em>.</p>
+<p>Voici une comparaison des résultats du même rendu dans différents espaces :</p>
+<p><img alt="" src="img/aces/standard.jpg" />
+<em>a. Rendu sans gestion des couleurs, avec l&rsquo;espace de travail sRGB <strong>standard</strong>.</em></p>
+<p><img alt="" src="img/aces/filmic.jpg" />
+<em>b. Rendu avec gestion des couleurs, dans l&rsquo;espace de travail <strong>Filmic</strong> (réglage &ldquo;Medium-Contrast&rdquo;).</em></p>
+<p><img alt="" src="img/aces/aces.jpg" />
+<em>c. Rendu avec gestion des couleurs, dans l&rsquo;espace de travail <strong>ACEScg</strong>.</em></p>
+<p>Comme on peut le voir sur ces images, <em>ACES</em> garde mieux la saturation des couleurs très lumineuses, et un peu plus de contraste, alors que <em>Filmic</em> a tendance à ternir un peu les images.</p>
+<p>Pour utiliser <em>ACES<a href="ZZ-vocabulaire.html">*</a></em> avec <em>Blender</em> et profiter de son espace de travail performant, il suffit d&rsquo;utiliser la configuration <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em> correspondante.</p>
+<p>Cependant, la configuration fournie par <em>OCIO</em> pour <em>ACES</em> comporte une longue liste d&rsquo;espaces colorimétriques correspondant à divers modèles de caméras, très utile en cinéma pour le travail sur les images filmées, mais qui complique la tâche en animation et notamment dans <em>Blender</em>.</p>
+<p><img alt="" src="img/blender/blender-default-aces.png" />
+<em>La liste des espaces colorimétriques affichée dans</em> Blender <em>avec la configuration</em> ACES <em>d&rsquo;origine !</em></p>
+<p><a href="https://rainboxlab.org/downloads/aces-anim/aces-anim_1.0.3.zip">Nous proposons en téléchargement ici</a> une version modifiée de <em>ACES</em> spécifiquement pour l&rsquo;animation, notamment en limitant le nombre d&rsquo;espaces colorimétriques inclus à ceux qui sont potentiellement réellement nécessaire en animation. Ce travail effectué depuis les sources de <em>Sony Pictures ImageWorks</em> est <a href="https://github.com/Rainbox-dev/Aces-Anim-OpenColorIO-Config">disponible ici sur Github</a>.</p>
+<p><img alt="" src="img/blender/blender-input-aces-simple.png" />
+<em>La liste des espaces colorimétriques affichée dans</em> Blender <em>avec la configuration</em> ACES <em>ajustée par nos soins.</em></p>
+<p>Voici les nouveaux réglages disponibles une fois cette configuration installée.</p>
+<h3 id="i3a-rendu-scene-referred">I.3.a - Rendu (scene referred)<a class="headerlink" href="#i3a-rendu-scene-referred" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="img/blender/blender-scene_referred-aces.png" /></p>
+<p>Voici les réglages des paramètres de rendu, <em>color management</em>, une fois <em>ACES<a href="ZZ-vocabulaire">*</a></em> disponible.</p>
+<ul>
+<li><em>Display Device</em> ne contient plus qu&rsquo;une seule option, <em>ACES</em>. Ce n&rsquo;est pas très standard dans la manière de fonctionner, mais <em>ACES</em> est fait comme ça&hellip;</li>
+<li>C&rsquo;est <em>View Transform</em> qui contient les espaces d&rsquo;affichage, auxquels sont appliqués l&rsquo;espace de travail <em>ACEScg</em>.</li>
+<li>Il n&rsquo;y a pas de <em>Look</em> créatif fournit avec <em>ACES</em>. Les <em>Looks</em> de <em>Filmic</em> ne sont de toute manière pas très utiles (ils peuvent facilement être reproduits en compositing).</li>
+</ul>
+<p><img alt="" src="img/blender/blender-scene_referred-aces-list.png" /></p>
+<p>Choisissez simplement l&rsquo;espace d&rsquo;affichage correspondant à votre écran (généralement <em>sRGB</em>).</p>
+<ul>
+<li><em>Raw</em> affiche les données brutes sans transformation, telles qu’elles sont enregistrées dans les fichiers OpenEXR si c’est le format choisi en sortie.</li>
+<li><em>Log</em> est l&rsquo;équivalent <em>ACES</em> de <em>Filmic Log</em>, utile en cas de retouches fortes en compositing.</li>
+<li>Plusieurs espaces proposent une variation avec le <em>point blanc<a href="ZZ-vocabulaire">*</a></em> <em>D60</em> au lieu de <em>D65</em>. En effet, <em>D60</em> (environ <em>6000 K</em>) est le <em>point blanc</em> de <em>ACES</em> et choisir une de ces options permet de voir l&rsquo;image sans la conversion du <em>point blanc</em>.</li>
+</ul>
+<h3 id="i3b-entree-textures">I.3.b - Entrée (textures)<a class="headerlink" href="#i3b-entree-textures" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="img/blender/blender-input-aces-simple.png" /></p>
+<p>Pour l&rsquo;import des images, une grande liste d&rsquo;espace colorimétriques potentiels est disponible. Voici les plus utiles et les plus courants.</p>
+<ul>
+<li>Les espaces <strong><em>ACES</em></strong> sont les espaces habituels de <em>ACES</em>:<ul>
+<li><strong><em>ACES2065-1</em></strong> : espace colorimétrique pour le stockage préconisé par la norme <em>ACES</em> dans les fichiers <em>OpenEXR</em>, mais encore assez peu utilisé.</li>
+<li><strong><em>ACEScc</em></strong> et <strong><em>ACES - ACEScct</em></strong> : espace colorimétrique <em>ACES</em> dédié à la correction des couleurs, dans des fichiers <em>OpenEXR</em> en général. Il est peu probable que l&rsquo;on aie à importer ce genre de ficher dans <em>Blender</em>, sauf éventuellement un fichier <em>OpenEXR</em> venant d&rsquo;un logiciel d&rsquo;étalonnage ou de compositing.</li>
+<li><strong><em>ACEScg</em></strong> : espace de travail de <em>ACES</em> pour les rendus et le compositing. Dans une chaîne utilisant <em>ACES</em>, les textures peuvent être fabriquées dans cet espace et importées dans <em>Blender</em> via des fichiers <em>OpenEXR</em>.</li>
+</ul>
+</li>
+<li><strong><em>Input - Generic - sRGB - Texture</em></strong> et <strong><em>Utility - sRGB - Texture</em></strong> sont identiques. Pour les fichiers images standards en <em>sRGB</em> (<em>PNG</em>, <em>TGA</em>, etc).</li>
+<li>Les espaces <strong><em>Output</em></strong> ne devraient pas être utiles en entrée&hellip;</li>
+<li>Les espaces <strong><em>Role</em></strong> sont des alias pour d&rsquo;autres espaces en fonction de leur usage, et peu utiles ici.</li>
+<li>Les espaces <strong><em>Utility</em></strong> contiennent plusieurs éléments importants pour importer des images dans <em>Blender</em> :<ul>
+<li><strong><em>Curve</em></strong> convertissent uniquement la courbe de transfert des fichiers importés, mais pas les primaires.</li>
+<li><strong><em>Linear</em></strong> convertissent uniquement les primaires mais pas la courbe de transfert. Certains sont courants et utiles :<ul>
+<li><strong><em>Linear - sRGB</em></strong> est l&rsquo;espace par défaut des fichiers <em>OpenEXR</em>.</li>
+<li><strong><em>Linear - Rec.709</em></strong> est parfaitement identique à <em>Linear - sRGB</em>.</li>
+</ul>
+</li>
+<li><strong><em>Raw</em></strong> est l&rsquo;espace à utiliser pour les fichiers ne contenant pas des images mais d&rsquo;autres données (comme les <em>normal map</em>, <em>displacement map</em>, <em>metalness</em>, etc.)</li>
+<li><strong><em>Rec.709 - Display</em></strong> est l&rsquo;espace des vidéos HD standard (<em>MP4</em> par exemple)</li>
+<li><strong><em>Rec.2020 - Display</em></strong> est un espace de vidéo UHD (4K)</li>
+</ul>
+</li>
+</ul>
+<p>En résumé :</p>
+<ul>
+<li>Fichiers <strong><em>OpenEXR</em></strong> contenant de l&rsquo;image : <strong><em>ACES - ACEScg</em></strong> si le fichier vient d&rsquo;une application travaillant en <em>ACES</em>, <strong><em>Utility - Linear - sRGB</em></strong> dans les autres cas.</li>
+<li>Fichiers <strong><em>OpenEXR</em></strong> contenant des données autres que de la couleur : <strong><em>Utility - Raw</em></strong>.</li>
+<li>Fichiers <strong><em>image</em></strong> (<em>PNG</em>, <em>JPG</em>, <em>TGA</em>, etc.) : <strong><em>Utility - sRGB - Texture</em></strong>.</li>
+<li>Fichiers <strong><em>vidéo</em></strong> (<em>MP4</em>) : <strong><em>Utility - Rec.709 - Texture</em></strong> dans la majorité des cas, <strong><em>Utility - Rec.2020 - Display</em></strong> en cas de vidéo UHD.</li>
+</ul>
+<hr />
+<p>Sources et références</p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/18" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ZZ-erreurs.html" class="btn btn-neutral float-right" title="Erreurs et résolution des problèmes">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="2C-calibration.html" class="btn btn-neutral" title="C - Calibration des écrans"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="2C-calibration.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="ZZ-erreurs.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="video.js" defer></script>
+      <script src="meta.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>

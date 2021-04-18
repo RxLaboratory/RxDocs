@@ -49,10 +49,11 @@ nav:
         - A - Choisir ses espaces colorimétriques et formats: 2A-pratique.md
         - B - Quelques standards: 2B-standards.md
         - C - Calibration des écrans: 2C-calibration.md
-        - D - Adobe After Effects: .
-        - E - Blender: .
+        - D - Concevoir une chaîne de fabrication avec OCIO: 2D-ocio.md
+        - E - Adobe After Effects: .
+        - F - Adobe Media Encoder: .
+        - I - Blender: 2I-blender.md
         - F - DuME: .
-        - G - Adobe Media Encoder: .
         - H - Krita: .
         - I - Darktable: .
     - Annexes:

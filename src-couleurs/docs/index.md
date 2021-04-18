@@ -1,4 +1,4 @@
-# Petit uide technique de la gestion des couleurs dans la production audiovisuelle
+# Petit Guide technique de la gestion des couleurs dans la production audiovisuelle
 
 ## À propos
 
@@ -98,7 +98,7 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
 - M - [Les LUTs](M-LUT.md)
     - M.1 - Description
     - M.2 - Utilisation
-- N - [OCIO, ACES](N-ocio.md)
+- N - [OpenColorIO et ACES](N-ocio.md)
     - N.1 - Applications compatibles
     - N.2 - ACES
         - N.2.a - Espaces colorimétriques ACES
@@ -122,33 +122,45 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
     - A.7 - Sortie finale
 - B - [Quelques standards](2B-standards.md)
 - C - [Calibration des écrans](2C-calibration.md)
-    - Introduction
-    - Environnement
-    - Calibration
-        - Choix de l'espace colorimétrique de l'écran et de la calibration
-- D - Color management : Adobe After Effects
+    - C.1 - Introduction
+    - C.2 - Environnement
+    - C.3 - Calibration
+        - C.3.a - Choix de l'espace colorimétrique de l'écran et de la calibration
+        - C.3.b - Point blanc et luminosité
+        - C.3.c - Calibration et application du profil colorimétrique
+            - C.3.c.1 - Calibration
+            - C.3.c.2 - Profil colorimétrique
+- D - Préparer la chaîne de fabrication
+- E - [Concevoir une chaîne de fabrication avec *OpenColorIO*](2D-ocio.md)
+- EF - Color management : Adobe After Effects
     - Projet
     - Entrée
     - Affichage
     - Sortie
     - OCIO
-- E - Color management : Blender
-    - Entrée
-    - Rendu
-    - Affichage et sortie
-    - ACES ou Filmic
-- F - Color management : DuME
+- G - Color management : Adobe Media Encoder
+- H - Color management : Adobe Photoshop
+- I - [Gestion des couleurs : Blender](2I-blender.md)
+    - I.1 - Configuration par défaut : *Filmic*
+        - I.1.a - Rendu (scene referred) et affichage
+        - I.1.b - Sortie
+        - I.1.c - Entrée (textures)
+    - I.2 - Chaîne de fabrication OCIO
+        - I.2.a - Changer la configuration OCIO
+    - I.3 - Utiliser *ACES*
+        - I.3.a - Rendu (scene referred) et affichage
+        - I.3.b - Entrée (textures)
+- H - Color management : Darktable
+- I - Color management : DuME
     - Espace de travail
     - Entrée
     - Sortie
     - LUTs
     - OCIO
-- G - Color management : Adobe Media Encoder
-- H - Color management : Krita
+- J - Color management : Krita
     - Document
     - Entrée
     - Sortie
-- I - Color management : Darktable
     - Entrée et espace de travail
     - Sortie
 

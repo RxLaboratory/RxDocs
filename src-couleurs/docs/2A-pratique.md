@@ -53,6 +53,11 @@ Voici les caractéristiques les plus couramment utiles pour un espace de travail
 - ***Linéaire*** dans la grande majorité des cas, pour améliorer la fusion des couleurs, il peut être utile pour les corrections colorimétriques d'utiliser un espace non-linéaire.
 - ***Gammut large*** afin de travailler dans un espace capable de reproduire fidèlement un grand nombre de couleurs et gagner en précision.
 
+Certaines applications permettent de changer d'espace de travail, ce qui est particulièrement intéressant dans le cas des moteurs de rendu 3D : l'espace de travail influence le rendu des couleurs et permet d'ajuster la manière de travailler les lumières et les matériaux.
+
+!!! warning
+    L'espace de travail se choisit **avant** de commencer à travailler ; en effet, c'est une fois l'espace choisi qu'on travaille les couleurs dans l'espace en question. Changer d'espace de travail une fois le travail avancé n'a aucun sens ; il faudra en effet retoucher toutes les lumières, tous les réglages de couleurs...
+
 ## A.3 - Entrée
 
 À chaque importation d'un fichier ou autre élément externe, l'application doit bien interpréter (connaître) l'espace colorimétrique de l'élément, afin de le convertir vers son espace de travail.

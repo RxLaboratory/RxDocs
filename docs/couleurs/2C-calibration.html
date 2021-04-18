@@ -156,19 +156,23 @@
                 </li>
                 <li class="">
                     
-    <a class="" href=".">D - Adobe After Effects</a>
+    <a class="" href="2D-ocio.md">D - Concevoir une chaîne de fabrication avec OCIO</a>
                 </li>
                 <li class="">
                     
-    <a class="" href=".">E - Blender</a>
+    <a class="" href=".">E - Adobe After Effects</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">F - Adobe Media Encoder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="2I-blender.html">I - Blender</a>
                 </li>
                 <li class="">
                     
     <a class="" href=".">F - DuME</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href=".">G - Adobe Media Encoder</a>
                 </li>
                 <li class="">
                     
@@ -304,6 +308,7 @@ Une sonde est en fait un capteur de lumière qui fonctionne en tandem avec l&rsq
 <li>Elles évitent d&rsquo;avoir besoin d&rsquo;une référence : elles peuvent mesurer objectivement les couleurs, dont les valeurs peuvent être comparées directement aux valeurs attendues par l&rsquo;espace colorimétrique de l&rsquo;écran.</li>
 <li>La plupart des sondes peuvent rester branchées à l&rsquo;ordinateur, et mesurent régulièrement la lumière ambiante, afin d&rsquo;en compenser les variations en direct.</li>
 </ul>
+<p><em><img alt="Photo d'une sonde sur un écran" src="" /></em></p>
 <p>Toutefois, en l&rsquo;absence de sonde, il est aussi possible d&rsquo;améliorer l&rsquo;affichage des couleurs avec un autre capteur : l&rsquo;œil. Les résultats ne seront pas aussi précis qu&rsquo;avec une sonde, mais on peut toutefois améliorer l&rsquo;affichage des écrans les plus mauvais. Le principal problème de la calibration à l&rsquo;œil étant le manque de référence objective pour comparer les couleurs : il est impossible d&rsquo;être certain que les couleurs affichées soient les bonnes. L&rsquo;influence de l&rsquo;environnement est aussi un problème, mais qui peut être compensé avec une bonne organisation.</p>
 <h2 id="c2-environnement">C.2 - Environnement<a class="headerlink" href="#c2-environnement" title="Permanent link">&para;</a></h2>
 <p>Avant toute chose, un paramètre relativement facile à maîtriser est l&rsquo;environnement de travail et la lumière ambiante dans lesquelles sont vues les couleurs de l&rsquo;écran.</p>
@@ -319,7 +324,7 @@ Une sonde est en fait un capteur de lumière qui fonctionne en tandem avec l&rsq
     C&rsquo;est une luminosité faible à très faible, plus faible que la luminosité typique d&rsquo;un bureau (qui se situe entre 300 et 500 lux).</li>
 <li><strong>Température de l&rsquo;éclairage</strong> : <em>5003 K</em>, <em>D50</em>.<br />
     C&rsquo;est une lumière relativement orangée, proche de celle du soleil. Elle est volontairement un peu éloignée du blanc du <em>sRGB</em> et donc des écrans (qui est de <em>6500 K</em>, <em>D65</em>).</li>
-<li><strong>Couleur des murs</strong> : Gris moyen (réflectance de 20%).
+<li><strong>Couleur des murs</strong> : Gris moyen (réflectance de 20%).<br />
     Les murs devraient absorber 80% des rayons lumineux qu&rsquo;ils reçoivent, ce qui en fait des murs d&rsquo;un gris moyen.</li>
 <li><strong>Luminosité de l&rsquo;écran</strong> : <em>80 cd/m²</em><br />
     Le <em>sRGB</em> (tout comme le <em>P3</em> pour l&rsquo;affichage) préconise une luminosité relativement faible des écrans (si l&rsquo;environnement est peu lumineux). Une luminosité un peu plus élevée peu être nécessaire si l&rsquo;environnement n&rsquo;est pas assez sombre. Il faut noter que les espacecs dédiés à la vidéo comme le <em>Rec.709</em> ou <em>Rec.2020</em> sont adaptés aux écrans <em>TV</em> avec une luminosité d&rsquo;écran de <em>100 cd/m²</em>, et qu&rsquo;il peut donc être utile d&rsquo;augmenter la luminosité des écrans vers cette valeur si l&rsquo;on produit pour la télévision (ou le cinéma).</li>
@@ -341,8 +346,12 @@ Une sonde est en fait un capteur de lumière qui fonctionne en tandem avec l&rsq
 <p><em><img alt="Capture d'écran de DisplayCAL" src="img/displaycal.png" /></em>
 <em>Paramètres de calibration de</em> DisplayCAL</p>
 <p>Si l&rsquo;on calibre à l&rsquo;œil, le principe est d&rsquo;afficher une série de <em>mires</em>, d&rsquo;images de référence, et d&rsquo;essayer d&rsquo;ajuster des réglages de l&rsquo;écran à la main pour s&rsquo;approcher de la description d&rsquo;une image de référence. Il est complètement impossible de régler correctement les <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> et le <em>point blanc<a href="ZZ-vocabulaire.html">*</a></em> à l&rsquo;œil, mais on peut essayer de s&rsquo;en approcher en affichant différentes images. Par contre, la <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em>, le <em>contraste<a href="ZZ-vocabulaire.html">*</a></em>, le <em>gama<a href="ZZ-vocabulaire.html">*</a></em> peuvent être relativement bien approchés grâce à des comparaisons de valeurs de gris entre elles (et beaucoup de patience).</p>
-<p>Pour calibrer à l&rsquo;œil plusieurs méthodes sont possibles, mais tout commence toujours par l&rsquo;affichage de mires et d&rsquo;images de références. Certains systèmes d&rsquo;exploitation en proposent, on peut aussi en trouver sur le net <a href="http://www.lagom.nl/lcd-test/">comme ici</a>.</p>
-<p><em><img alt="Quelques mires" src="" /></em></p>
+<p>Pour calibrer à l&rsquo;œil plusieurs méthodes sont possibles, mais tout commence toujours par l&rsquo;affichage de mires et d&rsquo;images de références. Certains systèmes d&rsquo;exploitation en proposent, on peut aussi en trouver sur le net <a href="media/test-images.zip">comme celles que nous proposons ici</a>, soigneusement fabriquées pour accompagner ce document.</p>
+<p>Ces mires peuvent aussi servir à contrôler le résultat du calibrage avec une sonde.</p>
+<p><em><img alt="Niveaux de noir" src="img/black-level.svg" /></em></p>
+<p><em><img alt="Niveaux de blanc" src="img/white-level.svg" /></em></p>
+<p><em><img alt="Niveaux de blanc" src="img/contrast.svg" /></em></p>
+<p>Le mieux est d&rsquo;afficher ces mires en plein écran et avec l&rsquo;environnement maîtrisé, comme expliqué précédemment au chapitre <em>C.2 - Environnement</em>.</p>
 <p>Ensuite, en affichant les images, on retouche les réglages de l&rsquo;écran. Il y a trois possibilités :</p>
 <ul>
 <li>Retoucher les réglages de l&rsquo;écran ; mais ils sont souvent assez limités et peu précis.</li>
@@ -359,11 +368,12 @@ Exemple de paramètres via les réglages d&rsquo;une carte graphique <em>Nvidia<
 <p><em><img alt="Capture d'écran du profilage Mac" src="" /></em></p>
 <p><em><img alt="Capture d'écran du profilage Windows" src="" /></em></p>
 <h4 id="c3c2-profil-colorimetrique">C.3.c.2 - Profil colorimétrique<a class="headerlink" href="#c3c2-profil-colorimetrique" title="Permanent link">&para;</a></h4>
-<p>Le résultat du calibrage de la sonde, ou parfois d&rsquo;un calibrage à l&rsquo;œil, est enregistré dans un <em>profil colorimétrique</em>, une <em>LUT</em>. C&rsquo;est le système d&rsquo;exploitation qui va appliquer ce profil ou cette <em>LUT</em> à toutes les couleurs lors de l&rsquo;affichage sur l&rsquo;écran correspondant et ainsi convertir ces couleurs afin qu&rsquo;elles s&rsquo;affichent exactement comme elles le doivent.</p>
+<p>Le résultat du calibrage de la sonde, ou parfois d&rsquo;un calibrage à l&rsquo;œil, est enregistré dans un <em>profil colorimétrique</em>, une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em>. C&rsquo;est le système d&rsquo;exploitation qui va appliquer ce profil ou cette <em>LUT</em> à toutes les couleurs lors de l&rsquo;affichage sur l&rsquo;écran correspondant et ainsi convertir ces couleurs afin qu&rsquo;elles s&rsquo;affichent exactement comme elles le doivent.</p>
 <p><em><img alt="Capture d'écran des options de profil Mac" src="" /></em></p>
 <p><em><img alt="Capture d'écran des options de profil Windows" src="" /></em></p>
 <p><em><img alt="Capture d'écran des options de profil Ubuntu" src="img/ubuntu-profiles.png" /></em><br />
 Choix des profils colorimétriques sous <em>Ubuntu Linux</em> dans la section <em>Color</em> des paramètres. Un bouton permet d&rsquo;ajouter des profils (prédéfinis ou importés via un fichier, par exemple généré par une sonde) à la liste sous chaque écran pour changer facilement de profil par la suite.</p>
+<p>Une fois le calibrage terminé et le profil appliqué, on peut contrôler le résultat en affichant différentes mires (voir plus haut, <em>C.3.c.1 - Calibration</em> à l&rsquo;œil), et aussi vérifier la qualité de l&rsquo;écran après calibration. Notez que si vous calibrez avec une sonde mais que l&rsquo;affichage des mires n&rsquo;est pas parfait, c&rsquo;est probablement plus lié à la qualité de l&rsquo;écran qu&rsquo;à un défaut de calibrage.</p>
 <hr />
 <p>Sources et références</p>
 <p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/17" /></p>
@@ -394,7 +404,7 @@ Comme toujours, on vous encourage fortement à faire un don si vous décidez de 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ZZ-erreurs.html" class="btn btn-neutral float-right" title="Erreurs et résolution des problèmes">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="2I-blender.html" class="btn btn-neutral float-right" title="I - Blender">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="2B-standards.html" class="btn btn-neutral" title="B - Quelques standards"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -430,7 +440,7 @@ Comme toujours, on vous encourage fortement à faire un don si vous décidez de 
         <span><a href="2B-standards.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="ZZ-erreurs.html" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="2I-blender.html" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

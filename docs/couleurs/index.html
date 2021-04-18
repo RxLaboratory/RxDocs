@@ -57,7 +57,7 @@
     <a class="current" href="index.html">Introduction</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#petit-uide-technique-de-la-gestion-des-couleurs-dans-la-production-audiovisuelle">Petit uide technique de la gestion des couleurs dans la production audiovisuelle</a></li>
+    <li class="toctree-l3"><a href="#petit-guide-technique-de-la-gestion-des-couleurs-dans-la-production-audiovisuelle">Petit Guide technique de la gestion des couleurs dans la production audiovisuelle</a></li>
     
         <ul>
         
@@ -154,19 +154,23 @@
                 </li>
                 <li class="">
                     
-    <a class="" href=".">D - Adobe After Effects</a>
+    <a class="" href="2D-ocio.md">D - Concevoir une chaîne de fabrication avec OCIO</a>
                 </li>
                 <li class="">
                     
-    <a class="" href=".">E - Blender</a>
+    <a class="" href=".">E - Adobe After Effects</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href=".">F - Adobe Media Encoder</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="2I-blender.html">I - Blender</a>
                 </li>
                 <li class="">
                     
     <a class="" href=".">F - DuME</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href=".">G - Adobe Media Encoder</a>
                 </li>
                 <li class="">
                     
@@ -257,7 +261,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="petit-uide-technique-de-la-gestion-des-couleurs-dans-la-production-audiovisuelle">Petit uide technique de la gestion des couleurs dans la production audiovisuelle<a class="headerlink" href="#petit-uide-technique-de-la-gestion-des-couleurs-dans-la-production-audiovisuelle" title="Permanent link">&para;</a></h1>
+                <h1 id="petit-guide-technique-de-la-gestion-des-couleurs-dans-la-production-audiovisuelle">Petit Guide technique de la gestion des couleurs dans la production audiovisuelle<a class="headerlink" href="#petit-guide-technique-de-la-gestion-des-couleurs-dans-la-production-audiovisuelle" title="Permanent link">&para;</a></h1>
 <h2 id="a-propos">À propos<a class="headerlink" href="#a-propos" title="Permanent link">&para;</a></h2>
 <p>Ce guide fait partie d&rsquo;une collection de documents gérés par <a href="http://rainboxlab.org"><em>RxLaboratory</em></a> : <a href="http://docs.rainboxlab.org"><strong><em>RxDocs</em></strong></a>.  </p>
 <p><a href="http://rainboxlab.org"><em>RxLaboratory</em></a> est une organisation ayant pour mission de développer, distribuer, promouvoir les logiciels libres et l&rsquo;innovation dans la production audiovisuelle, ainsi que de faciliter l&rsquo;entraide, le partage et la coopération entre tous les acteurs de ce domaine.</p>
@@ -387,7 +391,7 @@
 <li>M.2 - Utilisation</li>
 </ul>
 </li>
-<li>N - <a href="N-ocio.html">OCIO, ACES</a><ul>
+<li>N - <a href="N-ocio.html">OpenColorIO et ACES</a><ul>
 <li>N.1 - Applications compatibles</li>
 <li>N.2 - ACES<ul>
 <li>N.2.a - Espaces colorimétriques ACES<ul>
@@ -423,15 +427,23 @@
 </li>
 <li>B - <a href="2B-standards.html">Quelques standards</a></li>
 <li>C - <a href="2C-calibration.html">Calibration des écrans</a><ul>
-<li>Introduction</li>
-<li>Environnement</li>
-<li>Calibration<ul>
-<li>Choix de l&rsquo;espace colorimétrique de l&rsquo;écran et de la calibration</li>
+<li>C.1 - Introduction</li>
+<li>C.2 - Environnement</li>
+<li>C.3 - Calibration<ul>
+<li>C.3.a - Choix de l&rsquo;espace colorimétrique de l&rsquo;écran et de la calibration</li>
+<li>C.3.b - Point blanc et luminosité</li>
+<li>C.3.c - Calibration et application du profil colorimétrique<ul>
+<li>C.3.c.1 - Calibration</li>
+<li>C.3.c.2 - Profil colorimétrique</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>D - Color management : Adobe After Effects<ul>
+</ul>
+</li>
+<li>D - Préparer la chaîne de fabrication</li>
+<li>E - <a href="2D-ocio.md">Concevoir une chaîne de fabrication avec <em>OpenColorIO</em></a></li>
+<li>EF - Color management : Adobe After Effects<ul>
 <li>Projet</li>
 <li>Entrée</li>
 <li>Affichage</li>
@@ -439,14 +451,28 @@
 <li>OCIO</li>
 </ul>
 </li>
-<li>E - Color management : Blender<ul>
-<li>Entrée</li>
-<li>Rendu</li>
-<li>Affichage et sortie</li>
-<li>ACES ou Filmic</li>
+<li>G - Color management : Adobe Media Encoder</li>
+<li>H - Color management : Adobe Photoshop</li>
+<li>I - <a href="2I-blender.html">Gestion des couleurs : Blender</a><ul>
+<li>I.1 - Configuration par défaut : <em>Filmic</em><ul>
+<li>I.1.a - Rendu (scene referred) et affichage</li>
+<li>I.1.b - Sortie</li>
+<li>I.1.c - Entrée (textures)</li>
 </ul>
 </li>
-<li>F - Color management : DuME<ul>
+<li>I.2 - Chaîne de fabrication OCIO<ul>
+<li>I.2.a - Changer la configuration OCIO</li>
+</ul>
+</li>
+<li>I.3 - Utiliser <em>ACES</em><ul>
+<li>I.3.a - Rendu (scene referred) et affichage</li>
+<li>I.3.b - Entrée (textures)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>H - Color management : Darktable</li>
+<li>I - Color management : DuME<ul>
 <li>Espace de travail</li>
 <li>Entrée</li>
 <li>Sortie</li>
@@ -454,14 +480,10 @@
 <li>OCIO</li>
 </ul>
 </li>
-<li>G - Color management : Adobe Media Encoder</li>
-<li>H - Color management : Krita<ul>
+<li>J - Color management : Krita<ul>
 <li>Document</li>
 <li>Entrée</li>
 <li>Sortie</li>
-</ul>
-</li>
-<li>I - Color management : Darktable<ul>
 <li>Entrée et espace de travail</li>
 <li>Sortie</li>
 </ul>
