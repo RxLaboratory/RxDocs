@@ -13,10 +13,10 @@ L'intérêt des espaces non-linéaires est donc double : comme espaces pour le s
 *![Comparaison d'un sélecteur de couleur linéaire et non-linéaire](img/color-picker.svg)*  
 *La sélection de couleurs sombres est bien plus difficile en linéaire, tandis qu'avec un gamma l'échelle de luminosité parait plus régulière et logique.*
 
-Les espaces linéaires ont cependant aussi leur intérêt : ils simplifient les calculs (pour les développeurs), et en simulant la lumière réelle et physique permettent notamment aux moteurs de rendus 3D de générer efficacement des images réalistes. En deux dimensions aussi, les espaces linéaires permettent de meilleurs calculs dans la fusion des couleurs (les différents types de transparences) et règle les problèmes de franges apparaissant dans certains mélanges de couleurs, et permettent des mélanges plus réalistes, plus logiques.
+Les espaces linéaires ont cependant aussi leur intérêt : ils simplifient les calculs (pour les développeurs), et en simulant la lumière réelle et physique permettent notamment aux moteurs de rendus 3D de générer efficacement des images réalistes. En deux dimensions aussi, les espaces linéaires permettent de meilleurs calculs dans la fusion des couleurs (les différents types de transparences) et règlent les problèmes de franges apparaissant dans certains mélanges de couleurs, permettant des mélanges plus réalistes, plus logiques.
 
 *![Comparaison de fusion linéaires et non-linéaires](img/fusion.svg)*  
-*Remarquez comme les couleurs se mélangent de manière plus naturelle en linéaire, notamment le bleu dans le rouge qui tire sur le magenta, et surtout comment les mélanges n'assombrissent et ne désaturent pas les couleurs.*
+*Remarquez comme les couleurs se mélangent de manière plus naturelle en linéaire, notamment le bleu dans le rouge qui tire sur le magenta, et surtout comment les mélanges ne s'assombrissent et ne désaturent pas les couleurs.*
 
 !!! note 
     Il est important de bien noter que choisir un espace linéaire pour stocker (et travailler) les images impose une [*profondeur de couleur*](K-pix-format.md) plus grande, afin de garder la qualité lors de la conversion vers les espaces non-linéaires d'affichage et de diffusion.

@@ -24,7 +24,7 @@ Un tel système *soustractif* produit donc les couleurs en allant du *blanc[\*](
 
 Une conséquence importante est qu'un système soustractif dépend de la lumière qui l'éclaire pour reproduire les couleurs : vu sous une lumière pauvre en rayons *monochromatiques[\*](ZZ-vocabulaire.md)*, une peinture exposée ne rendra pas toutes ses couleurs possibles. Il faut pour cela l'éclairer non seulement d'une lumière blanche, mais d'une lumière blanche "contenant" suffisamment de rayons *monochromatiques[\*](ZZ-vocabulaire.md)* différents, de grande qualité[^1].
 
-Une peinture, une affiche, et n'importe quel objet éclairé sous une lumière monochromatique ne pourra reproduire *que* cette couleur *monochromatique[\*](ZZ-vocabulaire.md)*, à différentes intensités, quels que soient les pigments qui les composent.
+Une peinture, une affiche ou n'importe quel autre objet éclairé sous une lumière monochromatique ne pourra reproduire *que* cette couleur *monochromatique[\*](ZZ-vocabulaire.md)*, à différentes intensités, quels que soient les pigments qui les composent.
 
 ----
 

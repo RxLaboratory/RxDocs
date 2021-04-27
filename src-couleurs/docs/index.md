@@ -6,10 +6,13 @@ Ce guide fait partie d'une collection de documents gérés par [*RxLaboratory*](
 
 [*RxLaboratory*](http://rainboxlab.org) est une organisation ayant pour mission de développer, distribuer, promouvoir les logiciels libres et l'innovation dans la production audiovisuelle, ainsi que de faciliter l'entraide, le partage et la coopération entre tous les acteurs de ce domaine.
 
-[*RxDocs*](http://docs.rainboxlab.org) est un travail collaboratif de vulgarisation scientifique, technique et artistique dans le domaine de la production audiovisuelle au sens large : image, vidéo, animation, son... Ces documents s'adressent à toute personne travaillant dans le domaine (phographe, vidéaste, motion designer, réalisateur, animateur, illustrateur, chef opérateur, monteur...)
+[*RxDocs*](http://docs.rainboxlab.org) est un travail collaboratif de vulgarisation scientifique, technique et artistique dans le domaine de la production audiovisuelle au sens large : image, vidéo, animation, son... Ces documents s'adressent à toute personne travaillant dans le domaine (phographie, vidéo, motion design, réalisation, animation, illustration, chef op, montage...)
 
 !!! warning
     Ce document est en cours d'écriture et encore loin d'être terminé ; si vous arrivez ici, considérez le bien comme un brouillon tout au long de votre lecture ! Tous les chapitres peuvent ne pas être encore écrits et la table des matières est toujours susceptible de changer.
+
+!!! note
+    Tous les noms suivis d'une astérisque* sont expliqués dans le [Glossaire](ZZ-vocabulaire.md)
 
 ## Introduction
 
@@ -132,7 +135,7 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
             - C.3.c.2 - Profil colorimétrique
 - D - Préparer la chaîne de fabrication
 - E - [Concevoir une chaîne de fabrication avec *OpenColorIO*](2D-ocio.md)
-- EF - Color management : Adobe After Effects
+- F - Color management : Adobe After Effects
     - Projet
     - Entrée
     - Affichage

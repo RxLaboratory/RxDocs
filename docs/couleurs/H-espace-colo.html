@@ -290,13 +290,13 @@
 </div>
 <p><em><img alt="Image: Schéma du CIE avec quelques sous ensembles" src="img/spaces-comparison.png" /></em></p>
 <h2 id="h1-ce-qui-definit-un-espace-colorimetrique">H.1 - Ce qui définit un espace colorimétrique<a class="headerlink" href="#h1-ce-qui-definit-un-espace-colorimetrique" title="Permanent link">&para;</a></h2>
-<p>L&rsquo;ensemble des couleurs pouvant être représentées par un espace colorimétrique dépend d&rsquo;un paramètre principal : <strong>Les couleurs primaires</strong> de l&rsquo;espace colorimétriques.</p>
+<p>L&rsquo;ensemble des couleurs pouvant être représentées par un espace colorimétrique dépend d&rsquo;un paramètre principal : <strong>Les couleurs primaires</strong> de l&rsquo;espace colorimétrique.</p>
 <p>La manière de représenter ces couleurs dépend de deux autres paramètres qui complètent la définition d&rsquo;un espace colorimétrique : <strong>Le point blanc</strong> et <strong>la courbe de transfert</strong>.</p>
 <h3 id="h1a-les-primaires-et-le-gamut">H.1.a - Les primaires et le gamut<a class="headerlink" href="#h1a-les-primaires-et-le-gamut" title="Permanent link">&para;</a></h3>
 <p>Le plus souvent au nombre de 3, les couleurs primaires sont les valeurs primordiales de l&rsquo;espace colorimétrique ; elles peuvent être représentées par des coordonnées précises dans l&rsquo;espace <em>CIE XYZ</em> (qui est une représentation de toutes les couleurs visibles sur trois axes). Elles sont dans la majorité des cas une nuance de <em>Rouge</em>, de <em>Vert</em> et de <em>Bleu</em>, et se rapprochent dans l&rsquo;idéal le plus possible d&rsquo;une couleur réelle monochromatique (la bordure extérieur du diagramme <em>CIE xy</em>).</p>
 <p><em><img alt="Image: Schéma du CIE avec les primaires du sRGB" src="img/srgb-primaries.png" /></em></p>
 <p>Chaque espace définit donc ses couleurs primaires par au moins trois coordonnées dans l&rsquo;espace <em>CIE XYZ</em>.</p>
-<p>Par exemple, voici les coordonnées du Rouge, Vert et Bleu de l&rsquo;espace <em>sRGB</em> :</p>
+<p>Par exemple, voici les coordonnées du Rouge, Vert et Bleu de l&rsquo;espace <em>sRGB (standard Red, Green, Blue)</em> :</p>
 <table>
 <thead>
 <tr>
@@ -366,17 +366,17 @@
 <p>L&rsquo;illuminant <em>D65</em> est celui le plus couramment utilisé comme point blanc dans les différents espaces colorimétriques.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Le point blanc est parfois lui même, par simplification, considéré comme une primaire (dans le sens où il est aussi simplement une couleur précise, une coordonnées dans le <em>CIE XYZ</em>). Dans ce cas les <em>primaires</em> de l&rsquo;espace sont au minimum au nombre de 4 et l&rsquo;espace n&rsquo;est plus défini que par deux paramètres.</p>
+<p>Le point blanc est parfois lui même, par simplification, considéré comme une primaire (dans le sens où il est aussi simplement une couleur précise, une coordonnée dans le <em>CIE XYZ</em>). Dans ce cas les <em>primaires</em> de l&rsquo;espace sont au minimum au nombre de 4 et l&rsquo;espace n&rsquo;est plus défini que par deux paramètres.</p>
 </div>
 <p>L&rsquo;espace colorimétrique associe normalement aussi au point blanc son intensité maximum, sa luminance, le plus souvent mesuré en <em>cd/m²</em>.</p>
 <h3 id="h1c-la-courbe-de-transfert">H.1.c - La courbe de transfert<a class="headerlink" href="#h1c-la-courbe-de-transfert" title="Permanent link">&para;</a></h3>
-<p>Les couleurs dans un espace colorimétriques sont données par l&rsquo;intensité de chaque primaire, représentée par une valeur variant de <code>0.0</code> à <code>1.0</code>.</p>
+<p>Les couleurs dans un espace colorimétrique sont données par l&rsquo;intensité de chaque primaire, représentée par une valeur variant de <code>0.0</code> à <code>1.0</code>.</p>
 <p>La valeur <code>0.0</code> représente une intensité nulle (l&rsquo;absence de lumière, un noir parfait) et la valeur <code>1.0</code> représente la couleur donnée par la coordonnée de la primaire dans le <em>CIE XYZ</em>.</p>
 <p>La question se pose de savoir comment les valeurs intermédiaires sont transcrites en couleurs réelles (ou en coordonnées dans le <em>CIE XYZ</em>). Cette transcription est faite par la <strong>courbe de transfert</strong>. C&rsquo;est une &ldquo;simple&rdquo; fonction mathématique qui, pour une valeur donnée dans l&rsquo;espace colorimétrique, donne la coordonnée <em>Z</em> correspondante dans le <em>CIE XYZ</em>.</p>
 <p><em><img alt="Image: Courbe de transfert du sRGB vs linéaire" src="" /></em></p>
 <p>L&rsquo;espace est dit <em>linéaire</em> quand cette courbe est une simple fonction affine, c&rsquo;est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle.</p>
 <p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un <em>gamma 2,4</em>); les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes.</p>
-<p>Voir la section intitulée <a href="L-transfert.html">*L - Courbes de transfert, espace linéaire et gamma</a>* pour plus de détails.</p>
+<p>Voir la section intitulée <em><a href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a></em> pour plus de détails.</p>
 <h2 id="h2-autres-parametres">H.2 - Autres paramètres<a class="headerlink" href="#h2-autres-parametres" title="Permanent link">&para;</a></h2>
 <p>Les espaces colorimétriques peuvent aussi imposer ou préconiser d&rsquo;autres paramètres, surtout sur la manière d&rsquo;encoder/stocker les couleurs, en fonction de leurs usages prévus.</p>
 <h3 id="h2a-format-de-pixel">H.2.a - Format de pixel<a class="headerlink" href="#h2a-format-de-pixel" title="Permanent link">&para;</a></h3>

@@ -141,7 +141,7 @@ Suivant les systèmes, les standards varient, notamment en raison du *sous-écha
 
 En *RGB* chaque *couche[\*](ZZ-vocabulaire.md)* comporte autant d'information (il n'y a pas de sous-échantillonnage), et si en théorie on pourrait imaginer un nombre arbitraire de *bits[\*](ZZ-vocabulaire.md)* pour stocker les *couches* (et c'est le cas dans certains formats de fichiers), on utilise généralement des multiples de 8 (et donc des octets entiers[^8]).
 
-#### 8 bpc / 24 bits / 24 bpp / 32 bits avec alpha
+#### K.3.a.a 8 bpc / 24 bits / 24 bpp / 32 bits avec alpha
 
 La plupart des images utilisent 8 *bits* par *couche*. Avec 8 bits, on peut coder 2<sup>8</sup>, c'est à dire 256, valeurs différentes (de 0 à 255). Avec trois couches, on a donc un total de 8<sup>3</sup>, c'est à dire un peu plus de 16 millions, de valeurs différentes pour un pixel.
 
@@ -153,7 +153,7 @@ Cette profondeur n'est pas non plus suffisante pour le travail pour la télévis
 
 Pour pouvoir travailler sans dégrader l'image, on augmente donc la profondeur de couleur de l'espace de travail.
 
-#### 16 bpc / 48 bits / 48 bpp / 64 bits avec alpha
+#### K.3.a.b 16 bpc / 48 bits / 48 bpp / 64 bits avec alpha
 
 En ajoutant un octet pour chaque couche, on augmente grandement le nombre de nuances disponibles. En effet, on porte à 2<sup>16</sup>, soit 65536, le nombre de valeurs disponibles pour chaque couche. Ce qui fait un total de 65536<sup>3</sup>, soit plusieurs *trillions*, de nuances par pixel.
 
@@ -164,12 +164,12 @@ En règle générale, ces 16 *bits* par *couche* apportent la précision nécess
 
 On peut donc encore augmenter la profondeur de couleur dans ces cas précis.
 
-#### 32 bpc / 96 bits / 96 bpp / 128 bits avec alpha
+#### K.3.a.c 32 bpc / 96 bits / 96 bpp / 128 bits avec alpha
 
 !!! warning
     Ne pas confondre *32 bpc* (par couche) avec *32 bits* ou *32 bpp* (par pixel) qui est en fait seulement *8 bpc* (avec une couche alpha) !
 
-On ajoute un troisième octet par couche, ce qui augmente encore exponentiellement le nombre de nuances disponibles, avec 2<sup>32</sup>, 4 milliards, de valeurs possible par *couche[\*](ZZ-vocabulaire.md)*, soit un nombre qu'on considèrera infini de nuances par pixel.
+On ajoute un troisième octet par couche, ce qui augmente encore exponentiellement le nombre de nuances disponibles, avec 2<sup>32</sup>, 4 milliards, de valeurs possibles par *couche[\*](ZZ-vocabulaire.md)*, soit un nombre qu'on considèrera infini de nuances par pixel.
 
 Ce mode est celui qui permet un travail virtuellement sans aucune perte sur l'image, quel que soit l'espace colorimétrique utilisé, qu'il soit linéaire ou non, mais devient très lourd en terme de mémoire.
 
@@ -185,31 +185,31 @@ En prenant en compte le *sous-échantillonage de la chrominance*, on peut calcul
 
 Les différents modes ne se différencient donc qu'en terme de qualité, et en règle générale, plus on augmente la résolution l'image et le *gamut[\*](ZZ-vocabulaire.md)* de l'espace colorimétrique, plus on augmente la profondeur pour s'assurer que les dégradés restent fins et sans effet d'escalier ("*banding*" en anglais).
 
-#### 8 bits
+#### K.3.b.a 8 bits
 
 C'est la profondeur la plus répandue en informatique ; la plupart des écrans d'ordinateurs ne peuvant pas afficher plus de nuances.
 
 - En *4:4:4*, cela signifie que chaque pixel est représenté par *24 bits*.
 - En *4:2:2*, cela signifie qu'un pixel est représenté *en moyenne* par *16 bits*, avec en réalité la moitié des pixels (une colonne sur deux) contenant *24 bits* (*8 bits* par couche), et l'autre moitié contenant *8 bits* (*8 bits* de luminance et aucun de chrominance).
-- En *4:2:0*, cela signifie qu'un pixel est représenté *en moyenne* par *12 bits*, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant *24 bits* (*8 bits* par couche), et le dernier quart *8 bits* (*8 bits* de luminance et aucun de chrominance).
+- En *4:2:0*, cela signifie qu'un pixel est représenté *en moyenne* par *12 bits*, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant *24 bits* (*8 bits* par couche), et le dernier quart, *8 bits* (*8 bits* de luminance et aucun de chrominance).
 
 C'est la profondeur standard pour les vidéos *HD* en *Rec.709*.
 
-#### 10 bits
+#### K.3.b.b 10 bits
 
 C'est la profondeur de base des vidéos haut de gamme et *UHD* en *Rec.2020*.
 
 - En *4:4:4*, cela signifie que chaque pixel est représenté par *30 bits*.
-- En *4:2:2*, cela signifie qu'un pixel est représenté *en moyenne* par *20 bits*,, avec en réalité la moitié des pixels (une colonne sur deux) contenant *30 bits* (*10 bits* par couche), et l'autre moitié contenant *10 bits* (*10 bits* de luminance et aucun de chrominance).
-- En *4:2:0*, cela signifie qu'un pixel est représenté *en moyenne* par *15 bits*1, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant *30 bits* (*10 bits* par couche), et le dernier quart *10 bits* (*10 bits* de luminance et aucun de chrominance).
+- En *4:2:2*, cela signifie qu'un pixel est représenté *en moyenne* par *20 bits*, avec en réalité la moitié des pixels (une colonne sur deux) contenant *30 bits* (*10 bits* par couche), et l'autre moitié contenant *10 bits* (*10 bits* de luminance et aucun de chrominance).
+- En *4:2:0*, cela signifie qu'un pixel est représenté *en moyenne* par *15 bits*, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant *30 bits* (*10 bits* par couche), et le dernier quart, *10 bits* (*10 bits* de luminance et aucun de chrominance).
 
-#### 12 bits
+#### K.3.b.c 12 bits
 
 C'est la profondeur "*HDR*" des vidéos haut de gamme et *UHD* en *Rec.2020*.
 
 - En *4:4:4*, cela signifie que chaque pixel est représenté par *36 bits*.
-- En *4:2:2*, cela signifie qu'un pixel est représenté *en moyenne* par *24 bits*,, avec en réalité la moitié des pixels (une colonne sur deux) contenant *36 bits* (*12 bits* par couche), et l'autre moitié contenant *12 bits* (*12 bits* de luminance et aucun de chrominance).
-- En *4:2:0*, cela signifie qu'un pixel est représenté *en moyenne* par *18 bits*, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant *18 bits* (*12 bits* par couche), et le dernier quart *12 bits* (*12 bits* de luminance et aucun de chrominance).
+- En *4:2:2*, cela signifie qu'un pixel est représenté *en moyenne* par *24 bits*, avec en réalité la moitié des pixels (une colonne sur deux) contenant *36 bits* (*12 bits* par couche), et l'autre moitié contenant *12 bits* (*12 bits* de luminance et aucun de chrominance).
+- En *4:2:0*, cela signifie qu'un pixel est représenté *en moyenne* par *18 bits*, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant *18 bits* (*12 bits* par couche), et le dernier quart, *12 bits* (*12 bits* de luminance et aucun de chrominance).
 
 ### K.3.c - Autres
 

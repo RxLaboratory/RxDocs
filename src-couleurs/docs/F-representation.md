@@ -55,9 +55,9 @@ Ce diagramme contenant toutes les couleurs visibles **sert toujours de référen
 
 ## F.3 - Autres espaces de la CIE
 
-Depuis l'établissement de ces premiers espaces colorimétriques et jusqu'à aujourd'hui, la CIE a continué ces travaux, améliorant l'espace *xyZ* et créant d'autres espaces plus spécifiques et pour des usages particulier.
+Depuis l'établissement de ces premiers espaces colorimétriques et jusqu'à aujourd'hui, la CIE a continué ces travaux, améliorant l'espace *xyZ* et créant d'autres espaces plus spécifiques et pour des usages particuliers.
 
-En 1976 notamment, deux autres espaces ont été publiés : le ***CIE L\*u\*v\**** (pour la lumière) et le ***CIE L\*a\*b\**** (pour les couleurs de surface, plus connu sous la forme *CIE LAB*). Ces deux espaces améliorent et compensent un "défaut" du *xyZ*[^2] : les coordonnées n'y sont plus *linéaires* afin de mieux s'accorder à la vision humaine. En effet, dans l'espace *xyZ*, deux couleurs situées "à la même distance" peuvent dans certaines zones paraîtrent plus semblables que dans d'autres zones. Les *L\*a\*b\** et *L\*u\*v\** corrigent ce "défaut" au prix d'une plus grande complexité des calculs.
+En 1976 notamment, deux autres espaces ont été publiés : le ***CIE L\*u\*v\**** (pour la lumière) et le ***CIE L\*a\*b\**** (pour les couleurs de surface, plus connu sous la forme *CIE LAB*). Ces deux espaces améliorent et compensent un "défaut" du *xyZ*[^2] : les coordonnées n'y sont plus *linéaires* afin de mieux s'accorder à la vision humaine. En effet, dans l'espace *xyZ*, deux couleurs situées "à la même distance" peuvent dans certaines zones paraître plus semblables que dans d'autres zones. Les *L\*a\*b\** et *L\*u\*v\** corrigent ce "défaut" au prix d'une plus grande complexité des calculs.
 
 Mais c'est toujours le *XYZ* ou *xyZ* de 1931 qui sert de référence pour travailler avec et comparer tous les autres espaces colorimétriques.
 

@@ -1,8 +1,8 @@
 # I.E - Retour sur les blancs : température
 
-Le blanc étant perçu différemment en fonction de l'environnement et de l'observateur, on doit, en parlant de blanc, définir exactement ce qui est blanc avant d'en parler. Encore une fois, il faut un référenciel invariant, physique, sur lequel tout le monde puisse être d'accord, un peu comme l'usage des *raies de Fraunhofer* peuvent servir de référence pour définir des lumières *monochromatiques[\*](ZZ-vocabulaire.md)* précises.
+Le blanc étant perçu différemment en fonction de l'environnement et de l'observateur, on doit, avant d'en parler, définir exactement ce qui est blanc. Encore une fois, il faut un référenciel invariant, physique, sur lequel tout le monde puisse être d'accord, un peu comme l'usage des *raies de Fraunhofer* peuvent servir de référence pour définir des lumières *monochromatiques[\*](ZZ-vocabulaire.md)* précises.
 
-On utilise généralement pour ça ce qu'on appelle le rayonnement des *corps noirs[\*](ZZ-vocabulaire.md)*.
+On utilise généralement pour définir le blanc ce qu'on appelle le rayonnement des *corps noirs[\*](ZZ-vocabulaire.md)*.
 
 [TOC]
 
@@ -21,7 +21,7 @@ L'intérêt des *corps noirs* est que la lumière qu'ils émettent, et donc leur
 
 ## E.2 - Lieu planckien
 
-Plutôt que de définir le spectre de cette lumière des corps noirs par la description des rayons qui le composent, on simplifie en liant simplement cette couleur, ce blanc, à la température du corps noir qui l'a émis ; et cette mesure est donnée en *Kelvin* (et pourrait tout aussi bien être convertie en degrés *Celsius* ou *Fahreneit*). On peut ainsi définir une lumière *blanche* directement en fonction de cette température théorique.
+Plutôt que de définir le spectre de la lumière des corps noirs par la description des rayons qui le composent, on simplifie en liant simplement cette couleur, ce blanc, à la température du corps noir qui l'a émis ; et cette mesure est donnée en *Kelvin* (et pourrait tout aussi bien être convertie en degrés *Celsius* ou *Fahreneit*). On peut ainsi définir une lumière *blanche* directement en fonction de cette température théorique.
 
 | Description | Kelvin | Degré Celsius | Degré Farenheit |
 |---|---|---|---|
@@ -30,9 +30,9 @@ Plutôt que de définir le spectre de cette lumière des corps noirs par la desc
 | Jour nuageux | `7000K` | `6726,85°C` | `12140,33°F` |
 | Foudre | `9000 K` | `8726,85°C` | `15 740,33°F` |
 
-On se rend bien compte que la *température* du blanc rend bien compte de sa couleur et non pas de la température réelle du corps qui émet cette lumière ; **cette température est celle du corps noir qui aurait émis un rayonnement de la même couleur**, mais **pas** la température ni l'énergie de l'élément vu. On utilise ces valeurs de température en Kelvin **par convention** pour standardiser la description des blancs.
+On constate que la *température* du blanc rend bien compte de sa teinte et non pas de la température réelle du corps qui émet cette lumière ; **cette température est celle du corps noir qui aurait émis un rayonnement de la même couleur**, mais **pas** la température ni l'énergie de l'élément vu. On utilise ces valeurs de température en Kelvin **par convention** pour standardiser la description des blancs.
 
-L'ensemble de ces températures peut être représentée en un *dégradé* allant du bleu au jaune, dans une gamme blanchâtre (ce sont bien des couleurs résultant d'un mélange complexe de rayons *monochromatiques[\*](ZZ-vocabulaire.md)* du spectre visible ; seules les proportions changent[^3]).
+L'ensemble de ces températures peut être représentée en un *dégradé* allant du jaune-orangé au bleu, dans une gamme blanchâtre (ce sont bien des couleurs résultant d'un mélange complexe de rayons *monochromatiques[\*](ZZ-vocabulaire.md)* du spectre visible ; seules les proportions changent[^3]).
 
 On appelle cet ensemble de couleurs réparties en une ligne le *Lieu planckien*.
 
@@ -43,7 +43,7 @@ On appelle cet ensemble de couleurs réparties en une ligne le *Lieu planckien*.
 *![Photos de paysage enneigé à différents moments de la journée](img/snow.svg)*  
 *Sous le soleil, à l'ombre ou dans les nuages, quel que soit le moment de la journée, dans la réalité nous percevons la neige comme* blanche *même si en réalité la lumière qu'elle réfléchit est à chaque fois différente.*
 
-Le cerveau effectue en permanence des ajustements pour compenser la couleur de la lumière éclairant une scène, et toujours voir les blancs... Blancs. Le problème se pose lors de la capture des couleurs via un appareil photo ou une caméra de faire la même compensation.
+Le cerveau effectue en permanence des ajustements pour compenser la couleur de la lumière éclairant une scène, et toujours voir les blancs... blancs. Le problème se pose lors de la capture des couleurs via un appareil photo ou une caméra de faire la même compensation.
 
 En effet, un capteur qui recevrait du blanc à midi au soleil "verrait" en réalité la "vraie" couleur, tirant plutôt vers le jaune, alors que le même objet un jour nuageux serait "vu" par le capteur comme bien plus bleu.
 
@@ -69,6 +69,6 @@ Sources et références
     Théoriquement, même le soleil renvoie les rayons qu'il reçoit ; mais la proportion entre les rayons réfléchis et les rayons émis est tellement insignifiante qu'on peut considérer le soleil comme un corps noir. Et à notre échelle il en est de même pour le feu, les braises, les étincelles...
 [^3]:
     Plus le corps a de l'énergie (plus il est chaud), plus la proportion de rayons de haute *fréquence[\*](ZZ-vocabulaire.md)* (et de faible *longueur d'onde[\*](ZZ-vocabulaire.md)*) est élevée : en effet, la quantité d'énergie portée par les rayons lumineux dépend directement de leur fréquence. Hors les rayons de longueur d'onde plus courte sont ceux du côté bleu du spectre. Ainsi, plus le corps est chaud, plus la proportion de rayons bleus augmente dans le mélange émis, plus la couleur s'éloigne des rouges orangés vers les bleus. Mais il faut bien garder à l'esprit que la lumière émise reste un mélange, et qu'on parle bien de nuances de blancs.  
-    La découverte de ce lien entre longueur d'onde et énergie, et le travail sur la couleur des corps noirs par le physicien Max Planck à la fin du XIX<sup>è</sup> siècle sont à l'origine de la *physique quantique* moderne (en étant la fondation la théorisation du *photon* par Albert Einstein en 1905).
+    La découverte de ce lien entre longueur d'onde et énergie, et le travail sur la couleur des corps noirs par le physicien Max Planck à la fin du XIX<sup>è</sup> siècle sont à l'origine de la *physique quantique* moderne, avec la découverte par Planck que l'énergie est composée de valeurs discrètes et non pas continue (c'est la fondation préalable à la théorisation du *photon* par Albert Einstein en 1905).
 
 ![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/23)

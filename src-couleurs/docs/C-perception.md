@@ -7,7 +7,7 @@ Au problème d'avoir une référence objective pour définir les couleurs s'ajou
 
 [TOC]
 
-Comprendre cette interprétation subjective des couleurs est important pour comprendre comment la gestion des couleurs dans le traitement des images numériques a été conçu et comment elle évolue.
+Comprendre cette interprétation subjective des couleurs est important pour comprendre comment la gestion des couleurs dans le traitement des images numériques a été conçue et comment elle évolue.
 
 ## C.1 -  L'œil
 
@@ -37,7 +37,7 @@ Toutes ces différentes étapes altèrent donc la perception d'un signal physiqu
 
 ## C.3 - Conséquences
 
-Les conséquences de cette perception subjective sont importante pour comprendre les choix historiques qui ont été fait sur les techniques permettant la reproduction artificielle et le traitement des images (analogiques puis numériques).
+Les conséquences de cette perception subjective sont importantes pour comprendre les choix historiques qui ont été fait sur les techniques permettant la reproduction artificielle et le traitement des images (analogiques puis numériques).
 
 ### C.3.a - Sur la luminosité et le contraste
 

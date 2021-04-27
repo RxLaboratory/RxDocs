@@ -285,15 +285,15 @@
 </li>
 <li><a href="#k3-profondeur-de-couleur-bpc">K.3 - Profondeur de couleur (bpc)</a><ul>
 <li><a href="#k3a-en-rgb">K.3.a - En RGB</a><ul>
-<li><a href="#8-bpc-24-bits-24-bpp-32-bits-avec-alpha">8 bpc / 24 bits / 24 bpp / 32 bits avec alpha</a></li>
-<li><a href="#16-bpc-48-bits-48-bpp-64-bits-avec-alpha">16 bpc / 48 bits / 48 bpp / 64 bits avec alpha</a></li>
-<li><a href="#32-bpc-96-bits-96-bpp-128-bits-avec-alpha">32 bpc / 96 bits / 96 bpp / 128 bits avec alpha</a></li>
+<li><a href="#k3aa-8-bpc-24-bits-24-bpp-32-bits-avec-alpha">K.3.a.a 8 bpc / 24 bits / 24 bpp / 32 bits avec alpha</a></li>
+<li><a href="#k3ab-16-bpc-48-bits-48-bpp-64-bits-avec-alpha">K.3.a.b 16 bpc / 48 bits / 48 bpp / 64 bits avec alpha</a></li>
+<li><a href="#k3ac-32-bpc-96-bits-96-bpp-128-bits-avec-alpha">K.3.a.c 32 bpc / 96 bits / 96 bpp / 128 bits avec alpha</a></li>
 </ul>
 </li>
 <li><a href="#k3b-en-yuv">K.3.b - En YUV</a><ul>
-<li><a href="#8-bits">8 bits</a></li>
-<li><a href="#10-bits">10 bits</a></li>
-<li><a href="#12-bits">12 bits</a></li>
+<li><a href="#k3ba-8-bits">K.3.b.a 8 bits</a></li>
+<li><a href="#k3bb-10-bits">K.3.b.b 10 bits</a></li>
+<li><a href="#k3bc-12-bits">K.3.b.c 12 bits</a></li>
 </ul>
 </li>
 <li><a href="#k3c-autres">K.3.c - Autres</a></li>
@@ -397,13 +397,13 @@ Par exemple :</p>
 <p>Suivant les systèmes, les standards varient, notamment en raison du <em>sous-échantillonage de chrominance</em> en <em>YUV</em>.</p>
 <h3 id="k3a-en-rgb">K.3.a - En RGB<a class="headerlink" href="#k3a-en-rgb" title="Permanent link">&para;</a></h3>
 <p>En <em>RGB</em> chaque <em>couche<a href="ZZ-vocabulaire.html">*</a></em> comporte autant d&rsquo;information (il n&rsquo;y a pas de sous-échantillonnage), et si en théorie on pourrait imaginer un nombre arbitraire de <em>bits<a href="ZZ-vocabulaire.html">*</a></em> pour stocker les <em>couches</em> (et c&rsquo;est le cas dans certains formats de fichiers), on utilise généralement des multiples de 8 (et donc des octets entiers<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>).</p>
-<h4 id="8-bpc-24-bits-24-bpp-32-bits-avec-alpha">8 bpc / 24 bits / 24 bpp / 32 bits avec alpha<a class="headerlink" href="#8-bpc-24-bits-24-bpp-32-bits-avec-alpha" title="Permanent link">&para;</a></h4>
+<h4 id="k3aa-8-bpc-24-bits-24-bpp-32-bits-avec-alpha">K.3.a.a 8 bpc / 24 bits / 24 bpp / 32 bits avec alpha<a class="headerlink" href="#k3aa-8-bpc-24-bits-24-bpp-32-bits-avec-alpha" title="Permanent link">&para;</a></h4>
 <p>La plupart des images utilisent 8 <em>bits</em> par <em>couche</em>. Avec 8 bits, on peut coder 2<sup>8</sup>, c&rsquo;est à dire 256, valeurs différentes (de 0 à 255). Avec trois couches, on a donc un total de 8<sup>3</sup>, c&rsquo;est à dire un peu plus de 16 millions, de valeurs différentes pour un pixel.</p>
 <p>Cette quantité de nuances est nécessaire et suffisante pour que l&rsquo;œil humain ne distingue pas de &ldquo;paliers&rdquo; dans les images avec un <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> comme celui du <em>sRGB</em>, et est donc la plus répandue dans les images numériques <em>RGB</em> destinées aux écrans d&rsquo;ordinateur.</p>
 <p>Mais cette quantité n&rsquo;est pas suffisante lors du travail sur l&rsquo;image, comme espace de travail. En effet, au moment de modifier les images, l&rsquo;ordinateur effectue des calculs sur les valeurs des différentes couches, et ces calculs sur seulement 256 valeurs entières entrainent une forte perte de précision, visible très rapidement<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>.</p>
 <p>Cette profondeur n&rsquo;est pas non plus suffisante pour le travail pour la télévision ou le cinéma qui utilisent une profondeur plus élevée (associée à un <em>gamut</em> plus large dans des espaces autres que le <em>sRGB</em>).</p>
 <p>Pour pouvoir travailler sans dégrader l&rsquo;image, on augmente donc la profondeur de couleur de l&rsquo;espace de travail.</p>
-<h4 id="16-bpc-48-bits-48-bpp-64-bits-avec-alpha">16 bpc / 48 bits / 48 bpp / 64 bits avec alpha<a class="headerlink" href="#16-bpc-48-bits-48-bpp-64-bits-avec-alpha" title="Permanent link">&para;</a></h4>
+<h4 id="k3ab-16-bpc-48-bits-48-bpp-64-bits-avec-alpha">K.3.a.b 16 bpc / 48 bits / 48 bpp / 64 bits avec alpha<a class="headerlink" href="#k3ab-16-bpc-48-bits-48-bpp-64-bits-avec-alpha" title="Permanent link">&para;</a></h4>
 <p>En ajoutant un octet pour chaque couche, on augmente grandement le nombre de nuances disponibles. En effet, on porte à 2<sup>16</sup>, soit 65536, le nombre de valeurs disponibles pour chaque couche. Ce qui fait un total de 65536<sup>3</sup>, soit plusieurs <em>trillions</em>, de nuances par pixel.</p>
 <p>En règle générale, ces 16 <em>bits</em> par <em>couche</em> apportent la précision nécessaire pour un travail fin sur l&rsquo;image, mais peuvent tout de même être insuffisants dans des cas spécifiques :</p>
 <ul>
@@ -411,12 +411,12 @@ Par exemple :</p>
 <li>En cas de travail complexe et lourd, même sur un espace non linéaire, pour la télévision ou le cinéma, on peut parfois atteindre la limite de précision nécessaire pour des dégradés de couleurs très fins.</li>
 </ul>
 <p>On peut donc encore augmenter la profondeur de couleur dans ces cas précis.</p>
-<h4 id="32-bpc-96-bits-96-bpp-128-bits-avec-alpha">32 bpc / 96 bits / 96 bpp / 128 bits avec alpha<a class="headerlink" href="#32-bpc-96-bits-96-bpp-128-bits-avec-alpha" title="Permanent link">&para;</a></h4>
+<h4 id="k3ac-32-bpc-96-bits-96-bpp-128-bits-avec-alpha">K.3.a.c 32 bpc / 96 bits / 96 bpp / 128 bits avec alpha<a class="headerlink" href="#k3ac-32-bpc-96-bits-96-bpp-128-bits-avec-alpha" title="Permanent link">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Ne pas confondre <em>32 bpc</em> (par couche) avec <em>32 bits</em> ou <em>32 bpp</em> (par pixel) qui est en fait seulement <em>8 bpc</em> (avec une couche alpha) !</p>
 </div>
-<p>On ajoute un troisième octet par couche, ce qui augmente encore exponentiellement le nombre de nuances disponibles, avec 2<sup>32</sup>, 4 milliards, de valeurs possible par <em>couche<a href="ZZ-vocabulaire.html">*</a></em>, soit un nombre qu&rsquo;on considèrera infini de nuances par pixel.</p>
+<p>On ajoute un troisième octet par couche, ce qui augmente encore exponentiellement le nombre de nuances disponibles, avec 2<sup>32</sup>, 4 milliards, de valeurs possibles par <em>couche<a href="ZZ-vocabulaire.html">*</a></em>, soit un nombre qu&rsquo;on considèrera infini de nuances par pixel.</p>
 <p>Ce mode est celui qui permet un travail virtuellement sans aucune perte sur l&rsquo;image, quel que soit l&rsquo;espace colorimétrique utilisé, qu&rsquo;il soit linéaire ou non, mais devient très lourd en terme de mémoire.</p>
 <p>S&rsquo;il peut être utile comme mode de travail, il est en fait rarement utilisé pour le stockage des fichiers (même intermédiaires) où <em>16 bits</em> par <em>couche</em> suffisent souvent<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup>.</p>
 <h3 id="k3b-en-yuv">K.3.b - En YUV<a class="headerlink" href="#k3b-en-yuv" title="Permanent link">&para;</a></h3>
@@ -424,27 +424,27 @@ Par exemple :</p>
 <p>On la note en général en nombre de bits utilisés pour la couche de luminance par pixel ; en effet le nombre de <em>bits<a href="ZZ-vocabulaire.html">*</a></em> par <em>couche<a href="ZZ-vocabulaire.html">*</a></em> n&rsquo;a pas vraiment de sens avec les différents <em>sous-échantillonages de la chrominance<a href="ZZ-vocabulaire.html">*</a></em> possibles, de même qu&rsquo;un nombre de <em>bits</em> par pixel.</p>
 <p>En prenant en compte le <em>sous-échantillonage de la chrominance</em>, on peut calculer le nombre de bits moyen utilisé par octet (et donc la taille approximative d&rsquo;une image sans compression en multipliant par le nombre de pixels), même si en réalité, le nombre de bits utilisé par la chrominance est celui indiqué pour les pixels contenant de la chrominance, et zéro pour les autres.</p>
 <p>Les différents modes ne se différencient donc qu&rsquo;en terme de qualité, et en règle générale, plus on augmente la résolution l&rsquo;image et le <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> de l&rsquo;espace colorimétrique, plus on augmente la profondeur pour s&rsquo;assurer que les dégradés restent fins et sans effet d&rsquo;escalier (&ldquo;<em>banding</em>&rdquo; en anglais).</p>
-<h4 id="8-bits">8 bits<a class="headerlink" href="#8-bits" title="Permanent link">&para;</a></h4>
+<h4 id="k3ba-8-bits">K.3.b.a 8 bits<a class="headerlink" href="#k3ba-8-bits" title="Permanent link">&para;</a></h4>
 <p>C&rsquo;est la profondeur la plus répandue en informatique ; la plupart des écrans d&rsquo;ordinateurs ne peuvant pas afficher plus de nuances.</p>
 <ul>
 <li>En <em>4:4:4</em>, cela signifie que chaque pixel est représenté par <em>24 bits</em>.</li>
 <li>En <em>4:2:2</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>16 bits</em>, avec en réalité la moitié des pixels (une colonne sur deux) contenant <em>24 bits</em> (<em>8 bits</em> par couche), et l&rsquo;autre moitié contenant <em>8 bits</em> (<em>8 bits</em> de luminance et aucun de chrominance).</li>
-<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>12 bits</em>, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>24 bits</em> (<em>8 bits</em> par couche), et le dernier quart <em>8 bits</em> (<em>8 bits</em> de luminance et aucun de chrominance).</li>
+<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>12 bits</em>, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>24 bits</em> (<em>8 bits</em> par couche), et le dernier quart, <em>8 bits</em> (<em>8 bits</em> de luminance et aucun de chrominance).</li>
 </ul>
 <p>C&rsquo;est la profondeur standard pour les vidéos <em>HD</em> en <em>Rec.709</em>.</p>
-<h4 id="10-bits">10 bits<a class="headerlink" href="#10-bits" title="Permanent link">&para;</a></h4>
+<h4 id="k3bb-10-bits">K.3.b.b 10 bits<a class="headerlink" href="#k3bb-10-bits" title="Permanent link">&para;</a></h4>
 <p>C&rsquo;est la profondeur de base des vidéos haut de gamme et <em>UHD</em> en <em>Rec.2020</em>.</p>
 <ul>
 <li>En <em>4:4:4</em>, cela signifie que chaque pixel est représenté par <em>30 bits</em>.</li>
-<li>En <em>4:2:2</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>20 bits</em>,, avec en réalité la moitié des pixels (une colonne sur deux) contenant <em>30 bits</em> (<em>10 bits</em> par couche), et l&rsquo;autre moitié contenant <em>10 bits</em> (<em>10 bits</em> de luminance et aucun de chrominance).</li>
-<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>15 bits</em>1, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>30 bits</em> (<em>10 bits</em> par couche), et le dernier quart <em>10 bits</em> (<em>10 bits</em> de luminance et aucun de chrominance).</li>
+<li>En <em>4:2:2</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>20 bits</em>, avec en réalité la moitié des pixels (une colonne sur deux) contenant <em>30 bits</em> (<em>10 bits</em> par couche), et l&rsquo;autre moitié contenant <em>10 bits</em> (<em>10 bits</em> de luminance et aucun de chrominance).</li>
+<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>15 bits</em>, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>30 bits</em> (<em>10 bits</em> par couche), et le dernier quart, <em>10 bits</em> (<em>10 bits</em> de luminance et aucun de chrominance).</li>
 </ul>
-<h4 id="12-bits">12 bits<a class="headerlink" href="#12-bits" title="Permanent link">&para;</a></h4>
+<h4 id="k3bc-12-bits">K.3.b.c 12 bits<a class="headerlink" href="#k3bc-12-bits" title="Permanent link">&para;</a></h4>
 <p>C&rsquo;est la profondeur &ldquo;<em>HDR</em>&rdquo; des vidéos haut de gamme et <em>UHD</em> en <em>Rec.2020</em>.</p>
 <ul>
 <li>En <em>4:4:4</em>, cela signifie que chaque pixel est représenté par <em>36 bits</em>.</li>
-<li>En <em>4:2:2</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>24 bits</em>,, avec en réalité la moitié des pixels (une colonne sur deux) contenant <em>36 bits</em> (<em>12 bits</em> par couche), et l&rsquo;autre moitié contenant <em>12 bits</em> (<em>12 bits</em> de luminance et aucun de chrominance).</li>
-<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>18 bits</em>, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>18 bits</em> (<em>12 bits</em> par couche), et le dernier quart <em>12 bits</em> (<em>12 bits</em> de luminance et aucun de chrominance).</li>
+<li>En <em>4:2:2</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>24 bits</em>, avec en réalité la moitié des pixels (une colonne sur deux) contenant <em>36 bits</em> (<em>12 bits</em> par couche), et l&rsquo;autre moitié contenant <em>12 bits</em> (<em>12 bits</em> de luminance et aucun de chrominance).</li>
+<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>18 bits</em>, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>18 bits</em> (<em>12 bits</em> par couche), et le dernier quart, <em>12 bits</em> (<em>12 bits</em> de luminance et aucun de chrominance).</li>
 </ul>
 <h3 id="k3c-autres">K.3.c - Autres<a class="headerlink" href="#k3c-autres" title="Permanent link">&para;</a></h3>
 <p>Il existe d&rsquo;autres profondeurs, à partir de <em>1 bit par pixel</em> (les images monochromes), suivant des usages spécifiques. Par exemple, une image utilisant une palette de 256 couleurs comme on les trouve dans le format <em>GIF</em> ou certains <em>PNG</em> par exemple utilisent <em>8 bits par pixel</em> (et donc par couche aussi, puisqu&rsquo;il n&rsquo;y a dans ce cas qu&rsquo;une seule couche).</p>

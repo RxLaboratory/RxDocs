@@ -262,7 +262,7 @@
             <div class="section">
               
                 <h1 id="in-opencolorio-et-aces">I.N - OpenColorIO et ACES<a class="headerlink" href="#in-opencolorio-et-aces" title="Permanent link">&para;</a></h1>
-<p><a href="https://opencolorio.org/"><em>OpenColorIO</em></a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, souvent abrégé en <em>OCIO</em>, est une librairie pour les développeurs (et non pas pour les utilisateurs) libre et open source, facilitant la gestion des couleurs. Elle aspire à être utilisée par toutes les applications en production d&rsquo;image numérique, facilitant ainsi la gestion des couleurs sur toute la chaîne de production : en devant standard, elle permet de partager la configuration des couleurs tout au long de la chaîne de production et en avoir la maîtrise à toutes les étapes, de manière aussi simple que possible.</p>
+<p><a href="https://opencolorio.org/"><em>OpenColorIO</em></a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, souvent abrégé en <em>OCIO</em>, est une librairie pour les développeurs (et non pas pour les utilisateurs) libre et open source, facilitant la gestion des couleurs. Elle aspire à être utilisée par toutes les applications en production d&rsquo;image numérique, facilitant ainsi la gestion des couleurs sur toute la chaîne de production : en devenant standard, elle permet de partager la configuration des couleurs tout au long de la chaîne de production et en avoir la maîtrise à toutes les étapes, de manière aussi simple que possible.</p>
 <div class="toc">
 <ul>
 <li><a href="#in-opencolorio-et-aces">I.N - OpenColorIO et ACES</a><ul>
@@ -380,15 +380,15 @@
 <p>Toute application pouvant utiliser des <em>LUTs<a href="ZZ-vocabulaire.html">*</a></em> peut être intégrée à une chaîne de production utilisant <em>OCIO</em>, en exportant les <em>LUTs</em> nécessaire à la production depuis <em>OpenColorIO</em>, soit via l&rsquo;outil en ligne de commande fourni, soit en utilisant l&rsquo;encodeur de médias <em><a href="https://rainboxlab.org/tools/dume/">DuME</a></em> qui peut créer ces <em>LUTs</em>.</p>
 </div>
 <h2 id="n2-aces">N.2 - ACES<a class="headerlink" href="#n2-aces" title="Permanent link">&para;</a></h2>
-<p><em>ACES</em> signifie <em>Academy Color Encoding System</em>, et a pour but d&rsquo;être un standard d&rsquo;échange et de gestion des couleurs pour l&rsquo;imagerie numérique ; il vise à de simplifier la gestion des couleurs et maintenir la plus grande fidélité dans toutes les chaines de production. Il est gratuit et open source, et utilise <em>OpenColorIO</em> dans son fonctionnement.</p>
+<p><em>ACES</em> signifie <em>Academy Color Encoding System</em>, et a pour but d&rsquo;être un standard d&rsquo;échange et de gestion des couleurs pour l&rsquo;imagerie numérique ; il vise à simplifier la gestion des couleurs et maintenir la plus grande fidélité dans toutes les chaines de production. Il est gratuit et open source, et utilise <em>OpenColorIO</em> dans son fonctionnement.</p>
 <p><em>ACES</em> consiste en fait en :</p>
 <ul>
 <li>5 Espaces colorimétriques conçus pour différents usages pour la chaîne de production.</li>
-<li>Une configuration <em>OpenColorIO</em>, avec les <em>LUTs</em> nécessaire à son usage partout.</li>
+<li>Une configuration <em>OpenColorIO</em>, avec les <em>LUTs</em> nécessaires à son usage partout.</li>
 <li>Une série de recommandations sur le calcul et le stockage des couleurs.</li>
 </ul>
 <p>Voir le chapitre <em><a href="I-liste-espaces.html">I - Liste d&rsquo;espaces colorimétriques</a></em> pour les détails techniques concernant les différents espaces colorimétriques de <em>ACES</em>.</p>
-<p>Les principales recommandation sur le stockage sont :</p>
+<p>Les principales recommandations sur le stockage sont :</p>
 <ul>
 <li>Utiliser le format de fichier <em>openEXR</em>.</li>
 <li>Enregistrer dans des espaces colorimétriques larges, englobant tous les autres. L&rsquo;espace idéal englobant toutes les couleurs visibles étant <em>ACES2065-1</em>.</li>
@@ -401,7 +401,7 @@
 <p>Comme tous les espaces linéaires, il nécessite une profondeur d&rsquo;au minimum <em>16 bpc</em>, avec une préférence pour <em>32 bpc</em> compatible avec son but de représenter efficacement n&rsquo;importe quelle couleur visible.</p>
 <p>Il est en réalité peu utilisé, représentant <em>trop</em> de données, son intérêt étant surtout théorique.</p>
 <h4 id="n2ab-acescg">N.2.a.b - ACEScg<a class="headerlink" href="#n2ab-acescg" title="Permanent link">&para;</a></h4>
-<p>L&rsquo;espace <em>ACEScg</em> (pour <em>computer generated (images)</em>) est dérivé de <em>ACES2065-1</em>, mais utilise des <em>primaires[*](ZZ-vocabulaire.md</em> différentes, réduisant son <em>gamut<a href="ZZ-vocabulaire.html">*</a></em>, qui reste cependant très large, tout en étant plus pratique que <em>ACES2065-1</em>.</p>
+<p>L&rsquo;espace <em>ACEScg</em> (pour <em>computer generated (images)</em>) est dérivé de <em>ACES2065-1</em>, mais utilise des <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> différentes, réduisant son <em>gamut<a href="ZZ-vocabulaire.html">*</a></em>, qui reste cependant très large, tout en étant plus pratique que <em>ACES2065-1</em>.</p>
 <p>C&rsquo;est un espace linéaire, conçu et idéal pour les rendus 3D et le compositing. Avec son <em>gamut</em> très large, et la configuration <em>OCIO</em> associée permettant de générer efficacement des images dans des espaces standards plus réduits, il permet une synthèse des couleurs plus fidèles à la réalité et la vision humaine, notamment dans les hautes lumières.</p>
 <p><em><img alt="Comparaison d'un rendu linéaire RGB et ACEScg" src="img/aces.svg" /></em><br />
 <em>Comparaison entre un rendu utilisant les primaires RGB et ACEScg<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></em></p>

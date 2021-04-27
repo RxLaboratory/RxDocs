@@ -2,7 +2,7 @@
 
 *[Blender](http://blender.org)* utilise nativement *OpenColorIO[\*](ZZ-vocabulaire.md)* (*cf*. *[I.N - OpenColorIO et ACES](N-ocio.md)*) pour la gestion des couleurs, et ses paramètres sont très simples.
 
-Une excellente configuration *OCIO* par défaut est fournie avec *Blender*, qui inclue les espaces nécessaires pour importer des fichiers images et vidéo, exporter dans plusieurs formats, et un espace de travail *Filmic* fonctionnant très bien pour les rendus 3D.
+Une excellente configuration *OCIO* par défaut est fournie avec *Blender*, qui inclut les espaces nécessaires pour importer des fichiers images et vidéo, exporter dans plusieurs formats, et un espace de travail *Filmic* fonctionnant très bien pour les rendus 3D.
 
 On peut toutefois aussi facilement utiliser une configuration avec *ACES* si l'on souhaite en profiter ou intégrer Blender à une chaîne de fabrication en *ACES*, l'espace de travail *ACES* étant légèrement différent de *Filmic*.
 
@@ -107,7 +107,7 @@ Pour inclure des applications n'utilisant pas *OpenColorIO* à la chaîne (comme
 
 ### I.2.a - Changer la configuration OCIO
 
-Pour utiliser une configuration différente de la *Filmic* par défaut, *Blender* ne permet pas de sélection une configuration via l'interface, mais deux solutions sont possible.
+Pour utiliser une configuration différente de la *Filmic* par défaut, *Blender* ne permet pas de sélection une configuration via l'interface, mais deux solutions sont possibles.
 
 - Via la variable d'environnement  
     On peut simplement changer la variable d'environnement du système `OCIO` pour pointer vers le chemin de la configuration à utiliser.  
@@ -175,7 +175,7 @@ Pour l'import des images, une grande liste d'espace colorimétriques potentiels 
 
 - Les espaces ***ACES*** sont les espaces habituels de *ACES*:
     - ***ACES2065-1*** : espace colorimétrique pour le stockage préconisé par la norme *ACES* dans les fichiers *OpenEXR*, mais encore assez peu utilisé.
-    - ***ACEScc*** et ***ACES - ACEScct*** : espace colorimétrique *ACES* dédié à la correction des couleurs, dans des fichiers *OpenEXR* en général. Il est peu probable que l'on aie à importer ce genre de ficher dans *Blender*, sauf éventuellement un fichier *OpenEXR* venant d'un logiciel d'étalonnage ou de compositing.
+    - ***ACEScc*** et ***ACES - ACEScct*** : espace colorimétrique *ACES* dédié à la correction des couleurs, dans des fichiers *OpenEXR* en général. Il est peu probable que l'on ait à importer ce genre de ficher dans *Blender*, sauf éventuellement un fichier *OpenEXR* venant d'un logiciel d'étalonnage ou de compositing.
     - ***ACEScg*** : espace de travail de *ACES* pour les rendus et le compositing. Dans une chaîne utilisant *ACES*, les textures peuvent être fabriquées dans cet espace et importées dans *Blender* via des fichiers *OpenEXR*.
 - ***Input - Generic - sRGB - Texture*** et ***Utility - sRGB - Texture*** sont identiques. Pour les fichiers images standards en *sRGB* (*PNG*, *TGA*, etc).
 - Les espaces ***Output*** ne devraient pas être utiles en entrée...

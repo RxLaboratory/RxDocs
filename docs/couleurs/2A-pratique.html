@@ -298,7 +298,7 @@
 </div>
 <h2 id="a1-theorie">A.1 - Théorie<a class="headerlink" href="#a1-theorie" title="Permanent link">&para;</a></h2>
 <p>Avant de s&rsquo;engager dans le paramétrage des différents logiciels, il faut bien comprendre que <strong>les couleurs sont régulièrement converties lors de la production</strong> d&rsquo;images. En effet, à chaque étape depuis la génération de la couleur jusque son affichage sur un dispositif quelconque, chaque bout de logiciel et de matériel intervenant travaille dans son propre espace.</p>
-<p>Maîtriser la chaîne de production des couleurs n&rsquo;implique donc pas de bien choisir un espace colorimétrique unique, mais plutôt d&rsquo;a<strong>voir conscience des différentes conversions et des différents espaces colorimétriques entrant en jeu</strong> à chaque étape, au sein d&rsquo;une application autant qu&rsquo;entre les applications.</p>
+<p>Maîtriser la chaîne de production des couleurs n&rsquo;implique donc pas de bien choisir un espace colorimétrique unique, mais plutôt d&rsquo;<strong>avoir conscience des différentes conversions et des différents espaces colorimétriques entrant en jeu</strong> à chaque étape, au sein d&rsquo;une application autant qu&rsquo;entre les applications.</p>
 <p>Cette maîtrise ne garantira pas que les couleurs seront correctement reproduites sur le dispositif des spectateurs (TV, écran d&rsquo;ordinateur, téléphone, écran de cinéma&hellip;) mais permet à minima d&rsquo;avoir le contrôle tout au long de la production tout en s&rsquo;assurant de livrer des images respectant les standards en vigueur. C&rsquo;est ensuite au diffuseur de prendre le relai en toute fin de chaîne avec une chaîne correctement paramétrée aussi.</p>
 <h3 id="a1a-parcours-dune-couleur">A.1.a - Parcours d&rsquo;une couleur<a class="headerlink" href="#a1a-parcours-dune-couleur" title="Permanent link">&para;</a></h3>
 <p>Suivons le chemin qu&rsquo;une couleur doit parcourir avant d&rsquo;être correctement affichée.</p>
@@ -328,7 +328,7 @@
 <p>Voici les caractéristiques les plus couramment utiles pour un espace de travail :</p>
 <ul>
 <li><strong><em>Linéaire</em></strong> dans la grande majorité des cas, pour améliorer la fusion des couleurs, il peut être utile pour les corrections colorimétriques d&rsquo;utiliser un espace non-linéaire.</li>
-<li><strong><em>Gammut large</em></strong> afin de travailler dans un espace capable de reproduire fidèlement un grand nombre de couleurs et gagner en précision.</li>
+<li><strong><em>Gamut large</em></strong> afin de travailler dans un espace capable de reproduire fidèlement un grand nombre de couleurs et gagner en précision.</li>
 </ul>
 <p>Certaines applications permettent de changer d&rsquo;espace de travail, ce qui est particulièrement intéressant dans le cas des moteurs de rendu 3D : l&rsquo;espace de travail influence le rendu des couleurs et permet d&rsquo;ajuster la manière de travailler les lumières et les matériaux.</p>
 <div class="admonition warning">
@@ -401,7 +401,7 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p>Si une application de vous permet pas de changer l&rsquo;espace colorimétrique lors de l&rsquo;importation, attendez-vous à avoir des variations de couleurs inattendues lors de l&rsquo;importation. Il faudra alors deviner en quoi l&rsquo;application &ldquo;se trompe&rdquo; afin d&rsquo;effectuer manuellement une correction des couleurs pour rétablir les couleurs d&rsquo;origine (le plus souvent simplement via une correction <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> ou bien l&rsquo;application d&rsquo;une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em>). Notez qu&rsquo;une telle application n&rsquo;a pas vraiment sa place dans une chaîne de production où l&rsquo;on cherche à maîtriser la couleur&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Si une application ne vous permet pas de changer l&rsquo;espace colorimétrique lors de l&rsquo;importation, attendez-vous à avoir des variations de couleurs inattendues lors de l&rsquo;importation. Il faudra alors deviner en quoi l&rsquo;application &ldquo;se trompe&rdquo; afin d&rsquo;effectuer manuellement une correction des couleurs pour rétablir les couleurs d&rsquo;origine (le plus souvent simplement via une correction <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> ou bien l&rsquo;application d&rsquo;une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em>). Notez qu&rsquo;une telle application n&rsquo;a pas vraiment sa place dans une chaîne de production où l&rsquo;on cherche à maîtriser la couleur&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
 <p>Toutes les applications ne permettent pas l&rsquo;automatisation de la gestion des couleurs (par exemple <em>Adobe After Effects</em> ne possède pas d&rsquo;<em>API</em> pour ce point précis). Dans la suite de ce document, nous noterons pour les applications expliquées les erreurs d&rsquo;interprétation qu&rsquo;elles font, que nous avons pu repérer, et les autres spécificités à savoir.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>

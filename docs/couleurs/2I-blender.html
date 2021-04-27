@@ -265,7 +265,7 @@
               
                 <h1 id="iii-gestion-des-couleurs-blender">II.I - Gestion des couleurs : Blender<a class="headerlink" href="#iii-gestion-des-couleurs-blender" title="Permanent link">&para;</a></h1>
 <p><em><a href="http://blender.org">Blender</a></em> utilise nativement <em>OpenColorIO<a href="ZZ-vocabulaire.html">*</a></em> (<em>cf</em>. <em><a href="N-ocio.html">I.N - OpenColorIO et ACES</a></em>) pour la gestion des couleurs, et ses paramètres sont très simples.</p>
-<p>Une excellente configuration <em>OCIO</em> par défaut est fournie avec <em>Blender</em>, qui inclue les espaces nécessaires pour importer des fichiers images et vidéo, exporter dans plusieurs formats, et un espace de travail <em>Filmic</em> fonctionnant très bien pour les rendus 3D.</p>
+<p>Une excellente configuration <em>OCIO</em> par défaut est fournie avec <em>Blender</em>, qui inclut les espaces nécessaires pour importer des fichiers images et vidéo, exporter dans plusieurs formats, et un espace de travail <em>Filmic</em> fonctionnant très bien pour les rendus 3D.</p>
 <p>On peut toutefois aussi facilement utiliser une configuration avec <em>ACES</em> si l&rsquo;on souhaite en profiter ou intégrer Blender à une chaîne de fabrication en <em>ACES</em>, l&rsquo;espace de travail <em>ACES</em> étant légèrement différent de <em>Filmic</em>.</p>
 <div class="toc">
 <ul>
@@ -368,7 +368,7 @@
 <p>Il est donc possible d&rsquo;utiliser cette configuration sur toute la chaîne de production en pointant cette configuration dans les autres applications, ou en définissant la variable d&rsquo;environnement <code>OCIO</code> sur ce fichier.</p>
 <p>Pour inclure des applications n&rsquo;utilisant pas <em>OpenColorIO</em> à la chaîne (comme <em>Adobe After Effects</em> ou <em>Adobe Photoshop</em>), on peut toujours générer les <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> nécessaires, en particulier la <em>LUT</em> qui convertit les images linéaires (comme en <em>openEXR<a href="ZZ-vocabulaire.html">*</a></em>) vers <em>sRGB</em> ou d&rsquo;autres espaces courants. Nous proposons plusieurs de ces <a href="media/filmic-luts.zip"><em>LUT</em> en téléchargement ici</a>, dans différents formats. Il suffit alors d&rsquo;appliquer la <em>LUT</em> voulue pour retrouver l&rsquo;espace <em>Filmic</em> de Blender dans une autre application.</p>
 <h3 id="i2a-changer-la-configuration-ocio">I.2.a - Changer la configuration OCIO<a class="headerlink" href="#i2a-changer-la-configuration-ocio" title="Permanent link">&para;</a></h3>
-<p>Pour utiliser une configuration différente de la <em>Filmic</em> par défaut, <em>Blender</em> ne permet pas de sélection une configuration via l&rsquo;interface, mais deux solutions sont possible.</p>
+<p>Pour utiliser une configuration différente de la <em>Filmic</em> par défaut, <em>Blender</em> ne permet pas de sélection une configuration via l&rsquo;interface, mais deux solutions sont possibles.</p>
 <ul>
 <li>
 <p>Via la variable d&rsquo;environnement<br />
@@ -420,7 +420,7 @@
 <ul>
 <li>Les espaces <strong><em>ACES</em></strong> sont les espaces habituels de <em>ACES</em>:<ul>
 <li><strong><em>ACES2065-1</em></strong> : espace colorimétrique pour le stockage préconisé par la norme <em>ACES</em> dans les fichiers <em>OpenEXR</em>, mais encore assez peu utilisé.</li>
-<li><strong><em>ACEScc</em></strong> et <strong><em>ACES - ACEScct</em></strong> : espace colorimétrique <em>ACES</em> dédié à la correction des couleurs, dans des fichiers <em>OpenEXR</em> en général. Il est peu probable que l&rsquo;on aie à importer ce genre de ficher dans <em>Blender</em>, sauf éventuellement un fichier <em>OpenEXR</em> venant d&rsquo;un logiciel d&rsquo;étalonnage ou de compositing.</li>
+<li><strong><em>ACEScc</em></strong> et <strong><em>ACES - ACEScct</em></strong> : espace colorimétrique <em>ACES</em> dédié à la correction des couleurs, dans des fichiers <em>OpenEXR</em> en général. Il est peu probable que l&rsquo;on ait à importer ce genre de ficher dans <em>Blender</em>, sauf éventuellement un fichier <em>OpenEXR</em> venant d&rsquo;un logiciel d&rsquo;étalonnage ou de compositing.</li>
 <li><strong><em>ACEScg</em></strong> : espace de travail de <em>ACES</em> pour les rendus et le compositing. Dans une chaîne utilisant <em>ACES</em>, les textures peuvent être fabriquées dans cet espace et importées dans <em>Blender</em> via des fichiers <em>OpenEXR</em>.</li>
 </ul>
 </li>

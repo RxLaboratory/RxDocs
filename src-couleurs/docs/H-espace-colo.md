@@ -11,7 +11,7 @@ Un espace colorimétrique définit **un sous-ensemble de couleurs** (un volume d
 
 ## H.1 - Ce qui définit un espace colorimétrique
 
-L'ensemble des couleurs pouvant être représentées par un espace colorimétrique dépend d'un paramètre principal : **Les couleurs primaires** de l'espace colorimétriques.
+L'ensemble des couleurs pouvant être représentées par un espace colorimétrique dépend d'un paramètre principal : **Les couleurs primaires** de l'espace colorimétrique.
 
 La manière de représenter ces couleurs dépend de deux autres paramètres qui complètent la définition d'un espace colorimétrique : **Le point blanc** et **la courbe de transfert**.
 
@@ -23,7 +23,7 @@ Le plus souvent au nombre de 3, les couleurs primaires sont les valeurs primordi
 
 Chaque espace définit donc ses couleurs primaires par au moins trois coordonnées dans l'espace *CIE XYZ*.
 
-Par exemple, voici les coordonnées du Rouge, Vert et Bleu de l'espace *sRGB* :
+Par exemple, voici les coordonnées du Rouge, Vert et Bleu de l'espace *sRGB (standard Red, Green, Blue)* :
 
 | | R | G | B |
 | --- | --- | --- | --- |
@@ -69,13 +69,13 @@ Voici quelques exemples :
 L'illuminant *D65* est celui le plus couramment utilisé comme point blanc dans les différents espaces colorimétriques.
 
 !!! note
-    Le point blanc est parfois lui même, par simplification, considéré comme une primaire (dans le sens où il est aussi simplement une couleur précise, une coordonnées dans le *CIE XYZ*). Dans ce cas les *primaires* de l'espace sont au minimum au nombre de 4 et l'espace n'est plus défini que par deux paramètres.
+    Le point blanc est parfois lui même, par simplification, considéré comme une primaire (dans le sens où il est aussi simplement une couleur précise, une coordonnée dans le *CIE XYZ*). Dans ce cas les *primaires* de l'espace sont au minimum au nombre de 4 et l'espace n'est plus défini que par deux paramètres.
 
 L'espace colorimétrique associe normalement aussi au point blanc son intensité maximum, sa luminance, le plus souvent mesuré en *cd/m²*.
 
 ### H.1.c - La courbe de transfert
 
-Les couleurs dans un espace colorimétriques sont données par l'intensité de chaque primaire, représentée par une valeur variant de `0.0` à `1.0`.
+Les couleurs dans un espace colorimétrique sont données par l'intensité de chaque primaire, représentée par une valeur variant de `0.0` à `1.0`.
 
 La valeur `0.0` représente une intensité nulle (l'absence de lumière, un noir parfait) et la valeur `1.0` représente la couleur donnée par la coordonnée de la primaire dans le *CIE XYZ*.
 
@@ -87,7 +87,7 @@ L'espace est dit *linéaire* quand cette courbe est une simple fonction affine, 
 
 D'autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un *gamma 2,4*); les plus "simples" de ces courbes sont ce qu'on appelle les courbes *gamma*. Cela étant dit, la plupart des espaces n'utilisent pas de simples *gamma* mais des courbes plus complexes.
 
-Voir la section intitulée [*L - Courbes de transfert, espace linéaire et gamma](L-transfert.md)* pour plus de détails.
+Voir la section intitulée *[L - Courbes de transfert, espace linéaire et gamma](L-transfert.md)* pour plus de détails.
 
 ## H.2 - Autres paramètres
 

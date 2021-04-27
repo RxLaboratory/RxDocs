@@ -14,7 +14,7 @@ La couleur la plus simple est donc le *noir*\* : l'absence totale de lumière es
 
 ## B.2 - Lumières monochromatiques
 
-Les couleurs les plus simples, et les plus rares (ce sont celles émises par les *Lasers* par exemple), sont celles composée d'une seule lumière *monochromatique*. Ce sont en fait les *couleurs de l'arc en ciel*, celles qui sont incluses dans le spectre monochromatique.
+Les couleurs les plus simples, et les plus rares (ce sont celles émises par les *Lasers* par exemple), sont celles composées d'une seule lumière *monochromatique*. Ce sont en fait les *couleurs de l'arc en ciel*, celles qui sont incluses dans le spectre monochromatique.
 
 *![Spectre lumineux](img/electromagnetic-spectrum.svg)*
 
@@ -36,7 +36,7 @@ Les pourpres ajoutés aux couleurs monochromatiques forment l'ensemble des coule
 
 ## B.4 - Blancs et gris
 
-Dans la nature, **toutes** les lumières, ou plus précisément tous les rayons lumineux, sont *monochromatiques[\*](ZZ-vocabulaire.md)* ; c'est la perceptions de leurs mélanges que le cerveau interprète en une infinité d'autres couleurs. On a vu que les pourpres font partie de ces mélanges ; toutes les autres couleurs non *saturées[\*](ZZ-vocabulaire.md)*, les gris et les blancs, sont donc aussi des lumières mélangées.
+Dans la nature, **toutes** les lumières, ou plus précisément tous les rayons lumineux, sont *monochromatiques[\*](ZZ-vocabulaire.md)* ; c'est la perception de leurs mélanges que le cerveau interprète en une infinité d'autres couleurs. On a vu que les pourpres font partie de ces mélanges ; toutes les autres couleurs non *saturées[\*](ZZ-vocabulaire.md)*, les gris et les blancs, sont donc aussi des lumières mélangées.
 
 Toutes les nuances "désaturées", blanchâtres, grisâtres, sont des mélanges de ces couleurs *monochromatiques*, et il y a pour chaque couleur (et pas uniquement les gris, toutes les couleurs non-monochromatiques) une infinité de mélanges différents qui peuvent la générer.
 

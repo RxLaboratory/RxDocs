@@ -54,7 +54,7 @@ Voici les paramètres de l'environnement tel qu'il est préconnisé par l'espace
 - **Couleur des murs** : Gris moyen (réflectance de 20%).  
     Les murs devraient absorber 80% des rayons lumineux qu'ils reçoivent, ce qui en fait des murs d'un gris moyen.
 - **Luminosité de l'écran** : *80 cd/m²*  
-    Le *sRGB* (tout comme le *P3* pour l'affichage) préconise une luminosité relativement faible des écrans (si l'environnement est peu lumineux). Une luminosité un peu plus élevée peu être nécessaire si l'environnement n'est pas assez sombre. Il faut noter que les espacecs dédiés à la vidéo comme le *Rec.709* ou *Rec.2020* sont adaptés aux écrans *TV* avec une luminosité d'écran de *100 cd/m²*, et qu'il peut donc être utile d'augmenter la luminosité des écrans vers cette valeur si l'on produit pour la télévision (ou le cinéma).
+    Le *sRGB* (tout comme le *P3* pour l'affichage) préconise une luminosité relativement faible des écrans (si l'environnement est peu lumineux). Une luminosité un peu plus élevée peu être nécessaire si l'environnement n'est pas assez sombre. Il faut noter que les espaces dédiés à la vidéo comme le *Rec.709* ou *Rec.2020* sont adaptés aux écrans *TV* avec une luminosité d'écran de *100 cd/m²*, et qu'il peut donc être utile d'augmenter la luminosité des écrans vers cette valeur si l'on produit pour la télévision (ou le cinéma).
 
 ## C.3 - Calibration
 
@@ -138,7 +138,7 @@ Une fois le calibrage terminé et le profil appliqué, on peut contrôler le ré
 Sources et références
 
 [^1]:
-    Pour autant que les couleurs de l'écran soit à peu près uniformes et identiques aussi bien au centre que sur les bords et dans les coins...
+    Pour autant que les couleurs de l'écran soient à peu près uniformes et identiques aussi bien au centre que sur les bords et dans les coins...
 
 [^2]:
     Il faut bien noter qu'il n'est pas nécessaire du tout que les écrans utilisent l'espace colorimétrique de la diffusion : grâce à la gestion des couleurs, les images affichées sont converties pour l'espace de l'écran de sorte que les couleurs affichées sont exactement celles de la diffusion quoi qu'il arrive ; calibrer les écrans dans l'espace de diffusion permet juste d'éviter cette conversion, et d'éviter les erreurs de configurations courantes en choisissant systématiquement l'espace de la diffusion, que ce soit pour l'affichage, la sortie des fichers, etc.  

@@ -10,7 +10,7 @@ Comme son nom l'indique, c'est un simple tableau de valeurs, permettant de faire
 
 On en garde l'usage en couleurs ; c'est un moyen simple de faire correspondre à une couleur en entrée une couleur différente en sortie : c'est donc un tableau qui permet de retoucher les couleurs ou bien convertir des espaces colorimétriques, en les décrivant, couleur par couleur.
 
-Le principal intérêt d'une *LUT* est que n'importe quel programme peut facilement les utiliser et donc convertir depuis et vers des espaces colorimétriques qui ne sont pas prévus à la base par le programme ; au lieu d'avoir à "connaitre" les fonctions mathématiques qui définissent un espace de couleurs (notamment la courbe de transfert), le programme n'a qu'à lire les résultats dans la *table de correspondance* sans avoir à en effectuer le calcul. C'est un usage *utilitaire*, de conversion.
+Le principal intérêt d'une *LUT* est que n'importe quel programme peut facilement les utiliser et donc convertir depuis et vers des espaces colorimétriques qui ne sont pas prévus à la base par le programme ; au lieu d'avoir à "connaître" les fonctions mathématiques qui définissent un espace de couleurs (notamment la courbe de transfert), le programme n'a qu'à lire les résultats dans la *table de correspondance* sans avoir à en effectuer le calcul. C'est un usage *utilitaire*, de conversion.
 
 Elles sont aussi un moyen de "sauvegarder" n'importe quelle retouche colorimétrique ; même si une retouche est faite en utilisant de multiples effets dans une application (niveaux, courbes, saturation...), on peut la décrire et sauvegarder comme une seule *LUT* et ainsi réappliquer la même retouche facilement, et dans *n'importe quelle application* capable de lire une *LUT*. Dans ce cas, c'est un usage *artistique* et pratique.
 
@@ -31,7 +31,7 @@ Voici un exemple de quelques lignes de valeurs d'une *LUT*, qui n'est en réalit
 |184|3736|117|
 |85|3712|415|
 
-Une *LUT* ne décrit donc pas *toutes* les correspondances de couleurs possibles, mais bien une sélection de couleurs ; pour obtenir une couleur qui n'est pas dans la table, il faut donc effectuer une *interpolation*. Normalement, l'application utilisant la *LUT* propose differente interpolations qui vont changer la manière dont ces couleurs sont obtenues (par arrondi, interpolation linéaire, etc.).
+Une *LUT* ne décrit donc pas *toutes* les correspondances de couleurs possibles, mais bien une sélection de couleurs ; pour obtenir une couleur qui n'est pas dans la table, il faut donc effectuer une *interpolation*. Normalement, l'application utilisant la *LUT* propose differentes interpolations qui vont changer la manière dont ces couleurs sont obtenues (par arrondi, interpolation linéaire, etc.).
 
 La quantité de valeurs contenues dans une *LUT* est donc très importante pour la qualité de l'image en sortie : n'étant qu'une table de valeurs limitées, il peut y avoir une perte lors de la conversion et le résultat peut plus ou moins différer par rapport à une vraie opération mathématique. Cela étant dit, la différence n'est pas discernable dans le cas des *LUT* avec beaucoup de valeurs, comme celles utilisées par *OCIO + ACES* pour ses conversions par exemple. *Cf.* Chapitre *[N - OCIO, ACES](N-ocio.md)*.
 
@@ -48,7 +48,7 @@ Il existe de nombreux formats de fichiers différents pour les *LUT*, dépendant
 |*csp*|cineSpace|
 |*spi1d*, *spi3d*|Sony Pictures Imageworks|
 
-Il peut être utile utile de convertir entre différents formats de *LUT* ; *[OCIO](N-ocio.md)* inclue un outil de conversion en ligne de commande, pour lequel l'encodeur de médias *[DuME](https://rainboxlab.org/tools/dume/)* propose une interface graphique.
+Il peut être utile utile de convertir entre différents formats de *LUT* ; *[OCIO](N-ocio.md)* inclut un outil de conversion en ligne de commande, pour lequel l'encodeur de médias *[DuME](https://rainboxlab.org/tools/dume/)* propose une interface graphique.
 
 Il y a deux types principaux de *LUT* : les ***LUT 1D*** et les ***LUT 3D***.
 
@@ -62,7 +62,7 @@ Les *LUT 1D* ne travaillent que sur la *luminance* et ne modifient pas les coule
 
 ![3D LUT](img/3d-lut.svg)
 
-Les *LUT 3D* travaillent sur les trois couches rouge, verte et bleue. Elles permettent donc une retouche détaillée à la fois de la luminance et des teintes autant que de la saturation. Elle permettent des effets artistiques aussi bien que des conversions depuis et vers n'importe quel espace colorimétrique.
+Les *LUT 3D* travaillent sur les trois couches rouge, verte et bleue. Elles permettent donc une retouche détaillée à la fois de la luminance et des teintes autant que de la saturation. Elles permettent des effets artistiques aussi bien que des conversions depuis et vers n'importe quel espace colorimétrique.
 
 Quel que soit le type de *LUT*, ces tables de conversions n'offrant qu'une simple correspondance de valeur, **chaque _LUT_ est conçue pour un espace et des couleurs précises en entrée** et **ne peut pas être utilisée indifféremment sur n'importe quelle image** !
 

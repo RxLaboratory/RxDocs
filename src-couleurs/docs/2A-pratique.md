@@ -10,7 +10,7 @@ Cette seconde partie est destinée à expliquer concrètement comment organiser 
 
 Avant de s'engager dans le paramétrage des différents logiciels, il faut bien comprendre que **les couleurs sont régulièrement converties lors de la production** d'images. En effet, à chaque étape depuis la génération de la couleur jusque son affichage sur un dispositif quelconque, chaque bout de logiciel et de matériel intervenant travaille dans son propre espace.
 
-Maîtriser la chaîne de production des couleurs n'implique donc pas de bien choisir un espace colorimétrique unique, mais plutôt d'a**voir conscience des différentes conversions et des différents espaces colorimétriques entrant en jeu** à chaque étape, au sein d'une application autant qu'entre les applications.
+Maîtriser la chaîne de production des couleurs n'implique donc pas de bien choisir un espace colorimétrique unique, mais plutôt d'**avoir conscience des différentes conversions et des différents espaces colorimétriques entrant en jeu** à chaque étape, au sein d'une application autant qu'entre les applications.
 
 Cette maîtrise ne garantira pas que les couleurs seront correctement reproduites sur le dispositif des spectateurs (TV, écran d'ordinateur, téléphone, écran de cinéma...) mais permet à minima d'avoir le contrôle tout au long de la production tout en s'assurant de livrer des images respectant les standards en vigueur. C'est ensuite au diffuseur de prendre le relai en toute fin de chaîne avec une chaîne correctement paramétrée aussi.
 
@@ -51,7 +51,7 @@ Cet espace est celui noté *scene referred*.
 Voici les caractéristiques les plus couramment utiles pour un espace de travail :
 
 - ***Linéaire*** dans la grande majorité des cas, pour améliorer la fusion des couleurs, il peut être utile pour les corrections colorimétriques d'utiliser un espace non-linéaire.
-- ***Gammut large*** afin de travailler dans un espace capable de reproduire fidèlement un grand nombre de couleurs et gagner en précision.
+- ***Gamut large*** afin de travailler dans un espace capable de reproduire fidèlement un grand nombre de couleurs et gagner en précision.
 
 Certaines applications permettent de changer d'espace de travail, ce qui est particulièrement intéressant dans le cas des moteurs de rendu 3D : l'espace de travail influence le rendu des couleurs et permet d'ajuster la manière de travailler les lumières et les matériaux.
 
@@ -156,7 +156,7 @@ La plupart des sorties finales se feront dans des espaces colorimétriques dédi
 Sources et références
 
 [^1]:
-    Si une application de vous permet pas de changer l'espace colorimétrique lors de l'importation, attendez-vous à avoir des variations de couleurs inattendues lors de l'importation. Il faudra alors deviner en quoi l'application "se trompe" afin d'effectuer manuellement une correction des couleurs pour rétablir les couleurs d'origine (le plus souvent simplement via une correction *gamma[\*](ZZ-vocabulaire.md)* ou bien l'application d'une *LUT[\*](ZZ-vocabulaire.md)*). Notez qu'une telle application n'a pas vraiment sa place dans une chaîne de production où l'on cherche à maîtriser la couleur...
+    Si une application ne vous permet pas de changer l'espace colorimétrique lors de l'importation, attendez-vous à avoir des variations de couleurs inattendues lors de l'importation. Il faudra alors deviner en quoi l'application "se trompe" afin d'effectuer manuellement une correction des couleurs pour rétablir les couleurs d'origine (le plus souvent simplement via une correction *gamma[\*](ZZ-vocabulaire.md)* ou bien l'application d'une *LUT[\*](ZZ-vocabulaire.md)*). Notez qu'une telle application n'a pas vraiment sa place dans une chaîne de production où l'on cherche à maîtriser la couleur...
 [^2]:
     Toutes les applications ne permettent pas l'automatisation de la gestion des couleurs (par exemple *Adobe After Effects* ne possède pas d'*API* pour ce point précis). Dans la suite de ce document, nous noterons pour les applications expliquées les erreurs d'interprétation qu'elles font, que nous avons pu repérer, et les autres spécificités à savoir.
 

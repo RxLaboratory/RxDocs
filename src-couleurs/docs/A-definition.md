@@ -26,7 +26,7 @@ Historiquement, une solution est venue de la découverte des [*raies de Fraunhof
 
 ### A.2.a - Le trajet : émission, transmission, réflexion, réception
 
-La couleur que nous percevons est donc le résultat d'un groupe de rayons de lumière émis ("créé") par une source donnée (le soleil, un écran, une ampoule...), qui a traversé un ou plusieurs milieux aux propriétés différentes qui en ont absorbé, dévié ou réémis une partie[^1], qui a été réfléchi par une ou plusieurs surfaces aux propriétés différentes qui en ont à leur tout absorbé, dévié ou réémis une partie, avant d'enfin atteindre un capteur : notre œil, ou celui d'une caméra...
+La couleur que nous percevons est donc le résultat d'un groupe de rayons de lumière émis ("créé") par une source donnée (le soleil, un écran, une ampoule...), qui a traversé un ou plusieurs milieux aux propriétés différentes qui en ont absorbé, dévié ou réémis une partie[^1], qui a été réfléchi par une ou plusieurs surfaces aux propriétés différentes qui en ont à leur tour absorbé, dévié ou réémis une partie, avant d'enfin atteindre un capteur : notre œil, ou celui d'une caméra...
 
 *![Schéma de l'émission à la réception](img/light-path.svg)*
 

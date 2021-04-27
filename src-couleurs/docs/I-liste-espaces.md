@@ -14,7 +14,7 @@ Le sRGB (pour standard RGB) est un des espaces les plus courant en informatique 
 
 Il date de 1996.
 
-![](img/srgb-gammut.png)
+![](img/srgb-gamut.png)
 
 ### Primaires
 
@@ -91,7 +91,7 @@ Rec. 709 est la norme de la Télévision Haute Définition, *HDTV* et date de 19
 
 Il est très proche du *sRGB*, seule la courbe de transfert change (et son point blanc doit être un peu plus intense).
 
-![](img/srgb-gammut.png)
+![](img/srgb-gamut.png)
 
 ### Primaires
 
@@ -179,8 +179,6 @@ Espace d'affichage, ***display-referred***.
 Espace d'affichage, ***display-referred***.
 
 Le *Display P3* est une variation du *DCI-P3* adaptée pour être plus proche (et mieux compatible avec) du *sRGB* (et ainsi fabriquer des écrans capables d'afficher les deux plus facilement). Il garde les primaires (et donc le gamut plus large) du *DCI-P3* mais utilise le point blanc et la courbe de transfert du *sRGB*.
-
-![](img/p3.png)
 
 ### Primaires
 
@@ -289,7 +287,7 @@ Espace d'affichage, ***display-referred*** et de travail.
 ----
 Sources et références
 
-- [*sRGB* sur *Wikipadia*](https://fr.wikipedia.org/wiki/SRGB)
+- [*sRGB* sur *Wikipedia*](https://fr.wikipedia.org/wiki/SRGB)
 - [Spécifications *sRGB* sur *color.org*](http://www.color.org/chardata/rgb/srgb.xalter)
 - [Spécifications *BT.601* sur *color.org*](http://www.color.org/chardata/rgb/BT601.xalter)
 - [*Rec. 709* sur *Wikipedia*](https://fr.wikipedia.org/wiki/Rec._709)

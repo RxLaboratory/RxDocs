@@ -10,21 +10,21 @@ Toute la difficulté est de représenter un monde analogique et *continu*[^1] da
 
 ![](img/sampling.png)
 
-En numérique binaire, toute valeur, qu'elle soit un nombre ou une couleur, doit être stockée en une suite de zéros et de uns, ce qu'on appelle des ***bits***[^2]. Il est donc impossible de représenter l'ensemble des nombres réels en numérique, et nous devons *quantifier*, découper l'infinité de couleurs que nous pouvons voir en un **nombre fini** de valeurs numériques. C'est *l'échantillonnage* (*sampling* en anglais).
+En numérique binaire, toute valeur, qu'elle soit un nombre ou une couleur, doit être stockée en une suite de zéros et de uns, ce qu'on appelle des ***bits[\*](ZZ-vocabulaire.md)***[^2]. Il est donc impossible de représenter l'ensemble des nombres réels en numérique, et nous devons *quantifier*, découper l'infinité de couleurs que nous pouvons voir en un **nombre fini** de valeurs numériques. C'est *l'échantillonnage* (*sampling* en anglais).
 
 Plus nous découpons ces valeurs en petits quanta, en petits échantillons, en petites briques, plus nous gagnons en précision et plus nous pouvons approcher une représentation fidèle du réel ; mais se pose alors la question du stockage et de la place nécessaire.
 
 Faisons un calcul simple : prenons une image numérique divisée en une "grille" de 1920 pixels en largeur et 1080 pixels en hauteur, la résolution d'une vidéo numérique standard (en 2020). Cette image contient donc `1920 x 1080 = 2 073 600 pixels`.
 
-Dans sa forme la plus courante, un pixel est représenté par trois valeurs d'intensité pour trois couleurs primaires. Chacune de ces trois valeurs est généralement stockée dans *au minimum* 8 bits. Chaque pixel a donc besoin de `3 x 8 = 24 bits` ou encore `3 octets` pour être stocké (un octet étant formé de 8 bits). Notons que ce choix d'utiliser un octet (8bits) par couleur primaire permet "seulement" 256 valeurs par primaire (`2^8`) soit un total d'environ 65 millions (`256^3`) de nuances de couleurs différentes. Cela peut sembler beaucoup, mais c'est encore loin des nuances que perçoit l'œil humain.
+Dans sa forme la plus courante, un pixel est représenté par trois valeurs d'intensité pour trois couleurs primaires. Chacune de ces trois valeurs est généralement stockée dans *au minimum* 8 bits. Chaque pixel a donc besoin de `3 x 8 = 24 bits`[\*](ZZ-vocabulaire.md) ou encore `3 octets`[\*](ZZ-vocabulaire.md) pour être stocké (un octet étant formé de 8 bits). Notons que ce choix d'utiliser un octet (8 bits) par couleur primaire permet "seulement" 256 valeurs par primaire (`2^8`) soit un total d'environ 65 millions (`256^3`) de nuances de couleurs différentes. Cela peut sembler beaucoup, mais c'est encore loin des nuances que perçoit l'œil humain, et du nombres de nuances utilisées au cinéma.
 
 Notre image a donc besoin de `2 073 600 pixels x 3 octets = 6 220 800 octets` pour être stockée. 6 Mo pour une seule image, ce qui signifie *au minimum* `6 x 24 = 144 Mo` pour une seconde de vidéo, ou encore `144 x 60 = 8 640 Mo` pour une minute, plus de **8 Go**[^3] !
 
 ```
-1920 px x 1080 px x 3 primaires x 8 bits x 24 ips x 60 s ≈ 64 Gbps ≈ 8 Go/s
+1920 px x 1080 px x 3 primaires x 8 bits x 24 ips x 60 s ≈ 64 Gb/mn ≈ 8 Go/mn
 ```
 
-Cette taille représente un débit de données de 64 Gbps.À titre d'exemple, un film sur un disque Blu-Ray est encodé avec un débit de 24 Gbps environ, ce qui signifie qu'il faut diviser cette taille par au moins 2,6...
+Cette taille représente un débit de données d'environ 1.2 Gbps. À titre d'exemple, un film sur un disque Blu-Ray est encodé avec un débit de 24 Mbps environ, ce qui signifie qu'il faut diviser cette taille par 50 environ...
 
 ## G.2 - Les Espaces colorimétriques
 

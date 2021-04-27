@@ -1,6 +1,6 @@
 # I.N - OpenColorIO et ACES
 
-[*OpenColorIO*](https://opencolorio.org/)[^1], souvent abrégé en *OCIO*, est une librairie pour les développeurs (et non pas pour les utilisateurs) libre et open source, facilitant la gestion des couleurs. Elle aspire à être utilisée par toutes les applications en production d'image numérique, facilitant ainsi la gestion des couleurs sur toute la chaîne de production : en devant standard, elle permet de partager la configuration des couleurs tout au long de la chaîne de production et en avoir la maîtrise à toutes les étapes, de manière aussi simple que possible.
+[*OpenColorIO*](https://opencolorio.org/)[^1], souvent abrégé en *OCIO*, est une librairie pour les développeurs (et non pas pour les utilisateurs) libre et open source, facilitant la gestion des couleurs. Elle aspire à être utilisée par toutes les applications en production d'image numérique, facilitant ainsi la gestion des couleurs sur toute la chaîne de production : en devenant standard, elle permet de partager la configuration des couleurs tout au long de la chaîne de production et en avoir la maîtrise à toutes les étapes, de manière aussi simple que possible.
 
 [TOC]
 
@@ -40,17 +40,17 @@ Voici une liste alphabétique (non exhaustive) des principales applications util
 
 ## N.2 - ACES
 
-*ACES* signifie *Academy Color Encoding System*, et a pour but d'être un standard d'échange et de gestion des couleurs pour l'imagerie numérique ; il vise à de simplifier la gestion des couleurs et maintenir la plus grande fidélité dans toutes les chaines de production. Il est gratuit et open source, et utilise *OpenColorIO* dans son fonctionnement.
+*ACES* signifie *Academy Color Encoding System*, et a pour but d'être un standard d'échange et de gestion des couleurs pour l'imagerie numérique ; il vise à simplifier la gestion des couleurs et maintenir la plus grande fidélité dans toutes les chaines de production. Il est gratuit et open source, et utilise *OpenColorIO* dans son fonctionnement.
 
 *ACES* consiste en fait en :
 
 - 5 Espaces colorimétriques conçus pour différents usages pour la chaîne de production.
-- Une configuration *OpenColorIO*, avec les *LUTs* nécessaire à son usage partout.
+- Une configuration *OpenColorIO*, avec les *LUTs* nécessaires à son usage partout.
 - Une série de recommandations sur le calcul et le stockage des couleurs.
 
 Voir le chapitre *[I - Liste d'espaces colorimétriques](I-liste-espaces.md)* pour les détails techniques concernant les différents espaces colorimétriques de *ACES*.
 
-Les principales recommandation sur le stockage sont :
+Les principales recommandations sur le stockage sont :
 
 - Utiliser le format de fichier *openEXR*.
 - Enregistrer dans des espaces colorimétriques larges, englobant tous les autres. L'espace idéal englobant toutes les couleurs visibles étant *ACES2065-1*.
@@ -71,7 +71,7 @@ Il est en réalité peu utilisé, représentant *trop* de données, son intérê
 
 #### N.2.a.b - ACEScg
 
-L'espace *ACEScg* (pour *computer generated (images)*) est dérivé de *ACES2065-1*, mais utilise des *primaires[\*](ZZ-vocabulaire.md* différentes, réduisant son *gamut[\*](ZZ-vocabulaire.md)*, qui reste cependant très large, tout en étant plus pratique que *ACES2065-1*.
+L'espace *ACEScg* (pour *computer generated (images)*) est dérivé de *ACES2065-1*, mais utilise des *primaires[\*](ZZ-vocabulaire.md)* différentes, réduisant son *gamut[\*](ZZ-vocabulaire.md)*, qui reste cependant très large, tout en étant plus pratique que *ACES2065-1*.
 
 C'est un espace linéaire, conçu et idéal pour les rendus 3D et le compositing. Avec son *gamut* très large, et la configuration *OCIO* associée permettant de générer efficacement des images dans des espaces standards plus réduits, il permet une synthèse des couleurs plus fidèles à la réalité et la vision humaine, notamment dans les hautes lumières.
 
