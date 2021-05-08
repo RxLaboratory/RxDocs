@@ -1,0 +1,36 @@
+site_name: RxDocs - Guide de l'animateur
+site_url: https://docs.rainboxlab.org/guide-animateur/
+repo_url: https://github.com/Rainbox-dev/RxDocs/
+edit_uri: edit/master/src-anim-fr/docs/
+site_description: The RxDocuments - Petit guide pratique et théorique de l'animateur.
+site_author: Nicolas Dufresne and contributors
+copyright: 'Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors'
+use_directory_urls: false
+theme:
+    name: readthedocs
+    custom_dir: theme/
+markdown_extensions:
+    - smarty
+    - footnotes
+    - tables
+    - admonition
+    - codehilite
+    - fenced_code
+    - attr_list
+    - toc:
+        permalink: true
+extra_css:
+    - style.css
+    - video.css
+extra_javascript:
+    - video.js
+    - meta.js
+site_dir: ../docs/guide-animateur
+dev_addr: '127.0.0.1:8001'
+nav:
+    - Guide de l'animateur: index.md
+    - Tous les documents RxLab: http://docs.rainboxlab.org
+    - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html
+    - Contact: https://rainboxlab.org/about/contact/
+    - Donate: https://rainboxlab.org/about/donate/
+
