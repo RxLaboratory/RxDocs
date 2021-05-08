@@ -28,7 +28,11 @@ extra_javascript:
 site_dir: ../docs/guide-animateur
 dev_addr: '127.0.0.1:8001'
 nav:
-    - Guide de l'animateur: index.md
+    - Guide de l'animateur:
+        - Introduction: index.md
+        - A - Qu'est ce qui fait qu'on bouge ?: A-mouvement.md
+        - B - Représentater le mouvement: B-representer.md
+        - C - Théorie dans un espace pseudo-scientifique et newtonien: C-science.md
     - Tous les documents RxLab: http://docs.rainboxlab.org
     - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html
     - Contact: https://rainboxlab.org/about/contact/
