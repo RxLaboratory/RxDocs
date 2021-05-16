@@ -135,12 +135,19 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
             - C.3.c.2 - Profil colorimétrique
 - D - Préparer la chaîne de fabrication
 - E - [Concevoir une chaîne de fabrication avec *OpenColorIO*](2D-ocio.md)
-- F - Color management : Adobe After Effects
-    - Projet
-    - Entrée
-    - Affichage
-    - Sortie
-    - OCIO
+- F - [Color management : Adobe After Effects](2F-ae.md)
+    - F.1 - Paramètres du projet - Espace de travail
+    - F.2 - Interprétation des métrages - Espaces d'entrée
+    - F.3 - Options de vues - Espace d'affichage et simulations
+    - F.4 - Options d'export - Espaces de sortie
+    - F.5 - OCIO
+        - F.5.a - Introduction
+        - F.5.b - Installer le plug-in OCIO
+        - F.5.c - Désactiver la gestion des couleurs de After Effects
+        - F.5.d - Organisation
+        - F.5.e - Entrée et espace de travail
+        - F.5.f - Sortie
+        - F.5.g - Affichage
 - G - Color management : Adobe Media Encoder
 - H - Color management : Adobe Photoshop
 - I - [Gestion des couleurs : Blender](2I-blender.md)
@@ -155,11 +162,7 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
         - I.3.b - Entrée (textures)
 - H - Color management : Darktable
 - I - Color management : DuME
-    - Espace de travail
-    - Entrée
-    - Sortie
-    - LUTs
-    - OCIO
+    
 - J - Color management : Krita
     - Document
     - Entrée

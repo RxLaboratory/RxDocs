@@ -30,7 +30,7 @@ Ces paramètres se situent dans les paramètres de rendu, section *Color Managem
 
 Il est important de bien noter que dans une chaîne de production avec gestion des couleurs, et utilisant le format *OpenEXR[\*](ZZ-vocabulaire.md)* comme format intermédiaire (et donc d'enregistrement en sortie de *Blender*), toutes ces options n'influencent que l'**affichage** du rendu dans *Blender* mais pas les données enregistrées dans le fichier *OpenEXR* ! Il faut donc ré-appliquer les mêmes réglages dans les applications suivantes de la chaîne (de compositing comme *Nuke*, *After Effects*, etc. par exemple).
 
-Si les autres applications n'utilisent pas *OpenColorIO[\*](ZZ-vocabulaire.md)* (et qu'on ne peut donc pas donner la configuration *OCIO* de *Blender*), on peut toutefois retrouver ces réglages via des *LUT[\*](ZZ-vocabulaire.md)* exportées depuis la configuration OCIO de Blender. *Cf*. *I.2 - Chaîne de fabrication* OCIO
+Si les autres applications n'utilisent pas *OpenColorIO[\*](ZZ-vocabulaire.md)* (et qu'on ne peut donc pas donner la configuration *OCIO* de *Blender*), on peut toutefois retrouver ces réglages via des *LUT[\*](ZZ-vocabulaire.md)* exportées depuis la configuration *OCIO* de *Blender*. *Cf*. *I.2 - Chaîne de fabrication* *OCIO*
 
 Par contre, ce n'est pas le cas quand on enregistre les images dans d'autres formats (*PNG*, vidéo, etc.), auquel cas *Blender* applique tous les réglages dans l'image qui, contrairement à l'*OpenEXR*, est enregistrée dans un espace colorimétrique précis (*sRGB* pour les images, *Rec.709* pour les vidéos, etc.).
 
