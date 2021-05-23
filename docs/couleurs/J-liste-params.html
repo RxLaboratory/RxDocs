@@ -61,7 +61,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
+              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
             
         </div>
 
@@ -182,7 +182,7 @@
                         
                             
 <li >
-    <a href="2B-standards.html">B - Quelques standards</a>
+    <a href="2B-standards.html">B - Formats de fichiers</a>
 </li>
 
                         
@@ -194,7 +194,7 @@
                         
                             
 <li >
-    <a href=".">D - Préparer la chaîne de fabrication</a>
+    <a href="2D-preparer.html">D - Préparer la chaîne de fabrication</a>
 </li>
 
                         
@@ -248,6 +248,12 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Annexes <b class="caret"></b></a>
                         <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a>
+</li>
+
                         
                             
 <li >
@@ -333,31 +339,139 @@
     <div class="container">
         
         
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#ij-liste-des-parametres-despaces-colorimetriques">I.J - Liste des paramètres d'espaces colorimétriques</a></li>
-            <li class="second-level"><a href="#j1-primaires">J.1 - Primaires</a></li>
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#ij-liste-des-parametres-despaces-colorimetriques">I.J - Liste des paramètres d'espaces colorimétriques</a></li>
+                <li class="second-level"><a href="#j1-primaires">J.1 - Primaires</a></li>
+                    
+                    <li class="third-level"><a href="#rgb-srgb-rec-709">RGB / sRGB / Rec. 709</a></li>
+                    <li class="third-level"><a href="#rec-601">Rec. 601</a></li>
+                    <li class="third-level"><a href="#rec-2020">Rec. 2020</a></li>
+                    <li class="third-level"><a href="#p3">P3</a></li>
+                    <li class="third-level"><a href="#ap0-aces2065-1">AP0 / ACES2065-1</a></li>
+                    <li class="third-level"><a href="#ap1-acescg-acescc">AP1 / ACEScg / ACEScc</a></li>
+                    <li class="third-level"><a href="#adobe-rgb">Adobe RGB</a></li>
+                <li class="second-level"><a href="#j2-blancs">J.2 - Blancs</a></li>
+                    
+                    <li class="third-level"><a href="#d65-rgb-srgb-rec-601-rec-709-display-p3-adobe-rgb">D65 / RGB / sRGB / Rec. 601 / Rec. 709 / Display P3 / Adobe RGB</a></li>
+                    <li class="third-level"><a href="#dci-p3">DCI-P3</a></li>
+                    <li class="third-level"><a href="#aces-aces2065-1-acescg-acescc">ACES / ACES2065-1 / ACEScg / ACEScc</a></li>
+                <li class="second-level"><a href="#j3-courbes-de-transfert">J.3 - Courbes de transfert</a></li>
+                    
+                    <li class="third-level"><a href="#lineaire-rgb-aces2065-1-acescg">Linéaire / RGB / ACES2065-1 / ACEScg</a></li>
+                    <li class="third-level"><a href="#srgb-display-p3">sRGB / Display P3</a></li>
+                    <li class="third-level"><a href="#24-rec-601-rec-709-rec-2020">2.4 / Rec. 601 / Rec. 709 / Rec. 2020</a></li>
+                    <li class="third-level"><a href="#22-adobe-rgb">2.2 / Adobe RGB</a></li>
+                    <li class="third-level"><a href="#acescc">ACEScc</a></li>
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print  affix well" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <p>Théorie</p>
                 
-                <li class="third-level"><a href="#rgb-srgb-rec-709">RGB / sRGB / Rec. 709</a></li>
-                <li class="third-level"><a href="#rec-601">Rec. 601</a></li>
-                <li class="third-level"><a href="#rec-2020">Rec. 2020</a></li>
-                <li class="third-level"><a href="#p3">P3</a></li>
-                <li class="third-level"><a href="#ap0-aces2065-1">AP0 / ACES2065-1</a></li>
-                <li class="third-level"><a href="#ap1-acescg-acescc">AP1 / ACEScg / ACEScc</a></li>
-                <li class="third-level"><a href="#adobe-rgb">Adobe RGB</a></li>
-            <li class="second-level"><a href="#j2-blancs">J.2 - Blancs</a></li>
+                    <li class="second-level "><a href="A-definition.html">A - Qu'est ce que la couleur ?</a></li>
                 
-                <li class="third-level"><a href="#d65-rgb-srgb-rec-601-rec-709-display-p3-adobe-rgb">D65 / RGB / sRGB / Rec. 601 / Rec. 709 / Display P3 / Adobe RGB</a></li>
-                <li class="third-level"><a href="#dci-p3">DCI-P3</a></li>
-                <li class="third-level"><a href="#aces-aces2065-1-acescg-acescc">ACES / ACES2065-1 / ACEScg / ACEScc</a></li>
-            <li class="second-level"><a href="#j3-courbes-de-transfert">J.3 - Courbes de transfert</a></li>
+                    <li class="second-level "><a href="B-inventaire.html">B - Petit inventaire et classification des couleurs</a></li>
                 
-                <li class="third-level"><a href="#lineaire-rgb-aces2065-1-acescg">Linéaire / RGB / ACES2065-1 / ACEScg</a></li>
-                <li class="third-level"><a href="#srgb-display-p3">sRGB / Display P3</a></li>
-                <li class="third-level"><a href="#24-rec-601-rec-709-rec-2020">2.4 / Rec. 601 / Rec. 709 / Rec. 2020</a></li>
-                <li class="third-level"><a href="#22-adobe-rgb">2.2 / Adobe RGB</a></li>
-                <li class="third-level"><a href="#acescc">ACEScc</a></li>
-    </ul>
+                    <li class="second-level "><a href="C-perception.html">C - Perception des couleurs</a></li>
+                
+                    <li class="second-level "><a href="D-reproduction.html">D - Reproduction des couleurs</a></li>
+                
+                    <li class="second-level "><a href="E-temperature.html">E - Retour sur les blancs, température</a></li>
+                
+                    <li class="second-level "><a href="F-representation.html">F - Représentation objective</a></li>
+                
+                    <li class="second-level "><a href="G-numerisation.html">G - Du réel au numérique</a></li>
+                
+                    <li class="second-level "><a href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a></li>
+                
+                    <li class="second-level "><a href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a></li>
+                
+                    <li class="second-level active"><a href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a></li>
+                
+                    <li class="second-level "><a href="K-pix-format.html">K - Format des pixels</a></li>
+                
+                    <li class="second-level "><a href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a></li>
+                
+                    <li class="second-level "><a href="M-LUT.html">M - Les LUTs</a></li>
+                
+                    <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <p>Pratique</p>
+                
+                    <li class="second-level "><a href="2A-pratique.html">A - Choisir ses espaces colorimétriques et formats</a></li>
+                
+                    <li class="second-level "><a href="2B-standards.html">B - Formats de fichiers</a></li>
+                
+                    <li class="second-level "><a href="2C-calibration.html">C - Calibration des écrans</a></li>
+                
+                    <li class="second-level "><a href="2D-preparer.html">D - Préparer la chaîne de fabrication</a></li>
+                
+                    <li class="second-level "><a href="2E-ocio.md">E - Concevoir une chaîne de fabrication avec OCIO</a></li>
+                
+                    <li class="second-level "><a href="2F-ae.html">F - Adobe After Effects</a></li>
+                
+                    <li class="second-level "><a href=".">G - Adobe Media Encoder</a></li>
+                
+                    <li class="second-level "><a href="2I-blender.html">H - Blender</a></li>
+                
+                    <li class="second-level "><a href=".">F - DuME</a></li>
+                
+                    <li class="second-level "><a href=".">H - Krita</a></li>
+                
+                    <li class="second-level "><a href=".">I - Darktable</a></li>
+                
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <p>Annexes</p>
+                
+                    <li class="second-level "><a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a></li>
+                
+                    <li class="second-level "><a href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a></li>
+                
+                    <li class="second-level "><a href="ZZ-vocabulaire.html">Glossaire</a></li>
+                
+                    <li class="second-level "><a href="ZZ-english.html">Dictionnaire français - anglais</a></li>
+                
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <p>...</p>
+                
+                    <li class="second-level "><a href="http://docs.rainboxlab.org">Tous les documents RxLab</a></li>
+                
+                    <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a></li>
+                
+                    <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                
+                    <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                
+            </li>
+        
+        
+        </ul>
+    </div>
 </div></div>
         <div class="col-md-9" role="main">
 

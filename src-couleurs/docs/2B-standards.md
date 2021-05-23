@@ -29,6 +29,9 @@ Si ces listes ne sont pas nécessairement des standards officiels, ces correspon
     - ***16 bpc*** (entier ou flottant)
     - ***32 bpc*** (entier ou flottant)
 
+!!! note
+    Il faut en réalité bien comprendre que l'espace colorimétrique dans un fichier *EXR* importe peu : le fichier stocke des données brutes, qui *ne sont pas* "clampées" (les valeurs supérieures à 1, maximum théorique d'un espace colorimétrique, sont possibles) ; un fichier *EXR* peut donc stocker des couleurs *en dehors* du *gamut[\*](ZZ-vocabulaire.md)* et de la *luminosité[\*](ZZ-vocabulaire.md)* de son espace colorimétrique.
+
 ## MP4 h.264 / h.265 / AVCHD / HEVC et autres vidéos HD (2K) ou UHD (4K)
 
 - Espace : ***Rec.709***, ***Rec.2020*** possible en *UHD* et plus (*4K*).

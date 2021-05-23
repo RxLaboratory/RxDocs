@@ -10,10 +10,10 @@ On peut toutefois aussi facilement utiliser une configuration avec *ACES* si l'o
 
 ## I.1 - Configuration par défaut : *Filmic*
 
-![](img/aces/standard.jpg)
+![](img/aces/standard.jpg)  
 *a. Rendu sans gestion des couleurs, avec l'espace de travail sRGB __standard__.*
 
-![](img/aces/filmic.jpg)
+![](img/aces/filmic.jpg)  
 *b. Rendu avec gestion des couleurs, dans l'espace de travail __Filmic__.*
 
 Avec la configuration par défaut et l'espace *Filmic* pour le rendu (*scene referred*), voici les quelques paramètres de couleur dans Blender.
@@ -124,13 +124,13 @@ Il peut être intéressant d'utiliser l'espace de travail *ACEScg* plutôt que l
 
 Voici une comparaison des résultats du même rendu dans différents espaces :
 
-![](img/aces/standard.jpg)
+![](img/aces/standard.jpg)  
 *a. Rendu sans gestion des couleurs, avec l'espace de travail sRGB __standard__.*
 
-![](img/aces/filmic.jpg)
+![](img/aces/filmic.jpg)  
 *b. Rendu avec gestion des couleurs, dans l'espace de travail __Filmic__ (réglage "Medium-Contrast").*
 
-![](img/aces/aces.jpg)
+![](img/aces/aces.jpg)  
 *c. Rendu avec gestion des couleurs, dans l'espace de travail __ACEScg__.*
 
 Comme on peut le voir sur ces images, *ACES* garde mieux la saturation des couleurs très lumineuses, et un peu plus de contraste, alors que *Filmic* a tendance à ternir un peu les images.

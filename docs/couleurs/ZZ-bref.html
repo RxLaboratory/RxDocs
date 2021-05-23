@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The RxDocuments - Gestion des couleurs dans la production audiovisuelle.">
     <meta name="author" content="Nicolas Dufresne and contributors">
-    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/ZZ-erreurs.html">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/ZZ-bref.html">
     <link rel="shortcut icon" href="img/favicon.ico">
 
     
-    <title>Erreurs et résolution des problèmes - RxDocs - Gestion des couleurs</title>
+    <title>En bref, le résumé pour ne pas se tromper - RxDocs - Gestion des couleurs</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -250,13 +250,13 @@
                         <ul class="dropdown-menu">
                         
                             
-<li >
+<li class="active">
     <a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a>
 </li>
 
                         
                             
-<li class="active">
+<li >
     <a href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a>
 </li>
 
@@ -319,17 +319,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="ZZ-bref.html">
+                        <a rel="prev" href="2I-blender.html">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="ZZ-vocabulaire.html">
+                        <a rel="next" href="ZZ-erreurs.html">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/ZZ-erreurs.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/ZZ-bref.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -342,18 +342,21 @@
         <div class="col-md-3"><div id="side-menu">
     <div class="bs-sidebar hidden-print affix well" role="complementary">
         <ul class="nav bs-sidenav">
-            <li class="first-level active"><a href="#erreurs-et-incomprehensions-courantes-resolution-des-problemes">Erreurs et incompréhensions courantes, résolution des problèmes</a></li>
-                <li class="second-level"><a href="#erreurs-courantes">Erreurs courantes</a></li>
+            <li class="first-level active"><a href="#en-bref-le-resume-pour-ne-pas-se-tromper">En bref : le résumé pour ne pas se tromper</a></li>
+                <li class="second-level"><a href="#formats-de-fichiers">Formats de fichiers</a></li>
                     
-                    <li class="third-level"><a href="#lespace-de-travail-doit-etre-le-meme-que-le-fichier-a-livrer">L'espace de travail doit être le même que le fichier à livrer.</a></li>
-                    <li class="third-level"><a href="#travailler-dans-un-espace-colorimetrique-plus-grand-que-celui-de-sortie-fait-courir-le-risque-de-choisir-des-couleurs-quon-ne-pourra-pas-reproduire">Travailler dans un espace colorimétrique plus grand que celui de sortie fait courir le risque de choisir des couleurs qu'on ne pourra pas reproduire.</a></li>
-                    <li class="third-level"><a href="#il-faut-hoisir-un-espace-daffichage-rec709-parce-que-la-sortie-video-sera-rec709">Il faut hoisir un espace d'affichage Rec.709 parce que la sortie vidéo sera Rec.709.</a></li>
-                <li class="second-level"><a href="#resolution-des-problemes">Résolution des problèmes</a></li>
+                    <li class="third-level"><a href="#exports-intermediaires-rendus-master-et-backup">Exports intermédiaires, rendus, master et backup</a></li>
+                    <li class="third-level"><a href="#export-final-et-livraison">Export final et livraison</a></li>
+                <li class="second-level"><a href="#importation-dans-les-applications">Importation dans les applications</a></li>
                     
-                    <li class="third-level"><a href="#lors-de-la-lecture-dune-video-les-couleurs-ne-sont-pas-les-memes-que-dans-le-logiciel-qui-a-servi-a-la-creer">Lors de la lecture d'une vidéo, les couleurs ne sont pas les mêmes que dans le logiciel qui a servi à la créer.</a></li>
-                    <li class="third-level"><a href="#banding-des-bandes-colorees-apparaissent-dans-les-degrades-fins">"Banding" : des "bandes" colorées apparaissent dans les dégradés fins</a></li>
-                    <li class="third-level"><a href="#une-frange-une-ligne-paraissant-floue-apparait-dans-des-zones-colorees-ou-tres-contrastees-surtout-sur-des-lignes-verticales-ou-horizontales">Une frange, une ligne paraissant floue, apparait dans des zones colorées ou très contrastées, surtout sur des lignes verticales ou horizontales</a></li>
-                    <li class="third-level"><a href="#lorsquon-lit-une-video-sur-lordinateur-dans-la-plupart-des-lecteurs-et-sur-les-videos-des-sites-internet-les-couleurs-paraissent-fades-les-blancs-sont-gris-clairs-les-noirs-sont-gris-fonces">Lorsqu'on lit une vidéo sur l'ordinateur, dans la plupart des lecteurs et sur les vidéos des sites internet, les couleurs paraissent "fades". Les blancs sont gris clairs, les noirs sont gris foncés.</a></li>
+                <li class="second-level"><a href="#affichage">Affichage</a></li>
+                    
+                <li class="second-level"><a href="#espaces-de-travail">Espaces de travail</a></li>
+                    
+                    <li class="third-level"><a href="#dessin-textures">Dessin, textures, ...</a></li>
+                    <li class="third-level"><a href="#rendu-3d">Rendu 3D</a></li>
+                    <li class="third-level"><a href="#compositing">Compositing</a></li>
+                    <li class="third-level"><a href="#correction-colorimetrique">Correction colorimétrique</a></li>
         </ul>
     </div>
     <div class="bs-sidebar hidden-print  affix well" role="complementary">
@@ -434,9 +437,9 @@
             <li class="first-level">
                 <p>Annexes</p>
                 
-                    <li class="second-level "><a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a></li>
+                    <li class="second-level active"><a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a></li>
                 
-                    <li class="second-level active"><a href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a></li>
+                    <li class="second-level "><a href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a></li>
                 
                     <li class="second-level "><a href="ZZ-vocabulaire.html">Glossaire</a></li>
                 
@@ -465,49 +468,55 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="erreurs-et-incomprehensions-courantes-resolution-des-problemes">Erreurs et incompréhensions courantes, résolution des problèmes<a class="headerlink" href="#erreurs-et-incomprehensions-courantes-resolution-des-problemes" title="Permanent link">&para;</a></h1>
-<h2 id="erreurs-courantes">Erreurs courantes<a class="headerlink" href="#erreurs-courantes" title="Permanent link">&para;</a></h2>
-<h3 id="lespace-de-travail-doit-etre-le-meme-que-le-fichier-a-livrer">L&rsquo;espace de travail doit être le même que le fichier à livrer.<a class="headerlink" href="#lespace-de-travail-doit-etre-le-meme-que-le-fichier-a-livrer" title="Permanent link">&para;</a></h3>
-<p>C&rsquo;est faux : lors du travail et du calcul des couleurs, il est nécessaire de travailler dans un espace &ldquo;plus grand&rdquo; que la livraison ; en effet, la précision lors des calculs doit être supérieure à celle des données à obtenir. Pouvoir travailler dans un espace plus grand, aussi bien en <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> qu&rsquo;en <em>profondeur<a href="ZZ-vocabulaire.html">*</a></em> garantit un meilleur respect des couleurs lors de l&rsquo;export.</p>
-<p>Si l&rsquo;espace de travail n&rsquo;est pas plus grand que celui de sortie, des défauts risquent d&rsquo;apparaitre, comme le &ldquo;<em>banding</em>&rdquo;, l&rsquo;apparition de bandes visibles dans les dégradés fins.</p>
-<p>Si l&rsquo;espace de travail est linéaire, sa profondeur doit aussi impérativement être supérieure à celle de l&rsquo;espace de sortie, et c&rsquo;est de toute façon recommandé même pour un espace de travail non-linéaire. Ainsi, pour une sortie <em>8 bpc</em> on préfère travailler au minimum en <em>16 bpc</em>, ou en <em>32 bpc</em> pour une sortie <em>8 bpc</em>.</p>
-<p>Il est tout aussi faux de croire que travailler dans un espace plus grand va nous faire sélectionner et utiliser des couleurs &ldquo;en dehors&rdquo; du format de sortie. <em>Cf</em>. question suivante.</p>
-<h3 id="travailler-dans-un-espace-colorimetrique-plus-grand-que-celui-de-sortie-fait-courir-le-risque-de-choisir-des-couleurs-quon-ne-pourra-pas-reproduire">Travailler dans un espace colorimétrique plus grand que celui de sortie fait courir le risque de choisir des couleurs qu&rsquo;on ne pourra pas reproduire.<a class="headerlink" href="#travailler-dans-un-espace-colorimetrique-plus-grand-que-celui-de-sortie-fait-courir-le-risque-de-choisir-des-couleurs-quon-ne-pourra-pas-reproduire" title="Permanent link">&para;</a></h3>
-<p>C&rsquo;est faux : même si l&rsquo;espace de travail est très grand (comme le <em>ACEScg</em> par exemple), les couleurs affichées par l&rsquo;écran sont le résultat d&rsquo;une conversion &ldquo;en direct&rdquo; vers l&rsquo;espace de l&rsquo;écran, nécessairement plus restreint (<em>sRGB</em> dans la majorité des cas). On ne risque donc pas d&rsquo;avoir de variation au moment de l&rsquo;export, qui subira exactement la même transformation.</p>
-<p>Il est à noter que la majorité des écrans (hors <em>HDR</em> et autres écrans en <em>P3</em>) ne peuvent pas afficher les couleurs utilisées en <em>HDR</em> et au <em>cinéma</em> ; le problème est donc plutôt inverse : comment travailler sur des couleurs en dehors de l&rsquo;espace d&rsquo;affichage de l&rsquo;écran&hellip;</p>
-<p>Cependant, ce qui est vrai, c&rsquo;est qu&rsquo;il faut être vigilant dans la sélection des couleurs dans les moteurs de rendu (3D) : les couleurs que l&rsquo;on choisit à l&rsquo;écran sont des couleurs affichées en <em>sRGB</em>, et on peut facilement sélectionner des couleurs trop intenses ou trop saturées sans s&rsquo;en rendre compte, car en réalité en dehors de l&rsquo;espace <em>sRGB</em> en valeurs. Un moyen de palier à ce problème est de s&rsquo;assurer que les sélecteurs de couleurs (color pickers) de l&rsquo;application soient limités au <em>sRGB</em> par exemple (l&rsquo;application se chargeant de la conversion du <em>sRGB</em> vers l&rsquo;espace de travail) ; dans ce cas, la sélection d&rsquo;un vert intense par exemple sera encore loin des extrèmes de l&rsquo;espace de travail plus grand, et la couleur ne risque pas de trop éclairer et saturer la scène.</p>
-<h3 id="il-faut-hoisir-un-espace-daffichage-rec709-parce-que-la-sortie-video-sera-rec709">Il faut hoisir un espace d&rsquo;affichage <em>Rec.709</em> parce que la sortie vidéo sera <em>Rec.709</em>.<a class="headerlink" href="#il-faut-hoisir-un-espace-daffichage-rec709-parce-que-la-sortie-video-sera-rec709" title="Permanent link">&para;</a></h3>
-<p>L&rsquo;espace colorimétrique d&rsquo;affichage doit être celui de l&rsquo;écran connecté (<em>sRGB</em> dans la majorité des cas en informatique).</p>
-<p>Cet espace d&rsquo;affichage sert à la conversion depuis l&rsquo;espace de travail vers l&rsquo;affichage de l&rsquo;écran.</p>
-<p>Lors de la sortie du fichier vidéo, une conversion sera faite depuis l&rsquo;espace de travail vers l&rsquo;espace de la vidéo, <em>Rec.709</em> dans cet exemple. Et c&rsquo;est à la lecture de la vidéo qu&rsquo;une nouvelle conversion a de nouveau lieu depuis le <em>Rec.709</em> vers le probable <em>sRGB</em> de l&rsquo;écran.</p>
-<h2 id="resolution-des-problemes">Résolution des problèmes<a class="headerlink" href="#resolution-des-problemes" title="Permanent link">&para;</a></h2>
-<h3 id="lors-de-la-lecture-dune-video-les-couleurs-ne-sont-pas-les-memes-que-dans-le-logiciel-qui-a-servi-a-la-creer">Lors de la lecture d&rsquo;une vidéo, les couleurs ne sont pas les mêmes que dans le logiciel qui a servi à la créer.<a class="headerlink" href="#lors-de-la-lecture-dune-video-les-couleurs-ne-sont-pas-les-memes-que-dans-le-logiciel-qui-a-servi-a-la-creer" title="Permanent link">&para;</a></h3>
-<p>Voici les paramètres à vérifier :</p>
-<ol>
-<li>Problème d&rsquo;affichage dans le logiciel : l&rsquo;espace colorimétrique d&rsquo;affichage dans le logiciel doit correspondre à celui de l&rsquo;écran (<em>sRGB</em> le plus souvent).</li>
-<li>Problème de sortie : l&rsquo;espace colorimétrique de sortie de la vidéo n&rsquo;est pas standard ; vérifier l&rsquo;espace utilisé en sortie de l&rsquo;application.</li>
-<li>Problème de lecture : la lecture vidéo est mal configurée sur la carte graphique (voir plus bas <em>Lorsqu&rsquo;on lit une vidéo l&rsquo;ordinateur (&hellip;) les couleurs paraissent &ldquo;fades&rdquo;.</em>)</li>
-</ol>
-<p>Si malgré tout une (très légère) variation persiste, elle peut être due à la conversion de <em>RGB</em> vers <em>YUV</em>, ou la compression du format vidéo notamment. Dans ce cas, il n&rsquo;y a rien à faire&hellip;</p>
-<h3 id="banding-des-bandes-colorees-apparaissent-dans-les-degrades-fins">&ldquo;Banding&rdquo; : des &ldquo;bandes&rdquo; colorées apparaissent dans les dégradés fins<a class="headerlink" href="#banding-des-bandes-colorees-apparaissent-dans-les-degrades-fins" title="Permanent link">&para;</a></h3>
-<p>Le plus souvent, ce problème vient du fait que l&rsquo;espace de travail de l&rsquo;application est trop petit et que la <em>profondeur<a href="ZZ-vocabulaire.html">*</a></em> est trop faible par rapport au format de sortie.</p>
-<p>Voici ce qu&rsquo;il faut contrôler et ce qui peut corriger le problème :</p>
+<h1 id="en-bref-le-resume-pour-ne-pas-se-tromper">En bref : le résumé pour ne pas se tromper<a class="headerlink" href="#en-bref-le-resume-pour-ne-pas-se-tromper" title="Permanent link">&para;</a></h1>
+<p>Voici les indications à suivre pour une parfaite gestion des couleurs sans erreur !</p>
+<h2 id="formats-de-fichiers">Formats de fichiers<a class="headerlink" href="#formats-de-fichiers" title="Permanent link">&para;</a></h2>
+<h3 id="exports-intermediaires-rendus-master-et-backup">Exports intermédiaires, rendus, master et backup<a class="headerlink" href="#exports-intermediaires-rendus-master-et-backup" title="Permanent link">&para;</a></h3>
+<p>Utiliser <strong><em>openEXR</em></strong> pour tout export non final !</p>
 <ul>
-<li>La <em>profondeur</em> dans l&rsquo;application doit être plus élevée que celle de la sortie (<em>16 bpc</em> minimum pour sortir en <em>8 bpc</em>, etc.), en particulier si l&rsquo;espace de travail est linéaire.</li>
-<li>Si on ne peut pas augmenter la <em>profondeur</em> de travail, quand c&rsquo;est possible un espace avec le même <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> que celui de sortie peut aider à réduire le problème.</li>
-<li>Choisir un espace de travail au <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> plus grand que celui de sortie.</li>
-<li>Si le dégradé fait partie d&rsquo;un fichier importé, vérifier les points ci-dessus dans l&rsquo;application qui a créé le fichier.</li>
-<li>Des problèmes de bandes peuvent apparaître en raison de la compression ; contrôler si ils sont toujours visibles dans des formats sans perte (<em>openEXR</em>, <em>PNG</em>, <em>Quicktime Animation</em>, etc.)</li>
-<li>Ajouter un très léger bruit ou grain, imperceptible, à l&rsquo;image permet souvent &ldquo;d&rsquo;effacer&rdquo; ce problème.</li>
+<li>C&rsquo;est un format sans perte</li>
+<li>Il peut stocker les informations de n&rsquo;importe quelle couleur de n&rsquo;importe quel espace colorimétrique</li>
+<li>Il propose des formats de compressions très efficaces (y compris quelques uns avec perte pour réduire encore la taille)</li>
 </ul>
-<h3 id="une-frange-une-ligne-paraissant-floue-apparait-dans-des-zones-colorees-ou-tres-contrastees-surtout-sur-des-lignes-verticales-ou-horizontales">Une frange, une ligne paraissant floue, apparait dans des zones colorées ou très contrastées, surtout sur des lignes verticales ou horizontales<a class="headerlink" href="#une-frange-une-ligne-paraissant-floue-apparait-dans-des-zones-colorees-ou-tres-contrastees-surtout-sur-des-lignes-verticales-ou-horizontales" title="Permanent link">&para;</a></h3>
-<p>Ce problème est généralement la conséquence du <a href="K-pix-format.html">sous-échantillonage de la chrominance</a>, lors du passage de <em>RGB</em> à <em>YUV</em>. Si possible, augmentez le sous-échantillonage (<em>4:4:4</em> ou <em>4:2:2</em> au lieu de <em>4:2:0</em> par exemple). Si ce n&rsquo;est pas possible, et que l&rsquo;image est fixe, il est parfois possible de déplacer l&rsquo;image d&rsquo;un pixel ou deux dans la vidéo pour corriger le problème.</p>
-<h3 id="lorsquon-lit-une-video-sur-lordinateur-dans-la-plupart-des-lecteurs-et-sur-les-videos-des-sites-internet-les-couleurs-paraissent-fades-les-blancs-sont-gris-clairs-les-noirs-sont-gris-fonces">Lorsqu&rsquo;on lit une vidéo sur l&rsquo;ordinateur, dans la plupart des lecteurs et sur les vidéos des sites internet, les couleurs paraissent &ldquo;fades&rdquo;. Les blancs sont gris clairs, les noirs sont gris foncés.<a class="headerlink" href="#lorsquon-lit-une-video-sur-lordinateur-dans-la-plupart-des-lecteurs-et-sur-les-videos-des-sites-internet-les-couleurs-paraissent-fades-les-blancs-sont-gris-clairs-les-noirs-sont-gris-fonces" title="Permanent link">&para;</a></h3>
-<p>Il y a probablement une erreur de conversion de la gamme <em><a href="K-pix-format.html">Full</a></em> vers <em><a href="K-pix-format.html">Limited</a></em> ou inversement.</p>
-<p>Dans les paramètres de la carte graphique, une option &ldquo;video&rdquo; permet souvent de changer ce paramètre ; il faut choisir <em>Full</em> si c&rsquo;est un écran d&rsquo;ordinateur qui est connecté, ou <em>Limited</em> si c&rsquo;est une TV.</p>
-<hr />
-<p>Sources et références</p>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/11" /></p></div>
+<p>Profondeur de couleurs en <em>EXR</em> :</p>
+<ul>
+<li>Choisir <strong><em>16 bpc (float)</em></strong> si les étapes suivantes de fabrication utilisent le même <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> (linéaire ou non linéaire).</li>
+<li>Choisir <em>32 bpc</em> dans les autres cas.</li>
+</ul>
+<p>Les autres options de profondeur ne sont utiles qu&rsquo;en cas de problèmes de manque de ressources&hellip;</p>
+<p>Compression de l&rsquo;<em>EXR</em> :</p>
+<p><a href="http://docs.rainboxlab.org/">Lire notre document sur les compressions <em>EXR</em> ici !</a></p>
+<h3 id="export-final-et-livraison">Export final et livraison<a class="headerlink" href="#export-final-et-livraison" title="Permanent link">&para;</a></h3>
+<p>Se référer aux <a href="2B-standards.html">espaces standards</a> en fonction du format livré (si le client ne spécifie pas d&rsquo;espace colorimétrique).</p>
+<h2 id="importation-dans-les-applications">Importation dans les applications<a class="headerlink" href="#importation-dans-les-applications" title="Permanent link">&para;</a></h2>
+<p>Il faut toujours bien savoir dans quel espace a été fabriqué/exporté le fichier importé. Si vous suivez ces recommandations, le fichier est toujours un fichier <em>openEXR</em>, et le plus souvent interprété par les applications comme <em>RGB Linéaire</em> par défaut.</p>
+<p>Il peut être utile de noter l&rsquo;espace colorimétrique utilisé directement dans le nom du fichier.</p>
+<p>Se référerer aux <a href="2B-standards.html">espaces standards</a> pour les autres formats si vous ne connaissez pas leurs espaces colorimétriques.</p>
+<h2 id="affichage">Affichage<a class="headerlink" href="#affichage" title="Permanent link">&para;</a></h2>
+<p>Dans la grande majorité des cas, on affiche en <strong><em>sRGB</em></strong> sans autre simulation ni conversion. Seulement dans le cas où un écran utilise un autre espace d&rsquo;affichage on pourra choisir un autre paramètre.</p>
+<h2 id="espaces-de-travail">Espaces de travail<a class="headerlink" href="#espaces-de-travail" title="Permanent link">&para;</a></h2>
+<p>Les espaces fournis par <em>ACES</em> sont extrêmement pratiques, et faciles à mettre en place en utilisant <em>OCIO</em>. Si <em>OCIO</em> n&rsquo;est pas disponible sur l&rsquo;application, les espaces <em>ACES</em> sont peut être quand même disponibles nativement ; en dernier recours on choisira un autre espace large propre à l&rsquo;application.</p>
+<h3 id="dessin-textures">Dessin, textures, &hellip;<a class="headerlink" href="#dessin-textures" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Soit l&rsquo;espace du rendu 3D ou du logiciel de compositing et animation si possible.</li>
+<li>Sinon, <em>RGB Linéaire</em> ou un autre espace au <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> très large et linéaire.</li>
+</ul>
+<p>Exports en <strong><em>openEXR</em></strong> <strong><em>16 bpc</em></strong>. Lors de l&rsquo;import dans d&rsquo;autres applications, prendre bien soin de spécifier l&rsquo;espace utilisé lors de la fabrication de l&rsquo;image.</p>
+<h3 id="rendu-3d">Rendu 3D<a class="headerlink" href="#rendu-3d" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Sur <em>Blender</em> : <strong><em>Filmic</em></strong> ou bien <strong><em>ACEScg</em></strong> via une configuration <em>OCIO</em></li>
+<li>En général : <strong><em>ACEScg</em></strong></li>
+</ul>
+<p>Ou tout autre espace au <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> très large et linéaire.</p>
+<p>Exports en <strong><em>openEXR</em></strong> <strong><em>16 bpc</em></strong> si le compositing est fait dans un espace linéaire.</p>
+<h3 id="compositing">Compositing<a class="headerlink" href="#compositing" title="Permanent link">&para;</a></h3>
+<p>En 3D, on essaie dans la mesure du possible d&rsquo;utiliser l&rsquo;espace colorimétrique du rendu 3D.</p>
+<p>En 2D, on préfère un espace au <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> large et linéaire, <strong><em>ACEScg</em></strong> fait très bien l&rsquo;affaire. En cas d&rsquo;impossibilité, on pourra rester en <em>RGB Linéaire</em>.</p>
+<p>Exports en <strong><em>openEXR</em></strong> <strong><em>16 bpc</em></strong> si le compositing n&rsquo;est pas suivi d&rsquo;une étape de correction colorimétrique dans un espace non linéaire, <strong><em>32 bpc</em></strong> dans les autres cas.</p>
+<h3 id="correction-colorimetrique">Correction colorimétrique<a class="headerlink" href="#correction-colorimetrique" title="Permanent link">&para;</a></h3>
+<p>On peut suivre le même raisonnement que pour le compositing, bien qu&rsquo;il peut être plus pratique de travailler dans un esapce non linéaire. Dans ce cas <strong><em>ACEScc</em></strong> fait parfaitement l&rsquo;affaire.</p>
+<p>Exports en <strong><em>openEXR</em></strong> <strong><em>16 bpc</em></strong> pour l&rsquo;archivage, et dans <a href="2B-standards.html">l&rsquo;espace standard</a> du fichier pour la livraison.</p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/23" /></p></div>
         
         
     </div>

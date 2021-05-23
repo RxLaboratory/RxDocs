@@ -1,4 +1,4 @@
-# Petit Guide technique de la gestion des couleurs dans la production audiovisuelle
+# Petit Guide pratique de la gestion des couleurs dans la production audiovisuelle
 
 ## À propos
 
@@ -133,7 +133,7 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
         - C.3.c - Calibration et application du profil colorimétrique
             - C.3.c.1 - Calibration
             - C.3.c.2 - Profil colorimétrique
-- D - Préparer la chaîne de fabrication
+- D - [Préparer la chaîne de fabrication](2D-preparer.md)
 - E - [Concevoir une chaîne de fabrication avec *OpenColorIO*](2D-ocio.md)
 - F - [Color management : Adobe After Effects](2F-ae.md)
     - F.1 - Paramètres du projet - Espace de travail
@@ -172,6 +172,7 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
 
 ### III - Annexes
 
+- [En bref : le résumé pour ne pas se tromper](ZZ-bref.md)
 - [Erreurs et incompréhensions courantes, résolution des problèmes](ZZ-erreurs.md)
 - [Glossaire](ZZ-vocabulaire.md)
 - [Dictionnaire français - anglais](ZZ-english.md)

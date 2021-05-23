@@ -49,9 +49,9 @@ nav:
         - N - OCIO, ACES: N-ocio.md
     - Pratique:
         - A - Choisir ses espaces colorimétriques et formats: 2A-pratique.md
-        - B - Quelques standards: 2B-standards.md
+        - B - Formats de fichiers: 2B-standards.md
         - C - Calibration des écrans: 2C-calibration.md
-        - D - Préparer la chaîne de fabrication: .
+        - D - Préparer la chaîne de fabrication: 2D-preparer.md
         - E - Concevoir une chaîne de fabrication avec OCIO: 2E-ocio.md
         - F - Adobe After Effects: 2F-ae.md
         - G - Adobe Media Encoder: .
@@ -60,6 +60,7 @@ nav:
         - H - Krita: .
         - I - Darktable: .
     - Annexes:
+        - En bref, le résumé pour ne pas se tromper: ZZ-bref.md
         - Erreurs et résolution des problèmes: ZZ-erreurs.md
         - Glossaire: ZZ-vocabulaire.md
         - Dictionnaire français - anglais: ZZ-english.md

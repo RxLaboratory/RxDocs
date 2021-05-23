@@ -1,7 +1,5 @@
 # Erreurs et incompréhensions courantes, résolution des problèmes
 
-[TOC]
-
 ## Erreurs courantes
 
 ### L'espace de travail doit être le même que le fichier à livrer.

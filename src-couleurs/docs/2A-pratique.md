@@ -4,8 +4,6 @@ Travaillant au sein d'une application dédiée à l'image numérique, il est imp
 
 Cette seconde partie est destinée à expliquer concrètement comment organiser cette chaîne de fabrication pour ce qui concerne la couleur, et aider à la paramétrer.
 
-[TOC]
-
 ## A.1 - Théorie
 
 Avant de s'engager dans le paramétrage des différents logiciels, il faut bien comprendre que **les couleurs sont régulièrement converties lors de la production** d'images. En effet, à chaque étape depuis la génération de la couleur jusque son affichage sur un dispositif quelconque, chaque bout de logiciel et de matériel intervenant travaille dans son propre espace.
