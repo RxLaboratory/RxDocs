@@ -20,13 +20,19 @@ Il est à noter que la majorité des écrans (hors *HDR* et autres écrans en *P
 
 Cependant, ce qui est vrai, c'est qu'il faut être vigilant dans la sélection des couleurs dans les moteurs de rendu (3D) : les couleurs que l'on choisit à l'écran sont des couleurs affichées en *sRGB*, et on peut facilement sélectionner des couleurs trop intenses ou trop saturées sans s'en rendre compte, car en réalité en dehors de l'espace *sRGB* en valeurs. Un moyen de palier à ce problème est de s'assurer que les sélecteurs de couleurs (color pickers) de l'application soient limités au *sRGB* par exemple (l'application se chargeant de la conversion du *sRGB* vers l'espace de travail) ; dans ce cas, la sélection d'un vert intense par exemple sera encore loin des extrèmes de l'espace de travail plus grand, et la couleur ne risque pas de trop éclairer et saturer la scène.
 
-### Il faut hoisir un espace d'affichage *Rec.709* parce que la sortie vidéo sera *Rec.709*.
+### Il faut choisir un espace d'affichage *Rec.709* parce que la sortie vidéo sera *Rec.709*.
 
 L'espace colorimétrique d'affichage doit être celui de l'écran connecté (*sRGB* dans la majorité des cas en informatique).
 
 Cet espace d'affichage sert à la conversion depuis l'espace de travail vers l'affichage de l'écran.
 
 Lors de la sortie du fichier vidéo, une conversion sera faite depuis l'espace de travail vers l'espace de la vidéo, *Rec.709* dans cet exemple. Et c'est à la lecture de la vidéo qu'une nouvelle conversion a de nouveau lieu depuis le *Rec.709* vers le probable *sRGB* de l'écran.
+
+!!! note
+    Certaines applications, notamment de compositing, permettent toutefois une *simulation* (*soft-proofing* ou *épreuve[\*](ZZ-vocabulaire.md)*) des conversions que subissent les images une fois exportées ; dans ce cas, plusieurs conversions ont lieu entre l'espace de travail et l'affichage :  
+    • passage de l'espace de travail vers l'espace de l'export (simulé) (*Rec.709* dans l'exemple)  
+    • passage de l'export vers l'affichage de l'écran (*sRGB* dans l'exemple)  
+    Mais en aucun cas il n'y a de conversion vers un affichage en *Rec.709* à faire. L'activation/désactivation de cette simulation ne devrait en théorie pas changer l'affichage de l'image ; les changements n'étant dus qu'aux pertes de précision des conversions successives que l'on simule.
 
 ## Résolution des problèmes
 
@@ -66,4 +72,4 @@ Dans les paramètres de la carte graphique, une option "video" permet souvent de
 ----
 Sources et références
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/11)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/30)

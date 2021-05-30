@@ -61,7 +61,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
+              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
             
         </div>
 
@@ -165,6 +165,12 @@
 </li>
 
                         
+                            
+<li >
+    <a href="O-epreuve.md">O - Épreuvage (Soft-Proofing)</a>
+</li>
+
+                        
                         </ul>
                     </li>
                 
@@ -218,25 +224,31 @@
                         
                             
 <li >
-    <a href="2I-blender.html">H - Blender</a>
+    <a href=".">H - Adobe Premiere</a>
 </li>
 
                         
                             
 <li >
-    <a href=".">F - DuME</a>
+    <a href="2I-blender.html">I - Blender</a>
 </li>
 
                         
                             
 <li >
-    <a href=".">H - Krita</a>
+    <a href=".">J - Darktable</a>
 </li>
 
                         
                             
 <li >
-    <a href=".">I - Darktable</a>
+    <a href=".">K - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2L-krita.html">L - Krita</a>
 </li>
 
                         
@@ -270,6 +282,12 @@
                             
 <li >
     <a href="ZZ-english.html">Dictionnaire français - anglais</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Téléchargements</a>
 </li>
 
                         
@@ -403,6 +421,8 @@
                 
                     <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
                 
+                    <li class="second-level "><a href="O-epreuve.md">O - Épreuvage (Soft-Proofing)</a></li>
+                
             </li>
         
         
@@ -424,13 +444,15 @@
                 
                     <li class="second-level "><a href=".">G - Adobe Media Encoder</a></li>
                 
-                    <li class="second-level "><a href="2I-blender.html">H - Blender</a></li>
+                    <li class="second-level "><a href=".">H - Adobe Premiere</a></li>
                 
-                    <li class="second-level "><a href=".">F - DuME</a></li>
+                    <li class="second-level "><a href="2I-blender.html">I - Blender</a></li>
                 
-                    <li class="second-level "><a href=".">H - Krita</a></li>
+                    <li class="second-level "><a href=".">J - Darktable</a></li>
                 
-                    <li class="second-level "><a href=".">I - Darktable</a></li>
+                    <li class="second-level "><a href=".">K - DuME</a></li>
+                
+                    <li class="second-level "><a href="2L-krita.html">L - Krita</a></li>
                 
             </li>
         
@@ -446,6 +468,8 @@
                     <li class="second-level "><a href="ZZ-vocabulaire.html">Glossaire</a></li>
                 
                     <li class="second-level "><a href="ZZ-english.html">Dictionnaire français - anglais</a></li>
+                
+                    <li class="second-level "><a href="ZZ-download.html">Téléchargements</a></li>
                 
             </li>
         
@@ -475,16 +499,107 @@
 <p>La première étape est de lister tous les formats utilisés en entrée de la chaîne (vidéos ou images fournies et importées, images fabriquées) ainsi que tous les formats à livrer en fin de fabrication (vidéos et images finales).<br />
 Suivant ces formats, et donc les espaces colorimétriques associés, nous pourrons choisir les différents espaces à utiliser pendant la fabrication, en gardant en tête que <em>qui peut le plus peut le moins</em> : le plus simple est de mettre en place une chaîne performante qui permette de livrer dans tous les formats.</p>
 <p>Il faudra aussi bien prendre garde à ce que toutes les étapes qui modifient l&rsquo;image utilisent un espace colorimétrique <em>plus grand</em> que celui de livraison : aussi bien avec un <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> plus large qu&rsquo;une profondeur plus grande.</p>
-<p>Nous chercherons aussi à limiter le nombre d&rsquo;espaces utilisés (et ainsi limiter les erreurs possibles). La préparation de la chaîne consiste donc le plus souvent à choisir l&rsquo;espace de travail le plus adéquat en fonction des formats d&rsquo;entrée et surtout de sortie, et supporté par les différentes applications.</p>
+<p>Nous chercherons aussi à limiter le nombre d&rsquo;espaces utilisés (et ainsi limiter les erreurs possibles et les décalages dus aux conversions). La préparation de la chaîne consiste donc le plus souvent à choisir l&rsquo;espace de travail le plus adéquat en fonction des formats d&rsquo;entrée et surtout de sortie, et supporté par les différentes applications.</p>
 <p>Voici quelques exemples de choix possibles, compatibles avec une qualité cinéma (et donc tous types de production).</p>
 <h2 id="animation-3d-avec-blender-filmic">Animation 3D avec Blender, Filmic<a class="headerlink" href="#animation-3d-avec-blender-filmic" title="Permanent link">&para;</a></h2>
 <p>Blender fournit un espace de travail efficace par défaut pour les rendus 3D : <em>Filmic</em>. Cet espace étant configuré en utilisant <em>OCIO</em>, il est assez facile de créer une chaîne de fabrication autour de cet espace.</p>
 <p>Par simplicité, les textures pourront elles être fabriquées dans un espace <em>RGB Linéaire</em> standard.</p>
 <p>Comme dans la plupart des chaînes, nous pouvons utiliser <strong><em>openEXR</em></strong> comme format d&rsquo;image intermédiaire, aussi bien pour les textures que pour les rendus intermédaires ou le <em>master</em> final.</p>
 <p><em><img alt="Schema Pipe Blender" src="" /></em></p>
+<table>
+<thead>
+<tr>
+<th>Étape</th>
+<th>Type</th>
+<th>Espace colorimétrique / Format</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toutes</td>
+<td>Sélecteurs de couleurs</td>
+<td><em>sRGB</em> (celui de l&rsquo;écran)</td>
+<td>Il est toujours plus pratique, et plus sûr, de choisir ses couleurs dans l&rsquo;espace de l&rsquo;écran non linéaire.</td>
+</tr>
+<tr>
+<td>Toutes</td>
+<td>Affichage</td>
+<td>Espace de l&rsquo;écran (<em>sRGB</em>)</td>
+<td>On affiche toujours les couleurs dans l&rsquo;espace de l&rsquo;écran.</td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Espace de travail</td>
+<td><em>RGB Linéaire</em> / <em>16 bpc</em></td>
+<td>Si l&rsquo;application ne gère pas <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Espace de travail</td>
+<td><em>Filmic</em> / <em>16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Sortie</td>
+<td>Espace de travail / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Espace de travail</td>
+<td><em>Filmic</em></td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Sortie</td>
+<td><em>Filmic</em> / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Espace de travail</td>
+<td><em>Filmic</em> / <em>32 bpc</em></td>
+<td>En cas de problème de performances et si il n&rsquo;y a pas d&rsquo;étape de correction colorimétrique qui suit le compositing, on pourra éventuellement travailler avec <em>16 bpc</em>.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Espace de travail</td>
+<td><em>RGB Linéaire</em> / <em>32 bpc</em></td>
+<td>Si l&rsquo;application ne gère pas <em>OCIO</em>.<br />Il faudra alors appliquer une <em>LUT<a href="ZZ-vocabulaire.html">*</a> Filmic</em> aux métrages importés.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Épreuvage écran</td>
+<td>Espace de la sortie finale (<em>Rec.709</em> par exemple)</td>
+<td>En cas de doute, il vaut mieux ne pas configurer d&rsquo;épreuvage et bien rester sur l&rsquo;espace de l&rsquo;écran pour l&rsquo;affichage.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Sortie finale</td>
+<td>Standard en fonction du format : <em>Rec.709</em>, <em>Rec.2020</em>&hellip;</td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Master / Archivage</td>
+<td><em>RGB Linéaire</em> / <em>openEXR 16 bpc</em></td>
+<td>Il est probablement plus sûr d&rsquo;archiver les images dans un espace le plus standard possible, mais sans perdre de qualité.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Sortie pour correction colorimétrique</td>
+<td><em>RGB Linéaire</em> / <em>openEXR 32bpc</em></td>
+<td>Les <em>32 bpc</em> sont nécessaires pour éviter de perdre en qualité lors de la conversion vers un espace probablement non-linéaire pour la correction colorimétrique.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="textures-et-autres-images-2d">Textures et autres images 2D<a class="headerlink" href="#textures-et-autres-images-2d" title="Permanent link">&para;</a></h3>
 <p>Quel que soit l&rsquo;application (<em>Substance Painter</em>, <em>Substance Designer</em>, <em>Krita</em>, <em>Adobe Photoshop</em>, <em>The Foundry Mari</em>&hellip;), les textures couleurs pourront être créées en <strong><em>RGB Linéaire</em></strong> ; on fera simplement bien attention à avoir au minimum <em>16 bpc</em>.</p>
 <p>Lors de l&rsquo;import dans <em>Blender</em>, les images seront interprétées en <em>RGB Linéaire</em>, les textures de données (<em>normal maps</em>, <em>metalness</em>, etc) en <em>Raw</em>, sans conversion.</p>
+<p>Il est aussi possible de travailler directement les textures dans l&rsquo;espace <em>Filmic</em> si l&rsquo;application prend en charge <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em> en chargeant simplement la configuration <em>OCIO</em> de <em>Blender</em>, ou en utilisant un profil <em>ICC</em> correspondant au <em>Filmic</em>, tels que ceux que nous proposons <a href="../media/filmic-luts.zip">en téléchargement ici</a>.</p>
 <h3 id="rendu-3d">Rendu 3D<a class="headerlink" href="#rendu-3d" title="Permanent link">&para;</a></h3>
 <p>Le rendu 3D dans Blender sera donc fait avec le <strong><em>Filmic</em></strong> par défaut. On peut choisir différent niveaux de contrastes ; c&rsquo;est un choix artistique à faire au moment de travailler la lumière et le rendu, il faudra simplement bien ré-appliquer le même au compositing.</p>
 <h3 id="compositing">Compositing<a class="headerlink" href="#compositing" title="Permanent link">&para;</a></h3>
@@ -495,7 +610,7 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <p>Lors du rendu <em>openEXR</em>, les images sont linéaires et ne comportent pas d&rsquo;information d&rsquo;espace colorimétrique : il faudra ré-appliquer l&rsquo;espace <em>Filmic</em> dans le logiciel de compositing. Lors du rendu dans tout autre format, <em>Blender</em> effectue une conversion vers l&rsquo;espace par défaut du format (<em>sRGB</em> en <em>PNG</em> par exemple).</p>
 </div>
 <h4 id="filmic-et-after-effects">Filmic et After Effects<a class="headerlink" href="#filmic-et-after-effects" title="Permanent link">&para;</a></h4>
-<p>Pour le cas particulier d&rsquo;<em>After Effects</em>, où la mise en place d&rsquo;<em>OCIO</em> est laborieuse, il peut être plus simple d&rsquo;utiliser une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> de conversion <em>Filmic</em>&hellip; Nous fournissons <a href="">une déclinaison de cette <em>LUT</em> ici</a> (pour chaque variation de contraste de <em>Filmic</em> disponible). Il faudra alors choisir un autre espace de travail dans le projet <em>After Effects</em>, et utiliser un effet de conversion d&rsquo;espace depuis <em>RGB Linéaire</em> vers l&rsquo;espace du projet après l&rsquo;application de la <em>LUT</em>.</p>
+<p>Pour le cas particulier d&rsquo;<em>After Effects</em>, où la mise en place d&rsquo;<em>OCIO</em> est laborieuse, il peut être plus simple d&rsquo;utiliser une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> de conversion <em>Filmic</em>&hellip; Nous fournissons <a href="../media/filmic-luts.zip">une déclinaison de cette <em>LUT</em> ici</a> (pour chaque variation de contraste de <em>Filmic</em> disponible). Il faudra alors choisir un autre espace de travail dans le projet <em>After Effects</em>, et utiliser un effet de conversion d&rsquo;espace depuis <em>RGB Linéaire</em> vers l&rsquo;espace du projet après l&rsquo;application de la <em>LUT</em>.</p>
 <p><em><img alt="Capture After Effects effets Filmic" src="" /></em><br />
 <em>Exemple d&rsquo;effets à utiliser sur un fichier</em> openEXR Filmic <em>dans</em> After Effects <em>avec un espace de travail</em> ACEScg.</p>
 <h3 id="exports">Exports<a class="headerlink" href="#exports" title="Permanent link">&para;</a></h3>
@@ -504,9 +619,94 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <p>La plupart des logiciels 3D utilsant <em>OCIO</em>, tous pourront utiliser <strong><em>ACEScg</em></strong> comme espace pour le rendu.</p>
 <p>Comme dans la plupart des chaînes, nous pouvons utiliser <strong><em>openEXR</em></strong> comme format d&rsquo;image intermédiaire, aussi bien pour les textures que pour les rendus intermédaires ou le <em>master</em> final.</p>
 <p><em><img alt="Schema Pipe ACES" src="" /></em></p>
+<table>
+<thead>
+<tr>
+<th>Étape</th>
+<th>Type</th>
+<th>Espace colorimétrique / Format</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toutes</td>
+<td>Sélecteurs de couleurs</td>
+<td><em>sRGB</em> (celui de l&rsquo;écran)</td>
+<td>Il est toujours plus pratique, et plus sûr, de choisir ses couleurs dans l&rsquo;espace de l&rsquo;écran non linéaire.</td>
+</tr>
+<tr>
+<td>Toutes</td>
+<td>Affichage</td>
+<td>Espace de l&rsquo;écran (<em>sRGB</em>)</td>
+<td>On affiche toujours les couleurs dans l&rsquo;espace de l&rsquo;écran.</td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Espace de travail</td>
+<td><em>RGB Linéaire</em> / <em>16 bpc</em></td>
+<td>Si l&rsquo;application ne gère pas <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Espace de travail</td>
+<td><em>ACEScg</em> / <em>16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Sortie</td>
+<td>Espace de travail / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Espace de travail</td>
+<td><em>ACEScg</em></td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Sortie</td>
+<td><em>ACEScg</em> / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Espace de travail</td>
+<td><em>ACEScg</em> / <em>32 bpc</em></td>
+<td>En cas de problème de performances et si il n&rsquo;y a pas d&rsquo;étape de correction colorimétrique qui suit le compositing, on pourra éventuellement travailler avec <em>16 bpc</em>.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Épreuvage écran</td>
+<td>Espace de la sortie finale (<em>Rec.709</em> par exemple)</td>
+<td>En cas de doute, il vaut mieux ne pas configurer d&rsquo;épreuvage et bien rester sur l&rsquo;espace de l&rsquo;écran pour l&rsquo;affichage.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Sortie finale</td>
+<td>Standard en fonction du format : <em>Rec.709</em>, <em>Rec.2020</em>&hellip;</td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Master / Archivage</td>
+<td><em>RGB Linéaire</em> / <em>openEXR 16 bpc</em></td>
+<td>Il est probablement plus sûr d&rsquo;archiver les images dans un espace le plus standard possible, mais sans perdre de qualité.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Sortie pour correction colorimétrique</td>
+<td><em>ACEScg</em> / <em>openEXR 32bpc</em></td>
+<td>Les <em>32 bpc</em> sont nécessaires pour éviter de perdre en qualité lors de la conversion vers un espace probablement non-linéaire pour la correction colorimétrique (qui serait faite avec <em>ACEScc</em> dans le cas d&rsquo;une chaîne utilisant <em>ACES</em> tout du long).</td>
+</tr>
+</tbody>
+</table>
 <h3 id="textures-et-autres-images-2d_1">Textures et autres images 2D<a class="headerlink" href="#textures-et-autres-images-2d_1" title="Permanent link">&para;</a></h3>
 <p>Quel que soit l&rsquo;application (<em>Substance Painter</em>, <em>Substance Designer</em>, <em>Krita</em>, <em>Adobe Photoshop</em>, <em>The Foundry Mari</em>&hellip;), les textures couleurs pourront être créées en <strong><em>RGB Linéaire</em></strong> ; on fera simplement bien attention à avoir au minimum <em>16 bpc</em>.</p>
 <p>Il est aussi possible, mais pas pour toutes les applications, de travailler directement dans <em>ACEScg</em> ; il faudra dans ce cas être vigilant lors de l&rsquo;import dans le logiciel 3D de bien spécifier le bon espace, <em>RGB linéaire</em> ou <em>ACEScg</em> (ou encore <em>raw/data</em> pour les maps de données telles que les <em>normal maps</em>, <em>speculaires</em>, etc.)</p>
+<p>L&rsquo;intérêt de travailler directement les textures en <em>ACEScg</em> est de limiter les conversions et éviter les risques de décalage des couleurs qui en découlent.</p>
 <h3 id="rendu-3d_1">Rendu 3D<a class="headerlink" href="#rendu-3d_1" title="Permanent link">&para;</a></h3>
 <p>Le rendu 3D se fait dans <strong><em>ACEScg</em></strong></p>
 <h3 id="compositing_1">Compositing<a class="headerlink" href="#compositing_1" title="Permanent link">&para;</a></h3>
@@ -516,14 +716,116 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <p>Depuis le logiciel de compositing, on pourra alors simplement exporter des fichiers <em>openEXR</em> <strong><em>RGB Linéaire</em></strong> comme <em>master</em> ou <em>backup</em>, et directement des fichiers vidéo dans l&rsquo;espace colorimétrique standard qui leur correspond.</p>
 <h2 id="animation-2d">Animation 2D<a class="headerlink" href="#animation-2d" title="Permanent link">&para;</a></h2>
 <p>En animation 2D, il est moins primordial d&rsquo;utiliser un espace de travail au <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> large. Bien qu&rsquo;il soit recommandé de suivre les mêmes méthodes qu&rsquo;en 3D, certains logiciels d&rsquo;animation ne le permettront pas et on pourra donc se rabattre sur une chaîne <em>RGB Linéaire</em> par exemple.</p>
-<p>Il faudra simplement bien utiliser le plus possible des fichiers <em>openEXR</em> tout le long de la chaîne pour être sûr de garder une qualité suffisante. Là encore, si pour des décors détaillés il est important de rester sur ce format et un espace linéaire à au moins <em>16 bpc</em>, dans le cas de l&rsquo;animation si elle est moins détaillée ou utilise de simples aplats de couleurs, on pourra se rabattre sur des espaces plus courant <em>sRGB</em> et des formats <em>PNG</em> (avec <em>16 bpc</em> si possible) ou vectoriels.</p>
+<p>Il faudra simplement bien utiliser le plus possible des fichiers <em>openEXR</em> tout le long de la chaîne pour être sûr de garder une qualité suffisante. Là encore, si pour des décors détaillés il est important de rester sur ce format et un espace linéaire à au moins <em>16 bpc</em>, dans le cas de l&rsquo;animation si elle est moins détaillée ou utilise de simples aplats de couleurs, on pourra se rabattre sur des espaces plus courants <em>sRGB</em> et des formats <em>PNG</em> (avec <em>16 bpc</em> si possible) ou vectoriels.</p>
 <p><em><img alt="Schema Pipe 2D" src="" /></em></p>
+<table>
+<thead>
+<tr>
+<th>Étape</th>
+<th>Type</th>
+<th>Espace colorimétrique / Format</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toutes</td>
+<td>Sélecteurs de couleurs</td>
+<td><em>sRGB</em> (celui de l&rsquo;écran)</td>
+<td>Il est toujours plus pratique, et plus sûr, de choisir ses couleurs dans l&rsquo;espace de l&rsquo;écran non linéaire.</td>
+</tr>
+<tr>
+<td>Toutes</td>
+<td>Affichage</td>
+<td>Espace de l&rsquo;écran (<em>sRGB</em>)</td>
+<td>On affiche toujours les couleurs dans l&rsquo;espace de l&rsquo;écran.</td>
+</tr>
+<tr>
+<td>Décors</td>
+<td>Espace de travail</td>
+<td><em>RGB Linéaire</em> / <em>16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Décors</td>
+<td>Sortie</td>
+<td><em>RGB Linéaire</em> / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Espace de travail</td>
+<td><em>RGB Linéaire</em> / <em>16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Espace de travail</td>
+<td><em>sRGB</em> / <em>16 bpc</em></td>
+<td>Si l&rsquo;application ne permet pas de travailler en linéaire.</td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Espace de travail</td>
+<td><em>sRGB</em> / <em>8 bpc</em></td>
+<td>En cas de sortie vectorielle.</td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Sortie</td>
+<td><em>RGB Linéaire</em> / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Sortie</td>
+<td><em>sRGB</em> / <em>PNG 16 bpc</em></td>
+<td>Si l&rsquo;application ne permet pas d&rsquo;exporter en <em>EXR</em>.</td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Sortie</td>
+<td><em>sRGB</em> / <em>8 bpc</em></td>
+<td>En cas de sortie vectorielle.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Espace de travail</td>
+<td><em>ACEScg</em> / <em>32 bpc</em></td>
+<td>Ou tout autre espace au <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> large afin de pouvoir exporter dans tous types de formats, y compris cinéma.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Épreuvage écran</td>
+<td>Espace de la sortie finale (<em>Rec.709</em> par exemple)</td>
+<td>En cas de doute, il vaut mieux ne pas configurer d&rsquo;épreuvage et bien rester sur l&rsquo;espace de l&rsquo;écran pour l&rsquo;affichage.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Sortie finale</td>
+<td>Standard en fonction du format : <em>Rec.709</em>, <em>Rec.2020</em>&hellip;</td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Master / Archivage</td>
+<td><em>RGB Linéaire</em> / <em>openEXR 16 bpc</em></td>
+<td>Il est probablement plus sûr d&rsquo;archiver les images dans un espace le plus standard possible, mais sans perdre de qualité.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Sortie pour correction colorimétrique</td>
+<td><em>RGB Linéaire</em> / <em>openEXR 32bpc</em></td>
+<td>Les <em>32 bpc</em> sont nécessaires pour éviter de perdre en qualité lors de la conversion vers un espace probablement non-linéaire pour la correction colorimétrique.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="videos-prise-de-vues-reelles-et-vfx">Vidéos, prise de vues réelles et VFX<a class="headerlink" href="#videos-prise-de-vues-reelles-et-vfx" title="Permanent link">&para;</a></h2>
 <p>Une chaîne incluant de la vidéo pourra être très semblable à une chaîne de fabrication 3D, à plus forte raison si elle implique des rendus 3D.</p>
 <p>Simplement, il faudra être vigilant et importer les photos et vidéos en spécifiant le bon espace colorimétrique, celui de la caméra qui a capturé les images, dès leur importation dans le logiciel qui les utilise.</p>
 <p><em>OCIO</em> et <em>ACES</em> contiennent une grande sélection d&rsquo;espaces colorimétriques de divers modèles de caméra, et le plus simple est souvent donc d&rsquo;utiliser une chaîne avec <em>ACES</em> pour la production, comme décrite plus haut.</p>
 <p><em><img alt="Schema Pipe Video" src="" /></em></p>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/23" /></p></div>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/30" /></p></div>
         
         
     </div>

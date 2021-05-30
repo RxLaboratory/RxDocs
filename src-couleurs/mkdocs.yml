@@ -47,6 +47,7 @@ nav:
         - L - Courbes de transfert, espace linéaire et gamma: L-transfert.md
         - M - Les LUTs: M-LUT.md
         - N - OCIO, ACES: N-ocio.md
+        - O - Épreuvage (Soft-Proofing): O-epreuve.md
     - Pratique:
         - A - Choisir ses espaces colorimétriques et formats: 2A-pratique.md
         - B - Formats de fichiers: 2B-standards.md
@@ -55,15 +56,17 @@ nav:
         - E - Concevoir une chaîne de fabrication avec OCIO: 2E-ocio.md
         - F - Adobe After Effects: 2F-ae.md
         - G - Adobe Media Encoder: .
-        - H - Blender: 2I-blender.md
-        - F - DuME: .
-        - H - Krita: .
-        - I - Darktable: .
+        - H - Adobe Premiere: .
+        - I - Blender: 2I-blender.md
+        - J - Darktable: .
+        - K - DuME: .
+        - L - Krita: 2L-krita.md
     - Annexes:
         - En bref, le résumé pour ne pas se tromper: ZZ-bref.md
         - Erreurs et résolution des problèmes: ZZ-erreurs.md
         - Glossaire: ZZ-vocabulaire.md
         - Dictionnaire français - anglais: ZZ-english.md
+        - Téléchargements: ZZ-download.md
     - ...:
         - Tous les documents RxLab: http://docs.rainboxlab.org
         - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html

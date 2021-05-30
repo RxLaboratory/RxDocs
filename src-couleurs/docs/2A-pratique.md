@@ -37,10 +37,18 @@ En effet, tous ces espaces colorimétriques ne sont pas nécessairement les mêm
 !!! hint
     Toutes les applications ne permettent pas forcément d'accéder à tous les réglages de tous les espaces pour ces différents éléments. Les réglages "imposés" peuvent être plus ou moins pratiques et intelligents suivant les applications...
 
+Dans les applications, on devra donc régler les différentes étapes de la gestion des couleurs:
+
+- [Espace de travail](#b-espace-de-travail-scene-referred)
+- [Entrée (imports)](#c-entree)
+- [Affichage](#d-affichage)
+- [Sélecteurs de couleur](#e-selecteurs-de-couleur)
+- Sortie ([intermédiaire](#f-sortie-intermediaire) et [finale](#g-sortie-finale))
+
 !!! note
     Toutes les explications qui suivent s'appliquent aussi bien aux applications de travail (3D, dessin, compositing, retouches...) qu'aux lecteurs (affichage d'image, lecteurs vidéo...)
 
-## A.2 - Espace de travail (scene referred)
+## B - Espace de travail (scene referred)
 
 L'espace le plus important à connaître est celui dans lequel travaille l'application, dans lequel elle effectue la synthèse des couleurs et les calculs associés.
 
@@ -56,7 +64,9 @@ Certaines applications permettent de changer d'espace de travail, ce qui est par
 !!! warning
     L'espace de travail se choisit **avant** de commencer à travailler ; en effet, c'est une fois l'espace choisi qu'on travaille les couleurs dans l'espace en question. Changer d'espace de travail une fois le travail avancé n'a aucun sens ; il faudra en effet retoucher toutes les lumières, tous les réglages de couleurs...
 
-## A.3 - Entrée
+Il est dans tous les cas impératif que l'espace de travail de l'application soit plus grand que celui de la sortie finale, tant en *gamut[\*](ZZ-vocabulaire.md)* que pour le [format des pixels](K-pix-format.md).
+
+## C - Entrée
 
 À chaque importation d'un fichier ou autre élément externe, l'application doit bien interpréter (connaître) l'espace colorimétrique de l'élément, afin de le convertir vers son espace de travail.
 
@@ -69,7 +79,7 @@ Dans tous les cas, afin de maîtriser la production, **il est impératif de cont
 
 *Cf.* *A.6 - Sortie intermédiaire* et *A.7 - Sortie finale* pour plus d'informations sur les espaces colorimétriques propres aux fichiers, et *[II.B - Quelques standards](2B-standards.md)* pour une liste des standards les plus courants.
 
-## A.4 - Affichage
+## D - Affichage
 
 Il est primordial de garder à l'esprit que **l'espace colorimétrique de travail, *scene referred*, est le plus souvent différent de l'espace colorimétrique de l'affichage** !
 
@@ -84,7 +94,7 @@ Il y a plusieurs élément à prendre en compte pour cet affichage :
 
 Voir la section *[2C - Calibrage des écrans](2C-calibration.md)* pour plus de détails sur le sujet.
 
-### A.4.a - Espace de l'écran
+### D.1 - Espace de l'écran
 
 Chaque écran affiche les couleurs dans un espace colorimétrique prédéfini et choisi par le constructeur pour le modèle particulier d'écran.
 
@@ -102,11 +112,14 @@ Suivant ces catégories, la plupart des écrans utilisent ces espaces colorimét
 
 Il est à noter que les écrans affichant *exactement* l'espace colorimétrique annoncé sont rares, et la plupart génèrent de (plus ou moins) petites variations ; ces variations sont en général en grande partie corrigées par une calibration maîtrisée. *Cf.* *[II.C - calibration des écrans](2C-calibration.md)*.
 
-### A.4.b - Réglages et profils colorimétriques
+### D.2 - Réglages et profils colorimétriques
 
 La grande majorité des écrans proposent plusieurs réglages des couleurs sur l'écran lui même, notamment via les paramètres de luminosité et de contraste, complétés, suivant les écrans, par les *gammas[\*](ZZ-vocabulaire.md)* rouge, vert et bleu, et parfois encore d'autres réglagles.
 
-Ces réglages permettent parfois de corriger les plus gros défauts des écrans tels qu'ils sont livrés en sortie d'usine (à condition d'avoir une méthode de calibration efficace), et peuvent être complétés par des réglages plus fin, à la fois via le *profil colorimétrique* appliqué par le système d'exploitation, et éventuellement des réglages au niveau du pilote de la carte graphique.
+Ces réglages permettent parfois de corriger les plus gros défauts des écrans tels qu'ils sont livrés en sortie d'usine (à condition d'avoir une méthode de [calibration](2C-calibration.md) efficace), et peuvent être complétés par des réglages plus fin, à la fois via le *profil colorimétrique* appliqué par le système d'exploitation, et éventuellement des réglages au niveau du pilote de la carte graphique.
+
+!!! warning
+    Beaucoup d'écrans proposent des modes "éco", "auto", "gaming", etc., qui adaptent leurs réglages automatiquement en fonction de l'activité, du type de signal reçu, etc. Dans une chaîne de fabrication où l'on gère les couleurs, il est impératif de désactiver ces différents modes qui changent l'affichage de manière imprévisible.
 
 La connaissance de ces réglages est importante pour contrôler l'affichage correct des couleurs sur le poste de travail.
 
@@ -114,7 +127,7 @@ Il est à noter aussi que ces réglages doivent être contrôlés (et ajustés) 
 
 *Cf.* *[II.C - calibration des écrans](2C-calibration.md)* pour des explications détaillées sur les réglages des écrans et comment les ajuster.
 
-### A.4.c - Dans l'application
+### D.3 - Dans l'application
 
 Une fois l'écran installé et correctement réglé (ou du mieux que possible), il n'y a plus qu'à sélectionner le bon profil d'affichage dans l'application.
 
@@ -124,7 +137,17 @@ Il faut garder en tête que l'application continue de travailler dans son propre
 
 La pire erreur est par exemple de mal choisir l'espace d'affichage et croire par la suite que c'est l'espace de sortie qui est différent de ce à quoi on s'attendait. Cette erreur conduit alors à changer l'interprétation des couleurs lors de l'import dans l'application suivante pour tenter de compenser, et introduire de mauvaises corrections tout en perdant complètement la maîtrise de la chaîne de fabrication.
 
-## A.5 - Sélecteurs de couleur
+### D.4 Épreuvage (Soft-Proofing)
+
+Certains applications proposent, en plus de contrôler les conversions vers l'espace d'affichage, une *simulation* ou *épreuvage écran[\*](ZZ-vocabulaire.md)*, qui consiste à effectuer une conversion intermédiaire vers l'espace de sortie prévu pour le travail en cours, avant de finalement convertir vers l'espace d'affichage. Quand on travaille pour des sorties précises, il peut être utile d'activer ce genre d'outil et ainsi vérifier le résultat après les multiples conversions que subiront les couleurs jusqu'au format final.
+
+Cette méthode est notamment très utile pour simuler le résultat d'une impression dans un espace *CMJN* par exemple, mais aussi l'affichage d'une vidéo dans son format de sortie.
+
+Quoiqu'il en soit l'épreuvage n'est qu'une méthode de vérification et on peut souvent s'en passer (surtout en vidéo).
+
+Cf. *[I-O Épreuvage (Soft-Proofing)](O-epreuve.md)* pour plus de détails sur le sujet.
+
+## E - Sélecteurs de couleur
 
 Dans une application les sélecteurs de couleurs (*color pickers*) peuvent avoir leur propre espace colorimétrique.
 
@@ -132,7 +155,7 @@ Le plus souvent, ils sont soit dans l'espace de travail de l'application, ce qui
 
 On préfère des espaces non linéaires pour faciliter le choix des couleurs ; avoir des sélecteurs de couleur en *sRGB* permet aussi de récupérer facilement des couleurs depuis d'autres applications, depuis des images, etc. Une conversion est alors effectuée après la sélection de la couleurs vers l'espace de travail de l'application.
 
-## A.6 - Sortie intermédiaire
+## F - Sortie intermédiaire
 
 Lors de l'export de fichiers *intermédiaires*, qui reserviront dans la suite de la production, le but est de perdre le moins d'informations possible, de garder un maximum de données pour la suite du travail.
 
@@ -142,7 +165,7 @@ Si il est impossible d'exporter dans l'espace de travail et en *openEXR* (ou aut
 
 Quand l'espace de travail est linéaire mais pas l'espace de sortie (et inversement), il faut savoir qu'une perte de précision et de qualité a lieu, et qu'il faut dans ce cas absolument que la profondeur de l'espace de travail soit plus grande que celle de sortie (travailler en *32 bpc linéaire* pour sortir en *16 bpc non linéaire* par exemple).
 
-## A.7 - Sortie finale
+## G - Sortie finale
 
 Lors de la sortie finale, il faut bien évidemment essayer de respecter au mieux le standard correspondant à la livraison, ou se reférer à la demande du diffuseur.
 
@@ -158,4 +181,4 @@ Sources et références
 [^2]:
     Toutes les applications ne permettent pas l'automatisation de la gestion des couleurs (par exemple *Adobe After Effects* ne possède pas d'*API* pour ce point précis). Dans la suite de ce document, nous noterons pour les applications expliquées les erreurs d'interprétation qu'elles font, que nous avons pu repérer, et les autres spécificités à savoir.
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/11)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/30)

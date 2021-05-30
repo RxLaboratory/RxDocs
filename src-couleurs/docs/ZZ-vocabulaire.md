@@ -31,6 +31,8 @@ Classement alphabétique.
 
 - ***Courbe de transfert***
 
+- ***Épreuve*** ou épreuvage écran : *Simulation* de conversion des couleurs dans un espace spécifique qui sera celui de l'export final (suivi d'une conversion vers l'espace de l'écran pour un affichage correct). Cette technique permet de vérifier que les conversions successives des couleurs ne dégradent pas trop l'image et que les nouvelles couleurs sont proches de ce qu'on recherche, en vérifiant ce que verra le spectateur final. Il est important de noter que l'épreuvage écran peut rester loin de la réalité si l'espace de sortie est plus grand que celui de l'écran ou trop différent (par exemple *CMJN* sur un écran *sRGB* ou *Rec.2020* sur un écran *sRGB*) ; il permet toutefois de prévisualiser ce que verra un utilisateur sur un écran similaire.
+
 - ***Format*** : synonyme de *type de fichier*. Voir *conteneur*. À ne pas confondre avec *norme* et *codec*.
 
 - ***Fréquence*** : dans la représentation *ondulatoire* de la lumière (et de toutes la gamme d'ondes électromangétique), la fréquence, mesurée en *Hertz* (*Hz*) est le nombre d'ondulations par secondes ; elle est l'inverse de la longueur d'ondes\* (`F = 1 / λ` avec *F* pour la fréquence et *λ* pour la longueur d'onde) : quand la fréquence augmente, la longueur d'onde diminue. Dans la partie visible des ondes électromagnétiques (la lumière donc), vers *10<sup>15</sup>Hz* (*1000 TeraHertz*), chaque fréquence correspond à une couleur précise, une lumière *monochromatique*\*. 
@@ -110,4 +112,4 @@ Classement alphabétique.
 [^1]:
     Le *lumen* quant à lui mesure l'intensité générale (donc dans toutes les directions) contrairement au candela, mais n'est pas utilisé en informatique.
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/25)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/30)

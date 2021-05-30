@@ -18,9 +18,12 @@ Si ces listes ne sont pas nécessairement des standards officiels, ces correspon
     - *TGA* : ***8 bpc***
     - *TIFF* : ***8 bpc***, ***16 bpc***[^1]
 
+!!! hint
+    On rencontre parfois des *PNG HDR* qui utilisent l'espace colorimétrique *Rec.2020*.
+
 ## OpenEXR
 
-- Espace : ***RGB linéaire***, mais c'est aussi le format officiel pour ***ACES***
+- Espace : ***RGB linéaire***, mais c'est aussi le format officiel pour ***ACES***, ou ***Filmic*** de *Blender*. C'est le seul format qui permet en réalité de stocker n'importe quelle couleur existante indépendamment de l'espace colorimétrique utilisé pour la représenter, et donc le format de prédilection pour travailler.
 - Format de pixels :
     - ***RGB***, ***Full Range***
     - ***YUV 4:4:4*** ou équivalent à ***YUV 4:2:0*** avec l'option *Luma/Chroma*, ***Full Range***
@@ -29,8 +32,11 @@ Si ces listes ne sont pas nécessairement des standards officiels, ces correspon
     - ***16 bpc*** (entier ou flottant)
     - ***32 bpc*** (entier ou flottant)
 
+!!! hint
+    Tout l'intérêt de l'*EXR* réside dans le fait qu'il peut stocker les couleurs dans un format *flottant* au lieu des *entiers* habituels ; il est donc inutile d'utiliser les versions *entier* de la profondeur. C'est grâce à ce format flottant que l'*EXR* peut stocker n'importe quelle donnée de couleur sans perte : il enregistre aussi les couleurs *en dehors* de l'espace de travail (dont les valeurs sont supérieures à `1`).
+
 !!! note
-    Il faut en réalité bien comprendre que l'espace colorimétrique dans un fichier *EXR* importe peu : le fichier stocke des données brutes, qui *ne sont pas* "clampées" (les valeurs supérieures à 1, maximum théorique d'un espace colorimétrique, sont possibles) ; un fichier *EXR* peut donc stocker des couleurs *en dehors* du *gamut[\*](ZZ-vocabulaire.md)* et de la *luminosité[\*](ZZ-vocabulaire.md)* de son espace colorimétrique.
+    Il faut en réalité bien comprendre que l'espace colorimétrique dans un fichier *EXR* importe peu : le fichier stocke des données brutes, qui *ne sont pas* "clampées" (les valeurs supérieures à `1`, maximum théorique d'un espace colorimétrique, sont possibles) ; un fichier *EXR* peut donc stocker des couleurs *en dehors* du *gamut[\*](ZZ-vocabulaire.md)* et de la *luminosité[\*](ZZ-vocabulaire.md)* de son espace colorimétrique.
 
 ## MP4 h.264 / h.265 / AVCHD / HEVC et autres vidéos HD (2K) ou UHD (4K)
 

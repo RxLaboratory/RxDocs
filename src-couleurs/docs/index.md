@@ -108,6 +108,7 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
             - N.2.a.a - ACES2065-1
             - N.2.a.b - ACEScg
             - N.2.a.c - ACEScc
+- O - [Épreuvage (Soft-Proofing) et simulation]()
 
 ### II - Pratique
 
@@ -161,9 +162,8 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
         - I.3.a - Rendu (scene referred) et affichage
         - I.3.b - Entrée (textures)
 - H - Color management : Darktable
-- I - Color management : DuME
-    
-- J - Color management : Krita
+- I - Color management : DuME  
+- L - [Gestion des couleurs : Krita](2L-Krita)
     - Document
     - Entrée
     - Sortie

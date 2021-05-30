@@ -61,7 +61,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
+              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
             
         </div>
 
@@ -165,6 +165,12 @@
 </li>
 
                         
+                            
+<li >
+    <a href="O-epreuve.md">O - Épreuvage (Soft-Proofing)</a>
+</li>
+
+                        
                         </ul>
                     </li>
                 
@@ -218,25 +224,31 @@
                         
                             
 <li >
-    <a href="2I-blender.html">H - Blender</a>
+    <a href=".">H - Adobe Premiere</a>
 </li>
 
                         
                             
 <li >
-    <a href=".">F - DuME</a>
+    <a href="2I-blender.html">I - Blender</a>
 </li>
 
                         
                             
 <li >
-    <a href=".">H - Krita</a>
+    <a href=".">J - Darktable</a>
 </li>
 
                         
                             
 <li >
-    <a href=".">I - Darktable</a>
+    <a href=".">K - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2L-krita.html">L - Krita</a>
 </li>
 
                         
@@ -270,6 +282,12 @@
                             
 <li >
     <a href="ZZ-english.html">Dictionnaire français - anglais</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Téléchargements</a>
 </li>
 
                         
@@ -397,6 +415,8 @@
                 
                     <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
                 
+                    <li class="second-level "><a href="O-epreuve.md">O - Épreuvage (Soft-Proofing)</a></li>
+                
             </li>
         
         
@@ -418,13 +438,15 @@
                 
                     <li class="second-level "><a href=".">G - Adobe Media Encoder</a></li>
                 
-                    <li class="second-level "><a href="2I-blender.html">H - Blender</a></li>
+                    <li class="second-level "><a href=".">H - Adobe Premiere</a></li>
                 
-                    <li class="second-level "><a href=".">F - DuME</a></li>
+                    <li class="second-level "><a href="2I-blender.html">I - Blender</a></li>
                 
-                    <li class="second-level "><a href=".">H - Krita</a></li>
+                    <li class="second-level "><a href=".">J - Darktable</a></li>
                 
-                    <li class="second-level "><a href=".">I - Darktable</a></li>
+                    <li class="second-level "><a href=".">K - DuME</a></li>
+                
+                    <li class="second-level "><a href="2L-krita.html">L - Krita</a></li>
                 
             </li>
         
@@ -440,6 +462,8 @@
                     <li class="second-level "><a href="ZZ-vocabulaire.html">Glossaire</a></li>
                 
                     <li class="second-level "><a href="ZZ-english.html">Dictionnaire français - anglais</a></li>
+                
+                    <li class="second-level "><a href="ZZ-download.html">Téléchargements</a></li>
                 
             </li>
         
@@ -492,9 +516,13 @@
 </ul>
 </li>
 </ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>On rencontre parfois des <em>PNG HDR</em> qui utilisent l&rsquo;espace colorimétrique <em>Rec.2020</em>.</p>
+</div>
 <h2 id="openexr">OpenEXR<a class="headerlink" href="#openexr" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Espace : <strong><em>RGB linéaire</em></strong>, mais c&rsquo;est aussi le format officiel pour <strong><em>ACES</em></strong></li>
+<li>Espace : <strong><em>RGB linéaire</em></strong>, mais c&rsquo;est aussi le format officiel pour <strong><em>ACES</em></strong>, ou <strong><em>Filmic</em></strong> de <em>Blender</em>. C&rsquo;est le seul format qui permet en réalité de stocker n&rsquo;importe quelle couleur existante indépendamment de l&rsquo;espace colorimétrique utilisé pour la représenter, et donc le format de prédilection pour travailler.</li>
 <li>Format de pixels :<ul>
 <li><strong><em>RGB</em></strong>, <strong><em>Full Range</em></strong></li>
 <li><strong><em>YUV 4:4:4</em></strong> ou équivalent à <strong><em>YUV 4:2:0</em></strong> avec l&rsquo;option <em>Luma/Chroma</em>, <strong><em>Full Range</em></strong></li>
@@ -507,9 +535,13 @@
 </ul>
 </li>
 </ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Tout l&rsquo;intérêt de l&rsquo;<em>EXR</em> réside dans le fait qu&rsquo;il peut stocker les couleurs dans un format <em>flottant</em> au lieu des <em>entiers</em> habituels ; il est donc inutile d&rsquo;utiliser les versions <em>entier</em> de la profondeur. C&rsquo;est grâce à ce format flottant que l&rsquo;<em>EXR</em> peut stocker n&rsquo;importe quelle donnée de couleur sans perte : il enregistre aussi les couleurs <em>en dehors</em> de l&rsquo;espace de travail (dont les valeurs sont supérieures à <code>1</code>).</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Il faut en réalité bien comprendre que l&rsquo;espace colorimétrique dans un fichier <em>EXR</em> importe peu : le fichier stocke des données brutes, qui <em>ne sont pas</em> &ldquo;clampées&rdquo; (les valeurs supérieures à 1, maximum théorique d&rsquo;un espace colorimétrique, sont possibles) ; un fichier <em>EXR</em> peut donc stocker des couleurs <em>en dehors</em> du <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> et de la <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em> de son espace colorimétrique.</p>
+<p>Il faut en réalité bien comprendre que l&rsquo;espace colorimétrique dans un fichier <em>EXR</em> importe peu : le fichier stocke des données brutes, qui <em>ne sont pas</em> &ldquo;clampées&rdquo; (les valeurs supérieures à <code>1</code>, maximum théorique d&rsquo;un espace colorimétrique, sont possibles) ; un fichier <em>EXR</em> peut donc stocker des couleurs <em>en dehors</em> du <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> et de la <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em> de son espace colorimétrique.</p>
 </div>
 <h2 id="mp4-h264-h265-avchd-hevc-et-autres-videos-hd-2k-ou-uhd-4k">MP4 h.264 / h.265 / AVCHD / HEVC et autres vidéos HD (2K) ou UHD (4K)<a class="headerlink" href="#mp4-h264-h265-avchd-hevc-et-autres-videos-hd-2k-ou-uhd-4k" title="Permanent link">&para;</a></h2>
 <ul>
