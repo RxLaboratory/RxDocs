@@ -10,7 +10,7 @@ La documentation de *Krita* inclue[ des explications intéressantes et détaill�
 
 L'espace de travail se définit lors de la création d'un document *Krita*.
 
-![](/img/krita/doc.png)
+![](img/krita/doc.png)
 
 On peut choisir l'espace parmi la liste dans l'ongler *Color*.
 
@@ -20,19 +20,19 @@ On peut choisir l'espace parmi la liste dans l'ongler *Color*.
 
 Le bouton ***Color Space Browser*** ouvre une boîte de dialogue plus complète décrivant les différents espaces colorimétriques disponibles et facilitant le choix.
 
-![](/img/krita/browser.png)
+![](img/krita/browser.png)
 
 On peut aussi parcourir les fichiers pour choisir un espace au format *ICC*.
 
 Il est possible de modifier le profil utilisé par défaut dans les nouveaux documents via les préférences de *Krita*.
 
-![](/img/krita/settings1.png)
+![](img/krita/settings1.png)
 
 On peut aussi y régler quelques autres options.
 
 Pour changer l'espace de travail d'un document déjà ouvert, on passe par le menu *Image* puis *Propriétés*.
 
-![](/img/krita/workingspace.png)
+![](img/krita/workingspace.png)
 
 On y retrouve les mêmes réglages que lors de la création du document.
 
@@ -42,13 +42,13 @@ On y retrouve les mêmes réglages que lors de la création du document.
 
 On peut spécifier l'espace colorimétrique de l'affichage pour chaque écran branché à l'ordinateur, dans les préférences de *Krita*. En général, on laisse en *sRGB* sauf dans le cas ou l'écran utiliserait un espace différent.
 
-![](/img/krita/settings2.png)
+![](img/krita/settings2.png)
 
 ### L.2.b - Épreuvage (soft-proofing)
 
 Il est possible, dans le troisième onglet des préférences, de configurer la *simulation* de l'affichage en fonction de l'espace de sortie finale, ce qui est particulièrement intéressant dans *Krita* en cas de travail pour l'impression.
 
-![](/img/krita/settings3.png)
+![](img/krita/settings3.png)
 
 La couleur sélectionnable dans ***Gamut Warning*** est celle utilisée pour afficher des alertes montrant les zones de l'image en dehors du *gamut[\*](ZZ-vocabulaire.md)* de sortie, et qui donc seront changées lors de la sortie.
 
@@ -56,13 +56,13 @@ Une fois l'épreuvage configuré, on peut l'activer et le désactivier pour l'af
 
 On peut aussi définir ces paramètres d'épreuvage uniquement pour le document ouvert, via le menu *Image* puis *Propriétés*.
 
-![](/img/krita/doc-softproofing.png)
+![](img/krita/doc-softproofing.png)
 
 ## L.3 - Sélecteur de Couleurs
 
 *Krita* permet de régler l'espace d'affichage des sélecteurs de couleur, ce qui est bien pratique. On retrouve le réglage dans un onglet des préférences.
 
-![](/img/krita/picker.png)
+![](img/krita/picker.png)
 
 En général, on cochera la case permettant de choisir un espace spécifique pour le sélecteur de couleur (notamment un espace non-linéaire, comme le simple *sRGB* utilisé par les écrans).
 
@@ -72,12 +72,12 @@ Dans le cas d'un travail en *16* ou *32 bpc flottant* et un espace linéaire, le
 
 Lors de l'enregistrement des fichiers, *Krita* affiche une boite de dialogue avec les options adaptées. En cas d'enregistrement au format natif `.kra` ou *openEXR[\*](ZZ-vocabulaire.md)*, c'est l'espace de travail qui est utilisé ; sinon *Krita* fera une conversion vers l'espace standard du fichier enregistré.
 
-![](/img/krita/output.png)  
+![](img/krita/output.png)  
 *Exemple pour une sortie PNG et sa conversion en* sRGB, *ou optionnellement en* Rec.2020.
 
 ## L.5 - OCIO dans Krita
 
 *Krita* utilise *OCIO* qui se configure simplement via le *Docker* (panneau) appelé *LUT Management* (*Gestion des LUT*).
 
-![](/img/krita/ocio.png)  
+![](img/krita/ocio.png)  
 *Un exemple avec la configuration OCIO Filmic de Blender*
