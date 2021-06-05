@@ -81,3 +81,5 @@ Lors de l'enregistrement des fichiers, *Krita* affiche une boite de dialogue ave
 
 ![](img/krita/ocio.png)  
 *Un exemple avec la configuration OCIO Filmic de Blender*
+
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/06/05)

@@ -37,6 +37,46 @@ body {
     border: none;
 }
 
+.bs-sidebar .nav > .active > a, .bs-sidebar .nav > .active:hover > a, .bs-sidebar .nav > .active:focus > a {
+    border-right: 7px solid;
+}
+
+.collapsible-content {
+    padding: 0 30px;
+    overflow: hidden;
+    background: #f1f1f1;
+    list-style-type: none;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapse-button {
+    background: none;
+    border: none;
+    padding-left:20px;
+    font-weight: bold;
+    color:#333;
+    width:100%;
+    text-align: left;
+}
+
+.collapse-button:before {
+    content: '\025B6';
+    font-size: 8px;
+    float: left;
+    color: #838383;
+    margin-right:5px;
+    padding-top:4px;
+}
+
+.active-collapse-button::before {
+    content: '\025BC';   
+}
+
+.active-collapse-button, .collapse-button:hover {
+    background: #f1f1f1;
+  }
+
 @media (min-width: 992px) {
     #side-menu {
         position: fixed;

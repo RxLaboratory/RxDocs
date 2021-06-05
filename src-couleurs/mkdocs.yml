@@ -28,6 +28,7 @@ extra_css:
 extra_javascript:
     - video.js
     - meta.js
+    - collapser.js
 site_dir: ../docs/couleurs
 dev_addr: '127.0.0.1:8001'
 nav:
