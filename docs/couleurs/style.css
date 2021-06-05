@@ -35,7 +35,30 @@ body {
     box-shadow: 1px 4px 7px #232323;
     border-radius: 10px;
     border: none;
+
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #b3b3b3 rgba(0,0,0,0); /* Firefox */
 }
+
+ /* width */
+.bs-sidebar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+.bs-sidebar::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+  }
+  
+  /* Handle */
+.bs-sidebar::-webkit-scrollbar-thumb {
+    background: #b3b3b3;
+  }
+  
+  /* Handle on hover */
+  .bs-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  } 
 
 .bs-sidebar .nav > .active > a, .bs-sidebar .nav > .active:hover > a, .bs-sidebar .nav > .active:focus > a {
     border-right: 7px solid;
@@ -47,7 +70,12 @@ body {
     background: #f1f1f1;
     list-style-type: none;
     max-height: 0;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s cubic-bezier(0, 1, 0, 1);
+}
+
+.collapsible-content-active {
+    max-height: 1000px;
+    transition: max-height 0.2s ease-in-out;
 }
 
 .collapse-button {
