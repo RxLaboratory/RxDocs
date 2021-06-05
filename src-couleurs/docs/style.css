@@ -134,6 +134,7 @@ ul.nav li p {
     padding-top: 10px;
     padding-bottom: 1px;
     margin-bottom: 5px;
+    max-width:263px;
 }
 
 .post-meta a {
@@ -144,10 +145,6 @@ ul.nav li p {
     content: "▹\00a0";
 }
 
-.meta-wrapper {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-
+.post-meta ul {
+    padding-left:20px;
 }
