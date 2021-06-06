@@ -43,7 +43,7 @@ These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
     Translate RxOpenTools to any language.
 - ***DuViews*** (*Blender*): [duviews.rxlab.guide](http://duviews.rxlab.guide)  
     Quickly pop up views in *Blender*.
-- ***OCA*** (*Krita*): [oca.rxlab.guide](http://oca.rxlab.guide/)  
+- ***OCA***: [oca.rxlab.guide](http://oca.rxlab.guide/)  
     *Open Cell Animation* format, export/import 2D traditionnal animation to/from any software.
 - ***OCA*** (*Krita*): [oca-krita.rxlab.guide](http://oca-krita.rxlab.guide/)  
     *Open Cell Animation* exporter for *Krita*.
