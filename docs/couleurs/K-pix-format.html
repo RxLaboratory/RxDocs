@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Gestion des couleurs dans la production audiovisuelle.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/K-pix-format.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>K - Format des pixels - RxDocs - Gestion des couleurs</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Théorie <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - Qu'est ce que la couleur ?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Petit inventaire et classification des couleurs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception des couleurs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Reproduction des couleurs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - Retour sur les blancs, température</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Représentation objective</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - Du réel au numérique</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="K-pix-format.html">K - Format des pixels</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - Les LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="O-epreuve.md">O - Épreuvage (Soft-Proofing)</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pratique <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="2A-pratique.html">A - Choisir ses espaces colorimétriques et formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2B-standards.html">B - Formats de fichiers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2C-calibration.html">C - Calibration des écrans</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2D-preparer.html">D - Préparer la chaîne de fabrication</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2E-ocio.md">E - Concevoir une chaîne de fabrication avec OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2F-ae.html">F - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">G - Adobe Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">H - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2I-blender.html">I - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">K - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="2L-krita.html">L - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Annexes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossaire</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-english.html">Dictionnaire français - anglais</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Téléchargements</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">Tous les documents RxLab</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="J-liste-params.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="L-transfert.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/K-pix-format.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#ik-format-des-pixels">I.K - Format des pixels</a></li>
+                <li class="second-level"><a href="#k1-rgb-et-yuv">K.1 - RGB et YUV</a></li>
+                    
+                    <li class="third-level"><a href="#k1a-rgb">K.1.a - RGB</a></li>
+                    <li class="third-level"><a href="#k1b-yuv">K.1.b - YUV</a></li>
+                    <li class="third-level"><a href="#k1c-comparaison">K.1.c - Comparaison</a></li>
+                    <li class="third-level"><a href="#k1d-autres">K.1.d - Autres</a></li>
+                <li class="second-level"><a href="#k2-yuv-444-422-420-le-sous-echantillonage-de-la-chrominance">K.2 - YUV 4:4:4, 4:2:2, 4:2:0... Le sous-échantillonage de la chrominance</a></li>
+                    
+                    <li class="third-level"><a href="#k2a-444">K.2.a - 4:4:4</a></li>
+                    <li class="third-level"><a href="#k2b-422">K.2.b - 4:2:2</a></li>
+                    <li class="third-level"><a href="#k2c-420">K.2.c - 4:2:0</a></li>
+                <li class="second-level"><a href="#k3-profondeur-de-couleur-bpc">K.3 - Profondeur de couleur (bpc)</a></li>
+                    
+                    <li class="third-level"><a href="#k3a-en-rgb">K.3.a - En RGB</a></li>
+                    <li class="third-level"><a href="#k3b-en-yuv">K.3.b - En YUV</a></li>
+                    <li class="third-level"><a href="#k3c-autres">K.3.c - Autres</a></li>
+                <li class="second-level"><a href="#k4-full-range-limited-tv-pc">K.4 - Full range / Limited / TV / PC ?</a></li>
+                    
+                    <li class="third-level"><a href="#k4a-full-range-pc">K.4.a - Full range / PC</a></li>
+                    <li class="third-level"><a href="#k4b-limited-range-tv">K.4.b - Limited range / TV</a></li>
+                    <li class="third-level"><a href="#k4c-consequence-pratique">K.4.c - Conséquence pratique</a></li>
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Théorie</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - Qu'est ce que la couleur ?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Petit inventaire et classification des couleurs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception des couleurs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Reproduction des couleurs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - Retour sur les blancs, température</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Représentation objective</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - Du réel au numérique</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="K-pix-format.html">K - Format des pixels</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - Les LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="O-epreuve.md">O - Épreuvage (Soft-Proofing)</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Pratique</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="2A-pratique.html">A - Choisir ses espaces colorimétriques et formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="2B-standards.html">B - Formats de fichiers</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="2C-calibration.html">C - Calibration des écrans</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="2D-preparer.html">D - Préparer la chaîne de fabrication</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="2E-ocio.md">E - Concevoir une chaîne de fabrication avec OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="2F-ae.html">F - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">G - Adobe Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">H - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="2I-blender.html">I - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">K - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="2L-krita.html">L - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Annexes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossaire</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-english.html">Dictionnaire français - anglais</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Téléchargements</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">Tous les documents RxLab</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="ik-format-des-pixels">I.K - Format des pixels<a class="headerlink" href="#ik-format-des-pixels" title="Permanent link">&para;</a></h1>
+<p>Les espaces colorimétriques définissent la manière dont les couleurs doivent être reproduites, et quelles couleurs précises doivent être générées, mais ne définissent pas la manière dont ces couleurs sont enregistrées par l&rsquo;ordinateur. C&rsquo;est le format des pixels utilisé qui définira quelles sont les types de valeurs enregistrées, et de quelle manière. Ce format est complètement indépendant des espaces colorimétriques, mais influencera la qualité de l&rsquo;image et la quantité de nuances qui peuvent être stockées.</p>
+<div class="toc">
+<ul>
+<li><a href="#ik-format-des-pixels">I.K - Format des pixels</a><ul>
+<li><a href="#k1-rgb-et-yuv">K.1 - RGB et YUV</a><ul>
+<li><a href="#k1a-rgb">K.1.a - RGB</a></li>
+<li><a href="#k1b-yuv">K.1.b - YUV</a></li>
+<li><a href="#k1c-comparaison">K.1.c - Comparaison</a></li>
+<li><a href="#k1d-autres">K.1.d - Autres</a></li>
+</ul>
+</li>
+<li><a href="#k2-yuv-444-422-420-le-sous-echantillonage-de-la-chrominance">K.2 - YUV 4:4:4, 4:2:2, 4:2:0&hellip; Le sous-échantillonage de la chrominance</a><ul>
+<li><a href="#k2a-444">K.2.a - 4:4:4</a></li>
+<li><a href="#k2b-422">K.2.b - 4:2:2</a></li>
+<li><a href="#k2c-420">K.2.c - 4:2:0</a></li>
+</ul>
+</li>
+<li><a href="#k3-profondeur-de-couleur-bpc">K.3 - Profondeur de couleur (bpc)</a><ul>
+<li><a href="#k3a-en-rgb">K.3.a - En RGB</a><ul>
+<li><a href="#k3aa-8-bpc-24-bits-24-bpp-32-bits-avec-alpha">K.3.a.a 8 bpc / 24 bits / 24 bpp / 32 bits avec alpha</a></li>
+<li><a href="#k3ab-16-bpc-48-bits-48-bpp-64-bits-avec-alpha">K.3.a.b 16 bpc / 48 bits / 48 bpp / 64 bits avec alpha</a></li>
+<li><a href="#k3ac-32-bpc-96-bits-96-bpp-128-bits-avec-alpha">K.3.a.c 32 bpc / 96 bits / 96 bpp / 128 bits avec alpha</a></li>
+</ul>
+</li>
+<li><a href="#k3b-en-yuv">K.3.b - En YUV</a><ul>
+<li><a href="#k3ba-8-bits">K.3.b.a 8 bits</a></li>
+<li><a href="#k3bb-10-bits">K.3.b.b 10 bits</a></li>
+<li><a href="#k3bc-12-bits">K.3.b.c 12 bits</a></li>
+</ul>
+</li>
+<li><a href="#k3c-autres">K.3.c - Autres</a></li>
+</ul>
+</li>
+<li><a href="#k4-full-range-limited-tv-pc">K.4 - Full range / Limited / TV / PC ?</a><ul>
+<li><a href="#k4a-full-range-pc">K.4.a - Full range / PC</a></li>
+<li><a href="#k4b-limited-range-tv">K.4.b - Limited range / TV</a></li>
+<li><a href="#k4c-consequence-pratique">K.4.c - Conséquence pratique</a><ul>
+<li><a href="#k4ca-encodage">K.4.c.a - Encodage</a></li>
+<li><a href="#k4cb-lecture-et-affichage">K.4.c.b - Lecture et affichage</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Chaque pixel est composé de différentes valeurs de couleurs, ce sont les <em>couches<a href="ZZ-vocabulaire.html">*</a></em>, qui sont en général (mais pas nécessairement) soit rouge, verte et bleue (c&rsquo;est le <em>RGB</em>), soit une <em>luminance<a href="ZZ-vocabulaire.html">*</a></em> et deux <em>chrominances<a href="ZZ-vocabulaire.html">*</a></em> (c&rsquo;est le <em>YUV</em>).</p>
+<p>Dans le cas du <em>YUV</em>, il y a parfois un <em>sous-échantillonage de chrominance</em>, qui permet de réduire la quantité de données à stocker avec une perte minime (et quasiment indiscernable) de qualité.</p>
+<p>Enfin, pour chaque <em>couche</em>, on peut choisir la gamme et la précision des valeurs enregistrées.</p>
+<h2 id="k1-rgb-et-yuv">K.1 - RGB et YUV<a class="headerlink" href="#k1-rgb-et-yuv" title="Permanent link">&para;</a></h2>
+<p>N&rsquo;importe quelle couleur visible peut être représentée par seulement deux couleurs <em>complémentaires<a href="ZZ-vocabulaire.html">*</a></em> et <em>primaires<a href="ZZ-vocabulaire.html">*</a></em>. Dès trois <em>primaires</em> définies et fixées, en variant leurs proportions, on peut obtenir une gamme (un <em>gamut<a href="ZZ-vocabulaire.html">*</a></em>) plus vaste de couleurs visibles, une surface utile (et suffisante) de couleurs visibles. Ainsi, la plupart des dispositifs de reproduction des couleurs (écrans, projecteurs&hellip;) utilisent trois couleurs primaires.</p>
+<p>Ces couleurs sont très majoritairement des rouges, verts, et bleus ; ils peuvent varier en fonction des dispositif et de <em>l&rsquo;espace colorimétrique<a href="ZZ-vocabulaire.html">*</a></em> qu&rsquo;ils utilisent mais se situent toujours dans cette gamme.</p>
+<p>Quoiqu&rsquo;il en soit, tous les systèmes de codage des couleurs utilisent un groupe de différentes valeurs correspondant à des primaires ou propriétés précises ; on parle de <em>couches<a href="ZZ-vocabulaire.html">*</a></em>, généralement au nombre de trois.</p>
+<h3 id="k1a-rgb">K.1.a - RGB<a class="headerlink" href="#k1a-rgb" title="Permanent link">&para;</a></h3>
+<p><em><img alt="RGB" src="img/rgb-schema.svg" /></em></p>
+<p>On utilise donc généralement en numérique une division des informations de couleurs utilisant les mêmes <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> Rouges, Vertes et Bleues que les dispositifis de reproduction. Rouge, Vert et Bleu sont les trois canaus <em>R</em>, <em>G</em>, <em>B</em> de ce système.</p>
+<p><em><img alt="Décomposition d'une image en ses trois canaux RGB" src="img/rgb.svg" /></em></p>
+<p>Il y a donc plusieurs raisons à l&rsquo;usage de ces <em>primaires</em> et de ce système de réprésentation des couleurs :</p>
+<ul>
+<li>Le choix du rouge, vert et bleu est proche de ce que les cellules rétiennes perçoivent le mieux naturellement</li>
+<li>Le rouge et le bleu sont les extrèmes du spectre visible, et le vert est à mi-chemin entre les deux : c&rsquo;est le choix qui permet facilement d&rsquo;avoir les <em>gamut</em> les plus larges dans l&rsquo;ensemble des couleurs visibles.</li>
+<li>C&rsquo;est donc naturellement les couleurs les plus utilisées par les dispositifs d&rsquo;affichage bien qu&rsquo;en théorie il serait possible d&rsquo;en choisir d&rsquo;autres.</li>
+</ul>
+<p>Mais historiquement, et pour des raisons de performance et de stockage, un autre système est très répandu : <em>YUV</em>.</p>
+<h3 id="k1b-yuv">K.1.b - YUV<a class="headerlink" href="#k1b-yuv" title="Permanent link">&para;</a></h3>
+<p><em><img alt="YV" src="img/yuv-schema.svg" /></em></p>
+<p>Lors des premières utilisations d&rsquo;un signal électrique (analogique et pas numérique dans un premier temps) pour représenter des vidéos, le signal était un signal &ldquo;simple&rdquo; à une dimension : les vidéos étaient représentées uniquement dans une gamme allant du noir au blanc en passant par les gris, en <em>noir et blanc</em>. Autrement dit, on ne stockait et reproduisait que l&rsquo;information d&rsquo;intensité lumineuse, de <em>luminance<a href="ZZ-vocabulaire.html">*</a></em>.</p>
+<p>Puis sont arrivées les télévisions couleurs, mais il a fallu garder la compatibilité du signal avec les plus anciens téléviseurs noir et blanc ; on a donc ajouté au signal de luminance<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> les informations de couleurs, de <em>chrominance</em>, sans toucher au signal d&rsquo;origine ; les anciennes télés noir et blanc ignorant simplement ces informations supplémentaires.</p>
+<p>Le système utilisé n&rsquo;est donc pas un système <em>RGB</em> mais de trois canaux <em>YUV</em><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, où <em>Y</em> représente la <em>luminance</em>, et <em>UV</em> représentent deux informations de <em>chrominance</em> (contenant respectivement le ratio bleu/vert et rouge/vert).</p>
+<p><em><img alt="Décomposition d'une image en ses trois canaux YUV" src="img/yuv.svg" /></em></p>
+<p>L&rsquo;intérêt de ce système n&rsquo;est pas qu&rsquo;historique : comme on l&rsquo;a vu précédemment, l&rsquo;œil humain distingue mieux les contrastes de <em>luminance<a href="ZZ-vocabulaire.html">*</a></em> que de <em>chrominance</em>. Séparer ces informations permet de les traiter différemment, et notamment de réserver une quantité d&rsquo;information, une résolution, plus élevée dans la luminance que la chrominance, et donc de réduire la quantité d&rsquo;information à stocker et transmettre sans perte notable de qualité visible.</p>
+<h3 id="k1c-comparaison">K.1.c - Comparaison<a class="headerlink" href="#k1c-comparaison" title="Permanent link">&para;</a></h3>
+<p>On a donc deux systèmes principaux de codage des couleurs, <strong>indépendants des espaces colorimétriques</strong> utilisés<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<p>Voici les principales différences :</p>
+<ul>
+<li>Historique : l&rsquo;usage du <em>RGB</em> s&rsquo;est répandu avec le numérique, <em>YUV</em> date de l&rsquo;analogique</li>
+<li>En conséquence <em>YUV</em> est plus répandu dans les formats vidéos, <em>RGB</em> dans les formats d&rsquo;images.</li>
+<li><em>YUV</em> permet une compression des données plus efficace, moyennant une certaine perte dans la chrominance, alors que <em>RGB</em> doit stocker autant d&rsquo;information dans ses trois canaux.</li>
+<li>La conversion de <em>YUV</em> à <em>RGB</em>, et inversement, se fait facilement et <em>quasiment</em> sans perte d&rsquo;information.</li>
+</ul>
+<h3 id="k1d-autres">K.1.d - Autres<a class="headerlink" href="#k1d-autres" title="Permanent link">&para;</a></h3>
+<p>Il existe d&rsquo;autres combinaisons de couches et formats de pixels moins courants, pour des usages ou <em>conteneurs<a href="ZZ-vocabulaire.html">*</a></em> spécifiques.</p>
+<p>Ainsi, certains format d&rsquo;images utilisent une <em>palette</em> de couleurs au lieu de plusieurs primaires mélangées, et n&rsquo;ont donc qu&rsquo;une seule couche par pixel, dont la valeur correspond à une couleur prédéfinie<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
+<p>D&rsquo;autres formats ne stockent que des niveaux de gris, et donc juste une <em>couche</em> de luminosité. Il existe aussi des formats plus exotiques à deux couches&hellip;</p>
+<h2 id="k2-yuv-444-422-420-le-sous-echantillonage-de-la-chrominance">K.2 - YUV 4:4:4, 4:2:2, 4:2:0&hellip; Le sous-échantillonage de la chrominance<a class="headerlink" href="#k2-yuv-444-422-420-le-sous-echantillonage-de-la-chrominance" title="Permanent link">&para;</a></h2>
+<p><em>YUV</em> présente l&rsquo;avantage, par rapport au <em>RGB</em>, de pouvoir fonctionner en pratique de manière plus proche de la perception humaine qui est plus performante en <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em>. En effet, en séparant la <em>luminance<a href="ZZ-vocabulaire.html">*</a></em> de la <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em>, on va pouvoir diminuer la quantité de données enregistrée en <em>chrominance</em> pour favoriser la <em>luminance</em>, sans que nous ne percevions la perte et ainsi compresser efficacement les données vidéo.</p>
+<p>Pour opérer cette réduction de qualité en <em>chrominance</em>, on en réduit simplement la résolution, le nombre de pixels ; c&rsquo;est ce qu&rsquo;on appelle le sous-échantillonage de chrominance (<em>chroma sub-sampling</em> en anglais).</p>
+<p>Le sous-échantillonnage de chrominance est donc <em>une méthode de compression</em> avec pertes complètement indépendante de la <em>norme<a href="ZZ-vocabulaire.html">*</a></em> (<em>codec<a href="ZZ-vocabulaire.html">*</a></em>) d&rsquo;encodage de la vidéo.</p>
+<p>Les sigles <em>4:4:4</em>, <em>4:2:2</em>, <em>4:2:0</em><sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup>&hellip; décrivent la manière dont le sous-échantillonnage est fait et indiquent la quantité de données perdues. Cette description est faite à partir d&rsquo;une grille de 4 pixels sur 2.</p>
+<p><img alt="4x2 pixels" src="img/chroma-subsampling.svg" /></p>
+<p>La première valeur du trio représente la résolution (l&rsquo;échantillonage) de la <em>luminance<a href="ZZ-vocabulaire.html">*</a></em>.<br />
+La deuxième valeur représente le sous-échantillonage de la <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em> sur la première ligne (toutes les lignes impaires), tandis que la troisième représente ce sous-échantillonage sur la deuxième ligne (toutes les lignes paires).</p>
+<p>Une quatrième valeur est parfois ajoutée au sigle et représente dans ce cas un sous-échantillonage dans la couche <em>alpha*</em> de la vidéo<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup>.</p>
+<p>On peut facilement calculer la quantité de données économisées en additionnant les trois valeurs et en divisant par 12 (ou 16 si il y a une valeur séparée pour l&rsquo;alpha).<br />
+Par exemple :</p>
+<ul>
+<li>en <em>4:4:4</em>, il n&rsquo;y a aucune perte (facteur de <code>1,0</code>)</li>
+<li>en <em>4:2:2</em>, on gagne un tiers (facteur de <code>0,66</code>)</li>
+<li>en <em>4:2:0</em>, on gagne la moitié (facteur de <code>0,5</code>)</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>En cas de vidéo noire et blanche, la chrominance est complètement inutile, on peut donc choisir le mode qui en a le moins.</p>
+</div>
+<h3 id="k2a-444">K.2.a - 4:4:4<a class="headerlink" href="#k2a-444" title="Permanent link">&para;</a></h3>
+<p><img alt="444" src="img/444.svg" /></p>
+<p>Le sous-échantillonage <em>4:4:4</em> en <em>YUV</em> est <strong>le seul équivalent au <em>RGB</em></strong> en terme de qualité (et quantité de données). Il n&rsquo;y a en fait aucun sous-échantillonage dans ce mode et tous les pixels contiennent les informations de <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em> et de <em>luminance<a href="ZZ-vocabulaire.html">*</a></em>.</p>
+<p>Il n&rsquo;est pas utilisé en diffusion mais <strong>seulement en production</strong> (ou pour l&rsquo;archivage). En effet, le débit serait trop élevé, mais ces données sont indispensables à la post-production, en particulier dans le cas d&rsquo;utilisation de fond vert ou bleu (<em>chroma-key</em>) : le masquage se faisant sur l&rsquo;information de chrominance, il est absolument indispensable d&rsquo;en avoir toute la résolution.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Malheureusement, seules les caméras et enregistreurs professionnels haut de gamme peuvent enregistrer en <em>4:4:4</em>, beaucoup de caméras enregistrent en <em>4:2:2</em>, voire même pour l&rsquo;entrée de gamme en <em>4:2:0</em>.</p>
+</div>
+<h3 id="k2b-422">K.2.b - 4:2:2<a class="headerlink" href="#k2b-422" title="Permanent link">&para;</a></h3>
+<p><img alt="422" src="img/422.svg" /></p>
+<p>En <em>4:2:2</em>, la résolution de la <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em> est la moitié de celle de la luminance (on diminue donc d&rsquo;un tiers la quantité de données). La perte est imperceptible, ce qui en fait une manière de compresser la vidéo très efficace. Ce mode est utilisé en production (pour autant qu&rsquo;il n&rsquo;y ait pas d&rsquo;incrustation, de fond vert/bleu), dans les formats haut de gamme et dans les diffusion de haute qualité (en télévision notamment).</p>
+<p>La résolution horizontale de la chrominance est réduite de moitié, la résolution verticale est gardée.</p>
+<h3 id="k2c-420">K.2.c - 4:2:0<a class="headerlink" href="#k2c-420" title="Permanent link">&para;</a></h3>
+<p><img alt="420" src="img/420.svg" /></p>
+<p>En <em>4:2:0</em>, la résolution de la <em>chrominance<a href="ZZ-vocabulaire.html">*</a></em> est réduite de moitié une ligne sur deux, et complètement supprimée sur l&rsquo;autre ligne. La quantité de données est donc globalement réduite de moitié, mais la différence reste très difficile à percevoir, ce qui en fait un très bon format de diffusion<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup>.</p>
+<p>Ce mode est majoritaire dans les fichiers informatique grand public et sur internet. Beaucoup de lecteurs logiciels, et la plupart des lecteurs <em>hardware</em> (lecteurs de blu-rays, smart TVs, etc) ne supportent d&rsquo;ailleurs que le <em>4:2:0</em>.</p>
+<p>Il est à proscrire en production en cas de correction colorimétrique ou incrustation ; les informations de <em>chrominance</em> sont très insuffisantes (un effet &ldquo;d&rsquo;escalier&rdquo; peut facilement apparaitre, dû au manque de résolution en chrominance).</p>
+<p>La résolution horizontale ainsi que verticale de la chrominance sont toutes deux réduites de moitié.</p>
+<h2 id="k3-profondeur-de-couleur-bpc">K.3 - Profondeur de couleur (bpc)<a class="headerlink" href="#k3-profondeur-de-couleur-bpc" title="Permanent link">&para;</a></h2>
+<p>Indépendamment de l&rsquo;espace colorimétrique choisi, et que ce soit pour les fichiers exportés ou l&rsquo;espace de travail, le paramètre de profondeur de couleur décrit la précision des valeurs enregistrées pour chaque <em>couche<a href="ZZ-vocabulaire.html">*</a></em> des pixels.</p>
+<p>Contrairement à une idée répandue, la profondeur de couleur n&rsquo;influence pas vraiment la quantité de couleurs visibles, mais plutôt la précision des calculs, et donc le nombre de &ldquo;sous nuances&rdquo; utilisables au sein de l&rsquo;espace colorimétrique choisi. En d&rsquo;autres mots, la profondeur ne change en rien le <em>gamut<a href="ZZ-vocabulaire.html">*</a></em>. Nous parlerons plutôt ici de quantité de <em>nuances</em> plutôt que de quantité de <em>couleurs</em> pour éviter cette confusion.</p>
+<p>En définissant la précision des valeurs, et la quantité de données enregistrées, la profondeur de couleur influence directement la taille des fichiers.</p>
+<p>On mesure généralement cette profondeur en <em>bits<a href="ZZ-vocabulaire.html">*</a></em> (sous entendu <em>par pixel</em>) ou en <code>bpc</code> (<em>bits</em> par couche). Plus on utilise de <em>bits</em> (<code>0</code> ou <code>1</code>) pour enregistrer le pixel (ou chacune des couches), plus le fichier prendra de place mais plus la précision (et donc la qualité) sera élevée.</p>
+<p>Suivant les systèmes, les standards varient, notamment en raison du <em>sous-échantillonage de chrominance</em> en <em>YUV</em>.</p>
+<h3 id="k3a-en-rgb">K.3.a - En RGB<a class="headerlink" href="#k3a-en-rgb" title="Permanent link">&para;</a></h3>
+<p>En <em>RGB</em> chaque <em>couche<a href="ZZ-vocabulaire.html">*</a></em> comporte autant d&rsquo;information (il n&rsquo;y a pas de sous-échantillonnage), et si en théorie on pourrait imaginer un nombre arbitraire de <em>bits<a href="ZZ-vocabulaire.html">*</a></em> pour stocker les <em>couches</em> (et c&rsquo;est le cas dans certains formats de fichiers), on utilise généralement des multiples de 8 (et donc des octets entiers<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup>).</p>
+<h4 id="k3aa-8-bpc-24-bits-24-bpp-32-bits-avec-alpha">K.3.a.a 8 bpc / 24 bits / 24 bpp / 32 bits avec alpha<a class="headerlink" href="#k3aa-8-bpc-24-bits-24-bpp-32-bits-avec-alpha" title="Permanent link">&para;</a></h4>
+<p>La plupart des images utilisent 8 <em>bits</em> par <em>couche</em>. Avec 8 bits, on peut coder 2<sup>8</sup>, c&rsquo;est à dire 256, valeurs différentes (de 0 à 255). Avec trois couches, on a donc un total de 8<sup>3</sup>, c&rsquo;est à dire un peu plus de 16 millions, de valeurs différentes pour un pixel.</p>
+<p>Cette quantité de nuances est nécessaire et suffisante pour que l&rsquo;œil humain ne distingue pas de &ldquo;paliers&rdquo; dans les images avec un <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> comme celui du <em>sRGB</em>, et est donc la plus répandue dans les images numériques <em>RGB</em> destinées aux écrans d&rsquo;ordinateur.</p>
+<p>Mais cette quantité n&rsquo;est pas suffisante lors du travail sur l&rsquo;image, comme espace de travail. En effet, au moment de modifier les images, l&rsquo;ordinateur effectue des calculs sur les valeurs des différentes couches, et ces calculs sur seulement 256 valeurs entières entrainent une forte perte de précision, visible très rapidement<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup>.</p>
+<p>Cette profondeur n&rsquo;est pas non plus suffisante pour le travail pour la télévision ou le cinéma qui utilisent une profondeur plus élevée (associée à un <em>gamut</em> plus large dans des espaces autres que le <em>sRGB</em>).</p>
+<p>Pour pouvoir travailler sans dégrader l&rsquo;image, on augmente donc la profondeur de couleur de l&rsquo;espace de travail.</p>
+<h4 id="k3ab-16-bpc-48-bits-48-bpp-64-bits-avec-alpha">K.3.a.b 16 bpc / 48 bits / 48 bpp / 64 bits avec alpha<a class="headerlink" href="#k3ab-16-bpc-48-bits-48-bpp-64-bits-avec-alpha" title="Permanent link">&para;</a></h4>
+<p>En ajoutant un octet pour chaque couche, on augmente grandement le nombre de nuances disponibles. En effet, on porte à 2<sup>16</sup>, soit 65536, le nombre de valeurs disponibles pour chaque couche. Ce qui fait un total de 65536<sup>3</sup>, soit plusieurs <em>trillions</em>, de nuances par pixel.</p>
+<p>En règle générale, ces 16 <em>bits</em> par <em>couche</em> apportent la précision nécessaire pour un travail fin sur l&rsquo;image, mais peuvent tout de même être insuffisants dans des cas spécifiques :</p>
+<ul>
+<li>En cas d&rsquo;utilisation d&rsquo;un espace de travail <em>linéaire</em> pour un export destiné à la télévision haut de gamme et HDR ou le cinéma (<em>cf.</em> chapitre <a href="L-transfert.html">L - Courbes de transefert</a>) : le passage du <em>linéaire<a href="ZZ-vocabulaire.html">*</a></em> à l&rsquo;espace de sortie non linéaire (l&rsquo;application d&rsquo;un <em>gamma<a href="ZZ-vocabulaire.html">*</a></em>) &ldquo;compresse&rdquo; les valeurs sombres et &ldquo;étire&rdquo; les lumières. Suite à ce calcul, <em>16 bpc</em> linéaire correspond en qualité tout juste aux <em>12 bpc</em> des standards les plus élevés pour la télévision<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup> et ceux du cinéma<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup>.</li>
+<li>En cas de travail complexe et lourd, même sur un espace non linéaire, pour la télévision ou le cinéma, on peut parfois atteindre la limite de précision nécessaire pour des dégradés de couleurs très fins.</li>
+</ul>
+<p>On peut donc encore augmenter la profondeur de couleur dans ces cas précis.</p>
+<h4 id="k3ac-32-bpc-96-bits-96-bpp-128-bits-avec-alpha">K.3.a.c 32 bpc / 96 bits / 96 bpp / 128 bits avec alpha<a class="headerlink" href="#k3ac-32-bpc-96-bits-96-bpp-128-bits-avec-alpha" title="Permanent link">&para;</a></h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Ne pas confondre <em>32 bpc</em> (par couche) avec <em>32 bits</em> ou <em>32 bpp</em> (par pixel) qui est en fait seulement <em>8 bpc</em> (avec une couche alpha) !</p>
+</div>
+<p>On ajoute un troisième octet par couche, ce qui augmente encore exponentiellement le nombre de nuances disponibles, avec 2<sup>32</sup>, 4 milliards, de valeurs possibles par <em>couche<a href="ZZ-vocabulaire.html">*</a></em>, soit un nombre qu&rsquo;on considèrera infini de nuances par pixel.</p>
+<p>Ce mode est celui qui permet un travail virtuellement sans aucune perte sur l&rsquo;image, quel que soit l&rsquo;espace colorimétrique utilisé, qu&rsquo;il soit linéaire ou non, mais devient très lourd en terme de mémoire.</p>
+<p>S&rsquo;il peut être utile comme mode de travail, il est en fait rarement utilisé pour le stockage des fichiers (même intermédiaires) où <em>16 bits</em> par <em>couche</em> suffisent souvent<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup>.</p>
+<h3 id="k3b-en-yuv">K.3.b - En YUV<a class="headerlink" href="#k3b-en-yuv" title="Permanent link">&para;</a></h3>
+<p>En <em>YUV</em>, qui n&rsquo;est jamais utilisé comme système de travail mais uniquement pour le stockage et la diffusion, la profondeur utilisée est différente des systèmes <em>RGB</em>.</p>
+<p>On la note en général en nombre de bits utilisés pour la couche de luminance par pixel ; en effet le nombre de <em>bits<a href="ZZ-vocabulaire.html">*</a></em> par <em>couche<a href="ZZ-vocabulaire.html">*</a></em> n&rsquo;a pas vraiment de sens avec les différents <em>sous-échantillonages de la chrominance<a href="ZZ-vocabulaire.html">*</a></em> possibles, de même qu&rsquo;un nombre de <em>bits</em> par pixel.</p>
+<p>En prenant en compte le <em>sous-échantillonage de la chrominance</em>, on peut calculer le nombre de bits moyen utilisé par octet (et donc la taille approximative d&rsquo;une image sans compression en multipliant par le nombre de pixels), même si en réalité, le nombre de bits utilisé par la chrominance est celui indiqué pour les pixels contenant de la chrominance, et zéro pour les autres.</p>
+<p>Les différents modes ne se différencient donc qu&rsquo;en terme de qualité, et en règle générale, plus on augmente la résolution l&rsquo;image et le <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> de l&rsquo;espace colorimétrique, plus on augmente la profondeur pour s&rsquo;assurer que les dégradés restent fins et sans effet d&rsquo;escalier (&ldquo;<em>banding</em>&rdquo; en anglais).</p>
+<h4 id="k3ba-8-bits">K.3.b.a 8 bits<a class="headerlink" href="#k3ba-8-bits" title="Permanent link">&para;</a></h4>
+<p>C&rsquo;est la profondeur la plus répandue en informatique ; la plupart des écrans d&rsquo;ordinateurs ne peuvant pas afficher plus de nuances.</p>
+<ul>
+<li>En <em>4:4:4</em>, cela signifie que chaque pixel est représenté par <em>24 bits</em>.</li>
+<li>En <em>4:2:2</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>16 bits</em>, avec en réalité la moitié des pixels (une colonne sur deux) contenant <em>24 bits</em> (<em>8 bits</em> par couche), et l&rsquo;autre moitié contenant <em>8 bits</em> (<em>8 bits</em> de luminance et aucun de chrominance).</li>
+<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>12 bits</em>, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>24 bits</em> (<em>8 bits</em> par couche), et le dernier quart, <em>8 bits</em> (<em>8 bits</em> de luminance et aucun de chrominance).</li>
+</ul>
+<p>C&rsquo;est la profondeur standard pour les vidéos <em>HD</em> en <em>Rec.709</em>.</p>
+<h4 id="k3bb-10-bits">K.3.b.b 10 bits<a class="headerlink" href="#k3bb-10-bits" title="Permanent link">&para;</a></h4>
+<p>C&rsquo;est la profondeur de base des vidéos haut de gamme et <em>UHD</em> en <em>Rec.2020</em>.</p>
+<ul>
+<li>En <em>4:4:4</em>, cela signifie que chaque pixel est représenté par <em>30 bits</em>.</li>
+<li>En <em>4:2:2</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>20 bits</em>, avec en réalité la moitié des pixels (une colonne sur deux) contenant <em>30 bits</em> (<em>10 bits</em> par couche), et l&rsquo;autre moitié contenant <em>10 bits</em> (<em>10 bits</em> de luminance et aucun de chrominance).</li>
+<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>15 bits</em>, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>30 bits</em> (<em>10 bits</em> par couche), et le dernier quart, <em>10 bits</em> (<em>10 bits</em> de luminance et aucun de chrominance).</li>
+</ul>
+<h4 id="k3bc-12-bits">K.3.b.c 12 bits<a class="headerlink" href="#k3bc-12-bits" title="Permanent link">&para;</a></h4>
+<p>C&rsquo;est la profondeur &ldquo;<em>HDR</em>&rdquo; des vidéos haut de gamme et <em>UHD</em> en <em>Rec.2020</em>.</p>
+<ul>
+<li>En <em>4:4:4</em>, cela signifie que chaque pixel est représenté par <em>36 bits</em>.</li>
+<li>En <em>4:2:2</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>24 bits</em>, avec en réalité la moitié des pixels (une colonne sur deux) contenant <em>36 bits</em> (<em>12 bits</em> par couche), et l&rsquo;autre moitié contenant <em>12 bits</em> (<em>12 bits</em> de luminance et aucun de chrominance).</li>
+<li>En <em>4:2:0</em>, cela signifie qu&rsquo;un pixel est représenté <em>en moyenne</em> par <em>18 bits</em>, avec en réalité un pixel sur quatre (une ligne sur deux et une colonne sur deux) contenant <em>18 bits</em> (<em>12 bits</em> par couche), et le dernier quart, <em>12 bits</em> (<em>12 bits</em> de luminance et aucun de chrominance).</li>
+</ul>
+<h3 id="k3c-autres">K.3.c - Autres<a class="headerlink" href="#k3c-autres" title="Permanent link">&para;</a></h3>
+<p>Il existe d&rsquo;autres profondeurs, à partir de <em>1 bit par pixel</em> (les images monochromes), suivant des usages spécifiques. Par exemple, une image utilisant une palette de 256 couleurs comme on les trouve dans le format <em>GIF</em> ou certains <em>PNG</em> par exemple utilisent <em>8 bits par pixel</em> (et donc par couche aussi, puisqu&rsquo;il n&rsquo;y a dans ce cas qu&rsquo;une seule couche).</p>
+<h2 id="k4-full-range-limited-tv-pc">K.4 - Full range / Limited / TV / PC ?<a class="headerlink" href="#k4-full-range-limited-tv-pc" title="Permanent link">&para;</a></h2>
+<p>Lors de l&rsquo;encodage vidéo (et de son décodage), un paramètre important concerne le <em>color range</em>. Ce paramètre a son origine historique au moment du passage de la TV analogique aux écrans RGB numériques. Il donne une gamme de niveaux possible sur chacune des <em>couches<a href="ZZ-vocabulaire.html">*</a></em> de couleur (rouge, vert, bleu).</p>
+<h3 id="k4a-full-range-pc">K.4.a - Full range / PC<a class="headerlink" href="#k4a-full-range-pc" title="Permanent link">&para;</a></h3>
+<p>Les écrans numériques des ordinateurs utilisent la gamme <em>complète</em> des niveaux de rouge, vert et bleu pour la reproduction des couleurs. Avec les 8 <em>bits<a href="ZZ-vocabulaire.html">*</a></em> par <em>couche<a href="ZZ-vocabulaire.html">*</a></em> les plus répandus, cela signifie que chaque couche stocke les valeurs entre 0 et 255.</p>
+<p>0 représente donc le noir, et 255 le blanc.</p>
+<h3 id="k4b-limited-range-tv">K.4.b - Limited range / TV<a class="headerlink" href="#k4b-limited-range-tv" title="Permanent link">&para;</a></h3>
+<p>Les télévisions sont elles prévues pour utiliser la gamme dite <em>limitée</em> des niveaux ; cette gamme est à l&rsquo;origine adaptée spécifiquement pour représenter plus correctement les contrastes des films et correspond avec 8 <em>bits<a href="ZZ-vocabulaire.html">*</a></em> par <em>couche<a href="ZZ-vocabulaire.html">*</a></em> à des valeurs entre 16 et 235.</p>
+<p>Cela signifie que en télévision, la valeur 16 représente le noir, et la valeur 235 le blanc. Toutes les valeurs inférieures à 16 sont ignorées (plus noires que noir) ainsi que toutes les valeurs supérieures à 235 (plus blanches que blanche)<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup>.</p>
+<h3 id="k4c-consequence-pratique">K.4.c - Conséquence pratique<a class="headerlink" href="#k4c-consequence-pratique" title="Permanent link">&para;</a></h3>
+<p>Il faut donc bien connaître à la fois son matériel au moment de la reproduction d&rsquo;une vidéo, et bien savoir quoi faire au moment de son encodage.</p>
+<h4 id="k4ca-encodage">K.4.c.a - Encodage<a class="headerlink" href="#k4ca-encodage" title="Permanent link">&para;</a></h4>
+<p>Dans l&rsquo;immense majorité des cas, les standards vidéos préconisent un encodage en <em>limited range / TV</em> : les vidéos sont prévues pour être vues dans les conditions de la télévision (y compris sur internet). C&rsquo;est le cas par exemple du <em>mp4</em> en <em>h.264</em> ou <em>h.265</em>, du <em>mkv</em>, et de tous les formats de <em>diffusion</em>.</p>
+<p>En revanche, les formats d&rsquo;images (<em>PNG</em>, <em>Jpeg</em>, <em>openEXR</em>, etc.), ainsi que les formats video <em>intermédiaires</em> (ceux utilisés lors de la production et non pas de la diffusion, comme le <em>Prores</em>), étant prévus pour un environnement informatique, utilisent plutôt le <em>full range / PC</em>.</p>
+<p>Il est important de respecter ces standards pour être sûr que les fichiers soient correctement interprétés par le matériel des spectateurs, et toujours se renseigner sur les formats préconisés par les diffuseurs.</p>
+<h4 id="k4cb-lecture-et-affichage">K.4.c.b - Lecture et affichage<a class="headerlink" href="#k4cb-lecture-et-affichage" title="Permanent link">&para;</a></h4>
+<p>Lors de la lecture des vidéos, il faut aussi que tout le système soit correctement configuré ; un problème courant (pour ne pas dire récurent) sur les ordinateurs est justement que les vidéos sont laissées en <em>limited range</em> alors que l&rsquo;écran est <em>full range</em>.</p>
+<p>Lors de la lecture, la source vidéo doit être convertie pour correspondre à l&rsquo;écran ou au projecteur. Sans conversion, une vidéo <em>limited range</em> sur un écran <em>full range</em> sera &ldquo;terne&rdquo; : il n&rsquo;y aura ni noir ni blanc, la gamme de l&rsquo;image allant seulement du gris clair au gris foncé. À l&rsquo;inverse, une vidéo <em>full range</em> sur une TV <em>limited range</em> aura une perte d&rsquo;information aussi bien dans les lumières que les ombres, avec de grandes parties complètement noires ou blanches (l&rsquo;image sera trop contrastée).</p>
+<p><em><img alt="Exemple de mauvais affichage" src="img/full-vs-limited.svg" /></em></p>
+<p>Il faut donc que le matériel soit correctement configuré. Sur un lecteur de disques ou une console, il doit y avoir un réglage pour spécifier si l&rsquo;écran branché est <em>full</em> ou <em>limited range</em> (en règle générale, un écran informatique ou un vidéo-projecteur est <em>full range</em>, une TV <em>limited range</em>).</p>
+<p>Sur un ordinateur, les choses peuvent être un peu plus complexes : il faut commencer par vérifier les paramètres du pilote de la carte graphique, en général dans une section nommée &ldquo;vidéo&rdquo;, et bien spécifier <em>full range / PC</em> (sauf si c&rsquo;est une TV qui est branchée à l&rsquo;ordinateur)<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup>. Si après avoir bien réglé ce paramètre des variations sont toujours visibles, il faut vérifier que le logiciel utilisé pour lire la vidéo ne fait pas une mauvaise conversion (par exemple <em>Quicktime</em> sur <em>Windows</em> était connu pour ça<sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup>) ; la plupart de ces logiciels devraient cependant laisser faire cette conversion par la carte graphique et ne pas poser de problème (c&rsquo;est le cas de <em>VLC</em>, du lecteur vidéo de <em>Windows</em>, de <em>Totem</em> sous <em>Linux</em>&hellip;).</p>
+<p><em><img alt="Capture d'écran des paramètres Nvidia" src="img/nvidia-controls.png" /></em><br />
+Exemple de paramètres via les réglages d&rsquo;une carte graphique <em>Nvidia</em> (sous <em>Linux</em>). Notez surtout ici le paramètres <em>color range</em>, à mettre sur <em>Full</em> si l&rsquo;écran est un écran d&rsquo;ordinateur, et <em>Limited</em> si c&rsquo;est un téléviseur.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Sur certains matériels, une option &ldquo;Auto&rdquo; est disponible en plus de <em>full / limited range</em>. Dans ce cas le matériel <em>essaye</em> de détecter le type d&rsquo;écran branché. Dans la mesure où c&rsquo;est un paramètre qui ne doit changer que quand on change d&rsquo;écran, il est fortement recommandé de le mettre à la main.</p>
+</div>
+<hr />
+<p>Sources et références</p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Sous-%C3%A9chantillonnage_de_la_chrominance">Sous-échantillonage de la chrominance sur <em>Wikipedia</em></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Color_depth">Color Depth sur <em>Wikipedia</em> (en anglais)</a></li>
+<li><a href="https://referencehometheater.com/2014/commentary/rgb-full-vs-limited/">RGB Full vs Limited sur <em>Reference Home Theater</em> (en anglais)</a></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>En réalité, on parle soit de <em>luminance<a href="ZZ-vocabulaire.html">*</a></em> soit de <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em> ou <em>luma<a href="ZZ-vocabulaire.html">*</a></em> :<br />
+• La <em>luminance</em> a une courbe de transfert linéaire.<br />
+• La <em>luma/luminosité</em> (<em>brightness</em> en anglais) a un gamma.<br />
+Lorsqu&rsquo;on parle de <em>luminance</em> on note <em>YUV</em> tandis que lorsqu&rsquo;on parle de <em>luminosité</em> on devrait noter <em>Y&rsquo;UV</em>, mais la plupart du temps on ommet le prime.<br />
+<em>cf.</em> chapitre <em><a href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a></em>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Le terme général <em>YUV</em> recouvre en réalité deux familles, chacune déclinées en <em>luminance</em> ou <em>luminosité</em> (<em>Y</em> ou <em>Y&rsquo;</em>) :<br />
+• En analogique on parle de <em>YUV</em> et <em>Y&rsquo;UV</em>, ou parfois <em>YPbPr</em> et <em>Y&rsquo;PbPr</em>.<br />
+• En numérique le terme exact est <em>YCbCr</em> ou <em>Y&rsquo;CbCr</em>, et parfois <em>YCC</em>.<br />
+Mais c&rsquo;est généralement le terme <em>YUV</em> qui est utilisé dans tous ces différents cas&hellip;&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>En fait, on peut utiliser indifféremment <em>YUV</em> et <em>RGB</em>, mais certains standards et espaces colorimétriques préconnisent plutôt l&rsquo;un ou l&rsquo;autre, ou les deux. Par exemple <em>sRGB</em> est spécifiquement prévu pour être utilisé sur un encodage <em>RGB</em>, alors que <em>Rec.709</em> spécifie qu&rsquo;il peut servir aussi bien en <em>RGB</em> que <em>YUV</em>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>C&rsquo;est le cas du <em>GIF</em> qui contient au maximum 256 couleurs différentes dans sa palette. On peut aussi utiliser ce principe sur le <em>PNG</em> et d&rsquo;autres formats. L&rsquo;intérêt est de réduire globalement la taille du fichier en stockant moins d&rsquo;information (uniquement la palette avec les couleurs décrites en <em>RGB</em>, et une seule <em>couche</em> par pixel ; on réduit donc globalement la taille par un facteur trois).&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Cette liste sont les sous-échantillonages les plus courants, mais il y en a de plus rares (<em>4:2:1</em>, <em>4:1:1</em>), ou plus complexes ou carrément exotiques (<em>3:1.5:1.5</em>, <em>3:1:1</em>)&hellip;&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>À défaut, le sous-échantillonage du canal alpha est le même que celui de la <em>luminance<a href="ZZ-vocabulaire.html">*</a></em>.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>Ce mode existe dans le format <em>openEXR</em> : c&rsquo;est l&rsquo;option notée &ldquo;Luminance/Chroma&rdquo;.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>En informatique courante où l&rsquo;<em>octet<a href="ZZ-vocabulaire.html">*</a></em> est aussi le <em>Byte<a href="ZZ-vocabulaire.html">*</a></em>, l&rsquo;unité la plus petite de mémoire, on ne peut pas utiliser de &ldquo;demi octet&rdquo; (ou toute autre fraction). Utiliser un nombre entier d&rsquo;<em>octets</em> (de <em>Bytes</em>) par pixel fait que le nombre de pixels dans l&rsquo;image peut être complètement arbitraire ; si le nombre d&rsquo;<em>octets</em> par pixel n&rsquo;est pas entier, plusieurs pixels devront partager des octets, et le nombre de pixels est contraint : le nombre total d&rsquo;<em>octets</em> de l&rsquo;image doit être entier. C&rsquo;est pour cette raison que le nombre de lignes et colonnes d&rsquo;une vidéo <em>mp4</em> doit être pair par exemple.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>On s&rsquo;en rend compte très facilement : imaginons que le calcul à faire est une division par deux d&rsquo;une valeur de <code>127</code>. Le résultat sera arrondi à <code>63</code> ou <code>64</code>. Si d&rsquo;autres calculs suivent, à force d&rsquo;arrondir la précision tombe très rapidement et la qualité avec.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>En 2021, le standard pour la Ultra-Haute Définition (<em>4K</em>) <em>Rec.2020</em>, encore peu utilisé en diffusion mais déjà standardisé, qui possède un gamut très large, préconise <em>12 bits</em> en luminance pour son mode &ldquo;HDR&rdquo;.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p>Le <em>Digital Cinema Package</em> (<em>DCP</em>) (où l&rsquo;image est en fait encodée sous la norme <em>JPEG 2000</em> sans perte) en usage en 2021 code les couleurs dans un espace <em>XYZ</em> avec <em>12 bpc</em>.&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12">
+<p>On ne rentrera pas ici dans le détail technique de la manière dont ces valeurs sont représentées, soit par un nombre à <em>virgule flottante</em> (entre 0,0 et 1,0 et potentiellement négatif aussi) soit par un nombre entier, mais il faut savoir que cette distinction existe autant pour le <em>16 bpc</em> que le <em>32 bpc</em>. Dans le doute, préférez les nombre à virgule flottante (&ldquo;<em>float</em>&rdquo; en anglais).&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:13">
+<p>Certains blu-rays et consoles de jeux tirent parti de cette limite pour ajouter des spéculaires (brillances) au delà du blanc et les rendre plus lumineux. Si la TV est compatible, elle affichera des &ldquo;super blancs&rdquo;, sinon elle ignorera simplement cette information, sans que l&rsquo;image n&rsquo;en soit affectée.&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:14">
+<p>Pendant longtemps, les pilotes des cartes graphiques NVidia sous <em>Windows</em> étaient configurées pour afficher les vidéos en <em>limited range</em> par défaut&hellip;&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
+<p>Bien qu&rsquo;aimé des animateurs pour sa capacité à facilement lire les vidéos image par image, <em>Quicktime</em> sous <em>Windows</em> est à proscrire pour sa mauvaise gestion des couleurs ; son développement a de toute façon été abandonné par <em>Apple</em>.<br />
+<em><a href="https://darbyjohnston.github.io/DJV/">DJV</a></em>, disponible aussi bien sous <em>Windows</em>, <em>Mac OS</em>, <em>Linux</em>, que <em>BSD</em>, le remplace efficacement et intègre une gestion des couleurs professionnelle.&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

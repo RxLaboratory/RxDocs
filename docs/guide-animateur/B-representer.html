@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Nicolas Dufresne and contributors">
+  <link rel="canonical" href="https://docs.rainboxlab.org/guide-animateur/B-representer.html">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>B - Représentater le mouvement - RxDocs - Guide de l'animateur</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="video.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "B - Repr\u00e9sentater le mouvement";
+    var mkdocs_page_input_path = "B-representer.md";
+    var mkdocs_page_url = "/guide-animateur/B-representer.html";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> RxDocs - Guide de l'animateur</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <p class="caption"><span class="caption-text">Guide de l'animateur</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="A-mouvement.html">A - Qu'est ce qui fait qu'on bouge ?</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="B-representer.html">B - Représentater le mouvement</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#trajectoires">Trajectoires</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pelure-doignon">Pelure d'oignon</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#courbes-danimation">Courbes d'animation</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="C-science.html">C - Théorie dans un espace pseudo-scientifique et newtonien</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="http://docs.rainboxlab.org">Tous les documents RxLab</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="https://rainboxlab.org/about/contact/">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="https://rainboxlab.org/about/donate/">Donate</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">RxDocs - Guide de l'animateur</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Guide de l'animateur &raquo;</li>
+        
+      
+    
+    <li>B - Représentater le mouvement</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-anim-fr/docs/B-representer.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="representater-le-mouvement">Représentater le mouvement<a class="headerlink" href="#representater-le-mouvement" title="Permanent link">&para;</a></h1>
+<p>Il faut représenter le mouvement pour pouvoir en parler précisément. Ces différentes méthodes seront utilisées dans la suite du document.</p>
+<h2 id="trajectoires">Trajectoires<a class="headerlink" href="#trajectoires" title="Permanent link">&para;</a></h2>
+<p>Trajectoires, avec exposition.</p>
+<p>La vitesse est donnée par l&rsquo;écart entre les points. L&rsquo;accélération par la variation de cet écart entre les points successifs.</p>
+<h2 id="pelure-doignon">Pelure d&rsquo;oignon<a class="headerlink" href="#pelure-doignon" title="Permanent link">&para;</a></h2>
+<p>La vitesse est donnée par l&rsquo;écart entre les dessins (i.e. le <em>spacing</em>), l&rsquo;accélération par la variation entre les écarts entre les dessins successifs.</p>
+<h2 id="courbes-danimation">Courbes d&rsquo;animation<a class="headerlink" href="#courbes-danimation" title="Permanent link">&para;</a></h2>
+<p>Variation de valeur dans le temps<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>La vitesse est donnée par la pente de la courbe, l&rsquo;accélération par la variation de cette pente (la courbure). L&rsquo;amplitude par la distance entre les points les plus hauts et les plus bas de la courbe, la durée par la distance entre le début et la fin.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Le cas After Effects et ses courbes de vitesse&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="C-science.html" class="btn btn-neutral float-right" title="C - Théorie dans un espace pseudo-scientifique et newtonien">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="A-mouvement.html" class="btn btn-neutral" title="A - Qu'est ce qui fait qu'on bouge ?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/Rainbox-dev/RxDocs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="A-mouvement.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="C-science.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="video.js" defer></script>
+      <script src="meta.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
