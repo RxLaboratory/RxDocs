@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
     $('img[alt="YOUTUBE_1-1"]').each(function () {
         var id = $(this).attr('src').split('/')[$(this).attr('src').split('/').length - 1];
-        var video = '<div class="ratio-1-1"><iframe src="https://www.youtube.com/embed/' + id + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
+        var video = '<div class="ratio-1-78"><iframe src="https://www.youtube.com/embed/' + id + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>';
         $(this).replaceWith(video);
     });
     $('img[alt="VIMEO"]').each(function () {

@@ -4,8 +4,6 @@ These pages assemble all documents, guides, and general documentation written at
 
 This [is a collaborative work and you're welcome to contribute](contribute.md).
 
-[TOC]
-
 ## Learning
 
 These are documents which will help you learn and know more about specific topics. Some are available in English, others in French; you're welcome to help us translate them!
@@ -19,8 +17,48 @@ These are documents which will help you learn and know more about specific topic
     - Comprendre [les méthodes de compression en ***openEXR*** compression](exr-fr/index.html).
     - Comprendre les [**Couleurs et Color Management**](couleurs/index.html) dans la production audiovisuelle.
 
-## Comprensive guides
+## RxOT Comprehensive guides
 
-Comprehensive guides for all *RxLab* Software are [listed here](guides.md).
+These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
+
+- ***DuBlast*** (*Blender*): [dublast.rxlab.guide](http://dublast.rxlab.guide/)  
+    Quick and easy animation previews for *Blender*.
+- ***DuBuilder***: [dubuilder.rxlab.guide](http://dubuilder.rxlab.guide/)  
+    Compile *Adobe ExtendScript* scripts.
+- ***DuCoPi***: [ducopi.rxlab.guide](http://ducopi.rxlab.guide/)  
+    A handy color picker for all applications and systems.
+- ***Duik*** (*After Effects*): [duik.rxlab.guide](http://duik.rxlab.guide)  
+    Rigging and animation tool set for *After Effects*.
+- ***Duik*** (*Blender*): [duik-blender.rxlab.guide](http://duik-blender.rxlab.guide)  
+    Rigging and animation tool set for *Blender*, including 2D, Motion Design, and cut-out animation tools.
+- ***DuIO*** (*After Effects*): [duio.rxlab.guide](http://duio.rxlab.guide)  
+    Import-Export tools for *After Effects* (*OCA*, *Storyboarder*, *Audition*...).
+- ***DuME***: [dume.rxlab.guide](http://dume.rxlab.guide)  
+    Fast, versatile and easy-to-use Media Encoder.
+- ***DuRPresets*** (*Blender*): [durpresets.rxlab.guide](http://durpresets.rxlab.guide)  
+    Render presets for *Blender*.
+- ***DuSKA*** (*Blender*): [duska.rxlab.guide](http://duska.rxlab.guide)  
+    Easy *Shape Key* animation in *Blender*.
+- ***DuTranslator***: [dutranslator.rxlab.guide](http://dutranslator.rxlab.guide)  
+    Translate RxOpenTools to any language.
+- ***DuViews*** (*Blender*): [duviews.rxlab.guide](http://duviews.rxlab.guide)  
+    Quickly pop up views in *Blender*.
+- ***OCA*** (*Krita*): [oca.rxlab.guide](http://oca.rxlab.guide/)  
+    *Open Cell Animation* format, export/import 2D traditionnal animation to/from any software.
+- ***OCA*** (*Krita*): [oca-krita.rxlab.guide](http://oca-krita.rxlab.guide/)  
+    *Open Cell Animation* exporter for *Krita*.
+- ***Ramses***: [ramses.rxlab.guide](http://ramses.rxlab.guide)  
+    The *Rx Asset Management System*: pipeline and production management tools.
+- ***RxLauncher***: [rxlauncher.rxlab.guide](http://rxlauncher.rxlab.guide/)  
+    A nice and sleek launcher for *Android* respecting the *[RxUI](http://rxui.rxlab.io)* guidelines.
+
+## RxOT guides and reference for developers
+
+- ***DuAEF*** (*After Effects*): [duaef.rxlab.io](http://duaef.rxlab.io)  
+    The *Duduf After Effects Framework* to help you develop your *After Effects* scripts.
+- ***Duik API*** (*After Effects*): [duik.rxlab.io](http://duik.rxlab.io)  
+    The reference for the developer version of *Duik*!
+- ***RxUI***: [rxui.rxlab.io](http://rxui.rxlab.io)  
+    Guidelines and icon library for UI/UX design.
 
 ![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13)

@@ -1,44 +1,66 @@
 site_name: RxDocs
-site_url: https://docs.rainboxlab.org
-repo_url: https://github.com/Rainbox-dev/RxDocs/
+site_url: https://docs.rxlab.guide
+repo_url: https://github.com/RxLaboratory/RxDocs/
 edit_uri: edit/master/src-docs/docs/
 site_description: The RxDocuments - RxLab Documentation
 site_author: Nicolas Dufresne and contributors
 copyright: 'Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors'
 use_directory_urls: false
 theme:
-    name: readthedocs
-    custom_dir: theme/
+    name: null
+    custom_dir: 'cinder'
+    colorscheme: zenburn
+extra:
+    collapse_toc: true
 markdown_extensions:
     - smarty
     - footnotes
     - tables
     - admonition
-    - codehilite
     - fenced_code
     - attr_list
-    - toc:
-        permalink: true
 extra_css:
     - style.css
     - video.css
 extra_javascript:
     - video.js
     - meta.js
+    - collapser.js
 site_dir: ../docs/
 dev_addr: '127.0.0.1:8001'
 nav:
     - RxDocs: index.md
-    - Comprehensive guides to RxOpenTools: guides.md
-    - RxDocs Guides in English:
-        - openEXR compression methods: exr-en/index.html
-        - The Guide to Color Management: colors/index.html
+    - RxOpenTools:
+        - User Guides:
+            - DuBlast: http://dublast.rxlab.guide/
+            - DuBuilder: http://dubuilder.rxlab.guide/
+            - DuCoPi: http://ducopi.rxlab.guide/
+            - Duik (After Effects): http://duik.rxlab.guide
+            - Duik (Blender): http://duik-blender.rxlab.guide
+            - DuIO: http://duio.rxlab.guide
+            - DuME: http://dume.rxlab.guide
+            - DuRPresets: http://durpresets.rxlab.guide
+            - DuSKA: http://duska.rxlab.guide
+            - DuTranslator: http://dutranslator.rxlab.guide
+            - DuViews: http://duviews.rxlab.guide
+            - OCA: http://oca.rxlab.guide/
+            - OCA (Krita): http://oca-krita.rxlab.guide/
+            - Ramses: http://ramses.rxlab.guide
+            - RxLauncher: http://rxlauncher.rxlab.guide/
+        - Dev Guides:
+            - DuAEF: http://duaef.rxlab.io
+            - Duik: http://duik.rxlab.io
+            - RxUI: http://rxui.rxlab.io
+    - English:
+        - openEXR compression: exr-en/index.html
+        - Color Management: colors/index.html
         - The 100% free pipeline: freesoftware/index.html
         - The Green Guide to transccoding: green-guide/index.html
-    - Guides RxDocs en français:
+    - Français:
         - Méthodes de compression openEXR: exr-fr/index.html
-        - Le Guide technique de la gestion des couleurs: couleurs/index.html
-    - Contribute to the doc: contribute.md
-    - Contact: https://rainboxlab.org/about/contact/
-    - Donate: https://rainboxlab.org/about/donate/
+        - Gestion des couleurs: couleurs/index.html
+    - ...:
+        - Contribute to the doc: contribute.md
+        - Contact: https://rainboxlab.org/about/contact/
+        - Donate: https://rainboxlab.org/about/donate/
 
