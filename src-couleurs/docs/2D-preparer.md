@@ -43,7 +43,7 @@ Quel que soit l'application (*Substance Painter*, *Substance Designer*, *Krita*,
 
 Lors de l'import dans *Blender*, les images seront interprétées en *RGB Linéaire*, les textures de données (*normal maps*, *metalness*, etc) en *Raw*, sans conversion.
 
-Il est aussi possible de travailler directement les textures dans l'espace *Filmic* si l'application prend en charge *OCIO[\*](ZZ-vocabulaire.md)* en chargeant simplement la configuration *OCIO* de *Blender*, ou en utilisant un profil *ICC* correspondant au *Filmic*, tels que ceux que nous proposons [en téléchargement ici](../media/filmic-luts.zip).
+Il est aussi possible de travailler directement les textures dans l'espace *Filmic* si l'application prend en charge *OCIO[\*](ZZ-vocabulaire.md)* en chargeant simplement la configuration *OCIO* de *Blender*, ou en utilisant un profil *ICC* correspondant au *Filmic*, tels que ceux que nous proposons [en téléchargement ici](media/filmic-luts.zip).
 
 ### Rendu 3D
 
@@ -60,7 +60,7 @@ En cas de compositing dans une application tierce, le plus simple est d'utiliser
 
 #### Filmic et After Effects
 
-Pour le cas particulier d'*After Effects*, où la mise en place d'*OCIO* est laborieuse, il peut être plus simple d'utiliser une *LUT[\*](ZZ-vocabulaire.md)* de conversion *Filmic*... Nous fournissons [une déclinaison de cette *LUT* ici](../media/filmic-luts.zip) (pour chaque variation de contraste de *Filmic* disponible). Il faudra alors choisir un autre espace de travail dans le projet *After Effects*, et utiliser un effet de conversion d'espace depuis *RGB Linéaire* vers l'espace du projet après l'application de la *LUT*.
+Pour le cas particulier d'*After Effects*, où la mise en place d'*OCIO* est laborieuse, il peut être plus simple d'utiliser une *LUT[\*](ZZ-vocabulaire.md)* de conversion *Filmic*... Nous fournissons [une déclinaison de cette *LUT* ici](media/filmic-luts.zip) (pour chaque variation de contraste de *Filmic* disponible). Il faudra alors choisir un autre espace de travail dans le projet *After Effects*, et utiliser un effet de conversion d'espace depuis *RGB Linéaire* vers l'espace du projet après l'application de la *LUT*.
 
 *![Capture After Effects effets Filmic]()*  
 *Exemple d'effets à utiliser sur un fichier* openEXR Filmic *dans* After Effects *avec un espace de travail* ACEScg.

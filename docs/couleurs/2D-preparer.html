@@ -61,7 +61,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
+              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
             
         </div>
 
@@ -680,7 +680,7 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <h3 id="textures-et-autres-images-2d">Textures et autres images 2D<a class="headerlink" href="#textures-et-autres-images-2d" title="Permanent link">&para;</a></h3>
 <p>Quel que soit l&rsquo;application (<em>Substance Painter</em>, <em>Substance Designer</em>, <em>Krita</em>, <em>Adobe Photoshop</em>, <em>The Foundry Mari</em>&hellip;), les textures couleurs pourront être créées en <strong><em>RGB Linéaire</em></strong> ; on fera simplement bien attention à avoir au minimum <em>16 bpc</em>.</p>
 <p>Lors de l&rsquo;import dans <em>Blender</em>, les images seront interprétées en <em>RGB Linéaire</em>, les textures de données (<em>normal maps</em>, <em>metalness</em>, etc) en <em>Raw</em>, sans conversion.</p>
-<p>Il est aussi possible de travailler directement les textures dans l&rsquo;espace <em>Filmic</em> si l&rsquo;application prend en charge <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em> en chargeant simplement la configuration <em>OCIO</em> de <em>Blender</em>, ou en utilisant un profil <em>ICC</em> correspondant au <em>Filmic</em>, tels que ceux que nous proposons <a href="../media/filmic-luts.zip">en téléchargement ici</a>.</p>
+<p>Il est aussi possible de travailler directement les textures dans l&rsquo;espace <em>Filmic</em> si l&rsquo;application prend en charge <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em> en chargeant simplement la configuration <em>OCIO</em> de <em>Blender</em>, ou en utilisant un profil <em>ICC</em> correspondant au <em>Filmic</em>, tels que ceux que nous proposons <a href="media/filmic-luts.zip">en téléchargement ici</a>.</p>
 <h3 id="rendu-3d">Rendu 3D<a class="headerlink" href="#rendu-3d" title="Permanent link">&para;</a></h3>
 <p>Le rendu 3D dans Blender sera donc fait avec le <strong><em>Filmic</em></strong> par défaut. On peut choisir différent niveaux de contrastes ; c&rsquo;est un choix artistique à faire au moment de travailler la lumière et le rendu, il faudra simplement bien ré-appliquer le même au compositing.</p>
 <h3 id="compositing">Compositing<a class="headerlink" href="#compositing" title="Permanent link">&para;</a></h3>
@@ -691,7 +691,7 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <p>Lors du rendu <em>openEXR</em>, les images sont linéaires et ne comportent pas d&rsquo;information d&rsquo;espace colorimétrique : il faudra ré-appliquer l&rsquo;espace <em>Filmic</em> dans le logiciel de compositing. Lors du rendu dans tout autre format, <em>Blender</em> effectue une conversion vers l&rsquo;espace par défaut du format (<em>sRGB</em> en <em>PNG</em> par exemple).</p>
 </div>
 <h4 id="filmic-et-after-effects">Filmic et After Effects<a class="headerlink" href="#filmic-et-after-effects" title="Permanent link">&para;</a></h4>
-<p>Pour le cas particulier d&rsquo;<em>After Effects</em>, où la mise en place d&rsquo;<em>OCIO</em> est laborieuse, il peut être plus simple d&rsquo;utiliser une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> de conversion <em>Filmic</em>&hellip; Nous fournissons <a href="../media/filmic-luts.zip">une déclinaison de cette <em>LUT</em> ici</a> (pour chaque variation de contraste de <em>Filmic</em> disponible). Il faudra alors choisir un autre espace de travail dans le projet <em>After Effects</em>, et utiliser un effet de conversion d&rsquo;espace depuis <em>RGB Linéaire</em> vers l&rsquo;espace du projet après l&rsquo;application de la <em>LUT</em>.</p>
+<p>Pour le cas particulier d&rsquo;<em>After Effects</em>, où la mise en place d&rsquo;<em>OCIO</em> est laborieuse, il peut être plus simple d&rsquo;utiliser une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> de conversion <em>Filmic</em>&hellip; Nous fournissons <a href="media/filmic-luts.zip">une déclinaison de cette <em>LUT</em> ici</a> (pour chaque variation de contraste de <em>Filmic</em> disponible). Il faudra alors choisir un autre espace de travail dans le projet <em>After Effects</em>, et utiliser un effet de conversion d&rsquo;espace depuis <em>RGB Linéaire</em> vers l&rsquo;espace du projet après l&rsquo;application de la <em>LUT</em>.</p>
 <p><em><img alt="Capture After Effects effets Filmic" src="" /></em><br />
 <em>Exemple d&rsquo;effets à utiliser sur un fichier</em> openEXR Filmic <em>dans</em> After Effects <em>avec un espace de travail</em> ACEScg.</p>
 <h3 id="exports">Exports<a class="headerlink" href="#exports" title="Permanent link">&para;</a></h3>
