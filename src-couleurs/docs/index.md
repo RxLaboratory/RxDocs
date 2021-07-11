@@ -8,9 +8,6 @@ Ce guide fait partie d'une collection de documents gérés par [*RxLaboratory*](
 
 [*RxDocs*](http://docs.rainboxlab.org) est un travail collaboratif de vulgarisation scientifique, technique et artistique dans le domaine de la production audiovisuelle au sens large : image, vidéo, animation, son... Ces documents s'adressent à toute personne travaillant dans le domaine (phographie, vidéo, motion design, réalisation, animation, illustration, chef op, montage...)
 
-!!! warning
-    Ce document est en cours d'écriture et encore loin d'être terminé ; si vous arrivez ici, considérez le bien comme un brouillon tout au long de votre lecture ! Tous les chapitres peuvent ne pas être encore écrits et la table des matières est toujours susceptible de changer.
-
 !!! note
     Tous les noms suivis d'une astérisque* sont expliqués dans le [Glossaire](ZZ-vocabulaire.md)
 
@@ -30,6 +27,10 @@ Ce domaine, certes très technique, n'est pourtant pas aussi compliqué qu'il n'
 Nous commencerons par une partie théorique, partant de la lumière, et la couleur, physique et étudiant comment nous la percevons, puis comment la l'enregistrer, la représenter et la reproduire dans un système numérique.
 
 Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quels sont les paramètres utiles et recommandés dans vos productions de tous types, et dans différentes applications.
+
+
+!!! tip
+    Ce document est évolutif ! Si vous y trouvez des erreurs, ou souhaitez y apporter des améliorations, [contribuez](http://docs.rxlab.guide/contribute.html) ou [signalez-le nous](https://rainboxlab.org/about/contact/) !
 
 ### I - Théorie
 
@@ -108,11 +109,13 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
             - N.2.a.a - ACES2065-1
             - N.2.a.b - ACEScg
             - N.2.a.c - ACEScc
-- O - [Épreuvage (Soft-Proofing) et simulation]()
 
 ### II - Pratique
 
-- A - [Mise en pratique : choisir ses espaces colorimétriques et formats](2A-pratique.md)
+!!! hint
+    La liste des applications est classée par ordre alphabétique, avec le nom de l'éditeur en tête.
+
+- A - [Mise en pratique : choisir ses espaces colorimétriques et formats](pratique.md)
     - A.1 - Théorie
         - A.1.a - Parcours d'une couleur
     - A.2 - Espace de travail (scene referred)
@@ -124,8 +127,8 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
     - A.5 - Sélecteurs de couleur
     - A.6 - Sortie intermédaire
     - A.7 - Sortie finale
-- B - [Quelques standards](2B-standards.md)
-- C - [Calibration des écrans](2C-calibration.md)
+- B - [Quelques standards](standards.md)
+- C - [Calibration des écrans](calibration.md)
     - C.1 - Introduction
     - C.2 - Environnement
     - C.3 - Calibration
@@ -134,43 +137,72 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
         - C.3.c - Calibration et application du profil colorimétrique
             - C.3.c.1 - Calibration
             - C.3.c.2 - Profil colorimétrique
-- D - [Préparer la chaîne de fabrication](2D-preparer.md)
-- E - [Concevoir une chaîne de fabrication avec *OpenColorIO*](2D-ocio.md)
-- F - [Color management : Adobe After Effects](2F-ae.md)
-    - F.1 - Paramètres du projet - Espace de travail
-    - F.2 - Interprétation des métrages - Espaces d'entrée
-    - F.3 - Options de vues - Espace d'affichage et simulations
-    - F.4 - Options d'export - Espaces de sortie
-    - F.5 - *OCIO*
-        - F.5.a - Introduction
-        - F.5.b - Installer le plug-in *OCIO*
-        - F.5.c - Désactiver la gestion des couleurs de After Effects
-        - F.5.d - Organisation
-        - F.5.e - Entrée et espace de travail
-        - F.5.f - Sortie
-        - F.5.g - Affichage
-- G - Color management : Adobe Media Encoder
-- H - Color management : Adobe Photoshop
-- I - [Gestion des couleurs : Blender](2I-blender.md)
-    - I.1 - Configuration par défaut : *Filmic*
-        - I.1.a - Rendu (scene referred) et affichage
-        - I.1.b - Sortie
-        - I.1.c - Entrée (textures)
-    - I.2 - Chaîne de fabrication OCIO
-        - I.2.a - Changer la configuration OCIO
-    - I.3 - Utiliser *ACES*
-        - I.3.a - Rendu (scene referred) et affichage
-        - I.3.b - Entrée (textures)
-- H - Color management : Darktable
-- I - Color management : DuME  
-- L - [Gestion des couleurs : Krita](2L-krita.md)
-    - L.1 - Espace de travail
-    - L.2 - Affichage
-        - L.2.a - Écran
-        - L.2.b - Épreuvage (soft-proofing)
-    - L.3 - Sélecteur de Couleurs
-    - L.4 - Sortie
-    - L.5 - *OCIO* dans Krita
+- D - [Épreuvage (Soft-Proofing) et simulation](epreuvage.md)
+- E - [Préparer la chaîne de fabrication](preparer.md)
+    - E.1 - Animation 3D avec Blender, Filmic
+        - E.1.a - Textures et autres images 2D
+        - E.1.b - Rendu 3D
+        - E.1.c - Compositing
+            - E.1.c.a - Filmic et After Effects
+        - E.1.d - Exports
+    - E.2 - Animation 3D avec ACES
+        - E.2.a - Textures et autres images 2D
+        - E.2.b - Rendu 3D
+        - E.2.c - Compositing
+        - E.2.d - Exports
+    - E.3 - Animation 2D
+    - E.4 - Vidéos, prise de vues réelles et VFX
+- F - [Concevoir une chaîne de fabrication avec *OpenColorIO*](ocio.md)
+    - F.1 - Mise en place
+    - F.2 - Anatomie d’une config OCIO
+        - F.2.a - Métadonnées
+        - F.2.b - Roles
+        - F.2.c - Displays
+- G - [Color management : Adobe After Effects](ae.md)
+    - G.1 - Paramètres du projet - Espace de travail
+    - G.2 - Interprétation des métrages - Espaces d'entrée
+    - G.3 - Options de vues - Espace d'affichage et simulations
+    - G.4 - Options d'export - Espaces de sortie
+    - G.5 - *OCIO*
+        - G.5.a - Introduction
+        - G.5.b - Installer le plug-in *OCIO*
+        - G.5.c - Désactiver la gestion des couleurs de After Effects
+        - G.5.d - Organisation
+        - G.5.e - Entrée et espace de travail
+        - G.5.f - Sortie
+        - G.5.g - Affichage
+- H - Color management : Adobe Media Encoder
+- I - Color management : Adobe Photoshop
+- J - [Gestion des couleurs : Autodesk Maya](maya.md)
+- K - [Gestion des couleurs : Blender](blender.md)
+    - K.1 - Configuration par défaut : *Filmic*
+        - K.1.a - Rendu (scene referred) et affichage
+        - K.1.b - Sortie
+        - K.1.c - Entrée (textures)
+    - K.2 - Chaîne de fabrication OCIO
+        - K.2.a - Changer la configuration OCIO
+    - K.3 - Utiliser *ACES*
+        - K.3.a - Rendu (scene referred) et affichage
+        - K.3.b - Entrée (textures)
+- L - [Gestion des couleurs : Darktable](darktable.md)
+    - L.1 - Entrée et espace de travail
+    - L.2 - Sortie
+    - L.3 - Épreuvage (Soft-Proofing)
+- M - [Gestion des couleurs : DuME](dume.md)
+    - M.1 - Espace de travail
+    - M.2 - Entrée
+    - M.3 - Sortie
+    - M.4 - Pré-réglages
+    - M.5 - LUT
+    - M.6 - OCIO
+- N - [Gestion des couleurs : Krita](krita.md)
+    - N.1 - Espace de travail
+    - N.2 - Affichage
+        - N.2.a - Écran
+        - N.2.b - Épreuvage (soft-proofing)
+    - N.3 - Sélecteur de Couleurs
+    - N.4 - Sortie
+    - N.5 - *OCIO* dans Krita
 
 ### III - Annexes
 
@@ -178,10 +210,7 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
 - [Erreurs et incompréhensions courantes, résolution des problèmes](ZZ-erreurs.md)
 - [Glossaire](ZZ-vocabulaire.md)
 - [Dictionnaire français - anglais](ZZ-english.md)
-
-À l'origine de ce document, cette vidéo enregistrée en direct avec [Motion Café](https://www.motion-cafe.com/) et [Nicolas Dufresne](http://duduf.com) : 
-
-![YOUTUBE](m-lrOc2Fmck)
+- [Téléchargements et autres ressources](ZZ-download.md)
 
 [^1]:
     Par souci de vulgarisation, nous nous permettrons certains raccourcis et approximations, le but étant la mise en application concrète et l'acquisition d'un savoir faire, et non pas l'étude scientifique du sujet.  

@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The RxDocuments - Gestion des couleurs dans la production audiovisuelle.">
     <meta name="author" content="Nicolas Dufresne and contributors">
-    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/N-ocio.html">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/standards.html">
     <link rel="shortcut icon" href="img/favicon.ico">
 
     
-    <title>N - OCIO, ACES - RxDocs - Gestion des couleurs</title>
+    <title>B - Formats de fichiers - RxDocs - Gestion des couleurs</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -77,7 +77,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Théorie <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -160,7 +160,7 @@
 
                         
                             
-<li class="active">
+<li >
     <a href="N-ocio.html">N - OCIO, ACES</a>
 </li>
 
@@ -170,7 +170,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pratique <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -181,7 +181,7 @@
 
                         
                             
-<li >
+<li class="active">
     <a href="standards.html">B - Formats de fichiers</a>
 </li>
 
@@ -343,17 +343,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="M-LUT.html">
+                        <a rel="prev" href="pratique.html">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="pratique.html">
+                        <a rel="next" href="calibration.html">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/N-ocio.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/standards.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -376,8 +376,8 @@
         
         
             <li class="first-level">
-                <button  type="button" class="collapse-button active-collapse-button">Théorie</button>
-                <ul class="collapsible-content collapsible-content-active">
+                <button  type="button" class="collapse-button ">Théorie</button>
+                <ul class="collapsible-content ">
                     
                         
                         <li class="second-level "><a href="A-definition.html">A - Qu'est ce que la couleur ?</a></li>
@@ -432,7 +432,7 @@
                         
                     
                         
-                        <li class="second-level active"><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
                         
                     
                 </ul>
@@ -441,15 +441,15 @@
         
         
             <li class="first-level">
-                <button  type="button" class="collapse-button ">Pratique</button>
-                <ul class="collapsible-content ">
+                <button  type="button" class="collapse-button active-collapse-button">Pratique</button>
+                <ul class="collapsible-content collapsible-content-active">
                     
                         
                         <li class="second-level "><a href="pratique.html">A - Choisir ses espaces colorimétriques et formats</a></li>
                         
                     
                         
-                        <li class="second-level "><a href="standards.html">B - Formats de fichiers</a></li>
+                        <li class="second-level active"><a href="standards.html">B - Formats de fichiers</a></li>
                         
                     
                         
@@ -562,185 +562,110 @@
     </div>
     <div class="bs-sidebar hidden-print affix well" role="complementary">
         <ul class="nav bs-sidenav">
-            <li class="first-level active"><a href="#in-opencolorio-et-aces">I.N - OpenColorIO et ACES</a></li>
-                <li class="second-level"><a href="#n1-applications-compatibles">N.1 - Applications compatibles</a></li>
+            <li class="first-level active"><a href="#iib-quelques-standards-pour-les-fichiers">II.B - Quelques standards pour les fichiers</a></li>
+                <li class="second-level"><a href="#formats-dimage-jpeg-png-tga-tiff">Formats d'image (Jpeg, PNG, TGA, TIFF...)</a></li>
                     
-                <li class="second-level"><a href="#n2-aces">N.2 - ACES</a></li>
+                <li class="second-level"><a href="#openexr">OpenEXR</a></li>
                     
-                    <li class="third-level"><a href="#n2a-espaces-colorimetriques-aces">N.2.a - Espaces colorimétriques ACES</a></li>
+                <li class="second-level"><a href="#mp4-h264-h265-avchd-hevc-et-autres-videos-hd-2k-ou-uhd-4k">MP4 h.264 / h.265 / AVCHD / HEVC et autres vidéos HD (2K) ou UHD (4K)</a></li>
+                    
+                <li class="second-level"><a href="#swf-et-autres-formats-web">SWF (et autres formats Web)</a></li>
+                    
+                <li class="second-level"><a href="#quicktime-animation-rle">QuickTime Animation / RLE</a></li>
+                    
         </ul>
     </div>
     <div class="footer-meta"></div>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="in-opencolorio-et-aces">I.N - OpenColorIO et ACES<a class="headerlink" href="#in-opencolorio-et-aces" title="Permanent link">&para;</a></h1>
-<p><a href="https://opencolorio.org/"><em>OpenColorIO</em></a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, souvent abrégé en <em>OCIO</em>, est une librairie pour les développeurs (et non pas pour les utilisateurs) libre et open source, facilitant la gestion des couleurs. Elle aspire à être utilisée par toutes les applications en production d&rsquo;image numérique, facilitant ainsi la gestion des couleurs sur toute la chaîne de production : en devenant standard, elle permet de partager la configuration des couleurs tout au long de la chaîne de production et en avoir la maîtrise à toutes les étapes, de manière aussi simple que possible.</p>
+<h1 id="iib-quelques-standards-pour-les-fichiers">II.B - Quelques standards pour les fichiers<a class="headerlink" href="#iib-quelques-standards-pour-les-fichiers" title="Permanent link">&para;</a></h1>
+<p>Voici une liste de quelques standards associés à des fichiers courants.</p>
+<p>Toutes les possibilités techniques pour chaque type de fichiers ne sont pas listées ici, seules les plus courantes (et les plus standards) sont indiquées.</p>
+<p>Si ces listes ne sont pas nécessairement des standards officiels, ces correspondances sont standardisées de fait par l&rsquo;usage.</p>
 <div class="toc">
 <ul>
-<li><a href="#in-opencolorio-et-aces">I.N - OpenColorIO et ACES</a><ul>
-<li><a href="#n1-applications-compatibles">N.1 - Applications compatibles</a></li>
-<li><a href="#n2-aces">N.2 - ACES</a><ul>
-<li><a href="#n2a-espaces-colorimetriques-aces">N.2.a - Espaces colorimétriques ACES</a><ul>
-<li><a href="#n2aa-aces2065-1">N.2.a.a - ACES2065-1</a></li>
-<li><a href="#n2ab-acescg">N.2.a.b - ACEScg</a></li>
-<li><a href="#n2ac-acescc">N.2.a.c - ACEScc</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#iib-quelques-standards-pour-les-fichiers">II.B - Quelques standards pour les fichiers</a><ul>
+<li><a href="#formats-dimage-jpeg-png-tga-tiff">Formats d&rsquo;image (Jpeg, PNG, TGA, TIFF&hellip;)</a></li>
+<li><a href="#openexr">OpenEXR</a></li>
+<li><a href="#mp4-h264-h265-avchd-hevc-et-autres-videos-hd-2k-ou-uhd-4k">MP4 h.264 / h.265 / AVCHD / HEVC et autres vidéos HD (2K) ou UHD (4K)</a></li>
+<li><a href="#swf-et-autres-formats-web">SWF (et autres formats Web)</a></li>
+<li><a href="#quicktime-animation-rle">QuickTime Animation / RLE</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<p>Les applications utilisant <em>OCIO</em> partagent donc toutes le même format de configuration de la gestion des couleurs, un fichier nommé <code>congig.ocio</code>.</p>
-<p>On peut ainsi facilement partager la même gestion des couleurs à travers toute la chaîne de production, définissant les espaces de travail, les espaces des fichiers, ceux des sélecteurs de couleur, ceux de l&rsquo;affichage, de la sortie finale&hellip; <em>Cf.</em> Chapitre <em><a href="pratique.html">II.A - Mise en Pratique</a></em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><em>OpenColorIO</em> apporte aussi le support d&rsquo;un grand nombre de format de <em>LUTs<a href="ZZ-vocabulaire.html">*</a></em>, réglant le problème de compatibilité des <em>LUTs</em> avec les applications.</p>
-</div>
-<p>Plusieurs <a href="https://opencolorio.readthedocs.io/en/latest/quick_start/downloads.html">configurations <em>OCIO</em> sont fournies</a> à titre d&rsquo;exemple et pouvant déjà être utilisées en production telles quelles, notamment la configuration <em>ACES</em> (lire plus bas) ou celle de <em>Sony Pictures Imageworks</em> pour l&rsquo;animation (<em>spi-anim</em>) et les effets spéciaux (<em>spi-vfx</em>).</p>
-<h2 id="n1-applications-compatibles">N.1 - Applications compatibles<a class="headerlink" href="#n1-applications-compatibles" title="Permanent link">&para;</a></h2>
-<p>Voici une liste alphabétique (non exhaustive) des principales applications utilisant <em>OpenColorIO</em>, établie début 2021<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
-<table>
-<thead>
-<tr>
-<th>Application</th>
-<th>Usage</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Adobe After Effects</td>
-<td>Compositing</td>
-<td>Support partiel <a href="https://fnordware.blogspot.com/2012/05/opencolorio-for-after-effects.html">via un plugin</a>.</td>
-</tr>
-<tr>
-<td>Autodesk Arnold</td>
-<td>Moteur de rendu</td>
-<td></td>
-</tr>
-<tr>
-<td>Blender, Cycles, Eevee</td>
-<td>3D, Moteur de rendu, compositing</td>
-<td></td>
-</tr>
-<tr>
-<td>DuME</td>
-<td>Encodeur</td>
-<td>Support partiel via des LUTs</td>
-</tr>
-<tr>
-<td>SideFX Houdini</td>
-<td>3D</td>
-<td></td>
-</tr>
-<tr>
-<td>Krita</td>
-<td>Dessin</td>
-<td></td>
-</tr>
-<tr>
-<td>The Foundry Mari</td>
-<td>Textures</td>
-<td></td>
-</tr>
-<tr>
-<td>Autodesk Maya</td>
-<td>3D</td>
-<td></td>
-</tr>
-<tr>
-<td>Mocha Pro</td>
-<td>Tracking</td>
-<td></td>
-</tr>
-<tr>
-<td>Modo</td>
-<td>3D</td>
-<td></td>
-</tr>
-<tr>
-<td>The Foundry Nuke</td>
-<td>Compositing</td>
-<td></td>
-</tr>
-<tr>
-<td>Adobe Photoshop</td>
-<td>Dessin</td>
-<td>Support partiel via des profils ICC</td>
-</tr>
-<tr>
-<td>Substance Designer</td>
-<td>Textures</td>
-<td></td>
-</tr>
-<tr>
-<td>Unreal Engine</td>
-<td>Moteur temps réel</td>
-<td></td>
-</tr>
-<tr>
-<td>V-Ray</td>
-<td>Moteur de rendu</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<h2 id="formats-dimage-jpeg-png-tga-tiff">Formats d&rsquo;image (Jpeg, PNG, TGA, TIFF&hellip;)<a class="headerlink" href="#formats-dimage-jpeg-png-tga-tiff" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Espace : <strong><em>sRGB</em></strong></li>
+<li>Format de pixels : <strong><em>RGB</em></strong>, <strong><em>Full Range</em></strong></li>
+<li>Profondeur :<ul>
+<li><em>Jpeg</em> : <strong><em>8 bpc</em></strong></li>
+<li><em>PNG</em> : <strong><em>8 bpc</em></strong>, <strong><em>16 bpc</em></strong></li>
+<li><em>TGA</em> : <strong><em>8 bpc</em></strong></li>
+<li><em>TIFF</em> : <strong><em>8 bpc</em></strong>, <strong><em>16 bpc</em></strong><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+</ul>
+</li>
+</ul>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
-<p>Toute application pouvant utiliser des <em>LUTs<a href="ZZ-vocabulaire.html">*</a></em> peut être intégrée à une chaîne de production utilisant <em>OCIO</em>, en exportant les <em>LUTs</em> nécessaire à la production depuis <em>OpenColorIO</em>, soit via l&rsquo;outil en ligne de commande fourni, soit en utilisant l&rsquo;encodeur de médias <em><a href="https://rainboxlab.org/tools/dume/">DuME</a></em> qui peut créer ces <em>LUTs</em>.</p>
+<p>On rencontre parfois des <em>PNG HDR</em> qui utilisent l&rsquo;espace colorimétrique <em>Rec.2020</em>.</p>
 </div>
-<h2 id="n2-aces">N.2 - ACES<a class="headerlink" href="#n2-aces" title="Permanent link">&para;</a></h2>
-<p><em>ACES</em> signifie <em>Academy Color Encoding System</em>, et a pour but d&rsquo;être un standard d&rsquo;échange et de gestion des couleurs pour l&rsquo;imagerie numérique ; il vise à simplifier la gestion des couleurs et maintenir la plus grande fidélité dans toutes les chaines de production. Il est gratuit et open source, et utilise <em>OpenColorIO</em> dans son fonctionnement.</p>
-<p><em>ACES</em> consiste en fait en :</p>
+<h2 id="openexr">OpenEXR<a class="headerlink" href="#openexr" title="Permanent link">&para;</a></h2>
 <ul>
-<li>5 Espaces colorimétriques conçus pour différents usages pour la chaîne de production.</li>
-<li>Une configuration <em>OpenColorIO</em>, avec les <em>LUTs</em> nécessaires à son usage partout.</li>
-<li>Une série de recommandations sur le calcul et le stockage des couleurs.</li>
+<li>Espace : <strong><em>RGB linéaire</em></strong>, mais c&rsquo;est aussi le format officiel pour <strong><em>ACES</em></strong>, ou <strong><em>Filmic</em></strong> de <em>Blender</em>. C&rsquo;est le seul format qui permet en réalité de stocker n&rsquo;importe quelle couleur existante indépendamment de l&rsquo;espace colorimétrique utilisé pour la représenter, et donc le format de prédilection pour travailler.</li>
+<li>Format de pixels :<ul>
+<li><strong><em>RGB</em></strong>, <strong><em>Full Range</em></strong></li>
+<li><strong><em>YUV 4:4:4</em></strong> ou équivalent à <strong><em>YUV 4:2:0</em></strong> avec l&rsquo;option <em>Luma/Chroma</em>, <strong><em>Full Range</em></strong></li>
 </ul>
-<p>Voir le chapitre <em><a href="I-liste-espaces.html">I - Liste d&rsquo;espaces colorimétriques</a></em> pour les détails techniques concernant les différents espaces colorimétriques de <em>ACES</em>.</p>
-<p>Les principales recommandations sur le stockage sont :</p>
+</li>
+<li>Profondeur :<ul>
+<li><strong><em>8 bpc</em></strong></li>
+<li><strong><em>16 bpc</em></strong> (entier ou flottant)</li>
+<li><strong><em>32 bpc</em></strong> (entier ou flottant)</li>
+</ul>
+</li>
+</ul>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Tout l&rsquo;intérêt de l&rsquo;<em>EXR</em> réside dans le fait qu&rsquo;il peut stocker les couleurs dans un format <em>flottant</em> au lieu des <em>entiers</em> habituels ; il est donc inutile d&rsquo;utiliser les versions <em>entier</em> de la profondeur. C&rsquo;est grâce à ce format flottant que l&rsquo;<em>EXR</em> peut stocker n&rsquo;importe quelle donnée de couleur sans perte : il enregistre aussi les couleurs <em>en dehors</em> de l&rsquo;espace de travail (dont les valeurs sont supérieures à <code>1</code>).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il faut en réalité bien comprendre que l&rsquo;espace colorimétrique dans un fichier <em>EXR</em> importe peu : le fichier stocke des données brutes, qui <em>ne sont pas</em> &ldquo;clampées&rdquo; (les valeurs supérieures à <code>1</code>, maximum théorique d&rsquo;un espace colorimétrique, sont possibles) ; un fichier <em>EXR</em> peut donc stocker des couleurs <em>en dehors</em> du <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> et de la <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em> de son espace colorimétrique.</p>
+</div>
+<h2 id="mp4-h264-h265-avchd-hevc-et-autres-videos-hd-2k-ou-uhd-4k">MP4 h.264 / h.265 / AVCHD / HEVC et autres vidéos HD (2K) ou UHD (4K)<a class="headerlink" href="#mp4-h264-h265-avchd-hevc-et-autres-videos-hd-2k-ou-uhd-4k" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Utiliser le format de fichier <em>openEXR</em>.</li>
-<li>Enregistrer dans des espaces colorimétriques larges, englobant tous les autres. L&rsquo;espace idéal englobant toutes les couleurs visibles étant <em>ACES2065-1</em>.</li>
+<li>Espace : <strong><em>Rec.709</em></strong>, <strong><em>Rec.2020</em></strong> possible en <em>UHD</em> et plus (<em>4K</em>).</li>
+<li>Format de pixels : <strong><em>YUV 4:2:0</em></strong> ; bien que <em>4:2:2</em> et <em>4:4:4</em>, voire <em>RGB</em>, soient possibles, ils ne sont pas très standards et de nombreux lecteurs ne pourront pas les lire. <strong><em>Limited Range</em></strong></li>
+<li>Profondeur :<ul>
+<li><strong><em>8 bits</em></strong> en <em>Rec.709</em></li>
+<li><strong><em>10 bits</em></strong> en <em>Rec.2020</em> <em>UHD/4K</em></li>
+<li><strong><em>12 bits</em></strong> en <em>Rec.2020</em> <em>4K HDR</em></li>
 </ul>
-<h3 id="n2a-espaces-colorimetriques-aces">N.2.a - Espaces colorimétriques ACES<a class="headerlink" href="#n2a-espaces-colorimetriques-aces" title="Permanent link">&para;</a></h3>
-<p>Les différents espaces proposés par <em>ACES</em> correspondent à différents besoins et usages précis. Voici les plus importants.</p>
-<h4 id="n2aa-aces2065-1">N.2.a.a - ACES2065-1<a class="headerlink" href="#n2aa-aces2065-1" title="Permanent link">&para;</a></h4>
-<p>L&rsquo;espace <em>ACES2065-1</em> est l&rsquo;espace au <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> le plus large, englobant l&rsquo;intégralité des couleurs visibles, et sa courbe de transfert est linéaire.</p>
-<p>Il est de fait le plus complet des espaces, son but étant de pouvoir stocker les couleurs sans perte, et compatible avec tous les espaces passés et futurs.</p>
-<p>Comme tous les espaces linéaires, il nécessite une profondeur d&rsquo;au minimum <em>16 bpc</em>, avec une préférence pour <em>32 bpc</em> compatible avec son but de représenter efficacement n&rsquo;importe quelle couleur visible.</p>
-<p>Il est en réalité peu utilisé, représentant <em>trop</em> de données, son intérêt étant surtout théorique.</p>
-<h4 id="n2ab-acescg">N.2.a.b - ACEScg<a class="headerlink" href="#n2ab-acescg" title="Permanent link">&para;</a></h4>
-<p>L&rsquo;espace <em>ACEScg</em> (pour <em>computer generated (images)</em>) est dérivé de <em>ACES2065-1</em>, mais utilise des <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> différentes, réduisant son <em>gamut<a href="ZZ-vocabulaire.html">*</a></em>, qui reste cependant très large, tout en étant plus pratique que <em>ACES2065-1</em>.</p>
-<p>C&rsquo;est un espace linéaire, conçu et idéal pour les rendus 3D et le compositing. Avec son <em>gamut</em> très large, et la configuration <em>OCIO</em> associée permettant de générer efficacement des images dans des espaces standards plus réduits, il permet une synthèse des couleurs plus fidèles à la réalité et la vision humaine, notamment dans les hautes lumières.</p>
-<p><em><img alt="Comparaison d'un rendu linéaire RGB et ACEScg" src="img/aces.svg" /></em><br />
-<em>Comparaison entre un rendu utilisant les primaires RGB et ACEScg<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></em></p>
-<p>La recommandation <em>ACES</em> est d&rsquo;utiliser cet espace dans la production d&rsquo;animation et d&rsquo;images de synthèse, autant comme espace de travail dans les applications, que dans le stockage dans le format de fichier <em>openEXR</em>. Ainsi, depuis le rendu et la génération des images jusque la livraison finale, aucune conversion de données n&rsquo;est à faire (sauf pour l&rsquo;affichage évidemment).</p>
-<h4 id="n2ac-acescc">N.2.a.c - ACEScc<a class="headerlink" href="#n2ac-acescc" title="Permanent link">&para;</a></h4>
-<p>L&rsquo;espace <em>ACEScc</em> (pour <em>color correction</em>) est semblable à <em>ACEScg</em> sauf que sa courbe de transfert n&rsquo;est pas linéaire.</p>
-<p>Cette courbe de transfert en fait un mauvais espace pour les rendus et la génération d&rsquo;images, mais le rend beaucoup plus pratique pour la retouche des couleurs.</p>
-<p><em><img alt="Comparaison sélecteur de couleur linéaire / sRGB" src="img/color-picker.svg" /></em></p>
-<p>Il est donc recommandé pour le travail de correction colorimétrique et retouches sur des images filmées, ou en fin de production d&rsquo;animation pour les retouches colorimétriques finales.</p>
+</li>
+</ul>
+<h2 id="swf-et-autres-formats-web">SWF (et autres formats Web)<a class="headerlink" href="#swf-et-autres-formats-web" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Espace : <strong><em>sRGB</em></strong></li>
+<li>Format de pixels : <strong><em>RGB</em></strong>, <strong><em>Full Range</em></strong></li>
+<li>Profondeur : <strong><em>8 bpc</em></strong></li>
+</ul>
+<p>Attention, <em>Adobe After Effects</em> (certaines versions au moins), l&rsquo;importe en <em>Rec.709</em> au lieu de <em>sRGB</em>. Il faut alors changer l&rsquo;interprétation manuellement.</p>
+<h2 id="quicktime-animation-rle">QuickTime Animation / RLE<a class="headerlink" href="#quicktime-animation-rle" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Espace : <strong><em>Rec.709</em></strong></li>
+<li>Format de pixels : <strong><em>YUV 4:4:4</em></strong>, <strong><em>Full Range</em></strong></li>
+<li>Profondeur : <strong><em>8 bpc</em></strong></li>
+</ul>
 <hr />
 <p>Sources et références</p>
-<ul>
-<li><a href="https://opencolorio.org/">Site officiel de <em>OpenColorIO</em></a></li>
-</ul>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/03" /></p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/11" /></p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
-<p>Étant libre et open source, de nombreux studios contribuent au développement de <em>OpenColorIO</em>, géré par l&rsquo;<em>ASWF, Academy Software Foundation</em> aux États-Unis.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p>Une liste complète est disponible sur le site de <em><a href="https://opencolorio.org/">OpenColorIO</a></em>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-<li id="fn:3">
-<p>Cette comparaison est faite sous <em>Blender</em> ; <em>ACES</em> n&rsquo;est pas inclus dans <em>Blender</em>, mais il est facile de l&rsquo;utiliser grâce à <em>OpenColorIO</em>. Bien que <em>ACES</em> ne soit pas fourni de base avec <em>Blender</em>, les rendus <em>Blender</em> sont quand même bien meilleurs que sur cet exemple : <em>Blender</em> utilise une <em>LUT</em> nommée <em>Filmic</em> qui améliore grandement la conversion de l&rsquo;espace <em>linéaire RGB</em> au <em>sRGB</em> de l&rsquo;image finale (désactivée pour cet exemple), mais restant tout de même moins performant en couleurs que le résultat utilisant la configuration <em>ACES</em> de <em>OCIO</em>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>Le <em>TIFF</em> permet beaucoup d&rsquo;espaces colorimétriques différents, notamment aussi le <em>CMYK</em> et <em>CIE Lab</em> par exemple, et aussi le format <em>YUV</em> de manière moins standard.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div></div>

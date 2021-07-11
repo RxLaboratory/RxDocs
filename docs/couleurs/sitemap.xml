@@ -76,52 +76,37 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/couleurs/2A-pratique.html</loc>
+     <loc>https://docs.rainboxlab.org/couleurs/pratique.html</loc>
      <lastmod>2021-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/couleurs/2B-standards.html</loc>
+     <loc>https://docs.rainboxlab.org/couleurs/standards.html</loc>
      <lastmod>2021-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/couleurs/2C-calibration.html</loc>
+     <loc>https://docs.rainboxlab.org/couleurs/calibration.html</loc>
      <lastmod>2021-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/couleurs/2D-preparer.html</loc>
+     <loc>https://docs.rainboxlab.org/couleurs/epreuvage.html</loc>
      <lastmod>2021-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/couleurs/2F-ae.html</loc>
+     <loc>https://docs.rainboxlab.org/couleurs/preparer.html</loc>
      <lastmod>2021-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
+     <loc>https://docs.rainboxlab.org/couleurs/ocio.html</loc>
+     <lastmod>2021-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://docs.rainboxlab.org/couleurs/2I-blender.html</loc>
+     <loc>https://docs.rainboxlab.org/couleurs/ae.html</loc>
      <lastmod>2021-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -136,7 +121,27 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://docs.rainboxlab.org/couleurs/2L-krita.html</loc>
+     <loc></loc>
+     
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/blender.html</loc>
+     <lastmod>2021-07-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/darktable.html</loc>
+     <lastmod>2021-07-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/dume.html</loc>
+     <lastmod>2021-07-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://docs.rainboxlab.org/couleurs/krita.html</loc>
      <lastmod>2021-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>

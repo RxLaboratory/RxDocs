@@ -25,7 +25,7 @@ Compression de l'*EXR* :
 
 ### Export final et livraison
 
-Se référer aux [espaces standards](2B-standards.md) en fonction du format livré (si le client ne spécifie pas d'espace colorimétrique).
+Se référer aux [espaces standards](standards.md) en fonction du format livré (si le client ne spécifie pas d'espace colorimétrique).
 
 ## Importation dans les applications
 
@@ -33,7 +33,7 @@ Il faut toujours bien savoir dans quel espace a été fabriqué/exporté le fich
 
 Il peut être utile de noter l'espace colorimétrique utilisé directement dans le nom du fichier.
 
-Se référerer aux [espaces standards](2B-standards.md) pour les autres formats si vous ne connaissez pas leurs espaces colorimétriques.
+Se référerer aux [espaces standards](standards.md) pour les autres formats si vous ne connaissez pas leurs espaces colorimétriques.
 
 ## Affichage
 
@@ -71,6 +71,6 @@ Exports en ***openEXR*** ***16 bpc*** si le compositing n'est pas suivi d'une é
 
 On peut suivre le même raisonnement que pour le compositing, bien qu'il peut être plus pratique de travailler dans un esapce non linéaire. Dans ce cas ***ACEScc*** fait parfaitement l'affaire.
 
-Exports en ***openEXR*** ***16 bpc*** pour l'archivage, et dans [l'espace standard](2B-standards.md) du fichier pour la livraison.
+Exports en ***openEXR*** ***16 bpc*** pour l'archivage, et dans [l'espace standard](standards.md) du fichier pour la livraison.
 
 ![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/23)

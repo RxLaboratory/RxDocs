@@ -1,4 +1,6 @@
-# II.F - Gestion des couleurs : Adobe After Effects
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11)
+
+# II.G - Gestion des couleurs : Adobe After Effects
 
 *After Effects* est un des derniers logiciels à ne pas intégrer *OpenColorIO[\*](ZZ-vocabulaire.md)* (*cf*. *[I.N - OpenColorIO et ACES](N-ocio.md)*) nativement pour la gestion des couleurs. Cependant, la gestion des couleurs dans *After Effects* est assez simple à régler, et il gère une vaste gamme d'espaces colorimétriques, comprenant notamment aussi *ACEScg[\*](ZZ-vocabulaire.md)*, ce qui peu permettre de se passer d'*OCIO*.
 
@@ -17,7 +19,7 @@ Pour un indépendant ou une petite équipe, la gestion proposée par *After Effe
 
 [TOC]
 
-## F.1 - Paramètres du projet - Espace de travail
+## G.1 - Paramètres du projet - Espace de travail
 
 L'espace de travail se règle par projet, dans les paramètres de projet.
 
@@ -30,7 +32,7 @@ On y retrouve la profondeur des couleurs à utiliser avec l'espace de travail ; 
 Une case à cocher permet de linéariser les espaces de travail qui ne seraient pas linéaires (comme *Adobe RGB* par exemple) afin de mieux générer les couleurs.  
 En cas de travail de correction colorimétrique, courant sur *After Effects*, on choisira plutôt un espace non linéaire et on laissera cette case décochée.
 
-## F.2 - Interprétation des métrages - Espaces d'entrée
+## G.2 - Interprétation des métrages - Espaces d'entrée
 
 L'espace d'entrée se définit sur chaque métrage, dans l'*interprétation*, accessible via un clic droit sur le métrage.
 
@@ -43,7 +45,7 @@ On peut modifier les interprétation par défaut pour chaque type de fichier en 
 !!! Warning
     Si l'espace colorimétrique des fichiers importés est différent de celui par défaut pour le type de fichier en question, il ne faut pas oublier de sélectionner le bon espace à chaque import, ou bien de modifier le fichier des réglages par défaut.
 
-## F.3 - Options de vues - Espace d'affichage et simulations
+## G.3 - Options de vues - Espace d'affichage et simulations (Épreuvage)
 
 La transformation depuis l'espace de travail vers l'espace d'affichage se règle dans le menu *View* (*Affichage*).
 
@@ -63,7 +65,7 @@ La deuxième option simule une conversion ou interprétation que ferait un lecte
 
 La troisième partie, qui ne peut pas être modifiée, rappelle l'espace colorimétrique de l'écran et la transformation finale appliquée à l'image pour l'affichage.
 
-## F.4 - Options d'export - Espaces de sortie
+## G.4 - Options d'export - Espaces de sortie
 
 Il ne faut pas oublier à l'exportation d'appliquer la conversion vers l'espace de sortie.
 
@@ -71,14 +73,14 @@ Il ne faut pas oublier à l'exportation d'appliquer la conversion vers l'espace 
 
 On trouve ces options dans les réglages du module de sortie de la file d'attente de rendu.
 
-Par défaut, *After Effects* règle la sortie sur l'espace de travail, ce qui n'est pas logique du tout, l'espace de travail n'étant que rarement l'espace de sortie ! Il faut alors spécifier le bon espace pour chaque sortie... *Cf. [II-B Quelques standards pour les fichiers](2B-standards.md)*.
+Par défaut, *After Effects* règle la sortie sur l'espace de travail, ce qui n'est pas logique du tout, l'espace de travail n'étant que rarement l'espace de sortie ! Il faut alors spécifier le bon espace pour chaque sortie... *Cf. [II-B Quelques standards pour les fichiers](standards.md)*.
 
 !!! Warning
     *After Effects* applique par défaut l'espace de travail à tous les fichiers... Il faut penser à systématiquement le changer ou bien créer des préconfigurations correctement réglées.
 
-## F.5 - OCIO
+## G.5 - OCIO
 
-### F.5.a - Introduction
+### G.5.a - Introduction
 
 Utiliser *OCIO* sur *After Effects* permet de contourner pas mal des manques et problèmes soulevés par la gestion des couleurs native, mais l'usage du plug-in nécessite une certaine organisation précise.
 
@@ -86,13 +88,13 @@ L'idéal étant de créer un script pour automatiser ces tâches dans la chaîne
 
 La première chose à faire (après installation du plug-in) est de désactiver la gestion des couleurs de *After Effects* pour pouvoir tout contrôler via *OCIO*.
 
-### F.5.b - Installer le plug-in OCIO
+### G.5.b - Installer le plug-in OCIO
 
 [Le plug-in maintenu à jour est disponible ici](https://fnordware.blogspot.com/2012/05/opencolorio-for-after-effects.html). Bien que le post en question date de 2012, il est mis à jour à chaque nnouvelle version de *OCIO*.
 
 Après téléchargement de l'archive *.zip*, il suffit de copier le fichier *OpenColorIO.aex* dans le dossier des plug-ins de *After Effects*, puis de redémarrer l'application. *OpenColorIO* est un effet disponible dans la section *Utility* (*Utilitaires*) des effets.
 
-### F.5.c - Désactiver la gestion des couleurs de After Effects
+### G.5.c - Désactiver la gestion des couleurs de After Effects
 
 Une fois le plug-in installé, il faut reprendre la main sur la gestion des couleurs dans *After Effects* pour la contrôler via l'effet.
 
@@ -117,7 +119,7 @@ Enfin, pour toutes les sorties, il faut cocher la case *Preserve RGB* dans les p
 
 Toutes ces manipulations permettent de s'assurer que c'est bien *OCIO* qui se chargera de toutes les conversions de couleurs.
 
-### F.5.d - Organisation
+### G.5.d - Organisation
 
 Étant donné qu'*OCIO* pour *After Effects* est un effet, son usage demande une certaine organisation du projet pour ne pas se tromper.
 
@@ -125,7 +127,7 @@ Toutes ces manipulations permettent de s'assurer que c'est bien *OCIO* qui se ch
 
 Lors de l'import d'un métrage, il sera bien plus pratique de systématiquement le placer dans une précomposition, et d'utiliser cette précomposition à la place du métrage lui même dans les autres compositions. C'est dans cette précomposition qu'on mettra en place l'interprétation du métrage et la conversion vers l'espace de travail.
 
-### F.5.e - Entrée et espace de travail
+### G.5.e - Entrée et espace de travail
 
 Dans la précomposition de chaque métrage, il faut mettre l'effet *OpenColorIO* sur le calque du métrage.
 
@@ -135,7 +137,7 @@ Après avoir sélectionné la bonne configuration *OCIO*, on peut sélectionner 
 
 Dans le deuxième champ, on choisit l'espace de travail voulu pour le projet (*ACEScg* dans cet exemple). Ce deuxième champ sera commun à tous les métrages, tandis que le premier dépend du format du fichier importé.
 
-### F.5.f - Sortie
+### G.5.f - Sortie
 
 ![Comp](img/ae-ocio/main-comp.png)
 
@@ -145,7 +147,7 @@ La conversion pour la sortie se fait simplement via un calque d'effet avec l'eff
 
 Choisir l'espace de travail dans le champ *input space* et l'espace de sortie correspondant au fichier voulu dans *output space*.
 
-### F.5.g - Affichage
+### G.5.g - Affichage
 
 Pour effectuer la conversion d'affichage, on utilise un calque de réglage tout en haut des compositions dans lesquelles on travaille. On peut mettre ce calque en mode *calque repère* (*guide layer*) pour être sûr qu'il ne soit pas actif au rendu.
 
@@ -169,5 +171,3 @@ Cocher le bouton *Display*, sélectionner l'espace de sortie en premier (champ *
 
 [^1]:
     On trouve facilement ce dossier via le bouton *Reveal Preferences* (*révéler les préférences*) dans le panneau des préférences générales de *After Effects*
-
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/16)

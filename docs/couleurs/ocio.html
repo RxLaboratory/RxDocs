@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Gestion des couleurs dans la production audiovisuelle.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/ocio.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>F - Concevoir une chaîne de fabrication avec OCIO - RxDocs - Gestion des couleurs</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Théorie <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - Qu'est ce que la couleur ?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Petit inventaire et classification des couleurs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception des couleurs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Reproduction des couleurs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - Retour sur les blancs, température</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Représentation objective</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - Du réel au numérique</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Format des pixels</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - Les LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pratique <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choisir ses espaces colorimétriques et formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - Formats de fichiers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Calibration des écrans</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Épreuvage (Soft-Proofing)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Préparer la chaîne de fabrication</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="ocio.html">F - Concevoir une chaîne de fabrication avec OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">H - Adobe Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Annexes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossaire</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-english.html">Dictionnaire français - anglais</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Téléchargements et ressources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">Tous les documents RxLab</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="preparer.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="ae.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Rainbox-dev/RxDocs/edit/master/src-couleurs/docs/ocio.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Théorie</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - Qu'est ce que la couleur ?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Petit inventaire et classification des couleurs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception des couleurs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Reproduction des couleurs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - Retour sur les blancs, température</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Représentation objective</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - Du réel au numérique</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - Qu'est ce qu'un espace colo ?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Liste d'espaces colorimétriques</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - Liste des paramètres d'espaces colorimétriques</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Format des pixels</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - Les LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Pratique</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choisir ses espaces colorimétriques et formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - Formats de fichiers</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Calibration des écrans</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Épreuvage (Soft-Proofing)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Préparer la chaîne de fabrication</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="ocio.html">F - Concevoir une chaîne de fabrication avec OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">H - Adobe Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Annexes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">En bref, le résumé pour ne pas se tromper</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Erreurs et résolution des problèmes</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossaire</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-english.html">Dictionnaire français - anglais</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Téléchargements et ressources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">Tous les documents RxLab</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribuer à la rédaction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#iif-concevoir-une-chaine-de-fabrication-avec-ocio">II.F - Concevoir une chaîne de fabrication avec OCIO</a></li>
+                <li class="second-level"><a href="#f1-mise-en-place">F.1 - Mise en place</a></li>
+                    
+                <li class="second-level"><a href="#f2-anatomie-dune-config-ocio">F.2 - Anatomie d'une config OCIO</a></li>
+                    
+                    <li class="third-level"><a href="#f2a-metadonnees">F.2.a - Métadonnées</a></li>
+                    <li class="third-level"><a href="#f2b-roles">F.2.b - Roles</a></li>
+                    <li class="third-level"><a href="#f2c-displays">F.2.c - Displays</a></li>
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11" /></p>
+<h1 id="iif-concevoir-une-chaine-de-fabrication-avec-ocio">II.F - Concevoir une chaîne de fabrication avec OCIO<a class="headerlink" href="#iif-concevoir-une-chaine-de-fabrication-avec-ocio" title="Permanent link">&para;</a></h1>
+<p>L&rsquo;intérêt d&rsquo;<em>OCIO<a href="ZZ-vocabulaire.html">*</a></em> réside dans le fait que l&rsquo;on va pouvoir, en l&rsquo;utilisant, configurer toute la chaîne de production en une seule fois, pour tous les logiciels de la chaîne (pour autant qu&rsquo;ils soient compatibles avec <em>OCIO</em>).</p>
+<p>En général, quand on configure une chaîne de fabrication utilisant <em>OCIO</em>, on part d&rsquo;une config existante qu&rsquo;on modifie en fonction des besoins du projet et des choix artistiques et de fabrication.</p>
+<p>Un ensemble de config est disponible dans les téléchargements de <a href="http://opencolorio.org"><em>OpenColorIO</em></a>, comprenant notamment <em>ACES</em>, <em>spi-anim</em> et <em>spi-vfx</em>, développé par <em>Sony Pictures Imageworks</em>. Une autre config est disponible avec <em>Blender</em>.</p>
+<h2 id="f1-mise-en-place">F.1 - Mise en place<a class="headerlink" href="#f1-mise-en-place" title="Permanent link">&para;</a></h2>
+<p>La mise en place de <em>OCIO</em> sur une chaine de production est relativement simple. Il faut d&rsquo;abord choisir une configuration à utiliser, et éventuellement la modifier et l&rsquo;adapter à ses besoins (voir section suivante &ldquo;<em>Anatomie d&rsquo;une config OCIO</em>&rdquo;).</p>
+<p>Le principe est ensuite de donner à chaque application le chemin du fichier de configuration <code>config.ocio</code>. Cela peut être fait facilement pour toutes en modifiant la variable d&rsquo;environnement <code>OCIO</code>, en lui donnat le chemin du fichier de configuration.</p>
+<p>On peut aussi en général donner un chemin spécifique à chaque application ; dans ce cas la méthode varie suivant l&rsquo;application.</p>
+<h2 id="f2-anatomie-dune-config-ocio">F.2 - Anatomie d&rsquo;une config OCIO<a class="headerlink" href="#f2-anatomie-dune-config-ocio" title="Permanent link">&para;</a></h2>
+<p>Une configuration OCIO consiste en fait en un ensemble de <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> accompagnées d&rsquo;un simple fichier texte contenant la configuration proprement dite, toujours nommé <code>config.ocio</code>.</p>
+<p>Voici par exemple la config <em>Filmic</em> utilisée par <em>Blender</em>:</p>
+<p><img alt="" src="img/filmic.png" /></p>
+<p>Le fichier de config se divise en plusieurs sections, en général dans l&rsquo;ordre suivant :</p>
+<ul>
+<li><strong><em>Métadonnées</em></strong>, comprenant diverses informations.</li>
+<li><strong><em>Roles</em></strong>, définissant dans quels cas quels espaces colorimétriques doivent être utilisés.</li>
+<li><strong><em>Displays</em></strong>, définissant les espaces à utiliser pour l&rsquo;affichage selon les écrans.</li>
+<li><strong><em>Colorspaces</em></strong>, contenant la liste des espaces colorimétriques utilisés.</li>
+<li><strong><em>Looks</em></strong> (optionnel), contenant la liste de <em>LUT</em> et transformations pouvant être ajoutées à l&rsquo;image.</li>
+</ul>
+<p>D&rsquo;autres sections peuvent être ajoutées, voir <a href="https://opencolorio.readthedocs.io/en/latest/guides/authoring/authoring.html">la documentation officielle pour les détails sur opencolorio.org</a>.</p>
+<p>Des commentaires sans incidence sur la configuration peuvent aussi être ajoutés dans le fichier. Une ligne contenant un commentaire doit simplement commencer par le caractère <code>#</code>.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>La syntaxe suit en fait la norme <a href="https://fr.wikipedia.org/wiki/YAML"><em>YAML</em></a>.</p>
+</div>
+<p>Nous expliquons ici seulement les différentes section qu&rsquo;un utilisateur courant peut être amené à modifier, mais toutes les sections peuvent être manipulées par les utilisateurs plus avancés. Il faut alors se référer à la documentation officielle de <a href="https://opencolorio.readthedocs.io/en/latest/guides/authoring/authoring.html"><em>OpenColorIO</em></a>.</p>
+<h3 id="f2a-metadonnees">F.2.a - Métadonnées<a class="headerlink" href="#f2a-metadonnees" title="Permanent link">&para;</a></h3>
+<p>Exemple :</p>
+<div class="codehilite"><pre><span></span><span class="nt">ocio_profile_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+<span class="nt">search_path</span><span class="p">:</span> <span class="s">&quot;luts:filmic&quot;</span>
+<span class="nt">strictparsing</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">luma</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">0.2126</span><span class="p p-Indicator">,</span> <span class="nv">0.7152</span><span class="p p-Indicator">,</span> <span class="nv">0.0722</span><span class="p p-Indicator">]</span>
+<span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">RRT version ut33</span>
+</pre></div>
+
+
+<p>Voici la description de quelques paramètres courants :</p>
+<ul>
+<li><strong><em>ocio_profile_version</em></strong> : soit <code>1</code> soit <code>2</code>, suivant la version de <em>OCIO</em> devant être utilisée avec cette config.</li>
+<li><strong><em>description</em></strong> (optionnel) : une brève description</li>
+<li><strong><em>name</em></strong> (optionnel) : un nom unique</li>
+<li><strong><em>search_path</em></strong> (optionnel) : définit où sont les <em>LUT</em> nécessaires à la config. Dans cet exemple, elles sont dans deux sous-dossiers (séparés par <code>:</code>) : <em><code>luts</code></em> et <em><code>filmic</code></em>.</li>
+<li><strong><em>luma</em></strong> (optionnel et abandonné) : ancienne valeur utilisée notamment par <em>OCIO</em> pour les conversions en noir et blanc des couleurs. Cette valeur n&rsquo;est en réalité plus utilisée nulle part, on peut ne pas la mettre. Par défaut, elle correspond à la luminance des primaires <em>Rec. 709</em>.</li>
+</ul>
+<h3 id="f2b-roles">F.2.b - Roles<a class="headerlink" href="#f2b-roles" title="Permanent link">&para;</a></h3>
+<p>La section <em>roles</em> est celle qu&rsquo;on modifiera le plus souvent ; c&rsquo;est celle qui définit comment sont utilisés les différents espaces colorimétriques disponibles, quels doivent être les espaces par défaut lors des différentes étapes de fabrication, etc.</p>
+<p>Exemple (commenté) de <em>Blender</em> :</p>
+<div class="codehilite"><pre><span></span><span class="nt">roles</span><span class="p">:</span>
+  <span class="nt">reference</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Linear</span>
+  <span class="c1"># Internal scene linear space</span>
+  <span class="nt">scene_linear</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Linear</span>
+  <span class="nt">rendering</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Linear</span>
+  <span class="c1"># Default color space for byte image</span>
+  <span class="nt">default_byte</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sRGB</span>
+  <span class="c1"># Default color space for float images</span>
+  <span class="nt">default_float</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Linear</span>
+  <span class="c1"># Default color space sequencer is working in</span>
+  <span class="nt">default_sequencer</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sRGB</span>
+  <span class="c1"># Color spaces for color picking and texture painting (not internally supported yet)</span>
+  <span class="nt">color_picking</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sRGB</span>
+  <span class="nt">texture_paint</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Raw</span>
+  <span class="c1"># Non-color data</span>
+  <span class="nt">data</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Non-Color</span>
+  <span class="c1"># CIE XYZ color space</span>
+  <span class="nt">XYZ</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">XYZ</span>
+</pre></div>
+
+
+<p>Sur chaque ligne, on définit le role, puis l&rsquo;espace colorimétrique à utiliser. Le nom de l&rsquo;espace doit être celui d&rsquo;un des espaces disponibles dans la liste de la section suivante.</p>
+<p>Exemple de <em>ACES</em> : </p>
+<div class="codehilite"><pre><span></span><span class="nt">roles</span><span class="p">:</span>
+  <span class="nt">color_picking</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Output - sRGB</span>
+  <span class="nt">color_timing</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScc</span>
+  <span class="nt">compositing_linear</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScg</span>
+  <span class="nt">compositing_log</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Input - ADX - ADX10</span>
+  <span class="nt">data</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Utility - Raw</span>
+  <span class="nt">default</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACES2065-1</span>
+  <span class="nt">matte_paint</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Utility - sRGB - Texture</span>
+  <span class="nt">reference</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Utility - Raw</span>
+  <span class="nt">rendering</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScg</span>
+  <span class="nt">scene_linear</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScg</span>
+  <span class="nt">texture_paint</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScc</span>
+</pre></div>
+
+
+<p>Voici quelques explications sur les différents roles (classement alphabétique) :</p>
+<ul>
+<li><strong><em>color_picking</em></strong> : espace des sélecteurs de couleurs.</li>
+<li><strong><em>color_timing</em></strong> : espace pour les corrections colorimétriques.</li>
+<li><strong><em>compositing_linear</em></strong> : espace pour le compositing.</li>
+<li><strong><em>compositing_log</em></strong> : espace alternatif pour certaines opérations de compositing.</li>
+<li><strong><em>data</em></strong> : espace des fichiers (<em>EXR</em>) contenant autre chose que de la couleur (normal maps, speculaires, etc.).</li>
+<li><strong><em>matte_paint</em></strong> : espace des images utilisées en matte painting.</li>
+<li><strong><em>reference</em></strong> : espace servant de base pour tous les autres ; les autres espaces sont définis en fonction de celui là.</li>
+<li><strong><em>rendering</em></strong> : espace à utiliser pour le rendu.</li>
+<li><strong><em>scene_linear</em></strong> : espace de travail principal : celui du rendu 3D notamment, celui de la génération de l&rsquo;image.</li>
+<li><strong><em>texture_paint</em></strong> : similaire à <em>matte_paint</em> mais pour les textures utilisées sur des objets 3D.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Toutes les applications ne respecteront pas forcément tous les rôles : certains ne sont pas supportés, ou bien l&rsquo;application ne permet pas de les changer (par exemple, <em>Blender</em> ne permet pas de modifier l&rsquo;espace de son sélecteur de couleurs)</p>
+<p>Certaines applications peuvent aussi comprendre d&rsquo;autres roles additionnels qui ne sont pas listés ici. C&rsquo;est notamment le cas de <em>Blender</em> avec les roles commençant par <code>default_</code> par exemple.</p>
+</div>
+<h3 id="f2c-displays">F.2.c - Displays<a class="headerlink" href="#f2c-displays" title="Permanent link">&para;</a></h3>
+<p>La section <em>displays</em> définit la liste des différents affichages possible, par exemple les écrans de travail et projecteurs de salle de projection.</p>
+<p>Chaque &ldquo;display&rdquo;, affichage, a une liste de vues, &ldquo;views&rdquo;, possible, permettant de modifier l&rsquo;affichage, par exemple pour une validation technique, pour mieux discerner les couleurs sombres, etc.</p>
+<p>Exemple de <em>Blender</em> :</p>
+<div class="codehilite"><pre><span></span><span class="nt">displays</span><span class="p">:</span>
+  <span class="nt">sRGB</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Standard</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">sRGB</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Filmic</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Filmic sRGB</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Filmic Log</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Filmic Log</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">False Color</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">False Color</span><span class="p p-Indicator">}</span>
+  <span class="nt">XYZ</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Standard</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">XYZ</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">DCI</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">dci_xyz</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">}</span>
+  <span class="nt">None</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Standard</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">}</span>
+</pre></div>
+
+
+<p>La vue standard affiche directement les valeurs <em>sRGB</em> ; <em>Filmic Log</em> peut être utilisé pour contrôler les zones sombres. <em>Raw</em> affiche les données sans conversion, pour par exemple effectuer une vérification technique d&rsquo;une couche de données (normal map, occlusion, etC.). <em>False Color</em> sert aussi aux vérifications techniques de l&rsquo;image.</p>
+<p>Exemple de <em>ACES</em> :</p>
+<div class="codehilite"><pre><span></span><span class="nt">displays</span><span class="p">:</span>
+  <span class="nt">ACES</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">sRGB</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - sRGB</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">DCDM</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - DCDM</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">DCDM P3 gamut clip</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - DCDM (P3 gamut clip)</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-D60</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-D60</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-D60 ST2084 1000 nits</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-D60 ST2084 (1000 nits)</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-D60 ST2084 2000 nits</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-D60 ST2084 (2000 nits)</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-D60 ST2084 4000 nits</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-D60 ST2084 (4000 nits)</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-DCI</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-DCI</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Rec.2020</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - Rec.2020</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Rec.2020 ST2084 1000 nits</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - Rec.2020 ST2084 (1000 nits)</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Rec.709</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - Rec.709</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Rec.709 D60 sim.</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - Rec.709 (D60 sim.)</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">sRGB D60 sim.</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - sRGB (D60 sim.)</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Utility - Raw</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Log</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Input - ADX - ADX10</span><span class="p p-Indicator">}</span>
+</pre></div>
+
+
+<p><em>ACES</em> ne trie pas par différents affichages, et tout est rassemblé sous un seul affichage.</p>
+<hr />
+<p>Sources et références</p>
+<ul>
+<li><a href="https://opencolorio.readthedocs.io/en/latest/guides/authoring/authoring.html">Documentation sur les config <em>OCIO</em> (en anglais)</a></li>
+</ul></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

@@ -48,26 +48,27 @@ nav:
         - L - Courbes de transfert, espace linéaire et gamma: L-transfert.md
         - M - Les LUTs: M-LUT.md
         - N - OCIO, ACES: N-ocio.md
-        - O - Épreuvage (Soft-Proofing): O-epreuve.md
     - Pratique:
-        - A - Choisir ses espaces colorimétriques et formats: 2A-pratique.md
-        - B - Formats de fichiers: 2B-standards.md
-        - C - Calibration des écrans: 2C-calibration.md
-        - D - Préparer la chaîne de fabrication: 2D-preparer.md
-        - E - Concevoir une chaîne de fabrication avec OCIO: 2E-ocio.md
-        - F - Adobe After Effects: 2F-ae.md
-        - G - Adobe Media Encoder: .
-        - H - Adobe Premiere: .
-        - I - Blender: 2I-blender.md
-        - J - Darktable: .
-        - K - DuME: .
-        - L - Krita: 2L-krita.md
+        - A - Choisir ses espaces colorimétriques et formats: pratique.md
+        - B - Formats de fichiers: standards.md
+        - C - Calibration des écrans: calibration.md
+        - D - Épreuvage (Soft-Proofing): epreuvage.md
+        - E - Préparer la chaîne de fabrication: preparer.md
+        - F - Concevoir une chaîne de fabrication avec OCIO: ocio.md
+        - G - Adobe After Effects: ae.md
+        - H - Adobe Media Encoder: .
+        - I - Adobe Premiere: .
+        - J - Autodesk Maya: .
+        - K - Blender: blender.md
+        - L - Darktable: darktable.md
+        - M - DuME: dume.md
+        - N - Krita: krita.md
     - Annexes:
         - En bref, le résumé pour ne pas se tromper: ZZ-bref.md
         - Erreurs et résolution des problèmes: ZZ-erreurs.md
         - Glossaire: ZZ-vocabulaire.md
         - Dictionnaire français - anglais: ZZ-english.md
-        - Téléchargements: ZZ-download.md
+        - Téléchargements et ressources: ZZ-download.md
     - ...:
         - Tous les documents RxLab: http://docs.rainboxlab.org
         - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html

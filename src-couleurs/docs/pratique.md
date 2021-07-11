@@ -77,7 +77,7 @@ Il y a alors plusieurs possibilités :
 
 Dans tous les cas, afin de maîtriser la production, **il est impératif de contrôler l'interprétation des couleurs par les applications** lors de l'importation ; certaines se "tromperont" systématiquement sur certains fichiers, et il faudra alors penser à corriger l'interprétation à chaque import (ou l'automatiser)[^2].
 
-*Cf.* *A.6 - Sortie intermédiaire* et *A.7 - Sortie finale* pour plus d'informations sur les espaces colorimétriques propres aux fichiers, et *[II.B - Quelques standards](2B-standards.md)* pour une liste des standards les plus courants.
+*Cf.* *A.6 - Sortie intermédiaire* et *A.7 - Sortie finale* pour plus d'informations sur les espaces colorimétriques propres aux fichiers, et *[II.B - Quelques standards](standards.md)* pour une liste des standards les plus courants.
 
 ## D - Affichage
 
@@ -92,7 +92,7 @@ Il y a plusieurs élément à prendre en compte pour cet affichage :
 - Le profil colorimétrique appliqué à l'écran par le système d'exploitation
 - La conversion effectuée par l'application depuis son espace de travail vers celui de l'affichage.
 
-Voir la section *[2C - Calibrage des écrans](2C-calibration.md)* pour plus de détails sur le sujet.
+Voir la section *[2C - Calibrage des écrans](calibration.md)* pour plus de détails sur le sujet.
 
 ### D.1 - Espace de l'écran
 
@@ -110,13 +110,13 @@ Suivant ces catégories, la plupart des écrans utilisent ces espaces colorimét
 - Téléviseurs : ***Rec.709***, ou parfois ***sRGB*** (réglable), ou parfois d'autres espaces quand ils sont *HDR*. Les TV affichent la *game réduite (limited/tv)* des couelurs (*cf.* *[K.4 - Full range / Limited / TV / PC ?](K-pix-format.md)*).
 - Téléphones, tablettes, etc. : ***sRGB***, bien que certains (rares) téléphones et tablettes soient aussi capables d'afficher les couleurs du ***P3***. Ces périphériques affichent la *gamme complète (full/pc)* des couleurs (*cf.* *[K.4 - Full range / Limited / TV / PC ?](K-pix-format.md)*).
 
-Il est à noter que les écrans affichant *exactement* l'espace colorimétrique annoncé sont rares, et la plupart génèrent de (plus ou moins) petites variations ; ces variations sont en général en grande partie corrigées par une calibration maîtrisée. *Cf.* *[II.C - calibration des écrans](2C-calibration.md)*.
+Il est à noter que les écrans affichant *exactement* l'espace colorimétrique annoncé sont rares, et la plupart génèrent de (plus ou moins) petites variations ; ces variations sont en général en grande partie corrigées par une calibration maîtrisée. *Cf.* *[II.C - calibration des écrans](calibration.md)*.
 
 ### D.2 - Réglages et profils colorimétriques
 
 La grande majorité des écrans proposent plusieurs réglages des couleurs sur l'écran lui même, notamment via les paramètres de luminosité et de contraste, complétés, suivant les écrans, par les *gammas[\*](ZZ-vocabulaire.md)* rouge, vert et bleu, et parfois encore d'autres réglagles.
 
-Ces réglages permettent parfois de corriger les plus gros défauts des écrans tels qu'ils sont livrés en sortie d'usine (à condition d'avoir une méthode de [calibration](2C-calibration.md) efficace), et peuvent être complétés par des réglages plus fin, à la fois via le *profil colorimétrique* appliqué par le système d'exploitation, et éventuellement des réglages au niveau du pilote de la carte graphique.
+Ces réglages permettent parfois de corriger les plus gros défauts des écrans tels qu'ils sont livrés en sortie d'usine (à condition d'avoir une méthode de [calibration](calibration.md) efficace), et peuvent être complétés par des réglages plus fin, à la fois via le *profil colorimétrique* appliqué par le système d'exploitation, et éventuellement des réglages au niveau du pilote de la carte graphique.
 
 !!! warning
     Beaucoup d'écrans proposent des modes "éco", "auto", "gaming", etc., qui adaptent leurs réglages automatiquement en fonction de l'activité, du type de signal reçu, etc. Dans une chaîne de fabrication où l'on gère les couleurs, il est impératif de désactiver ces différents modes qui changent l'affichage de manière imprévisible.
@@ -125,7 +125,7 @@ La connaissance de ces réglages est importante pour contrôler l'affichage corr
 
 Il est à noter aussi que ces réglages doivent être contrôlés (et ajustés) régulièrement ; l'affichage des couleurs peut varier avec le vieillissement de l'écran, la température ambiante, etc.
 
-*Cf.* *[II.C - calibration des écrans](2C-calibration.md)* pour des explications détaillées sur les réglages des écrans et comment les ajuster.
+*Cf.* *[II.C - calibration des écrans](calibration.md)* pour des explications détaillées sur les réglages des écrans et comment les ajuster.
 
 ### D.3 - Dans l'application
 
@@ -145,7 +145,7 @@ Cette méthode est notamment très utile pour simuler le résultat d'une impress
 
 Quoiqu'il en soit l'épreuvage n'est qu'une méthode de vérification et on peut souvent s'en passer (surtout en vidéo).
 
-Cf. *[I-O Épreuvage (Soft-Proofing)](O-epreuve.md)* pour plus de détails sur le sujet.
+Cf. *[I-O Épreuvage (Soft-Proofing)](epreuvage.md)* pour plus de détails sur le sujet.
 
 ## E - Sélecteurs de couleur
 
@@ -169,7 +169,7 @@ Quand l'espace de travail est linéaire mais pas l'espace de sortie (et inversem
 
 Lors de la sortie finale, il faut bien évidemment essayer de respecter au mieux le standard correspondant à la livraison, ou se reférer à la demande du diffuseur.
 
-*Cf.* *[II.B - Quelques standards](2B-standards.md)* pour une liste des standards les plus courants.
+*Cf.* *[II.B - Quelques standards](standards.md)* pour une liste des standards les plus courants.
 
 La plupart des sorties finales se feront dans des espaces colorimétriques dédiés à l'affichage, et donc avec un transfert non linéaire ; une perte de précision et de qualité ayant lieu lors du passage d'un espace de travail linéaire vers un espace d'affichage non linéaire, il est important dans ce cas que l'espace de travail ait une profondeur plus élevée que celle de la sortie finale (travail en *16 bpc* pour une sortie *8 bpc* par exemple).
 

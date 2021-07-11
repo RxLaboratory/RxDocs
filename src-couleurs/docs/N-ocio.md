@@ -6,7 +6,7 @@
 
 Les applications utilisant *OCIO* partagent donc toutes le même format de configuration de la gestion des couleurs, un fichier nommé `congig.ocio`.
 
-On peut ainsi facilement partager la même gestion des couleurs à travers toute la chaîne de production, définissant les espaces de travail, les espaces des fichiers, ceux des sélecteurs de couleur, ceux de l'affichage, de la sortie finale... *Cf.* Chapitre *[II.A - Mise en Pratique](2A-pratique.md)*.
+On peut ainsi facilement partager la même gestion des couleurs à travers toute la chaîne de production, définissant les espaces de travail, les espaces des fichiers, ceux des sélecteurs de couleur, ceux de l'affichage, de la sortie finale... *Cf.* Chapitre *[II.A - Mise en Pratique](pratique.md)*.
 
 !!! note
     *OpenColorIO* apporte aussi le support d'un grand nombre de format de *LUTs[*](ZZ-vocabulaire.md)*, réglant le problème de compatibilité des *LUTs* avec les applications.

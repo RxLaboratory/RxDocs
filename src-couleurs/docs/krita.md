@@ -1,4 +1,4 @@
-# II.L - Gestion des couleurs : Krita
+# II.N - Gestion des couleurs : Krita
 
 *Krita* est très complet dans la gestion des couleurs, et utilise notamment *OCIO[\*](ZZ-vocabulaire.md)*.
 
@@ -6,7 +6,7 @@ Il a comme unique défaut le fait qu'on ne puisse pas spécifier l'espace colori
 
 La documentation de *Krita* inclue[ des explications intéressantes et détaillées sur les couleurs](https://docs.krita.org/en/general_concepts/colors.html) et la gestion des couleurs (en anglais).
 
-## L.1 - Espace de travail
+## N.1 - Espace de travail
 
 L'espace de travail se définit lors de la création d'un document *Krita*.
 
@@ -36,15 +36,15 @@ Pour changer l'espace de travail d'un document déjà ouvert, on passe par le me
 
 On y retrouve les mêmes réglages que lors de la création du document.
 
-## L.2 - Affichage
+## N.2 - Affichage
 
-### L.2.a - Écran
+### N.2.a - Écran
 
 On peut spécifier l'espace colorimétrique de l'affichage pour chaque écran branché à l'ordinateur, dans les préférences de *Krita*. En général, on laisse en *sRGB* sauf dans le cas ou l'écran utiliserait un espace différent.
 
 ![](img/krita/settings2.png)
 
-### L.2.b - Épreuvage (soft-proofing)
+### N.2.b - Épreuvage (soft-proofing)
 
 Il est possible, dans le troisième onglet des préférences, de configurer la *simulation* de l'affichage en fonction de l'espace de sortie finale, ce qui est particulièrement intéressant dans *Krita* en cas de travail pour l'impression.
 
@@ -58,7 +58,7 @@ On peut aussi définir ces paramètres d'épreuvage uniquement pour le document 
 
 ![](img/krita/doc-softproofing.png)
 
-## L.3 - Sélecteur de Couleurs
+## N.3 - Sélecteur de Couleurs
 
 *Krita* permet de régler l'espace d'affichage des sélecteurs de couleur, ce qui est bien pratique. On retrouve le réglage dans un onglet des préférences.
 
@@ -68,14 +68,14 @@ En général, on cochera la case permettant de choisir un espace spécifique pou
 
 Dans le cas d'un travail en *16* ou *32 bpc flottant* et un espace linéaire, les types de sélecteurs différents de *HSV* (teinte, saturation, valeur) - c'est à dire *HSL*, *HSI* et *HSY* - peuvent ne pas fonctionner correctement (car ils doivent avoir un blanc maximum qui n'existe plus en linéaire).
 
-## L.4 - Sortie
+## N.4 - Sortie
 
 Lors de l'enregistrement des fichiers, *Krita* affiche une boite de dialogue avec les options adaptées. En cas d'enregistrement au format natif `.kra` ou *openEXR[\*](ZZ-vocabulaire.md)*, c'est l'espace de travail qui est utilisé ; sinon *Krita* fera une conversion vers l'espace standard du fichier enregistré.
 
 ![](img/krita/output.png)  
 *Exemple pour une sortie PNG et sa conversion en* sRGB, *ou optionnellement en* Rec.2020.
 
-## L.5 - OCIO dans Krita
+## N.5 - OCIO dans Krita
 
 *Krita* utilise *OCIO* qui se configure simplement via le *Docker* (panneau) appelé *LUT Management* (*Gestion des LUT*).
 
