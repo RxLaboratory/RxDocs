@@ -358,22 +358,6 @@
         
         
         <div class="col-md-3"><div id="side-menu">
-    <div class="bs-sidebar hidden-print affix well" role="complementary">
-        <ul class="nav bs-sidenav">
-            <li class="first-level active"><a href="#ih-quest-ce-quun-espace-colorimetrique">I.H - Qu'est ce qu'un espace colorimétrique ?</a></li>
-                <li class="second-level"><a href="#h1-ce-qui-definit-un-espace-colorimetrique">H.1 - Ce qui définit un espace colorimétrique</a></li>
-                    
-                    <li class="third-level"><a href="#h1a-les-primaires-et-le-gamut">H.1.a - Les primaires et le gamut</a></li>
-                    <li class="third-level"><a href="#h1b-le-point-blanc">H.1.b - Le point blanc</a></li>
-                    <li class="third-level"><a href="#h1c-la-courbe-de-transfert">H.1.c - La courbe de transfert</a></li>
-                <li class="second-level"><a href="#h2-autres-parametres">H.2 - Autres paramètres</a></li>
-                    
-                    <li class="third-level"><a href="#h2a-format-de-pixel">H.2.a - Format de pixel</a></li>
-                    <li class="third-level"><a href="#h2b-profondeur">H.2.b - Profondeur</a></li>
-                <li class="second-level"><a href="#h3-pourquoi-differents-espaces-colorimetriques">H.3 - Pourquoi différents espaces colorimétriques ?</a></li>
-                    
-        </ul>
-    </div>
     <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
         <!-- Main navigation -->
         <ul class="nav bs-sidenav">
@@ -566,10 +550,27 @@
         
         </ul>
     </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#ih-quest-ce-quun-espace-colorimetrique">I.H - Qu'est ce qu'un espace colorimétrique ?</a></li>
+                <li class="second-level"><a href="#h1-ce-qui-definit-un-espace-colorimetrique">H.1 - Ce qui définit un espace colorimétrique</a></li>
+                    
+                    <li class="third-level"><a href="#h1a-les-primaires-et-le-gamut">H.1.a - Les primaires et le gamut</a></li>
+                    <li class="third-level"><a href="#h1b-le-point-blanc">H.1.b - Le point blanc</a></li>
+                    <li class="third-level"><a href="#h1c-la-courbe-de-transfert">H.1.c - La courbe de transfert</a></li>
+                <li class="second-level"><a href="#h2-autres-parametres">H.2 - Autres paramètres</a></li>
+                    
+                    <li class="third-level"><a href="#h2a-format-de-pixel">H.2.a - Format de pixel</a></li>
+                    <li class="third-level"><a href="#h2b-profondeur">H.2.b - Profondeur</a></li>
+                <li class="second-level"><a href="#h3-pourquoi-differents-espaces-colorimetriques">H.3 - Pourquoi différents espaces colorimétriques ?</a></li>
+                    
+        </ul>
+    </div>
     <div class="footer-meta"></div>
 </div></div>
         <div class="col-md-9" role="main">
 
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11" /></p>
 <h1 id="ih-quest-ce-quun-espace-colorimetrique">I.H - Qu&rsquo;est ce qu&rsquo;un espace colorimétrique ?<a class="headerlink" href="#ih-quest-ce-quun-espace-colorimetrique" title="Permanent link">&para;</a></h1>
 <p>Un espace colorimétrique définit <strong>un sous-ensemble de couleurs</strong> (un volume dans un diagramme de couleurs 3D, ou une surface sur une projection 2D comme le <em>CIE xy</em>) tirées du spectre visible (voire aussi en dehors du spectre visible)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 <div class="admonition note">
@@ -679,10 +680,10 @@
 <h3 id="h1c-la-courbe-de-transfert">H.1.c - La courbe de transfert<a class="headerlink" href="#h1c-la-courbe-de-transfert" title="Permanent link">&para;</a></h3>
 <p>Les couleurs dans un espace colorimétrique sont données par l&rsquo;intensité de chaque primaire, représentée par une valeur variant de <code>0.0</code> à <code>1.0</code>.</p>
 <p>La valeur <code>0.0</code> représente une intensité nulle (l&rsquo;absence de lumière, un noir parfait) et la valeur <code>1.0</code> représente la couleur donnée par la coordonnée de la primaire dans le <em>CIE XYZ</em>.</p>
-<p>La question se pose de savoir comment les valeurs intermédiaires sont transcrites en couleurs réelles (ou en coordonnées dans le <em>CIE XYZ</em>). Cette transcription est faite par la <strong>courbe de transfert</strong>. C&rsquo;est une &ldquo;simple&rdquo; fonction mathématique qui, pour une valeur donnée dans l&rsquo;espace colorimétrique, donne la coordonnée <em>Z</em> correspondante dans le <em>CIE XYZ</em>.</p>
-<p><em><img alt="Image: Courbe de transfert du sRGB vs linéaire" src="" /></em></p>
+<p>La question se pose de savoir comment les valeurs intermédiaires sont transcrites en couleurs réelles (ou en coordonnées dans le <em>CIE XYZ</em>). Cette transcription est faite par la <strong>courbe de transfert</strong>. C&rsquo;est une &ldquo;simple&rdquo; fonction mathématique qui, pour une valeur donnée dans l&rsquo;espace colorimétrique, donne la coordonnée correspondante dans le <em>CIE XYZ</em>.</p>
+<p><em><img alt="Image: Courbe de transfert du sRGB vs linéaire" src="img/srgb-gamma.svg" /></em></p>
 <p>L&rsquo;espace est dit <em>linéaire</em> quand cette courbe est une simple fonction affine, c&rsquo;est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle.</p>
-<p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un <em>gamma 2,4</em>); les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes.</p>
+<p>D&rsquo;autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> (avec un <em>gamma 2,4</em>); les plus &ldquo;simples&rdquo; de ces courbes sont ce qu&rsquo;on appelle les courbes <em>gamma</em>. Cela étant dit, la plupart des espaces n&rsquo;utilisent pas de simples <em>gamma</em> mais des courbes plus complexes.</p>
 <p>Voir la section intitulée <em><a href="L-transfert.html">L - Courbes de transfert, espace linéaire et gamma</a></em> pour plus de détails.</p>
 <h2 id="h2-autres-parametres">H.2 - Autres paramètres<a class="headerlink" href="#h2-autres-parametres" title="Permanent link">&para;</a></h2>
 <p>Les espaces colorimétriques peuvent aussi imposer ou préconiser d&rsquo;autres paramètres, surtout sur la manière d&rsquo;encoder/stocker les couleurs, en fonction de leurs usages prévus.</p>
@@ -713,7 +714,7 @@
 <li><strong><em>Display-referred</em></strong> ou <strong><em>Output-referred</em></strong>: Espaces utilisés pour l&rsquo;affichage et la reproduction.</li>
 <li><strong><em>Scene-referred</em></strong>: Espaces utilisés pour le calcul.</li>
 </ul>
-<p><em><img alt="Image: Schéma articulant les différents espaces" src="" /></em></p>
+<p><em><img alt="Image: Schéma articulant les différents espaces" src="img/workflow.svg" /></em></p>
 <p>Tous ces espaces ne sont pas nécessairement les mêmes (et sont rarement les mêmes en réalité), chacun ayant un usage et correspondant à des besoins spécifiques ; un certain nombre de conversions entrent alors en jeu pour passer d&rsquo;un espace à l&rsquo;autre. C&rsquo;est là que la possibilité de convertir les informations depuis et vers un espace de référence (le <em>CIE XYZ</em>) permet de travailler de manière sûre avec plusieurs espaces, chaque espace définissant ses <strong><em>primaires</em></strong>, <strong><em>point blanc</em></strong> et <strong><em>courbe de transfert</em></strong> par rapport au même espace de référence.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -724,12 +725,14 @@
 <ul>
 <li><a href="https://fr.wikipedia.org/wiki/Illuminant">Illuminant sur <em>Wikipedia</em></a></li>
 </ul>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14" /></p>
 <div class="footnote">
 <hr />
 <ol>
 <li id="fn:1">
 <p>Il <strong>ne définit pas</strong> un <em>nombre</em> de couleurs, de nuances différentes (qui dépend de l&rsquo;échantillonage, de la manière de stocker numériquement les valeurs), mais bien une <em>plage</em> de couleurs limitée dans l&rsquo;ensemble des couleurs réelles ; autrement dit, il définit la taille de l&rsquo;ensemble de couleurs, mais pas le nombre de subdvisions de l&rsquo;ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section <a href="K-pix-format.html">Format des pixels</a> pour plus de détails.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Les courbes de transfert à l&rsquo;époque analogiques représentaient en fait la correspondance entre l&rsquo;intensité du signal électrique, et la luminositée captée ou reproduite par la caméra ou l&rsquo;écran ; le <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> moderne suit les mêmes règles pour lier l&rsquo;intensité lumineuse à la valeur numérique.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div></div>

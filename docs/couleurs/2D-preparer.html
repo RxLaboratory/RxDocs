@@ -358,27 +358,6 @@
         
         
         <div class="col-md-3"><div id="side-menu">
-    <div class="bs-sidebar hidden-print affix well" role="complementary">
-        <ul class="nav bs-sidenav">
-            <li class="first-level active"><a href="#preparer-la-gestion-des-couleurs-dune-chaine-de-fabrication">Préparer la gestion des couleurs d'une chaîne de fabrication</a></li>
-                <li class="second-level"><a href="#animation-3d-avec-blender-filmic">Animation 3D avec Blender, Filmic</a></li>
-                    
-                    <li class="third-level"><a href="#textures-et-autres-images-2d">Textures et autres images 2D</a></li>
-                    <li class="third-level"><a href="#rendu-3d">Rendu 3D</a></li>
-                    <li class="third-level"><a href="#compositing">Compositing</a></li>
-                    <li class="third-level"><a href="#exports">Exports</a></li>
-                <li class="second-level"><a href="#animation-3d-avec-aces">Animation 3D avec ACES</a></li>
-                    
-                    <li class="third-level"><a href="#textures-et-autres-images-2d_1">Textures et autres images 2D</a></li>
-                    <li class="third-level"><a href="#rendu-3d_1">Rendu 3D</a></li>
-                    <li class="third-level"><a href="#compositing_1">Compositing</a></li>
-                    <li class="third-level"><a href="#exports_1">Exports</a></li>
-                <li class="second-level"><a href="#animation-2d">Animation 2D</a></li>
-                    
-                <li class="second-level"><a href="#videos-prise-de-vues-reelles-et-vfx">Vidéos, prise de vues réelles et VFX</a></li>
-                    
-        </ul>
-    </div>
     <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
         <!-- Main navigation -->
         <ul class="nav bs-sidenav">
@@ -571,10 +550,32 @@
         
         </ul>
     </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#preparer-la-gestion-des-couleurs-dune-chaine-de-fabrication">Préparer la gestion des couleurs d'une chaîne de fabrication</a></li>
+                <li class="second-level"><a href="#animation-3d-avec-blender-filmic">Animation 3D avec Blender, Filmic</a></li>
+                    
+                    <li class="third-level"><a href="#textures-et-autres-images-2d">Textures et autres images 2D</a></li>
+                    <li class="third-level"><a href="#rendu-3d">Rendu 3D</a></li>
+                    <li class="third-level"><a href="#compositing">Compositing</a></li>
+                    <li class="third-level"><a href="#exports">Exports</a></li>
+                <li class="second-level"><a href="#animation-3d-avec-aces">Animation 3D avec ACES</a></li>
+                    
+                    <li class="third-level"><a href="#textures-et-autres-images-2d_1">Textures et autres images 2D</a></li>
+                    <li class="third-level"><a href="#rendu-3d_1">Rendu 3D</a></li>
+                    <li class="third-level"><a href="#compositing_1">Compositing</a></li>
+                    <li class="third-level"><a href="#exports_1">Exports</a></li>
+                <li class="second-level"><a href="#animation-2d">Animation 2D</a></li>
+                    
+                <li class="second-level"><a href="#videos-prise-de-vues-reelles-et-vfx">Vidéos, prise de vues réelles et VFX</a></li>
+                    
+        </ul>
+    </div>
     <div class="footer-meta"></div>
 </div></div>
         <div class="col-md-9" role="main">
 
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11" /></p>
 <h1 id="preparer-la-gestion-des-couleurs-dune-chaine-de-fabrication">Préparer la gestion des couleurs d&rsquo;une chaîne de fabrication<a class="headerlink" href="#preparer-la-gestion-des-couleurs-dune-chaine-de-fabrication" title="Permanent link">&para;</a></h1>
 <p>Maintenant que l&rsquo;on connait les différents types d&rsquo;espaces colorimétriques et à quels moments de la fabrication ils entrent en jeu, voyons comment préparer une chaîne de fabrication complète permettant de gérer efficacement les couleurs de la conception à la livraison.</p>
 <p>La première étape est de lister tous les formats utilisés en entrée de la chaîne (vidéos ou images fournies et importées, images fabriquées) ainsi que tous les formats à livrer en fin de fabrication (vidéos et images finales).<br />
@@ -586,7 +587,7 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <p>Blender fournit un espace de travail efficace par défaut pour les rendus 3D : <em>Filmic</em>. Cet espace étant configuré en utilisant <em>OCIO</em>, il est assez facile de créer une chaîne de fabrication autour de cet espace.</p>
 <p>Par simplicité, les textures pourront elles être fabriquées dans un espace <em>RGB Linéaire</em> standard.</p>
 <p>Comme dans la plupart des chaînes, nous pouvons utiliser <strong><em>openEXR</em></strong> comme format d&rsquo;image intermédiaire, aussi bien pour les textures que pour les rendus intermédaires ou le <em>master</em> final.</p>
-<p><em><img alt="Schema Pipe Blender" src="" /></em></p>
+<p><em><img alt="Schema Pipe Blender" src="img/blender-workflow.svg" /></em></p>
 <table>
 <thead>
 <tr>
@@ -691,15 +692,16 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <p>Lors du rendu <em>openEXR</em>, les images sont linéaires et ne comportent pas d&rsquo;information d&rsquo;espace colorimétrique : il faudra ré-appliquer l&rsquo;espace <em>Filmic</em> dans le logiciel de compositing. Lors du rendu dans tout autre format, <em>Blender</em> effectue une conversion vers l&rsquo;espace par défaut du format (<em>sRGB</em> en <em>PNG</em> par exemple).</p>
 </div>
 <h4 id="filmic-et-after-effects">Filmic et After Effects<a class="headerlink" href="#filmic-et-after-effects" title="Permanent link">&para;</a></h4>
-<p>Pour le cas particulier d&rsquo;<em>After Effects</em>, où la mise en place d&rsquo;<em>OCIO</em> est laborieuse, il peut être plus simple d&rsquo;utiliser une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> de conversion <em>Filmic</em>&hellip; Nous fournissons <a href="media/filmic-luts.zip">une déclinaison de cette <em>LUT</em> ici</a> (pour chaque variation de contraste de <em>Filmic</em> disponible). Il faudra alors choisir un autre espace de travail dans le projet <em>After Effects</em>, et utiliser un effet de conversion d&rsquo;espace depuis <em>RGB Linéaire</em> vers l&rsquo;espace du projet après l&rsquo;application de la <em>LUT</em>.</p>
+<p>Pour le cas particulier d&rsquo;<em>After Effects</em>, où la mise en place d&rsquo;<em>OCIO</em> est laborieuse, il peut être plus simple d&rsquo;utiliser une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> de conversion <em>Filmic</em>&hellip; Nous fournissons <a href="ZZ-download.html">une déclinaison de cette <em>LUT</em> ici</a> (pour chaque variation de contraste de <em>Filmic</em> disponible). Il faudra alors choisir un autre espace de travail dans le projet <em>After Effects</em>, et utiliser un effet de conversion d&rsquo;espace depuis <em>RGB Linéaire</em> vers l&rsquo;espace du projet après l&rsquo;application de la <em>LUT</em>.</p>
 <p><em><img alt="Capture After Effects effets Filmic" src="" /></em><br />
 <em>Exemple d&rsquo;effets à utiliser sur un fichier</em> openEXR Filmic <em>dans</em> After Effects <em>avec un espace de travail</em> ACEScg.</p>
 <h3 id="exports">Exports<a class="headerlink" href="#exports" title="Permanent link">&para;</a></h3>
 <p>Depuis le logiciel de compositing, on pourra alors simplement exporter des fichiers <em>openEXR</em> <strong><em>RGB Linéaire</em></strong> comme <em>master</em> ou <em>backup</em>, et directement des fichiers vidéo dans l&rsquo;espace colorimétrique standard qui leur correspond pour les exports finaux.</p>
 <h2 id="animation-3d-avec-aces">Animation 3D avec <em>ACES</em><a class="headerlink" href="#animation-3d-avec-aces" title="Permanent link">&para;</a></h2>
-<p>La plupart des logiciels 3D utilsant <em>OCIO</em>, tous pourront utiliser <strong><em>ACEScg</em></strong> comme espace pour le rendu.</p>
+<p>La plupart des logiciels 3D utilsant <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em>, tous pourront utiliser <strong><em>ACEScg</em></strong><a href="ZZ-vocabulaire.html">*</a> comme espace pour le rendu.</p>
 <p>Comme dans la plupart des chaînes, nous pouvons utiliser <strong><em>openEXR</em></strong> comme format d&rsquo;image intermédiaire, aussi bien pour les textures que pour les rendus intermédaires ou le <em>master</em> final.</p>
-<p><em><img alt="Schema Pipe ACES" src="" /></em></p>
+<p>Il est à noter que la configuration <em>ACES<a href="ZZ-vocabulaire.html">*</a></em> habituellement utilisée, fournie par <em>OCIO</em>, comprend une très longue liste d&rsquo;espaces colorimétriques, notamment ceux de divers fabricants de caméras. Si on n&rsquo;a pas besoin de tous ces formats, sur une production d&rsquo;animation n&rsquo;incluant pas de prise de vues, on peut assez facilement retirer tous ces espaces de la configuration. <a href="ZZ-download.html">Nous fournissons ici</a> une telle version adaptée de <em>ACES</em>, plus pratique dans les production d&rsquo;animation.</p>
+<p><em><img alt="Schema Pipe ACES" src="img/aces-workflow.svg" /></em></p>
 <table>
 <thead>
 <tr>
@@ -798,7 +800,6 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <h2 id="animation-2d">Animation 2D<a class="headerlink" href="#animation-2d" title="Permanent link">&para;</a></h2>
 <p>En animation 2D, il est moins primordial d&rsquo;utiliser un espace de travail au <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> large. Bien qu&rsquo;il soit recommandé de suivre les mêmes méthodes qu&rsquo;en 3D, certains logiciels d&rsquo;animation ne le permettront pas et on pourra donc se rabattre sur une chaîne <em>RGB Linéaire</em> par exemple.</p>
 <p>Il faudra simplement bien utiliser le plus possible des fichiers <em>openEXR</em> tout le long de la chaîne pour être sûr de garder une qualité suffisante. Là encore, si pour des décors détaillés il est important de rester sur ce format et un espace linéaire à au moins <em>16 bpc</em>, dans le cas de l&rsquo;animation si elle est moins détaillée ou utilise de simples aplats de couleurs, on pourra se rabattre sur des espaces plus courants <em>sRGB</em> et des formats <em>PNG</em> (avec <em>16 bpc</em> si possible) ou vectoriels.</p>
-<p><em><img alt="Schema Pipe 2D" src="" /></em></p>
 <table>
 <thead>
 <tr>
@@ -904,9 +905,7 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <h2 id="videos-prise-de-vues-reelles-et-vfx">Vidéos, prise de vues réelles et VFX<a class="headerlink" href="#videos-prise-de-vues-reelles-et-vfx" title="Permanent link">&para;</a></h2>
 <p>Une chaîne incluant de la vidéo pourra être très semblable à une chaîne de fabrication 3D, à plus forte raison si elle implique des rendus 3D.</p>
 <p>Simplement, il faudra être vigilant et importer les photos et vidéos en spécifiant le bon espace colorimétrique, celui de la caméra qui a capturé les images, dès leur importation dans le logiciel qui les utilise.</p>
-<p><em>OCIO</em> et <em>ACES</em> contiennent une grande sélection d&rsquo;espaces colorimétriques de divers modèles de caméra, et le plus simple est souvent donc d&rsquo;utiliser une chaîne avec <em>ACES</em> pour la production, comme décrite plus haut.</p>
-<p><em><img alt="Schema Pipe Video" src="" /></em></p>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/30" /></p></div>
+<p><em>OCIO</em> et <em>ACES</em> contiennent une grande sélection d&rsquo;espaces colorimétriques de divers modèles de caméra, et le plus simple est souvent donc d&rsquo;utiliser une chaîne avec <em>ACES</em> pour la production, comme décrite plus haut.</p></div>
         
         
     </div>
