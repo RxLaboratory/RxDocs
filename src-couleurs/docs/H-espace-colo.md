@@ -1,3 +1,5 @@
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11)
+
 # I.H - Qu'est ce qu'un espace colorimétrique ?
 
 Un espace colorimétrique définit **un sous-ensemble de couleurs** (un volume dans un diagramme de couleurs 3D, ou une surface sur une projection 2D comme le *CIE xy*) tirées du spectre visible (voire aussi en dehors du spectre visible)[^1].
@@ -79,13 +81,13 @@ Les couleurs dans un espace colorimétrique sont données par l'intensité de ch
 
 La valeur `0.0` représente une intensité nulle (l'absence de lumière, un noir parfait) et la valeur `1.0` représente la couleur donnée par la coordonnée de la primaire dans le *CIE XYZ*.
 
-La question se pose de savoir comment les valeurs intermédiaires sont transcrites en couleurs réelles (ou en coordonnées dans le *CIE XYZ*). Cette transcription est faite par la **courbe de transfert**. C'est une "simple" fonction mathématique qui, pour une valeur donnée dans l'espace colorimétrique, donne la coordonnée *Z* correspondante dans le *CIE XYZ*.
+La question se pose de savoir comment les valeurs intermédiaires sont transcrites en couleurs réelles (ou en coordonnées dans le *CIE XYZ*). Cette transcription est faite par la **courbe de transfert**. C'est une "simple" fonction mathématique qui, pour une valeur donnée dans l'espace colorimétrique, donne la coordonnée correspondante dans le *CIE XYZ*.
 
-*![Image: Courbe de transfert du sRGB vs linéaire]()*
+*![Image: Courbe de transfert du sRGB vs linéaire](img/srgb-gamma.svg)*
 
 L'espace est dit *linéaire* quand cette courbe est une simple fonction affine, c'est à dire représentée par une ligne droite, et dont la correspondance entre les valeurs est juste proportionnelle.
 
-D'autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités (avec un *gamma 2,4*); les plus "simples" de ces courbes sont ce qu'on appelle les courbes *gamma*. Cela étant dit, la plupart des espaces n'utilisent pas de simples *gamma* mais des courbes plus complexes.
+D'autres espaces utilisent donc une courbe de transfert plus complexe visant à mieux refléter la vision humaine et/ou la façon dont les premiers écrans cathodiques reproduisaient les intensités[^2] (avec un *gamma 2,4*); les plus "simples" de ces courbes sont ce qu'on appelle les courbes *gamma*. Cela étant dit, la plupart des espaces n'utilisent pas de simples *gamma* mais des courbes plus complexes.
 
 Voir la section intitulée *[L - Courbes de transfert, espace linéaire et gamma](L-transfert.md)* pour plus de détails.
 
@@ -130,7 +132,7 @@ On classe ces espaces en deux catégories :
 - ***Display-referred*** ou ***Output-referred***: Espaces utilisés pour l'affichage et la reproduction.
 - ***Scene-referred***: Espaces utilisés pour le calcul.
 
-*![Image: Schéma articulant les différents espaces]()*
+*![Image: Schéma articulant les différents espaces](img/workflow.svg)*
 
 Tous ces espaces ne sont pas nécessairement les mêmes (et sont rarement les mêmes en réalité), chacun ayant un usage et correspondant à des besoins spécifiques ; un certain nombre de conversions entrent alors en jeu pour passer d'un espace à l'autre. C'est là que la possibilité de convertir les informations depuis et vers un espace de référence (le *CIE XYZ*) permet de travailler de manière sûre avec plusieurs espaces, chaque espace définissant ses ***primaires***, ***point blanc*** et ***courbe de transfert*** par rapport au même espace de référence.
 
@@ -142,7 +144,7 @@ Sources et références
 
 - [Illuminant sur *Wikipedia*](https://fr.wikipedia.org/wiki/Illuminant)
 
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/14)
-
 [^1]:
     Il **ne définit pas** un *nombre* de couleurs, de nuances différentes (qui dépend de l'échantillonage, de la manière de stocker numériquement les valeurs), mais bien une *plage* de couleurs limitée dans l'ensemble des couleurs réelles ; autrement dit, il définit la taille de l'ensemble de couleurs, mais pas le nombre de subdvisions de l'ensemble, qui peuvent être plus ou moins fines dans sa mise en place concrète. Voir la section [Format des pixels](K-pix-format.md) pour plus de détails.
+[^2]:
+    Les courbes de transfert à l'époque analogiques représentaient en fait la correspondance entre l'intensité du signal électrique, et la luminositée captée ou reproduite par la caméra ou l'écran ; le *gamma[\*](ZZ-vocabulaire.md)* moderne suit les mêmes règles pour lier l'intensité lumineuse à la valeur numérique.

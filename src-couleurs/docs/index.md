@@ -141,9 +141,9 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
     - F.2 - Interprétation des métrages - Espaces d'entrée
     - F.3 - Options de vues - Espace d'affichage et simulations
     - F.4 - Options d'export - Espaces de sortie
-    - F.5 - OCIO
+    - F.5 - *OCIO*
         - F.5.a - Introduction
-        - F.5.b - Installer le plug-in OCIO
+        - F.5.b - Installer le plug-in *OCIO*
         - F.5.c - Désactiver la gestion des couleurs de After Effects
         - F.5.d - Organisation
         - F.5.e - Entrée et espace de travail
@@ -163,12 +163,14 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
         - I.3.b - Entrée (textures)
 - H - Color management : Darktable
 - I - Color management : DuME  
-- L - [Gestion des couleurs : Krita](2L-Krita)
-    - Document
-    - Entrée
-    - Sortie
-    - Entrée et espace de travail
-    - Sortie
+- L - [Gestion des couleurs : Krita](2L-krita.md)
+    - L.1 - Espace de travail
+    - L.2 - Affichage
+        - L.2.a - Écran
+        - L.2.b - Épreuvage (soft-proofing)
+    - L.3 - Sélecteur de Couleurs
+    - L.4 - Sortie
+    - L.5 - *OCIO* dans Krita
 
 ### III - Annexes
 

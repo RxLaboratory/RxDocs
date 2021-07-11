@@ -1,3 +1,5 @@
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11)
+
 # Préparer la gestion des couleurs d'une chaîne de fabrication
 
 Maintenant que l'on connait les différents types d'espaces colorimétriques et à quels moments de la fabrication ils entrent en jeu, voyons comment préparer une chaîne de fabrication complète permettant de gérer efficacement les couleurs de la conception à la livraison.
@@ -19,7 +21,7 @@ Par simplicité, les textures pourront elles être fabriquées dans un espace *R
 
 Comme dans la plupart des chaînes, nous pouvons utiliser ***openEXR*** comme format d'image intermédiaire, aussi bien pour les textures que pour les rendus intermédaires ou le *master* final.
 
-*![Schema Pipe Blender]()*
+*![Schema Pipe Blender](img/blender-workflow.svg)*
 
 | Étape | Type | Espace colorimétrique / Format | Notes |
 | --- | --- | --- | --- |
@@ -60,7 +62,7 @@ En cas de compositing dans une application tierce, le plus simple est d'utiliser
 
 #### Filmic et After Effects
 
-Pour le cas particulier d'*After Effects*, où la mise en place d'*OCIO* est laborieuse, il peut être plus simple d'utiliser une *LUT[\*](ZZ-vocabulaire.md)* de conversion *Filmic*... Nous fournissons [une déclinaison de cette *LUT* ici](media/filmic-luts.zip) (pour chaque variation de contraste de *Filmic* disponible). Il faudra alors choisir un autre espace de travail dans le projet *After Effects*, et utiliser un effet de conversion d'espace depuis *RGB Linéaire* vers l'espace du projet après l'application de la *LUT*.
+Pour le cas particulier d'*After Effects*, où la mise en place d'*OCIO* est laborieuse, il peut être plus simple d'utiliser une *LUT[\*](ZZ-vocabulaire.md)* de conversion *Filmic*... Nous fournissons [une déclinaison de cette *LUT* ici](ZZ-download.md) (pour chaque variation de contraste de *Filmic* disponible). Il faudra alors choisir un autre espace de travail dans le projet *After Effects*, et utiliser un effet de conversion d'espace depuis *RGB Linéaire* vers l'espace du projet après l'application de la *LUT*.
 
 *![Capture After Effects effets Filmic]()*  
 *Exemple d'effets à utiliser sur un fichier* openEXR Filmic *dans* After Effects *avec un espace de travail* ACEScg.
@@ -71,11 +73,13 @@ Depuis le logiciel de compositing, on pourra alors simplement exporter des fichi
 
 ## Animation 3D avec *ACES*
 
-La plupart des logiciels 3D utilsant *OCIO*, tous pourront utiliser ***ACEScg*** comme espace pour le rendu.
+La plupart des logiciels 3D utilsant *OCIO[\*](ZZ-vocabulaire.md)*, tous pourront utiliser ***ACEScg***[\*](ZZ-vocabulaire.md) comme espace pour le rendu.
 
 Comme dans la plupart des chaînes, nous pouvons utiliser ***openEXR*** comme format d'image intermédiaire, aussi bien pour les textures que pour les rendus intermédaires ou le *master* final.
 
-*![Schema Pipe ACES]()*
+Il est à noter que la configuration *ACES[\*](ZZ-vocabulaire.md)* habituellement utilisée, fournie par *OCIO*, comprend une très longue liste d'espaces colorimétriques, notamment ceux de divers fabricants de caméras. Si on n'a pas besoin de tous ces formats, sur une production d'animation n'incluant pas de prise de vues, on peut assez facilement retirer tous ces espaces de la configuration. [Nous fournissons ici](ZZ-download.md) une telle version adaptée de *ACES*, plus pratique dans les production d'animation.
+
+*![Schema Pipe ACES](img/aces-workflow.svg)*
 
 | Étape | Type | Espace colorimétrique / Format | Notes |
 | --- | --- | --- | --- |
@@ -120,8 +124,6 @@ En animation 2D, il est moins primordial d'utiliser un espace de travail au *gam
 
 Il faudra simplement bien utiliser le plus possible des fichiers *openEXR* tout le long de la chaîne pour être sûr de garder une qualité suffisante. Là encore, si pour des décors détaillés il est important de rester sur ce format et un espace linéaire à au moins *16 bpc*, dans le cas de l'animation si elle est moins détaillée ou utilise de simples aplats de couleurs, on pourra se rabattre sur des espaces plus courants *sRGB* et des formats *PNG* (avec *16 bpc* si possible) ou vectoriels.
 
-*![Schema Pipe 2D]()*
-
 | Étape | Type | Espace colorimétrique / Format | Notes |
 | --- | --- | --- | --- |
 | Toutes | Sélecteurs de couleurs | *sRGB* (celui de l'écran) | Il est toujours plus pratique, et plus sûr, de choisir ses couleurs dans l'espace de l'écran non linéaire. |
@@ -147,7 +149,3 @@ Une chaîne incluant de la vidéo pourra être très semblable à une chaîne de
 Simplement, il faudra être vigilant et importer les photos et vidéos en spécifiant le bon espace colorimétrique, celui de la caméra qui a capturé les images, dès leur importation dans le logiciel qui les utilise.
 
 *OCIO* et *ACES* contiennent une grande sélection d'espaces colorimétriques de divers modèles de caméra, et le plus simple est souvent donc d'utiliser une chaîne avec *ACES* pour la production, comme décrite plus haut.
-
-*![Schema Pipe Video]()*
-
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/05/30)

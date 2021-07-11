@@ -1,4 +1,0 @@
-# Ressources
-
-LUTs
-Images test
