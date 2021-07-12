@@ -58,6 +58,8 @@ These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
     The *Duduf After Effects Framework* to help you develop your *After Effects* scripts.
 - ***Duik API*** (*After Effects*): [duik.rxlab.io](http://duik.rxlab.io)  
     The reference for the developer version of *Duik*!
+- ***Ramses***: [ramses.rxlab.io](http://ramses.rxlab.io)  
+    The reference for developping and extending *Ramses*.
 - ***RxUI***: [rxui.rxlab.io](http://rxui.rxlab.io)  
     Guidelines and icon library for UI/UX design.
 
