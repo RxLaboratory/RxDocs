@@ -31,6 +31,7 @@ Voici une liste alphabétique (non exhaustive) des principales applications util
 |Modo|3D||
 |The Foundry Nuke|Compositing||
 |Adobe Photoshop|Dessin|Support partiel via des profils ICC|
+|Maxon Redshift|Moteur de rebdu||
 |Substance Designer|Textures||
 |Unreal Engine|Moteur temps réel||
 |V-Ray|Moteur de rendu|
