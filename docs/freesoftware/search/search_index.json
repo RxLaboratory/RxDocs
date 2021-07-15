@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"min_search_length":3,"prebuild_index":false,"separator":"[\\s\\-]+"},"docs":[{"location":"index.html","text":"","title":"Introduction"}]}
+{"config":{"lang":["en"],"prebuild_index":false,"separator":"[\\s\\-]+"},"docs":[{"location":"index.html","text":"","title":"Introduction"}]}

@@ -12,7 +12,8 @@ These are documents which will help you learn and know more about specific topic
     - Understanding [***openEXR*** compression](exr-en/index.html) methods.
     - Understanding [**Colors and Color Management**](colors/index.html) in the motion pictures industry.
     - Working with [**free software: the 100% free pipeline**](freesoftware/index.html) used at Rainbox (and other possibilities).
-    - The [Green Guide to transccoding](green-guide/index.html).
+    - The [**Green Guide to transccoding**](green-guide/index.html).
+    - The [**_RxOT_ Developper guide** on dev.rxlab.io](http://dev.rxlab.io)
 - **En Français**
     - Comprendre [les méthodes de compression en ***openEXR*** compression](exr-fr/index.html).
     - Comprendre les [**Couleurs et Color Management**](couleurs/index.html) dans la production audiovisuelle.
@@ -54,6 +55,10 @@ These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
 
 ## RxOT guides and reference for developers
 
+- ***RxOT Developper guide***: [dev.rxlab.io](http://dev.rxlab.io)  
+    All you need to know to code using our tools or contribute to existing tools, along with general tips, good practices and advices.
+- ***All our source code***: [source.rxlab.io](http://source.rxlab.io) or [git.rxlab.io](http://git.rxlab.io)  
+    All the code for all the tools to control them all!
 - ***DuAEF*** (*After Effects*): [duaef.rxlab.io](http://duaef.rxlab.io)  
     The *Duduf After Effects Framework* to help you develop your *After Effects* scripts.
 - ***Duik API*** (*After Effects*): [duik.rxlab.io](http://duik.rxlab.io)  

@@ -48,14 +48,17 @@ nav:
             - Ramses: http://ramses.rxlab.guide
             - RxLauncher: http://rxlauncher.rxlab.guide/
         - Dev Guides:
+            - RxOT Developer guide: http://dev.rxlab.io
             - DuAEF: http://duaef.rxlab.io
             - Duik: http://duik.rxlab.io
+            - Ramses: http://ramses.rxlab.io
             - RxUI: http://rxui.rxlab.io
     - English:
         - openEXR compression: exr-en/index.html
         - Color Management: colors/index.html
         - The 100% free pipeline: freesoftware/index.html
         - The Green Guide to transccoding: green-guide/index.html
+        - The RxOT Developper guide: http://dev.rxlab.io
     - Français:
         - Méthodes de compression openEXR: exr-fr/index.html
         - Gestion des couleurs: couleurs/index.html

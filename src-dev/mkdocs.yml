@@ -1,0 +1,47 @@
+site_name: RxOT Dev Guide
+site_url: https://dev.rxlab.io
+repo_url: https://github.com/RxLaboratory/RxDocs/
+edit_uri: edit/master/src-dev/docs/
+site_description: The Ramses comprehensive documentation
+site_author: Nicolas Dufresne and contributors
+copyright: 'Copyright © 2020 <a href="https://rainboxlagb.org">Rainbox Laboratory</a> and <a href="https://duduf.com">Nicolas Dufresne</a>'
+theme:
+    name: null
+    custom_dir: 'cinder'
+    colorscheme: zenburn
+extra:
+    collapse_toc: true
+markdown_extensions:
+    - smarty
+    - footnotes
+    - tables
+    - admonition
+    - fenced_code
+    - toc
+    - attr_list
+extra_css:
+    - style.css
+    - video.css
+extra_javascript:
+    - video.js
+    - meta.js
+    - collapser.js
+site_dir: ../docs/dev
+dev_addr: '127.0.0.1:8001'
+nav:
+    - RxOT dev guide: index.md
+    - RxLab:
+        - URLs!: urls.md
+    - Dev:
+        - Deploy apps for Linux: app-deployment-linux.md
+        - Deploy apps for Mac OS: app-deployment-mac.md
+        - Git tips: git.md
+        - Semantic versionning: software-versionning.md
+    - Contrib. guides:
+        - Duik for Ae release process: duik-release-process.md
+    - ...:
+        - All the RxLab documents: ../index.html
+        - Contribute to the doc: ../contribute.html
+        - Contact: https://rxlab.info
+        - Donate: https://donate.rxlab.info
+
