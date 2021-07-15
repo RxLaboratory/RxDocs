@@ -32,6 +32,9 @@ These are *all* our URLs.
     - aliases: rxlaboratory.info
 - **Chat with us**: [*__chat__.rxlab.info*](http://chat.rxlab.info)
 - **Support and donation**: [*__donate__.rxlab.info*](http://donate.rxlab.info)
+- **Video QuickTips**: [*__quicktips__.rxlab.info*](http://quicktips.rxlab.info)
+- **Tutorials**: [*__tuts__.rxlab.info*](http://tuts.rxlab.info)
+- **Talks**: [*__talks__.rxlab.info*](http://talks.rxlab.info)
 
 ## Documentation
 
