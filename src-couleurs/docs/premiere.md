@@ -6,13 +6,13 @@ Les options de gestion des couleurs sont assez limitées (pour ne pas dire inexi
 
 - **Il n'y a pas de réglage de l'interprétation des couleurs en entrée**, ce qui implique que tous les médias (autres que les compositions *After Effects*) doivent impérativement utiliser des espaces colorimétriques standards, et qu'un fichier *openEXR* sera toujours lu en tant que *RGB Linéaire* par exemple.
 - **Il n'y a pas d'espace de travail** configurable, ce qui n'est pas forcément nécessaire en montage, du moment qu'on ne fait pas trop d'effets.
-- **Il n'y a que très peu de choix** sur les possibilités en sortie, tout est automatique. En fait, la sortie se fait forcément via [*Adobe Media Encoder*](ame.md).
+- **Il n'y a que très peu de choix** sur les possibilités en sortie, tout est automatique. La sortie se fait forcément via [*Adobe Media Encoder*](ame.md).
 
 ## H.1 - Espace de sortie
 
 Pour la grande majorité des formats, aucun réglage n'est disponible.
 
-On retrouve, seulement pour l'encodage en *h.264* ou *h.265 / hevc* la possibilité d'utiliser le *Rec.2020*, si et seuleument si le profil *high10* du codec est sélectionné.
+On retrouve, seulement pour l'encodage en *h.264* ou *h.265 / hevc* la possibilité d'utiliser le *Rec.2020*, si et seulement si le profil *high10* du codec est sélectionné.
 
 ![](img/ame/h264.png)
 
