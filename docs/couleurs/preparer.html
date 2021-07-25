@@ -61,7 +61,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
+              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
             
         </div>
 
@@ -218,13 +218,13 @@
                         
                             
 <li >
-    <a href=".">H - Adobe Media Encoder</a>
+    <a href="premiere.html">H - Adobe Premiere et Media Encoder</a>
 </li>
 
                         
                             
 <li >
-    <a href=".">I - Adobe Premiere</a>
+    <a href=".">I - Adobe Photoshop</a>
 </li>
 
                         
@@ -473,11 +473,11 @@
                         
                     
                         
-                        <li class="second-level "><a href=".">H - Adobe Media Encoder</a></li>
+                        <li class="second-level "><a href="premiere.html">H - Adobe Premiere et Media Encoder</a></li>
                         
                     
                         
-                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        <li class="second-level "><a href=".">I - Adobe Photoshop</a></li>
                         
                     
                         
@@ -585,7 +585,7 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11" /></p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/25" /></p>
 <h1 id="iie-preparer-la-gestion-des-couleurs-dune-chaine-de-fabrication">II.E - Préparer la gestion des couleurs d&rsquo;une chaîne de fabrication<a class="headerlink" href="#iie-preparer-la-gestion-des-couleurs-dune-chaine-de-fabrication" title="Permanent link">&para;</a></h1>
 <p>Maintenant que l&rsquo;on connait les différents types d&rsquo;espaces colorimétriques et à quels moments de la fabrication ils entrent en jeu, voyons comment préparer une chaîne de fabrication complète permettant de gérer efficacement les couleurs de la conception à la livraison.</p>
 <p>La première étape est de lister tous les formats utilisés en entrée de la chaîne (vidéos ou images fournies et importées, images fabriquées) ainsi que tous les formats à livrer en fin de fabrication (vidéos et images finales).<br />
@@ -702,8 +702,14 @@ Suivant ces formats, et donc les espaces colorimétriques associés, nous pourro
 <p>Lors du rendu <em>openEXR</em>, les images sont linéaires et ne comportent pas d&rsquo;information d&rsquo;espace colorimétrique : il faudra ré-appliquer l&rsquo;espace <em>Filmic</em> dans le logiciel de compositing. Lors du rendu dans tout autre format, <em>Blender</em> effectue une conversion vers l&rsquo;espace par défaut du format (<em>sRGB</em> en <em>PNG</em> par exemple).</p>
 </div>
 <h4 id="e1ca-filmic-et-after-effects">E.1.c.a - Filmic et After Effects<a class="headerlink" href="#e1ca-filmic-et-after-effects" title="Permanent link">&para;</a></h4>
-<p>Pour le cas particulier d&rsquo;<em>After Effects</em>, où la mise en place d&rsquo;<em>OCIO</em> est laborieuse, il peut être plus simple d&rsquo;utiliser une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> de conversion <em>Filmic</em>&hellip; Nous fournissons <a href="ZZ-download.html">une déclinaison de cette <em>LUT</em> ici</a> (pour chaque variation de contraste de <em>Filmic</em> disponible). Il faudra alors choisir un autre espace de travail dans le projet <em>After Effects</em>, et utiliser un effet de conversion d&rsquo;espace depuis <em>RGB Linéaire</em> vers l&rsquo;espace du projet après l&rsquo;application de la <em>LUT</em>.</p>
-<p><em><img alt="Capture After Effects effets Filmic" src="" /></em><br />
+<p>Pour le cas particulier d&rsquo;<em>After Effects</em>, où la mise en place d&rsquo;<em>OCIO</em> est laborieuse, il peut être plus simple d&rsquo;utiliser une <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> de conversion <em>Filmic</em>&hellip; Nous fournissons <a href="ZZ-download.html">une déclinaison de cette <em>LUT</em> ici</a> (pour chaque variation de contraste de <em>Filmic</em> disponible).</p>
+<p>Dans le cas particulier d&rsquo;utilisation d&rsquo;une <em>LUT</em> dans un projet qui ne serait <em>pas</em> en <em>RGB Linéaire</em>, il faudra prendre soin de suivre ces différents points:</p>
+<ul>
+<li>Désactiver la gestion des couleurs dans l&rsquo;interprétation du métrage en entrée (c&rsquo;est la <em>LUT</em> qui fera la conversion sur les données brutes).</li>
+<li>Ajouter l&rsquo;effet <em>Apply LUT</em> (<em>Appliquer une table de correspondance des couleurs</em>) pour appliquer la <em>LUT</em> sur les calques.</li>
+<li>Ajouter un effet <em>Convertisseur de profil de couleurs</em> pour convertir depuis le <em>RGB Linéaire</em> qui résulte de la <em>LUT</em> vers l&rsquo;espace du projet.</li>
+</ul>
+<p><em><img alt="Capture After Effects effets Filmic" src="img/ae/filmic-without-ocio.png" /></em><br />
 <em>Exemple d&rsquo;effets à utiliser sur un fichier</em> openEXR Filmic <em>dans</em> After Effects <em>avec un espace de travail</em> ACEScg.</p>
 <h3 id="e1d-exports">E.1.d - Exports<a class="headerlink" href="#e1d-exports" title="Permanent link">&para;</a></h3>
 <p>Depuis le logiciel de compositing, on pourra alors simplement exporter des fichiers <em>openEXR</em> <strong><em>RGB Linéaire</em></strong> comme <em>master</em> ou <em>backup</em>, et directement des fichiers vidéo dans l&rsquo;espace colorimétrique standard qui leur correspond pour les exports finaux.</p>

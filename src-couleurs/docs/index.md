@@ -171,7 +171,10 @@ Puis nous aborderons l'aspect pratique, en expliquant dans des cas concrets quel
         - G.5.e - Entrée et espace de travail
         - G.5.f - Sortie
         - G.5.g - Affichage
-- H - Color management : Adobe Media Encoder
+- H - [Color management : Adobe Premiere et Media Encoder](premiere.md)
+    - H.1 - Espace de sortie
+    - H.2 - Appliquer une LUT
+    - H.3 - Espace de travail et affichage
 - I - Color management : Adobe Photoshop
 - J - [Gestion des couleurs : Autodesk Maya](maya.md)
 - K - [Gestion des couleurs : Blender](blender.md)

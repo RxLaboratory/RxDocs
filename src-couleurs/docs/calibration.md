@@ -1,3 +1,5 @@
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/25)
+
 # II.C - Calibration des écrans
 
 Première étape, primordiale, dans la mise en place de la gestion des couleurs dans une chaîne de fabrication d'images numériques : s'assurer de la fidélité des écrans, que les couleurs affichées soient les plus proches possibles de ce que contiennent les images. C'est le calibrage.
@@ -84,6 +86,9 @@ La luminosité peut aussi souvent être mesurée et réglée. Si l'on travaille 
 
 Si l'on utilise une sonde, le processus est en général assez simple : on branche la sonde à l'ordinateur et on la place à plat sur l'écran (ou face à l'écran du projecteur)[^3]. Un logiciel fourni avec la sonde (ou bien le très performant logiciel libre *DisplayCal[^4]*) effectue alors une série de mesure des couleurs affichées par l'écran. Le résultat de ces mesures permet de calculer le décalage entre les couleurs affichées et les couleurs attendues.
 
+!!! tip
+    Il va de soi qu'il est indispensable de désactiver au préalable toute option *d'affichage nocturne* de l'écran ou du système qui altère grandement les couleurs.
+
 *![Capture d'écran de DisplayCAL](img/displaycal.png)*
 *Paramètres de calibration de* DisplayCAL
 
@@ -108,6 +113,12 @@ Ensuite, en affichant les images, on retouche les réglages de l'écran. Il y a 
     L'intérêt est que la correction sera correctement appliquée dans toutes les situations ; mais il se peut que les paramètres soient ré-initialisés lors de mises à jour du système ou des pilotes.
 - Si le système d'exploitation le propose, effectuer les réglages via son utilitaire de couleur et enregistrer puis appliquer un profil colorimétrique à l'écran.  
     Il faut ensuite s'assurer lors de mises à jour que le système ne re-sélectionne pas un autre profil. L'intérêt de cette méthode est de pouvoir garder les réglages dans un fichier sauvegardable et transportable, le profil, en général au format `.icc`.
+
+!!! warning
+    Au moment où nous écrivons ces lignes, lors de nos tests sur *Mac OS*, l'outil de calibrage des écrans dans les paramètres du système a une méthode (et des résultats) médiocres (sauf peut être sur les écrans Mac) et ne propose pas de mires dignes de ce nom, il est à éviter. Mieux vaut calibrer directement avec de bonnes mires telles que celles que nous proposons, en utilisant les réglages de l'écran ou d'autres utilitaires.
+
+!!! tip
+    *Windows* propose un bon outil de calibrage des écrans *à l'oeil* avec des résultats plutôt bons. On le trouve via le *panneau de configuration*, dans *Gestion des couleurs* puis l'onglet *avancé*. Cliquez alors sur *Étalonnage de l'écran* et laissez vous guider ! C'est dans ces options de *Gestion des couleurs* qu'on peut appliquer et choisir les espaces et profils (résultat de calibration) des écrans.
 
 Il n'est pas conseillé de cumuler ces différentes méthodes, le résultat devenant vite assez aléatoire, et surtout difficile à retoucher ou corriger par la suite.
 
@@ -151,5 +162,3 @@ Sources et références
 [^4]:
     DisplayCAL est gratuit et disponible sur Linux, MacOS, Windows et prend en charge une large gamme de marques et modèles de sondes : https://displaycal.net/  
     Comme toujours, on vous encourage fortement à faire un don si vous décidez de l'utiliser !
-
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/17)

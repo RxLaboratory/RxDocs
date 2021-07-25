@@ -61,7 +61,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
+              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
             
         </div>
 
@@ -218,13 +218,13 @@
                         
                             
 <li >
-    <a href=".">H - Adobe Media Encoder</a>
+    <a href="premiere.html">H - Adobe Premiere et Media Encoder</a>
 </li>
 
                         
                             
 <li >
-    <a href=".">I - Adobe Premiere</a>
+    <a href=".">I - Adobe Photoshop</a>
 </li>
 
                         
@@ -473,11 +473,11 @@
                         
                     
                         
-                        <li class="second-level "><a href=".">H - Adobe Media Encoder</a></li>
+                        <li class="second-level "><a href="premiere.html">H - Adobe Premiere et Media Encoder</a></li>
                         
                     
                         
-                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        <li class="second-level "><a href=".">I - Adobe Photoshop</a></li>
                         
                     
                         
@@ -578,6 +578,7 @@
 </div></div>
         <div class="col-md-9" role="main">
 
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/25" /></p>
 <h1 id="iic-calibration-des-ecrans">II.C - Calibration des écrans<a class="headerlink" href="#iic-calibration-des-ecrans" title="Permanent link">&para;</a></h1>
 <p>Première étape, primordiale, dans la mise en place de la gestion des couleurs dans une chaîne de fabrication d&rsquo;images numériques : s&rsquo;assurer de la fidélité des écrans, que les couleurs affichées soient les plus proches possibles de ce que contiennent les images. C&rsquo;est le calibrage.</p>
 <p>Le calibrage, en améliorant grandement la fidélité des écrans, permet d&rsquo;avoir un affichage correct, voire très bon en utilisant une sonde, même sur des écrans de qualité moindre<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
@@ -658,6 +659,10 @@ Une sonde est en fait un capteur de lumière qui fonctionne en tandem avec l&rsq
 <h3 id="c3c-calibration-et-application-du-profil-colorimetrique">C.3.c - Calibration et application du profil colorimétrique<a class="headerlink" href="#c3c-calibration-et-application-du-profil-colorimetrique" title="Permanent link">&para;</a></h3>
 <h4 id="c3c1-calibration">C.3.c.1 - Calibration<a class="headerlink" href="#c3c1-calibration" title="Permanent link">&para;</a></h4>
 <p>Si l&rsquo;on utilise une sonde, le processus est en général assez simple : on branche la sonde à l&rsquo;ordinateur et on la place à plat sur l&rsquo;écran (ou face à l&rsquo;écran du projecteur)<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. Un logiciel fourni avec la sonde (ou bien le très performant logiciel libre <em>DisplayCal<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></em>) effectue alors une série de mesure des couleurs affichées par l&rsquo;écran. Le résultat de ces mesures permet de calculer le décalage entre les couleurs affichées et les couleurs attendues.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Il va de soi qu&rsquo;il est indispensable de désactiver au préalable toute option <em>d&rsquo;affichage nocturne</em> de l&rsquo;écran ou du système qui altère grandement les couleurs.</p>
+</div>
 <p><em><img alt="Capture d'écran de DisplayCAL" src="img/displaycal.png" /></em>
 <em>Paramètres de calibration de</em> DisplayCAL</p>
 <p>Si l&rsquo;on calibre à l&rsquo;œil, le principe est d&rsquo;afficher une série de <em>mires</em>, d&rsquo;images de référence, et d&rsquo;essayer d&rsquo;ajuster des réglages de l&rsquo;écran à la main pour s&rsquo;approcher de la description d&rsquo;une image de référence. Il est complètement impossible de régler correctement les <em>primaires<a href="ZZ-vocabulaire.html">*</a></em> et le <em>point blanc<a href="ZZ-vocabulaire.html">*</a></em> à l&rsquo;œil, mais on peut essayer de s&rsquo;en approcher en affichant différentes images. Par contre, la <em>luminosité<a href="ZZ-vocabulaire.html">*</a></em>, le <em>contraste<a href="ZZ-vocabulaire.html">*</a></em>, le <em>gama<a href="ZZ-vocabulaire.html">*</a></em> peuvent être relativement bien approchés grâce à des comparaisons de valeurs de gris entre elles (et beaucoup de patience).</p>
@@ -675,6 +680,14 @@ Une sonde est en fait un capteur de lumière qui fonctionne en tandem avec l&rsq
 <li>Si le système d&rsquo;exploitation le propose, effectuer les réglages via son utilitaire de couleur et enregistrer puis appliquer un profil colorimétrique à l&rsquo;écran.<br />
     Il faut ensuite s&rsquo;assurer lors de mises à jour que le système ne re-sélectionne pas un autre profil. L&rsquo;intérêt de cette méthode est de pouvoir garder les réglages dans un fichier sauvegardable et transportable, le profil, en général au format <code>.icc</code>.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Au moment où nous écrivons ces lignes, lors de nos tests sur <em>Mac OS</em>, l&rsquo;outil de calibrage des écrans dans les paramètres du système a une méthode (et des résultats) médiocres (sauf peut être sur les écrans Mac) et ne propose pas de mires dignes de ce nom, il est à éviter. Mieux vaut calibrer directement avec de bonnes mires telles que celles que nous proposons, en utilisant les réglages de l&rsquo;écran ou d&rsquo;autres utilitaires.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><em>Windows</em> propose un bon outil de calibrage des écrans <em>à l&rsquo;oeil</em> avec des résultats plutôt bons. On le trouve via le <em>panneau de configuration</em>, dans <em>Gestion des couleurs</em> puis l&rsquo;onglet <em>avancé</em>. Cliquez alors sur <em>Étalonnage de l&rsquo;écran</em> et laissez vous guider ! C&rsquo;est dans ces options de <em>Gestion des couleurs</em> qu&rsquo;on peut appliquer et choisir les espaces et profils (résultat de calibration) des écrans.</p>
+</div>
 <p>Il n&rsquo;est pas conseillé de cumuler ces différentes méthodes, le résultat devenant vite assez aléatoire, et surtout difficile à retoucher ou corriger par la suite.</p>
 <p><em><img alt="Capture d'écran des paramètres Nvidia" src="img/nvidia-controls.png" /></em><br />
 Exemple de paramètres via les réglages d&rsquo;une carte graphique <em>Nvidia</em> (sous <em>Linux</em>). Notez surtout ici le paramètres <em>color range</em>, à mettre sur <em>Full</em> si l&rsquo;écran est un écran d&rsquo;ordinateur, et <em>Limited</em> si c&rsquo;est un téléviseur.</p>
@@ -691,7 +704,6 @@ Choix des profils colorimétriques sous <em>Ubuntu Linux</em> dans la section <e
 <p>Une fois le calibrage terminé et le profil appliqué, on peut contrôler le résultat en affichant différentes mires (voir plus haut, <em>C.3.c.1 - Calibration</em> à l&rsquo;œil), et aussi vérifier la qualité de l&rsquo;écran après calibration. Notez que si vous calibrez avec une sonde mais que l&rsquo;affichage des mires n&rsquo;est pas parfait, c&rsquo;est probablement plus lié à la qualité de l&rsquo;écran qu&rsquo;à un défaut de calibrage.</p>
 <hr />
 <p>Sources et références</p>
-<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/04/17" /></p>
 <div class="footnote">
 <hr />
 <ol>

@@ -56,8 +56,8 @@ nav:
         - E - Préparer la chaîne de fabrication: preparer.md
         - F - Concevoir une chaîne de fabrication avec OCIO: ocio.md
         - G - Adobe After Effects: ae.md
-        - H - Adobe Media Encoder: .
-        - I - Adobe Premiere: .
+        - H - Adobe Premiere et Media Encoder: premiere.md
+        - I - Adobe Photoshop: .
         - J - Autodesk Maya: .
         - K - Blender: blender.md
         - L - Darktable: darktable.md

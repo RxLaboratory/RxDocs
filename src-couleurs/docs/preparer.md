@@ -1,4 +1,4 @@
-![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/25)
 
 # II.E - Préparer la gestion des couleurs d'une chaîne de fabrication
 
@@ -62,9 +62,15 @@ En cas de compositing dans une application tierce, le plus simple est d'utiliser
 
 #### E.1.c.a - Filmic et After Effects
 
-Pour le cas particulier d'*After Effects*, où la mise en place d'*OCIO* est laborieuse, il peut être plus simple d'utiliser une *LUT[\*](ZZ-vocabulaire.md)* de conversion *Filmic*... Nous fournissons [une déclinaison de cette *LUT* ici](ZZ-download.md) (pour chaque variation de contraste de *Filmic* disponible). Il faudra alors choisir un autre espace de travail dans le projet *After Effects*, et utiliser un effet de conversion d'espace depuis *RGB Linéaire* vers l'espace du projet après l'application de la *LUT*.
+Pour le cas particulier d'*After Effects*, où la mise en place d'*OCIO* est laborieuse, il peut être plus simple d'utiliser une *LUT[\*](ZZ-vocabulaire.md)* de conversion *Filmic*... Nous fournissons [une déclinaison de cette *LUT* ici](ZZ-download.md) (pour chaque variation de contraste de *Filmic* disponible).
 
-*![Capture After Effects effets Filmic]()*  
+Dans le cas particulier d'utilisation d'une *LUT* dans un projet qui ne serait *pas* en *RGB Linéaire*, il faudra prendre soin de suivre ces différents points:
+
+- Désactiver la gestion des couleurs dans l'interprétation du métrage en entrée (c'est la *LUT* qui fera la conversion sur les données brutes).
+- Ajouter l'effet *Apply LUT* (*Appliquer une table de correspondance des couleurs*) pour appliquer la *LUT* sur les calques.
+- Ajouter un effet *Convertisseur de profil de couleurs* pour convertir depuis le *RGB Linéaire* qui résulte de la *LUT* vers l'espace du projet.
+
+*![Capture After Effects effets Filmic](img/ae/filmic-without-ocio.png)*  
 *Exemple d'effets à utiliser sur un fichier* openEXR Filmic *dans* After Effects *avec un espace de travail* ACEScg.
 
 ### E.1.d - Exports
