@@ -28,6 +28,8 @@ These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
     Compile *Adobe ExtendScript* scripts.
 - ***DuCoPi***: [ducopi.rxlab.guide](http://ducopi.rxlab.guide/)  
     A handy color picker for all applications and systems.
+- ***DuGR***: [dugr.rxlab.guide](http://dugr.rxlab.guide/)  
+    Layer groups and isolation for *After Effects*.
 - ***Duik*** (*After Effects*): [duik.rxlab.guide](http://duik.rxlab.guide)  
     Rigging and animation tool set for *After Effects*.
 - ***Duik*** (*Blender*): [duik-blender.rxlab.guide](http://duik-blender.rxlab.guide)  
@@ -61,6 +63,8 @@ These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
     All the code for all the tools to control them all!
 - ***DuAEF*** (*After Effects*): [duaef.rxlab.io](http://duaef.rxlab.io)  
     The *Duduf After Effects Framework* to help you develop your *After Effects* scripts.
+- ***DuGR API***: [dugr.rxlab.io](http://dugr.rxlab.io/)  
+    Layer groups and isolation for *After Effects*.
 - ***Duik API*** (*After Effects*): [duik.rxlab.io](http://duik.rxlab.io)  
     The reference for the developer version of *Duik*!
 - ***Ramses***: [ramses.rxlab.io](http://ramses.rxlab.io)  

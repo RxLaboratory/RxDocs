@@ -35,6 +35,7 @@ nav:
             - DuBlast: http://dublast.rxlab.guide/
             - DuBuilder: http://dubuilder.rxlab.guide/
             - DuCoPi: http://ducopi.rxlab.guide/
+            - DuGR: http://dugr.rxlab.guide/
             - Duik (After Effects): http://duik.rxlab.guide
             - Duik (Blender): http://duik-blender.rxlab.guide
             - DuIO: http://duio.rxlab.guide
@@ -50,6 +51,7 @@ nav:
         - Dev Guides:
             - RxOT Developer guide: http://dev.rxlab.io
             - DuAEF: http://duaef.rxlab.io
+            - DuGR: http://dugr.rxlab.io
             - Duik: http://duik.rxlab.io
             - Ramses: http://ramses.rxlab.io
             - RxUI: http://rxui.rxlab.io
