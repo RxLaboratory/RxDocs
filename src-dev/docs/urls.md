@@ -13,6 +13,7 @@ These are *all* our URLs.
     - ***DuBlast*** (*Blender*): [_**dublast**.rxlab.dev_](http://dublast.rxlab.dev/)  
     - ***DuBuilder***: [_**dubuilder**.rxlab.dev_](http://dubuilder.rxlab.dev/)  
     - ***DuCoPi***: ducopi.rxlab.dev (available soon)
+    - ***DuGR*** (*After Effects*): [_**dugr**.rxlab.dev_](http://dugr.rxlab.dev)  
     - ***Duik*** (*After Effects*): [_**duik**.rxlab.dev_](http://duik.rxlab.dev)  
     - ***Duik*** (*Blender*): [_**duik-blender**.rxlab.dev_](http://duik-blender.rxlab.dev)  
     - ***DuIO*** (*After Effects*): [_**duio**.rxlab.dev_](http://duio.rxlab.dev)  
@@ -43,6 +44,7 @@ These are *all* our URLs.
 - ***DuBlast*** (*Blender*): [_**dublast**.rxlab.guide_](http://dublast.rxlab.guide/)  
 - ***DuBuilder***: [_**dubuilder**.rxlab.guide_](http://dubuilder.rxlab.guide/)  
 - ***DuCoPi***: [_**ducopi**.rxlab.guide_](http://ducopi.rxlab.guide/)  
+- ***DuGR*** (*After Effects*): [_**dugr**.rxlab.guide_](http://dugr.rxlab.guide)  
 - ***Duik*** (*After Effects*): [_**duik**.rxlab.guide_](http://duik.rxlab.guide)  
 - ***Duik*** (*Blender*): [_**duik-blender**.rxlab.guide_](http://duik-blender.rxlab.guide)  
 - ***DuIO*** (*After Effects*): [_**duio**.rxlab.guide_](http://duio.rxlab.guide)  
@@ -60,10 +62,11 @@ These are *all* our URLs.
 
 - **Main**: rxlab.io (available soon)
     - aliases: *rxlaboratory.io*
-- ***API for checking tool versions***: version.rxlab.io (available soon)
+- ***API for checking tool versions***: version.rxlab.io
 - ***RxOT Developper guide***: [_**dev**.rxlab.io_](http://dev.rxlab.io)  
 - ***All our source code***: [_**source**.rxlab.io_](http://source.rxlab.io) or [_**git**.rxlab.io_](http://git.rxlab.io)  
 - ***DuAEF*** (*After Effects*): [_**duaef**.rxlab.io_](http://duaef.rxlab.io)  
+- ***DuGR API*** (*After Effects*): [_**dugr**.rxlab.io_](http://dugr.rxlab.io)  
 - ***Duik API*** (*After Effects*): [_**duik**.rxlab.io_](http://duik.rxlab.io)  
 - ***Ramses***: [_**ramses**.rxlab.io_](http://ramses.rxlab.io)  
 - ***RxUI***: [_**rxui**.rxlab.io_](http://rxui.rxlab.io)  

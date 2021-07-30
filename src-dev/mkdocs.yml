@@ -32,11 +32,19 @@ nav:
     - RxOT dev guide: index.md
     - RxLab:
         - URLs!: urls.md
+        - Source code repos: http://source.rxlab.io
+        - RxUI: http://rxui.rxlab.io
     - Dev:
         - Deploy apps for Linux: app-deployment-linux.md
         - Deploy apps for Mac OS: app-deployment-mac.md
         - Git tips: git.md
         - Semantic versionning: software-versionning.md
+    - API:
+        - DuAEF: http://duaef.rxlab.io
+        - DuESF: http://duesf.rxlab.io
+        - DuGR: http://dugr.rxlab.io
+        - DuIK: http://duik.rxlab.io
+        - Ramses: http://ramses.rxlab.io
     - Contrib. guides:
         - Duik for Ae release process: duik-release-process.md
     - ...:
