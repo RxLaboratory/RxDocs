@@ -1,14 +1,17 @@
-site_name: RxDocs - Color management
-site_url: https://docs.rainboxlab.org/colors
-repo_url: https://github.com/Rainbox-dev/RxDocs/
-edit_uri: edit/master/src-docs/docs/colors/
-site_description: The RxDocuments - The guide to color management
+site_name: RxDocs - Color Management
+site_url: https://docs.rainboxlab.org/couleurs/
+repo_url: https://github.com/RxLaboratory/RxDocs/
+edit_uri: edit/master/src-couleurs/docs/
+site_description: The RxDocuments - Color management in audiovisual production.
 site_author: Nicolas Dufresne and contributors
 copyright: 'Copyright © 2020-2021 <a href="https://rainboxlagb.org">Rainbox Laboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors'
 use_directory_urls: false
 theme:
-    name: readthedocs
-    custom_dir: theme/
+    name: null
+    custom_dir: 'cinder'
+    colorscheme: zenburn
+extra:
+    collapse_toc: true
 markdown_extensions:
     - smarty
     - footnotes
@@ -25,13 +28,49 @@ extra_css:
 extra_javascript:
     - video.js
     - meta.js
-site_dir: ../docs/colors
+    - collapser.js
+site_dir: ../docs/couleurs
 dev_addr: '127.0.0.1:8001'
 nav:
-    - Color Management:
-        - Introduction: index.md
-    - All the RxLab documents: ../index.html
-    - Contribute to the doc: ../contribute.html
-    - Contact: https://rainboxlab.org/about/contact/
-    - Donate: https://rainboxlab.org/about/donate/
+    - Introduction: index.md
+    - Theory:
+        - A - What is color?: A-definition.md
+        - B - Small inventory and classification of colors: B-inventaire.md
+        - C - Perception of light and colors by the human eye: C-perception.md
+        - D - Color reproduction : D-reproduction.md
+        - E - About white values-temperature: E-temperature.md
+        - F - Objective representation of colors: F-representation.md
+        - G - From real life to digital: G-numerisation.md
+        - H - What is a color space?: H-espace-colo.md
+        - I - Selective list of color spaces: I-liste-espaces.md
+        - J - List of color space parameters: J-liste-params.md 
+        - K - Pixel formats: K-pix-format.md
+        - L - Transfer curves, linear space and gamma: L-transfert.md
+        - M - LUTs: M-LUT.md
+        - N - OCIO, ACES: N-ocio.md
+    - Application:
+        - A - Choosing your color spaces and formats: pratique.md
+        - B - A few standards for files: standards.md
+        - C - Screen calibration: calibration.md
+        - D - Soft-Proofing: epreuvage.md
+        - E - Setting up the production pipeline: preparer.md
+        - F - Designing a production pipeline with OCIO: ocio.md
+        - G - Adobe After Effects: ae.md
+        - H - Color management - Adobe Premiere et Media Encoder: premiere.md
+        - I - Adobe Premiere: .
+        - J - Autodesk Maya: .
+        - K - Blender: blender.md
+        - L - Darktable: darktable.md
+        - M - DuME: dume.md
+        - N - Krita: krita.md
+    - Appendixes:
+        - In a Nutshell-a quick summary of how to get it right: ZZ-bref.md
+        - Common Errors and Misunderstandings, Problem Solving: ZZ-erreurs.md
+        - Glossary: ZZ-vocabulaire.md
+        - Downloads and Other Resources: ZZ-download.md
+    - ...:
+        - All RxLab documents (in French): http://docs.rainboxlab.org
+        - Contribute: http://docs.rainboxlab.org/contribute.html
+        - Contact: https://rainboxlab.org/about/contact/
+        - Donate: https://rainboxlab.org/about/donate/
 
