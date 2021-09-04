@@ -17,7 +17,7 @@ These are *all* our URLs.
     - ***Duik*** (*After Effects*): [_**duik**.rxlab.dev_](http://duik.rxlab.dev)  
     - ***Duik*** (*Blender*): [_**duik-blender**.rxlab.dev_](http://duik-blender.rxlab.dev)  
     - ***DuIO*** (*After Effects*): [_**duio**.rxlab.dev_](http://duio.rxlab.dev)  
-    - ***DuME***: [_**dume**.rxlab.dev](http://dume.rxlab.dev)  
+    - ***DuME***: [_**dume**.rxlab.dev_](http://dume.rxlab.dev)  
     - ***DuRPresets*** (*Blender*): [_**durpresets**.rxlab.dev_](http://durpresets.rxlab.dev)  
     - ***DuSKA*** (*Blender*): [_**duska**.rxlab.dev_](http://duska.rxlab.dev)  
     - ***DuTranslator***: [_**dutranslator**.rxlab.dev_](http://dutranslator.rxlab.dev)  
@@ -60,10 +60,10 @@ These are *all* our URLs.
 
 ## Development
 
-- **Main**: rxlab.io (available soon)
+- **Main**: [***rxlab.io***](http://rxlab.io) (here)
     - aliases: *rxlaboratory.io*
 - ***API for checking tool versions***: version.rxlab.io
-- ***RxOT Developper guide***: [_**dev**.rxlab.io_](http://dev.rxlab.io)  
+- ***RxOT Developper guide***: [_**dev**.rxlab.io_](http://dev.rxlab.io) (here)  
 - ***All our source code***: [_**source**.rxlab.io_](http://source.rxlab.io) or [_**git**.rxlab.io_](http://git.rxlab.io)  
 - ***DuAEF*** (*After Effects*): [_**duaef**.rxlab.io_](http://duaef.rxlab.io)  
 - ***DuGR API*** (*After Effects*): [_**dugr**.rxlab.io_](http://dugr.rxlab.io)  

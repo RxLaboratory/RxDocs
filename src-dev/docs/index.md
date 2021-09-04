@@ -1,4 +1,4 @@
-![META](authors:Nicolas "Duduf" Dufresne;license:GNU-FDL;copyright:2021;updated:2021/07/15)
+![META](authors:Nicolas "Duduf" Dufresne;license:GNU-FDL;copyright:2021;updated:2021/09/04)
 
 # RxOT Developper guide
 
@@ -13,6 +13,18 @@ All you need to know in order to code using our tools or contribute to existing 
     - [Semantic versionning](software-versionning.md)
 - **Contribution guidelines**
     - [Duik for After Effects release process](duik-release-process.md)
+
+## Funding & Support
+
+<a href="#"><figure>
+  <img src="https://my.kde.org/media/badges/krita_badge_devfund_gold.png" width="100" />
+  <figcaption>Krita Fund Gold</figcaption>
+</figure></a>
+
+<a href="#"><figure>
+  <img src="https://static.fsf.org/nosvn/associate/crm/359059.png" />
+  <figcaption>Free Software Foundation</figcaption>
+</figure></a>
 
 ## License
 
