@@ -64,7 +64,7 @@ nav:
     - Français:
         - Méthodes de compression openEXR: exr-fr/index.html
         - Gestion des couleurs: couleurs/index.html
-        - Guide pédagogique: pedago/index.html
+        - Guide pédagogique: pedagogie/index.html
     - ...:
         - Contribute to the doc: contribute.md
         - Contact: https://rainboxlab.org/about/contact/
