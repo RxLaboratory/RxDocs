@@ -197,13 +197,13 @@
                         
                             
 <li >
-    <a href="../index.html">All the RxLab documents</a>
+    <a href="../../index.html">All the RxLab documents</a>
 </li>
 
                         
                             
 <li >
-    <a href="../contribute.html">Contribute to the doc</a>
+    <a href="../../contribute.html">Contribute to the doc</a>
 </li>
 
                         
@@ -259,7 +259,7 @@
         
         
             <li >
-                <a href="..">RxOT dev guide</a>
+                <a href="../..">RxOT dev guide</a>
             </li>
         
         
@@ -357,11 +357,11 @@
                 <ul class="collapsible-content ">
                     
                         
-                        <li class="second-level "><a href="../index.html">All the RxLab documents</a></li>
+                        <li class="second-level "><a href="../../index.html">All the RxLab documents</a></li>
                         
                     
                         
-                        <li class="second-level "><a href="../contribute.html">Contribute to the doc</a></li>
+                        <li class="second-level "><a href="../../contribute.html">Contribute to the doc</a></li>
                         
                     
                         
@@ -422,6 +422,7 @@
 ├── icon_512x512@2x.png
 └── icon_64x64.png
 </code></pre>
+
 <p>Run <code>iconutil -c icns name.iconset</code> which will generate the icon <code>name.icns</code></p>
 <h3 id="add-the-icon-to-the-build-with-qmake">Add the icon to the build with qmake</h3>
 <p>Add this line to the <code>.pro</code> file and run <code>qmake</code></p>
@@ -435,9 +436,10 @@
 <p>Add these to the <code>&lt;dict&gt;</code> in <code>Name.app/Info.plist</code></p>
 </li>
 </ol>
-<pre><code class="language-xml">&lt;key&gt;CFBundleIconFile&lt;/key&gt;
+<pre><code class="xml">&lt;key&gt;CFBundleIconFile&lt;/key&gt;
 &lt;string&gt;appIcon.icns&lt;/string&gt;
 </code></pre>
+
 <h2 id="deploy-with-qt-and-create-dmg">Deploy with Qt and create dmg</h2>
 <p>Let&rsquo;s assume the application has already been built and bundled (by Qt).</p>
 <p><code>path/to/Qt/bin/./macdeployqt path/to/AppName.app -dmg</code></p></div>

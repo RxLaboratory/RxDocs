@@ -17,6 +17,7 @@ These are documents which will help you learn and know more about specific topic
 - **En Français**
     - Comprendre [les méthodes de compression en ***openEXR*** compression](exr-fr/index.html).
     - Comprendre les [**Couleurs et Color Management**](couleurs/index.html) dans la production audiovisuelle.
+    - [**Guide pédagogique**](pedago/index.html) à l'usage des **enseignants et étudiants**.
 
 ## RxOT Comprehensive guides
 

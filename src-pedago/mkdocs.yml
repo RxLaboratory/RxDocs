@@ -1,0 +1,37 @@
+site_name: Guide pédagogique
+site_url: http://docs.rxlab.guide/pedagogie/
+repo_url: https://github.com/RxLaboratory/RxDocs/
+edit_uri: edit/master/src-pedago/docs/
+site_description: The RxDocuments - Guide pédagogique à l'usage des enseignants et étudiants.
+site_author: Nicolas Dufresne and contributors
+copyright: 'Copyright © 2021 <a href="https://rxlaboratory.org">Rxaboratory</a>, <a href="https://duduf.com">Nicolas Dufresne</a> and contributors'
+use_directory_urls: false
+theme:
+    name: null
+    custom_dir: 'cinder'
+    colorscheme: zenburn
+extra:
+    collapse_toc: true
+markdown_extensions:
+    - smarty
+    - footnotes
+    - tables
+    - admonition
+    - fenced_code
+    - attr_list
+extra_css:
+    - style.css
+    - video.css
+extra_javascript:
+    - video.js
+    - meta.js
+    - collapser.js
+site_dir: ../docs/pedagogie
+dev_addr: '127.0.0.1:8001'
+nav:
+    - Introduction: index.md
+    - ...:
+        - Tous les documents RxLab: http://docs.rxlab.guide
+        - Contribuer à la rédaction: http://docs.rxlab.guide/contribute.html
+        - Contact: http://contact.rxlab.info
+        - Dons: http://donate.rxlab.info

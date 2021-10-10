@@ -1,5 +1,5 @@
 site_name: RxDocs - Gestion des couleurs
-site_url: https://docs.rainboxlab.org/couleurs/
+site_url: http://docs.rxlab.guide/couleurs/
 repo_url: https://github.com/RxLaboratory/RxDocs/
 edit_uri: edit/master/src-couleurs/docs/
 site_description: The RxDocuments - Gestion des couleurs dans la production audiovisuelle.
@@ -73,5 +73,5 @@ nav:
         - Tous les documents RxLab: http://docs.rainboxlab.org
         - Contribuer à la rédaction: http://docs.rainboxlab.org/contribute.html
         - Contact: https://rainboxlab.org/about/contact/
-        - Donate: https://rainboxlab.org/about/donate/
+        - Dons: https://rainboxlab.org/about/donate/
 
