@@ -22,11 +22,13 @@ C'est la deuxième attitude qui est, scientifiquement parlant, la plus juste[^1]
 
 > Sauf cas particulier de troubles de l'apprentissage, tout le monde peut apprendre, pourvu qu'il y consacre un effort.[^1]
 
-## Les quatre fonctions cérébrales piliers de l'apprentissage
+## Quatre fonctions cérébrales et trois étapes de mémorisation
 
-### L'attention
+### L'attention et l'encodage de l'information
 
 > L'attention, la concentration, met en oeuvre un ensemble de circuits neuronaux qui amplifient l'information sur laquelle nous nous concentrons et décuplent la profondeur de l'apprentissage.[^1]
+
+L'attention favorise la première phase de la mémorisation, ***l'encodage***, en permettant un traitement de l'information en profondeur ; il faut comprendre l'information et pouvoir la mettre en relation avec ce que l'on sait déjà.
 
 De la part de l'eseignant, tout ce qui favorise l'attention des étudiants est bon à prendre : voix qui porte, motivation, énergie. Les variations de rythme, l'humour ou les anecdotes sont par exemple efficaces pour (re)capter l'attention des étudiants.
 
@@ -49,15 +51,27 @@ Dans le cas d'un enseignement technique, mais aussi théorique, les exercices et
 
 La répétition est tout aussi importante : il ne faut pas avoir peur de recommencer, encore et encore, c'est la manière naturelle qu'a le cerveau pour apprendre. Tous les musiciens le savent par exemple : c'est à force de répéter un morceau qu'on finit par le maîtriser (on n'a d'ailleurs pas peur en musique de confondre les mots *apprentissage*, *préparation* et *répétition*). Tant qu'un exercice n'est pas maîtrisé, il faut le répéter en corrigeant ses erreurs, qui ne sont pas toujours les mêmes. La correction d'une erreur peut en amener d'autres, il faut alors encore recommencer. Faire un exercice une seule fois pour conclure "*C'est bon je l'ai fait*" n'est pas efficace. Il faut faire et refaire ; chaque redite sera meilleure et gravera les notions et le savoir faire dans la mémoire cérébrale.
 
-### La consolidation
+### La consolidation et la récupération
 
 > Grâce à la répétition des notions, entrecoupées de périodes de sommeil, notre cerveau transfère ses acquis dans la mémoire à long terme, c'est la consolidation, qui permet d'automatiser les notions et de libérer les ressources intellectuelles pour d'autres objectifs.[^1]
 
-La consolidation est maximisée par l'effet d'espacement et la répition espacée des notions[^4] (voir ci-dessous le chapitre *Méthodologie*).
+C'est la répétition qui permet de consolider la mémorisation ; la ***consolidation*** est la deuxième phase de mémorisation.
+
+La consolidation est maximisée par l'effet d'espacement et la répition espacée des notions[^4] (voir ci-dessous le chapitre *Méthodologie*). Elle n'est efficace que si des périodes de sommeil de qualité ont lieu entre les répétitions.
 
 L'effet d'espacement est le phénomène selon lequel la mémorisation sur le long terme est supérieure quand une même durée d'apprentissage est espacée dans le temps, plutôt que concentrée en une seule session. La pratique de la répétition espacée est ainsi supérieure au bachotage pour un apprentissage sur le long terme.
 
+La multiplication des modes de reproduction (quiz, reformulation, questionnements, ...) fait aussi l'efficacité de la consolidation (voir ci dessous).
+
+Cette consolidation est aussi grandement favorisée et amplifiée par la ***récupération***, la troisième phase de la mémorisation. Le fait de chercher et faire appel à l'information, notamment en se testant, améliore la rétention de l'information à long terme.
+
 ## Les ennemis de l'apprentissage
+
+### Le manque de sommeil
+
+Le sommeil est un processus clef de la consolidation de l'apprentissage ; si les besoins de chacun varient, la grande majorité des adultes ne peut pas se passer d'un minimum de 7h de sommeil toutes les 24h au moins.
+
+Le manque de sommeil ou le mauvais sommeil, tout en ayant un impact négatif sur la consolidation, réduira aussi l'attention et l'engagement actif, et aura donc aussi un impact négatif dès la réception des information et l'encodage.
 
 ### L'ennui et la distraction
 
@@ -90,6 +104,12 @@ Des études montrent que l'effet d'espacement est important dans l'éducation et
 Cet espacement permet en outre de **mélanger les sujets**, et là aussi des études montrent que la mémorisation peut être meilleure dans ce cas[^3]. Il semble que le mélange des problèmes aide l'apprenant à apprendre à sélectionner plus facilement la solution d'un problème spécifique, alors que si les solutions sont enseignées de manière "triée" ou groupée, l'apprenant aura plus de difficultés à sélectionner le savoir utile dans une situation spécifique parmi tout ce qu'il a appris.
 
 Il apparait donc qu'il est plus efficace d'espacer l'enseignement et de l'alterner les sujets plutôt que de regrouper les enseignements; au niveau de l'organisation du planning, il est préférable d'avoir des cours réguliers mais espacés qui s'alternent, et au sein d'un cours en particulier, il est préférable d'alterner les notions plutôt que de les enseigner en bloc l'une après l'autre[^4].
+
+espacer progressivement ; de 24h à de plus en plus
+
+### Effet test
+
+le rappel et la récupération
 
 ## Alimentation
 
