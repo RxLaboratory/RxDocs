@@ -167,6 +167,12 @@
                         
                             
 <li >
+    <a href="http://dupsf.rxlab.io">DuPSF</a>
+</li>
+
+                        
+                            
+<li >
     <a href="http://ramses.rxlab.io">Ramses</a>
 </li>
 
@@ -259,7 +265,7 @@
         
         
             <li >
-                <a href="../..">RxOT dev guide</a>
+                <a href="../../.">RxOT dev guide</a>
             </li>
         
         
@@ -328,6 +334,10 @@
                     
                         
                         <li class="second-level "><a href="http://duik.rxlab.io">DuIK</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://dupsf.rxlab.io">DuPSF</a></li>
                         
                     
                         
@@ -469,7 +479,6 @@ virtual box for unbuntu 18.04
                |- apps
                   AppName.png
 </code></pre>
-
 <p>An empty folder structure is available in <code>RAINBOX/ADMIN/DEV/00 - Docs/LINUX/Build Deb Package/Example-Package-Folder</code></p>
 <h3 id="2-edit-the-usrshareapplicationsdesktop-file">2. Edit the <code>usr/share/applications/*.desktop</code> file.</h3>
 <p>Example:</p>
@@ -483,7 +492,6 @@ Icon=AppName
 MimeType=video/*;audio/*;image/*;
 Categories=AudioVideo;Audio;Video;AudioVideoEditing;
 </code></pre>
-
 <p><a href="https://specifications.freedesktop.org/menu-spec/latest/apa.html">The list of Main Categories is available here</a>, which can be completed by <a href="https://specifications.freedesktop.org/menu-spec/latest/apas02.html">the list of Additional Categories</a>.</p>
 <p>The mime type is optional. A <a href="https://www.lifewire.com/file-extensions-and-mime-types-3469109">list of mime types is available here</a>.</p>
 <h3 id="3-edit-the-usrsharedocappnamecopyright-file">3. Edit the <code>usr/share/doc/AppName/copyright</code> file</h3>
@@ -501,7 +509,6 @@ License: GPL-3+
  .
  On Debian systems, the full text of the GNU General Public License version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
 </code></pre>
-
 <h3 id="4-edit-the-debiancontrol-file">4. Edit the <code>DEBIAN/control</code> file.</h3>
 <p>Example:</p>
 <pre><code>Package: DuME
@@ -516,28 +523,25 @@ Installed-Size: 6900
 Description: A fast, easy-to-use and versatile media encoder.
 Homepage: https://rainboxlab.org/tools/dume/
 </code></pre>
-
 <p>The <code>section</code> can be one of: admin, cli-mono, comm, database, debug, devel, doc, editors, education, electronics, embedded, fonts, games, gnome, gnu-r, gnustep, graphics, hamradio, haskell, httpd, interpreters, introspection, java, javascript, kde, kernel, libdevel, libs, lisp, localization, mail, math, metapackages, misc, net, news, ocaml, oldlibs, otherosfs, perl, php, python, ruby, rust, science, shells, sound, tasks, tex, text, utils, vcs, video, web, x11, xfce, zope.<br />
 The additional section debian-installer contains special packages used by the installer and is not used for normal Debian packages.</p>
 <p><code>Installed-Size</code> should be the size of the <code>usr</code> folder in the package, in kB. The disk space is given as the integer value of the estimated installed size in bytes, divided by 1024 and rounded up.</p>
 <p>See <a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html">this page on debian.org</a> for more details.</p>
 <h3 id="5-generate-md5sums">5. Generate md5sums</h3>
 <p>Run this command from the root of the package folder:</p>
-<pre><code class="bash">find . -type f ! -regex '.*.hg.*' ! -regex '.*?debian-binary.*' ! -regex '.*?DEBIAN.*' -printf '%P ' | xargs md5sum &gt; DEBIAN/md5sums
+<pre><code class="language-bash">find . -type f ! -regex '.*.hg.*' ! -regex '.*?debian-binary.*' ! -regex '.*?DEBIAN.*' -printf '%P ' | xargs md5sum &gt; DEBIAN/md5sums
 </code></pre>
-
 <h3 id="6-build-deb-package">6. Build deb package</h3>
 <p>Run this command:</p>
-<pre><code class="bash">chmod 755 folder/DEBIAN
+<pre><code class="language-bash">chmod 755 folder/DEBIAN
 dpkg -b folder app-0.0.0-amd64.deb
 </code></pre>
-
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The <code>chmod</code> command won&rsquo;t work on NTFS file systems. Therefore, the <em>Deb</em> package can only be built on a linux file system.</p>
 <p>Here is a bash script to automate the last two steps:</p>
 </div>
-<pre><code class="sh">#!/bin/bash
+<pre><code class="language-sh">#!/bin/bash
 
 # usage: ./deploy-deb AppName
 # The deb folder must be named &quot;AppName-Deb&quot; and located next to the script
@@ -552,15 +556,13 @@ chmod 755 DEBIAN
 cd ..
 dpkg -b &quot;$1-Deb&quot; &quot;$1.deb&quot;
 </code></pre>
-
 <h2 id="appimage">AppImage</h2>
 <h3 id="1-create-the-file-and-folder-structure_1">1. Create the file and folder structure</h3>
 <p>This is the same as for Deb packages, except the DEBIAN control folder is not needed.</p>
 <h3 id="2-build-using-the-linuxdeployqt-utility">2. Build using the <code>linuxdeployqt</code> utility</h3>
 <p>Run this command using a <a href="https://github.com/probonopd/linuxdeployqt/releases"><code>linuxdeployqt</code></a> appImage. Replace <code>desktopFile</code> with the path to the desktop file inside the Deb package.</p>
-<pre><code class="bash">./linuxdeployqt-6-x86_64.AppImage desktopFile -unsupported-allow-new-glibc -always-overwrite -appimage -no-translations -qmake=/home/duduf/Qt/5.9.9/gcc_64/bin/qmake -extra-plugins=iconengines,platformthemes/libqgtk3.so
+<pre><code class="language-bash">./linuxdeployqt-6-x86_64.AppImage desktopFile -unsupported-allow-new-glibc -always-overwrite -appimage -no-translations -qmake=/home/duduf/Qt/5.9.9/gcc_64/bin/qmake -extra-plugins=iconengines,platformthemes/libqgtk3.so
 </code></pre>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Make sure the application has been built with a version of Qt with an available <code>qmake</code> bin, and it&rsquo;s the correct one in the command above.</p>

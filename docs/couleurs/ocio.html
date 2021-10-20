@@ -61,7 +61,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
+              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
             
         </div>
 
@@ -606,13 +606,12 @@
 <p>Nous expliquons ici seulement les différentes section qu&rsquo;un utilisateur courant peut être amené à modifier, mais toutes les sections peuvent être manipulées par les utilisateurs plus avancés. Il faut alors se référer à la documentation officielle de <a href="https://opencolorio.readthedocs.io/en/latest/guides/authoring/authoring.html"><em>OpenColorIO</em></a>.</p>
 <h3 id="f2a-metadonnees">F.2.a - Métadonnées<a class="headerlink" href="#f2a-metadonnees" title="Permanent link">&para;</a></h3>
 <p>Exemple :</p>
-<div class="codehilite"><pre><span></span><span class="nt">ocio_profile_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
-<span class="nt">search_path</span><span class="p">:</span> <span class="s">&quot;luts:filmic&quot;</span>
-<span class="nt">strictparsing</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="nt">luma</span><span class="p">:</span> <span class="p p-Indicator">[</span><span class="nv">0.2126</span><span class="p p-Indicator">,</span> <span class="nv">0.7152</span><span class="p p-Indicator">,</span> <span class="nv">0.0722</span><span class="p p-Indicator">]</span>
-<span class="nt">description</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">RRT version ut33</span>
-</pre></div>
-
+<pre class="codehilite"><code class="language-yaml">ocio_profile_version: 1
+search_path: &quot;luts:filmic&quot;
+strictparsing: true
+luma: [0.2126, 0.7152, 0.0722]
+description: RRT version ut33
+</code></pre>
 
 <p>Voici la description de quelques paramètres courants :</p>
 <ul>
@@ -625,43 +624,41 @@
 <h3 id="f2b-roles">F.2.b - Roles<a class="headerlink" href="#f2b-roles" title="Permanent link">&para;</a></h3>
 <p>La section <em>roles</em> est celle qu&rsquo;on modifiera le plus souvent ; c&rsquo;est celle qui définit comment sont utilisés les différents espaces colorimétriques disponibles, quels doivent être les espaces par défaut lors des différentes étapes de fabrication, etc.</p>
 <p>Exemple (commenté) de <em>Blender</em> :</p>
-<div class="codehilite"><pre><span></span><span class="nt">roles</span><span class="p">:</span>
-  <span class="nt">reference</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Linear</span>
-  <span class="c1"># Internal scene linear space</span>
-  <span class="nt">scene_linear</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Linear</span>
-  <span class="nt">rendering</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Linear</span>
-  <span class="c1"># Default color space for byte image</span>
-  <span class="nt">default_byte</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sRGB</span>
-  <span class="c1"># Default color space for float images</span>
-  <span class="nt">default_float</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Linear</span>
-  <span class="c1"># Default color space sequencer is working in</span>
-  <span class="nt">default_sequencer</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sRGB</span>
-  <span class="c1"># Color spaces for color picking and texture painting (not internally supported yet)</span>
-  <span class="nt">color_picking</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sRGB</span>
-  <span class="nt">texture_paint</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Raw</span>
-  <span class="c1"># Non-color data</span>
-  <span class="nt">data</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Non-Color</span>
-  <span class="c1"># CIE XYZ color space</span>
-  <span class="nt">XYZ</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">XYZ</span>
-</pre></div>
-
+<pre class="codehilite"><code class="language-yaml">roles:
+  reference: Linear
+  # Internal scene linear space
+  scene_linear: Linear
+  rendering: Linear
+  # Default color space for byte image
+  default_byte: sRGB
+  # Default color space for float images
+  default_float: Linear
+  # Default color space sequencer is working in
+  default_sequencer: sRGB
+  # Color spaces for color picking and texture painting (not internally supported yet)
+  color_picking: sRGB
+  texture_paint: Raw
+  # Non-color data
+  data: Non-Color
+  # CIE XYZ color space
+  XYZ: XYZ
+</code></pre>
 
 <p>Sur chaque ligne, on définit le role, puis l&rsquo;espace colorimétrique à utiliser. Le nom de l&rsquo;espace doit être celui d&rsquo;un des espaces disponibles dans la liste de la section suivante.</p>
 <p>Exemple de <em>ACES</em> : </p>
-<div class="codehilite"><pre><span></span><span class="nt">roles</span><span class="p">:</span>
-  <span class="nt">color_picking</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Output - sRGB</span>
-  <span class="nt">color_timing</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScc</span>
-  <span class="nt">compositing_linear</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScg</span>
-  <span class="nt">compositing_log</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Input - ADX - ADX10</span>
-  <span class="nt">data</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Utility - Raw</span>
-  <span class="nt">default</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACES2065-1</span>
-  <span class="nt">matte_paint</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Utility - sRGB - Texture</span>
-  <span class="nt">reference</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Utility - Raw</span>
-  <span class="nt">rendering</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScg</span>
-  <span class="nt">scene_linear</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScg</span>
-  <span class="nt">texture_paint</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ACES - ACEScc</span>
-</pre></div>
-
+<pre class="codehilite"><code class="language-yaml">roles:
+  color_picking: Output - sRGB
+  color_timing: ACES - ACEScc
+  compositing_linear: ACES - ACEScg
+  compositing_log: Input - ADX - ADX10
+  data: Utility - Raw
+  default: ACES - ACES2065-1
+  matte_paint: Utility - sRGB - Texture
+  reference: Utility - Raw
+  rendering: ACES - ACEScg
+  scene_linear: ACES - ACEScg
+  texture_paint: ACES - ACEScc
+</code></pre>
 
 <p>Voici quelques explications sur les différents roles (classement alphabétique) :</p>
 <ul>
@@ -685,43 +682,41 @@
 <p>La section <em>displays</em> définit la liste des différents affichages possible, par exemple les écrans de travail et projecteurs de salle de projection.</p>
 <p>Chaque &ldquo;display&rdquo;, affichage, a une liste de vues, &ldquo;views&rdquo;, possible, permettant de modifier l&rsquo;affichage, par exemple pour une validation technique, pour mieux discerner les couleurs sombres, etc.</p>
 <p>Exemple de <em>Blender</em> :</p>
-<div class="codehilite"><pre><span></span><span class="nt">displays</span><span class="p">:</span>
-  <span class="nt">sRGB</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Standard</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">sRGB</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Filmic</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Filmic sRGB</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Filmic Log</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Filmic Log</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">False Color</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">False Color</span><span class="p p-Indicator">}</span>
-  <span class="nt">XYZ</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Standard</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">XYZ</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">DCI</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">dci_xyz</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">}</span>
-  <span class="nt">None</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Standard</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">}</span>
-</pre></div>
-
+<pre class="codehilite"><code class="language-yaml">displays:
+  sRGB:
+    - !&lt;View&gt; {name: Standard, colorspace: sRGB}
+    - !&lt;View&gt; {name: Filmic, colorspace: Filmic sRGB}
+    - !&lt;View&gt; {name: Filmic Log, colorspace: Filmic Log}
+    - !&lt;View&gt; {name: Raw, colorspace: Raw}
+    - !&lt;View&gt; {name: False Color, colorspace: False Color}
+  XYZ:
+    - !&lt;View&gt; {name: Standard, colorspace: XYZ}
+    - !&lt;View&gt; {name: DCI, colorspace: dci_xyz}
+    - !&lt;View&gt; {name: Raw, colorspace: Raw}
+  None:
+    - !&lt;View&gt; {name: Standard, colorspace: Raw}
+</code></pre>
 
 <p>La vue standard affiche directement les valeurs <em>sRGB</em> ; <em>Filmic Log</em> peut être utilisé pour contrôler les zones sombres. <em>Raw</em> affiche les données sans conversion, pour par exemple effectuer une vérification technique d&rsquo;une couche de données (normal map, occlusion, etC.). <em>False Color</em> sert aussi aux vérifications techniques de l&rsquo;image.</p>
 <p>Exemple de <em>ACES</em> :</p>
-<div class="codehilite"><pre><span></span><span class="nt">displays</span><span class="p">:</span>
-  <span class="nt">ACES</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">sRGB</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - sRGB</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">DCDM</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - DCDM</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">DCDM P3 gamut clip</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - DCDM (P3 gamut clip)</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-D60</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-D60</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-D60 ST2084 1000 nits</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-D60 ST2084 (1000 nits)</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-D60 ST2084 2000 nits</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-D60 ST2084 (2000 nits)</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-D60 ST2084 4000 nits</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-D60 ST2084 (4000 nits)</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">P3-DCI</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - P3-DCI</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Rec.2020</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - Rec.2020</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Rec.2020 ST2084 1000 nits</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - Rec.2020 ST2084 (1000 nits)</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Rec.709</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - Rec.709</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Rec.709 D60 sim.</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - Rec.709 (D60 sim.)</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">sRGB D60 sim.</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Output - sRGB (D60 sim.)</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Raw</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Utility - Raw</span><span class="p p-Indicator">}</span>
-    <span class="p p-Indicator">-</span> <span class="kt">!&lt;View&gt;</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">Log</span><span class="p p-Indicator">,</span><span class="nt"> colorspace</span><span class="p">:</span> <span class="nv">Input - ADX - ADX10</span><span class="p p-Indicator">}</span>
-</pre></div>
-
+<pre class="codehilite"><code class="language-yaml">displays:
+  ACES:
+    - !&lt;View&gt; {name: sRGB, colorspace: Output - sRGB}
+    - !&lt;View&gt; {name: DCDM, colorspace: Output - DCDM}
+    - !&lt;View&gt; {name: DCDM P3 gamut clip, colorspace: Output - DCDM (P3 gamut clip)}
+    - !&lt;View&gt; {name: P3-D60, colorspace: Output - P3-D60}
+    - !&lt;View&gt; {name: P3-D60 ST2084 1000 nits, colorspace: Output - P3-D60 ST2084 (1000 nits)}
+    - !&lt;View&gt; {name: P3-D60 ST2084 2000 nits, colorspace: Output - P3-D60 ST2084 (2000 nits)}
+    - !&lt;View&gt; {name: P3-D60 ST2084 4000 nits, colorspace: Output - P3-D60 ST2084 (4000 nits)}
+    - !&lt;View&gt; {name: P3-DCI, colorspace: Output - P3-DCI}
+    - !&lt;View&gt; {name: Rec.2020, colorspace: Output - Rec.2020}
+    - !&lt;View&gt; {name: Rec.2020 ST2084 1000 nits, colorspace: Output - Rec.2020 ST2084 (1000 nits)}
+    - !&lt;View&gt; {name: Rec.709, colorspace: Output - Rec.709}
+    - !&lt;View&gt; {name: Rec.709 D60 sim., colorspace: Output - Rec.709 (D60 sim.)}
+    - !&lt;View&gt; {name: sRGB D60 sim., colorspace: Output - sRGB (D60 sim.)}
+    - !&lt;View&gt; {name: Raw, colorspace: Utility - Raw}
+    - !&lt;View&gt; {name: Log, colorspace: Input - ADX - ADX10}
+</code></pre>
 
 <p><em>ACES</em> ne trie pas par différents affichages, et tout est rassemblé sous un seul affichage.</p>
 <hr />

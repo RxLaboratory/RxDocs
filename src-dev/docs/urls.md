@@ -1,4 +1,4 @@
-![META](authors:Nicolas "Duduf" Dufresne;license:GNU-FDL;copyright:2021;updated:2021/07/15)
+![META](authors:Nicolas "Duduf" Dufresne;license:GNU-FDL;copyright:2021;updated:2021/10/20)
 
 # URLs!
 
@@ -68,6 +68,7 @@ These are *all* our URLs.
 - ***DuAEF*** (*After Effects*): [_**duaef**.rxlab.io_](http://duaef.rxlab.io)  
 - ***DuGR API*** (*After Effects*): [_**dugr**.rxlab.io_](http://dugr.rxlab.io)  
 - ***Duik API*** (*After Effects*): [_**duik**.rxlab.io_](http://duik.rxlab.io)  
+- ***DuPSF*** (*Photoshop*): [_**dupsf**.rxlab.io_](http://dupsf.rxlab.io)  
 - ***Ramses***: [_**ramses**.rxlab.io_](http://ramses.rxlab.io)  
 - ***RxUI***: [_**rxui**.rxlab.io_](http://rxui.rxlab.io)  
 

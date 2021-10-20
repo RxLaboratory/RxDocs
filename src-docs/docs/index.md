@@ -1,3 +1,5 @@
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/10/20)
+
 # RxLab Documents
 
 These pages assemble all documents, guides, and general documentation written at *RxLaboratory* or about the software which is developed and distributed by *RxLaboratory*.
@@ -64,13 +66,15 @@ These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
     All the code for all the tools to control them all!
 - ***DuAEF*** (*After Effects*): [duaef.rxlab.io](http://duaef.rxlab.io)  
     The *Duduf After Effects Framework* to help you develop your *After Effects* scripts.
+- ***DuESF*** (*Adobe ExtendScript*): [duesf.rxlab.io](http://duesf.rxlab.io)  
+    The *Duduf ExtendScript Framework* to help you develop all your *Adobe* scripts.
 - ***DuGR API***: [dugr.rxlab.io](http://dugr.rxlab.io/)  
     Layer groups and isolation for *After Effects*.
 - ***Duik API*** (*After Effects*): [duik.rxlab.io](http://duik.rxlab.io)  
     The reference for the developer version of *Duik*!
+- ***DuPSF*** (*Photoshop*): [dupsf.rxlab.io](http://dupsf.rxlab.io)  
+    The *Duduf Photoshop Framework* to help you develop your *Photoshop* scripts.
 - ***Ramses***: [ramses.rxlab.io](http://ramses.rxlab.io)  
     The reference for developping and extending *Ramses*.
 - ***RxUI***: [rxui.rxlab.io](http://rxui.rxlab.io)  
     Guidelines and icon library for UI/UX design.
-
-![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/13)
