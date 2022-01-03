@@ -8,6 +8,9 @@ These are *all* our URLs.
 
 - **Main site**: [***rxlaboratory.org***](http://rxlaboratory.org)
     - aliases: rxlab.tech, rxlaboratory.tech, rxlaboratory.net
+
+## Source code
+
 - **Tools / Products**: [***rxlab.dev***](http://rxlab.dev)
     - alias: *rxlaboratory.dev*
     - ***DuBlast*** (*Blender*): [_**dublast**.rxlab.dev_](http://dublast.rxlab.dev/)  
@@ -58,7 +61,7 @@ These are *all* our URLs.
 - ***Ramses***: [_**ramses**.rxlab.guide_](http://ramses.rxlab.guide)  
 - ***RxLauncher***: [_**rxlauncher**.rxlab.guide_](http://rxlauncher.rxlab.guide/)  
 
-## Development
+## APIs and dev tools
 
 - **Main**: [***rxlab.io***](http://rxlab.io) (here)
     - aliases: *rxlaboratory.io*
