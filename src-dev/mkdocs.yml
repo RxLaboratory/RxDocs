@@ -37,11 +37,13 @@ nav:
     - Dev:
         - Deploy apps for Linux: app-deployment-linux.md
         - Deploy apps for Mac OS: app-deployment-mac.md
+        - Fuzzy Logic: http://dufuzzylogic.rxlab.io
         - Git tips: git.md
         - Semantic versionning: software-versionning.md
     - API:
         - DuAEF: http://duaef.rxlab.io
         - DuESF: http://duesf.rxlab.io
+        - DuFuzzyLogic: http://dufuzzylogic.rxlab.io
         - DuGR: http://dugr.rxlab.io
         - DuIK: http://duik.rxlab.io
         - DuPSF: http://dupsf.rxlab.io

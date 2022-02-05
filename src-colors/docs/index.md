@@ -100,7 +100,7 @@ Then we will approach the practical aspect, explaining in concrete cases what ar
         - K.4.c - Practical implications
             - K.4.c.a - Encoding
             - K.4.c.b - Playback and display
-- L - [Transfer curves, linear space and gamma](L-transfert.md)
+- L - [Transfer curves, linear space and gamma](L-transfer.md)
 - M - [Les LUTs](M-LUT.md)
     - M.1 - Description
     - M.2 - Use
@@ -212,7 +212,7 @@ Then we will approach the practical aspect, explaining in concrete cases what ar
 ### III - Appendixes
 
 - [In a Nutshell: a quick summary of how to get it right](ZZ-bref.md)
-- [Common Errors and Misunderstandings, Problem Solving](ZZ-errors.md)
+- [Common Errors and Misunderstandings, Problem Solving](ZZ-erreurs.md)
 - [Glossary](ZZ-vocabulaire.md)
 - [French-English Dictionary](ZZ-english.md)
 - [Downloads and Other Resources](ZZ-download.md)

@@ -9,7 +9,7 @@ Each pixel is composed of different values of colors, they are the *channels[\*]
 In the case of *YUV*, there is sometimes *chrominance subsampling*, which reduces the amount of data to be stored with a minimal (and almost indiscernible) loss of quality.
 
 Finally, for each *channel*, you can choose the range and precision of the recorded values.
-
+f
 ## K.1 - RGB or YUV
 
 Any visible color can be represented by only two *complementary[\*](ZZ-vocabulaire.md)* colors and *primary[\*](ZZ-vocabulaire.md)* colors. As soon as three *primaries* are defined and fixed, by varying their proportions, one can obtain a wider range (a *gamut[\*](ZZ-vocabulaire.md)*) of visible colors, a useful (and sufficient) surface of visible colors. Thus, the majority of the devices of reproduction of the colors (screens, projectors...) use three primary colors.
@@ -159,7 +159,7 @@ By adding a byte for each layer, we greatly increase the number of available sha
 
 As a general rule, these 16 *bits* per *layer* provide the necessary precision for fine work on the image, but may still be insufficient in specific cases:
 
-- When using a *linear* workspace for an export intended for high-end TV and HDR or cinema (*cf.* chapter [L - Transfer curves](L-transfer. md)): the transition from *linear[\*](ZZ-vocabulaire.md)* to non-linear output space (the application of a *gamma[\*](ZZ-vocabulaire.md)*) "compresses" the dark values and "stretches" the lights. As a result of this calculation, *16 bpc* linear corresponds in quality to just *12 bpc* of the highest standards for television[^10] and cinema[^11].
+- When using a *linear* workspace for an export intended for high-end TV and HDR or cinema (*cf.* chapter [L - Transfer curves](L-transfer.md)): the transition from *linear[\*](ZZ-vocabulaire.md)* to non-linear output space (the application of a *gamma[\*](ZZ-vocabulaire.md)*) "compresses" the dark values and "stretches" the lights. As a result of this calculation, *16 bpc* linear corresponds in quality to just *12 bpc* of the highest standards for television[^10] and cinema[^11].
 - In case of complex and heavy work, even on a non-linear space, for television or cinema, it's possible to reach the limit of precision necessary for very fine color gradations.
 
 We can therefore further increase the depth of color in these cases.

@@ -45,7 +45,7 @@ nav:
         - I - Selective list of color spaces: I-liste-espaces.md
         - J - List of color space parameters: J-liste-params.md 
         - K - Pixel formats: K-pix-format.md
-        - L - Transfer curves, linear space and gamma: L-transfert.md
+        - L - Transfer curves, linear space and gamma: L-transfer.md
         - M - LUTs: M-LUT.md
         - N - OCIO, ACES: N-ocio.md
     - Application:

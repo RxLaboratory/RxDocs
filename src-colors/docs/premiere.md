@@ -2,7 +2,7 @@
 
 # II.G - Color Management : Adobe Premiere and Media Encoder
 
-The color management options are quite limited (almost non-existent) in *Adobe Premiere*, and it does not support *OCIO[\*](ZZ-Vocabulaire.md)*.
+The color management options are quite limited (almost non-existent) in *Adobe Premiere*, and it does not support *OCIO[\*](ZZ-vocabulaire.md)*.
 
 - **There is no setting to set up the input color interpretation**, which implies that all media (other than *After Effects* compositions) must use standard color spaces, and that an *openEXR* file will always be read as *RGB Linear* for example.
 - **There is no configurable workspace** which is not mandatory when editing, as long as you don't use too many effects.

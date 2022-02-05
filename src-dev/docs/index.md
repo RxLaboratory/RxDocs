@@ -9,6 +9,7 @@ All you need to know in order to code using our tools or contribute to existing 
 - **General development guides**
     - [Deploying applications for Linux](app-deployment-linux.md)
     - [Deploying applications for Mac OS](app-deployment-mac.md)
+    - [Fuzzy Logic](http://dufuzzylogic.rxlab.io)
     - [Git tips](git.md)
     - [Semantic versionning](software-versionning.md)
 - **Contribution guidelines**

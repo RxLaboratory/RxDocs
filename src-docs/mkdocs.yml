@@ -52,6 +52,7 @@ nav:
             - RxOT Developer guide: http://dev.rxlab.io
             - DuAEF: http://duaef.rxlab.io
             - DuGR: http://dugr.rxlab.io
+            - DuFuzzyLogic: http://dufuzzylogic.rxlab.io
             - Duik: http://duik.rxlab.io
             - DuPSF: http://dupsf.rxlab.io
             - Ramses: http://ramses.rxlab.io
@@ -59,6 +60,7 @@ nav:
     - English:
         - openEXR compression: exr-en/index.html
         - Color Management: colors/index.html
+        - Fuzzy Logic: http://dufuzzylogic.rxlab.io
         - The 100% free pipeline: freesoftware/index.html
         - The Green Guide to transccoding: green-guide/index.html
         - The RxOT Developper guide: http://dev.rxlab.io
@@ -68,6 +70,6 @@ nav:
         - Guide pédagogique: pedagogie/index.html
     - ...:
         - Contribute to the doc: contribute.md
-        - Contact: https://rainboxlab.org/about/contact/
-        - Donate: https://rainboxlab.org/about/donate/
+        - Contact: https://contact.rxlab.info
+        - Donate: https://donate.rxlab.info
 

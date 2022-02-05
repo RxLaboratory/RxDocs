@@ -13,6 +13,7 @@ These are documents which will help you learn and know more about specific topic
 - **In English**
     - Understanding [***openEXR*** compression](exr-en/index.html) methods.
     - Understanding [**Colors and Color Management**](colors/index.html) in the motion pictures industry.
+    - Introduction to [**Fuzzy Logic**](http://dufuzzylogic.rxlab.io)
     - Working with [**free software: the 100% free pipeline**](freesoftware/index.html) used at Rainbox (and other possibilities).
     - The [**Green Guide to transccoding**](green-guide/index.html).
     - The [**_RxOT_ Developper guide** on dev.rxlab.io](http://dev.rxlab.io)
@@ -68,6 +69,8 @@ These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
     The *Duduf After Effects Framework* to help you develop your *After Effects* scripts.
 - ***DuESF*** (*Adobe ExtendScript*): [duesf.rxlab.io](http://duesf.rxlab.io)  
     The *Duduf ExtendScript Framework* to help you develop all your *Adobe* scripts.
+- ***DuFuzzyLogic*** (JavaScript, Python): [dufuzzylogic.rxlab.io](http://dufuzzylogic.rxlab.io)  
+    A Fuzzy Logic implementation
 - ***DuGR API***: [dugr.rxlab.io](http://dugr.rxlab.io/)  
     Layer groups and isolation for *After Effects*.
 - ***Duik API*** (*After Effects*): [duik.rxlab.io](http://duik.rxlab.io)  
