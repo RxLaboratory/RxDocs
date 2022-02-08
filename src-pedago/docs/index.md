@@ -152,7 +152,7 @@ Enfin, les vitamines et en particulier la **vitamine A** sont très importantes 
 
 En guise de résumé, voici un cours fictif qui se déroule dans des conditions idéales.
 
-- Au début du cours, le groupe d'une dizaine d'étudiants (ou une classe de 20 divisée en deux) arrive. Ils ont bien dormi (au moins 7 ou 8 heures), ils n'ont pas faim, sont en forme et mangent tous équilibré.
+- Au début du cours, un petit groupe d'étudiants (plusieurs pour faciliter l'émulation, au moins deux ou trois, mais le moins possible pour faciliter le suivi individuel) arrive. Ils ont bien dormi (au moins 7 ou 8 heures), ils n'ont pas faim, sont en forme et mangent tous équilibré.
 
 *Un groupe relativement petit, le sommeil, l'alimentation, sont la base indispensable à une bonne transmission du savoir.*
 
