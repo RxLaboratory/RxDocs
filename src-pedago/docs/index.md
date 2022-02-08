@@ -1,4 +1,4 @@
-![META](authors:Nicolas "Duduf" Dufresne;medias:Creative Commons contributors, GNU contributors;license:CC-BY-NC-SA;copyright:2021;updated:2021/10/10)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Creative Commons contributors, GNU contributors;license:CC-BY-NC-SA;copyright:2021-2022;updated:2022/02/07)
 
 # Petit guide pédagogique à l'usage des enseignants et étudiants.
 
