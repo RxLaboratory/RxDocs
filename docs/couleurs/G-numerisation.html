@@ -61,7 +61,7 @@
             <!-- Main title -->
 
             
-              <a class="navbar-brand" href=".">RxDocs - Gestion des couleurs</a>
+              <a class="navbar-brand" href="index.html">RxDocs - Gestion des couleurs</a>
             
         </div>
 
@@ -592,8 +592,8 @@
 <p>Faisons un calcul simple : prenons une image numérique divisée en une &ldquo;grille&rdquo; de 1920 pixels en largeur et 1080 pixels en hauteur, la résolution d&rsquo;une vidéo numérique standard (en 2020). Cette image contient donc <code>1920 x 1080 = 2 073 600 pixels</code>.</p>
 <p>Dans sa forme la plus courante, un pixel est représenté par trois valeurs d&rsquo;intensité pour trois couleurs primaires. Chacune de ces trois valeurs est généralement stockée dans <em>au minimum</em> 8 bits. Chaque pixel a donc besoin de <code>3 x 8 = 24 bits</code><a href="ZZ-vocabulaire.html">*</a> ou encore <code>3 octets</code><a href="ZZ-vocabulaire.html">*</a> pour être stocké (un octet étant formé de 8 bits). Notons que ce choix d&rsquo;utiliser un octet (8 bits) par couleur primaire permet &ldquo;seulement&rdquo; 256 valeurs par primaire (<code>2^8</code>) soit un total d&rsquo;environ 65 millions (<code>256^3</code>) de nuances de couleurs différentes. Cela peut sembler beaucoup, mais c&rsquo;est encore loin des nuances que perçoit l&rsquo;œil humain, et du nombres de nuances utilisées au cinéma.</p>
 <p>Notre image a donc besoin de <code>2 073 600 pixels x 3 octets = 6 220 800 octets</code> pour être stockée. 6 Mo pour une seule image, ce qui signifie <em>au minimum</em> <code>6 x 24 = 144 Mo</code> pour une seconde de vidéo, ou encore <code>144 x 60 = 8 640 Mo</code> pour une minute, plus de <strong>8 Go</strong><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> !</p>
-<div class="codehilite"><pre><span></span><code><span class="err">1920 px x 1080 px x 3 primaires x 8 bits x 24 ips x 60 s ≈ 64 Gb/mn ≈ 8 Go/mn</span>
-</code></pre></div>
+<pre class="codehilite"><code>1920 px x 1080 px x 3 primaires x 8 bits x 24 ips x 60 s ≈ 64 Gb/mn ≈ 8 Go/mn
+</code></pre>
 
 <p>Cette taille représente un débit de données d&rsquo;environ 1.2 Gbps. À titre d&rsquo;exemple, un film sur un disque Blu-Ray est encodé avec un débit de 24 Mbps environ, ce qui signifie qu&rsquo;il faut diviser cette taille par 50 environ&hellip;</p>
 <h2 id="g2-les-espaces-colorimetriques">G.2 - Les Espaces colorimétriques<a class="headerlink" href="#g2-les-espaces-colorimetriques" title="Permanent link">&para;</a></h2>

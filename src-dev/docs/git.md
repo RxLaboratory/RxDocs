@@ -33,6 +33,26 @@ Locally
 git branch -d branchName
 ```
 
+## Submodules
+
+Init all submodules for the current repo
+
+```bash
+git submodule update --init --recursive
+```
+
+Update submodules
+
+```bash
+git submodule update
+```
+
+Pull all most recent versions of submodules
+
+```bash
+git submodule update --recursive --remote
+```
+
 ## Credentials
 
 En utilisant ces commandes, git demande un login. Il y a trois méthodes pour enregistrer le login, triées ici de la plus sécurisée à la moins sécurisée.

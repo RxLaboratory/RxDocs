@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://docs.rxlab.guide/pedagogie/index.html</loc>
-         <lastmod>2022-02-08</lastmod>
+         <lastmod>2022-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.rxlab.guide/pedagogie/changelog.html</loc>
-         <lastmod>2022-02-08</lastmod>
+         <lastmod>2022-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.rxlab.guide/pedagogie/credits.html</loc>
-         <lastmod>2022-02-08</lastmod>
+         <lastmod>2022-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.rxlab.guide/pedagogie/licenses/gfdl.html</loc>
-         <lastmod>2022-02-08</lastmod>
+         <lastmod>2022-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://docs.rxlab.guide/pedagogie/licenses/gnu-gpl.html</loc>
-         <lastmod>2022-02-08</lastmod>
+         <lastmod>2022-04-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -215,13 +215,13 @@
                         
                             
 <li >
-    <a href="../../index.html">All the RxLab documents</a>
+    <a href="../index.html">All the RxLab documents</a>
 </li>
 
                         
                             
 <li >
-    <a href="../../contribute.html">Contribute to the doc</a>
+    <a href="../contribute.html">Contribute to the doc</a>
 </li>
 
                         
@@ -277,7 +277,7 @@
         
         
             <li >
-                <a href="../..">RxOT dev guide</a>
+                <a href="..">RxOT dev guide</a>
             </li>
         
         
@@ -387,11 +387,11 @@
                 <ul class="collapsible-content ">
                     
                         
-                        <li class="second-level "><a href="../../index.html">All the RxLab documents</a></li>
+                        <li class="second-level "><a href="../index.html">All the RxLab documents</a></li>
                         
                     
                         
-                        <li class="second-level "><a href="../../contribute.html">Contribute to the doc</a></li>
+                        <li class="second-level "><a href="../contribute.html">Contribute to the doc</a></li>
                         
                     
                         
@@ -416,6 +416,8 @@
                 <li class="second-level"><a href="#commit-and-push">Commit and push</a></li>
                     
                 <li class="second-level"><a href="#deleting-branches">Deleting branches</a></li>
+                    
+                <li class="second-level"><a href="#submodules">Submodules</a></li>
                     
                 <li class="second-level"><a href="#credentials">Credentials</a></li>
                     
@@ -446,6 +448,16 @@ git push
 </code></pre>
 <p>Locally</p>
 <pre><code class="language-bash">git branch -d branchName
+</code></pre>
+<h2 id="submodules">Submodules</h2>
+<p>Init all submodules for the current repo</p>
+<pre><code class="language-bash">git submodule update --init --recursive
+</code></pre>
+<p>Update submodules</p>
+<pre><code class="language-bash">git submodule update
+</code></pre>
+<p>Pull all most recent versions of submodules</p>
+<pre><code class="language-bash">git submodule update --recursive --remote
 </code></pre>
 <h2 id="credentials">Credentials</h2>
 <p>En utilisant ces commandes, git demande un login. Il y a trois méthodes pour enregistrer le login, triées ici de la plus sécurisée à la moins sécurisée.</p>
