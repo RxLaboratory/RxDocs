@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dev.rxlab.io/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.rxlab.io/app-deployment-linux/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.rxlab.io/app-deployment-mac/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.rxlab.io/duik-release-process/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.rxlab.io/git/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.rxlab.io/software-versionning/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.rxlab.io/urls/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.rxlab.io/licenses/gfdl/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dev.rxlab.io/licenses/gnu-gpl/</loc>
-         <lastmod>2022-04-26</lastmod>
+         <lastmod>2022-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

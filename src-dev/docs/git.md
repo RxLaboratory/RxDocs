@@ -35,6 +35,12 @@ git branch -d branchName
 
 ## Submodules
 
+Add new submodule
+
+```bash
+git submodule add https://github.com/USER/PROJECT.git Folder
+```
+
 Init all submodules for the current repo
 
 ```bash
