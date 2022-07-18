@@ -6,25 +6,51 @@ All you need to know in order to code using our tools or contribute to existing 
 
 - **RxLaboratory information**
     - [URLs](urls.md)
+    - [Repositories and source code](http://source.rxlab.io)
+    - [RxUI](http://rxui.rxlab.io)
 - **General development guides**
     - [Deploying applications for Linux](app-deployment-linux.md)
     - [Deploying applications for Mac OS](app-deployment-mac.md)
     - [Fuzzy Logic](http://dufuzzylogic.rxlab.io)
     - [Git tips](git.md)
     - [Semantic versionning](software-versionning.md)
+- **RxLab APIs**
+    - [DuAEF](http://duaef.rxlab.io)
+    - [DuESF](http://duesf.rxlab.io)
+    - [DuFuzzyLogic](http://dufuzzylogic.rxlab.io)
+    - [DuGR](http://dugr.rxlab.io)
+    - [DuIK](http://duik.rxlab.io)
+    - [DuPSF](http://dupsf.rxlab.io)
+    - [Ramses](https://ramses.rxlab.guide/dev/)
+    - [RxAPI](https://rxapi.rxlab.io)
 - **Contribution guidelines**
     - [Duik for After Effects release process](duik-release-process.md)
 
 ## Funding & Support
 
-<a href="#"><figure>
+<a href="https://fund.blender.org/"><figure>
+  <img src="https://fund.blender.org/media/badges/badge_devfund_gold.png" width="100" />
+  <figcaption>Blender Fund Gold</figcaption>
+</figure></a>
+
+<a href="https://fund.krita.org/"><figure>
   <img src="https://my.kde.org/media/badges/krita_badge_devfund_gold.png" width="100" />
   <figcaption>Krita Fund Gold</figcaption>
 </figure></a>
 
-<a href="#"><figure>
+<a href="http://donate.rxlab.info"><figure>
+  <img src="https://rxlaboratory.org/wp-content/uploads/RxLab_Logo_Dev-Fund-100x100.png" width="100" />
+  <figcaption>RxLab Dev Fund</figcaption>
+</figure></a>
+
+<a href="http://fsf.org"><figure>
   <img src="https://static.fsf.org/nosvn/associate/crm/359059.png" />
   <figcaption>Free Software Foundation</figcaption>
+</figure></a>
+
+<a href="http://enercoop.fr"><figure>
+  <img src="https://images.prismic.io/enercoop-corpo-production/3d769d2d-b1f1-4dbb-b254-9779b2b2e629_logo.svg?auto=compress%2Cformat&w=1600.0" />
+  <figcaption>Member associate of Enercoop</figcaption>
 </figure></a>
 
 ## License
@@ -44,7 +70,7 @@ This program is free software; you can redistribute them and/or modify them unde
 
 ### Icons and other graphical elements
 
-All graphical elements, especially icons, are from [***RxUI***](http://rxui-docs.rainboxlab.org) by Nicolas Dufresne and [RxLaboratory](https://rainboxlab.org) are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+All graphical elements, especially icons, are from [***RxUI***](http://rxui.rxlab.io) by Nicolas Dufresne and [RxLaboratory](https://rxlaboratory.org) are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 <span style="font-size:0.75em;">**Copyright (C) 2021 Nicolas Dufresne and Contributors.**
 

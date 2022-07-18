@@ -47,7 +47,8 @@ nav:
         - DuGR: http://dugr.rxlab.io
         - DuIK: http://duik.rxlab.io
         - DuPSF: http://dupsf.rxlab.io
-        - Ramses: http://ramses.rxlab.io
+        - Ramses: https://ramses.rxlab.guide/dev/
+        - RxAPI: https://rxapi.rxlab.io
     - Contrib. guides:
         - Duik for Ae release process: duik-release-process.md
     - ...:
