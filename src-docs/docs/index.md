@@ -1,4 +1,4 @@
-![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/10/20)
+![META](authors:Nicolas "Duduf" Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2022/07/18)
 
 # RxLab Documents
 
@@ -79,5 +79,7 @@ These are the comprehensive guides for *RxOpenTools*, in alphabetical order.
     The *Duduf Photoshop Framework* to help you develop your *Photoshop* scripts.
 - ***Ramses***: [ramses.rxlab.io](http://ramses.rxlab.io)  
     The reference for developping and extending *Ramses*.
+- ***RxAPI***: [rxapi.rxlab.io](http://rxapi.rxlab.io)  
+    The reference for our general purpose REST API.
 - ***RxUI***: [rxui.rxlab.io](http://rxui.rxlab.io)  
     Guidelines and icon library for UI/UX design.
