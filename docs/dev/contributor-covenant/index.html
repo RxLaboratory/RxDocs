@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Rx Open Tools developer's guide">
     <meta name="author" content="Nicolas Dufresne and contributors">
-    <link rel="canonical" href="https://dev.rxlab.io/duik-release-process/">
+    <link rel="canonical" href="https://dev.rxlab.io/contributor-covenant/">
     <link rel="shortcut icon" href="../img/favicon.ico">
 
     
-    <title>Duik for Ae release process - RxOT Dev Guide</title>
+    <title>Contributor Covenant / Code of Conduct - RxOT Dev Guide</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -211,14 +211,14 @@
 
                         
                             
-<li >
-    <a href="../contributor-covenant/">Contributor Covenant / Code of Conduct</a>
+<li class="active">
+    <a href="./">Contributor Covenant / Code of Conduct</a>
 </li>
 
                         
                             
-<li class="active">
-    <a href="./">Duik for Ae release process</a>
+<li >
+    <a href="../duik-release-process/">Duik for Ae release process</a>
 </li>
 
                         
@@ -274,17 +274,17 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../contributor-covenant/">
+                        <a rel="prev" href="../contribute/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../duik-release-process/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-dev/docs/duik-release-process.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-dev/docs/contributor-covenant.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -406,11 +406,11 @@
                         
                     
                         
-                        <li class="second-level "><a href="../contributor-covenant/">Contributor Covenant / Code of Conduct</a></li>
+                        <li class="second-level active"><a href="./">Contributor Covenant / Code of Conduct</a></li>
                         
                     
                         
-                        <li class="second-level active"><a href="./">Duik for Ae release process</a></li>
+                        <li class="second-level "><a href="../duik-release-process/">Duik for Ae release process</a></li>
                         
                     
                 </ul>
@@ -450,14 +450,24 @@
     </div>
     <div class="bs-sidebar hidden-print affix well" role="complementary">
         <ul class="nav bs-sidenav">
-            <li class="first-level active"><a href="#release-process-de-duik">Release process de Duik</a></li>
-                <li class="second-level"><a href="#duaef">DuAEF</a></li>
+            <li class="first-level active"><a href="#contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</a></li>
+                <li class="second-level"><a href="#our-pledge">Our Pledge</a></li>
                     
-                <li class="second-level"><a href="#duaef-duik-doc">DuAEF Duik Doc</a></li>
+                <li class="second-level"><a href="#our-standards">Our Standards</a></li>
                     
-                <li class="second-level"><a href="#duaef-duik">DuAEF Duik</a></li>
+                <li class="second-level"><a href="#enforcement-responsibilities">Enforcement Responsibilities</a></li>
                     
-                <li class="second-level"><a href="#release">Release</a></li>
+                <li class="second-level"><a href="#scope">Scope</a></li>
+                    
+                <li class="second-level"><a href="#enforcement">Enforcement</a></li>
+                    
+                <li class="second-level"><a href="#enforcement-guidelines">Enforcement Guidelines</a></li>
+                    
+                    <li class="third-level"><a href="#1-correction">1. Correction</a></li>
+                    <li class="third-level"><a href="#2-warning">2. Warning</a></li>
+                    <li class="third-level"><a href="#3-temporary-ban">3. Temporary Ban</a></li>
+                    <li class="third-level"><a href="#4-permanent-ban">4. Permanent Ban</a></li>
+                <li class="second-level"><a href="#attribution">Attribution</a></li>
                     
         </ul>
     </div>
@@ -465,60 +475,112 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="release-process-de-duik">Release process de Duik</h1>
-<p>A new version of Duik is available, the doc is up-to-date, it&rsquo;s time to release it. Here&rsquo;s the process.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To run the scripts, you need DuBuilder in the PATH environment varialbe on Windows, or in a bin folder on Linux (like /usr/bin)</p>
-<p>You also need the <em>DuAEF</em>, <em>Duik_required</em> and <em>api</em> folder of Duik to be added in the &ldquo;Include paths&rdquo; inside DuBuilder.</p>
-</div>
-<h2 id="duaef">DuAEF</h2>
-<ol>
-<li>Windows: run <code>tools/build tools/build-duaef.bat</code>.</li>
-<li>Zip the contents of the output folder, move it out of the repo, then commit and push changes</li>
-<li>If dev has been made on a dev branch: Create a pull request and merge dev branch to master</li>
-<li>Create Github Release, attach the zip</li>
-</ol>
-<h2 id="duaef-duik-doc">DuAEF Duik Doc</h2>
-<ol>
-<li>Update version in mkdocs.yml</li>
-<li>Build Duik Doc</li>
-<li>Push to Github</li>
-</ol>
-<h2 id="duaef-duik">DuAEF Duik</h2>
-<ol>
-<li>Windows: run <code>tools/build tools/build-duik.bat</code>.</li>
-<li>Copy Duik doc to output (except CNAME)</li>
-<li>Zip the contents of the output/Duik and Duik_API folders, move them out of the repo, then commit and push changes</li>
-<li>If dev has been made on a dev branch: Create a pull request and merge dev branch to master</li>
-<li>Create Github Release, attach release Zip and API Zip</li>
-</ol>
-<h2 id="release">Release</h2>
-<ol>
-<li>Upload Release Zip to rainboxlab.org</li>
-<li>Update date and version on rainboxlab.org</li>
-<li>Update news on rainboxprod.net</li>
-<li>Announcement on Discord</li>
-</ol>
-<p>Here&rsquo;s a template for the text of the release:</p>
-<pre><code class="language-markdown">The sixteenth update of Duik Bassel.2 fixes the IK/FK switch used with extracted controllers.
-
-As always, it is strongly advised to update Duik as soon as you can.
-
-The detailed list of what’s new is available in the changelog [here](https://duik-docs.rainboxlab.org/duik-16-changelog.html).
-
-Here is the [comprehensive documentation for Duik](https://duik-docs.rainboxlab.org), and here is the [reference for the Duik API](https://duik-api.rainboxlab.org/).
-</code></pre></div>
+<h1 id="contributor-covenant-code-of-conduct">Contributor Covenant Code of Conduct</h1>
+<h2 id="our-pledge">Our Pledge</h2>
+<p>We as members, contributors, and leaders pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, caste, color, religion, or sexual
+identity and orientation.</p>
+<p>We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.</p>
+<h2 id="our-standards">Our Standards</h2>
+<p>Examples of behavior that contributes to a positive environment for our
+community include:</p>
+<ul>
+<li>Demonstrating empathy and kindness toward other people</li>
+<li>Being respectful of differing opinions, viewpoints, and experiences</li>
+<li>Giving and gracefully accepting constructive feedback</li>
+<li>Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience</li>
+<li>Focusing on what is best not just for us as individuals, but for the overall
+  community</li>
+</ul>
+<p>Examples of unacceptable behavior include:</p>
+<ul>
+<li>The use of sexualized language or imagery, and sexual attention or advances of
+  any kind</li>
+<li>Trolling, insulting or derogatory comments, and personal or political attacks</li>
+<li>Public or private harassment</li>
+<li>Publishing others&rsquo; private information, such as a physical or email address,
+  without their explicit permission</li>
+<li>Other conduct which could reasonably be considered inappropriate in a
+  professional setting</li>
+</ul>
+<h2 id="enforcement-responsibilities">Enforcement Responsibilities</h2>
+<p>Community leaders are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.</p>
+<p>Community leaders have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.</p>
+<h2 id="scope">Scope</h2>
+<p>This Code of Conduct applies within all community spaces, and also applies when
+an individual is officially representing the community in public spaces.
+Examples of representing our community include using an official e-mail address,
+posting via an official social media account, or acting as an appointed
+representative at an online or offline event.</p>
+<h2 id="enforcement">Enforcement</h2>
+<p>Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the community leaders responsible for enforcement at
+[INSERT CONTACT METHOD].
+All complaints will be reviewed and investigated promptly and fairly.</p>
+<p>All community leaders are obligated to respect the privacy and security of the
+reporter of any incident.</p>
+<h2 id="enforcement-guidelines">Enforcement Guidelines</h2>
+<p>Community leaders will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:</p>
+<h3 id="1-correction">1. Correction</h3>
+<p><strong>Community Impact</strong>: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.</p>
+<p><strong>Consequence</strong>: A private, written warning from community leaders, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.</p>
+<h3 id="2-warning">2. Warning</h3>
+<p><strong>Community Impact</strong>: A violation through a single incident or series of
+actions.</p>
+<p><strong>Consequence</strong>: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or permanent
+ban.</p>
+<h3 id="3-temporary-ban">3. Temporary Ban</h3>
+<p><strong>Community Impact</strong>: A serious violation of community standards, including
+sustained inappropriate behavior.</p>
+<p><strong>Consequence</strong>: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.</p>
+<h3 id="4-permanent-ban">4. Permanent Ban</h3>
+<p><strong>Community Impact</strong>: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior, harassment of an
+individual, or aggression toward or disparagement of classes of individuals.</p>
+<p><strong>Consequence</strong>: A permanent ban from any sort of public interaction within the
+community.</p>
+<h2 id="attribution">Attribution</h2>
+<p>This Code of Conduct is adapted from the <a href="https://www.contributor-covenant.org">Contributor Covenant</a>,
+version 2.1, available at
+<a href="https://www.contributor-covenant.org/version/2/1/code_of_conduct.html">https://www.contributor-covenant.org/version/2/1/code_of_conduct.html</a>.</p>
+<p>Community Impact Guidelines were inspired by
+<a href="https://github.com/mozilla/diversity">Mozilla&rsquo;s code of conduct enforcement ladder</a>.</p>
+<p>For answers to common questions about this code of conduct, see the FAQ at
+<a href="https://www.contributor-covenant.org/faq">https://www.contributor-covenant.org/faq</a>. Translations are available at
+<a href="https://www.contributor-covenant.org/translations">https://www.contributor-covenant.org/translations</a>.</p></div>
         
             <div class="nav-footer">
             <ul>
                 <li class="nav-footer-prev">
-                    <a rel="prev" href="../contributor-covenant/">
+                    <a rel="prev" href="../contribute/">
                         <i class="fas fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li class="disabled nav-footer-next">
-                    <a rel="next" >
+                <li class="nav-footer-next">
+                    <a rel="next" href="../duik-release-process/">
                         Next <i class="fas fa-arrow-right"></i>
                     </a>
                 </li>

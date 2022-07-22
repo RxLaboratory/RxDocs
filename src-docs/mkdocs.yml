@@ -53,11 +53,12 @@ nav:
             - Source code: http://source.rxlab.io
             - DuAEF: http://duaef.rxlab.io
             - DuESF: http://duesf.rxlab.io
-            - DuGR: http://dugr.rxlab.io
             - DuFuzzyLogic: http://dufuzzylogic.rxlab.io
+            - DuGR: http://dugr.rxlab.io
             - Duik: http://duik.rxlab.io
             - DuPSF: http://dupsf.rxlab.io
             - Ramses: http://ramses.rxlab.io
+            - RxAPI: http://rxapi.rxlab.io
             - RxUI: http://rxui.rxlab.io
     - English:
         - openEXR compression: exr-en/index.html

@@ -1,8 +1,35 @@
-![META](authors:Nicolas "Duduf" Dufresne;license:GNU-FDL;copyright:2021;updated:2022/07/18)
+![META](authors:Nicolas "Duduf" Dufresne;license:GNU-FDL;copyright:2021;updated:2022/07/22)
 
-# RxOT Developper guide
+# The Rx Open Tools Developer guide
 
 All you need to know in order to code using our tools or contribute to existing tools, along with general tips, good practices and advices.
+
+## Contribute
+
+We always welcome new contributors! There's a lot to do, not only writing some **code**, but also contributing to the **documentation** and **guides**, **tutorials**, **translations**, **bug reports**, **feature request**, **communication** and public relations... And of course we're always in need for [**donations**](http://donate.rxlab.info) too (unfortunately...).
+
+If you'd like to give a hand to improve our tools and try to make the world better too, head to our [**contributor's guide**](contribute.md).
+
+► [**The Contributor's Guide**](contribute.md)
+
+► [**Donate**](http://donate.rxlab.info)
+
+► [![](https://rxlaboratory.org/wp-content/uploads/RxLab_Logo_Dev-Fund-100x100.png){style="width:24px;"} **Become a member**](http://membership.rxlab.info)
+
+## Use or extend Rx Open Tools
+
+All the RxOT are open source, and most of them come with an Application Programming Interface (**API**) to help you integrate them into your own tools and pipeline. These API are all **documented**, and available here.
+
+- [***DuAEF***](http://duaef.rxlab.io): The Duduf After Effects Framework
+- [***DuESF***](http://duesf.rxlab.io): The Duduf ExtendScript Framework
+- [***DuFuzzyLogic***](http://dufuzzylogic.rxlab.io): Fuzzy Logics
+- [***DuGR***](http://dugr.rxlab.io): Group layers in After Effects
+- [***DuIK***](http://duik.rxlab.io): Rigging and animation tool set for After Effects
+- [***DuPSF***](http://dupsf.rxlab.io): The Duduf Photoshop Framework
+- [***Ramses***](https://ramses.rxlab.guide/dev/): The Rx Asset Management System
+- [***RxAPI***](https://rxapi.rxlab.io): The Rx API for accessiong Rx open data
+
+## Other resources
 
 - **RxLaboratory information**
     - [URLs](urls.md)
@@ -14,44 +41,37 @@ All you need to know in order to code using our tools or contribute to existing 
     - [Fuzzy Logic](http://dufuzzylogic.rxlab.io)
     - [Git tips](git.md)
     - [Semantic versionning](software-versionning.md)
-- **RxLab APIs**
-    - [DuAEF](http://duaef.rxlab.io)
-    - [DuESF](http://duesf.rxlab.io)
-    - [DuFuzzyLogic](http://dufuzzylogic.rxlab.io)
-    - [DuGR](http://dugr.rxlab.io)
-    - [DuIK](http://duik.rxlab.io)
-    - [DuPSF](http://dupsf.rxlab.io)
-    - [Ramses](https://ramses.rxlab.guide/dev/)
-    - [RxAPI](https://rxapi.rxlab.io)
-- **Contribution guidelines**
-    - [Duik for After Effects release process](duik-release-process.md)
 
 ## Funding & Support
 
-<a href="https://fund.blender.org/"><figure>
+<div class="columns">
+
+<a href="https://fund.blender.org/" class="column"><figure>
   <img src="https://fund.blender.org/media/badges/badge_devfund_gold.png" width="100" />
   <figcaption>Blender Fund Gold</figcaption>
 </figure></a>
 
-<a href="https://fund.krita.org/"><figure>
+<a href="https://fund.krita.org/" class="column"><figure>
   <img src="https://my.kde.org/media/badges/krita_badge_devfund_gold.png" width="100" />
   <figcaption>Krita Fund Gold</figcaption>
 </figure></a>
 
-<a href="http://donate.rxlab.info"><figure>
+<a href="http://donate.rxlab.info" class="column"><figure>
   <img src="https://rxlaboratory.org/wp-content/uploads/RxLab_Logo_Dev-Fund-100x100.png" width="100" />
   <figcaption>RxLab Dev Fund</figcaption>
 </figure></a>
 
-<a href="http://fsf.org"><figure>
+<a href="http://fsf.org" class="column"><figure>
   <img src="https://static.fsf.org/nosvn/associate/crm/359059.png" />
   <figcaption>Free Software Foundation</figcaption>
 </figure></a>
 
-<a href="http://enercoop.fr"><figure>
+<a href="http://enercoop.fr" class="column"><figure>
   <img src="https://images.prismic.io/enercoop-corpo-production/3d769d2d-b1f1-4dbb-b254-9779b2b2e629_logo.svg?auto=compress%2Cformat&w=1600.0" />
   <figcaption>Member associate of Enercoop</figcaption>
 </figure></a>
+
+</div>
 
 ## License
 

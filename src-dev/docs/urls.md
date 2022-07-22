@@ -1,4 +1,4 @@
-![META](authors:Nicolas "Duduf" Dufresne;license:GNU-FDL;copyright:2021;updated:2021/10/20)
+![META](authors:Nicolas "Duduf" Dufresne;license:GNU-FDL;copyright:2021;updated:2022/07/22)
 
 # URLs!
 
@@ -36,6 +36,7 @@ These are *all* our URLs.
     - aliases: rxlaboratory.info
 - **Chat with us**: [*__chat__.rxlab.info*](http://chat.rxlab.info)
 - **Support and donation**: [*__donate__.rxlab.info*](http://donate.rxlab.info)
+- **Membership and early access**: [*__membership__.rxlab.info*](http://membership.rxlab.info)
 - **Video QuickTips**: [*__quicktips__.rxlab.info*](http://quicktips.rxlab.info)
 - **Tutorials**: [*__tuts__.rxlab.info*](http://tuts.rxlab.info)
 - **Talks**: [*__talks__.rxlab.info*](http://talks.rxlab.info)
@@ -65,8 +66,7 @@ These are *all* our URLs.
 
 - **Main**: [***rxlab.io***](http://rxlab.io) (here)
     - aliases: *rxlaboratory.io*
-- ***API for checking tool versions***: version.rxlab.io
-- ***RxOT Developper guide***: [_**dev**.rxlab.io_](http://dev.rxlab.io) (here)  
+- ***API for checking tool versions***: api.rxlab.io
 - ***All our source code***: [_**source**.rxlab.io_](http://source.rxlab.io) or [_**git**.rxlab.io_](http://git.rxlab.io)  
 - ***DuAEF*** (*After Effects*): [_**duaef**.rxlab.io_](http://duaef.rxlab.io)  
 - ***DuGR API*** (*After Effects*): [_**dugr**.rxlab.io_](http://dugr.rxlab.io)  

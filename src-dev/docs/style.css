@@ -45,6 +45,16 @@ figure {
     margin-top: 25px;
 }
 
+.columns {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .admonition{
     margin-top: 25px;
     margin-bottom: 25px;
