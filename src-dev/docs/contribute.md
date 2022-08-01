@@ -125,17 +125,25 @@ The best would be that any user could use the tools in the language of its choic
 
 But any translation in any language is welcome!
 
-Technically, to translate the RxOT we use our own application called [DuTranslator](https://rxlaboratory.org/tools/dutranslator/). It is available on Mac OS, Windows and Linux. Translation files are [*JSON*](https://en.wikipedia.org/wiki/JSON) files, which can also be easily edited with any text editor application.
-
-To edit or add a translation to a tool, you just have to grab or generate one of these translation files for the given tools. In most cases you'll find them on the corresponding [Github repository](http://source.rxlab.io). If you don't find it, or if the tool is not translated in any language yet, just [contact us](http://contact.rxlab.info) or join us on [Discord](http://chat.rxlab.info) so we can provide it. Once you've got the file to edit, you can start translating using [DuTranslator](https://rxlaboratory.org/tools/dutranslator/) or directly editing the file. And as soon as you've finished, post it on [Github](http://source.rxlab.io) (via a pull request, or by opening a new issue and posting it there) or on our [Discord](http://chat.rxlab.info) server. We'll review it and include it in the next version of the tool.
+Technically, to translate all the Rx Open Tools, no matter the platform or programming language, we use open [PO files](https://en.wikipedia.org/wiki/Gettext). To edit these translations, we use the online collaborative platform [*Crowdin*](https://crowdin.com/profile/duduf), but we also recommend using free apps like [*PoEdit*](https://poedit.net/) or [*Virtaal*](https://virtaal.translatehouse.org/) if you prefer to download the files and work offline. These files can also be easily edited with any text editor application.
 
 When you decide to help to translate one of the Rx Open Tools, it's best to first join us on our [Discord server](http://chat.rxlab.info) so we can help you, and you can exchange with other translators in your language or other languages.
+
+#### Via *Crowdin*
+
+The easiest way to help translate the tools is to create a free account on [Crowdin](https://crowdin.com/) and start contributing to the project of your choice. [The list of RxOT is here](https://crowdin.com/profile/duduf). If you don't find the project you're willing to translate, that means we're still in the process of preparing the translation files, or it's not planned for translating yet. In any case, don't hesitate to [contact us](http://contact.rxlab.info) or join us on our [chat server](http://chat.rxlab.info) to ask for it!
+
+If the language you're willing to translate to is not listed yet, just ask us and we'll add it right away!
+
+#### Via an application
+
+If you prefer to translate the tools using an application, you'll first have to download the translation files to edit them. You'll find them either on the corresponding [Github repository](http://git.rxlab.io) or [Crowdin project](https://crowdin.com/profile/duduf). First, create a free account on the platform, then download the files. Once you're finished, you'll just have to send them back (post them on our [Discord server](http://chat.rxlab.io), attach them to an issue on [Github](http://git.rxlab.io), create a [pull request](http://git.rxlab.io), or upload them to [Crowdin](https://crowdin.com/profile/duduf), your choice!).
 
 ► [**Chat with us on Discord**](http://chat.rxlab.info)
 
 ► [**RxOT Repositories on Github**](http://source.rxlab.io)
 
-► [**Download DuTranslator**](https://rxlaboratory.org/tools/dutranslator/)
+► [**RxOT Projects on Crowdin**](https://crowdin.com/profile/duduf)
 
 ### Bug reports and feature request
 
