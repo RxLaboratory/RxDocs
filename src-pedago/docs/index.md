@@ -1,8 +1,8 @@
-![META](authors:Nicolas "Duduf" Dufresne;medias:Creative Commons contributors, GNU contributors;license:CC-BY-NC-SA;copyright:2021-2022;updated:2022/02/07)
+![META](authors:Nicolas "Duduf" Dufresne;medias:Creative Commons contributors, GNU contributors;license:CC-BY-NC-SA;copyright:2021-2022;updated:2022/09/16)
 
-# Petit guide pédagogique à l'usage des enseignants et étudiants.
+# Petit guide pédagogique à l'usage des enseignants et étudiants
 
-La transmission du savoir et le partage sont une part indissociable de notre activité, et nous avons à coeur de toujour améliorer notre manière d'enseigner. Ce "guide" propose quelques réflexions et pistes (sourcées et vérifiées) pour rendre l'enseignement, et l'apprentissage, le plus efficace possible.
+La transmission du savoir et le partage sont une part indissociable de notre activité, et nous avons à coeur de toujours améliorer notre manière d'enseigner. Ce "guide" propose quelques réflexions et pistes (sourcées et vérifiées) pour rendre l'enseignement, et l'apprentissage, le plus efficace possible.
 
 Les conseils que nous rassemblons ici sont basés sur diverses sources scientifiques et études vérifiées et vérifiables (les sources sont listées en bas de page), ainsi que sur notre expérience dans l'enseignement et s'améliorent au fil du temps. Il est possible que nous cassions ici quelques idées reçues et erreurs courantes, que nous pouvions avoir et avoir faites nous mêmes mais que nous corrigeons au fil du temps de manière empirique et aussi par nos lectures scientifiques. Méfions-nous des préconisations qui ne seraient pas le fruit d'études vérifiables et reproductibles, de la tradition ou des jugements personnels.
 
@@ -44,7 +44,7 @@ Du côté de l'étudiant, tout ce qui détourne l'attention du sujet est à pros
 
 L'enseignant doit à tout prix favoriser cette curiosité et pousser à la réflexion : poser des questions, favoriser les intéractions...
 
-La taille du groupe auquel on enseigne est primordial : un trop grand groupe rend rapidement l'enseignement très passif, limite l'engagement des participants ; à l'inverse un cours particulier peut parfois aussi limiter un certain engagement nait de la confrontation des idées entre plusieurs étudiants. On préfèrera donc, dans la mesure du possible, des petits groupes, de moins de 10 étudiants(voire moins de 5), ou diviser les classes (plutôt que d'enseigner à toute la classe, diviser en plusieurs groupes : pendant que l'un fait un exercice ou un test, l'autre suit un cours magistral, et inversement...).
+La taille du groupe auquel on enseigne est primordial : un trop grand groupe rend rapidement l'enseignement très passif, limite l'engagement des participants ; à l'inverse un cours particulier peut parfois aussi limiter un certain engagement nait de la confrontation des idées entre plusieurs étudiants. On préfèrera donc, dans la mesure du possible, des petits groupes, de moins de 10 étudiants (voire moins de 5), ou diviser les classes (plutôt que d'enseigner à toute la classe, diviser en plusieurs groupes : pendant que l'un fait un exercice ou un test, l'autre suit un cours magistral, et inversement...).
 
 L'étudiant doit se forcer à participer activement au cours et pas simplement écouter et prendre des notes. Si les notes peuvent souvent être utiles, elles peuvent aussi êre contre-productives en favorisant une certaine passivité par exemple. L'enseignant aura tout intérêt à donner aux étudiants un résumé précis par écrit (et illustré) de son cours pour leur éviter d'avoir à prendre des notes et ainsi leur permettre de suivre *activement* le cours.
 
@@ -78,7 +78,7 @@ Le manque de sommeil ou le mauvais sommeil, tout en ayant un impact négatif sur
 
 ### L'ennui et la distraction
 
-L'ennui et la distraction sont les premières causes de perte d'attention et d'engagement actif. Comme détaillé plus haut, l'enseignant doit tout faire pour **luter contre l'ennui**, et l'étudiant doit **se couper de toute source de distraction** dès qu'il est en phase d'apprentissage ou de travail personnel.
+L'ennui et la distraction sont les premières causes de perte d'attention et d'engagement actif. Comme détaillé plus haut, l'enseignant doit tout faire pour **lutter contre l'ennui**, et l'étudiant doit **se couper de toute source de distraction** dès qu'il est en phase d'apprentissage ou de travail personnel.
 
 ### Les écrans
 
