@@ -18,7 +18,7 @@ First things first, if you'd like to contribute, come and say hi! We're here to 
 
 ► [**Chat with us on Discord**](http://chat.rxlab.info)
 
-If you have any private enquiry or if you don't like Discord, you can contact us using our contact form, we'll reply quickly by e-mail. *Please don't use this form to get support for the tools* but only for other and private enquiries.
+If you have any private enquiry or if you don't like Discord, you can contact us using our contact form, we'll reply by e-mail. *Please don't use this form to get support for the tools* but only for other and private enquiries.
 
 ► [**Contact us**](http://contact.rxlab.info)
 
@@ -60,9 +60,9 @@ This is the usual way to submit changes to the code:
 4. **Commit** your changes regularly, and **push** them, using either the command line or the [Github Desktop](https://desktop.github.com/) application.
 5. Submit a **pull request** to our repository so we can review your changes. This is easily done right from the *Github* website.
 
-As you can see, the process is quite easy to follow, and everything can be done with a UI if your not so familiar with command line interfaces.
+As you can see, the process is quite easy to follow, and everything can be done with a UI if you're not so familiar with command line interfaces.
 
-Don't worry if you're not sure about what you're doing, don't be shy. We'll review and fix (or ask you to fix) your code before it's integrated into the RxOT, and help you learn. We're doing everything we can so everyone feels included and safe in every place you'll be in touch with us. We've all been beginners before you ;)
+Don't worry if you're not sure about what you're doing, don't be shy. We'll review and fix (or ask you to fix) your code before it's integrated into the RxOT, and help you learn. We're doing everything we can so everyone feels included and safe in every place you'll be in touch with us. We've all been beginners ;)
 
 If you'd like to submit a piece of code, an example, your own script, or anything else which would not fit the process described above, don't hesitate to contact us, either using our [**contact form**](http://contact.rxlab.info) or through our [**discord server**](http://chat.rxlab.info) to have a little chat!
 
@@ -131,7 +131,7 @@ When you decide to help to translate one of the Rx Open Tools, it's best to firs
 
 #### Via *Crowdin*
 
-The easiest way to help translate the tools is to create a free account on [Crowdin](https://crowdin.com/) and start contributing to the project of your choice. [The list of RxOT is here](https://crowdin.com/profile/duduf). If you don't find the project you're willing to translate, that means we're still in the process of preparing the translation files, or it's not planned for translating yet. In any case, don't hesitate to [contact us](http://contact.rxlab.info) or join us on our [chat server](http://chat.rxlab.info) to ask for it!
+The easiest way to help translate the tools is to create a free account on [Crowdin](https://crowdin.com/) and start contributing to the project of your choice. [The list of RxOT is here](https://crowdin.com/profile/duduf). If you don't find the project you're willing to translate, that means we're still in the process of preparing the translation files, or it's not planned to be translated yet. In any case, don't hesitate to [contact us](http://contact.rxlab.info) or join us on our [chat server](http://chat.rxlab.info) to ask for it!
 
 If the language you're willing to translate to is not listed yet, just ask us and we'll add it right away!
 
