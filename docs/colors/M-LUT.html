@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/M-LUT.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>M - LUTs - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="L-transfer.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="N-ocio.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/M-LUT.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Theory</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Application</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#im-luts">I.M - LUTs</a></li>
+                <li class="second-level"><a href="#m1-description">M.1 - Description</a></li>
+                    
+                <li class="second-level"><a href="#m2-use">M.2 - Use</a></li>
+                    
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="im-luts">I.M - LUTs<a class="headerlink" href="#im-luts" title="Permanent link">&para;</a></h1>
+<p>The acronym <em>LUT</em> comes from <em>Lookup Table</em>.</p>
+<div class="toc">
+<ul>
+<li><a href="#im-luts">I.M - LUTs</a><ul>
+<li><a href="#m1-description">M.1 - Description</a></li>
+<li><a href="#m2-use">M.2 - Use</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="m1-description">M.1 - Description<a class="headerlink" href="#m1-description" title="Permanent link">&para;</a></h2>
+<p>As its name suggests, it is a simple array of values, allowing to match some input values with other output values. In computing, it is a convenient way to replace complex mathematical functions, the result of time-consuming calculations, with a simple search in the array, which can greatly improve performance: instead of having to recalculate, you already have the results in memory.</p>
+<p>We keep the use in colors; it is a simple way to match a color in input to a different color in output: it is therefore a table that allows to retouch the colors or convert color spaces, describing them, color by color.</p>
+<p>The main interest of a <em>LUT</em> is that any program can easily use them and thus convert from and to color spaces which are not provided for at the base by the program; instead of having to &ldquo;know&rdquo; the mathematical functions which define a color space (in particular the transfer curve), the program has only to read the results in the <em>mapping table</em> without having to carry out the calculation. It is a <em>utility</em> tool, for conversion.</p>
+<p>They are also a way to &ldquo;save&rdquo; any colorimetric adjustment; even if an adjustment is made using multiple effects in an application (levels, curves, saturation&hellip;), it can be described and saved as a single <em>LUT</em> and then reapplied easily, and in <em>any</em> application capable of reading a <em>LUT</em>. In this case, it is an <em>artistic</em> and practical use.</p>
+<p>Here is an example of a few lines of values from a <em>LUT</em>, which is really just a text file containing such an array of values:</p>
+<table>
+<thead>
+<tr>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>298</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>596</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>894</td>
+</tr>
+<tr>
+<td>0</td>
+<td>351</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>326</td>
+<td>260</td>
+</tr>
+<tr>
+<td>0</td>
+<td>302</td>
+<td>558</td>
+</tr>
+<tr>
+<td>0</td>
+<td>278</td>
+<td>856</td>
+</tr>
+<tr>
+<td>381</td>
+<td>3784</td>
+<td>0</td>
+</tr>
+<tr>
+<td>282</td>
+<td>3760</td>
+<td>0</td>
+</tr>
+<tr>
+<td>184</td>
+<td>3736</td>
+<td>117</td>
+</tr>
+<tr>
+<td>85</td>
+<td>3712</td>
+<td>415</td>
+</tr>
+</tbody>
+</table>
+<p>A <em>LUT</em> does not describe <em>all</em> possible color matches, but a selection of colors; to obtain a color that is not in the table, it is necessary to perform <em>interpolation</em>. Normally, the application using the <em>LUT</em> proposes different interpolations which will change the way these colors are obtained (by rounding, linear interpolation, etc.).</p>
+<p>The quantity of values contained in a <em>LUT</em> is thus very important for the quality of the output image: being only a table of limited values, there can be a loss during the conversion and the result can more or less differ from a true mathematical operation. However, the difference is not discernible in the case of <em>LUT</em> with many values, such as those used by <em>OCIO + ACES</em> for its conversions for example. <em>See </em>Chapter <em><a href="N-ocio.html">N - OCIO, ACES</a></em>.</p>
+<h2 id="m2-use">M.2 - Use<a class="headerlink" href="#m2-use" title="Permanent link">&para;</a></h2>
+<p>There are many different file formats for <em>LUTs</em>, depending on applications, developers, etc. Here are some examples (formats supported by <em><a href="http://ffmpeg.org">FFmpeg</a></em>):</p>
+<table>
+<thead>
+<tr>
+<th>Extension</th>
+<th>Name, publisher, application&hellip;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>3dl</em></td>
+<td>Discreet / After Effects / Autodesk</td>
+</tr>
+<tr>
+<td><em>cube</em></td>
+<td>Iridas / Resolve</td>
+</tr>
+<tr>
+<td><em>dat</em></td>
+<td>DaVinci</td>
+</tr>
+<tr>
+<td><em>m3d</em></td>
+<td>Pandora</td>
+</tr>
+<tr>
+<td><em>csp</em></td>
+<td>cineSpace</td>
+</tr>
+<tr>
+<td><em>spi1d</em>, <em>spi3d</em></td>
+<td>Sony Pictures Imageworks</td>
+</tr>
+</tbody>
+</table>
+<p>It can be useful to convert between different <em>LUT</em> formats; <em><a href="N-ocio.html">OCIO</a></em> includes a command line conversion tool, for which the media encoder <em><a href="https://rainboxlab.org/tools/dume/">DuME</a></em> provides a graphical interface.</p>
+<p>There are two main types of <em>LUT</em>: <strong><em>LUT 1D</em></strong> and <strong><em>LUT 3D</em></strong>.</p>
+<ul>
+<li><strong>1D LUT</strong></li>
+</ul>
+<p><img alt="1D LUT" src="img/1d-lut.svg" /></p>
+<p><em>1D LUT</em> work only on the <em>luminance</em> and do not modify the colors. Having only one dimension, they are lighter and simpler than the <em>3D LUT</em> and are useful for the conversions of <em>gamma<a href="ZZ-vocabulaire.html">*</a></em>, for example between two colorimetric spaces which would have the same <em>primaries<a href="ZZ-vocabulaire.html">*</a></em>. <em>See </em>chapter <em><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></em>.</p>
+<ul>
+<li><strong>3D LUT</strong></li>
+</ul>
+<p><img alt="3D LUT" src="img/3d-lut.svg" /></p>
+<p>The <em>3D LUT</em> work on the three channels red, green and blue. They therefore allow detailed retouching of both luminance and hues as well as saturation. They allow artistic effects as well as conversions from and to any color space.</p>
+<p>Whatever the type of <em>LUT</em>, these conversion tables offer only a simple correspondence of value, <strong>each <em>LUT</em> is designed for a precise space and colors in entry</strong> and <strong>cannot be used indifferently on any image</strong>!</p>
+<p>For example, a <em>LUT</em> that converts to the <em>Rec.2020</em> color space is <strong>certainly</strong> intended to be applied to an image in another specific color space, e.g. <em>Rec.709</em>; in this example, it <strong>cannot</strong> be used on an <em>sRGB</em> image, unless it has first been converted to <em>Rec.709</em>.</p>
+<p>This is also true for <em>LUTs</em> that are for artistic use, not utilitarian. It is necessary to know on which space and which type of image each <em>LUT</em> is supposed to be applied. Depending on the application, the choice of workspace is therefore important when using <em>LUT</em>, or at least you must be aware of it in order to make any conversions prior to using <em>LUT</em> (which means that they are not as simple as they seem).</p>
+<hr />
+<p>Sources &amp; References</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Lookup_table">Lookup table on <em>Wikipedia</em></a></li>
+<li><a href="https://affinityspotlight.com/article/1d-vs-3d-luts/">1D vs 3D LUTs by James Ritson on <em>Affinity Spotlight</em></a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini for the translation;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Beware, his conclusion contains an error. In the otherwise very good article, James Ritson explains that a <em>1D LUT</em> can be used to convert an image from <em>Rec.2020</em> to <em>Rec.709</em>, which is wrong since the <em>primaries<a href="ZZ-vocabulaire.html">*</a></em> of the two spaces are different, not just the <em>transfer curve<a href="ZZ-vocabulaire.html">*</a></em>. You must then use a <em>3D LUT</em>. On the other hand the conversion from <em>Rec.709</em> to <em>sRGB</em> is well possible with a <em>LUT 1D</em> since only the <em>transfer curve</em> is different.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="L-transfer.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="N-ocio.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

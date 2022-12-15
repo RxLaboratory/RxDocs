@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/N-ocio.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>N - OCIO, ACES - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="M-LUT.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="pratique.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/N-ocio.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Theory</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Application</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#in-opencolorio-and-aces">I.N - OpenColorIO and ACES</a></li>
+                <li class="second-level"><a href="#n1-compatible-applications">N.1 - Compatible applications</a></li>
+                    
+                <li class="second-level"><a href="#n2-aces">N.2 - ACES</a></li>
+                    
+                    <li class="third-level"><a href="#n2a-aces-color-space">N.2.a - ACES color space</a></li>
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="in-opencolorio-and-aces">I.N - OpenColorIO and ACES<a class="headerlink" href="#in-opencolorio-and-aces" title="Permanent link">&para;</a></h1>
+<p><a href="https://opencolorio.org/"><em>OpenColorIO</em></a><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, often abbreviated as <em>OCIO</em>, is a free and open source library for developers (not users), facilitating color management. It aims to be used by all applications in digital image production, thus facilitating color management throughout the production pipeline: by becoming standard, it makes it possible to share the color configuration throughout the production pipeline and to have control over it at all stages, as easily as possible.</p>
+<div class="toc">
+<ul>
+<li><a href="#in-opencolorio-and-aces">I.N - OpenColorIO and ACES</a><ul>
+<li><a href="#n1-compatible-applications">N.1 - Compatible applications</a></li>
+<li><a href="#n2-aces">N.2 - ACES</a><ul>
+<li><a href="#n2a-aces-color-space">N.2.a - ACES color space</a><ul>
+<li><a href="#n2aa-aces2065-1">N.2.a.a - ACES2065-1</a></li>
+<li><a href="#n2ab-acescg">N.2.a.b - ACEScg</a></li>
+<li><a href="#n2ac-acescc">N.2.a.c - ACEScc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Applications using <em>OCIO</em> therefore all share the same color management configuration format, a file named <code>congig.ocio</code>.</p>
+<p>It is thus possible to easily share the same color management throughout the production pipeline, defining workspaces, file spaces, color picker spaces, display spaces, final output spaces&hellip; <em>See Chapter </em><a href="pratique.html">II.A - Practical Implementation</a>*.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>OpenColorIO</em> also brings support for a large number of <em>LUTs<a href="ZZ-vocabulaire.html">*</a></em> formats, solving the problem of <em>LUTs</em> compatibility with applications.</p>
+</div>
+<p>Several <a href="https://opencolorio.readthedocs.io/en/latest/quick_start/downloads.html"><em>OCIO</em> configurations are provided</a> as examples that can already be used in production as is, including the <em>ACES</em> configuration (see below) or the <em>Sony Pictures Imageworks</em> configuration for animation (<em>spi-anim</em>) and special effects (<em>spi-vfx</em>).</p>
+<h2 id="n1-compatible-applications">N.1 - Compatible applications<a class="headerlink" href="#n1-compatible-applications" title="Permanent link">&para;</a></h2>
+<p>Here is an alphabetical list (not exhaustive) of the main applications using <em>OpenColorIO</em>, established in early 2021<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Use</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adobe After Effects</td>
+<td>Compositing</td>
+<td>Partial support <a href="https://fnordware.blogspot.com/2012/05/opencolorio-for-after-effects.html">whith a plugin</a>.</td>
+</tr>
+<tr>
+<td>Autodesk Arnold</td>
+<td>Render engine</td>
+<td></td>
+</tr>
+<tr>
+<td>Maxon Redshift</td>
+<td>Render engine</td>
+<td></td>
+</tr>
+<tr>
+<td>Blender, Cycles, Eevee</td>
+<td>3D, Render engine, compositing</td>
+<td></td>
+</tr>
+<tr>
+<td>DuME</td>
+<td>Encoder</td>
+<td>Partial support via LUTs</td>
+</tr>
+<tr>
+<td>SideFX Houdini</td>
+<td>3D</td>
+<td></td>
+</tr>
+<tr>
+<td>Krita</td>
+<td>Drawing</td>
+<td></td>
+</tr>
+<tr>
+<td>The Foundry Mari</td>
+<td>Textures</td>
+<td></td>
+</tr>
+<tr>
+<td>Autodesk Maya</td>
+<td>3D</td>
+<td></td>
+</tr>
+<tr>
+<td>Mocha Pro</td>
+<td>Tracking</td>
+<td></td>
+</tr>
+<tr>
+<td>Modo</td>
+<td>3D</td>
+<td></td>
+</tr>
+<tr>
+<td>The Foundry Nuke</td>
+<td>Compositing</td>
+<td></td>
+</tr>
+<tr>
+<td>Adobe Photoshop</td>
+<td>Dessin</td>
+<td>Partial support via ICC profiles</td>
+</tr>
+<tr>
+<td>Substance Designer</td>
+<td>Textures</td>
+<td></td>
+</tr>
+<tr>
+<td>Unreal Engine</td>
+<td>Render engine</td>
+<td></td>
+</tr>
+<tr>
+<td>V-Ray</td>
+<td>Render engine</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Any application that can use <em>LUTs<a href="ZZ-vocabulaire.html">*</a></em> can be integrated into a production line using <em>OCIO</em>, by exporting the <em>LUTs</em> needed for production from <em>OpenColorIO</em>, either via the command line tool provided, or by using the <em><a href="https://rainboxlab.org/tools/dume/">DuME</a></em> media encoder which can create these <em>LUTs</em>.</p>
+</div>
+<h2 id="n2-aces">N.2 - ACES<a class="headerlink" href="#n2-aces" title="Permanent link">&para;</a></h2>
+<p><em>ACES</em> stands for <em>Academy Color Encoding System</em>, and is intended to be a color management and exchange standard for digital imaging; it aims to simplify color management and maintain the highest fidelity in all production pipelines. It is free and open source, and uses <em>OpenColorIO</em> in its operation.</p>
+<p><em>ACES</em> actually consists of:</p>
+<ul>
+<li>5 color spaces designed for different uses in the production chain.</li>
+<li>An <em>OpenColorIO</em> configuration, with the <em>LUTs</em> necessary for its use everywhere.</li>
+<li>A set of recommendations on color calculation and storage.</li>
+</ul>
+<p>See chapter <em><a href="I-liste-espaces.html">I - List of color spaces</a></em> for the technical details concerning the various color spaces of <em>ACES</em>.</p>
+<p>The main recommendations on storage are:</p>
+<ul>
+<li>Use the <em>openEXR</em> file format.</li>
+<li>Save in wide color spaces, encompassing all others. The ideal space encompassing all visible colors is <em>ACES2065-1</em>.</li>
+</ul>
+<h3 id="n2a-aces-color-space">N.2.a - ACES color space<a class="headerlink" href="#n2a-aces-color-space" title="Permanent link">&para;</a></h3>
+<p>The different spaces offered by <em>ACES</em> correspond to different needs and specific uses. Here are the most important ones.</p>
+<h4 id="n2aa-aces2065-1">N.2.a.a - ACES2065-1<a class="headerlink" href="#n2aa-aces2065-1" title="Permanent link">&para;</a></h4>
+<p>The space <em>ACES2065-1</em> is the space with the broadest <em>gamut<a href="ZZ-vocabulaire.html">*</a></em>, including all the visible colors, and its curve of transfer is linear.</p>
+<p>It is in fact the most complete of the spaces, its goal being to be able to store the colors without loss, and compatible with all the past and future spaces.</p>
+<p>Like all linear spaces, it requires a depth of at least <em>16 bpc</em>, with a preference for <em>32 bpc</em> compatible with its goal of efficiently representing any visible color.</p>
+<p>It is in fact little used, representing <em>too</em> much data, its interest being mainly theoretical.</p>
+<h4 id="n2ab-acescg">N.2.a.b - ACEScg<a class="headerlink" href="#n2ab-acescg" title="Permanent link">&para;</a></h4>
+<p>The <em>ACEScg</em> (for <em>computer generated (images)</em>) space is derived from <em>ACES2065-1</em>, but uses different <em>primaries<a href="ZZ-vocabulaire.html">*</a></em>, reducing its <em>gamut<a href="ZZ-vocabulaire.html">*</a></em>, which is still very large, while being more convenient than <em>ACES2065-1</em>.</p>
+<p>It is a linear space, designed and ideal for 3D rendering and compositing. With its very wide <em>gamut</em>, and the associated <em>OCIO</em> configuration allowing to efficiently generate images in smaller standard spaces, it allows a color synthesis more faithful to reality and human vision, especially in the highlights.</p>
+<p><em><img alt="Comparison of linear RGB and ACEScg rendering" src="img/aces.svg" /></em><br />
+<em>Comparison between rendering using RGB primaries and ACEScg<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></em></p>
+<p>The <em>ACES</em> recommendation is to use this space in animation and CGI production, both as a workspace in applications, and for storage in the <em>openEXR</em> file format. Thus, from rendering and image generation to final delivery, no data conversion is required (except for display of course).</p>
+<h4 id="n2ac-acescc">N.2.a.c - ACEScc<a class="headerlink" href="#n2ac-acescc" title="Permanent link">&para;</a></h4>
+<p>The <em>ACEScc</em> (for <em>color correction</em>) space is similar to <em>ACEScg</em> except that its transfer curve is not linear.</p>
+<p>This transfer curve makes it a poor space for rendering and image generation, but makes it much more practical for color grading.</p>
+<p><em><img alt="Linear / sRGB color selector comparison" src="img/color-picker.svg" /></em></p>
+<p>It is therefore recommended for color correction and retouching work on filmed images, or at the end of animation production for final color correction.</p>
+<hr />
+<p>Sources &amp; References</p>
+<ul>
+<li><a href="https://opencolorio.org/"><em>OpenColorIO</em> official website</a></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini for the translation;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Being free and open source, many studios contribute to the development of <em>OpenColorIO</em>, managed by the <em>ASWF, Academy Software Foundation</em> in the USA.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>A complete list is available on the <em><a href="https://opencolorio.org/">OpenColorIO</a></em> website.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>This comparison is made with<em>Blender</em>; <em>ACES</em> is not included in <em>Blender</em>, but it is easy to use with <em>OpenColorIO</em>. Although <em>ACES</em> does not come standard with <em>Blender</em>, the <em>Blender</em> renderings are still much better than this example: <em>Blender</em> uses a <em>LUT</em> named <em>Filmic</em> which greatly improves the conversion from <em>linear RGB</em> space to <em>sRGB</em> of the final image (disabled for this example), but still remaining less colorful than the result using the <em>ACES</em> configuration of <em>OCIO</em>.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="M-LUT.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="pratique.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

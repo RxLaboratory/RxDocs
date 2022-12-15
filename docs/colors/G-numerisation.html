@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/G-numerisation.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>G - From real life to digital - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="F-representation.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="H-espace-colo.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/G-numerisation.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Theory</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Application</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#ig-from-real-life-to-digital">I.G - From real life to digital</a></li>
+                <li class="second-level"><a href="#g1-digitization-and-storage-converting-to-binary">G.1 - Digitization and storage: converting to binary</a></li>
+                    
+                <li class="second-level"><a href="#g2-the-color-spaces">G.2 - The color spaces</a></li>
+                    
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="ig-from-real-life-to-digital">I.G - From real life to digital<a class="headerlink" href="#ig-from-real-life-to-digital" title="Permanent link">&para;</a></h1>
+<p>Having now a way to objectively represent the colors we see, to locate them on a reference diagram, we can ask ourselves the question of how to digitize, store, then restore these colors via a binary system.</p>
+<div class="toc">
+<ul>
+<li><a href="#ig-from-real-life-to-digital">I.G - From real life to digital</a><ul>
+<li><a href="#g1-digitization-and-storage-converting-to-binary">G.1 - Digitization and storage: converting to binary</a></li>
+<li><a href="#g2-the-color-spaces">G.2 - The color spaces</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="g1-digitization-and-storage-converting-to-binary">G.1 - Digitization and storage: converting to binary<a class="headerlink" href="#g1-digitization-and-storage-converting-to-binary" title="Permanent link">&para;</a></h2>
+<p>The difficulty is to represent an analog and <em>continuous</em> world<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> in a fundamentally <em>discontinuous</em> and digital system, with <a href="https://en.wikipedia.org/wiki/Discrete_mathematics"><em>discrete values</em></a>.</p>
+<p><img alt="" src="img/sampling.png" /></p>
+<p>In binary numerics, any value, whether it is a number or a color, must be stored in a sequence of zeros and ones, which are called <strong><em>bits<a href="ZZ-vocabulaire.html">*</a></em></strong><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>. It is therefore impossible to represent the whole set of real numbers in numerical form, and we have to <em>quantify</em>, to cut the infinite number of colors we can see into a <strong>finite number</strong> of numerical values. This is <em>sampling</em>.</p>
+<p>The more we cut these values into small quanta, small samples, small bricks, the more we gain in precision and the more we can approach a faithful representation of reality; but the question of storage and the necessary space arises.</p>
+<p>Let&rsquo;s do a simple calculation: let&rsquo;s take a digital image divided into a &ldquo;grid&rdquo; of 1920 pixels in width and 1080 pixels in height, the resolution of a standard digital video (in 2020). This image therefore contains <code>1920 x 1080 = 2,073,600 pixels</code>.</p>
+<p>In its most common form, a pixel is represented by three intensity values for three primary colors. Each of these three values is usually stored in <em>at least</em> 8 bits. Each pixel therefore needs <code>3 x 8 = 24 bits</code><a href="ZZ-vocabulaire.html">*</a> or <code>3 bytes</code><a href="ZZ-vocabulaire.html">*</a> to be stored (a byte being formed of 8 bits). Note that this choice of using one byte (8 bits) per primary color allows &ldquo;only&rdquo; 256 values per primary (<code>2^8</code>), that is to say a total of about 65 million (<code>256^3</code>) different color shades. This may seem like a lot, but it is still far from the shades perceived by the human eye, and the number of shades used in movies.</p>
+<p>So our image needs <code>2,073,600 pixels x 3 bytes = 6,220,800 bytes</code> to be stored. 6 MB for a single image, which means <em>at least</em> <code>6 x 24 = 144 MB</code> for one second of video, or <code>144 x 60 = 8,640 MB</code> for one minute, more than <strong>8 GB</strong><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>!</p>
+<pre class="codehilite"><code>1920 px x 1080 px x 3 primaries x 8 bits x 24 fps x 60 s ≈ 64 Gb/min ≈ 8 Gb/min
+</code></pre>
+
+<p>This size represents a data rate of about 1.2 Gbps. As an example, a movie on a Blu-Ray disc is encoded with a data rate of about 24 Mbps, which means that this size must be divided by about 50&hellip;</p>
+<h2 id="g2-the-color-spaces">G.2 - The color spaces<a class="headerlink" href="#g2-the-color-spaces" title="Permanent link">&para;</a></h2>
+<p>It is thus essential to find methods making it possible to reduce the place occupied by all this information; it is there that the various choices of colorimetric spaces and methods of <em>compression</em> and <em>sampling</em> of the associated data come into play.</p>
+<p>This problem appeared long before the advent of digital technology: analog data flows, via electrical signals, also have a limited transfer capacity (bandwidth), and even much more limited than digital information transmission using the same copper cables, which explains the format limitations imposed in the early days of video, not to mention the storage problems.</p>
+<p>The way of storing the sampled (digitized) luminous information therefore depends on the material used for the capture (the camera) or the production (in synthesis), as well as on the use that will be made of it (only what can be reproduced is stored), and influences the quantity of data to be stored.</p>
+<p><strong>The choice of how to store the data will also define which data will be lost</strong>, since it is impossible to remain faithful to the real thing, or <strong>which types of lights and data will be prioritized</strong> (intensity or hue, darkness or highlights&hellip;).</p>
+<p>The system of storage of the data of light is what we call the <strong>color space</strong>.</p>
+<hr />
+<p>Sources &amp; References</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Discrete_mathematics">Discrete mathematics on <em>Wikipedia</em>.</a></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini for the translation;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>With the advent of <a href="https://en.wikipedia.org/wiki/Quantum_mechanics">quantum physics</a>, we now know that the world is in fact also discontinuous and divided into quanta of energy and matter; simply these discrete values are so small that they will always be imperceptible. This argument is sometimes used to try to demonstrate that we are actually living in a digital simulation (of extreme precision), but that is another subject&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>And 8 bits represent 1 byte, the unit most commonly used in storage.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>That&rsquo;s about 25% of the capacity of a standard <em>Blu-Ray</em>&hellip;&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="F-representation.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="H-espace-colo.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

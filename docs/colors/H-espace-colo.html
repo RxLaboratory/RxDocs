@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/H-espace-colo.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>H - What is a color space? - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="G-numerisation.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="I-liste-espaces.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/H-espace-colo.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Theory</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Application</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#ih-what-is-a-color-space">I.H - What is a color space?</a></li>
+                <li class="second-level"><a href="#h1-what-defines-a-color-space">H.1 - What defines a color space</a></li>
+                    
+                    <li class="third-level"><a href="#h1a-primaries-and-gamut">H.1.a - Primaries and gamut</a></li>
+                    <li class="third-level"><a href="#h1b-white-point">H.1.b - White point</a></li>
+                    <li class="third-level"><a href="#h1c-the-transfer-curve">H.1.c - The transfer curve</a></li>
+                <li class="second-level"><a href="#h2-other-parameters">H.2 - Other parameters</a></li>
+                    
+                    <li class="third-level"><a href="#h2a-pixel-format">H.2.a - Pixel format</a></li>
+                    <li class="third-level"><a href="#h2b-depth">H.2.b - Depth</a></li>
+                <li class="second-level"><a href="#h3-why-different-color-spaces">H.3 - Why different color spaces?</a></li>
+                    
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne;medias:Nicolas &quot;Duduf&quot; Dufresne;license:CC-BY-NC-SA;copyright:2021;updated:2021/07/11" /></p>
+<h1 id="ih-what-is-a-color-space">I.H - What is a color space?<a class="headerlink" href="#ih-what-is-a-color-space" title="Permanent link">&para;</a></h1>
+<p>A color space defines <strong>a subset of colors</strong> (a volume in a 3D color diagram, or a surface on a 2D projection like the <em>CIE xy</em>) drawn from the visible spectrum (or even outside the visible spectrum)<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The color space describes the colors as they should be reproduced, but does not define the technical means of recording them in the files. See chapter <a href="K-pix-format.html">K - Pixel Format</a> on this subject.</p>
+</div>
+<div class="toc">
+<ul>
+<li><a href="#ih-what-is-a-color-space">I.H - What is a color space?</a><ul>
+<li><a href="#h1-what-defines-a-color-space">H.1 - What defines a color space</a><ul>
+<li><a href="#h1a-primaries-and-gamut">H.1.a - Primaries and gamut</a></li>
+<li><a href="#h1b-white-point">H.1.b - White point</a></li>
+<li><a href="#h1c-the-transfer-curve">H.1.c - The transfer curve</a></li>
+</ul>
+</li>
+<li><a href="#h2-other-parameters">H.2 - Other parameters</a><ul>
+<li><a href="#h2a-pixel-format">H.2.a - Pixel format</a></li>
+<li><a href="#h2b-depth">H.2.b - Depth</a></li>
+</ul>
+</li>
+<li><a href="#h3-why-different-color-spaces">H.3 - Why different color spaces?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p><em><img alt="Image: Diagram of the CIE with some subsets." src="img/spaces-comparison.png" /></em></p>
+<h2 id="h1-what-defines-a-color-space">H.1 - What defines a color space<a class="headerlink" href="#h1-what-defines-a-color-space" title="Permanent link">&para;</a></h2>
+<p>The whole of the colors being able to be represented by a colorimetric space depends on a principal parameter: <strong>The primary colors</strong> of the color space.</p>
+<p>The way of representing these colors depends on two other parameters which supplement the definition of a colorimetric space: <strong>The white point</strong> and <strong>the transfer curve</strong>.</p>
+<h3 id="h1a-primaries-and-gamut">H.1.a - Primaries and gamut<a class="headerlink" href="#h1a-primaries-and-gamut" title="Permanent link">&para;</a></h3>
+<p>Most often with the number of 3, the primary colors are the paramount values of the colorimetric space; they can be represented by precise co-ordinates in the space <em>CIE XYZ</em> (which is a representation of all the visible colors on three axes). They are in the majority of the cases a shade of <em>Red</em>, <em>Green</em> and <em>Blue</em>, and are ideally close as possible to a real monochromatic color (the external edge of the diagram <em>CIE xy</em>).</p>
+<p><em><img alt="Picture: CIE diagram with sRGB primaries" src="img/srgb-primaries.png" /></em></p>
+<p>Each space defines its primary colors by at least three coordinates in the space <em>CIE XYZ</em>.</p>
+<p>For example, here are the coordinates of the Red, Green and Blue <em>sRGB (standard Red, Green, Blue)</em> space:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,64</td>
+<td>0,30</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,33</td>
+<td>0,60</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,03</td>
+<td>0,1</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<p>This means that for two given spaces, the most intense &ldquo;Red&rdquo; value is not concretely reproduced by the same shade: some spaces will have a more or less intense or saturated primary red (or less close to monochromatic waves), more or less orange, for example.</p>
+<p>The colorimetric space thus defines the way in which the most intense value of a primary color must be reproduced by the physical device which will display it (the screen, the projector, or the printer, etc).</p>
+<p>In other words, each device of reproduction must be able to control precisely which light rays, at which wavelengths, which physical colors it is able to produce; according to the range of these wavelengths, the device is <em>compatible</em> with various colorimetric spaces if it is able to produce the wavelengths necessary to the reproduction of the primaries of space.</p>
+<p>The coordinates of the primary define the limits of a subspace including all the colors which can be represented in the colorimetric space. This subspace is more or less large (it allows to represent more or less different colors); the size of this space is what is called the <strong><em>gamut</em></strong>.</p>
+<p><em><img alt="Image: CIE diagram with the sRGB triangle" src="img/srgb-gamut.png" /></em></p>
+<h3 id="h1b-white-point">H.1.b - White point<a class="headerlink" href="#h1b-white-point" title="Permanent link">&para;</a></h3>
+<p>We have seen that in the human perception, what is regarded as <em>white</em> varies enormously according to the conditions, of the environment in which we perceive the colors.
+It is t therefore necessary to define in the colorimetric space the color which will be regarded as <em>white</em>, corresponding concretely to that which must be obtained by the mixing in equal proportion of the various primary colors (white with the maximum intensity, gray with lower intensities).</p>
+<p>This white point is also given by its coordinates in the space <em>CIE XYZ</em>.</p>
+<p><em><img alt="Picture: Diagram of the CIE with the D65" src="img/d65.png" /></em></p>
+<p>For example, here are the coordinates of the white point in the <em>sRGB</em> space: </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3127</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3290</td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="F-representation.html"><em>CIE</em></a> has defined a number of remarkable white dots (also called <em>illuminant</em>), useful for particular purposes. They are represented by letters (from <em>A</em> to <em>F</em>), sometimes accompanied by a number in the case of series of white points.</p>
+<p>A few examples :</p>
+<ul>
+<li>
+<p>The illuminant <em>A</em> represents the color emitted by a tungsten filament of the old domestic bulbs; in other words the color of a <em>black body</em> of 2856 Kelvin (cf <a href="">Color temperature</a>).</p>
+</li>
+<li>
+<p>The illuminant <em>B</em> represents direct sunlight.</p>
+</li>
+<li>The <em>D</em> series of illuminants represent daylight in different conditions (e.g. <em>D65</em> represents light under a cloudy sky).</li>
+</ul>
+<p>The illuminant <em>D65</em> is the one most commonly used as a white point in the various colorimetric spaces.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The white point is sometimes itself, by simplification, considered as a primary (in the sense that it is also simply a precise color, a coordinate in the <em>CIE XYZ</em>). In this case the <em>primaries</em> of the space are at least 4 and the space is only defined by two parameters.</p>
+</div>
+<p>The color space normally also associates with the white point its maximum intensity, its luminance, most often measured in <em>cd/m²</em>.</p>
+<h3 id="h1c-the-transfer-curve">H.1.c - The transfer curve<a class="headerlink" href="#h1c-the-transfer-curve" title="Permanent link">&para;</a></h3>
+<p>Colors in a color space are given by the intensity of each primary, represented by a value ranging from <code>0.0</code> to <code>1.0</code>.</p>
+<p>The value <code>0.0</code> represents a zero intensity (the absence of light, a perfect black) and the value <code>1.0</code> represents the color given by the coordinate of the primary in the <em>CIE XYZ</em>.</p>
+<p>The question arises as to how the intermediate values are transcribed into real colors (or coordinates in the <em>CIE XYZ</em>). This transcription is done by the <strong>transfer curve</strong>. It is a &ldquo;simple&rdquo; mathematical function which, for a given value in the colorimetric space, gives the corresponding coordinate in the <em>CIE XYZ</em>.</p>
+<p><em><img alt="Image: Transfer curve of sRGB vs linear" src="img/srgb-gamma.svg" /></em></p>
+<p>The space is said <em>linear</em> when this curve is a simple affine function, ie represented by a straight line, and whose correspondence between the values is just proportional.</p>
+<p>Other spaces use a more complex transfer curve to better reflect human vision and/or the way early CRTs reproduced intensities<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> (with a <em>gamma 2.4</em>); the &ldquo;simplest&rdquo; of these curves are the so-called <em>gamma</em> curves. This being said, most spaces do not use simple <em>gamma</em> curves but more complex ones.</p>
+<p>See the section entitled <em><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></em> for more details.</p>
+<h2 id="h2-other-parameters">H.2 - Other parameters<a class="headerlink" href="#h2-other-parameters" title="Permanent link">&para;</a></h2>
+<p>The color spaces can also impose or recommend other parameters, especially on the way of encoding/storing the colors, according to their intended uses.</p>
+<h3 id="h2a-pixel-format">H.2.a - Pixel format<a class="headerlink" href="#h2a-pixel-format" title="Permanent link">&para;</a></h3>
+<p>For storing pixels, spaces can recommend different formats. The two most common are:</p>
+<ul>
+<li>RGB, where the pixel contains three values: red, green and blue.</li>
+<li>YUV, where the pixel contains one value of <em>luminance</em> and two of <em>chrominance</em>.</li>
+</ul>
+<p>See section <em><a href="K-pix-format.html">K.1 - RGB and YUV</a></em> for more details.</p>
+<h3 id="h2b-depth">H.2.b - Depth<a class="headerlink" href="#h2b-depth" title="Permanent link">&para;</a></h3>
+<p>Spaces may specify a specific number of bits to be used for each pixel to encode each color. For example <em>sRGB</em> specifies a minimum of 8 bits, and <em>Rec. 2020</em> specifies 10 or 12 bits.</p>
+<p>See section <a href="K-pix-format.html">K.3 - Depth (bpc)</a> for more details.</p>
+<h2 id="h3-why-different-color-spaces">H.3 - Why different color spaces?<a class="headerlink" href="#h3-why-different-color-spaces" title="Permanent link">&para;</a></h2>
+<p>The color spaces are (very) numerous. There is in fact as many as different uses of the colors, without counting that the manufacturers of materials, and designers of software, sometimes add their own spaces to the already long list. The uses are relatively unstandardized.</p>
+<p>Thus, certain spaces are related to precise materials of capture: a camera can record the data which it captures in a space which is specific to it, and corresponds to the capacities of its sensor, or to the use which will be made of the images (by proposing for example a broad range of colors which facilitates the post-production)</p>
+<p>Other spaces are linked to reproduction equipment (screens, projectors, printers&hellip;) and represent the colors that the equipment is capable of reproducing.</p>
+<p>Finally, more recently, spaces were created specifically for imagery work; they are then used temporarily and are different from the spaces used to capture, record or reproduce the images.</p>
+<p>It is thus necessary to keep in mind that several colorimetric spaces come into play at the time of work on an image:</p>
+<ul>
+<li>The color space of the imported and used media.</li>
+<li>The color space of the display used for the display.</li>
+<li>The working color space, used to make the calculations on the image, by the computer.</li>
+<li>The color space used to record and store the output data (and later on the destination display of the media).</li>
+</ul>
+<p>These spaces are classified into two categories:</p>
+<ul>
+<li><strong><em>Display-referred</em></strong> or <strong><em>Output-referred</em></strong>: Spaces used for display and reproduction.</li>
+<li><strong><em>Scene-referred</em></strong>: Spaces used for calculation.</li>
+</ul>
+<p><em><img alt="Picture: Diagram articulating the different spaces" src="img/workflow.svg" /></em></p>
+<p>Not all of these spaces are necessarily the same (and are rarely the same in reality), each having a specific use and corresponding to specific needs; a certain number of conversions then come into play to pass from one space to another. This is where the ability to convert information to and from a reference space (the <em>CIE XYZ</em>) allows one to work safely with multiple spaces, with each space defining its <strong><em>primary</em></strong>, <strong><em>white point</em></strong> and <strong><em>transfer curve</em></strong> relative to the same reference space.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is a common mistake to think that you have to work in the space used for output (<em>output-referred</em>) when the <em>output-referred</em> spaces were intended for display, not calculation. The <em>scene-referred</em> spaces are intended for work.</p>
+</div>
+<hr />
+<p>Sources &amp; References</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Standard_illuminant">Illuminant on <em>Wikipedia</em></a></li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>It <strong>doesn&rsquo;t</strong> define a <em>number</em> of colors, of different shades (which depends on the sampling, on the way the values are stored digitally), but a limited <em>range</em> of colors in the set of real colors; in other words, it defines the size of the set of colors, but not the number of subdvisions of the set, which can be more or less fine in its concrete implementation. See the section <a href="K-pix-format.html">Pixel format</a> for more details.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>The transfer curves during the analog era represented in fact the correspondence between the intensity of the electric signal, and the luminosity captured or reproduced by the camera or the screen; the modern <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> follows the same rules to link the luminous intensity to the digital value&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="G-numerisation.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="I-liste-espaces.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

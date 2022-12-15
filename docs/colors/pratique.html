@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/pratique.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>A - Choosing your color spaces and formats - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="N-ocio.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="standards.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/pratique.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Theory</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Application</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level active"><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#iia-practical-application-choose-your-color-spaces-and-formats">II.A - Practical application: choose your color spaces and formats</a></li>
+                <li class="second-level"><a href="#a1-theory">A.1 - Theory</a></li>
+                    
+                    <li class="third-level"><a href="#a1a-journey-of-a-color">A.1.a - Journey of a color</a></li>
+                <li class="second-level"><a href="#b-workspace-scene-referred">B - Workspace (scene referred)</a></li>
+                    
+                <li class="second-level"><a href="#c-input">C - Input</a></li>
+                    
+                <li class="second-level"><a href="#d-display">D - Display</a></li>
+                    
+                    <li class="third-level"><a href="#d1-screen-space">D.1 - Screen space</a></li>
+                    <li class="third-level"><a href="#d2-settings-and-color-profiles">D.2 - Settings and color profiles</a></li>
+                    <li class="third-level"><a href="#d3-within-the-application">D.3 - Within the application</a></li>
+                    <li class="third-level"><a href="#d4-soft-proofing">D.4 Soft-Proofing</a></li>
+                <li class="second-level"><a href="#e-color-pickers">E - Color pickers</a></li>
+                    
+                <li class="second-level"><a href="#f-intermediate-output">F - Intermediate output</a></li>
+                    
+                <li class="second-level"><a href="#g-final-output">G - Final output</a></li>
+                    
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="iia-practical-application-choose-your-color-spaces-and-formats">II.A - Practical application: choose your color spaces and formats<a class="headerlink" href="#iia-practical-application-choose-your-color-spaces-and-formats" title="Permanent link">&para;</a></h1>
+<p>Working within an digital image application,  it is important to know and master how the colors are managed in the various functionalities of the application in question, as well as throughout the production pipeline in which it is inserted.</p>
+<p>This second part is intended to explain concretely how to organize this production pipeline as regards the color, and to help to parameterize it.</p>
+<h2 id="a1-theory">A.1 - Theory<a class="headerlink" href="#a1-theory" title="Permanent link">&para;</a></h2>
+<p>Before setting up the various software programs, it is important to understand that <strong>colors are regularly converted during the production</strong> of images. Indeed, at each stage since the generation of the color until its posting on a device, each end of software and hardware intervening works in its own space.</p>
+<p>To control the production pipeline of the colors thus does not imply to choose well a single colorimetric space, but rather <strong>to be aware of the various conversions and the various colorimetric spaces coming into play</strong> at each stage, within an application as well as between the applications.</p>
+<p>This control will not guarantee that the colors will be correctly reproduced on the viewer&rsquo;s device (TV, computer screen, telephone, cinema screen&hellip;) but at least allows to have control throughout the production while ensuring to deliver images that respect the standards in force. It is then up to the broadcaster to take over at the end of the pipeline with a correctly parameterized pipeline.</p>
+<h3 id="a1a-journey-of-a-color">A.1.a - Journey of a color<a class="headerlink" href="#a1a-journey-of-a-color" title="Permanent link">&para;</a></h3>
+<p>Let&rsquo;s follow the journey that a color has to go through before it is correctly displayed.</p>
+<p>A color generated by one application and to be exported to another application, through an intermediate file, is likely to undergo two conversions: from the first application to the file, and from the file to the second application. This operation is repeated at each stage of the production pipeline, until broadcast, where the broadcast application (and hardware) convert what they receive into the broadcast color space.</p>
+<p><em><img alt="Schema between two applications" src="" /></em></p>
+<p>Each of the applications must thus imperatively be correctly informed on the colorimetric space of the files which it imports, in order to be able to carry out the good conversion towards its own colorimetric space. In the same way, at the time of export, the good conversion since the colorimetric space of the application towards that of the exported file must be carried out.</p>
+<p>But within an application itself, many conversions can take place:</p>
+<ul>
+<li>From the color space of the imported file to the color space of the application.</li>
+<li>From the color space of the application towards that of the screen of the computer, for the preview.</li>
+<li>From the color space of the application towards that of the output file.</li>
+</ul>
+<p>Indeed, all these colorimetric spaces are not necessarily the same&hellip;</p>
+<p>With each &ldquo;brick&rdquo; of the application using colors, a color space is associated. Let us see these various bricks and some recommendations.</p>
+<p><em><img alt="Schema of an application and its color spaces" src="" /></em></p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>All applications do not necessarily allow access to all the settings of all the spaces for these different elements. The &ldquo;imposed&rdquo; settings can be more or less practical and intelligent depending on the application&hellip;</p>
+</div>
+<p>In the applications, we will have to adjust the different stages of color management:</p>
+<ul>
+<li><a href="#b-espace-de-travail-scene-referred">Workspace</a></li>
+<li><a href="#c-entree">Input (imports)</a></li>
+<li><a href="#d-affichage">Display</a></li>
+<li><a href="#e-selecteurs-de-couleur">Color pickers</a></li>
+<li>Output (<a href="#f-sortie-intermediaire">intermediate</a> et <a href="#g-sortie-finale">final</a>)</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All the following explanations apply to design applications (3D, drawing, compositing, retouching&hellip;) as well as to players (image display, video players&hellip;)</p>
+</div>
+<h2 id="b-workspace-scene-referred">B - Workspace (scene referred)<a class="headerlink" href="#b-workspace-scene-referred" title="Permanent link">&para;</a></h2>
+<p>The most important space to know is the one in which the application works, in which it performs the color synthesis and the associated calculations.</p>
+<p>This space is the one noted <em>scene referred</em>.</p>
+<p>Here are the most commonly used characteristics for a workspace :</p>
+<ul>
+<li><strong><em>Linear</em></strong> in the great majority of the cases, to improve the blending of the colors, it can be useful for the colorimetric corrections to use a nonlinear space.</li>
+<li><strong><em>Gamut large</em></strong> in order to work in a space capable of faithfully reproducing a large number of colors and gain in precision.</li>
+</ul>
+<p>Some applications allow you to change the workspace, which is particularly interesting in the case of 3D renderers: the workspace influences the rendering of colors and allows you to adjust the way you work with lights and materials.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The workspace is chosen <strong>before</strong> starting to work ; indeed, it is once the space is chosen that you work the colors in the space in question. Changing the workspace once the work has progressed makes no sense ; it will be necessary to adjust all the lights, all the color settings&hellip;</p>
+</div>
+<p>It is in any case imperative that the workspace of the application is larger than that of the final output, both in <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> and for the <a href="K-pix-format.html">pixel format</a>.</p>
+<h2 id="c-input">C - Input<a class="headerlink" href="#c-input" title="Permanent link">&para;</a></h2>
+<p>Each time a file or other external element is imported, the application must interpret (know) the element&rsquo;s color space in order to convert it to its workspace.</p>
+<p>There are then several possibilities:</p>
+<ul>
+<li>Either the files respect the most common standards (when they exist&hellip;), and the application interprets the files correctly by default.</li>
+<li>Either the files, or the application itself, do not respect these standards, or no standard exists, and the application must then allow to modify the interpretation of the data to specify manually which is the imported color space<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</li>
+</ul>
+<p>In any case, in order to control the production, <strong>it is imperative to control the interpretation of the colors by the applications</strong> during the import; some will systematically &ldquo;make mistakes&rdquo; on certain files, and it will then be necessary to think of correcting the interpretation at each import (or automate it)<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p><em>See * </em>A.6 - Intermediate Output<em> and </em>A.7 - Final Output<em> for more information on file-specific color spaces, and </em><a href="standards.html">II.B - Some Standards</a>* for a list of the most common standards.</p>
+<h2 id="d-display">D - Display<a class="headerlink" href="#d-display" title="Permanent link">&para;</a></h2>
+<p>It is important to keep in mind that <strong>the working color space, <em>scene referred</em>, is most often different from the display color space</strong>!</p>
+<p>The application thus carries out a conversion of the colors such as it calculates them towards the display space of the screen.</p>
+<p>There are several elements to take into account for this display:</p>
+<ul>
+<li>The color space of the screen itself</li>
+<li>The adjustments of the screen which can deteriorate the colors</li>
+<li>The colorimetric profile applied to the screen by the operating system</li>
+<li>The conversion carried out by the application since its workspace towards that of the display.</li>
+</ul>
+<p>See section <em><a href="calibration.html">2C - Screen Calibration</a></em> for more details on the subject.</p>
+<h3 id="d1-screen-space">D.1 - Screen space<a class="headerlink" href="#d1-screen-space" title="Permanent link">&para;</a></h3>
+<p>Each screen displays colors in a predefined color space chosen by the manufacturer for the particular model of screen.</p>
+<p>There are three main categories of screens:</p>
+<ul>
+<li>Computer screens (and projectors)</li>
+<li>Televisions</li>
+<li>Phones, tablets, etc.</li>
+</ul>
+<p>Following these categories, most displays use these color spaces:</p>
+<ul>
+<li>Computer: <strong><em>sRGB</em></strong>, although some displays (often called <em>HDR</em>) are also capable of displaying <strong><em>P3</em></strong> colors; <em>P3</em> displays <em>also</em> display <em>sRGB</em>, which is contained entirely &ldquo;within&rdquo; <em>P3</em>. Computer monitors display the <em>full/pc</em> range of colors (<em>cf.</em> <em><a href="K-pix-format.html">K.4 - Full range / Limited / TV / PC ?</a></em>).</li>
+<li>Televisions: <strong><em>Rec.709</em></strong>, or sometimes <strong><em>sRGB</em></strong> (adjustable), or sometimes other spaces when they are <em>HDR</em>. TVs display the <em>limited/tv</em> range of colors (<em>cf.</em> <em><a href="K-pix-format.html">K.4 - Full range / Limited / TV / PC ?</a></em>).</li>
+<li>Phones, tablets, etc. : <strong><em>sRGB</em></strong>, although some (rare) phones and tablets are also able to display <strong><em>P3</em></strong> colors. These devices display the <em>full range (full/pc)</em> of colors (<em>cf.</em> <em><a href="K-pix-format.html">K.4 - Full range / Limited / TV / PC ?</a></em>).</li>
+</ul>
+<p>It should be noted that the screens displaying <em>exactly</em> the announced color space are rare, and most generate (more or less) small variations; these variations are in general largely corrected by a controlled calibration. <em>Cf.</em> <em><a href="calibration.html">II.C - screen calibration</a></em>.</p>
+<h3 id="d2-settings-and-color-profiles">D.2 - Settings and color profiles<a class="headerlink" href="#d2-settings-and-color-profiles" title="Permanent link">&para;</a></h3>
+<p>The great majority of the screens propose several adjustments of the colors on the screen itself, in particular via the parameters of brightness and contrast, complemented, according to the screens, by the <em>gammas<a href="ZZ-vocabulaire.html">*</a></em> red, green and blue, and sometimes still other adjustments.</p>
+<p>These settings can sometimes correct the biggest defects of the screens as they are delivered from the factory (provided you have an efficient <a href="calibration.html">calibration</a> method), and can be completed by finer adjustments, both via the <em>colorimetric profile</em> applied by the operating system, and possibly adjustments at the level of the graphics card driver.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Many displays offer &ldquo;eco&rdquo;, &ldquo;auto&rdquo;, &ldquo;gaming&rdquo; modes, etc., which adapt their settings automatically depending on the activity, the type of signal received, etc. In a production pipeline where colors are managed, it is imperative to disable these different modes that change the display in an unpredictable way.</p>
+</div>
+<p>Knowing these settings is important for controlling the correct display of colors on the workstation.</p>
+<p>It should also be noted that these settings should be checked (and adjusted) regularly; the color display may vary with the aging of the screen, the ambient temperature, etc.</p>
+<p><em>Cf.</em> <em><a href="calibration.html">II.C - screen calibration</a></em> for detailed explanations of the screen settings and how to adjust them.</p>
+<h3 id="d3-within-the-application">D.3 - Within the application<a class="headerlink" href="#d3-within-the-application" title="Permanent link">&para;</a></h3>
+<p>Once the screen is installed and properly set up (or as best as possible), all that is left to do is to select the correct display profile in the application.</p>
+<p>Most of the time, a simple display option allows you to specify whether the screen is <em>sRGB</em>, <em>Rec.709</em> or <em>P3</em> or whatever; sometimes no setting is available and the application relies on the operating system.</p>
+<p>It should be kept in mind that the application continues to work in its own space, which does not depend on the one in which the colors are displayed, and that the file outputs do not depend on this display space either; on the other hand, a bad choice of display leads to bad choices of colors and thus unexpected and non-standard variations in the output!</p>
+<p>The worst mistake is for example to choose the wrong display space and then believe that it is the output space that is different from what was expected. This error then leads to changing the interpretation of the colors when importing into the next application to try to compensate, and introduce bad corrections while completely losing control of the production pipeline.</p>
+<h3 id="d4-soft-proofing">D.4 Soft-Proofing<a class="headerlink" href="#d4-soft-proofing" title="Permanent link">&para;</a></h3>
+<p>Some applications offer, in addition to controlling the conversions to display space, a <em>simulation</em> or <em>screen proofing<a href="ZZ-vocabulaire.html">*</a></em>, which consists of performing an intermediate conversion to the output space intended for the current job, before finally converting to display space. When working for specific outputs, it can be useful to activate this kind of tool and thus check the result after the multiple conversions that the colors will undergo until the final format.</p>
+<p>This method is in particular very useful to simulate the result of a printing in a space <em>CMJN</em> for example, but also the posting of a video in its format of exit.</p>
+<p>However the soft-proofing is only a method of checking and one can often do without it (especially in video).</p>
+<p>Cf. <em><a href="epreuvage.html">Soft-Proofing)</a></em> for more details on the subject.</p>
+<h2 id="e-color-pickers">E - Color pickers<a class="headerlink" href="#e-color-pickers" title="Permanent link">&para;</a></h2>
+<p>In an application the color pickers can have their own color space.</p>
+<p>Most often, they are either in the workspace of the application, which makes them difficult to use when the space is linear, or in the space of the display, more practical.</p>
+<p>We prefer non-linear spaces to facilitate the choice of colors; having color selectors in <em>sRGB</em> also allows to easily recover colors from other applications, from images, etc. A conversion is then carried out after the selection of the color towards the working space of the application.</p>
+<h2 id="f-intermediate-output">F - Intermediate output<a class="headerlink" href="#f-intermediate-output" title="Permanent link">&para;</a></h2>
+<p>When exporting <em>intermediate</em> files, which will be used in the rest of the production, the aim is to lose as little information as possible, to keep a maximum of data for the rest of the work.</p>
+<p>In this case, the easiest thing to do is, as far as possible, to export files in the application&rsquo;s workspace. To do this, the file format best able to store any color information is <em>openEXR</em> (which is supposed to use linear spaces). It is quite possible to use other formats, but in this case, either the choice of space will not be standard and may be misinterpreted later, or unnecessary conversions are introduced, or a loss of data by having to use a smaller or non-linear space.</p>
+<p>If it is impossible to export in the workspace and in <em>openEXR</em> (or other format allowing to keep the right space), you should prefer <em>RGB</em> formats (and avoid <em>YUV</em>, or at least use the <em>4:4:4</em> subsampling).</p>
+<p>When the working space is linear but the output space is not (and vice versa), it is important to know that a loss of precision and quality occurs, and that in this case it is absolutely necessary that the depth of the working space is greater than that of the output space (working in <em>32 bpc linear</em> to output in <em>16 bpc non-linear</em> for example).</p>
+<h2 id="g-final-output">G - Final output<a class="headerlink" href="#g-final-output" title="Permanent link">&para;</a></h2>
+<p>During the final output, it is of course necessary to try to respect as well as possible the standard corresponding to the delivery, or to refer to the request of the broadcaster.</p>
+<p><em>Cf.</em> <em><a href="standards.html">II.B - A few standards</a></em> for a list of the most common standards.</p>
+<p>Most of the final outputs will be in color spaces dedicated to the display, and therefore with a non-linear transfer; a loss of precision and quality taking place when passing from a linear workspace to a non-linear display space, it is important in this case that the workspace has a depth higher than that of the final output (work in <em>16 bpc</em> for an output <em>8 bpc</em> for example)</p>
+<hr />
+<p>Sources &amp; References</p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini for the translation;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>If an application does not allow you to change the color space during import, be prepared to have unexpected color variations during import. You will then have to guess where the application is &ldquo;wrong&rdquo; in order to manually perform a color correction to restore the original colors (most often simply via a <em>gamma<a href="ZZ-vocabulaire.html">*</a></em> correction or the application of a <em>LUT<a href="ZZ-vocabulaire.html">*</a></em>). Note that such an application does not really have its place in a production pipeline where one seeks to control the color&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Not all applications allow the automation of color management (for example <em>Adobe After Effects</em> does not have an <em>API</em> for this precise point). In the rest of this document, we will note for the applications explained the errors of interpretation that they make, that we have been able to spot, and the other specificities to know.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="N-ocio.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="standards.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

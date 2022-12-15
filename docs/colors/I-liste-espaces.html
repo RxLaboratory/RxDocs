@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/I-liste-espaces.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>I - Selective list of color spaces - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="H-espace-colo.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="J-liste-params.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/I-liste-espaces.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Theory</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Application</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#ii-selective-list-of-color-spaces">I.I - Selective list of color spaces</a></li>
+                <li class="second-level"><a href="#srgb-cie-61966-2-1-iec-61966-2-1">sRGB / CIE 61966-2-1 / IEC 61966-2-1</a></li>
+                    
+                    <li class="third-level"><a href="#primaries">Primaries</a></li>
+                    <li class="third-level"><a href="#white">White</a></li>
+                    <li class="third-level"><a href="#transfer-curve">Transfer curve</a></li>
+                <li class="second-level"><a href="#linear-rgb">Linear RGB</a></li>
+                    
+                <li class="second-level"><a href="#rec-601-itu-r-bt601-ccir-601">Rec. 601 / ITU-R BT.601 / CCIR 601</a></li>
+                    
+                    <li class="third-level"><a href="#primaries_1">Primaries</a></li>
+                    <li class="third-level"><a href="#white_1">White</a></li>
+                    <li class="third-level"><a href="#transfer-curve_1">Transfer curve</a></li>
+                <li class="second-level"><a href="#rec709-uit-r-bt-709">Rec.709 / UIT-R BT 709</a></li>
+                    
+                    <li class="third-level"><a href="#primaries_2">Primaries</a></li>
+                    <li class="third-level"><a href="#white_2">White</a></li>
+                    <li class="third-level"><a href="#transfer-curve_2">Transfer curve</a></li>
+                <li class="second-level"><a href="#rec2020-uit-r-bt2020">Rec.2020 / UIT-R BT.2020</a></li>
+                    
+                    <li class="third-level"><a href="#primaries_3">Primaries</a></li>
+                    <li class="third-level"><a href="#white_3">White</a></li>
+                    <li class="third-level"><a href="#transfer-curve_3">Transfer curve</a></li>
+                <li class="second-level"><a href="#dci-p3">DCI-P3</a></li>
+                    
+                    <li class="third-level"><a href="#primaries_4">Primaries</a></li>
+                    <li class="third-level"><a href="#white_4">White</a></li>
+                    <li class="third-level"><a href="#transfer-curve_4">Transfer curve</a></li>
+                <li class="second-level"><a href="#display-p3">Display P3</a></li>
+                    
+                    <li class="third-level"><a href="#primaries_5">Primaries</a></li>
+                    <li class="third-level"><a href="#white_5">White</a></li>
+                    <li class="third-level"><a href="#transfer-curve_5">Transfer curve</a></li>
+                <li class="second-level"><a href="#aces">ACES</a></li>
+                    
+                    <li class="third-level"><a href="#primaries-ap0">Primaries (AP0)</a></li>
+                    <li class="third-level"><a href="#primaries-ap1">Primaries (AP1)</a></li>
+                    <li class="third-level"><a href="#white_6">White</a></li>
+                    <li class="third-level"><a href="#aces2065-1">ACES2065-1</a></li>
+                    <li class="third-level"><a href="#acescg">ACEScg</a></li>
+                    <li class="third-level"><a href="#acescc">ACEScc</a></li>
+                <li class="second-level"><a href="#adobe-rgb">Adobe RGB</a></li>
+                    
+                    <li class="third-level"><a href="#primaries_6">Primaries</a></li>
+                    <li class="third-level"><a href="#white_7">White</a></li>
+                    <li class="third-level"><a href="#transfer-curve_6">Transfer curve</a></li>
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="ii-selective-list-of-color-spaces">I.I - Selective list of color spaces<a class="headerlink" href="#ii-selective-list-of-color-spaces" title="Permanent link">&para;</a></h1>
+<p>It would not be possible to list here all the color spaces available, but here is a selection useful in audiovisual production in 2021.</p>
+<div class="toc">
+<ul>
+<li><a href="#ii-selective-list-of-color-spaces">I.I - Selective list of color spaces</a><ul>
+<li><a href="#srgb-cie-61966-2-1-iec-61966-2-1">sRGB / CIE 61966-2-1 / IEC 61966-2-1</a><ul>
+<li><a href="#primaries">Primaries</a></li>
+<li><a href="#white">White</a></li>
+<li><a href="#transfer-curve">Transfer curve</a></li>
+</ul>
+</li>
+<li><a href="#linear-rgb">Linear RGB</a></li>
+<li><a href="#rec-601-itu-r-bt601-ccir-601">Rec. 601 / ITU-R BT.601 / CCIR 601</a><ul>
+<li><a href="#primaries_1">Primaries</a></li>
+<li><a href="#white_1">White</a></li>
+<li><a href="#transfer-curve_1">Transfer curve</a></li>
+</ul>
+</li>
+<li><a href="#rec709-uit-r-bt-709">Rec.709 / UIT-R BT 709</a><ul>
+<li><a href="#primaries_2">Primaries</a></li>
+<li><a href="#white_2">White</a></li>
+<li><a href="#transfer-curve_2">Transfer curve</a></li>
+</ul>
+</li>
+<li><a href="#rec2020-uit-r-bt2020">Rec.2020 / UIT-R BT.2020</a><ul>
+<li><a href="#primaries_3">Primaries</a></li>
+<li><a href="#white_3">White</a></li>
+<li><a href="#transfer-curve_3">Transfer curve</a></li>
+</ul>
+</li>
+<li><a href="#dci-p3">DCI-P3</a><ul>
+<li><a href="#primaries_4">Primaries</a></li>
+<li><a href="#white_4">White</a></li>
+<li><a href="#transfer-curve_4">Transfer curve</a></li>
+</ul>
+</li>
+<li><a href="#display-p3">Display P3</a><ul>
+<li><a href="#primaries_5">Primaries</a></li>
+<li><a href="#white_5">White</a></li>
+<li><a href="#transfer-curve_5">Transfer curve</a></li>
+</ul>
+</li>
+<li><a href="#aces">ACES</a><ul>
+<li><a href="#primaries-ap0">Primaries (AP0)</a></li>
+<li><a href="#primaries-ap1">Primaries (AP1)</a></li>
+<li><a href="#white_6">White</a></li>
+<li><a href="#aces2065-1">ACES2065-1</a></li>
+<li><a href="#acescg">ACEScg</a></li>
+<li><a href="#acescc">ACEScc</a></li>
+</ul>
+</li>
+<li><a href="#adobe-rgb">Adobe RGB</a><ul>
+<li><a href="#primaries_6">Primaries</a></li>
+<li><a href="#white_7">White</a></li>
+<li><a href="#transfer-curve_6">Transfer curve</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p><img alt="" src="img/comparison.png" /></p>
+<h2 id="srgb-cie-61966-2-1-iec-61966-2-1">sRGB / CIE 61966-2-1 / IEC 61966-2-1<a class="headerlink" href="#srgb-cie-61966-2-1-iec-61966-2-1" title="Permanent link">&para;</a></h2>
+<p>Display space, <strong><em>display-referred</em></strong>.</p>
+<p>The sRGB (for standard RGB) is one of the most common spaces in computing; indeed, it is that of most computer screens, and is also used by extension for most image formats in a standard way (<em>JPEG</em>, <em>PNG</em>, <em>TGA</em>&hellip;).</p>
+<p>It dates from 1996.</p>
+<p><img alt="" src="img/srgb-gamut.png" /></p>
+<h3 id="primaries">Primaries<a class="headerlink" href="#primaries" title="Permanent link">&para;</a></h3>
+<p>These primaries are the same as those in <em>Rec. 709</em>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,64</td>
+<td>0,30</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,33</td>
+<td>0,60</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,03</td>
+<td>0,1</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<h3 id="white">White<a class="headerlink" href="#white" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3127</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3290</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td><em>D65</em></td>
+</tr>
+<tr>
+<td><strong>lum.</strong></td>
+<td>80 cd/m²</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer-curve">Transfer curve<a class="headerlink" href="#transfer-curve" title="Permanent link">&para;</a></h3>
+<p>sRGB uses a transfer curve very close on average to a <em>Gamma 2.2</em>, with actually a linear transfer for linear luminances below <em>0.0031308</em> then a shifted <em>Gamma 2.4</em>.</p>
+<h2 id="linear-rgb">Linear RGB<a class="headerlink" href="#linear-rgb" title="Permanent link">&para;</a></h2>
+<p>Color space, <strong><em>scene-referred</em></strong>.</p>
+<p>Linear RGB is <strong>a variation of <em>sRGB<em>, identical in all points except for the transfer curve which is</em>* </em></strong>linear<em><em><em>. It is mainly used as a workspace (</em>scene referred</em>) when we need a better simulation of light (rendering engines, blending modes in compositing &hellip;) and to simplify calculations. It is found in particular in </em>EXR* files.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Often software mistakenly talks about <em>linear SRGB</em>, or worse, <em>IEC 61966-2-1 linear</em>, but it is <strong>not</strong> <em>sRGB</em> since the transfer curve is different.</p>
+</div>
+<h2 id="rec-601-itu-r-bt601-ccir-601">Rec. 601 / ITU-R BT.601 / CCIR 601<a class="headerlink" href="#rec-601-itu-r-bt601-ccir-601" title="Permanent link">&para;</a></h2>
+<p>Display space, <strong><em>display-referred</em></strong>.</p>
+<p>Rec. 601 is the complete standard for interlaced video for Standard Definition Television <em>SDTV</em>. It is no longer used but was used in the <em>PAL</em> and <em>NTSC</em> standards.</p>
+<p>Its <em>PAL</em> version is very close to <em>sRGB</em>.</p>
+<h3 id="primaries_1">Primaries<a class="headerlink" href="#primaries_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong> (NTSC)</td>
+<td>0,63</td>
+<td>0,31</td>
+<td>0,155</td>
+</tr>
+<tr>
+<td><strong>Y</strong> (NTSC)</td>
+<td>0,34</td>
+<td>0,595</td>
+<td>0,007</td>
+</tr>
+<tr>
+<td><strong>Z</strong> (NTSC)</td>
+<td>0,03</td>
+<td>0,095</td>
+<td>0,775</td>
+</tr>
+<tr>
+<td><strong>X</strong> (PAL)</td>
+<td>0,64</td>
+<td>0,29</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong> (PAL)</td>
+<td>0,33</td>
+<td>0,60</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong> (PAL)</td>
+<td>0,03</td>
+<td>0,11</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In <em>PAL</em>, the primaries of <em>Rec. 601</em> are very close to those of <em>sRGB</em>; only the <em>Gx</em> changes (0.29 instead of 0.3)</p>
+</div>
+<h3 id="white_1">White<a class="headerlink" href="#white_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3127</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3290</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td><em>D65</em></td>
+</tr>
+<tr>
+<td><strong>lum.</strong></td>
+<td>100 cd/m²</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer-curve_1">Transfer curve<a class="headerlink" href="#transfer-curve_1" title="Permanent link">&para;</a></h3>
+<p><em>Gamma 2.4</em>.</p>
+<h2 id="rec709-uit-r-bt-709">Rec.709 / UIT-R BT 709<a class="headerlink" href="#rec709-uit-r-bt-709" title="Permanent link">&para;</a></h2>
+<p>Display space, <strong><em>display-referred</em></strong>.</p>
+<p>Rec. 709 is the standard of the High Definition Television, <em>HDTV</em> and dates from 1990. It is generally found in the current video formats (<em>mp4</em>&hellip;)</p>
+<p>It is very close to <em>sRGB</em>, only the transfer curve changes (and its white point must be a little more intense).</p>
+<p><img alt="" src="img/srgb-gamut.png" /></p>
+<h3 id="primaries_2">Primaries<a class="headerlink" href="#primaries_2" title="Permanent link">&para;</a></h3>
+<p>These primaries are the same as the <em>sRGB</em> ones.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,64</td>
+<td>0,30</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,33</td>
+<td>0,60</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,03</td>
+<td>0,1</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<h3 id="white_2">White<a class="headerlink" href="#white_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3127</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3290</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td><em>D65</em></td>
+</tr>
+<tr>
+<td><strong>lum.</strong></td>
+<td>100 cd/m²</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer-curve_2">Transfer curve<a class="headerlink" href="#transfer-curve_2" title="Permanent link">&para;</a></h3>
+<p>Close to a <em>Gamma 2.4</em> or <em>Gamma 2.35</em> according to the recommendations.</p>
+<h2 id="rec2020-uit-r-bt2020">Rec.2020 / UIT-R BT.2020<a class="headerlink" href="#rec2020-uit-r-bt2020" title="Permanent link">&para;</a></h2>
+<p>Display space, <strong><em>display-referred</em></strong>.</p>
+<p>Rec. 2020 is the standard for Ultra High Definition Television, <em>UHDTV</em> and dates from 2012.</p>
+<p><img alt="" src="img/2020.png" /></p>
+<h3 id="primaries_3">Primaries<a class="headerlink" href="#primaries_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,708</td>
+<td>0,17</td>
+<td>0,131</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,292</td>
+<td>0,797</td>
+<td>0,046</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,0</td>
+<td>0,033</td>
+<td>0,823</td>
+</tr>
+</tbody>
+</table>
+<h3 id="white_3">White<a class="headerlink" href="#white_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3127</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3290</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td><em>D65</em></td>
+</tr>
+<tr>
+<td><strong>lum.</strong></td>
+<td>variable</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer-curve_3">Transfer curve<a class="headerlink" href="#transfer-curve_3" title="Permanent link">&para;</a></h3>
+<p>The same as Rec.709 close to a <em>Gamma 2,4</em>, but more precise.</p>
+<h2 id="dci-p3">DCI-P3<a class="headerlink" href="#dci-p3" title="Permanent link">&para;</a></h2>
+<p>Display space, <strong><em>display-referred</em></strong>.</p>
+<p><em>DCI-P3</em> was created as a transition to <em>Rec. 2020</em> and for movie projection. It is used by some TVs and computer monitors, and even more recently some phones/tablets.</p>
+<p><img alt="" src="img/p3.png" /></p>
+<h3 id="primaries_4">Primaries<a class="headerlink" href="#primaries_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,68</td>
+<td>0,265</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,32</td>
+<td>0,69</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,00</td>
+<td>0,045</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<h3 id="white_4">White<a class="headerlink" href="#white_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3140</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3510</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>lum.</strong></td>
+<td>48 cd/m²</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer-curve_4">Transfer curve<a class="headerlink" href="#transfer-curve_4" title="Permanent link">&para;</a></h3>
+<p><em>Gamma 2,6</em></p>
+<h2 id="display-p3">Display P3<a class="headerlink" href="#display-p3" title="Permanent link">&para;</a></h2>
+<p>Display space, <strong><em>display-referred</em></strong>.</p>
+<p>The <em>Display P3</em> is a variation of the <em>DCI-P3</em> adapted to be closer to (and better compatible with) the <em>sRGB</em> (and thus to make screens able to display both more easily). It keeps the primaries (and thus the wider gamut) of the <em>DCI-P3</em> but uses the White point and the Transfer curve of the <em>sRGB</em>.</p>
+<h3 id="primaries_5">Primaries<a class="headerlink" href="#primaries_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,68</td>
+<td>0,265</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,32</td>
+<td>0,69</td>
+<td>0,06</td>
+</tr>
+<tr>
+<td><strong>Z</strong></td>
+<td>0,00</td>
+<td>0,045</td>
+<td>0,79</td>
+</tr>
+</tbody>
+</table>
+<h3 id="white_5">White<a class="headerlink" href="#white_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3127</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3290</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td><em>D65</em></td>
+</tr>
+<tr>
+<td><strong>lum.</strong></td>
+<td>80 cd/m²</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer-curve_5">Transfer curve<a class="headerlink" href="#transfer-curve_5" title="Permanent link">&para;</a></h3>
+<p>That of the sRGB close on average to a <em>Gamma 2.2</em>.</p>
+<h2 id="aces">ACES<a class="headerlink" href="#aces" title="Permanent link">&para;</a></h2>
+<p><em>ACES</em> stands for <em>Academy Color Encoding System</em>, and represents a system comprising 5 color spaces designed by the Academy of the Oscars specifically for audiovisual production, released in 2014 for its first version.</p>
+<p>These 5 spaces share the same White point, close to <em>D60</em>; they use two sets of Primaries named <em>AP0</em> or <em>AP1</em>. The <em>AP0</em> Primaries are <em>outside</em> the visible colors (and thus the <em>CIE XYZ</em>): they are the closest theoretical Primaries encompassing all visible colors. The <em>AP1</em> Primaries are closer to the usual <em>RGB</em> Primaries and to the screens and projectors, making them more practical in the production of images.</p>
+<p><img alt="" src="img/aces.png" /></p>
+<h3 id="primaries-ap0">Primaries (AP0)<a class="headerlink" href="#primaries-ap0" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,7347</td>
+<td>0,0</td>
+<td>0,001</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,2653</td>
+<td>1,0</td>
+<td>-0,77</td>
+</tr>
+</tbody>
+</table>
+<h3 id="primaries-ap1">Primaries (AP1)<a class="headerlink" href="#primaries-ap1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,713</td>
+<td>0,165</td>
+<td>0,128</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,293</td>
+<td>1,830</td>
+<td>0,044</td>
+</tr>
+</tbody>
+</table>
+<h3 id="white_6">White<a class="headerlink" href="#white_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,32168</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,33767</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td>proche de <em>D60</em></td>
+</tr>
+<tr>
+<td><strong>lum.</strong></td>
+<td>infinie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="aces2065-1">ACES2065-1<a class="headerlink" href="#aces2065-1" title="Permanent link">&para;</a></h3>
+<p><strong>Storage space</strong>.</p>
+<p><em>ACES2065-1</em> is the main space of the <em>ACES</em> system. It is designed to store any color information in a non-destructive way and is usable in the long term with future new spaces. It thus encompasses all visible colors and is <em>larger</em> than the <em>CIE XYZ</em>. Its use is mainly theoretical.</p>
+<p>It is intended to be used in <em>openEXR</em> images or <em>MXF</em> videos.</p>
+<p>It is linear.</p>
+<h3 id="acescg">ACEScg<a class="headerlink" href="#acescg" title="Permanent link">&para;</a></h3>
+<p>Workspace, <strong><em>scene-referred</em></strong>.</p>
+<p><em>ACEScg</em> is similar to <em>ACES2065-1</em> but uses the <em>AP1</em> Primaries. It is intended primarily for 3D renderers and compositing.</p>
+<p>Its standard image storage format is <em>openEXR</em>.</p>
+<h3 id="acescc">ACEScc<a class="headerlink" href="#acescc" title="Permanent link">&para;</a></h3>
+<p>Workspace, <strong><em>scene-referred</em></strong>.</p>
+<p><em>ACEScc</em> is similar to <em>ACEScg</em> (with <em>AP1</em> Primaries) but uses a non-linear Transfer curve, more convenient for color correction and calibration.</p>
+<h2 id="adobe-rgb">Adobe RGB<a class="headerlink" href="#adobe-rgb" title="Permanent link">&para;</a></h2>
+<p>Display space, <strong><em>display-referred</em></strong> and working space.</p>
+<p><em>Adobe RGB</em> was designed in 1998 for graphic designers working on screen but whose work is intended for printing. It is close to <em>sRGB</em>, but the green primary has been shifted to include more colors that can be reproduced in <em>CMYK</em> printing. Its Transfer curve is also slightly different.</p>
+<p><img alt="" src="img/adobe-rgb.png" /></p>
+<h3 id="primaries_6">Primaries<a class="headerlink" href="#primaries_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>R</th>
+<th>G</th>
+<th>B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>X</strong></td>
+<td>0,64</td>
+<td>0,21</td>
+<td>0,15</td>
+</tr>
+<tr>
+<td><strong>Y</strong></td>
+<td>0,33</td>
+<td>0,71</td>
+<td>0,06</td>
+</tr>
+</tbody>
+</table>
+<h3 id="white_7">White<a class="headerlink" href="#white_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>White</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>x</strong></td>
+<td>0,3127</td>
+</tr>
+<tr>
+<td><strong>y</strong></td>
+<td>0,3290</td>
+</tr>
+<tr>
+<td><strong>CIE</strong></td>
+<td><em>D65</em></td>
+</tr>
+<tr>
+<td><strong>lum.</strong></td>
+<td>160 cd/m²</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer-curve_6">Transfer curve<a class="headerlink" href="#transfer-curve_6" title="Permanent link">&para;</a></h3>
+<p><em>Gamma 563/256</em> soit <em>2,199 218 75</em>.</p>
+<hr />
+<p>Sources et références</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/SRGB"><em>sRGB</em> on <em>Wikipedia</em></a></li>
+<li><a href="http://www.color.org/chardata/rgb/srgb.xalter">Specifications <em>sRGB</em> on <em>color.org</em></a></li>
+<li><a href="http://www.color.org/chardata/rgb/BT601.xalter">Specifications <em>BT.601</em> on <em>color.org</em></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rec._709"><em>Rec. 709</em> on <em>Wikipedia</em></a></li>
+<li><a href="http://www.color.org/chardata/rgb/BT709.xalter">Specifications <em>BT.709</em> on <em>color.org</em></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rec._2020"><em>Rec. 2020</em> on <em>Wikipedia</em></a></li>
+<li><a href="http://www.color.org/chardata/rgb/BT2020.xalter">Specifications <em>BT.2020</em> on <em>color.org</em></a></li>
+<li><a href="https://en.wikipedia.org/wiki/DCI-P3"><em>DCI-P3</em> on <em>Wikipedia</em></a></li>
+<li><a href="http://www.color.org/chardata/rgb/DCIP3.xalter">Specifications <em>DCI-P3</em> on <em>color.org</em></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Academy_Color_Encoding_System"><em>ACES</em> on <em>Wikipedia</em></a></li>
+<li><a href="https://acescolorspace.com/">acescolorspace.com/</a></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini for the translation;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="H-espace-colo.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="J-liste-params.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/preparer.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>E - Setting up the production pipeline - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="epreuvage.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="ocio.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/preparer.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Theory</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Application</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#iie-preparation-of-the-color-management-of-a-production-pipeline">II.E - Preparation of the color management of a production pipeline</a></li>
+                <li class="second-level"><a href="#e1-3d-animation-with-blender-filmic">E.1 - 3D animation with Blender, Filmic</a></li>
+                    
+                    <li class="third-level"><a href="#e1a-textures-and-other-2d-images">E.1.a - Textures and other 2D images</a></li>
+                    <li class="third-level"><a href="#e1b-3d-render">E.1.b - 3D Render</a></li>
+                    <li class="third-level"><a href="#e1c-compositing">E.1.c - Compositing</a></li>
+                    <li class="third-level"><a href="#e1ca-filmic-with-after-effects">E.1.c.a - Filmic with After Effects</a></li>
+                    <li class="third-level"><a href="#e1d-exports">E.1.d - Exports</a></li>
+                <li class="second-level"><a href="#e2-3d-animation-with-aces">E.2 - 3D animation with ACES.</a></li>
+                    
+                    <li class="third-level"><a href="#e2a-textures-and-other-2d-images">E.2.a - Textures and other 2D images</a></li>
+                    <li class="third-level"><a href="#e2b-3d-rendering">E.2.b - 3D Rendering</a></li>
+                    <li class="third-level"><a href="#e2c-compositing">E.2.c - Compositing</a></li>
+                    <li class="third-level"><a href="#e2d-exports">E.2.d - Exports</a></li>
+                <li class="second-level"><a href="#e3-2d-animation">E.3 - 2D Animation</a></li>
+                    
+                <li class="second-level"><a href="#e4-videos-live-action-and-vfx">E.4 - Videos, live action and VFX</a></li>
+                    
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini (translation);license:CC-BY-NC-SA;copyright:2021;updated:2021/07/1" />)</p>
+<h1 id="iie-preparation-of-the-color-management-of-a-production-pipeline">II.E - Preparation of the color management of a production pipeline<a class="headerlink" href="#iie-preparation-of-the-color-management-of-a-production-pipeline" title="Permanent link">&para;</a></h1>
+<p>Now that we know the different types of color spaces and at what points in the production process they come into play, let&rsquo;s see how to prepare a complete production pipeline to effectively manage color from design to delivery.</p>
+<p>The first step is to list all the formats used at the input of the production pipeline (videos or images supplied and imported, manufactured images) as well as all the formats to be delivered at the end of the production process (videos and final images).<br />
+Depending on these formats, and therefore the associated color spaces, we can choose the different spaces to be used during production, keeping in mind that &ldquo;who can do more can do less&rdquo;: the easiest thing is to set up a high-performance chain that can deliver in all formats.</p>
+<p>It will also be necessary to take care that all the stages which modify the image use a colorimetric space <em>larger</em> than that of delivery: as well with a <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> wider as with a larger depth.</p>
+<p>We will also try to limit the number of spaces used (and thus limit the possible errors and shifts due to conversions). The preparation of the pipeline consists therefore most often in choosing the most adequate workspace according to the input and especially output formats, and supported by the various applications.</p>
+<p>Here are some examples of possible choices, consistent with a cinema quality (and therefore all types of production).</p>
+<h2 id="e1-3d-animation-with-blender-filmic">E.1 - 3D animation with Blender, Filmic<a class="headerlink" href="#e1-3d-animation-with-blender-filmic" title="Permanent link">&para;</a></h2>
+<p>Blender provides an efficient default workspace for 3D rendering: <em>Filmic</em>. This space being configured using <em>OCIO</em>, it is quite easy to create a production pipeline around it.</p>
+<p>For simplicity, the textures can be made in a standard <em>RGB Linear</em> space.</p>
+<p>As in most pipelines, we can use <strong><em>openEXR</em></strong> as an intermediate image format, both for textures and for intermediate renders or the final <em>master</em>.</p>
+<p><em><img alt="Blender Pipeline Diagram" src="img/blender-workflow.svg" /></em></p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Type</th>
+<th>Color Space / Format</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>Color Selectors</td>
+<td><em>sRGB</em> (screen)</td>
+<td></td>
+</tr>
+<tr>
+<td>It is always more convenient, and safer, to choose your colors in the non-linear screen space.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>All</td>
+<td>Display</td>
+<td>Screen Space (<em>sRGB</em>)</td>
+<td>Colors are always displayed in the color screen space.</td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Workspace</td>
+<td><em>RGB Linear</em> / <em>16 bpc</em></td>
+<td>If the application does not support <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Workspace</td>
+<td><em>Filmic</em> / <em>16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Output</td>
+<td>Workspace / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Workspace</td>
+<td><em>Filmic</em></td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Output</td>
+<td><em>Filmic</em> / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Workspace</td>
+<td><em>Filmic</em> / <em>32 bpc</em></td>
+<td>In case of performance problems and if there is no color correction step following compositing, we may work with <em>16 bpc</em>.</td>
+</tr>
+<tr>
+<td>If the application does not support <em>OCIO</em>, then a <em>LUT<a href="ZZ-vocabulaire.html">*</a> Filmic</em> must be applied to the imported footage.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Softproofing</td>
+<td>Final output space (<em>Rec.709</em> for example)</td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Final Output</td>
+<td>Standard depending on the format: <em>Rec.709</em>, <em>Rec.2020</em>&hellip;</td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Master / Archiving</td>
+<td><em>RGB Linear</em> / <em>openEXR 16 bpc</em></td>
+<td>It is probably safest to archive the images in as standard a space as possible, but without losing quality.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Output for color correction</td>
+<td><em>RGB Linear</em> / <em>openEXR 32bpc</em></td>
+<td><em>32bpc</em> is necessary to avoid loss of quality when converting to a possibly non-linear space for color correction.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e1a-textures-and-other-2d-images">E.1.a - Textures and other 2D images<a class="headerlink" href="#e1a-textures-and-other-2d-images" title="Permanent link">&para;</a></h3>
+<p>Whatever the application (<em>Substance Painter</em>, <em>Substance Designer</em>, <em>Krita</em>, <em>Adobe Photoshop</em>, <em>The Foundry Mari</em>&hellip;), the color textures can be created in <strong><em>RGB Linear</em></strong> ; just be careful to have at least <em>16 bpc</em>.</p>
+<p>When importing in <em>Blender</em>, the images will be interpreted in <em>RGB Linear</em>, the data textures (<em>normal maps</em>, <em>metalness</em>, etc) in <em>Raw</em>, without conversion.</p>
+<p>It is also possible to work directly with textures in <em>Filmic</em> space if the application supports <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em> by simply loading the <em>OCIO</em> configuration from <em>Blender</em>, or by using an <em>ICC</em> profile corresponding to <em>Filmic</em>, such as the ones we propose <a href="media/filmic-luts.zip">download here</a>.</p>
+<h3 id="e1b-3d-render">E.1.b - 3D Render<a class="headerlink" href="#e1b-3d-render" title="Permanent link">&para;</a></h3>
+<p>3D rendering in Blender will be done in <strong><em>Filmic</em></strong> by default. You can choose different levels of contrast; it&rsquo;s an artistic choice to make when working on lookdev, you&rsquo;ll just have to re-apply the same one when compositing.</p>
+<h3 id="e1c-compositing">E.1.c - Compositing<a class="headerlink" href="#e1c-compositing" title="Permanent link">&para;</a></h3>
+<p>If the compositing is done in <em>Blender</em>, it automatically uses the same workspace, i.e. <strong><em>Filmic</em></strong> (with the choice of contrast), and there is nothing to configure.</p>
+<p>In case of compositing in a third party application, the easiest way is to use <em>OCIO</em> and load the <em>OCIO</em> configuration from <em>Blender</em> to be able to apply again the <em>Filmic</em> workspace (and the choice of contrast) on the <em>openEXR</em> files rendered by <em>Blender</em> and imported into the compositing application.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When rendering <em>openEXR</em>, the images are linear and do not include color space information: the <em>Filmic</em> space must be reapplied in the compositing software. When rendering in any other format, <em>Blender</em> converts to the default space of the format (<em>sRGB</em> to <em>PNG</em> for example).</p>
+</div>
+<h3 id="e1ca-filmic-with-after-effects">E.1.c.a - Filmic with After Effects<a class="headerlink" href="#e1ca-filmic-with-after-effects" title="Permanent link">&para;</a></h3>
+<p>For the particular case of <em>After Effects</em>, where setting up <em>OCIO</em> is tedious, it may be simpler to use a <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> for <em>Filmic</em> conversion&hellip; We provide <a href="ZZ-download.html">a variation of this <em>LUT</em> here</a> (for each <em>Filmic</em> contrast variation available). You will then have to choose another workspace in the <em>After Effects</em> project, and use a space conversion effect from <em>RGB Linear</em> to the project space after applying the <em>LUT</em>.</p>
+<p><em><img alt="After Effects Filmic screen capture" src="" /></em><br />
+<em>Example of effects to use on an openEXR Filmic file </em>in<em> After Effects </em>with an ACEScg workspace*.</p>
+<h3 id="e1d-exports">E.1.d - Exports<a class="headerlink" href="#e1d-exports" title="Permanent link">&para;</a></h3>
+<p>From the compositing software, we can then simply export <em>openEXR</em> <strong><em>RGB Linear</em></strong> files as <em>master</em> or <em>backup</em>, and directly video files in the standard color space that corresponds to them for the final exports.</p>
+<h2 id="e2-3d-animation-with-aces">E.2 - 3D animation with <em>ACES</em>.<a class="headerlink" href="#e2-3d-animation-with-aces" title="Permanent link">&para;</a></h2>
+<p>Since most 3D software uses <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em>, all of them will be able to use <strong><em>ACEScg</em></strong><a href="ZZ-vocabulaire.html">*</a> as their rendering space.</p>
+<p>As in most pipelines, we can use <strong><em>openEXR</em></strong> as an intermediate image format, both for textures and for intermediate renders or the final <em>master</em>.</p>
+<p>It should be noted that the <em>ACES<a href="ZZ-vocabulaire.html">*</a></em> configuration usually used, provided by <em>OCIO</em>, includes a very long list of color spaces, notably those of various camera manufacturers. If you don&rsquo;t need all these formats, on an animation production that doesn&rsquo;t include shooting, you can quite easily remove all these spaces from the setup. <a href="ZZ-download.html">We provide here</a> such an adapted version of <em>ACES</em>, which is more convenient in animation productions.</p>
+<p><em><img alt="ACES Pipeline Chart" src="img/aces-workflow.svg" /></em></p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Type</th>
+<th>Color Space / Format</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>Color Selectors</td>
+<td><em>sRGB</em> (from the screen)</td>
+<td>It is always more convenient, and safer, to choose your colors in the non-linear screen space.</td>
+</tr>
+<tr>
+<td>All</td>
+<td>Display</td>
+<td>Screen Space (<em>sRGB</em>)</td>
+<td>The colors are always displayed in the color screen space.</td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Workspace</td>
+<td><em>RGB Linear</em> / <em>16 bpc</em></td>
+<td>If the application does not manage <em>OCIO<a href="ZZ-vocabulaire.html">*</a></em></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Workspace</td>
+<td><em>ACEScg</em> / <em>16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Output</td>
+<td>Workspace / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Workspace</td>
+<td><em>ACEScg</em></td>
+<td></td>
+</tr>
+<tr>
+<td>3D</td>
+<td>Output</td>
+<td><em>ACEScg</em> / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Workspace</td>
+<td><em>ACEScg</em> / <em>32 bpc</em></td>
+<td>In case of performance problems and if there is no color correction step following the compositing, we can eventually work with <em>16 bpc</em>.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Softproofing</td>
+<td>Final output space (<em>Rec.709</em> for example)</td>
+<td>In doubt, it is better not to configure softproofing and to remain on the color space of the screen for display.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Final output</td>
+<td>Standard depending on the format : <em>Rec.709</em>, <em>Rec.2020</em>&hellip;</td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Master / Archiving</td>
+<td><em>RGB Linear</em> / <em>openEXR 16 bpc</em></td>
+<td>It is probably safer to archive the images in as standard a space as possible, but without losing quality.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Output for color correction</td>
+<td><em>ACEScg</em> / <em>openEXR 32bpc</em></td>
+<td>The <em>32 bpc</em> are necessary to avoid loss of quality when converting to a probably non-linear space for color correction (which would be done with <em>ACEScc</em> in the case of a chain using <em>ACES</em> all along).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e2a-textures-and-other-2d-images">E.2.a - Textures and other 2D images<a class="headerlink" href="#e2a-textures-and-other-2d-images" title="Permanent link">&para;</a></h3>
+<p>Whatever the application (<em>Substance Painter</em>, <em>Substance Designer</em>, <em>Krita</em>, <em>Adobe Photoshop</em>, <em>The Foundry Mari</em>&hellip;), the color textures can be created in <strong><em>RGB Linear</em></strong>; just be careful to have at least <em>16 bpc</em>.</p>
+<p>It is also possible, but not for all applications, to work directly in <em>ACEScg</em>; in this case, it will be necessary to be vigilant when importing into the 3D software to specify the right space, <em>RGB linear</em> or <em>ACEScg</em> (or <em>raw/data</em> for data maps such as <em>normal maps</em>, <em>specular</em>, etc.)</p>
+<p>The interest of working directly with textures in <em>ACEScg</em> is to limit conversions and avoid the risks of color shift that result.</p>
+<h3 id="e2b-3d-rendering">E.2.b - 3D Rendering<a class="headerlink" href="#e2b-3d-rendering" title="Permanent link">&para;</a></h3>
+<p>The 3D rendering is done with <strong><em>ACEScg</em></strong></p>
+<h3 id="e2c-compositing">E.2.c - Compositing<a class="headerlink" href="#e2c-compositing" title="Permanent link">&para;</a></h3>
+<p>For compositing, the easiest way is to use <em>OCIO</em> and load the <em>ACES</em> configuration so that you can reapply the <strong><em>ACEScg</em></strong> space to the rendered <em>openEXR</em> files and as a workspace.</p>
+<p>For the particular case of <em>Adobe After Effects</em>, there is no need to use <em>OCIO</em>, <em>ACEScg</em> is provided natively.</p>
+<h3 id="e2d-exports">E.2.d - Exports<a class="headerlink" href="#e2d-exports" title="Permanent link">&para;</a></h3>
+<p>From the compositing software, you can then simply export <em>openEXR</em> <strong><em>RGB Linear</em></strong> files as <em>master</em> or <em>backup</em>, and directly video files in the corresponding standard color space.</p>
+<h2 id="e3-2d-animation">E.3 - 2D Animation<a class="headerlink" href="#e3-2d-animation" title="Permanent link">&para;</a></h2>
+<p>In 2D animation, it is less important to use a <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> wide workspace. Although it is recommended to follow the same methods as in 3D, some animation softwares will not allow it and we can therefore fall back on a <em>RGB Linear</em> pipeline for example.</p>
+<p>It will be necessary to use as much as possible <em>openEXR</em> files all along the pipeline to be sure to keep a sufficient quality. Here again, if for detailed scenery it is important to stay on this format and a linear space with at least <em>16 bpc</em>, in the case of animation if it is less detailed or uses simple flat colors, we can fall back on more common spaces <em>sRGB</em> and <em>PNG</em> formats (with <em>16 bpc</em> if possible) or vectors.</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Type</th>
+<th>Color Space / Format</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All</td>
+<td>Color Selectors</td>
+<td><em>sRGB</em> (from the screen)</td>
+<td>It is always more convenient, and safer, to choose your colors in the non-linear screen space.</td>
+</tr>
+<tr>
+<td>All</td>
+<td>Display</td>
+<td>Screen Space (<em>sRGB</em>)</td>
+<td>The colors are always displayed in the color screen space.</td>
+</tr>
+<tr>
+<td>Backgrounds</td>
+<td>Workspace</td>
+<td><em>RGB Linear</em> / <em>16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Backgrounds</td>
+<td>Output</td>
+<td><em>RGB Linear</em> / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Workspace</td>
+<td><em>RGB Linéaire</em> / <em>16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Workspace</td>
+<td><em>sRGB</em> / <em>16 bpc</em></td>
+<td>If the application does not allow you to work in linear.</td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Workspace</td>
+<td><em>sRGB</em> / <em>8 bpc</em></td>
+<td>In case of vector output.</td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Output</td>
+<td><em>RGB Linear</em> / <em>openEXR 16 bpc</em></td>
+<td></td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Output</td>
+<td><em>sRGB</em> / <em>PNG 16 bpc</em></td>
+<td>If the application does not allow exporting in <em>EXR</em>.</td>
+</tr>
+<tr>
+<td>Animation</td>
+<td>Output</td>
+<td><em>sRGB</em> / <em>8 bpc</em></td>
+<td>In case of vector output.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Workspace</td>
+<td><em>ACEScg</em> / <em>32 bpc</em></td>
+<td>Or any other space at <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> wide so that you can export in all types of formats, including film.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Softproofing</td>
+<td>Final output space (<em>Rec.709</em> for example)</td>
+<td>In doubt, it is better not to configure softproofing and to remain on the color space of the screen for display.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Final output</td>
+<td>Standard depending on the format : <em>Rec.709</em>, <em>Rec.2020</em>&hellip;</td>
+<td></td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Master / Archiving</td>
+<td><em>RGB Linear</em> / <em>openEXR 16 bpc</em></td>
+<td>It is probably safer to archive the images in as standard a space as possible, but without losing quality.</td>
+</tr>
+<tr>
+<td>Compositing</td>
+<td>Output for color correction</td>
+<td><em>RGB Linear</em> / <em>openEXR 32bpc</em></td>
+<td><em>32 bpc</em> are necessary to avoid losing quality when converting to a probably non-linear space for color correction.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="e4-videos-live-action-and-vfx">E.4 - Videos, live action and VFX<a class="headerlink" href="#e4-videos-live-action-and-vfx" title="Permanent link">&para;</a></h2>
+<p>A pipeline that includes video can be very similar to a 3D production pipeline, especially if it involves 3D renderings.</p>
+<p>Simply, you will have to be careful and import the photos and videos by specifying the correct color space, that of the camera that captured the images, as soon as they are imported into the software that uses them.</p>
+<p><em>OCIO</em> and <em>ACES</em> contain a large selection of color spaces from various camera models, so it is often easiest to use a chain with <em>ACES</em> for production, as described above.</p></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="epreuvage.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="ocio.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

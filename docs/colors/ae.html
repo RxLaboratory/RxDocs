@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/ae.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>G - Adobe After Effects - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="ocio.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="premiere.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/ae.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Theory</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Application</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#iig-color-management-adobe-after-effects">II.G - Color management: Adobe After Effects</a></li>
+                <li class="second-level"><a href="#g1-project-settings-workspace">G.1 - Project Settings - Workspace</a></li>
+                    
+                <li class="second-level"><a href="#g2-footage-interpretation-input-spaces">G.2 - Footage Interpretation - Input spaces</a></li>
+                    
+                <li class="second-level"><a href="#g3-view-options-display-space-and-simulations-soft-proofing">G.3 - View Options - Display Space and Simulations (Soft-proofing)</a></li>
+                    
+                <li class="second-level"><a href="#g4-export-options-output-spaces">G.4 - Export Options - Output Spaces</a></li>
+                    
+                <li class="second-level"><a href="#g5-ocio">G.5 - OCIO</a></li>
+                    
+                    <li class="third-level"><a href="#g5a-introduction">G.5.a - Introduction</a></li>
+                    <li class="third-level"><a href="#g5b-install-the-ocio-plug-in">G.5.b - Install the OCIO plug-in</a></li>
+                    <li class="third-level"><a href="#g5c-disable-color-management-in-after-effects">G.5.c - Disable color management in After Effects</a></li>
+                    <li class="third-level"><a href="#g5d-management">G.5.d - Management</a></li>
+                    <li class="third-level"><a href="#g5e-input-and-workspace">G.5.e - Input and workspace</a></li>
+                    <li class="third-level"><a href="#g5f-output">G.5.f - Output</a></li>
+                    <li class="third-level"><a href="#g5g-display">G.5.g - Display</a></li>
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini for the translation;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p>
+<h1 id="iig-color-management-adobe-after-effects">II.G - Color management: Adobe After Effects<a class="headerlink" href="#iig-color-management-adobe-after-effects" title="Permanent link">&para;</a></h1>
+<p><em>After Effects</em> is one of the last software to not integrate <em>OpenColorIO<a href="ZZ-vocabulaire.html">*</a></em> (<em>cf</em>. <em><a href="N-ocio.html">I.N - OpenColorIO and ACES</a></em>) natively for color management. However, the color management in <em>After Effects</em> is quite simple to set up, and it handles a wide range of color spaces, including <em>ACEScg<a href="ZZ-vocabulaire.html">*</a></em>, which may make it possible to do without <em>OCIO</em>.</p>
+<p>However, it is possible to use <em>OCIO</em> anyway via a dedicated plug-in, and thus take advantage of a unique configuration on the whole production pipeline of which <em>After Effects</em> would be part.</p>
+<p>Natively, <em>After Effects</em> can be complicated to integrate into a production pipeline:</p>
+<ul>
+<li>Footage interpretation, and color management in general, cannot be changed via a script.</li>
+<li>The default interpretation for each type of footage can be changed in a configuration text file, but it will have to be copied to all workstations.</li>
+<li><em>After Effects</em> does not offer the <em>ACEScc</em> workspace for color correction.</li>
+<li>The output space is set by default to the workspace.</li>
+</ul>
+<p>These shortcomings make it impractical when working in a team with a precise and automated workflow. These problems can be overcome by using the <em>OCIO</em> plug-in, which, being an effect, can be scripted.</p>
+<p>For a freelancer or a small team, the management proposed by <em>After Effects</em> can however be sufficient.</p>
+<div class="toc">
+<ul>
+<li><a href="#iig-color-management-adobe-after-effects">II.G - Color management: Adobe After Effects</a><ul>
+<li><a href="#g1-project-settings-workspace">G.1 - Project Settings - Workspace</a></li>
+<li><a href="#g2-footage-interpretation-input-spaces">G.2 - Footage Interpretation - Input spaces</a></li>
+<li><a href="#g3-view-options-display-space-and-simulations-soft-proofing">G.3 - View Options - Display Space and Simulations (Soft-proofing)</a></li>
+<li><a href="#g4-export-options-output-spaces">G.4 - Export Options - Output Spaces</a></li>
+<li><a href="#g5-ocio">G.5 - OCIO</a><ul>
+<li><a href="#g5a-introduction">G.5.a - Introduction</a></li>
+<li><a href="#g5b-install-the-ocio-plug-in">G.5.b - Install the OCIO plug-in</a></li>
+<li><a href="#g5c-disable-color-management-in-after-effects">G.5.c - Disable color management in After Effects</a></li>
+<li><a href="#g5d-management">G.5.d - Management</a></li>
+<li><a href="#g5e-input-and-workspace">G.5.e - Input and workspace</a></li>
+<li><a href="#g5f-output">G.5.f - Output</a></li>
+<li><a href="#g5g-display">G.5.g - Display</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="g1-project-settings-workspace">G.1 - Project Settings - Workspace<a class="headerlink" href="#g1-project-settings-workspace" title="Permanent link">&para;</a></h2>
+<p>The workspace is set per project, in the project settings.</p>
+<p><img alt="Project settings" src="img/ae/project.png" /></p>
+<p>This is where we set the color depth to be used with the workspace; unless you are working on low performance hardware, there is no reason to choose anything other than <em>32 bpc</em>, especially if you enable color management. In any case, <em>16 bpc</em> is essential to obtain correct colors.</p>
+<p><em>After Effects</em> offers a long list of color spaces, and mixes both real workspaces and output/display and camera spaces <strong>not to be used as workspace</strong>. As with all software, it is advisable to choose a wide gamut space, such as <em>Adobe RGB</em> or <em>ACEScg</em>. Unfortunately, <em>After Effects</em> does not offer <em>ACEScc</em> for color correction natively, and you will have to use the <em>OCIO</em> plug-in or <em>LUT<a href="ZZ-vocabulaire.html">*</a></em> to use it.</p>
+<p>A check box allows you to linearize the workspaces which are not linear (like <em>Adobe RGB</em> for example) in order to better generate the colors.<br />
+In the case of color correction work, common on <em>After Effects</em>, a non-linear space should be chosen and this box should be left unchecked.</p>
+<h2 id="g2-footage-interpretation-input-spaces">G.2 - Footage Interpretation - Input spaces<a class="headerlink" href="#g2-footage-interpretation-input-spaces" title="Permanent link">&para;</a></h2>
+<p>The input space is defined on each footage, in the <em>interpretation</em>, accessible via a right click on the footage.</p>
+<p><img alt="Interpretation" src="img/ae/interpret.png" /></p>
+<p>It is necessary to check for each type of imported footage that <em>After Effects</em> selects the right space, or specify it manually via this dialog box. For example, when importing <em>EXR</em> files from a 3D renderer, <em>After Effects</em> considers them to be <em>RGB linear</em> by default; when working in <em>ACEScg</em>, you will have to select this space at this point <strong>for each</strong> imported <em>EXR</em> sequence.</p>
+<p>You can change the default interpretation for each file type by modifying the configuration text file named <em>interpretation rules.txt</em>, itself located in the folder containing the <em>After Effects</em> settings<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. Once the file is modified, you have to restart <em>After Effects</em> for the changes to take effect.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the color space of the imported files is different from the default one for the type of file in question, don&rsquo;t forget to select the right space at each import, or modify the default settings file.</p>
+</div>
+<h2 id="g3-view-options-display-space-and-simulations-soft-proofing">G.3 - View Options - Display Space and Simulations (Soft-proofing)<a class="headerlink" href="#g3-view-options-display-space-and-simulations-soft-proofing" title="Permanent link">&para;</a></h2>
+<p>The transformation from the workspace to the display space is set in the <em>View</em> (<em>Display</em>) menu.</p>
+<p><img alt="View menu" src="img/ae/view.png" /></p>
+<p>By simply checking the <em>Use display color managament</em> box, <em>After Effects</em> automatically converts the colors to the display space of the screen as specified by the operating system.</p>
+<p>The <em>Simulate output</em> submenu allows you to test output color spaces without having to render: an output space is automatically applied to the image, which is then converted back to the display space. This option can be useful for testing the result of a specific output and checking that the various conversions do not degrade the image, and to be certain of the colors that will be generated when output in a specific space, even if most of the time this simulation can be left disabled.</p>
+<p>You can then manually configure a simulation.</p>
+<p><img alt="Simulation options" src="img/ae/output-simu.png" /></p>
+<p>The first color space option allows conversion to the output space of the image.</p>
+<p>The second option simulates a conversion or interpretation that a video player would make, and allows you to have a preview of what would happen in different scenarios. The <em>Preserve RGB</em> box is usually left checked, which disables any conversion on the image as it is output.</p>
+<p>The third part, which cannot be modified, recalls the color space of the screen and the final transformation applied to the image for display.</p>
+<h2 id="g4-export-options-output-spaces">G.4 - Export Options - Output Spaces<a class="headerlink" href="#g4-export-options-output-spaces" title="Permanent link">&para;</a></h2>
+<p>Don&rsquo;t forget to apply the conversion to the output space when exporting.</p>
+<p><img alt="Output" src="img/ae/output.png" /></p>
+<p>These options are found in the output module settings of the render queue.</p>
+<p>By default, <em>After Effects</em> sets the output to the workspace, which is not logical at all, as the workspace is rarely the output space! It is then necessary to specify the right space for each output&hellip; <em>See <a href="standards.html">II-B Some standards for files</a></em>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><em>After Effects</em> applies by default the workspace to all files&hellip; You have to think about changing it systematically or create preconfigurations that are correctly set.</p>
+</div>
+<h2 id="g5-ocio">G.5 - OCIO<a class="headerlink" href="#g5-ocio" title="Permanent link">&para;</a></h2>
+<h3 id="g5a-introduction">G.5.a - Introduction<a class="headerlink" href="#g5a-introduction" title="Permanent link">&para;</a></h3>
+<p>Using <em>OCIO</em> on <em>After Effects</em> allows you to bypass many of the shortcomings and problems raised by native color management, but the use of the plug-in requires some precise organization.</p>
+<p>The ideal is to create a script to automate these tasks in the production pipeline.</p>
+<p>The first thing to do (after installing the plug-in) is to deactivate the color management of <em>After Effects</em> to be able to control everything via <em>OCIO</em>.</p>
+<h3 id="g5b-install-the-ocio-plug-in">G.5.b - Install the OCIO plug-in<a class="headerlink" href="#g5b-install-the-ocio-plug-in" title="Permanent link">&para;</a></h3>
+<p><a href="https://fnordware.blogspot.com/2012/05/opencolorio-for-after-effects.html">The updated plug-in is available here</a>. Although the article dates from 2012, it is updated with each new version of <em>OCIO</em>.</p>
+<p>After downloading the <em>.zip</em> archive, you just have to copy the <em>OpenColorIO.aex</em> file in the plug-ins folder of <em>After Effects</em>, then restart the application. <em>OpenColorIO</em> is an effect available in the <em>Utility</em> section of the effects.</p>
+<h3 id="g5c-disable-color-management-in-after-effects">G.5.c - Disable color management in After Effects<a class="headerlink" href="#g5c-disable-color-management-in-after-effects" title="Permanent link">&para;</a></h3>
+<p>Once the plug-in is installed, you have to take over the color management in <em>After Effects</em> to control it via the effect.</p>
+<p><img alt="Project" src="img/ae-ocio/project.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Contrary to what you might think, you must start by choosing a color space in the project settings, in order to then have access to the other color management options and be in a linear space&hellip;</p>
+</div>
+<p>In the project parameters, choose a default space. <em>sRGB</em> does the trick, but you must check the box to linearize it and use <em>32 bpc</em>.</p>
+<p><img alt="Input" src="img/ae-ocio/interpret.png" /></p>
+<p>When importing all the footage, you must check <em>Preserve RGB</em> in the interpretation so that <em>After Effects</em> does not perform any conversion. It is possible to modify the configuration text file named <em>interpretation rules.txt</em>, itself located in the folder containing the settings of <em>After Effects</em><sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup> in order to interpret all the footage by default in <em>Preserve RGB</em> mode.</p>
+<p><img alt="Display" src="img/ae-ocio/display.png" /></p>
+<p><strong>For each composition</strong> you must disable the display transformation by unchecking <em>Use Display Color Management</em> in the <em>View</em> (<em>Display</em>) menu.</p>
+<p><img alt="Output" src="img/ae-ocio/output-module.png" /></p>
+<p>Finally, for all outputs, you must check the <em>Preserve RGB</em> box in the color parameters of the output module, so that <em>After Effects</em> does not perform any conversion.</p>
+<p>All these operations ensure that it is indeed <em>OCIO</em> that will take care of all the color conversions.</p>
+<h3 id="g5d-management">G.5.d - Management<a class="headerlink" href="#g5d-management" title="Permanent link">&para;</a></h3>
+<p>Since <em>OCIO</em> for <em>After Effects</em> is an effect, its use requires some organization of the project to avoid mistakes.</p>
+<p><img alt="Project" src="img/ae-ocio/project-organization.png" /></p>
+<p>When importingf footage, it will be much more practical to systematically place it in a precomposition, and to use this precomposition instead of the footage itself in the other compositions. It is in this precomposition that the interpretation of the footage and the conversion to the workspace will be set up.</p>
+<h3 id="g5e-input-and-workspace">G.5.e - Input and workspace<a class="headerlink" href="#g5e-input-and-workspace" title="Permanent link">&para;</a></h3>
+<p>In the precomposition of each footage, the <em>OpenColorIO</em> effect must be put on the layer of the footage.</p>
+<p><img alt="Interpretation" src="img/ae-ocio/input.png" /></p>
+<p>After selecting the correct <em>OCIO</em> configuration, you can choose the space corresponding to the footage in the first field (in this example, <em>RGB linear</em>, for a <em>EXR</em> sequence for example).</p>
+<p>In the second field, you choose the desired workspace for the project (<em>ACEScg</em> in this example). This second field will be common to all footage, while the first field depends on the format of the imported file.</p>
+<h3 id="g5f-output">G.5.f - Output<a class="headerlink" href="#g5f-output" title="Permanent link">&para;</a></h3>
+<p><img alt="Comp" src="img/ae-ocio/main-comp.png" /></p>
+<p>The conversion for output is simply done via an effect layer with the <em>OpenColorIO</em> effect which converts the colors from the workspace to the output space.</p>
+<p><img alt="Output" src="img/ae-ocio/output.png" /></p>
+<p>Choose the workspace in the <em>input space</em> field and the output space corresponding to the desired file in <em>output space</em>.</p>
+<h3 id="g5g-display">G.5.g - Display<a class="headerlink" href="#g5g-display" title="Permanent link">&para;</a></h3>
+<p>To perform the display conversion, we use an adjustment layer at the top of the compositions in which we work. You can set this layer to <em>guide layer</em> mode to make sure that it is not active when rendering.</p>
+<p><img alt="Comp" src="img/ae-ocio/main-comp.png" /></p>
+<p>We add the <em>OpenColorIO</em> effect on this layer.</p>
+<p>Two solutions are possible:</p>
+<ul>
+<li>Either we convert from the workspace to the display; this is the easiest course if we have several different outputs to do. In this case, the output layer is disabled while working, and you must remember to re-enable it to perform the rendering.</li>
+</ul>
+<p><img alt="Display 1" src="img/ae-ocio/display-1.png" /></p>
+<p>Check the <em>Display</em> box, select the workspace first (field <em>input space</em>), then the display space on the next field(s).</p>
+<ul>
+<li>Or we convert from the desired output space (see previous point), if we use only one. In this case the output layer is left active during the work.</li>
+</ul>
+<p><img alt="Display 2" src="img/ae-ocio/display-2.png" /></p>
+<p>Check the <em>Display</em> button, select the output space first (field <em>input space</em>), then the display space on the next field(s).</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>This folder is easily found via the <em>Reveal Preferences</em> button in the <em>After Effects</em> general preferences panel&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="ocio.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="premiere.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

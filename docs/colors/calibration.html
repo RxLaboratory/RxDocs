@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/calibration.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>C - Screen calibration - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="standards.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="epreuvage.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/calibration.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Theory</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Application</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#iic-screen-calibration">II.C - Screen calibration</a></li>
+                <li class="second-level"><a href="#c1-introduction">C.1 - Introduction</a></li>
+                    
+                <li class="second-level"><a href="#c2-environment">C.2 - Environment</a></li>
+                    
+                <li class="second-level"><a href="#c3-calibration">C.3 - Calibration</a></li>
+                    
+                    <li class="third-level"><a href="#c3a-choice-of-the-screen-color-space-and-calibration">C.3.a - Choice of the screen color space and calibration</a></li>
+                    <li class="third-level"><a href="#c3b-white-point-and-brightness">C.3.b - White point and brightness</a></li>
+                    <li class="third-level"><a href="#c3c-calibration-and-application-of-the-color-profile">C.3.c - Calibration and application of the color profile</a></li>
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="iic-screen-calibration">II.C - Screen calibration<a class="headerlink" href="#iic-screen-calibration" title="Permanent link">&para;</a></h1>
+<p>The very important first stage of color management in a production pipeline of digital images is to ensure the fidelity of the screens, that the colors displayed are the closest possible to what the images contain. It is the calibration process.</p>
+<p>Calibration, by greatly improving the fidelity of the screens, makes it possible to have a correct display, even very good by using a probe, even on screens of lesser quality<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<div class="toc">
+<ul>
+<li><a href="#iic-screen-calibration">II.C - Screen calibration</a><ul>
+<li><a href="#c1-introduction">C.1 - Introduction</a></li>
+<li><a href="#c2-environment">C.2 - Environment</a></li>
+<li><a href="#c3-calibration">C.3 - Calibration</a><ul>
+<li><a href="#c3a-choice-of-the-screen-color-space-and-calibration">C.3.a - Choice of the screen color space and calibration</a></li>
+<li><a href="#c3b-white-point-and-brightness">C.3.b - White point and brightness</a></li>
+<li><a href="#c3c-calibration-and-application-of-the-color-profile">C.3.c - Calibration and application of the color profile</a><ul>
+<li><a href="#c3c1-calibration">C.3.c.1 - Calibration</a></li>
+<li><a href="#c3c2-colorimetric-profile">C.3.c.2 - Colorimetric profile</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="c1-introduction">C.1 - Introduction<a class="headerlink" href="#c1-introduction" title="Permanent link">&para;</a></h2>
+<p>The purpose of screen calibration is multiple:</p>
+<ul>
+<li>To ensure that for any given color value, all screens in the production pipeline display the same color.</li>
+<li>To ensure that for any given color value, the color displayed is the one recommended by the color space used by the screen.</li>
+<li>To ensure that the people using the screens perceive the correct color (influence of the environment).</li>
+</ul>
+<p>The obstacles to achieving this are also multiple:</p>
+<ul>
+<li>Displays in their factory configuration are rarely true to the advertised color space.</li>
+<li>Displays age, and their colors can therefore vary over time. Not to mention that even the temperature can influence the electronic components, and therefore the displayed colors.</li>
+<li>It is complicated to have an objective reference where we are sure that the colors are correct, which can be used as a point of comparison.</li>
+<li>The environment (ambient light, color of the walls&hellip;) influences the perception of the colors.</li>
+</ul>
+<p>The most reliable way to do this is to rely on a <em>calibration probe</em>.<br />
+A probe is in fact a light sensor that works in tandem with the computer to apply color corrections, and its role is to measure the colors displayed by the screen, to compare with reference values. Most of the probes are also able to measure the ambient light to take into account the variations due to the environment and the human perception.</p>
+<p>The use of a probe thus makes it possible to overcome all these obstacles:</p>
+<ul>
+<li>They allow to measure the colors of the screen and their shift compared to the reference values of the colorimetric space of the screen.</li>
+<li>By recalibrating the screens regularly, they make it possible to maintain a sufficient fidelity throughout the life of the screen and the conditions.</li>
+<li>They avoid the need for a reference: they can objectively measure the colors, whose values can be compared directly with the values expected by the color space of the screen.</li>
+<li>Most of the probes can remain connected to the computer, and regularly measure the ambient light, in order to compensate for the variations in realtime.</li>
+</ul>
+<p><em><img alt="Photo of a probe on a screen" src="" /></em></p>
+<p>However, in the absence of a probe, it is also possible to improve the display of colors with another sensor: the eye. The results will not be as precise as with a probe, but it&rsquo;s possible to improve the display of the worst screens. The main problem of eyeballing is the lack of an objective reference to compare colors: it is impossible to be sure that the colors displayed are the right ones. The influence of the environment is also a problem, but can be compensated with good planning.</p>
+<h2 id="c2-environment">C.2 - Environment<a class="headerlink" href="#c2-environment" title="Permanent link">&para;</a></h2>
+<p>First of all, a relatively easy parameter to control is the working environment and the ambient light in which the screen colors are seen.</p>
+<p>A few simple rules can ensure that you always see the same colors, and as objectively as possible.</p>
+<ul>
+<li>Avoid as much as possible natural lighting, which varies at every moment; if the work on colors is essential, a room without windows is ideal. Without going that far, the possibility of dimming the light from the windows as much as possible, or shutters to cut it off completely when needed are simple but effective solutions.</li>
+<li>Control the lighting and the color of the walls (which make the general color of the ambient light). The colorimetric spaces generally define the conditions in which their colors are supposed to be seen; the ideal situation is thus to respect the recommendations of the space used by the ecan. In all cases, neutral light (white, of a defined <em>temperature<a href="ZZ-vocabulaire.html">*</a></em> but not colored), and of good quality should be preferred; walls should be as neutral as possible, and ideally gray rather than white.</li>
+<li>Control the brightness of the screens, according to the ambient light: the screen must be sufficiently bright in relation to the environment (but not to the point of appearing overly bright: it must not be a source of light).</li>
+</ul>
+<p>Here are the parameters of the environment such as it is recommended by the color space <strong><em>sRGB</em></strong>, that of the majority of the screens, and applicable to the other spaces (P3, Rec.2020&hellip;):</p>
+<ul>
+<li><strong>Ambient light</strong> : <em>64 lux</em> to <em>200 lux<a href="ZZ-vocabulaire">*</a></em>.<br />
+    This is low to very low light, lower than typical office light (which is between 300 and 500 lux).</li>
+<li><strong>Lighting temperature</strong> : <em>5003 K</em>, <em>D50</em>.<br />
+    It is a relatively orange light, close to that of the sun. It is voluntarily a little far from the white of the <em>sRGB</em> and therefore of the screens (which is <em>6500 K</em>, <em>D65</em>).</li>
+<li><strong>Wall color</strong> : Medium gray (20% reflectance).<br />
+    The walls should absorb 80% of the light rays they receive, making them medium gray.</li>
+<li><strong>Screen brightness</strong> : <em>80 cd/m²</em><br />
+    The <em>sRGB</em> (just like the <em>P3</em> for the display) recommends a relatively low luminosity of the screens (if the environment is not very luminous). A slightly higher brightness may be necessary if the environment is not dark enough. It should be noted that the spaces dedicated to video like <em>Rec.709</em> or <em>Rec.2020</em> are adapted to <em>TV</em> screens with a screen brightness of <em>100 cd/m²</em>, and that it can thus be useful to increase the brightness of the screens towards this value for broadcast television (or cinema).</li>
+</ul>
+<h2 id="c3-calibration">C.3 - Calibration<a class="headerlink" href="#c3-calibration" title="Permanent link">&para;</a></h2>
+<p>Once the environment has been controlled, or in any case set in the working conditions, we can proceed to the calibration of the screens.</p>
+<p>Before starting, it is necessary to make sure of the parameters of the calibration to be done.</p>
+<h3 id="c3a-choice-of-the-screen-color-space-and-calibration">C.3.a - Choice of the screen color space and calibration<a class="headerlink" href="#c3a-choice-of-the-screen-color-space-and-calibration" title="Permanent link">&para;</a></h3>
+<p>We choose default one, in general <em>sRGB</em> or sometimes <em>Display P3</em> or more rarely others.</p>
+<p>You can also decide to calibrate to a different space than the one intended for the screen, <strong>provided that the two spaces are compatible</strong>. This can be useful when all manufactured images are intended for a specific use (TV, cinema&hellip;) in order to work in the same or close to the space used for the broadcasting of the finished images. For example, screens can be calibrated in <em>Rec.709</em> to make HD videos for TV and watch them in broadcast conditions, without having to convert the videos at playback time to the screen space<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>.</p>
+<p>It is necessary for that that the <em>primaries<a href="ZZ-vocabulaire.html">*</a></em> of the two spaces are the same, or that the <em>gamut<a href="ZZ-vocabulaire.html">*</a></em> of the space of the screen is larger and contains the <em>gamut</em> of the space in which one calibrates. In any case, you should remember to change the display settings in all applications and the operating system so that the images are displayed in the space in which you have calibrated the screen.</p>
+<p>The choice of space will define the <em>primaries<a href="ZZ-vocabulaire.html">*</a></em> and <em>gama<a href="ZZ-vocabulaire.html">*</a></em> used; the <em>white point<a href="ZZ-vocabulaire.html">*</a></em> can often be set separately.</p>
+<h3 id="c3b-white-point-and-brightness">C.3.b - White point and brightness<a class="headerlink" href="#c3b-white-point-and-brightness" title="Permanent link">&para;</a></h3>
+<p>The white point is often adjustable when using a probe; unless there are specific needs such as work for printing (in which case the white point can be that of the paper), one chooses that of the colorimetric space of the screen, i.e. <em>D65</em>, <em>6500 K</em> in the majority of the cases.</p>
+<p>The luminosity can also often be measured and adjusted. When working for images in <em>sRGB</em> intended to be seen on a computer screen, the reference is <em>80 cd/m²</em>. For television work (or cinema), the luminosity can be that of <em>Rec.709</em>, that is <em>100 cd/m²</em>. It may be useful to choose a slightly higher value if the working environment is too bright.</p>
+<h3 id="c3c-calibration-and-application-of-the-color-profile">C.3.c - Calibration and application of the color profile<a class="headerlink" href="#c3c-calibration-and-application-of-the-color-profile" title="Permanent link">&para;</a></h3>
+<h4 id="c3c1-calibration">C.3.c.1 - Calibration<a class="headerlink" href="#c3c1-calibration" title="Permanent link">&para;</a></h4>
+<p>If you use a probe, the process is usually quite simple: you connect the probe to the computer and place it flat on the screen (or facing the projector screen)<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>. A software provided with the probe (or the very powerful free software <em>DisplayCal<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></em>) then performs a series of measurements of the colors displayed by the screen. The result of these measurements allows to calculate the shift between the displayed colors and the expected colors.</p>
+<p><em><img alt="Screenshot of DisplayCAL" src="img/displaycal.png" /></em>
+<em>Calibration parameters of</em> DisplayCAL</p>
+<p>If you calibrate by eye, the idea is to display a series of <em>test cards</em>, reference images, and try to adjust screen settings by hand to approximate the description of a reference image. It is completely impossible to correctly adjust the <em>primaries<a href="ZZ-vocabulaire.html">*</a></em> and the <em>white point<a href="ZZ-vocabulaire.html">*</a></em> by eye, but one can try to get close by displaying different images. On the other hand, the <em>brightness<a href="ZZ-vocabulaire.html">*</a></em>, the <em>contrast<a href="ZZ-vocabulaire.html">*</a></em>, the <em>gama<a href="ZZ-vocabulaire.html">*</a></em> can be relatively well approached thanks to comparisons of grey values between them (and a lot of patience).</p>
+<p>To calibrate by eye several methods are possible, but everything always starts with the display of test patterns and reference images. Some operating systems offer them, but you can also find them on the net <a href="media/test-images.zip">like the ones we propose here</a>, carefully made to accompany this document.</p>
+<p>These test cards can also be used to check the calibration result with a probe.</p>
+<p><em><img alt="Black level" src="img/black-level.svg" /></em></p>
+<p><em><img alt="White level" src="img/white-level.svg" /></em></p>
+<p><em><img alt="White level" src="img/contrast.svg" /></em></p>
+<p>It is best to display these test patterns in full screen mode and with the environment controlled, as explained in chapter <em>C.2 - Environment</em>.</p>
+<p>Then, by displaying the images, we retouch the screen settings. There are three possibilities:</p>
+<ul>
+<li>Tinker with the screen settings; but they are often quite limited and not very precise.</li>
+<li>Adjust the settings of the graphics card via its drivers, if they allow it.<br />
+    The advantage is that the correction will be correctly applied in all situations; but it is possible that the parameters will be re-initialized when the system or the drivers are updated.</li>
+<li>If the operating system offers it, make the adjustments via its color utility and save then apply a color profile to the screen.<br />
+    It is then necessary to make sure at the time of updates that the system does not re-select another profile. The interest of this method is to be able to keep the settings in a file that can be saved and transported, the profile, generally in <code>.icc</code> format.</li>
+</ul>
+<p>It is not advisable to combine these different methods, as the result quickly becomes rather random, and especially difficult to retouch or correct afterwards.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>At the time of writing, during our tests on <em>Mac OS</em>, the screen calibration tool in the system settings has a mediocre method (and results) (except perhaps on Mac screens) and does not offer test patterns worthy of the name, it should be avoided. It is better to calibrate directly with good test patterns such as the ones we propose, using the screen settings or other utilities.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><em>Windows</em> offers a good tool for calibrating screens <em>by eye</em> with rather good results. You can find it via the <em>Control Panel</em>, in <em>Color Management</em> then the <em>Advanced</em> tab. Then click on <em>Screen calibration</em> and let yourself be guided! It is in these options of <em>Color Management</em> that you can apply and choose the spaces and profiles (calibration result) of the screens.</p>
+</div>
+<p><em><img alt="Screenshot of Nvidia settings" src="img/nvidia-controls.png" /></em><br />
+Example of parameters via the settings of a <em>Nvidia</em> graphics card (under <em>Linux</em>). Note especially here the <em>color range</em> parameter, to be set to <em>Full</em> if the screen is a computer screen, and <em>Limited</em> if it is a television.</p>
+<p><em><img alt="Screenshot of Nvidia settings" src="img/nvidia-cc.png" /></em><br />
+Example of parameters via the settings of a <em>Nvidia</em> graphics card (under <em>Linux</em>). Here, different sliders allow to adjust the display of the colors (for each screen). Each slider can act on the three <em>channels<a href="ZZ-vocabulaire.html">*</a></em> at the same time, or separately on the red, green or blue.</p>
+<p><em><img alt="Mac profiling screenshot" src="" /></em></p>
+<p><em><img alt="Windows profiling screenshot" src="" /></em></p>
+<h4 id="c3c2-colorimetric-profile">C.3.c.2 - Colorimetric profile<a class="headerlink" href="#c3c2-colorimetric-profile" title="Permanent link">&para;</a></h4>
+<p>The result of the calibration of the probe, or sometimes of a calibration with the eye, is recorded in a <em>colorimetric profile</em>, a <em>LUT<a href="ZZ-vocabulaire.html">*</a></em>. It is the operating system which will apply this profile or this <em>LUT</em> to all the colors at the time of the posting on the corresponding screen and thus to convert these colors so that they are displayed exactly as they must.</p>
+<p><em><img alt="Screenshot of Mac profile options" src="" /></em></p>
+<p><em><img alt="Screenshot of Windows profile options" src="" /></em></p>
+<p><em><img alt="Screenshot of Ubuntu profile options" src="img/ubuntu-profiles.png" /></em><br />
+Choice of color profiles under <em>Ubuntu Linux</em> in the <em>Color</em> section of the settings. A button allows you to add profiles (predefined or imported via a file, for example generated by a probe) to the list under each screen to easily change profile later.</p>
+<p>Once the calibration is finished and the profile applied, you can check the result by displaying different test patterns (see above, <em>C.3.c.1 - Calibration</em> by eye), and also check the quality of the screen after calibration. Note that if you calibrate with a probe but the display of the test patterns is not perfect, it is probably more related to the quality of the screen than to a calibration defect.</p>
+<hr />
+<p>Sources &amp; References</p>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini for the translation;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30" /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>As long as the colors of the screen are more or less uniform and identical in the center as well as on the edges and in the corners&hellip;&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>It should be noted that it is not at all necessary for the screens to use the broadcast color space: thanks to color management, the displayed images are converted to the screen space so that the displayed colors are exactly those of the broadcast no matter what; calibrating the screens in the broadcast space just allows to avoid this conversion, and to avoid the common configuration errors by systematically choosing the broadcast space, whether for display, file output, etc.<br />
+A concrete example: when working in video and for television, the images will be in <em>Rec.709</em>, but the working screens are by default in <em>sRGB</em>. When making the images, it is therefore necessary to specify (but this is often automatic), that the images are displayed in <em>sRGB</em>, whereas when exporting they will be chosen <em>Rec.709</em>.<br />
+If we calibrate the screens in <em>Rec.709</em>, we can simply choose <em>Rec.709</em> everywhere without making a mistake (but it is less standard in computing, and the default or automatic configurations may be wrong&hellip;).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>It is advisable to start by restoring the screen settings to as neutral as possible, disabling power saving, the various modes (game, office, video &hellip;), to let the sensor and the system control the colors.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>DisplayCAL is free and available on Linux, MacOS, Windows and supports a wide range of probe makes and models: https://displaycal.net/<br />
+As always, we strongly encourage you to make a donation if you decide to use it!&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="standards.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="epreuvage.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>

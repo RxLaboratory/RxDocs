@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The RxDocuments - Color management in audiovisual production.">
+    <meta name="author" content="Nicolas Dufresne and contributors">
+    <link rel="canonical" href="https://docs.rainboxlab.org/couleurs/C-perception.html">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    
+    <title>C - Perception of light and colors by the human eye - RxDocs - Color Management</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/zenburn.min.css">
+        
+    
+    <link href="style.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="index.html">RxDocs - Color Management</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="index.html">Introduction</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Theory <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="A-definition.html">A - What is color?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="B-inventaire.html">B - Small inventory and classification of colors</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="C-perception.html">C - Perception of light and colors by the human eye</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="D-reproduction.html">D - Color reproduction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="E-temperature.html">E - About white values-temperature</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="F-representation.html">F - Objective representation of colors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="G-numerisation.html">G - From real life to digital</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="H-espace-colo.html">H - What is a color space?</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="I-liste-espaces.html">I - Selective list of color spaces</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="J-liste-params.html">J - List of color space parameters</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="K-pix-format.html">K - Pixel formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="L-transfer.html">L - Transfer curves, linear space and gamma</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="M-LUT.html">M - LUTs</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="N-ocio.html">N - OCIO, ACES</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="pratique.html">A - Choosing your color spaces and formats</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="standards.html">B - A few standards for files</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="calibration.html">C - Screen calibration</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="epreuvage.html">D - Soft-Proofing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="preparer.html">E - Setting up the production pipeline</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ocio.html">F - Designing a production pipeline with OCIO</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ae.html">G - Adobe After Effects</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">I - Adobe Premiere</a>
+</li>
+
+                        
+                            
+<li >
+    <a href=".">J - Autodesk Maya</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="blender.html">K - Blender</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="darktable.html">L - Darktable</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="dume.html">M - DuME</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="krita.html">N - Krita</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Appendixes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-vocabulaire.html">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="ZZ-download.html">Downloads and Other Resources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">... <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="http://docs.rainboxlab.org/contribute.html">Contribute</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/contact/">Contact</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="https://rainboxlab.org/about/donate/">Donate</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="B-inventaire.html">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="D-reproduction.html">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RxLaboratory/RxDocs/edit/master/src-couleurs/docs/C-perception.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div id="side-menu">
+    <div class="bs-sidebar hidden-print  affix well collapsible" role="complementary">
+        <!-- Main navigation -->
+        <ul class="nav bs-sidenav">
+        
+        
+            <li >
+                <a href="index.html">Introduction</a>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button active-collapse-button">Theory</button>
+                <ul class="collapsible-content collapsible-content-active">
+                    
+                        
+                        <li class="second-level "><a href="A-definition.html">A - What is color?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="B-inventaire.html">B - Small inventory and classification of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level active"><a href="C-perception.html">C - Perception of light and colors by the human eye</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="D-reproduction.html">D - Color reproduction</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="E-temperature.html">E - About white values-temperature</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="F-representation.html">F - Objective representation of colors</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="G-numerisation.html">G - From real life to digital</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="H-espace-colo.html">H - What is a color space?</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="I-liste-espaces.html">I - Selective list of color spaces</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="J-liste-params.html">J - List of color space parameters</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="K-pix-format.html">K - Pixel formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="L-transfer.html">L - Transfer curves, linear space and gamma</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="M-LUT.html">M - LUTs</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="N-ocio.html">N - OCIO, ACES</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Application</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="pratique.html">A - Choosing your color spaces and formats</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="standards.html">B - A few standards for files</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="calibration.html">C - Screen calibration</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="epreuvage.html">D - Soft-Proofing</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="preparer.html">E - Setting up the production pipeline</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ocio.html">F - Designing a production pipeline with OCIO</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ae.html">G - Adobe After Effects</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="premiere.html">H - Color management - Adobe Premiere et Media Encoder</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">I - Adobe Premiere</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href=".">J - Autodesk Maya</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="blender.html">K - Blender</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="darktable.html">L - Darktable</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="dume.html">M - DuME</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="krita.html">N - Krita</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">Appendixes</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="ZZ-bref.html">In a Nutshell-a quick summary of how to get it right</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-erreurs.html">Common Errors and Misunderstandings, Problem Solving</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-vocabulaire.html">Glossary</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="ZZ-download.html">Downloads and Other Resources</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        
+            <li class="first-level">
+                <button  type="button" class="collapse-button ">...</button>
+                <ul class="collapsible-content ">
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org">All RxLab documents (in French)</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="http://docs.rainboxlab.org/contribute.html">Contribute</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/contact/">Contact</a></li>
+                        
+                    
+                        
+                        <li class="second-level "><a href="https://rainboxlab.org/about/donate/">Donate</a></li>
+                        
+                    
+                </ul>
+            </li>
+        
+        
+        </ul>
+    </div>
+    <div class="bs-sidebar hidden-print affix well" role="complementary">
+        <ul class="nav bs-sidenav">
+            <li class="first-level active"><a href="#ic-perception-of-light-and-colors-by-the-human-eye">I.C - Perception of light and colors by the human eye</a></li>
+                <li class="second-level"><a href="#c1-the-eye">C.1 -  The Eye</a></li>
+                    
+                <li class="second-level"><a href="#c2-the-nervous-system">C.2 - The nervous system</a></li>
+                    
+                <li class="second-level"><a href="#c3-consequences">C.3 - Consequences</a></li>
+                    
+                    <li class="third-level"><a href="#c3a-on-brightness-and-contrast">C.3.a - On brightness and contrast</a></li>
+                    <li class="third-level"><a href="#c3b-on-hues">C.3.b - On hues</a></li>
+        </ul>
+    </div>
+    <div class="footer-meta"></div>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="ic-perception-of-light-and-colors-by-the-human-eye">I.C - Perception of light and colors by the human eye<a class="headerlink" href="#ic-perception-of-light-and-colors-by-the-human-eye" title="Permanent link">&para;</a></h1>
+<p>To the problem of having an objective reference to define the colors is added the fact that the definition of the color is intrinsically related to the perception that one has, and this perception obviously differs from one population to another, from one individual to another, and also of the environment in which one perceives the color.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>In ancient times, <a href="https://en.wikipedia.org/wiki/Democritus">Democritus</a> even suggested that colors are only imagination.</p>
+</div>
+<div class="toc">
+<ul>
+<li><a href="#ic-perception-of-light-and-colors-by-the-human-eye">I.C - Perception of light and colors by the human eye</a><ul>
+<li><a href="#c1-the-eye">C.1 -  The Eye</a></li>
+<li><a href="#c2-the-nervous-system">C.2 - The nervous system</a></li>
+<li><a href="#c3-consequences">C.3 - Consequences</a><ul>
+<li><a href="#c3a-on-brightness-and-contrast">C.3.a - On brightness and contrast</a></li>
+<li><a href="#c3b-on-hues">C.3.b - On hues</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Comprehending this subjective interpretation of color is important for understanding how color management in digital image processing was designed and how it is evolving.</p>
+<h2 id="c1-the-eye">C.1 -  The Eye<a class="headerlink" href="#c1-the-eye" title="Permanent link">&para;</a></h2>
+<p>As soon as light rays are received by the eye and the retina, the light is broken down and interpreted. Two types of photoreceptors make up the retina, cones and rods.</p>
+<p>The rods are the useful and active cells in the half-light; they are saturated as soon as the light becomes too strong, around 500 photons per second.</p>
+<p>The cones are the effective cells in the reception of the more intense lights; they activate only starting from an intensity of 10 photons per second. Divided into three different types, they are able to capture rays over a wider range of frequencies; this division into three types also allows the <em>hue</em> of the light to be interpreted: the nervous system can compare the intensities on the three different types of cones and deduce a hue.</p>
+<p><img alt="" src="img/retina-absorption.svg" /></p>
+<h2 id="c2-the-nervous-system">C.2 - The nervous system<a class="headerlink" href="#c2-the-nervous-system" title="Permanent link">&para;</a></h2>
+<p>The information received by the cells of the retina are converted into nerve impulses and interpreted by the brain.</p>
+<p>This process explains in particular the fact that <strong>objectively different</strong> mixtures of monochromatic sources can be perceived in exactly the same way and <strong>subjectively identical</strong>; thus, two <em>white</em> colors perceived in the same way and indistinguishable by the individual can in reality be formed of different blends of monochromatic lights<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>Conversely, colors that are <strong>objectively the same</strong> can be perceived in <strong>completely different</strong> ways depending on their environment. This is particularly the case for <em>white</em>; what we perceive as the color white varies greatly depending on the types of light sources and the general hue of the environment. This is the equivalent of <em>white balance</em> in photography, but it is true for all colors.</p>
+<p><img alt="" src="img/grey-illusion-1.svg" /></p>
+<p><img alt="" src="img/grey-illusion-2.svg" /></p>
+<p>LThe nervous system is therefore responsible for an interpretation of the colors which is not directly related to the objective signal received by the eye, but which could be seen as a subjective &rdquo; adjustment &rdquo; in post-production: it adapts the image according to the environment, exactly as the photographer does by retouching the contrasts and the white balance (the tints), to &rdquo; equalize &rdquo; the image, and to increase the quantity of perceivable details in the reconstructed image.</p>
+<p>All these different steps change the perception of a physical and objective signal: the same light ray will not be &ldquo;seen&rdquo; in the same way in two different places, and according to the quantity and the nature of the other rays which accompany it.</p>
+<h2 id="c3-consequences">C.3 - Consequences<a class="headerlink" href="#c3-consequences" title="Permanent link">&para;</a></h2>
+<p>The consequences of this subjective perception are important to understand the historical choices that were made on the techniques allowing the artificial reproduction and processing of images (analog and digital).</p>
+<h3 id="c3a-on-brightness-and-contrast">C.3.a - On brightness and contrast<a class="headerlink" href="#c3a-on-brightness-and-contrast" title="Permanent link">&para;</a></h3>
+<p>The presence of the rods on the retina and their performance in the weaker lights, to the detriment of the perception of the colors in these lights, makes that <strong>the eye is globally more powerful to discern the details in the half-light</strong> than in the strong lights, and that it is in general <strong>more powerful to distinguish the contrasts of intensity</strong> luminous <strong>than the variations of color</strong> (the decomposition in precise wavelengths on the spectrum)</p>
+<h3 id="c3b-on-hues">C.3.b - On hues<a class="headerlink" href="#c3b-on-hues" title="Permanent link">&para;</a></h3>
+<p>The division into three types of cones, each performing on specific wavelengths, means that <strong>three <em>primary</em> colors</strong><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> are sufficient to reproduce all the colors as the human being can perceive them, as long as these primaries correspond approximately to the range of performance of these three types of cones<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup>.</p>
+<p>The three &ldquo;<em>primary</em>&rdquo; colors closest to the ranges of perception of the cone cells are the combination <strong>Red, Green, and Blue</strong>, even if in reality the cones rather perceive yellow, green and blue.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>Trichromy is not the only model that can represent the vision of color. We can also imagine a model where the vision distinguishes the oppositions white-black, blue-yellow and red-green for example<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup>.</p>
+<p>This way of perceiving the colors thus influences the choices of systems to reproduce them artificially, as we shall see later, in particular with the <strong><em>gamma</em></strong>, the <strong><em>RGB</em></strong> or <strong><em>YUV</em></strong> system.</p>
+<hr />
+<p>Sources &amp; References</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Color">Color on <em>Wikipedia</em></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Psychophysics">Psychophysics on <em>Wikipedia</em>.</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rod_cell">Rod cells on <em>Wikipedia</em></a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cone_cell">Cone cells on <em>Wikipedia</em></a>)</li>
+<li><a href="http://www.cs.kent.edu/~farrell/cg00/lectures/color/colour.html">Colour representation, <em>Kent State University</em></a></li>
+</ul>
+<p><img alt="META" src="authors:Nicolas &quot;Duduf&quot; Dufresne, Lionel &quot;Viclio&quot; Vicidomini (translation);license:CC-BY-NC-SA;copyright:2021;updated:2021/03/2" />)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>There are several &rdquo; grades &rdquo; of white and apparently identical lights, depending on whether they are composed of a more or less varied range of rays of different wavelengths (thus of different tints).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>There is a vocabulary confusion, in particular in the audio-visual production, between <em>primary</em> color (which cannot be obtained by blending other colors), and <em>complementary</em> colors (whose blending gives black, gray or white). We use here the word <em>primary</em> in the sense of the spaces of numerical colors: whose mixing gives the white.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://en.wikipedia.org/wiki/Isaac_Newton">Isaac Newton</a> had discovered that it is quite possible to reproduce a white light with only two monochromatic colors but a third primary is necessary to depart from the simple gradation between the first two.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://en.wikipedia.org/wiki/Ewald_Hering">Ewald Hering</a> was vigorously opposed to trichromy. Based on the psychological study of perception, his model, which <a href="https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger">Erwin Schrödinger</a> showed the mathematical equivalence with trichromacy, has since been confirmed by neuroscience studies.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+        
+            <div class="nav-footer">
+            <ul>
+                <li class="nav-footer-prev">
+                    <a rel="prev" href="B-inventaire.html">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-footer-next">
+                    <a rel="next" href="D-reproduction.html">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+<div></div>
+
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="video.js"></script>
+    <script src="meta.js"></script>
+    <script src="collapser.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
