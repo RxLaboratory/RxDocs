@@ -2,8 +2,6 @@
 
 The perceived colors are therefore mixtures of *monochromatic*\* light rays. Let's see how to classify all these colors and how they are decomposed.
 
-[TOC]
-
 !!! note
     We are still talking here about *light* and light rays, and thus about an *additive* system; it is not a question of the composition of surfaces and the way they absorb and reflect colors, and which would be the object of a *subtractive* synthesis of light.  
     *See *chapter [*D - Color Reproduction*](D-reproduction.md) for more details on the subject.
@@ -36,7 +34,7 @@ The purples added to the monochromatic colors form the set of the most *saturate
 
 ## B.4 - White and grey
 
-In nature, **all** the lights, or more precisely all the luminous rays, are *monochromatic[\*](ZZ-vocabulaire.md)*; it is the perception of their blending that the brain interprets in an infinity of other colors. We saw that the purples are part of these mixtures; all the other colors not *saturated[\*](ZZ-vocabulaire.md)*, the grays and the whites, are thus also mixed lights.
+In nature, **all** the lights, or more precisely all the light rays, are *monochromatic[\*](ZZ-vocabulaire.md)*; it is the perception of their blending that the brain interprets in an infinity of other colors. We saw that the purples are part of these mixtures; all the other colors which aren't *saturated[\*](ZZ-vocabulaire.md)*, the grays and the whites, are thus also mixed lights.
 
 All the "desaturated" shades, whites, grays, are blends of these *monochromatic* colors, and there is for each color (and not only the grays, all the non-monochromatic colors) an infinity of different blends which can generate it.
 
@@ -57,9 +55,9 @@ We can also include purples as complementary to greens. Indeed, a purple in turn
 The same white sheet of paper will be seen as white regardless of the time of day or the type of lighting, although in reality its color is quite different in each of these cases: the sheet of paper will in fact take on the color of the light that illuminates it, but the brain will operate a "shift" in perception that will make it appear white in all cases.
 
 *![Photographs of snowy landscape at different times of the day](img/snow.svg)*  
-*Under the sun, in the shade or in the clouds, whatever the time of day, in reality we perceive snow as* white *even if in reality the light it reflects is each time different[^5].*
+*Under the sun, in the shade or in the clouds, whatever the time of day, we perceive snow as* white *even if in reality the light it reflects is each time different[^5].*
 
-Therefore, rays of light with perfectly different physical attributes can be seen in the same way by the observer. ***The perception of colors is eminently subjective.
+Therefore, rays of light with perfectly different physical attributes can be seen in the same way by the observer. The perception of colors is eminently subjective.
 
 ----
 
@@ -68,10 +66,10 @@ Therefore, rays of light with perfectly different physical attributes can be see
 [^2]:
     The term "ultraviolet" to describe the part of the electromagnetic spectrum beyond blue is misleading; the end of the spectrum is perceived as blue (dark) rather than violet. The true violet is the color that we perceive as a result of the combination of blue and red rays.
 [^3]:
-    We are of course speaking here of *light*, in other words an "additive" system where the intensities add up. This is obviously not true in painting and printing which are "subtractive" systems where the colors "asborbate" light intensity, subtracting rays of light. cf. chapter [*D - Reproduction of colors*](D-reproduction.md).
+    We are of course speaking here of *light*, in other words an "additive" system where the intensities add up. This is obviously not true in painting and printing which are "subtractive" systems where the colors "absorbate" light intensity, subtracting rays of light. cf. chapter [*D - Reproduction of colors*](D-reproduction.md).
 [^4]:
     If we wanted to be physically correct, the greens would simply have no complements at all, and only the intervals of rays near the two extremes of the spectrum (oranges-reds and cyan-blues) would be complementary to each other.
 [^5]:
-   What a camera has the greatest difficulty to reproduce. see chapter *[E - About white values : temperature](E-temperature.md)*.
+   What a camera has the greatest difficulty to reproduce. See chapter *[E - About white values: temperature](E-temperature.md)*.
 
 ![META](authors:Nicolas "Duduf" Dufresne, Lionel "Viclio" Vicidomini for the translation;license:CC-BY-NC-SA;copyright:2021;updated:2021/03/30)

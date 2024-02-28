@@ -2,13 +2,11 @@
 
 When it is a question of reproducing (*synthesizing*) colors, two systems are possible, according to the fact that the device is "passive" or reflecting (in painting, printing, etc.), i.e. that it needs to be illuminated, or "active", and emits its own light (screen, projector, etc)
 
-[TOC]
-
 ## D.1 - Additive synthesis
 
 When a system emits its own light, such as a screen or projector, it produces colors ranging from *black[\*](ZZ-vocabulaire.md)* (a system that is turned off, emitting nothing), to *white[\*](ZZ-vocabulaire.md)*.
 
-In such an *additive* system, the most luminous color is the white: it results from the addition of the various *primitives [\*](ZZ-vocabulaire.md)* of which the pixels of the device are made, in general a combination of green, red and blue.
+In such an *additive* system, the most luminous color is the white: it results from the addition of the various *primitives[\*](ZZ-vocabulaire.md)* of which the pixels of the device are made, in general a combination of green, red and blue.
 
 This system works by adding rays of light to mix the colors.
 
@@ -25,6 +23,15 @@ Such a *subtractive* system thus produces the colors by going from *white[\*](ZZ
 An important consequence is that a subtractive system depends on the light that illuminates it to reproduce colors: seen under a light poor in *monochromatic rays[\*](ZZ-vocabulaire.md)*, an exposed painting will not render all its colors possible. For that, it is necessary to illuminate it not only with a white light, but with a white light "containing" enough different *monochromatic[\*](ZZ-vocabulaire.md)* rays, of high quality[^1].
 
 A painting, a poster or any other object illuminated under a monochromatic light will be able to reproduce *only* this *monochromatic[\*](ZZ-vocabulaire.md)* color, at different intensities, whatever the pigments which compose them.
+
+## D.3 - The case of video mapping
+
+Video-mapping, is the projection of videos on volumes, the creation of large images on structures such as monuments. By projecting light, the colors are synthesized in an additive manner, then returned to the viewer by the surface of the structure, like a cinema screen.
+
+But unlike in cinema, two parameters must be taken into account to anticipate the color perceived after the light is returned by the structure:
+
+- The surrounding light also illuminates the structure; the more complete the darkness, the more detailed, contrasted and controlled the result can be. In fact, the surrounding light adds to the projection (therefore increasing its intensity and pulling the colors towards that of the surrounding light, generally the white of the day, or the color of the artificial lighting at night).
+- As the structure is not white, if the intensity of the projection is not sufficient, the lightest color will only be that of the surface; it will be very difficult, if not impossible, to obtain white if the structure is very colored. In the same way, complementary colors (farthest away in the spectrum) from those on the surface will tend to appear darker (being those primarily absorbed by the surface).
 
 ----
 
