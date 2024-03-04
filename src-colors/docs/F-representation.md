@@ -4,23 +4,23 @@ Given that the perception of colors is eminently subjective, any joint work requ
 
 [TOC]
 
-This work of rationalization was not born with the digital image; since 1913 the [International Commission on Illumination](https://en.wikipedia.org/wiki/International_Commission_on_Illumination) (*CIE*) has worked on the problem.
+This work of rationalization was not born with digital image generation; since 1913 the [International Commission on Illumination](https://en.wikipedia.org/wiki/International_Commission_on_Illumination) (*CIE*) has worked on the problem.
 
-The modern color spaces [^1] used in image processing are proposed solutions to this rationalization, standardization of color representation, and are based on the work and early attempts of the CIE.
+The modern color spaces[^1] used in image processing are proposed solutions to this rationalization, standardization of color representation, and are based on the work and early attempts of the CIE.
 
 It is interesting to know that the CIE conducted its work empirically, defining an "average observer" from numerous experiments of color comparison by human observers, in order to characterize the colors and lights as perceived by the average person.
 
-It is in 1931 that the CIE proposed a first representation and rationalization of the colors: the diagram *CIE-1931*, still very used today as an objective reference, in particular to compare the various colorimetric spaces in use.
+It is in 1931 that the CIE proposed a first representation and rationalization of the colors: the *CIE-1931* diagram, still  used a lot today as an objective reference, in particular to compare the various colorimetric spaces in use.
 
 ## F.1 - Decomposing colors
 
-It has been implied so far that a color as we perceive it is physically defined by three independent parameters: its *intensity*, its *dominant wavelength* and its *Extraction purity*.
+It has been implied so far that a color as we perceive it is physically defined by three independent parameters: its *intensity*, its *dominant wavelength* and its *excitation purity*.
 
 ![](img/1d-2d-3d.png)
 
 - **Intensity** is quite intuitive to understand, and related to what is also called *luminosity*; it is the number of photons received each second by the cells of the retina.
 - **Dominant wavelength** will primarily influence the *hue* of the color; it is the most intense monochromatic component in the mixture of all wavelengths forming that particular color.
-- **Extraction purity** represents the proportion between the dominant wavelength and the amount of *white* that must be added to obtain the color in question. It is close to what is called *saturation*.
+- **Excitation purity** represents the proportion between the dominant wavelength and the amount of *white* that must be added to obtain the color in question. It is close to what is called *saturation*.
 
 This breakdown is perfectly objective (related to the physical reality of light), it is a good foundation for making an objective representation of colors, which is what the CIE has done since 1931.
 
@@ -30,7 +30,7 @@ With these three parameters, we can represent the colors in three dimensions.
 
 ![](img/cie1931-3d.svg)
 
-In order to establish this representation, the CIE chose three theoretical primary colors different from Red, Green and Blue more common, called X, Y and Z, able to include the entirety of the visible colors. This representation is thus the **CIE XYZ colorimetric space of 1931**, and is still used today as reference to represent and compare all the other colorimetric spaces.
+In order to establish this representation, the CIE chose three theoretical primary colors different from the more common Red, Green and Blue, called X, Y and Z, able to include the entirety of the visible colors. This representation is the **CIE XYZ colorimetric space of 1931**, and is still used today as reference to represent and compare all the other colorimetric spaces.
 
 The parameters defining this color space were carefully chosen in order to represent the entirety of the colors perceived by human vision.
 
